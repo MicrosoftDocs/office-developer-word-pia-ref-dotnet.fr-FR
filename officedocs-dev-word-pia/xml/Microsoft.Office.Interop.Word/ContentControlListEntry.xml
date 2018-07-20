@@ -1,0 +1,498 @@
+<Type Name="ContentControlListEntry" FullName="Microsoft.Office.Interop.Word.ContentControlListEntry">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="9aaa99f4b00477851b09bd8dc7e539ca6231ad87" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20667476" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ContentControlListEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControlListEntry" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ContentControlListEntry" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ContentControlListEntry" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0C6FA8CA-E65F-4FC7-AB8F-20729EECBB14")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="9a11f-101">A <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objet représente un élément de liste dans une liste déroulante liste ou une liste déroulante case contrôle de contenu.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="9a11f-101">A <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> object represents a list item in a drop-down list or combo box content control.</span>
+      </span>
+      <span data-ttu-id="9a11f-102">A <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> collection pour un <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objet.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="9a11f-102">A <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> collection for a <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="9a11f-103">
+        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> pour créer une nouvelle collection <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objet. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" /> méthode, ou <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />(<paramref name="Index" />), où <paramref name="Index" /> est la position ordinale de l’élément de liste de contrôle de contenu, pour accéder à un élément de liste dans le <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> collection.</para>
+        <para>
+          <b>Remarque</b>: les entrées de liste doivent avoir un nom unique complet.  Essayez d’ajouter un élément de liste qui existe déjà génère une erreur d’exécution.</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveUp" /> et <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveDown" /> méthodes pour repositionner les éléments dans une liste déroulante. Utiliser le <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Select" /> méthode pour sélectionner par programme un élément de liste de contrôle de contenu.</para>
+        <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> propriété pour définir le texte affiché pour un élément de liste de contrôle de contenu et le <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> propriété à définir une valeur de programme que vous pouvez utiliser ultérieurement pour le traitement d’un formulaire. Par exemple, vous pouvez utiliser une liste déroulante de contrôle de contenu pour une liste des produits. Le <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> propriété peut contenir le nom du produit, un nom d’affichage qu’un utilisateur peut facilement reconnaître et comprendre. Le <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> propriété peut contenir le numéro de produit pour le produit qui correspond à un numéro de produit dans une base de données.  Vous pouvez ensuite utiliser la le numéro de produit à partir de la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> propriété pour rechercher des informations sur le produit dans une base de données. En outre, la valeur de la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> propriété est ce qui est envoyé aux données XML personnalisées si le contrôle de contenu est mappé à des données XML dans le magasin de données.</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Delete" /> méthode pour supprimer un élément d’une zone de liste ou une liste déroulante de la liste déroulante contrôle de contenu.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="9a11f-103">
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> method of the <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> collection to create a new <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> object. Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" /> method, or <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />(<paramref name="Index" />), where <paramref name="Index" /> is the ordinal position of the content control list item, to access an individual list item within the <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> collection.</para>
+          <para>
+            <b>Note</b>: List entries must have unique display names.  Attempting to add a list item that already exists raises a run-time error.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveUp" /> and <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveDown" /> methods to reposition items in a drop-down list. Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Select" /> method to programmatically select a content control list item.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> property to set the display text for a content control list item, and use the <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> property to set a programmatic value that you may use later for processing a form. For example, you may use a  content control drop-down list for a list of products. The <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> property may contain the name of the product, a display name that a user can easily recognize and understand. The <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> property may contain the product number for the product that corresponds to a product number in a database.  You can then use the the product number from the <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> property to look up product information in a database. Also, the value of the <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> property is what is sent to the custom XML data if the content control is mapped to XML data in the data store.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Delete" /> method to remove an item from a content control drop-down list or combo box. </para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9a11f-104">Renvoie un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-104">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word._Application" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9a11f-105">Renvoie un entier 32 bits qui indique l'application dans laquelle le complément a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-105">Returns a 32-bit integer that indicates the application in which the add-in was created.</span>
+          </span>
+          <span data-ttu-id="9a11f-106">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-106">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="9a11f-107">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-107">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="9a11f-108">
+            <para>Si l’objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+            <para>
+              <b>Remarque</b>: cette valeur peut également être représentée par la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-108">
+              <para>If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."  This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>
+                <b>Note</b>: This value can also be represented by the constant <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="9a11f-109">
+		Supprime l'élément spécifié dans le contrôle de contenu de zone de liste déroulante ou de liste déroulante.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-109">Deletes the specified item in a combo box or drop-down list content control.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Index" />
+      <MemberSignature Language="VB.NET" Value="Public Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9a11f-110">Cette propriété renvoie ou définit la position ordinale d’un élément de liste de contrôle de contenu dans la collection d’éléments de liste.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-110">Returns or sets the ordinal position of a content control list item in the collection of list items.</span>
+          </span>
+          <span data-ttu-id="9a11f-111">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-111">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="9a11f-112">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-112">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveDown">
+      <MemberSignature Language="C#" Value="public void MoveDown ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveDown() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveDown" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MoveDown ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveDown();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="9a11f-113">Déplace un élément dans un contrôle de contenu de liste déroulante ou de zone de liste déroulante d'un élément vers le bas, afin de le placer après l'élément qui le suivait à l'origine.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-113">Moves an item in a drop-down list or combo box content control down one item, so that it is after the item that originally followed it.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveUp">
+      <MemberSignature Language="C#" Value="public void MoveUp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveUp() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveUp" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MoveUp ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveUp();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="9a11f-114">
+		Déplace un élément dans un contrôle de contenu de liste déroulante ou de zone de liste déroulante d'un élément vers le haut, afin de le placer devant l'élément qui le précédait à l'origine.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-114">Moves an item in a drop-down list or combo box content control up one item, so that it is before the item that originally preceded it.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9a11f-115">Renvoie l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-115">Returns the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="9a11f-116">
+            <b>Objet</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-116">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public void Select ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Select() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="9a11f-117">
+		Sélectionne l'entrée de liste dans un contrôle de contenu de liste déroulante ou de zone de liste déroulante et définit le texte du contrôle de contenu sur la valeur de l'élément.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-117">Selects the list entry in a drop-down list or combo box content control and sets the text of the content control to the  value of the item.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9a11f-118">Cette propriété renvoie ou définit le texte d’affichage d’un élément de liste pour un liste déroulante liste déroulante ou liste de contrôle de contenu.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-118">Returns or sets the display text  of a list item for a drop-down list or combo box content control.</span>
+          </span>
+          <span data-ttu-id="9a11f-119">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-119">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="9a11f-120">
+            <b>Chaîne</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-120">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="9a11f-121">
+            <para>Entrées de liste doivent avoir des noms uniques.  Essayez de modifier le <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> propriété une chaîne qui existe déjà dans la liste des entrées génère une erreur d’exécution.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-121">
+              <para>List entries must have unique display names.  Attempting to change the <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> property to a string that already exists in the list of entries raises a run-time error.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9a11f-122">Cette propriété renvoie ou définit la valeur d’un élément par programme dans une liste déroulante liste ou une liste déroulante case contrôle de contenu.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-122">Returns or sets the programmatic value of an item in a drop-down list or combo box content control.</span>
+          </span>
+          <span data-ttu-id="9a11f-123">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-123">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="9a11f-124">
+            <b>Chaîne</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-124">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="9a11f-125">
+            <para>Utilisez la propriété <b>Value</b> pour stocker les données que vous devrez utiliser au moment du traitement. Par exemple, le <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> propriété peut contenir une chaîne que vous souhaitez afficher et la propriété <b>Value</b> peut contenir un nombre, par un numéro d’article, vous pouvez utiliser pour rechercher des informations dans une base de données.  En outre, la valeur de la propriété <b>Value</b> se ce qui est envoyé aux données XML personnalisées, le contrôle de contenu est mappé à des données XML dans le magasin de données.</para>
+            <para>
+              <b>Remarque</b>: vous ne pouvez pas définir la propriété <b>Value</b> pour les entrées de liste qui ont été automatiquement remplies à partir d’un schéma XML associé à la partie XML personnalisée qui est mappé sur ce contrôle.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9a11f-125">
+              <para>Use the <b>Value</b> property to store data that you need to use at processing time. For example, the <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> property may contain a string that you want to display and the <b>Value</b> property may contain a number, such as an item number, that you can use to look up information in a database.  Also, the value of the <b>Value</b> property is what is sent to the custom XML data, if the content control is mapped to XML data in the data store.</para>
+              <para>
+                <b>Note</b>: You cannot set the <b>Value</b> property for list entries that were automatically populated from an XML schema attached to the custom XML that is mapped to this control. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
