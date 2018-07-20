@@ -1,0 +1,422 @@
+<Type Name="TablesOfAuthorities" FullName="Microsoft.Office.Interop.Word.TablesOfAuthorities">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b04829d6e20038907ae0e4d3dfef9a45a8da9159" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20667937" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfAuthorities implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" />
+  <TypeSignature Language="VB.NET" Value="Public Interface TablesOfAuthorities&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class TablesOfAuthorities : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020912-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> objets (champs TOA) qui représente la table de références dans un document.</summary>
+    <remarks>
+      <para>Utiliser le <see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" /> propriété permet de renvoyer la collection <b>TableOfAuthorities</b> .</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> pour ajouter une table de références à un document. Une table de références est établie à partir des champs TA (entrée de Table de références) dans un document.</para>
+      <para>Utilisez <b>TablesOfAuthorities</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>TableOfAuthorities</b> . Le numéro d’index représente la position de la table de références dans le document.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TableOfAuthorities Add (Microsoft.Office.Interop.Word.Range Range, ref object Category, ref object Bookmark, ref object Passim, ref object KeepEntryFormatting, ref object Separator, ref object IncludeSequenceName, ref object EntrySeparator, ref object PageRangeSeparator, ref object IncludeCategoryHeader, ref object PageNumberSeparator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.TableOfAuthorities Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Category, [in]object&amp; Bookmark, [in]object&amp; Passim, [in]object&amp; KeepEntryFormatting, [in]object&amp; Separator, [in]object&amp; IncludeSequenceName, [in]object&amp; EntrySeparator, [in]object&amp; PageRangeSeparator, [in]object&amp; IncludeCategoryHeader, [in]object&amp; PageNumberSeparator) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TableOfAuthorities</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Bookmark" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Passim" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="KeepEntryFormatting" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Separator" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IncludeSequenceName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="EntrySeparator" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PageRangeSeparator" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IncludeCategoryHeader" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PageNumberSeparator" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Plage où vous souhaitez faire figurer la table de références. La table de références remplace la plage si la plage n’est pas réduite.</param>
+        <param name="Category">Facultatif <b>Object</b>. Catégorie d'entrées que vous souhaitez inclure dans la table de références. Correspond au commutateur \c pour un champ TOA. Valeurs de 0 à 16 correspondent aux éléments répertoriés dans la zone catégorie sous l’onglet Table de références dans la boîte de dialogue Tables et Index (menu Insertion, commande référence). La valeur par défaut est 1 (un).</param>
+        <param name="Bookmark">Facultatif <b>Object</b>. Nom de chaîne du signet à partir duquel regrouper les entrées d'une table de références. Si <paramref name="Bookmark" /> est spécifié, les entrées sont regroupées uniquement à partir de la partie du document marquée par le signet. Correspond au commutateur \b pour un champ TOA.</param>
+        <param name="Passim">Facultatif <b>Object</b>. <b>True</b> pour remplacer au moins cinq références de pages pour la même autorité par Passim dans la table de références. Correspond au commutateur \p pour un champ de Table de références (champ TOA). Si cet argument est omis, <paramref name="Passim" /> est supposé pour avoir la <b>valeur False</b>.</param>
+        <param name="KeepEntryFormatting">Facultatif <b>Object</b>. <b>True</b> pour appliquer la mise en forme à partir de la table de références aux entrées dans la table de références. Correspond au commutateur \f pour un champ de Table de références (champ TOA). Si cet argument est omis, <paramref name="KeepEntryFormatting" /> est supposé avoir la <b>valeur True</b>.</param>
+        <param name="Separator">Facultatif <b>Object</b>. Caractères (cinq au maximum) entre chaque numéro de séquence et son numéro de page dans la table de références. Correspond au commutateur \d pour un champ TOA. Si vous ne spécifiez pas cet argument, le séparateur par défaut est un tiret (-).</param>
+        <param name="IncludeSequenceName">Facultatif <b>Object</b>. Chaîne définissant l'identificateur de champ SEQ (Sequence) pour la table de références. Correspond au commutateur \s pour un champ TOA (champ de table de références).</param>
+        <param name="EntrySeparator">Facultatif <b>Object</b>. Caractères (cinq au maximum) entre chaque entrée et son numéro de page dans la table de références. Correspond au commutateur \e pour un champ TOA. Si vous ne spécifiez pas cet argument, aucun séparateur n'est utilisé.</param>
+        <param name="PageRangeSeparator">Facultatif <b>Object</b>. Caractères (cinq au maximum) séparant les numéros de la page de début et de la page de fin dans chaque étendue de pages de la table de références. Correspond au commutateur \g pour un champ de table de références (champ TOA). Si vous ne spécifiez pas cet argument, le caractère utilisé est un tiret demi-cadratin.</param>
+        <param name="IncludeCategoryHeader">Facultatif <b>Object</b>. <b>True</b> pour que le nom de catégorie pour chaque groupe d'entrées s'affichent dans la table de références (par exemple, affaires). Correspond au commutateur \h pour un champ de Table de références (champ TOA). Si cet argument est omis, <paramref name="IncludeCategoryHeader" /> est supposé avoir la <b>valeur True</b>.</param>
+        <param name="PageNumberSeparator">Facultatif <b>Object</b>. Caractères (cinq au maximum) séparant les différents numéros de page au sein des références de page de la table de références. Correspond au commutateur \l pour un champ de table de références (champ TOA). Si vous ne spécifiez pas cet argument, la valeur par défaut est une virgule et un espace.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> objet qui représente une table de références ajoutée à un document.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Une table de références est générée à partir des champs de l’entrée de Table de références (TA) dans un document. Utiliser le <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> méthode pour marquer les citations à inclure dans la table de références.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfAuthorities.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfAuthorities.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le nombre d’éléments dans la collection spécifiée.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfAuthorities.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdToaFormat Format { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdToaFormat Format" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfAuthorities.Format" />
+      <MemberSignature Language="VB.NET" Value="Public Property Format As WdToaFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdToaFormat Format { Microsoft::Office::Interop::Word::WdToaFormat get(); void set(Microsoft::Office::Interop::Word::WdToaFormat value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdToaFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la mise en forme pour les tables de références dans le document spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdToaFormat" />peut être une des constantes <b>WdToaFormat</b> suivantes :</para>
+          <para>
+            <b>wdTOAClassic</b>
+          </para>
+          <para>
+            <b>wdTOAFormal</b>
+          </para>
+          <para>
+            <b>wdTOATemplate</b>
+          </para>
+          <para>
+            <b>wdTOADistinctive</b>
+          </para>
+          <para>
+            <b>wdTOASimple</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TableOfAuthorities this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.TableOfAuthorities Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfAuthorities.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As TableOfAuthorities" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TableOfAuthorities ^ default[int] { Microsoft::Office::Interop::Word::TableOfAuthorities ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TableOfAuthorities</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkAllCitations">
+      <MemberSignature Language="C#" Value="public void MarkAllCitations (string ShortCitation, ref object LongCitation, ref object LongCitationAutoText, ref object Category);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MarkAllCitations([in]string ShortCitation, [in]object&amp; LongCitation, [in]object&amp; LongCitationAutoText, [in]object&amp; Category) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkAllCitations(System.String,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MarkAllCitations (ShortCitation As String, Optional ByRef LongCitation As Object, Optional ByRef LongCitationAutoText As Object, Optional ByRef Category As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ShortCitation" Type="System.String" />
+        <Parameter Name="LongCitation" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LongCitationAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ShortCitation">
+          <b>String</b>obligatoire. Citation courte pour l'entrée telle qu'elle apparaîtra dans la boîte de dialogue Citation (menu Insertion, commande Tables et index).</param>
+        <param name="LongCitation">Facultatif <b>Object</b>. Citation longue pour l'entrée telle qu'elle apparaîtra dans la table de références.</param>
+        <param name="LongCitationAutoText">Facultatif <b>Object</b>. Nom de l'insertion automatique qui contient le texte de la citation longue tel qu'il apparaîtra dans la table de références.</param>
+        <param name="Category">Facultatif <b>Object</b>. Nombre de catégories à associer avec l'entrée : 1 correspond à la première catégorie de la zone Category dans la boîte de dialogue Citation, 2 correspond à la deuxième catégorie, et ainsi de suite.</param>
+        <summary>Insère un champ TA (entrée de Table de références) après toutes les instances de le <paramref name="ShortCitation" /> texte.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkCitation">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Field MarkCitation (Microsoft.Office.Interop.Word.Range Range, string ShortCitation, ref object LongCitation, ref object LongCitationAutoText, ref object Category);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Field MarkCitation([in]class Microsoft.Office.Interop.Word.Range Range, [in]string ShortCitation, [in]object&amp; LongCitation, [in]object&amp; LongCitationAutoText, [in]object&amp; Category) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Field</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="ShortCitation" Type="System.String" />
+        <Parameter Name="LongCitation" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LongCitationAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement de l'entrée de la table de références. Le champ TA est inséré après <paramref name="Range" />.</param>
+        <param name="ShortCitation">
+          <b>String</b>obligatoire. Citation courte pour l'entrée telle qu'elle apparaîtra dans la boîte de dialogue Citation (menu Insertion, commande Tables et index).</param>
+        <param name="LongCitation">Facultatif <b>Object</b>. Citation longue pour l'entrée telle qu'elle apparaîtra dans la table de références.</param>
+        <param name="LongCitationAutoText">Facultatif <b>Object</b>. Nom de l'insertion automatique qui contient le texte d'une citation longue tel qu'il apparaîtra dans la table de références.</param>
+        <param name="Category">Facultatif <b>Object</b>. Nombre de catégories à associer avec l'entrée : 1 correspond à la première catégorie de la zone Category dans la boîte de dialogue Citation, 2 correspond à la deuxième catégorie, et ainsi de suite.</param>
+        <summary>Insère un champ TA (entrée de Table de références) et renvoie le champ comme un <see cref="T:Microsoft.Office.Interop.Word.Field" /> objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextCitation">
+      <MemberSignature Language="C#" Value="public void NextCitation (string ShortCitation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NextCitation([in]string ShortCitation) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.NextCitation(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NextCitation (ShortCitation As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NextCitation(System::String ^ ShortCitation);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ShortCitation" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ShortCitation">
+          <b>String</b>obligatoire. Texte de la citation courte.</param>
+        <summary>Recherche et sélectionne l’occurrence suivante d’une citation spécifiée.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfAuthorities.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie un objet qui représente l'objet parent de l'objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

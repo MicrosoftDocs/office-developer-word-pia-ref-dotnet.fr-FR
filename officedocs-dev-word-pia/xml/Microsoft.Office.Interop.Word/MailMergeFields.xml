@@ -1,0 +1,581 @@
+<Type Name="MailMergeFields" FullName="Microsoft.Office.Interop.Word.MailMergeFields">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="81695bc0d7c2fa5c37720ad879012f8adc13b827" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20667328" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeFields implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeFields" />
+  <TypeSignature Language="VB.NET" Value="Public Interface MailMergeFields&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class MailMergeFields : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002091F-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objets qui représentent la fusion et publipostage des champs liés dans un document.</summary>
+    <remarks>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" /> propriété pour renvoyer la collection <b>MailMergeFields</b> .</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> pour ajouter un champ de fusion à la collection <b>MailMergeFields</b> .</para>
+      <para>Utilisez les <b>champs</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>MailMergeField</b> .</para>
+      <para>La collection <b>MailMergeFields</b> dispose de méthodes supplémentaires, telles que <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> et <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />, pour ajouter des champs associés à une opération de fusion et publipostage.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField Add (Microsoft.Office.Interop.Word.Range Range, string Name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]string Name) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::MailMergeField ^ Add(Microsoft::Office::Interop::Word::Range ^ Range, System::String ^ Name);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="Name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Plage où vous souhaitez faire figurer le champ. Si la plage n'est pas réduite, ce champ la remplace.</param>
+        <param name="Name">
+          <b>String</b>obligatoire. Nom du champ.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet qui représente un champ de fusion et publipostage ajouté à la source de données.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAsk">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddAsk (Microsoft.Office.Interop.Word.Range Range, string Name, ref object Prompt, ref object DefaultAskText, ref object AskOnce);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddAsk([in]class Microsoft.Office.Interop.Word.Range Range, [in]string Name, [in]object&amp; Prompt, [in]object&amp; DefaultAskText, [in]object&amp; AskOnce) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="Name" Type="System.String" />
+        <Parameter Name="Prompt" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultAskText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ ASK.</param>
+        <param name="Name">
+          <b>String</b>obligatoire. Le nom du signet auquel est affecté le texte par défaut ou de réponse. Utilisez un champ REF avec le nom du signet pour afficher le résultat dans un document.</param>
+        <param name="Prompt">Facultatif <b>Object</b>. Texte affiché dans la boîte de dialogue.</param>
+        <param name="DefaultAskText">Facultatif <b>Object</b>. Réponse qui sera automatiquement proposée dans la zone de texte de la boîte de dialogue. Correspond au commutateur \d pour un champ ASK.</param>
+        <param name="AskOnce">Facultatif <b>Object</b>. <b>True</b> pour afficher la boîte de dialogue une seule fois au lieu de chaque fois qu’un nouvel enregistrement de données est fusionné. Correspond au commutateur \o pour un champ ASK.</param>
+        <summary>Ajoute un champ ASK à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Lors de la mise à jour, un champ ASK affiche une boîte de dialogue qui vous demande le texte à affecter au signet spécifié.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFillIn">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddFillIn (Microsoft.Office.Interop.Word.Range Range, ref object Prompt, ref object DefaultFillInText, ref object AskOnce);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddFillIn([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Prompt, [in]object&amp; DefaultFillInText, [in]object&amp; AskOnce) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="Prompt" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultFillInText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ FILLIN.</param>
+        <param name="Prompt">Facultatif <b>Object</b>. Texte affiché dans la boîte de dialogue.</param>
+        <param name="DefaultFillInText">Facultatif <b>Object</b>. Réponse qui sera automatiquement proposée dans la zone de texte de la boîte de dialogue. Correspond au commutateur \d d'un champ FILLIN.</param>
+        <param name="AskOnce">Facultatif <b>Object</b>. <b>True</b> pour afficher l’invite une seule fois au lieu de chaque fois qu’un nouvel enregistrement de données est fusionné. Correspond au commutateur \o pour un champ FILLIN. La valeur par défaut est <b>False</b>.</param>
+        <summary>Ajoute un champ FILLIN à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Lors de la mise à jour, un champ FILLIN affiche une boîte de dialogue qui vous demande le texte à insérer dans le document à l’emplacement du champ FILLIN.</para>
+          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> méthode avec la <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection d’objets pour ajouter un champ FILLIN à un document autre qu’un document principal de fusion et publipostage.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddIf">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddIf (Microsoft.Office.Interop.Word.Range Range, string MergeField, Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, ref object CompareTo, ref object TrueAutoText, ref object TrueText, ref object FalseAutoText, ref object FalseText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddIf([in]class Microsoft.Office.Interop.Word.Range Range, [in]string MergeField, [in]valuetype Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, [in]object&amp; CompareTo, [in]object&amp; TrueAutoText, [in]object&amp; TrueText, [in]object&amp; FalseAutoText, [in]object&amp; FalseText) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddIf(Microsoft.Office.Interop.Word.Range,System.String,Microsoft.Office.Interop.Word.WdMailMergeComparison,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="MergeField" Type="System.String" />
+        <Parameter Name="Comparison" Type="Microsoft.Office.Interop.Word.WdMailMergeComparison" />
+        <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="TrueAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="TrueText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FalseAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FalseText" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ IF.</param>
+        <param name="MergeField">
+          <b>String</b>obligatoire. Nom du champ de fusion.</param>
+        <param name="Comparison">Requis <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Opérateur utilisé dans la comparaison.</param>
+        <param name="CompareTo">Facultatif <b>Object</b>. Le texte à comparer avec le contenu de <paramref name="MergeField" />.</param>
+        <param name="TrueAutoText">Facultatif <b>Object</b>. Insertion automatique effectuée si le résultat de la comparaison est vrai. Si cet argument n’est spécifié, <paramref name="TrueText" /> est ignorée.</param>
+        <param name="TrueText">Facultatif <b>Object</b>. Texte inséré si le résultat de la comparaison est vrai.</param>
+        <param name="FalseAutoText">Facultatif <b>Object</b>. Insertion automatique effectuée si le résultat de la comparaison est faux. Si cet argument n’est spécifié, <paramref name="FalseText" /> est ignorée.</param>
+        <param name="FalseText">Facultatif <b>Object</b>. Texte inséré si le résultat de la comparaison est faux.</param>
+        <summary>Ajoute un champ IF à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Lors de la mise à jour, un champ IF compare un champ d’un enregistrement de données avec une valeur spécifiée, puis insère le texte approprié en fonction du résultat de la comparaison.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMergeRec">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddMergeRec (Microsoft.Office.Interop.Word.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddMergeRec([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddMergeRec(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::MailMergeField ^ AddMergeRec(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ MERGEREC.</param>
+        <summary>Ajoute un champ MERGEREC à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Un champ MERGEREC insère le numéro de l’enregistrement de données actuel (position de l’enregistrement de données dans le résultat de requête) au cours d’une fusion et publipostage.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMergeSeq">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddMergeSeq (Microsoft.Office.Interop.Word.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddMergeSeq([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddMergeSeq(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::MailMergeField ^ AddMergeSeq(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ MERGESEQ.</param>
+        <summary>Ajoute un champ MERGESEQ à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Un champ MERGESEQ insère un numéro basé sur l’ordre dans lequel les données des enregistrements sont fusionnés (par exemple, lors de l’enregistrement 50 enregistrements 50 à 100 est fusionné, MERGESEQ insère le numéro 1).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddNext">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddNext (Microsoft.Office.Interop.Word.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddNext([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddNext(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::MailMergeField ^ AddNext(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ NEXT.</param>
+        <summary>Ajoute un champ NEXT à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Un champ NEXT passe à l’enregistrement de données suivant afin que les données à partir de plusieurs enregistrements peuvent être fusionnées dans le même document (par exemple, une feuille d’étiquettes de publipostage).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddNextIf">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddNextIf (Microsoft.Office.Interop.Word.Range Range, string MergeField, Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, ref object CompareTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddNextIf([in]class Microsoft.Office.Interop.Word.Range Range, [in]string MergeField, [in]valuetype Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, [in]object&amp; CompareTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddNextIf(Microsoft.Office.Interop.Word.Range,System.String,Microsoft.Office.Interop.Word.WdMailMergeComparison,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="MergeField" Type="System.String" />
+        <Parameter Name="Comparison" Type="Microsoft.Office.Interop.Word.WdMailMergeComparison" />
+        <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ NEXTIF.</param>
+        <param name="MergeField">
+          <b>String</b>obligatoire. Nom du champ de fusion.</param>
+        <param name="Comparison">Requis <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Opérateur utilisé dans la comparaison.</param>
+        <param name="CompareTo">
+          <b>String</b>obligatoire. Le texte à comparer avec le contenu de <paramref name="MergeField" />.</param>
+        <summary>Ajoute un champ NEXTIF à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Un champ NEXTIF compare deux expressions, et si la comparaison est vrai, l’enregistrement de données suivant est fusionné dans le document actif.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSet">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddSet (Microsoft.Office.Interop.Word.Range Range, string Name, ref object ValueText, ref object ValueAutoText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddSet([in]class Microsoft.Office.Interop.Word.Range Range, [in]string Name, [in]object&amp; ValueText, [in]object&amp; ValueAutoText) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddSet(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="Name" Type="System.String" />
+        <Parameter Name="ValueText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ValueAutoText" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ SET.</param>
+        <param name="Name">
+          <b>String</b>obligatoire. Nom du signet qui <paramref name="ValueText" /> est affectée à.</param>
+        <param name="ValueText">Facultatif <b>Object</b>. Texte attaché au signet spécifié par le <paramref name="Name" /> argument.</param>
+        <param name="ValueAutoText">Facultatif <b>Object</b>. L’insertion automatique qui contient le texte attaché au signet spécifié par le <paramref name="Name" /> argument. Si cet argument n’est spécifié, <paramref name="ValueText" /> est ignorée.</param>
+        <summary>Ajoute un champ SET à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Un champ SET permet de définir le texte du signet spécifié.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSkipIf">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddSkipIf (Microsoft.Office.Interop.Word.Range Range, string MergeField, Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, ref object CompareTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddSkipIf([in]class Microsoft.Office.Interop.Word.Range Range, [in]string MergeField, [in]valuetype Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, [in]object&amp; CompareTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddSkipIf(Microsoft.Office.Interop.Word.Range,System.String,Microsoft.Office.Interop.Word.WdMailMergeComparison,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="MergeField" Type="System.String" />
+        <Parameter Name="Comparison" Type="Microsoft.Office.Interop.Word.WdMailMergeComparison" />
+        <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ SKIPIF.</param>
+        <param name="MergeField">
+          <b>String</b>obligatoire. Nom du champ de fusion.</param>
+        <param name="Comparison">Requis <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Opérateur utilisé dans la comparaison.</param>
+        <param name="CompareTo">Facultatif <b>Object</b>. Le texte à comparer avec le contenu de <paramref name="MergeField" />.</param>
+        <summary>Ajoute un champ SKIPIF à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Un champ SKIPIF compare deux expressions, et si la comparaison est vrai, SKIPIF passe à l’enregistrement de données suivant dans la source de données et démarre un nouveau document de fusion.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le nombre d’éléments dans la collection spécifiée.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.MailMergeField Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As MailMergeField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::MailMergeField ^ default[int] { Microsoft::Office::Interop::Word::MailMergeField ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie un objet qui représente l'objet parent de l'objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
