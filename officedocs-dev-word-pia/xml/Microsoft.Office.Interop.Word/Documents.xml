@@ -1,0 +1,1382 @@
+<Type Name="Documents" FullName="Microsoft.Office.Interop.Word.Documents">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a41822aae7b9dcff67293b6f07a8d78b06540706" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20668916" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Documents : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Documents implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Documents" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Documents&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Documents : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002096C-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="e0061-101">Collection de tous les <see cref="T:Microsoft.Office.Interop.Word.Document" /> les objets qui sont actuellement ouverts dans Word.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="e0061-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Word.Document" /> objects that are currently open in Word.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="e0061-102">
+        <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Application.Documents" /> propriété permet de renvoyer la collection <b>Documents</b> .</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour créer un nouveau document vide et l’ajouter à la collection <b>Documents</b> .</para>
+        <para>Utilisez la méthode <b>Open</b> pour ouvrir un fichier.</para>
+        <para>Utilisation des <b>Documents</b>(<paramref name="index" />), où <paramref name="index" /> est le nom du document ou le numéro d’index pour renvoyer un objet <b>Document</b> .</para>
+        <para>Le numéro d’index représente la position du document dans la collection <b>Documents</b> .</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="e0061-102">
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Word._Application.Documents" /> property to return the <b>Documents</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> method to create a new empty document and add it to the <b>Documents</b> collection.</para>
+          <para>Use the <b>Open</b> method to open a file.</para>
+          <para>Use <b>Documents</b>(<paramref name="index" />), where <paramref name="index" /> is the document name or index number to return a single <b>Document</b> object.</para>
+          <para>The index number represents the position of the document in the <b>Documents</b> collection.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document Add (ref object Template, ref object NewTemplate, ref object DocumentType, ref object Visible);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document Add([in]object&amp; Template, [in]object&amp; NewTemplate, [in]object&amp; DocumentType, [in]object&amp; Visible) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ByRef Template As Object, Optional ByRef NewTemplate As Object, Optional ByRef DocumentType As Object, Optional ByRef Visible As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Template" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NewTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DocumentType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Visible" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Template">
+          <span data-ttu-id="e0061-103">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-103">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-104">Nom du modèle à utiliser pour le nouveau document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-104">The name of the template to be used for the new document.</span>
+          </span>
+          <span data-ttu-id="e0061-105">Si cet argument est omis, le modèle Normal est utilisé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-105">If this argument is omitted, the Normal template is used.</span>
+          </span>
+        </param>
+        <param name="NewTemplate">
+          <span data-ttu-id="e0061-106">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-106">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-107">
+            <b>True</b> pour ouvrir le document comme modèle.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-107">
+              <b>True</b> to open the document as a template.</span>
+          </span>
+          <span data-ttu-id="e0061-108">La valeur par défaut est <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-108">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="DocumentType">
+          <span data-ttu-id="e0061-109">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-109">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-110">Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdNewDocumentType" /> constantes : <b>wdNewBlankDocument</b>, <b>wdNewEmailMessage</b>, <b>wdNewFrameset</b>ou <b>wdNewWebPage</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-110">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdNewDocumentType" /> constants: <b>wdNewBlankDocument</b>, <b>wdNewEmailMessage</b>, <b>wdNewFrameset</b>, or <b>wdNewWebPage</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-111">La constante par défaut est <b>wdNewBlankDocument</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-111">The default constant is <b>wdNewBlankDocument</b>.</span>
+          </span>
+        </param>
+        <param name="Visible">
+          <span data-ttu-id="e0061-112">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-112">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-113">
+            <b>True</b> pour ouvrir le document dans une fenêtre visible.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-113">
+              <b>True</b> to open the document in a visible window.</span>
+          </span>
+          <span data-ttu-id="e0061-114">Si cette valeur est <b>False</b>, Microsoft Word ouvre le document mais affecte la <see cref="P:Microsoft.Office.Interop.Word.Window.Visible" /> propriété de la fenêtre de document sur <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-114">If this value is <b>False</b>, Microsoft Word opens the document but sets the <see cref="P:Microsoft.Office.Interop.Word.Window.Visible" /> property of the document window to <b>False</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-115">La valeur par défaut est <b>True</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-115">The default value is <b>True</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="e0061-116">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Document" /> object qui représente un nouveau document vide ajouté à la collection de documents ouverts.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Document" /> object that represents a new, empty document added to the collection of open documents.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBlogDocument">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document AddBlogDocument (string ProviderID, string PostURL, string BlogName, string PostID = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document AddBlogDocument([in]string ProviderID, [in]string PostURL, [in]string BlogName, [in]string PostID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.AddBlogDocument(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddBlogDocument (ProviderID As String, PostURL As String, BlogName As String, Optional PostID As String = &quot;&quot;) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ProviderID" Type="System.String" />
+        <Parameter Name="PostURL" Type="System.String" />
+        <Parameter Name="BlogName" Type="System.String" />
+        <Parameter Name="PostID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ProviderID">
+          <span data-ttu-id="e0061-117">GUID qui est la valeur unique qu'un fournisseur utilise lorsqu'il s'enregistre auprès de Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-117">A GUID that is the unique value a provider uses when they register themselves with Word.</span>
+          </span>
+        </param>
+        <param name="PostURL">
+          <span data-ttu-id="e0061-118">URL utilisée pour ajouter des publications au blog.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-118">The URL that is used to add posts to the blog.</span>
+          </span>
+        </param>
+        <param name="BlogName">
+          <span data-ttu-id="e0061-119">Nom complet du blog qui sera utilisé dans Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-119">A display name for the blog that will be used in Word.</span>
+          </span>
+        </param>
+        <param name="PostID">
+          <span data-ttu-id="e0061-120">ID d'une publication existante à utiliser pour remplir le document créé au moyen de la méthode <b>AddBlogDocument</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-120">The ID for an existing post with which to populate the document created by using the <b>AddBlogDocument</b> method.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="e0061-121">Renvoie un objet qui représente un nouveau document de blog que Microsoft Office Word publie sur le compte décrit par les trois premiers paramètres.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-121">Returns a  object that represents a new blog document that Microsoft Office Word publishes to the account described by the first three parameters.</span>
+          </span>
+        </summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Word._Document" />
+        </returns>
+        <remarks>
+          <span data-ttu-id="e0061-122">
+            <para>Cette méthode crée un nouveau document, et il enregistre également le compte de blog spécifié avec Word s’il n’est pas déjà enregistré. En outre, si le <paramref name="PostID" /> paramètre est spécifié, le nouveau document est rempli avec le contenu de la publication spécifiée par la valeur de la <paramref name="PostID" /> paramètre, à partir du site Web du fournisseur.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-122">
+              <para>This method creates a new document, and it also registers the specified blog account with Word if it is not already registered. In addition, if the <paramref name="PostID" /> parameter is specified, the new document is populated with the contents of the post specified by the value of the <paramref name="PostID" /> parameter, from the provider's Web site.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOld">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document AddOld (ref object Template, ref object NewTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document AddOld([in]object&amp; Template, [in]object&amp; NewTemplate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.AddOld(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOld (Optional ByRef Template As Object, Optional ByRef NewTemplate As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Template" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NewTemplate" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Template">To be added.</param>
+        <param name="NewTemplate">To be added.</param>
+        <summary>
+          <span data-ttu-id="e0061-123">Réservé à une utilisation interne.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-123">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Documents.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e0061-124">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-124">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCheckOut">
+      <MemberSignature Language="C#" Value="public bool CanCheckOut (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanCheckOut([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.CanCheckOut(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanCheckOut (FileName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanCheckOut(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="e0061-125">
+            <b>String</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-125">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-126">Représente le chemin d'accès au serveur et le nom du document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-126">The server path and name of the document.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="e0061-127">Détermine si Microsoft Word peut extraire un document donné d’un serveur.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-127">Determines if Microsoft Word can check out a specified document from a server.</span>
+          </span>
+          <span data-ttu-id="e0061-128">Type de données <b>Boolean</b> en lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-128">Read/write <b>Boolean</b>.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="e0061-129">
+            <para>Cette méthode renvoie <b>la valeur True</b> si Microsoft Word peut extraire un document donné d’un serveur et <b>False</b> dans le cas contraire.</para>
+            <para>Pour tirer parti des fonctionnalités de collaboration intégrées à Word, documents doivent être stockés sur un serveur Microsoft SharePoint Portal.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-129">
+              <para>This method returns <b>True</b> if Microsoft Word can check out a specified document from a server, and <b>False</b> if not.</para>
+              <para>To take advantage of the collaboration features built into Word, documents must be stored on a Microsoft SharePoint Portal Server.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckOut">
+      <MemberSignature Language="C#" Value="public void CheckOut (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CheckOut([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.CheckOut(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CheckOut (FileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CheckOut(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="e0061-130">
+            <b>String</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-130">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-131">Représente le nom du fichier à extraire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-131">The name of the file to check out.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="e0061-132">Copie le document spécifié depuis un serveur sur un ordinateur local à des fins d'édition.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-132">Copies a specified document from a server to a local computer for editing.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close (ref object SaveChanges, ref object OriginalFormat, ref object RouteDocument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close([in]object&amp; SaveChanges, [in]object&amp; OriginalFormat, [in]object&amp; RouteDocument) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.Close(System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close (Optional ByRef SaveChanges As Object, Optional ByRef OriginalFormat As Object, Optional ByRef RouteDocument As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SaveChanges" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OriginalFormat" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RouteDocument" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SaveChanges">
+          <span data-ttu-id="e0061-133">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-133">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-134">Spécifie l'enregistrement action pour le document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-134">Specifies the save action for the document.</span>
+          </span>
+          <span data-ttu-id="e0061-135">Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" /> constantes : <b>wdDoNotSaveChanges</b>, <b>wdPromptToSaveChanges</b>ou <b>wdSaveChanges</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-135">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" /> constants: <b>wdDoNotSaveChanges</b>, <b>wdPromptToSaveChanges</b>, or <b>wdSaveChanges</b>.</span>
+          </span>
+        </param>
+        <param name="OriginalFormat">
+          <span data-ttu-id="e0061-136">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-136">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-137">Spécifie l'enregistrement format pour le document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-137">Specifies the save format for the document.</span>
+          </span>
+          <span data-ttu-id="e0061-138">Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdOriginalFormat" /> constantes : <b>wdOriginalDocumentFormat</b>, <b>wdPromptUser</b>ou <b>wdWordDocument</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-138">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdOriginalFormat" /> constants: <b>wdOriginalDocumentFormat</b>, <b>wdPromptUser</b>, or <b>wdWordDocument</b>.</span>
+          </span>
+        </param>
+        <param name="RouteDocument">
+          <span data-ttu-id="e0061-139">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-139">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-140">
+            <b>True</b> pour distribuer le document au destinataire suivant.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-140">
+              <b>True</b> to route the document to the next recipient.</span>
+          </span>
+          <span data-ttu-id="e0061-141">Si le document n'a un bordereau de routage attaché, cet argument est ignoré.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-141">If the document doesn't have a routing slip attached, this argument is ignored.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="e0061-142">Ferme les documents spécifiés.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-142">Closes the specified document or documents.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Documents.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e0061-143">Renvoie le nombre d’éléments dans la collection spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-143">Returns the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Documents.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e0061-144">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-144">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e0061-145">
+            <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-145">
+              <para>If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Document Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Documents.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Document ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Document ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="e0061-146">
+            <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-146">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="e0061-147">Renvoie un objet spécifique appartenant à une collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-147">Returns an individual object in a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document Open (ref object FileName, ref object ConfirmConversions, ref object ReadOnly, ref object AddToRecentFiles, ref object PasswordDocument, ref object PasswordTemplate, ref object Revert, ref object WritePasswordDocument, ref object WritePasswordTemplate, ref object Format, ref object Encoding, ref object Visible, ref object OpenAndRepair, ref object DocumentDirection, ref object NoEncodingDialog, ref object XMLTransform);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document Open([in]object&amp; FileName, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; AddToRecentFiles, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate, [in]object&amp; Format, [in]object&amp; Encoding, [in]object&amp; Visible, [in]object&amp; OpenAndRepair, [in]object&amp; DocumentDirection, [in]object&amp; NoEncodingDialog, [in]object&amp; XMLTransform) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Open (ByRef FileName As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef AddToRecentFiles As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object, Optional ByRef Format As Object, Optional ByRef Encoding As Object, Optional ByRef Visible As Object, Optional ByRef OpenAndRepair As Object, Optional ByRef DocumentDirection As Object, Optional ByRef NoEncodingDialog As Object, Optional ByRef XMLTransform As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddToRecentFiles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Encoding" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Visible" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OpenAndRepair" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DocumentDirection" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NoEncodingDialog" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="XMLTransform" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="e0061-148">
+            <b>Objet</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-148">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-149">Nom du document (les chemins d'accès sont acceptés).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-149">The name of the document (paths are accepted).</span>
+          </span>
+        </param>
+        <param name="ConfirmConversions">
+          <span data-ttu-id="e0061-150">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-150">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-151">
+            <b>True</b> pour afficher la boîte de dialogue Convertir un fichier si le fichier n'est pas au format Microsoft Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-151">
+              <b>True</b> to display the Convert File dialog box if the file isn't in Microsoft Word format.</span>
+          </span>
+        </param>
+        <param name="ReadOnly">
+          <span data-ttu-id="e0061-152">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-152">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-153">
+            <b>True</b> pour ouvrir le document en lecture seule. <b>Remarque</b>   Cet argument ne remplace pas en lecture seule recommandée que vous définissez sur un document enregistré.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-153">
+              <b>True</b> to open the document as read-only.<b>Note</b>   This argument doesn't override the read-only recommended setting on a saved document.</span>
+          </span>
+          <span data-ttu-id="e0061-154">Par exemple, si un document a été enregistré en lecture seule recommandée activée, en définissant l’argument <b>ReadOnly</b> sur <b>False</b> pas entraîne le fichier à ouvrir en lecture-écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-154">For example, if a document has been saved with read-only recommended turned on, setting the <b>ReadOnly</b> argument to <b>False</b> will not cause the file to be opened as read/write.</span>
+          </span>
+        </param>
+        <param name="AddToRecentFiles">
+          <span data-ttu-id="e0061-155">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-155">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-156">
+            <b>True</b> pour ajouter le nom de fichier à la liste des fichiers récemment utilisés en bas du menu Fichier.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-156">
+              <b>True</b> to add the file name to the list of recently used files at the bottom of the File menu.</span>
+          </span>
+        </param>
+        <param name="PasswordDocument">
+          <span data-ttu-id="e0061-157">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-157">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-158">Mot de passe nécessaire pour ouvrir le document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-158">The password for opening the document.</span>
+          </span>
+        </param>
+        <param name="PasswordTemplate">
+          <span data-ttu-id="e0061-159">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-159">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-160">Mot de passe nécessaire pour ouvrir le modèle.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-160">The password for opening the template.</span>
+          </span>
+        </param>
+        <param name="Revert">
+          <span data-ttu-id="e0061-161">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-161">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-162">Contrôles que se passe-t-il si <paramref name="FileName" /> est le nom d’un document ouvert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-162">Controls what happens if <paramref name="FileName" /> is the name of an open document.</span>
+          </span>
+          <span data-ttu-id="e0061-163">
+            <b>True</b> pour ignorer les modifications non enregistrées dans le document ouvert et rouvrez le fichier.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-163">
+              <b>True</b> to discard any unsaved changes to the open document and reopen the file.</span>
+          </span>
+          <span data-ttu-id="e0061-164">
+            <b>False</b> pour activer le document ouvert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-164">
+              <b>False</b> to activate the open document.</span>
+          </span>
+        </param>
+        <param name="WritePasswordDocument">
+          <span data-ttu-id="e0061-165">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-165">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-166">Mot de passe nécessaire à l'enregistrement des modifications apportées au document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-166">The password for saving changes to the document.</span>
+          </span>
+        </param>
+        <param name="WritePasswordTemplate">
+          <span data-ttu-id="e0061-167">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-167">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-168">Mot de passe nécessaire à l'enregistrement des modifications apportées au modèle.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-168">The password for saving changes to the template.</span>
+          </span>
+        </param>
+        <param name="Format">
+          <span data-ttu-id="e0061-169">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-169">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-170">Le convertisseur de fichier à utiliser pour ouvrir le document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-170">The file converter to be used to open the document.</span>
+          </span>
+          <span data-ttu-id="e0061-171">Peut être un <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constante. Pour spécifier un format de fichier externe, appliquez la <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> propriété pour un <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> objet afin de déterminer la valeur à utiliser avec cet argument.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-171">Can be a <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constant.To specify an external file format, apply the <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> property to a <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> object to determine the value to use with this argument.</span>
+          </span>
+        </param>
+        <param name="Encoding">
+          <span data-ttu-id="e0061-172">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-172">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-173">Codage de document (code page ou jeu de caractères) à être utilisé par Microsoft Word lorsque vous affichez le document enregistré.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-173">The document encoding (code page or character set) to be used by Microsoft Word when you view the saved document.</span>
+          </span>
+          <span data-ttu-id="e0061-174">Peut être valide <see cref="T:Microsoft.Office.Core.MsoEncoding" /> constante.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-174">Can be any valid <see cref="T:Microsoft.Office.Core.MsoEncoding" /> constant.</span>
+          </span>
+          <span data-ttu-id="e0061-175">La valeur par défaut est la page de codes système.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-175">The default value is the system code page.</span>
+          </span>
+        </param>
+        <param name="Visible">
+          <span data-ttu-id="e0061-176">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-176">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-177">
+            <b>True</b> si le document est ouvert dans une fenêtre visible.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-177">
+              <b>True</b> if the document is opened in a visible window.</span>
+          </span>
+          <span data-ttu-id="e0061-178">La valeur par défaut est <b>True</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-178">The default value is <b>True</b>.</span>
+          </span>
+        </param>
+        <param name="OpenAndRepair">
+          <span data-ttu-id="e0061-179">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-179">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-180">
+            <b>True</b> pour réparer le document afin d'éviter toute altération.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-180">
+              <b>True</b> to repair the document to prevent document corruption.</span>
+          </span>
+        </param>
+        <param name="DocumentDirection">
+          <span data-ttu-id="e0061-181">Facultatif <b>objet.</b> Peut être un <see cref="T:Microsoft.Office.Interop.Word.WdDocumentDirection" /> constante.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-181">Optional <b>Object. </b>Can be a <see cref="T:Microsoft.Office.Interop.Word.WdDocumentDirection" /> constant.</span>
+          </span>
+        </param>
+        <param name="NoEncodingDialog">
+          <span data-ttu-id="e0061-182">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-182">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-183">
+            <b>True</b> pour ne plus afficher la boîte de dialogue codage que Word affiche si le codage de texte ne peut pas être reconnu.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-183">
+              <b>True</b> to skip displaying the Encoding dialog box that Word displays if the text encoding cannot be recognized.</span>
+          </span>
+          <span data-ttu-id="e0061-184">
+            <b>False</b> est la valeur par défaut.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-184">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="XMLTransform">
+          <span data-ttu-id="e0061-185">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-185">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-186">Spécifie la transformation à utiliser.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-186">Specifies a transform to use.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="e0061-187">Ouvre le document spécifié et l’ajoute à la <see cref="T:Microsoft.Office.Interop.Word.Documents" /> collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-187">Opens the specified document and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Documents" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="e0061-188">
+            <para>Évitez d’utiliser des mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demander le mot de passe de l’utilisateur, stockez-le dans une variable et ensuite utiliser la variable dans votre code.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-188">
+              <para>Avoid using hard-coded passwords in your applications. If a password is required in a procedure, request the password from the user, store it in a variable, and then use the variable in your code.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open2000">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document Open2000 (ref object FileName, ref object ConfirmConversions, ref object ReadOnly, ref object AddToRecentFiles, ref object PasswordDocument, ref object PasswordTemplate, ref object Revert, ref object WritePasswordDocument, ref object WritePasswordTemplate, ref object Format, ref object Encoding, ref object Visible);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document Open2000([in]object&amp; FileName, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; AddToRecentFiles, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate, [in]object&amp; Format, [in]object&amp; Encoding, [in]object&amp; Visible) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.Open2000(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Open2000 (ByRef FileName As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef AddToRecentFiles As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object, Optional ByRef Format As Object, Optional ByRef Encoding As Object, Optional ByRef Visible As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddToRecentFiles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Encoding" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Visible" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">To be added.</param>
+        <param name="ConfirmConversions">To be added.</param>
+        <param name="ReadOnly">To be added.</param>
+        <param name="AddToRecentFiles">To be added.</param>
+        <param name="PasswordDocument">To be added.</param>
+        <param name="PasswordTemplate">To be added.</param>
+        <param name="Revert">To be added.</param>
+        <param name="WritePasswordDocument">To be added.</param>
+        <param name="WritePasswordTemplate">To be added.</param>
+        <param name="Format">To be added.</param>
+        <param name="Encoding">To be added.</param>
+        <param name="Visible">To be added.</param>
+        <summary>
+          <span data-ttu-id="e0061-189">Réservé à une utilisation interne.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-189">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open2002">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document Open2002 (ref object FileName, ref object ConfirmConversions, ref object ReadOnly, ref object AddToRecentFiles, ref object PasswordDocument, ref object PasswordTemplate, ref object Revert, ref object WritePasswordDocument, ref object WritePasswordTemplate, ref object Format, ref object Encoding, ref object Visible, ref object OpenAndRepair, ref object DocumentDirection, ref object NoEncodingDialog);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document Open2002([in]object&amp; FileName, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; AddToRecentFiles, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate, [in]object&amp; Format, [in]object&amp; Encoding, [in]object&amp; Visible, [in]object&amp; OpenAndRepair, [in]object&amp; DocumentDirection, [in]object&amp; NoEncodingDialog) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.Open2002(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Open2002 (ByRef FileName As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef AddToRecentFiles As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object, Optional ByRef Format As Object, Optional ByRef Encoding As Object, Optional ByRef Visible As Object, Optional ByRef OpenAndRepair As Object, Optional ByRef DocumentDirection As Object, Optional ByRef NoEncodingDialog As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddToRecentFiles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Encoding" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Visible" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OpenAndRepair" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DocumentDirection" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NoEncodingDialog" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">To be added.</param>
+        <param name="ConfirmConversions">To be added.</param>
+        <param name="ReadOnly">To be added.</param>
+        <param name="AddToRecentFiles">To be added.</param>
+        <param name="PasswordDocument">To be added.</param>
+        <param name="PasswordTemplate">To be added.</param>
+        <param name="Revert">To be added.</param>
+        <param name="WritePasswordDocument">To be added.</param>
+        <param name="WritePasswordTemplate">To be added.</param>
+        <param name="Format">To be added.</param>
+        <param name="Encoding">To be added.</param>
+        <param name="Visible">To be added.</param>
+        <param name="OpenAndRepair">To be added.</param>
+        <param name="DocumentDirection">To be added.</param>
+        <param name="NoEncodingDialog">To be added.</param>
+        <summary>
+          <span data-ttu-id="e0061-190">Réservé à une utilisation interne.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-190">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenNoRepairDialog">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document OpenNoRepairDialog (ref object FileName, ref object ConfirmConversions, ref object ReadOnly, ref object AddToRecentFiles, ref object PasswordDocument, ref object PasswordTemplate, ref object Revert, ref object WritePasswordDocument, ref object WritePasswordTemplate, ref object Format, ref object Encoding, ref object Visible, ref object OpenAndRepair, ref object DocumentDirection, ref object NoEncodingDialog, ref object XMLTransform);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document OpenNoRepairDialog([in]object&amp; FileName, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; AddToRecentFiles, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate, [in]object&amp; Format, [in]object&amp; Encoding, [in]object&amp; Visible, [in]object&amp; OpenAndRepair, [in]object&amp; DocumentDirection, [in]object&amp; NoEncodingDialog, [in]object&amp; XMLTransform) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.OpenNoRepairDialog(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenNoRepairDialog (ByRef FileName As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef AddToRecentFiles As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object, Optional ByRef Format As Object, Optional ByRef Encoding As Object, Optional ByRef Visible As Object, Optional ByRef OpenAndRepair As Object, Optional ByRef DocumentDirection As Object, Optional ByRef NoEncodingDialog As Object, Optional ByRef XMLTransform As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddToRecentFiles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Encoding" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Visible" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OpenAndRepair" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DocumentDirection" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NoEncodingDialog" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="XMLTransform" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="e0061-191">Nom du document (les chemins d'accès sont acceptés).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-191">The name of the document (paths are accepted).</span>
+          </span>
+        </param>
+        <param name="ConfirmConversions">
+          <span data-ttu-id="e0061-192">
+            <b>True</b> pour afficher la boîte de dialogue Convertir un fichier si le fichier n'est pas au format Microsoft Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-192">
+              <b>True</b> to display the Convert File dialog box if the file isn't in Microsoft Word format.</span>
+          </span>
+        </param>
+        <param name="ReadOnly">
+          <span data-ttu-id="e0061-193">
+            <b>True</b> pour ouvrir le document en lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-193">
+              <b>True</b> to open the document as read-only.</span>
+          </span>
+          <span data-ttu-id="e0061-194">Cet argument ne remplace pas en lecture seule recommandée que vous définissez sur un document enregistré.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-194">This argument doesn't override the read-only recommended setting on a saved document.</span>
+          </span>
+          <span data-ttu-id="e0061-195">Par exemple, si un document a été enregistré en lecture seule recommandée est activée, définissant le <paramref name="ReadOnly" /> argument <b>false</b> n’entraîne pas le fichier à ouvrir en lecture-écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-195">For example, if a document has been saved with read-only recommended turned on, setting the <paramref name="ReadOnly" /> argument to <b>False</b> will not cause the file to be opened as read/write.</span>
+          </span>
+        </param>
+        <param name="AddToRecentFiles">
+          <span data-ttu-id="e0061-196">
+            <b>True</b> pour ajouter le nom de fichier à la liste des fichiers récemment utilisés en bas du menu Fichier.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-196">
+              <b>True</b> to add the file name to the list of recently used files at the bottom of the File menu.</span>
+          </span>
+        </param>
+        <param name="PasswordDocument">
+          <span data-ttu-id="e0061-197">Mot de passe nécessaire pour ouvrir le document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-197">The password for opening the document.</span>
+          </span>
+        </param>
+        <param name="PasswordTemplate">
+          <span data-ttu-id="e0061-198">Mot de passe nécessaire pour ouvrir le modèle.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-198">The password for opening the template.</span>
+          </span>
+        </param>
+        <param name="Revert">
+          <span data-ttu-id="e0061-199">Contrôles que se passe-t-il si <paramref name="FileName" /> est le nom d’un document ouvert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-199">Controls what happens if <paramref name="FileName" /> is the name of an open document.</span>
+          </span>
+          <span data-ttu-id="e0061-200">
+            <b>True</b> pour ignorer les modifications non enregistrées dans le document ouvert et rouvrez le fichier.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-200">
+              <b>True</b> to discard any unsaved changes to the open document and reopen the file.</span>
+          </span>
+          <span data-ttu-id="e0061-201">
+            <b>False</b> pour activer le document ouvert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-201">
+              <b>False</b> to activate the open document.</span>
+          </span>
+        </param>
+        <param name="WritePasswordDocument">
+          <span data-ttu-id="e0061-202">Mot de passe nécessaire à l'enregistrement des modifications apportées au document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-202">The password for saving changes to the document.</span>
+          </span>
+        </param>
+        <param name="WritePasswordTemplate">
+          <span data-ttu-id="e0061-203">Mot de passe nécessaire à l'enregistrement des modifications apportées au modèle.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-203">The password for saving changes to the template.</span>
+          </span>
+        </param>
+        <param name="Format">
+          <span data-ttu-id="e0061-204">Le convertisseur de fichier à utiliser pour ouvrir le document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-204">The file converter to be used to open the document.</span>
+          </span>
+          <span data-ttu-id="e0061-205">Peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constantes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-205">Can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constants.</span>
+          </span>
+          <span data-ttu-id="e0061-206">La valeur par défaut est <see cref="F:Microsoft.Office.Interop.Word.WdOpenFormat.wdOpenFormatAuto" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-206">The default value is <see cref="F:Microsoft.Office.Interop.Word.WdOpenFormat.wdOpenFormatAuto" />.</span>
+          </span>
+        </param>
+        <param name="Encoding">
+          <span data-ttu-id="e0061-207">Codage de document (code page ou jeu de caractères) à être utilisé par Microsoft Word lorsque vous affichez le document enregistré.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-207">The document encoding (code page or character set) to be used by Microsoft Word when you view the saved document.</span>
+          </span>
+          <span data-ttu-id="e0061-208">Peut être valide <see cref="T:Microsoft.Office.Core.MsoEncoding" /> valeur d’énumération.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-208">Can be any valid <see cref="T:Microsoft.Office.Core.MsoEncoding" /> enumeration value.</span>
+          </span>
+          <span data-ttu-id="e0061-209">La valeur par défaut est la page de codes système.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-209">The default value is the system code page.</span>
+          </span>
+        </param>
+        <param name="Visible">
+          <span data-ttu-id="e0061-p130">
+            <b>True</b> si le document est ouvert dans une fenêtre visible. La valeur par défaut est <b>True</b>. </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-p130">
+              <b>True</b> if the document is opened in a visible window. The default value is <b>True</b>.</span>
+          </span>
+        </param>
+        <param name="OpenAndRepair">
+          <span data-ttu-id="e0061-212">
+            <b>True</b> pour réparer le document afin d'éviter toute altération.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-212">
+              <b>True</b> to repair the document to prevent document corruption.</span>
+          </span>
+        </param>
+        <param name="DocumentDirection">
+          <span data-ttu-id="e0061-213">Indique le flux horizontal du texte dans un document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-213">Indicates the horizontal flow of text in a document.</span>
+          </span>
+          <span data-ttu-id="e0061-214">Peut être valide <see cref="T:Microsoft.Office.Interop.Word.WdDocumentDirection" /> constante.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-214">Can be any valid <see cref="T:Microsoft.Office.Interop.Word.WdDocumentDirection" /> constant.</span>
+          </span>
+          <span data-ttu-id="e0061-215">La valeur par défaut est <see cref="F:Microsoft.Office.Interop.Word.WdDocumentDirection.wdLeftToRight" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-215">The default value is <see cref="F:Microsoft.Office.Interop.Word.WdDocumentDirection.wdLeftToRight" />.</span>
+          </span>
+        </param>
+        <param name="NoEncodingDialog">
+          <span data-ttu-id="e0061-p132">
+            <b>True</b>: pour ne plus afficher la boîte de dialogue Codage que Word affiche lorsque le codage de texte n'est pas reconnu. La valeur par défaut est <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-p132">
+              <b>True</b> to skip displaying the Encoding dialog box that Word displays if the text encoding cannot be recognized. The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="XMLTransform">
+          <span data-ttu-id="e0061-218">Spécifie la transformation à utiliser.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-218">Specifies a transform to use.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="e0061-219">Ouvre le document spécifié et l’ajoute à la <see cref="T:Microsoft.Office.Interop.Word.Documents" /> collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-219">Opens the specified document and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Documents" /> collection.</span>
+          </span>
+        </summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Word._Document" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenOld">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document OpenOld (ref object FileName, ref object ConfirmConversions, ref object ReadOnly, ref object AddToRecentFiles, ref object PasswordDocument, ref object PasswordTemplate, ref object Revert, ref object WritePasswordDocument, ref object WritePasswordTemplate, ref object Format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document OpenOld([in]object&amp; FileName, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; AddToRecentFiles, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate, [in]object&amp; Format) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.OpenOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenOld (ByRef FileName As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef AddToRecentFiles As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object, Optional ByRef Format As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddToRecentFiles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">To be added.</param>
+        <param name="ConfirmConversions">To be added.</param>
+        <param name="ReadOnly">To be added.</param>
+        <param name="AddToRecentFiles">To be added.</param>
+        <param name="PasswordDocument">To be added.</param>
+        <param name="PasswordTemplate">To be added.</param>
+        <param name="Revert">To be added.</param>
+        <param name="WritePasswordDocument">To be added.</param>
+        <param name="WritePasswordTemplate">To be added.</param>
+        <param name="Format">To be added.</param>
+        <summary>
+          <span data-ttu-id="e0061-220">Réservé à une utilisation interne.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-220">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Documents.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e0061-221">Cette propriété renvoie un objet qui représente l'objet parent de l'objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-221">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save (ref object NoPrompt, ref object OriginalFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save([in]object&amp; NoPrompt, [in]object&amp; OriginalFormat) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.Save(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (Optional ByRef NoPrompt As Object, Optional ByRef OriginalFormat As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="NoPrompt" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OriginalFormat" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="NoPrompt">
+          <span data-ttu-id="e0061-222">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-222">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-223">
+            <b>True</b> pour que Microsoft Word enregistre automatiquement tous les documents ; <b>False</b> pour que Word invite l’utilisateur à enregistrer chaque document a été modifié depuis son dernier enregistrement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-223">
+              <b>True</b> to have Microsoft Word automatically save all documents; <b>False</b> to have Word prompt the user to save each document that has changed since it was last saved.</span>
+          </span>
+        </param>
+        <param name="OriginalFormat">
+          <span data-ttu-id="e0061-224">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-224">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="e0061-225">Spécifie la manière dont les documents sont enregistrés.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-225">Specifies the way the documents are saved.</span>
+          </span>
+          <span data-ttu-id="e0061-226">Peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdOriginalFormat" />constantes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-226">Can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdOriginalFormat" />constants.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="e0061-227">Enregistre tous les documents dans le <see cref="P:Microsoft.Office.Interop.Word._Application.Documents" /> collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-227">Saves all the documents in the <see cref="P:Microsoft.Office.Interop.Word._Application.Documents" /> collection.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="e0061-228">
+            <para>Si un document n’a pas été précédemment enregistré, la boîte de dialogue Enregistrer sous invite l’utilisateur pour un nom de fichier.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e0061-228">
+              <para>If a document hasn't been saved before, the Save As dialog box prompts the user for a file name.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

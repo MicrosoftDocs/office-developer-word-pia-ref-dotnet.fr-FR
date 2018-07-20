@@ -1,0 +1,105 @@
+<Type Name="ApplicationEvents4_XMLSelectionChangeEventHandler" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_XMLSelectionChangeEventHandler">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f4fe9386133b4b505fc3b041b5363f45323b85e8" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20668471" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_XMLSelectionChangeEventHandler(Selection Sel, XMLNode OldXMLNode, XMLNode NewXMLNode, ref int Reason);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationEvents4_XMLSelectionChangeEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_XMLSelectionChangeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ApplicationEvents4_XMLSelectionChangeEventHandler(Sel As Selection, OldXMLNode As XMLNode, NewXMLNode As XMLNode, ByRef Reason As Integer)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ApplicationEvents4_XMLSelectionChangeEventHandler(Selection ^ Sel, XMLNode ^ OldXMLNode, XMLNode ^ NewXMLNode, int % Reason);" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="Sel" Type="Microsoft.Office.Interop.Word.Selection" />
+    <Parameter Name="OldXMLNode" Type="Microsoft.Office.Interop.Word.XMLNode" />
+    <Parameter Name="NewXMLNode" Type="Microsoft.Office.Interop.Word.XMLNode" />
+    <Parameter Name="Reason" Type="System.Int32&amp;" RefType="ref" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="Sel">
+      <span data-ttu-id="03fff-101">
+        <see cref="T:Microsoft.Office.Interop.Word.Selection" />.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="03fff-101"></span>
+      </span>
+      <span data-ttu-id="03fff-102">Texte sélectionné, y compris les éléments XML.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="03fff-102">The text selected, including XML elements.</span>
+      </span>
+      <span data-ttu-id="03fff-103">Si aucun texte n’est sélectionné, le <paramref name="Sel" /> paramètre renvoie nothing ou le premier caractère à droite du point d’insertion.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="03fff-103">If no text is selected, the <paramref name="Sel" /> parameter returns either nothing or the first character to the right of the insertion point.</span>
+      </span>
+    </param>
+    <param name="OldXMLNode">
+      <span data-ttu-id="03fff-104">
+        <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="03fff-104"></span>
+      </span>
+      <span data-ttu-id="03fff-105">Nœud XML à partir duquel le point d'insertion est déplacé.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="03fff-105">The XML node from which the insertion point is moving.</span>
+      </span>
+    </param>
+    <param name="NewXMLNode">
+      <span data-ttu-id="03fff-106">
+        <b>XMLNode</b>.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="03fff-106">
+          <b>XMLNode</b>.</span>
+      </span>
+      <span data-ttu-id="03fff-107">Nœud XML vers lequel le point d'insertion est déplacé.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="03fff-107">The XML node to which the insertion point is moving.</span>
+      </span>
+    </param>
+    <param name="Reason">
+      <span data-ttu-id="03fff-108">
+        <b>Integer</b>obligatoire.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="03fff-108">Required <b>Integer</b>.</span>
+      </span>
+      <span data-ttu-id="03fff-109">Raison de la raison pour laquelle la sélection a été modifiée.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="03fff-109">The reason why the selection has changed.</span>
+      </span>
+      <span data-ttu-id="03fff-110">Peut être un de la <see cref="T:Microsoft.Office.Interop.Word.WdXMLSelectionChangeReason" /> constantes.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="03fff-110">Can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdXMLSelectionChangeReason" /> constants.</span>
+      </span>
+    </param>
+    <summary>
+      <span data-ttu-id="03fff-111">Un type de <b>délégué</b> utilisé pour ajouter un gestionnaire d’événements pour le <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.XMLSelectionChange" /> événement.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="03fff-111">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.XMLSelectionChange" /> event.</span>
+      </span>
+      <span data-ttu-id="03fff-112">L’événement <b>XMLSelectionChange</b> se produit lorsque le nœud XML parent de la sélection actuelle change.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="03fff-112">The <b>XMLSelectionChange</b> event occurs when the parent XML node of the current selection changes.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

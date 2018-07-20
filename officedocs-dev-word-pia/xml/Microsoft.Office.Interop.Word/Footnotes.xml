@@ -1,0 +1,814 @@
+<Type Name="Footnotes" FullName="Microsoft.Office.Interop.Word.Footnotes">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a1270ec604789e3a9b5487a8698f15fad638a340" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20668105" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Footnotes : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Footnotes implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Footnotes" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Footnotes&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Footnotes : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020942-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="553a9-101">Une collection de <see cref="T:Microsoft.Office.Interop.Word.Footnote" /> objets qui représentent toutes les notes de fin dans une sélection, une plage ou un document.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="553a9-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Footnote" /> objects that represent all the footnotes in a selection, range, or document.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="553a9-102">
+        <para>Utilisez la propriété <b>notes de fin</b> d’une <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet pour renvoyer la collection <b>Footnotes</b> .</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> pour ajouter une note de bas de page à la collection <b>Footnotes</b> .</para>
+        <para>Utiliser <b>Footnotes</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un objet <b>Footnot</b>e. Le numéro d’index représente la position de la note de la sélection, une plage ou un document.</para>
+        <para>Bas de page situées à la fin d’un document ou d’une section sont considérées comme des notes de fin et sont inclus dans le <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> collection.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="553a9-102">
+          <para>Use the <b>Footnotes</b> property of a <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, or <see cref="T:Microsoft.Office.Interop.Word.Document" /> object to return the <b>Footnotes</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> method to add a footnote to the <b>Footnotes</b> collection.</para>
+          <para>Use <b>Footnotes</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <b>Footnot</b>e object. The index number represents the position of the footnote in the selection, range, or document.</para>
+          <para>Footnotes positioned at the end of a document or section are considered endnotes and are included in the <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> collection.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Footnote Add (Microsoft.Office.Interop.Word.Range Range, ref object Reference, ref object Text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Footnote Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Reference, [in]object&amp; Text) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Footnote</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="Reference" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Text" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">
+          <span data-ttu-id="553a9-103">Objet <b>Range</b> obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-103">Required <b>Range</b> object.</span>
+          </span>
+          <span data-ttu-id="553a9-104">Plage du document où doit figurer la note de fin ou la note de bas de page.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-104">The range marked for the endnote or footnote.</span>
+          </span>
+          <span data-ttu-id="553a9-105">Il peut s'agir d'une plage réduite (point d'insertion).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-105">This can be a collapsed range.</span>
+          </span>
+        </param>
+        <param name="Reference">
+          <span data-ttu-id="553a9-106">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-106">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="553a9-107">Texte d'une marque de référence personnalisée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-107">The text for the custom reference mark.</span>
+          </span>
+          <span data-ttu-id="553a9-108">Si cet argument est omis, Microsoft Word insère une marque de référence numérotée automatiquement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-108">If this argument is omitted, Microsoft Word inserts an automatically numbered reference mark.</span>
+          </span>
+        </param>
+        <param name="Text">
+          <span data-ttu-id="553a9-109">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-109">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="553a9-110">Texte de la note de fin ou de la note de bas de page.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-110">The text of the endnote or footnote.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="553a9-111">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Footnote" /> object qui représente un commentaire ajouté à une plage.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-111">Returns a <see cref="T:Microsoft.Office.Interop.Word.Footnote" /> object that represents a footnote added to a range.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="553a9-112">
+            <para>Pour spécifier un symbole pour le <paramref name="Reference" /> argument, utilisez la syntaxe {<paramref name="FontName CharNum" />}. <paramref name="FontName" /> est le nom de la police qui contient le symbole. Noms des polices décoratives s’affichent dans la zone Police de la boîte de dialogue symbole (menu Insertion). <paramref name="CharNum" /> est la somme de 31 et le numéro correspondant à la position du symbole que vous voulez insérer, en partant de gauche à droite dans la table des symboles. Par exemple, pour spécifier le symbole oméga (ω) occupe la position 56 dans la table de symboles de la police Symbol, l’argument serait « {Symbol 87} ».</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-112">
+              <para>To specify a symbol for the <paramref name="Reference" /> argument, use the syntax {<paramref name="FontName CharNum" />}. <paramref name="FontName" /> is the name of the font that contains the symbol. Names of decorative fonts appear in the Font box in the Symbol dialog box (Insert menu). <paramref name="CharNum" /> is the sum of 31 and the number corresponding to the position of the symbol you want to insert, counting from left to right in the table of symbols. For example, to specify an omega symbol (ω) at position 56 in the table of symbols in the Symbol font, the argument would be "{Symbol 87}".</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-113">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinuationNotice">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range ContinuationNotice { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range ContinuationNotice" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.ContinuationNotice" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinuationNotice As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ ContinuationNotice { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-114">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente la continuation de note de bas de page.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-114">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the footnote continuation notice.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinuationSeparator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range ContinuationSeparator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range ContinuationSeparator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.ContinuationSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinuationSeparator As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ ContinuationSeparator { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-115">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente le séparateur de continuation de note.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the footnote continuation separator.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public void Convert ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.Convert" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Convert ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Convert();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-116">Convertit les notes de fin en notes de fin.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-116">Converts footnotes to endnotes.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-117">Renvoie le nombre d’éléments dans la collection spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-117">Returns the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-118">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-118">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="553a9-119">
+            <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-119">
+              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Footnote this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Footnote Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Footnote" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Footnote ^ default[int] { Microsoft::Office::Interop::Word::Footnote ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Footnote</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="553a9-120">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-120">An <b>Integer</b> indicating the ordinal position of the individual object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="553a9-121">Renvoie un objet spécifique appartenant à une collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-121">Returns an individual object in a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdFootnoteLocation Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdFootnoteLocation Location" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Property Location As WdFootnoteLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFootnoteLocation Location { Microsoft::Office::Interop::Word::WdFootnoteLocation get(); void set(Microsoft::Office::Interop::Word::WdFootnoteLocation value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdFootnoteLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-122">Cette propriété renvoie ou définit la position de toutes les notes de bas de page.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-122">Returns or sets the position of all footnotes.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="553a9-123">
+            <para>La propriété <b>Location</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdFootnoteLocation" /> constantes.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-123">
+              <para>The <b>Location</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdFootnoteLocation" /> constants.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberingRule">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdNumberingRule NumberingRule { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdNumberingRule NumberingRule" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.NumberingRule" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberingRule As WdNumberingRule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdNumberingRule NumberingRule { Microsoft::Office::Interop::Word::WdNumberingRule get(); void set(Microsoft::Office::Interop::Word::WdNumberingRule value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdNumberingRule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-124">Renvoie ou définit les notes de fin de la façon dont est numérotées après les sauts de page ou de section.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-124">Returns or sets the way footnotes are numbered after page breaks or section breaks.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="553a9-125">
+            <para>La propriété <b>NumberingRule</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdNumberingRule" /> constantes.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-125">
+              <para>The <b>NumberingRule</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdNumberingRule" /> constants.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdNoteNumberStyle NumberStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdNoteNumberStyle NumberStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.NumberStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberStyle As WdNoteNumberStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdNoteNumberStyle NumberStyle { Microsoft::Office::Interop::Word::WdNoteNumberStyle get(); void set(Microsoft::Office::Interop::Word::WdNoteNumberStyle value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdNoteNumberStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-126">Cette propriété renvoie ou définit le style de numérotation pour les notes de fin dans une sélection, une plage ou un document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-126">Returns or sets the number style for the footnotes in a selection, range, or document.</span>
+          </span>
+          <span data-ttu-id="553a9-127">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-127">Read/write.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="553a9-128">
+            <para>La propriété <b>NumberStyle</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdNoteNumberStyle" /> constantes. Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-128">
+              <para>The <b>NumberStyle</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdNoteNumberStyle" /> constants. Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-129">Cette propriété renvoie un objet qui représente l'objet parent de l'objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-129">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetContinuationNotice">
+      <MemberSignature Language="C#" Value="public void ResetContinuationNotice ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetContinuationNotice() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.ResetContinuationNotice" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetContinuationNotice ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetContinuationNotice();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-130">Rétablit l’indicateur de continuation de bas de page par défaut.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-130">Resets the footnote continuation notice to the default notice.</span>
+          </span>
+          <span data-ttu-id="553a9-131">L'indicateur par défaut est vide (sans texte).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-131">The default notice is blank (no text).</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetContinuationSeparator">
+      <MemberSignature Language="C#" Value="public void ResetContinuationSeparator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetContinuationSeparator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.ResetContinuationSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetContinuationSeparator ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetContinuationSeparator();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-132">Rétablit le séparateur de continuation de note par défaut.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-132">Resets the footnote continuation separator to the default separator.</span>
+          </span>
+          <span data-ttu-id="553a9-133">Le séparateur par défaut est représenté par une longue ligne horizontale qui sépare le texte du document de la suite des notes de la page précédente.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-133">The default separator is a long horizontal line that separates document text from notes continued from the previous page.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetSeparator">
+      <MemberSignature Language="C#" Value="public void ResetSeparator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetSeparator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.ResetSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetSeparator ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetSeparator();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-134">Rétablit le séparateur de note de bas de page par défaut.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-134">Resets the footnote separator to the default separator.</span>
+          </span>
+          <span data-ttu-id="553a9-135">Le séparateur par défaut est représenté par une ligne horizontale courte qui sépare les notes du texte du document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-135">The default separator is a short horizontal line that separates document text from notes.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Separator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range Separator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range Separator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.Separator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Separator As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Separator { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-136">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente le séparateur de note.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-136">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the footnote separator.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartingNumber">
+      <MemberSignature Language="C#" Value="public int StartingNumber { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartingNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Footnotes.StartingNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartingNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartingNumber { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-137">Cette propriété renvoie ou définit le numéro de la première note.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-137">Returns or sets the starting note number.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SwapWithEndnotes">
+      <MemberSignature Language="C#" Value="public void SwapWithEndnotes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SwapWithEndnotes() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Footnotes.SwapWithEndnotes" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SwapWithEndnotes ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SwapWithEndnotes();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="553a9-138">Convertit toutes les notes de bas de page dans un document en notes de fin, et inversement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-138">Converts all footnotes in a document to endnotes and vice versa.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="553a9-139">
+            <para>Pour convertir une plage de notes de fin en notes de fin, utilisez la <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Convert" /> méthode.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="553a9-139">
+              <para>To convert a range of footnotes to endnotes, use the <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Convert" /> method.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

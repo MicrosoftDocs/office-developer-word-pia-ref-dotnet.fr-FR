@@ -1,0 +1,641 @@
+<Type Name="KeyBindings" FullName="Microsoft.Office.Interop.Word.KeyBindings">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="82a4dc883d5b7257bb70e07ee869a0f2dba9b2f1" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20668106" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract KeyBindings implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.KeyBindings" />
+  <TypeSignature Language="VB.NET" Value="Public Interface KeyBindings&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class KeyBindings : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020996-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="1fd47-101">Une collection de <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objets qui représentent les affectations de touches personnalisées dans le contexte actuel.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="1fd47-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objects that represent the custom key assignments in the current context.</span>
+      </span>
+      <span data-ttu-id="1fd47-102">Effectuez ces affectations dans la boîte de dialogue Personnaliser le clavier.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="1fd47-102">Custom key assignments are made in the Customize Keyboard dialog box.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="1fd47-103">
+        <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" /> propriété pour renvoyer la collection <b>KeyBindings</b> .</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> pour ajouter un objet <b>KeyBinding</b> à la collection <b>KeyBindings</b> .</para>
+        <para>Utiliser <b>KeyBindings</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>KeyBinding</b> .</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="1fd47-103">
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" /> property to return the <b>KeyBindings</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> method to add a <b>KeyBinding</b> object to the <b>KeyBindings</b> collection.</para>
+          <para>Use <b>KeyBindings</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <b>KeyBinding</b> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.KeyBinding Add (Microsoft.Office.Interop.Word.WdKeyCategory KeyCategory, string Command, int KeyCode, ref object KeyCode2, ref object CommandParameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.KeyBinding Add([in]valuetype Microsoft.Office.Interop.Word.WdKeyCategory KeyCategory, [in]string Command, [in]int32 KeyCode, [in]object&amp; KeyCode2, [in]object&amp; CommandParameter) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (KeyCategory As WdKeyCategory, Command As String, KeyCode As Integer, Optional ByRef KeyCode2 As Object, Optional ByRef CommandParameter As Object) As KeyBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.KeyBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="KeyCategory" Type="Microsoft.Office.Interop.Word.WdKeyCategory" />
+        <Parameter Name="Command" Type="System.String" />
+        <Parameter Name="KeyCode" Type="System.Int32" />
+        <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="KeyCategory">
+          <span data-ttu-id="1fd47-104">Requis <see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-104">Required <see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />.</span>
+          </span>
+          <span data-ttu-id="1fd47-105">Catégorie d'affectation de touches.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-105">The category of the key assignment.</span>
+          </span>
+        </param>
+        <param name="Command">
+          <span data-ttu-id="1fd47-106">
+            <b>String</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-106">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="1fd47-107">La commande que la combinaison de touches spécifiée exécute.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-107">The command that the specified key combination executes.</span>
+          </span>
+        </param>
+        <param name="KeyCode">
+          <span data-ttu-id="1fd47-108">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-108">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="1fd47-109">Une clé que vous spécifiez à l’aide d’une de le <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> constantes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-109">A key you specify by using one of the <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> constants.</span>
+          </span>
+        </param>
+        <param name="KeyCode2">
+          <span data-ttu-id="1fd47-110">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-110">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="1fd47-111">Une deuxième clé que vous spécifiez à l’aide d’une de la <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> constantes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-111">A second key you specify by using one of the <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> constants.</span>
+          </span>
+        </param>
+        <param name="CommandParameter">
+          <span data-ttu-id="1fd47-112">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-112">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="1fd47-113">Texte supplémentaire, le cas échéant, requis pour la commande spécifiée par <paramref name="Command" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-113">Additional text, if any, required for the command specified by <paramref name="Command" />.</span>
+          </span>
+          <span data-ttu-id="1fd47-114">Pour plus d'informations, voir les remarques ci-dessous.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-114">For details, see the Remarks section below.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="1fd47-115">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objet qui représente une nouvelle touche de raccourci pour une macro, une commande intégrée, la police, insertion automatique entrée, style ou symbole.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> object that represents a new shortcut key for a macro, built-in command, font, AutoText entry, style, or symbol.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="1fd47-116">
+            <para>Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> méthode pour créer le <paramref name="KeyCode" /> ou <paramref name="KeyCode2" /> argument.</para>
+            <para>Dans le tableau suivant, la colonne de gauche contient les commandes qui nécessitent une valeur, et la colonne de droite décrit ce que vous devez faire pour spécifier <paramref name="CommandParameter" /> pour chacune de ces commandes. (Dans la boîte de dialogue Personnaliser le clavier (menu Outils) pour spécifier l’opération équivalente <paramref name="CommandParameter" /> équivaut à sélectionner un élément dans la zone de liste qui s’affiche lorsque vous sélectionnez une des commandes suivantes dans la zone commandes.)</para>
+            <list type="table">
+              <item>
+                <description>
+                  <b>Bordures</b>, <b>couleur</b>ou <b>une trame</b></description>
+                <description>un numéro — spécifié en tant que texte, correspondant à la position du paramètre sélectionné dans la zone de liste qui contient des valeurs, où 0 (zéro) est le premier élément, 1 est le deuxième élément et ainsi de suite</description>
+              </item>
+              <item>
+                <description>
+                  <b>colonnes</b>
+                </description>
+                <description>un nombre compris entre 1 et 45, au format texte — correspondant au nombre de colonnes que vous souhaitez appliquer</description>
+              </item>
+              <item>
+                <description>
+                  <b>Condensé</b>
+                </description>
+                <description>taille de texte comprise entre 0,1 et 12,75 points spécifiée par incréments de 0,05 point (72 points = 1 pouce)</description>
+              </item>
+              <item>
+                <description>
+                  <b>Expanded</b>
+                </description>
+                <description>taille de texte comprise entre 0,1 et 12,75 points, spécifiée par incréments de 0,05 point (72 points = 1 pouce)</description>
+              </item>
+              <item>
+                <description>
+                  <b>FileOpenFile</b>
+                </description>
+                <description> Le chemin d’accès et le nom du fichier à ouvrir. Si le chemin d’accès n’est pas spécifié, le dossier actif est utilisé.</description>
+              </item>
+              <item>
+                <description>
+                  <b>Taille de police</b>
+                </description>de
+              <description>taille de texte positive, spécifiée par incréments de 0,5 point (72 points = 1 pouce)</description></item>
+              <item>
+                <description>
+                  <b>Décalage bas</b>
+                  <b>relief</b>
+                </description>
+                <description>A texte mesure entre le point 1 et 64 points, spécifiée par incréments de 0,5 point (72 points = 1 pouce)</description>
+              </item>
+              <item>
+                <description>
+                  <b>Symbole</b>
+                </description>
+                <description>une chaîne créée en concaténant <b>une instruction Chr()</b> et le nom d’une police de symboles (par exemple, Chr (167) &amp; « Symbole »)</description>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-116">
+              <para>You can use the <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> method to create the <paramref name="KeyCode" /> or <paramref name="KeyCode2" /> argument.</para>
+              <para>In the following table, the left-hand column contains commands that require a command value, and the right-hand column describes what you must do to specify <paramref name="CommandParameter" /> for each of these commands. (The equivalent action in the Customize Keyboard dialog box (Tools menu) to specifying <paramref name="CommandParameter" /> is selecting an item in the list box that appears when you select one of the following commands in the Commands box.)</para>
+              <list type="table">
+                <item>
+                  <description>
+                    <b>Borders</b>, <b>Color</b>, or <b>Shading</b></description>
+                  <description>A number— specified as text— corresponding to the position of the setting selected in the list box that contains values, where 0 (zero) is the first item, 1 is the second item, and so on</description>
+                </item>
+                <item>
+                  <description>
+                    <b>Columns</b>
+                  </description>
+                  <description>A number between 1 and 45— specified as text— corresponding to the number of columns you want to apply</description>
+                </item>
+                <item>
+                  <description>
+                    <b>Condensed</b>
+                  </description>
+                  <description>A text measurement between 0.1 point and 12.75 points specified in 0.05-point increments (72 points = 1 inch)</description>
+                </item>
+                <item>
+                  <description>
+                    <b>Expanded</b>
+                  </description>
+                  <description>A text measurement between 0.1 point and 12.75 points specified in 0.05-point increments (72 points = 1 inch)</description>
+                </item>
+                <item>
+                  <description>
+                    <b>FileOpenFile</b>
+                  </description>
+                  <description>The path and file name of the file to be opened. If the path isn't specified, the current folder is used.</description>
+                </item>
+                <item>
+                  <description>
+                    <b>Font Size</b>
+                  </description>
+                  <description>A positive text measurement, specified in 0.5-point increments (72 points = 1 inch)</description>
+                </item>
+                <item>
+                  <description>
+                    <b>Lowered</b>, <b>Raised</b></description>
+                  <description>A text measurement between 1 point and 64 points, specified in 0.5-point increments (72 points = 1 inch)</description>
+                </item>
+                <item>
+                  <description>
+                    <b>Symbol</b>
+                  </description>
+                  <description>A string created by concatenating a <b>Chr()</b> instruction and the name of a symbol font (for example, Chr(167) &amp; "Symbol")</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1fd47-117">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearAll">
+      <MemberSignature Language="C#" Value="public void ClearAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearAll() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.ClearAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAll();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="1fd47-118">Efface toutes les affectations de touches personnalisées et rétablit les affectations de touches Microsoft Word d'origine.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-118">Clears all the customized key assignments and restores the original Microsoft Word shortcut key assignments.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="1fd47-119">
+            <para>Après avoir appliqué la méthode <b>ClearAll</b> pour le <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> d’objets, les affectations de touches dans le document ou le modèle spécifié sont réinitialiser les paramètres par défaut. Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" /> propriété pour spécifier un contexte de modèle ou de document avant d’utiliser la méthode <b>ClearAll</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-119">
+              <para>After applying the <b>ClearAll</b> method to the <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> object, the keys assignments in the specified template or document are reset to the default settings. Use the <see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" /> property to specify a document or template context prior to using the <b>ClearAll</b> method.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public object Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Context" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Context { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1fd47-120">Renvoie un object qui représente l’emplacement de stockage de la combinaison de touches spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-120">Returns an object that represents the storage location of the specified key binding.</span>
+          </span>
+          <span data-ttu-id="1fd47-121">Cette propriété peut renvoyer un <see cref="T:Microsoft.Office.Interop.Word.Document" />, <see cref="T:Microsoft.Office.Interop.Word.Template" />, ou <see cref="T:Microsoft.Office.Interop.Word.Application" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-121">This property can return a <see cref="T:Microsoft.Office.Interop.Word.Document" />, <see cref="T:Microsoft.Office.Interop.Word.Template" />, or <see cref="T:Microsoft.Office.Interop.Word.Application" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="1fd47-122">
+            <para>Les affectations de touches prédéfinies (par exemple, CTRL + I pour <b>italique</b>) renvoient l’objet <b>Application</b> comme le contexte. Les combinaisons de touches que vous ajoutez renvoient un objet <b>Document</b> ou un <b>modèle</b> , en fonction du contexte de personnalisation en cours lorsque le <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objet a été ajouté.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-122">
+              <para>Built-in key assignments (for example, CTRL+I for <b>Italic</b>) return the <b>Application</b> object as the context. Any key bindings you add will return a <b>Document</b> or <b>Template</b> object, depending on the customization context in effect when the <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> object was added.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1fd47-123">Renvoie le nombre d’éléments dans la collection spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-123">Returns the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1fd47-124">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-124">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="1fd47-125">
+            <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-125">
+              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.KeyBinding this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.KeyBinding Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As KeyBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::KeyBinding ^ default[int] { Microsoft::Office::Interop::Word::KeyBinding ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.KeyBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="1fd47-126">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-126">An <b>Integer</b> indicating the ordinal position of the individual object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="1fd47-127">Renvoie un objet spécifique appartenant à une collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-127">Returns an individual object in a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.KeyBinding Key (int KeyCode, ref object KeyCode2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.KeyBinding Key([in]int32 KeyCode, [in]object&amp; KeyCode2) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.Key(System.Int32,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Key (KeyCode As Integer, Optional ByRef KeyCode2 As Object) As KeyBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.KeyBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="KeyCode" Type="System.Int32" />
+        <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="KeyCode">
+          <span data-ttu-id="1fd47-128">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-128">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="1fd47-129">Une clé que vous spécifiez à l'aide d'une des constantes <b>WdKey</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-129">A key you specify by using one of the <b>WdKey</b> constants.</span>
+          </span>
+        </param>
+        <param name="KeyCode2">
+          <span data-ttu-id="1fd47-130">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-130">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="1fd47-131">Une deuxième clé que vous spécifiez à l’aide d’une de la <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> constantes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-131">A second key you specify by using one of the <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> constants.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="1fd47-132">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> object qui représente la combinaison de touches personnalisée spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-132">Returns a <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> object that represents the specified custom key combination.</span>
+          </span>
+          <span data-ttu-id="1fd47-133">Si la combinaison de touches n'existe pas, cette méthode renvoie la <b>valeur Nothing</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-133">If the key combination doesn't exist, this method returns <b>Nothing</b>.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="1fd47-134">
+            <para>Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> méthode pour créer le <paramref name="KeyCode" /> ou <paramref name="KeyCode2" /> argument.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-134">
+              <para>You can use the <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> method to create the <paramref name="KeyCode" /> or <paramref name="KeyCode2" /> argument.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1fd47-135">Cette propriété renvoie un objet qui représente l'objet parent de l'objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1fd47-135">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

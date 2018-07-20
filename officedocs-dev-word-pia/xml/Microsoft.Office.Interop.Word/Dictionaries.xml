@@ -1,0 +1,453 @@
+<Type Name="Dictionaries" FullName="Microsoft.Office.Interop.Word.Dictionaries">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="956b16fdc0aae78cbea233341ebca861e8235368" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20668967" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Dictionaries : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dictionaries implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dictionaries" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Dictionaries&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Dictionaries : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000209AC-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="6d50a-101">Une collection de <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objets incluant les dictionnaires personnels actifs.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="6d50a-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objects that includes the active custom spelling dictionaries.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="6d50a-102">
+        <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Application.CustomDictionaries" /> propriété pour renvoyer la collection de dictionnaires personnels actifs.</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> pour ajouter un nouveau dictionnaire personnel à la collection de dictionnaires personnels actifs. Si il n’est pas un fichier avec le nom spécifié par <paramref name="FileName" />, Word crée it.</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.ClearAll" /> méthode décharger tous les dictionnaires personnels. Notez que cette méthode ne supprime pas les fichiers de dictionnaire. Une fois que vous utilisez cette méthode, le nombre de dictionnaires dans la collection est 0 (zéro).</para>
+        <para>Pour définir le dictionnaire personnel auquel les nouveaux mots sont ajoutés à l’aide de la <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> propriété. Si vous tentez de définir cette propriété sur un dictionnaire qui n’est pas un dictionnaire personnalisé, une erreur se produit.</para>
+        <para>La <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.Maximum" /> propriété renvoie le nombre maximal de dictionnaires personnels d’orthographe simultanées que l’application peut prendre en charge. Dans Microsoft Word, ce nombre est 10.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="6d50a-102">
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Word._Application.CustomDictionaries" /> property to return the collection of currently active custom dictionaries.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> method to add a new custom dictionary to the collection of active custom dictionaries. If there isn't a file with the name specified by <paramref name="FileName" />, Word creates it.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.ClearAll" /> method to unload all custom dictionaries. Note, however, that this method doesn't delete the dictionary files. After you use this method, the number of custom dictionaries in the collection is 0 (zero).</para>
+          <para>You set the custom dictionary to which new words are added by using the <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> property. If you try to set this property to a dictionary that isn't a custom dictionary, an error occurs.</para>
+          <para>The <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.Maximum" /> property returns the maximum number of simultaneous custom spelling dictionaries that the application can support. For Microsoft Word, this maximum is 10.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveCustomDictionary">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Dictionary ActiveCustomDictionary { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Dictionary ActiveCustomDictionary" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActiveCustomDictionary As Dictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveCustomDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); void set(Microsoft::Office::Interop::Word::Dictionary ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d50a-103">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object qui représente le dictionnaire personnel dans lequel les mots seront ajoutés.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-103">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the custom dictionary to which words will be added.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Dictionary Add (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Dictionary Add([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (FileName As String) As Dictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Dictionary ^ Add(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="6d50a-104">
+            <b>String</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-104">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="6d50a-105">Nom du fichier contenant le dictionnaire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-105">The string name of the dictionary file.</span>
+          </span>
+          <span data-ttu-id="6d50a-106">Si aucun chemin n'est spécifié dans cette chaîne, c'est le chemin d'accès aux outils de vérification qui est utilisé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-106">If no path is specified in the string, the proofing tools path is used.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="6d50a-107">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objet qui représente un nouveau dictionnaire d’orthographe ou de conversion personnel ajouté à la collection de dictionnaires personnels d’orthographe ou de conversion actifs.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-107">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents a new custom spelling or conversion dictionary added to the collection of active custom spelling or conversion dictionaries.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="6d50a-108">
+            <para>Si un fichier portant le nom spécifié n’existe pas, créé par Microsoft Word.</para>
+            <para>La <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> collection contient uniquement les dictionnaires personnels actifs. Les objets <b>Dictionary</b> qui sont dérivées de la <see cref="T:Microsoft.Office.Interop.Word.Languages" /> collection n’ont pas une méthode <b>Add</b> . Cela inclut les objets Dictionary renvoyés par la <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />, et <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> propriétés.</para> Utilisation de 
+          <para>les <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> propriété pour renvoyer la collection de dictionnaires personnels de conversion. Le <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> collection contient uniquement les dictionnaires personnels de conversion actifs.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-108">
+              <para>If a file with the specified name doesn't exist, Microsoft Word creates one.</para>
+              <para>The <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> collection includes only the active custom spelling dictionaries. <b>Dictionary</b> objects that are derived from the <see cref="T:Microsoft.Office.Interop.Word.Languages" /> collection don't have an <b>Add</b> method. These include the Dictionary objects returned by the <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />, and <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> properties.</para>
+              <para>Use the <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> property to return the collection of custom conversion dictionaries. The <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> collection includes only the active custom conversion dictionaries.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d50a-109">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-109">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearAll">
+      <MemberSignature Language="C#" Value="public void ClearAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearAll() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dictionaries.ClearAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAll();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d50a-110">Décharge tous les dictionnaires personnels ou de conversion.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-110">Unloads all of the custom or conversion dictionaries.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="6d50a-111">
+            <para>La méthode <b>ClearAll,</b> utilisée sur un <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> ou <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> objet ne supprime pas les fichiers de dictionnaire ou de conversion. Après avoir exécuté cette méthode, le nombre de dictionnaires personnels ou de conversion de la collection est 0 (zéro).</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-111">
+              <para>The <b>ClearAll</b> method when used on a <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> or <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> object does not delete the custom or conversion dictionary files. After using this method, the number of custom or conversion dictionaries in the collection is 0 (zero).</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d50a-112">Renvoie le nombre d’éléments dans la collection spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-112">Returns the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d50a-113">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-113">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6d50a-114">
+            <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-114">
+              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dictionaries.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Dictionary this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Dictionary Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Dictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Dictionary ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="6d50a-115">
+            <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-115">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="6d50a-116">Renvoie un objet spécifique appartenant à une collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-116">Returns an individual object in a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Maximum">
+      <MemberSignature Language="C#" Value="public int Maximum { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Maximum" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.Maximum" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Maximum As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Maximum { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d50a-117">Renvoie le nombre maximal de dictionnaires personnels de conversion ou est autorisés.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-117">Returns the maximum number of custom or conversion dictionaries allowed.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d50a-118">Cette propriété renvoie un objet qui représente l'objet parent de l'objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d50a-118">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
