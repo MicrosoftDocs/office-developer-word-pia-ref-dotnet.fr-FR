@@ -1,13 +1,5 @@
 <Type Name="CoAuthUpdate" FullName="Microsoft.Office.Interop.Word.CoAuthUpdate">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8afbe4cb2bb4043cbb3dcabbe8ea7903fb2ee981" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668586" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthUpdate" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cb489ae56e777a8913181f8d5be2c8d09a728cb2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142228" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthUpdate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthUpdate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthUpdate" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Représente une plage de texte qui a été mise à jour par un co-auteur.</summary>
-    <remarks>
-      <para>Lors de la modification d’un document avec la co-création activé simultanément, les modifications apportées par un co-auteur sont disponibles pour autres co-auteurs comme mises à jour. Chaque modification est représentée par un seul objet <b>CoAuthUpdate</b> . Lorsqu’un co-auteur enregistre leur version du document, les modifications apportées par d’autres coauteurs sont fusionnées dans version co-de cet auteur du document. Avant l’heure lorsque le co-créer enregistre une version du document, les modifications apportées par d’autres auteurs de collaboration sont disponibles sous forme de mises à jour.</para>
-      <para>, Par exemple, lorsque deux personnes modifient un document qui contient à l’origine d’un seul paragraphe avec le texte, « Fox brun. » Si le premier co-auteur modifie la phrase pour lire, « The quick brown fox saute sur le journal », puis enregistre le document, les mots « rapides » et « sur le journal » sont disponibles pour le deuxième co-auteur comme deux mises à jour dans le document. Ces deux mises à jour sont représentées dans le modèle objet de Microsoft Word 2010 comme deux objets <b>CoAuthUpdate</b> . Lorsque le deuxième co-auteur enregistre le document, les mises à jour à partir du premier co-auteur sont fusionnés dans le document.</para>
-      <para />
-    </remarks>
+    <remarks><para>Lorsqu’un document prenant en charge la co-création est modifié simultanément par plusieurs co-auteurs, les modifications apportées par un co-auteur sont disponibles pour les autres co-auteurs sous la forme de mises à jour. Chaque modification est représentée par un objet <b>CoAuthUpdate</b> unique. Lorsqu’un co-auteur enregistre sa version du document, les modifications apportées par les autres co-auteurs sont fusionnées dans cette version. Avant que le co-auteur n’enregistre une version du document, les modifications apportées par d’autres co-auteurs sont disponibles en tant que mises à jour.</para>
+      <para>Par exemple, deux personnes modifient un document qui contient au départ un seul paragraphe dont le texte est « Le renard marron ». Si le premier co-auteur modifie la phrase en « Le renard rapide marron saute par-dessus la bûche », puis enregistre le document, les parties « rapide » et « saute par-dessus la bûche » sont disponibles pour le second co-auteur sous la forme de deux mises à jour du document. Ces deux mises à jour sont représentées dans le modèle objet Microsoft Word 2010 sous la forme de deux objets <b>CoAuthUpdate</b> . Lorsque le second co-auteur enregistre le document, les mises à jour du premier co-auteur sont fusionnées dans le document.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,12 +47,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
-        <value>Un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objet qui représente l’application Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Application" /> Objet qui représente l’application Microsoft Word.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -88,15 +76,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
+        <summary>Obtient un nombre entier de 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>Entier 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</value>
-        <remarks>
-          <para>En lecture seule <b>long</b>. Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette propriété est principalement conçue pour être utilisée sur Apple Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Word a le code créateur MSWD.</para>
+        <remarks><para>Type de données <b>long</b>en lecture seule. Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». Cette propriété est principalement conçue pour être utilisée sur Apple Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Word possède le code de créateur MSWD.</para>
           <para>
-            <b>Mise en garde</b>:</para>
-          <para>Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para />
-        </remarks>
+            <b>Attention</b>: </para>
+          <para>[!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -122,8 +108,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un <see cref="T:System.Object" /> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> objet.</summary>
-        <value>Un <see cref="T:System.Object" /> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> objet.</value>
+        <summary>Obtient un <see cref="T:System.Object" /> objet qui représente l’objet parent de l' <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> objet spécifié.</summary>
+        <value><see cref="T:System.Object" /> Qui représente l’objet parent de l’objet spécifié <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,11 +137,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Range" /> Objet qui représente la partie d’un document contenue dans l’objet spécifié.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="ChartColorFormat" FullName="Microsoft.Office.Interop.Word.ChartColorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2cbca0bca2527cc63516d8972ee2ec068238e367" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668767" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartColorFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="55a04dd1372bae2f5242c5656e5564517b5a2549" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142277" /></Metadata><TypeSignature Language="C#" Value="public interface ChartColorFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartColorFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartColorFormat" />
@@ -26,9 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente la couleur d'un objet unicolore ou la couleur de premier plan ou d'arrière-plan d'un objet doté d'un remplissage à motif ou d'un dégradé.</summary>
-    <remarks>
-      <para>Utilisez une des propriétés répertoriées dans le tableau suivant pour renvoyer un <see cref="T:Microsoft.Office.Interop.Word.ChartColorFormat" /> objet.</para>
+    <summary>Représente la couleur d’un objet d’une seule couleur ou la couleur de premier plan ou d’arrière-plan d’un objet avec un dégradé ou un remplissage avec motif.</summary>
+    <remarks><para>Utilisez l’une des propriétés indiquées dans le tableau suivant pour renvoyer un <see cref="T:Microsoft.Office.Interop.Word.ChartColorFormat" /> objet.</para>
       <list type="table">
         <item>
           <description>
@@ -36,7 +27,8 @@
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-          </description>Couleur de remplissage d’arrière-plan (utilisée dans un remplissage ombré ou à motif)
+          </description>
+          <description>la couleur de remplissage d'arrière-plan (utilisée pour un remplissage à motif ou à ombrage).</description>
         </item>
         <item>
           <description>
@@ -44,11 +36,11 @@
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-          </description>remplissage de premier plan couleur (ou simplement la couleur de remplissage d’un remplissage uniforme)
+          </description>
+          <description>Couleur de remplissage du premier plan (ou simplement la couleur d'un remplissage uniforme)</description>
         </item>
       </list>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -105,10 +97,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Lorsqu’elle est utilisée avec un qualificateur d’objet, cette propriété <see cref="T:Microsoft.Office.Interop.Word._Application" /> renvoie un objet qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,13 +126,9 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. En lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, le <see cref="P:Microsoft.Office.Interop.Word.ChartColorFormat.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.ChartColorFormat.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -169,9 +155,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,9 +183,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un <b>entier</b> qui représente la valeur rouge-vert-bleu de la couleur spécifiée.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,9 +214,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit l'index d'une couleur dans le jeu de couleurs actuel.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,12 +241,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur <b>entière</b> qui représente la couleur de format de type.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Cette propriété renvoie une des opérations suivantes <see cref="T:Microsoft.Office.Core.MsoColorType" /> valeurs d’énumération :</para>
+        <summary>Renvoie une valeur de type <b>Integer</b> qui représente le type de format de couleur.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Cette propriété renvoie l’une des valeurs <see cref="T:Microsoft.Office.Core.MsoColorType" /> d’énumération suivantes:</para>
           <list type="bullet">
             <item>
               <para>
@@ -279,8 +256,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

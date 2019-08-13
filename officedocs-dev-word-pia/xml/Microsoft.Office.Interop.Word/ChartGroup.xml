@@ -1,13 +1,5 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Word.ChartGroup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4444187f8205ad4277847ad3e62bd596ec10edd2" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668589" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartGroup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c46b7a3f6b3884f675aec38fe394cce284c200df" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142270" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroup" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Représente une ou plusieurs séries tracées dans un graphique avec le même format.</summary>
-    <remarks>
-      <para>Un graphique contient un ou plusieurs groupes de graphiques, chaque groupe de graphique contient une ou plusieurs <see cref="T:Microsoft.Office.Interop.Word.Series" /> objets et chaque série contient un ou plusieurs <see cref="T:Microsoft.Office.Interop.Word.Points" /> objets. Par exemple, un seul graphique peut contenir à la fois un groupe courbes, contenant toutes les séries tracées avec le format de graphique en courbes et un groupe de graphique à barres, contenant toutes les séries tracées avec le format de graphique en barres. L’objet <b>ChartGroup</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> collection.</para>
-      <para>Utilisez <b>ChartGroups</b>(<paramref name="Index" />), où <paramref name="index" /> est le numéro d’index de groupe de graphique, pour renvoyer un seul objet <b>ChartGroup</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Un graphique contient un ou plusieurs groupes de graphiques, chaque groupe de graphique contient un <see cref="T:Microsoft.Office.Interop.Word.Series" /> ou plusieurs objets et chaque série contient un ou <see cref="T:Microsoft.Office.Interop.Word.Points" /> plusieurs objets. Par exemple, un seul graphique peut contenir un groupe courbes, contenant toutes les séries tracées avec le format de graphique en courbes et un groupe de graphique à barres, contenant toutes les séries tracées avec le format de graphique en barres. L’objet <b>ChartGroup</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> collection.</para>
+      <para>Utilisez <b>ChartGroups</b>(<paramref name="Index" />), où <paramref name="index" /> est le numéro d’index du groupe de graphiques, pour renvoyer un seul objet <b>ChartGroup</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,10 +78,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlAxisGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le type de groupe d'axes. Lecture/écriture.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />
-        </value>
+        <summary>Renvoie le type de groupe d'axes. En lecture/écriture</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,14 +109,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le facteur d'échelle des bulles dans le groupe de graphiques spécifié.  Lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Cette propriété peut être définie à un entier compris entre 0 (zéro) et 300 correspondant à un pourcentage de la taille par défaut.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie ou définit le facteur d’échelle des bulles dans le groupe graphique spécifié.  En lecture/écriture</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Cette propriété peut être définie sur une valeur entière comprise entre 0 (zéro) et 300, correspondant à un pourcentage de la taille par défaut. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CategoryCollection">
@@ -158,8 +140,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Numéro d’index dans la collection de catégories visible de la catégorie à renvoyer.</param>
-        <summary>Renvoie toutes les catégories visibles dans le groupe de graphiques ou de la catégorie spécifiée visible.</summary>
+        <param name="Index">Numéro d’index de la collection Category visible de la catégorie à renvoyer.</param>
+        <summary>Renvoie toutes les catégories visibles dans le groupe de graphiques ou la catégorie visible spécifiée.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,14 +169,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un 32 bits <b>entier</b> qui indique l’application dans laquelle l’objet spécifié a été créé. En lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, le <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un <b>nombre entier</b> de 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé. En lecture seule.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DoughnutHoleSize">
@@ -223,10 +201,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la taille du centre d'un groupe de graphiques en anneau. La taille du centre est exprimée sous forme de pourcentage de la taille du graphique, compris entre 10 et 90 pour cent. Lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit la taille du trou d'un groupe de graphiques en anneau. La taille du trou est exprimée sous la forme d'un pourcentage de la taille du graphique, compris entre 10 et 90 %. En lecture/écriture</summary>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,10 +229,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DownBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie les barres baisse d’un graphique en courbes. S’applique uniquement aux graphiques en courbes. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DownBars" />
-        </value>
+        <summary>Renvoie les barres bas d’un graphique en courbes. Ne s’applique qu’aux graphiques en courbes. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DownBars" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,10 +257,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DropLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie les lignes de projection d’une série dans un graphique en courbes ou en aires. S’applique uniquement aux graphiques en courbes ou en aires. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DropLines" />
-        </value>
+        <summary>Renvoie les lignes de projection d’une série dans un graphique en courbes ou un graphique en aires. Cette propriété ne s'applique qu'à ces deux types de graphiques. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DropLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,14 +288,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’angle du premier graphique en secteurs ou graphique en anneau, en degrés (vers la droite de la position verticale). S’applique uniquement aux graphiques en secteurs, en secteurs 3D et les graphiques en anneau. Lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Peut être une valeur comprise entre 0 et 360.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie ou définit l’angle de la première coupe graphique en secteurs ou graphique en anneaux, en degrés (dans le sens des aiguilles d’une montre, vertical). S’applique uniquement aux graphiques en secteurs, graphiques en secteurs 3D et graphiques en anneaux. En lecture/écriture</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Peut être une valeur comprise entre 0 et 360.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullCategoryCollection">
@@ -351,8 +319,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Numéro d’index dans la collection de catégories complète de la catégorie à renvoyer.</param>
-        <summary>Renvoie toutes les catégories dans le groupe de graphiques ou de la catégorie spécifiée, visibles ou filtrée out.</summary>
+        <param name="Index">Numéro d’index de la collection de catégories complète de la catégorie à renvoyer.</param>
+        <summary>Renvoie toutes les catégories du groupe de graphiques ou la catégorie spécifiée, qu’elle soit visible ou filtrée.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -383,14 +351,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Barre et aux graphiques en histogrammes : cette propriété renvoie ou définit l’espace entre les barres ou en histogrammes sous forme d’un pourcentage de la barre ou une colonne largeur. Secteurs de secteurs et les graphiques à barres de secteurs : cette propriété renvoie ou définit l’espace entre les sections principales et secondaires du graphique. Lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>La valeur de cette propriété doit être comprise entre 0 et 500.</para>
-          <para />
-        </remarks>
+        <summary>Pour les graphiques en barres et en histogrammes, renvoie ou définit la distance séparant les barres ou les colonnes sous forme d’un pourcentage de la largeur des barres ou des colonnes. La valeur de cette propriété doit être comprise entre 0 et 500 %. En lecture/écriture</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>La valeur de cette propriété doit être comprise entre 0 et 500 %.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DShading">
@@ -419,14 +383,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur qui détermine si un groupe de graphiques possède un ombrage tridimensionnel. Lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b> la valeur <b>True</b> si le groupe de graphiques possède en trois dimensions trame, sinon <b>False</b>.</value>
-        <remarks>
-          <para>
-            <b>Remarque</b>: paramètre <b>Has3DShading</b> = <b>False</b> a pour effet de la définition du graphique en « Plat », ou suppression de l’effet, alors que la définition du <b>Has3DShading</b> = <b>True</b> définit le contenu de graphique par défaut.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit la valeur qui détermine si un groupe de graphiques possède un ombrage tridimensionnel. En lecture/écriture</summary>
+        <value>Valeur <b>booléenne</b> définie sur <b>true</b> si le groupe de graphiques possède un ombrage tridimensionnel, <b>false</b>dans le cas contraire.</value>
+        <remarks><para>
+            <b>Remarque</b>: le fait de définir <b>Has3DShading</b> = <b>false</b> a pour effet de définir la matière du graphique sur «Flat» ou de supprimer l’effet, tandis que la définition de la <b>Has3DShading</b> = <b>true</b> définit le contenu du graphique sur la valeur par défaut.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDropLines">
@@ -455,8 +416,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur indiquant si le graphique possède des lignes de projection. S’applique uniquement aux graphiques en courbes et en aires. Lecture/écriture.</summary>
-        <value>La valeur <b>booléenne</b><b>true</b> si le graphique en courbes ou en aires possède des lignes de projection ; Sinon, <b>False</b></value>
+        <summary>Cette propriété renvoie ou définit la valeur indiquant si le graphique comporte des lignes de projection. Cette propriété ne s'applique qu'à ces deux types de graphiques. En lecture/écriture</summary>
+        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si le graphique en courbes ou en aires contient des lignes de projection; sinon <b></b> , false</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,9 +447,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur indiquant si le graphique possède des lignes haut/bas. S’applique uniquement aux graphiques en courbes. Lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b> a la valeur <b>True</b> si le graphique en courbes possède des lignes haut/bas ; Sinon, <b>False</b></value>
+        <summary>Cette propriété renvoie ou définit la valeur indiquant si le graphique possède des lignes haut/bas. Ne s’applique qu’aux graphiques en courbes. En lecture/écriture</summary>
+        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si le graphique en courbes possède des lignes haut/bas; sinon <b></b> , false</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,9 +478,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur indiquant si un graphique en radar possède des étiquettes des axes. S’applique uniquement aux graphiques en radar. Lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b> a la valeur <b>True</b> si un graphique en radar possède des étiquettes des axes ; Sinon, <b>False</b></value>
+        <summary>Cette propriété renvoie ou définit la valeur indiquant si un graphique en radar possède des étiquettes d’axe. Elle ne s'applique qu'à ce type de graphiques. En lecture/écriture</summary>
+        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si un graphique en radar possède des étiquettes d’axe; sinon <b></b> , false</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,8 +509,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur indiquant si un graphique en histogrammes empilés ou un graphique à barres possède des lignes de série ou si un graphique en secteurs de secteur ou un graphique en barres de secteur possède des lignes de connecteur entre les deux sections. S’applique uniquement aux 2D barres empilées, 2D en histogrammes empilés, secteurs de secteur ou de secteurs. Lecture/écriture.</summary>
-        <value>Valeur <b>booléenne</b> valeurs répertoriées dans le tableau ci-dessous en fonction des conditions mentionnées. ValueA DescriptionReturn en secteurs de secteur ou en barre de graphique en secteurs qui possède des lignes de connecteur entre les deux sections. <b>La valeur True</b> Histogramme empilé ou un graphique en barres qui possède des lignes<b>True</b>sinon<b>valeur False</b></value>
+        <summary>Cette propriété renvoie ou définit la valeur indiquant si un graphique en histogrammes empilés ou un graphique à barres possède des lignes de série ou si un graphique en secteurs de secteur ou en barres de secteur contient des lignes de connecteur entre les deux sections. Cette propriété ne s'applique qu'aux histogrammes empilés 2D, en barres 2D, en secteurs de secteur ou en barres de secteur. En lecture/écriture</summary>
+        <value>Valeur <b>booléenne</b> définie sur les valeurs indiquées dans le tableau ci-dessous en fonction des conditions indiquées. DescriptionReturn graphique à secteurs de secteur ou barre de graphique à secteurs contenant des connecteurs entre les deux sections. <b>True</b> Histogramme empilé ou histogramme dont les lignes de série ont la<b>valeur</b>false<b></b> dans le cas contraire</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -581,9 +540,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur indiquant si un graphique possède des barres hausse et baisse. S’applique uniquement aux graphiques en courbes. Lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b> a la valeur <b>True</b> si le graphique en courbes a haut barres ; Sinon, <b>False</b>.</value>
+        <summary>Cette propriété renvoie ou définit la valeur indiquant si un graphique dispose de barres haut et bas. Ne s’applique qu’aux graphiques en courbes. En lecture/écriture</summary>
+        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si le graphique en courbes possède des barres haut et bas; sinon <b></b>, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -610,10 +568,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.HiLoLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie les lignes Haut/Bas d'une série dans un graphique en courbes. S’applique uniquement aux graphiques en courbes. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.HiLoLines" />
-        </value>
+        <summary>Renvoie les lignes Haut/Bas d'une série dans un graphique en courbes. Ne s’applique qu’aux graphiques en courbes. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.HiLoLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -641,9 +597,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie le numéro d'index de l'objet dans la collection des objets similaires.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -673,14 +627,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie la position des barres et des colonnes. Peut être une valeur comprise entre – 100 et 100. S’applique uniquement aux barres 2D et aux graphiques en histogrammes 2D. Lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si cette propriété est définie à 100, les barres sont positionnés afin qu’il existe une barre largeur entre eux. Si le chevauchement est 0 (zéro), il n’existe aucun espace entre les barres (chaque barre commence immédiatement après la précédente). Si le chevauchement est 100, les barres sont positionnées sur l’autre.</para>
-          <para />
-        </remarks>
+        <summary>Spécifie la position des barres et des histogrammes. Il peut s’agir d’une valeur comprise entre – 100 et 100. Ne s’applique qu’aux graphiques en barres 2D et aux graphiques en histogrammes 2D. En lecture/écriture</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Si cette propriété a la valeur – 100, les barres sont positionnées de sorte qu’il y ait une largeur de barre entre elles. Si la valeur de superposition est égale à 0 (zéro), cet espace inter-barres est inexistant (chaque barre commence immédiatement après la précédente). Si la valeur de superposition est égale à 100, les barres sont positionnées l'une sur l'autre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -706,10 +656,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le parent de l’objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Cette propriété renvoie le parent de l’objet spécifié. En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -737,9 +685,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie les étiquettes des axes radar pour le groupe de graphiques spécifié. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.TickLabels" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.TickLabels" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -769,14 +715,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la taille de la section secondaire d’un graphique en secteurs de secteur ou de barre d’un graphique en secteurs, sous forme de pourcentage de la taille du secteur principal. Lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Peut être une valeur comprise entre 5 et 200.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie ou définit la taille de la section secondaire d’un secteur de graphique en secteurs ou d’une barre de graphique en secteurs, sous forme de pourcentage de la taille du graphique principal. En lecture/écriture</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Peut être une valeur comprise entre 5 et 200.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SeriesCollection">
@@ -801,9 +743,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Facultatif <b>objet</b> le nom ou numéro de la série que vous souhaitez renvoyer. Si Index n’est pas utilisé, toutes les séries du groupe de graphiques seront afficheront.</param>
-        <summary>Renvoie la série demandée à partir de dans le groupe de graphiques.</summary>
-        <returns>Un <b>objet</b> dans le <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> format, qui représente toutes les séries demandées à partir du groupe de graphiques</returns>
+        <param name="Index"><b>Objet</b> facultatif le nom ou le numéro de la série que vous souhaitez renvoyer. Si index n’est pas utilisé, toutes les séries du groupe de graphiques sont renvoyées.</param>
+        <summary>Renvoie la série demandée à partir du groupe de graphiques.</summary>
+        <returns><b>Objet</b> au <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> format qui représente toutes les séries demandées à partir du groupe de graphiques</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -830,10 +772,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.SeriesLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie les lignes de série pour un histogrammes empilés 2D barres empilées, 2D, en secteurs de secteur ou de barre du graphique en secteurs. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.SeriesLines" />
-        </value>
+        <summary>Renvoie les lignes de série d’une barres empilées 2D, d’une colonne empilée 2D, d’un graphique en secteurs de secteur ou d’une barre de graphique en secteurs. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.SeriesLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -863,9 +803,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur qui détermine si les bulles négatives sont affichées pour le groupe de graphiques. Valide uniquement pour les graphiques en bulles. Lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b> a la valeur <b>True</b> si les bulles négatives sont affichées pour le groupe de graphique, sinon <b>False</b>.</value>
+        <summary>Cette propriété renvoie ou définit la valeur qui détermine si les bulles négatives sont affichées pour le groupe de graphiques. N’est autorisée que pour les graphiques en bulles. En lecture/écriture</summary>
+        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si les bulles négatives sont affichées pour le groupe de graphiques, sinon <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -895,8 +834,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlSizeRepresents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit ce que la taille des bulles représente sur un graphique en bulles. Lecture/écriture.</summary>
-        <value>Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.XlSizeRepresents" /> constantes : <b>xlSizeIsArea</b> ou <b>xlSizeIsWidth</b></value>
+        <summary>Cette propriété renvoie ou définit ce que la taille des bulles représente sur un graphique en bulles. En lecture/écriture</summary>
+        <value>Peut être l’une des constantes suivantes <see cref="T:Microsoft.Office.Interop.Word.XlSizeRepresents" /> : <b>xlSizeIsArea</b> ou <b>xlSizeIsWidth</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -926,10 +865,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlChartSplitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la manière dont les deux sections d’un graphique en secteurs de secteur ou de barre d’un graphique en secteurs sont séparées. Lecture/écriture.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlChartSplitType" />
-        </value>
+        <summary>Renvoie ou définit la façon dont les deux sections d’un secteur de graphique en secteurs ou de barre d’un graphique en secteurs sont réparties. En lecture/écriture</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlChartSplitType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -959,10 +896,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur de seuil séparant les deux sections d’un graphique en secteurs de secteur ou de barre d’un graphique en secteurs. Lecture/écriture.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit le seuil de la valeur séparant les deux sections d'un graphique en secteurs de secteur ou d'un graphique en barres de secteur. En lecture/écriture</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -999,9 +934,7 @@
       </ReturnValue>
       <Docs>
         <summary>Réservé à une utilisation interne.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1038,8 +971,7 @@
       </ReturnValue>
       <Docs>
         <summary>Réservé à une utilisation interne.</summary>
-        <value>
-          <b>Nombre entier</b>.</value>
+        <value><b>Integer</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1066,10 +998,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.UpBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie les barres haut d'un graphique en courbes. S’applique uniquement aux graphiques en courbes. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.UpBars" />
-        </value>
+        <summary>Renvoie les barres haut d'un graphique en courbes. Ne s’applique qu’aux graphiques en courbes. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.UpBars" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1099,8 +1029,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur indiquant si Microsoft Word affecte une couleur différente ou un motif à chaque indicateur de données. Le graphique ne doit contenir qu’une seule série. Lecture/écriture.</summary>
-        <value>La valeur <b>booléenne</b><b>true</b> si Microsoft Word affecte une couleur différente ou un motif à chaque indicateur de données ; Sinon, <b>False</b></value>
+        <summary>Cette propriété renvoie ou définit la valeur indiquant si Microsoft Word affecte une couleur ou un motif différent à chaque marqueur de données. Le graphique ne doit contenir qu’une seule série. En lecture/écriture</summary>
+        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si Microsoft Word affecte une couleur ou un motif différent à chaque marqueur de données; sinon <b></b> , false</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

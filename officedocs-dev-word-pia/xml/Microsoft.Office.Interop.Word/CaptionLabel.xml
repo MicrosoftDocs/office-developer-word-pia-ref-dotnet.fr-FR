@@ -1,13 +1,5 @@
 <Type Name="CaptionLabel" FullName="Microsoft.Office.Interop.Word.CaptionLabel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3910a1d1780d4a134f92e6516dde30d553dd761c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667564" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CaptionLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c27d8bb814948f3d36bbc6c5dfd5bf35bef5652" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142347" /></Metadata><TypeSignature Language="C#" Value="public interface CaptionLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CaptionLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CaptionLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface CaptionLabel" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente une étiquette de légende donnée.</summary>
-    <remarks>
-      <para>L’objet <b>CaptionLabel</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" /> collection. Les éléments dans <b>cette</b> collection sont répertoriés dans la zone étiquette dans la boîte de dialogue Légende (menu Insertion).</para>
-      <para>Utiliser <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.CaptionLabels" />(<paramref name="index" />), où <paramref name="index" /> est le nom d’étiquette de légende ou le numéro d’index, pour renvoyer un objet <b>CaptionLabel</b> .</para>
-      <para>Le numéro d’index représente la position de l’étiquette de légende dans la collection <b>CaptionLabels</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.CaptionLabels.Add(System.String)" /> pour ajouter une étiquette de légende personnalisée.</para>
-      <para />
-    </remarks>
+    <remarks><para>L’objet <b>CaptionLabel</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" /> collection. Les éléments de la collection <b>CaptionLabels</b> sont répertoriés dans la zone étiquette de la boîte de dialogue légende (menu Insertion).</para>
+      <para>Utilisez <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.CaptionLabels" />(<paramref name="index" />), où <paramref name="index" /> est le nom de l’étiquette de légende ou le numéro d’index, pour renvoyer un seul objet <b>CaptionLabel</b> .</para>
+      <para>Le numéro d'index représente la position de l'étiquette de légende dans la collection <b>CaptionLabels</b>.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CaptionLabels.Add(System.String)" /> méthode pour ajouter une étiquette de légende personnalisée.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,12 +77,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur qui indique si l’objet spécifié est un des styles intégrés ou étiquettes de légende dans Microsoft Word.</summary>
+        <summary>Renvoie une valeur qui indique si l’objet spécifié est l’un des styles ou légendes prédéfinis dans Microsoft Word.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez spécifier des styles prédéfinis dans toutes les langues à l’aide de la <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constantes ou dans une langue à l’aide du nom du style de la version de Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez spécifier des styles prédéfinis dans toutes les langues à <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> l’aide des constantes ou d’une langue à l’aide du nom de style de la version linguistique de Word. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChapterStyleLevel">
@@ -123,11 +111,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le style de titre qui marque un nouveau chapitre lorsque les numéros de chapitre sont inclus dans l'étiquette de légende.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le numéro renvoyé 1 correspond au titre 1, 2 correspond à titre 2 et ainsi de suite.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.IncludeChapterNumber" /> propriété doit être définie sur <b>True</b> pour les numéros de chapitre soient inclus avec les étiquettes des légendes.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le numéro 1 renvoyé correspond à Heading 1, 2 correspond à Heading 2, et ainsi de suite.</para>
+          <para>La <see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.IncludeChapterNumber" /> propriété doit avoir la valeur <b>true</b> pour que les numéros de chapitre soient inclus avec les étiquettes de légende.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -155,11 +141,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -210,7 +194,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCaptionLabelID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur qui représente le type de l’étiquette de légende si la <see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.BuiltIn" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> objet a la <b>valeur True</b>.</summary>
+        <summary>Renvoie une valeur qui représente le type de l’étiquette de légende spécifiée si <see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.BuiltIn" /> la propriété de <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> l’objet a la <b>valeur true</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -300,7 +284,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCaptionNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le style de numérotation pour le <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> objet.</summary>
+        <summary>Cette propriété renvoie ou définit le style de <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> numérotation de l’objet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -328,7 +312,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet spécifié.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -390,7 +374,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSeparatorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique le caractère entre le numéro de chapitre et le numéro de séquence.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique le caractère situé entre le numéro de chapitre et le numéro de séquence.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

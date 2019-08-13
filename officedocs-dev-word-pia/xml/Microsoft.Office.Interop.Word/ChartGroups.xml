@@ -1,13 +1,5 @@
 <Type Name="ChartGroups" FullName="Microsoft.Office.Interop.Word.ChartGroups">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c1eae1ad84eba37ae4a3a9946acbcb5c23a1752c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668177" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8bebc47132f81850e7ac6d28b26efb7bbad92e07" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142249" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroups implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartGroups" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroups&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Représente une ou plusieurs séries tracées dans un graphique avec le même format.</summary>
-    <remarks>
-      <para>A <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> cette collection est une collection de tous les <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objets du graphique spécifié.  Un graphique contient un ou plusieurs groupes de graphiques, chaque groupe de graphique contient une ou plusieurs séries, et chaque série contient un ou plusieurs points. Par exemple, un seul graphique peut contenir à la fois un groupe courbes, contenant toutes les séries tracées avec le format de graphique en courbes et un groupe de graphique à barres, contenant toutes les séries tracées avec le format de graphique en barres.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Chart.ChartGroups(System.Object)" /> propriété permet de renvoyer la <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> collection.</para>
-      <para>Utilisez <b>ChartGroups</b>(<paramref name="index" />), où <paramref name="Index" /> est le numéro d’index de groupe de graphique, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objet.</para>
-      <para />
-    </remarks>
+    <remarks><para>Une <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> collection est une collection de tous les <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objets dans le graphique spécifié.  Un graphique contient un ou plusieurs groupes de graphique, chaque groupe de graphique contient une ou plusieurs séries, et chaque série contient un ou plusieurs points. Par exemple, un seul graphique peut contenir un groupe courbes, contenant toutes les séries tracées avec le format de graphique en courbes et un groupe de graphique à barres, contenant toutes les séries tracées avec le format de graphique en barres.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Chart.ChartGroups(System.Object)" /> propriété pour renvoyer la <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> collection. </para>
+      <para>Utilisez <b>ChartGroups</b>(<paramref name="index" />), où <paramref name="Index" /> est le numéro d’index du groupe de graphiques, pour <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> renvoyer un seul objet. </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,10 +52,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,10 +80,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>entier</b> qui représente le nombre d’objets dans la collection.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Renvoie une valeur de <b>type Integer</b> qui représente le nombre d’objets dans la collection.</summary>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,15 +108,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un 32 bits <b>entier</b> qui indique l’application dans laquelle l’objet spécifié a été créé. Lecture seule</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para>Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un <b>nombre entier</b> de 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé. Lecture seule</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
+          <para>Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -191,11 +173,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Requis en <b>objet</b> spécifie la position ordinale de l’objet au sein de la collection.</param>
+        <param name="Index">Required, <b>objet</b> spécifie la position ordinale de l’objet dans la collection.</param>
         <summary>Renvoie un élément spécifié de la collection.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,9 +203,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
