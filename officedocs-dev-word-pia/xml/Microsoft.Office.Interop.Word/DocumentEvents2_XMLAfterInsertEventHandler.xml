@@ -1,13 +1,5 @@
 <Type Name="DocumentEvents2_XMLAfterInsertEventHandler" FullName="Microsoft.Office.Interop.Word.DocumentEvents2_XMLAfterInsertEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fd74ca73aa41f3d0754567778bd410aade2b2f6b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668102" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLAfterInsertEventHandler(XMLNode NewXMLNode, bool InUndoRedo);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6097d72a5b18382fc09cfcc7be258d3904b7e849" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144595" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLAfterInsertEventHandler(XMLNode NewXMLNode, bool InUndoRedo);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocumentEvents2_XMLAfterInsertEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DocumentEvents2_XMLAfterInsertEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocumentEvents2_XMLAfterInsertEventHandler(NewXMLNode As XMLNode, InUndoRedo As Boolean)" />
@@ -35,54 +27,11 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="NewXMLNode">
-      <span data-ttu-id="09da9-101">
-        <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="09da9-101"></span>
-      </span>
-      <span data-ttu-id="09da9-102">Nœud XML récemment ajouté.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="09da9-102">The newly added XML node.</span>
-      </span>
-    </param>
-    <param name="InUndoRedo">
-      <span data-ttu-id="09da9-103">
-        <b>Boolean</b>.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="09da9-103">
-          <b>Boolean</b>.</span>
-      </span>
-      <span data-ttu-id="09da9-104">
-        <b>True</b> indique que l'action a été effectuée à l'aide de la fonctionnalité Annuler ou Rétablir dans Microsoft Word.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="09da9-104">
-          <b>True</b> indicates the action was performed using the Undo or Redo feature in Microsoft Word.</span>
-      </span>
-    </param>
-    <summary>
-      <span data-ttu-id="09da9-105">Un type de <b>délégué</b> utilisé pour ajouter un gestionnaire d’événements pour le <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> événement.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="09da9-105">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> event.</span>
-      </span>
-      <span data-ttu-id="09da9-106">L’événement <b>XMLAfterInsert</b> se produit lorsqu’un utilisateur ajoute un nouvel élément XML à un document.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="09da9-106">The <b>XMLAfterInsert</b> event occurs when a user adds a new XML element to a document.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="09da9-107">
-        <para>Si le <paramref name="InUndoRedo" /> paramètre a la <b>valeur True</b>, ne changez jamais le XML dans un document pendant que les événements XMLAfterInsert et XMLBeforeDelete sont en cours d’exécution. </para>
-        <para>Si le paramètre DansAnnulerRétablir a la valeur False, vous pouvez insérer et supprimer l’élément XML dans le document, mais soyez prudent que les <b>événements XMLAfterInsert</b> et <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> événements n’essaie pas d’annuler mutuellement, une boucle infinie. Vous pouvez empêcher les boucles infinies en utilisant un global variable de <b>type Boolean</b> et effectuer cette vérification au début du Gestionnaire d’erreurs.</para>
-        <para />
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="09da9-107">
-          <para>If the <paramref name="InUndoRedo" /> parameter is <b>True</b>, never change the XML in a document while the XMLAfterInsert and XMLBeforeDelete events are running. </para>
-          <para>If the InUndoRedo parameter is False, you can insert and delete the XML in the document, but be careful that the <b>XMLAfterInsert</b> and <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> events will not try to cancel each other out, causing an infinite loop. You can prevent infinite loops by using a global <b>Boolean</b> variable and check for that at the beginning of the error handler.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <param name="NewXMLNode"><span data-ttu-id="68f9b-101"><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />.</span><span class="sxs-lookup"><span data-stu-id="68f9b-101"></span></span> <span data-ttu-id="68f9b-102">Nœud XML récemment ajouté.</span><span class="sxs-lookup"><span data-stu-id="68f9b-102">The newly added XML node.</span></span></param>
+    <param name="InUndoRedo"><span data-ttu-id="68f9b-103"><b>Boolean</b>.</span><span class="sxs-lookup"><span data-stu-id="68f9b-103"><b>Boolean</b>.</span></span> <span data-ttu-id="68f9b-104"><b>True</b> indique que l'action a été effectuée à l'aide de la fonctionnalité Annuler ou Rétablir dans Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="68f9b-104"><b>True</b> indicates the action was performed using the Undo or Redo feature in Microsoft Word.</span></span></param>
+    <summary><span data-ttu-id="68f9b-105">Type <b>délégué</b> utilisé pour ajouter un gestionnaire d’événements pour l' <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> événement.</span><span class="sxs-lookup"><span data-stu-id="68f9b-105">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> event.</span></span> <span data-ttu-id="68f9b-106">L’événement <b>XMLAfterInsert</b> se produit lorsqu’un utilisateur ajoute un nouvel élément XML à un document.</span><span class="sxs-lookup"><span data-stu-id="68f9b-106">The <b>XMLAfterInsert</b> event occurs when a user adds a new XML element to a document.</span></span></summary>
+    <remarks><para><span data-ttu-id="68f9b-107">Si le <paramref name="InUndoRedo" /> paramètre est <b>true</b>, ne modifiez jamais le XML dans un document lorsque les événements XMLAfterInsert et XMLBeforeDelete sont en cours d’exécution.</span><span class="sxs-lookup"><span data-stu-id="68f9b-107">If the <paramref name="InUndoRedo" /> parameter is <b>True</b>, never change the XML in a document while the XMLAfterInsert and XMLBeforeDelete events are running.</span></span> </para>
+      <para><span data-ttu-id="68f9b-108">Si le paramètre DansAnnulerRétablir a est défini sur false, vous pouvez insérer et supprimer les données XML dans le document, mais <b></b> Veillez <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> à ce que le fichier XMLAfterInsert et les événements ne tentent pas de s’annuler mutuellement, ce qui entraîne une boucle infinie.</span><span class="sxs-lookup"><span data-stu-id="68f9b-108">If the InUndoRedo parameter is False, you can insert and delete the XML in the document, but be careful that the <b>XMLAfterInsert</b> and <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> events will not try to cancel each other out, causing an infinite loop.</span></span> <span data-ttu-id="68f9b-109">Vous pouvez empêcher les boucles infinies à l’aide d’une variable <b>booléenne</b> globale et vérifier qu’elles se trouvent au début du gestionnaire d’erreurs.</span><span class="sxs-lookup"><span data-stu-id="68f9b-109">You can prevent infinite loops by using a global <b>Boolean</b> variable and check for that at the beginning of the error handler.</span></span></para>
+      <para> </para></remarks>
   </Docs>
 </Type>
