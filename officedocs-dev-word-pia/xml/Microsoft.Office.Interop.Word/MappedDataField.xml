@@ -1,13 +1,5 @@
 <Type Name="MappedDataField" FullName="Microsoft.Office.Interop.Word.MappedDataField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ad9be617499eec01e5a31a469501445354966e87" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668461" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MappedDataField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dc041533103e222b636ea93cb4c8248a9eb022ba" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147916" /></Metadata><TypeSignature Language="C#" Value="public interface MappedDataField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MappedDataField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MappedDataField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MappedDataField" />
@@ -27,9 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Représente un champ de données mappé.</summary>
-    <remarks>
-      <para>L’objet <b>MappedDataField</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" /> collection. <b>Cette collection</b> inclut tous les champs de données mappés disponibles dans Microsoft Word.</para> Champ de données mappé 
-      <para>A est des champs Word qui représente les informations de nom ou l’adresse, tels que « Prénom ». Si une source de données contient un champ « Prénom » ou une variante (tel que « Prénom », « FirstName », « Premier » ou « FName »), le champ dans la source de données sera automatiquement mappé au champ de données mappé correspondant dans Word. Si un document ou modèle doit être fusionnées avec plus d’une source de données, champs de données mappés permettent d’éviter d’entrer de nouveau les champs dans le document d’accord avec les noms de champs dans la base de données.</para><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.MappedDataFields" /> propriété pour renvoyer un objet <b>MappedDataField</b> .</para><para /></remarks>
+    <remarks><para>L’objet <b>MappedDataField</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" /> collection. La collection <b>MappedDataFields</b> inclut tous les champs de données mappés disponibles dans Microsoft Word.</para>
+      <para>Un champ de données mappé est un champ contenu dans Word qui représente des informations de nom ou d’adresse couramment utilisées, telles que «prénom». Si une source de données contient un champ « Nom » ou une variante de ce dernier (« Nom_famille », par exemple), le champ de la source de données sera immédiatement mappé au champ de données mappé de Word. Dans le cas d'une fusion du document ou du modèle avec plusieurs sources de données, ces champs permettent d'éviter d'entrer une nouvelle fois les champs dans le document pour les faire coïncider avec les noms de champ de la base de données.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.MappedDataFields" /> propriété pour renvoyer un objet <b>MappedDataField</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,11 +78,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFieldIndex">
@@ -118,12 +109,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>entier</b> qui représente le numéro de champ dans la source de données de fusion et publipostage auquel se mappe un champ de données mappé.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>entier</b> qui représente le numéro de champ correspondant dans la source de données de fusion et publipostage auquel se mappe un champ de données mappé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>MappedDataField</b> renvoie zéro si le champ de données spécifié n’est pas mappé à un champ de données mappé.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>MappedDataField</b> renvoie zéro si le champ de données spécifié n’est pas mappé à un champ de données mappé.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFieldName">
@@ -151,10 +140,8 @@
       <Docs>
         <summary>Définit ou renvoie une <b>chaîne</b> qui représente le nom du champ dans la source de données de fusion et publipostage auquel se mappe un champ de données mappé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété DataFieldName renvoie une chaîne vide si le champ de données spécifié n’est pas mappé à un champ de données mappé.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété DataFieldName renvoie une chaîne vide si le champ de données spécifié n’est pas mappé à un champ de données mappé.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -180,7 +167,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>entier</b> qui représente la position d’un élément dans une collection.</summary>
+        <summary>Renvoie une <b>valeur de type Integer</b> qui représente la position d’un élément dans une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,7 +195,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -266,10 +253,8 @@
       <Docs>
         <summary>Renvoie le contenu du champ de données de fusion et publipostage ou champ de données mappé pour l'enregistrement actif.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> propriété à définir l’enregistrement actif dans une source de données de fusion et publipostage.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> propriété pour définir l’enregistrement actif dans une source de données de fusion et publipostage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Variable" FullName="Microsoft.Office.Interop.Word.Variable">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5a6d54bdd189749e8d6825c71826127afd6c461d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667925" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Variable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e2a8fae352f5d719c8e9311fb04b65b7fefebfe" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143767" /></Metadata><TypeSignature Language="C#" Value="public interface Variable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Variable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Variable" />
   <TypeSignature Language="VB.NET" Value="Public Interface Variable" />
@@ -26,17 +18,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente une variable stockée dans le cadre d’un document. Les variables de document servent à conserver les paramètres de macro entre les sessions de macro.</summary>
-    <remarks>
-      <para>L’objet <b>Variable</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.Variables" /> collection. <b>Cette collection</b> contient toutes les variables de document dans un document ou modèle.</para>
-      <para>Utiliser des <b>Variables</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la variable de document ou le numéro d’index, pour renvoyer un seul objet <b>Variable</b> .</para>
-      <para>Le numéro d’index représente la position de la variable de document dans la collection <b>Variables</b> . La dernière variable ajoutée à la collection <b>Variables</b> est le numéro d’index 1 ; la variable de la dernière seconde ajoutée à la collection est le numéro d’index 2 et ainsi de suite.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> de la <see cref="T:Microsoft.Office.Interop.Word.Variables" /> méthode collection pour ajouter une variable à un document.</para>
-      <para>Si vous essayez d’ajouter une variable de document avec un nom qui existe déjà dans la collection <b>Variables</b> , une erreur se produit. Pour éviter cette erreur, vous pouvez énumérer la collection avant d’ajouter de nouvelles variables.</para>
-      <para>Les variables de document sont invisibles pour l’utilisateur, sauf si un champ DOCVARIABLE est inséré avec le nom de la variable approprié.</para>
-      <para>Pour ajouter une variable de document à un modèle, ouvrez le modèle en tant que document à l’aide de la <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> méthode.</para>
-      <para />
-    </remarks>
+    <summary>Représente une variable stockée en tant que partie d’un document. Les variables de document servent à conserver les paramètres de macro entre les sessions de macro.</summary>
+    <remarks><para>L’objet <b>variable</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.Variables" /> collection. La collection <b>variables</b> inclut toutes les variables de document dans un document ou un modèle.</para>
+      <para>Utilisez <b>variables</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la variable de document ou le numéro d’index, pour renvoyer un seul objet <b>variable</b> .</para>
+      <para>Le numéro d'index représente la position de la variable de document dans la collection <b>Variables</b>. La dernière variable ajoutée à la collection <b>Variables</b> est le numéro d'index 1 ; l'avant-dernière ajoutée à cette collection est le numéro d'index 2, etc.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> méthode de <see cref="T:Microsoft.Office.Interop.Word.Variables" /> la collection pour ajouter une variable à un document.</para>
+      <para>Si vous essayez d'ajouter une variable de document avec un nom qui existe déjà dans la collection <b>Variables</b>, une erreur se produit. Pour éviter cette erreur, vous pouvez énumérer la collection avant d'ajouter de nouvelles variables.</para>
+      <para>Les variables de document sont invisibles pour l'utilisateur, sauf si un champ DOCVARIABLE est inséré avec le nom de la variable approprié.</para>
+      <para>Pour ajouter une variable de document à un modèle, ouvrez le modèle en tant que document à <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> l’aide de la méthode.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,11 +82,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -147,7 +135,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>entier</b> qui représente la position d’un élément dans une collection.</summary>
+        <summary>Renvoie une <b>valeur de type Integer</b> qui représente la position d’un élément dans une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,7 +163,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

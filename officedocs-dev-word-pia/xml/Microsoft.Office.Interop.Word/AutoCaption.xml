@@ -1,13 +1,5 @@
 <Type Name="AutoCaption" FullName="Microsoft.Office.Interop.Word.AutoCaption">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="31b4ea8bafcfbd501cd64c8d3338f2bc08bbaaf8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667667" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoCaption" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3109344f5a410ce2a910d0c31881fbca7986b697" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146233" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCaption" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCaption" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoCaption" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCaption" />
@@ -27,14 +19,12 @@
   </Attributes>
   <Docs>
     <summary>Représente une seule légende pouvant être ajoutées automatiquement lorsque les éléments tels que des tableaux, images ou les objets OLE sont insérés dans un document.</summary>
-    <remarks>
-      <para>L’objet <b>AutoCaption</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.AutoCaptions" /> collection. La collection <b>AutoCaptions</b> contient l’ensemble des légendes répertoriées dans la boîte de dialogue Légende automatique (menu Insertion).</para>
-      <para>Utilisez <b>AutoCaptions</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la légende ou le numéro d’index, pour renvoyer un seul objet <b>AutoCaption</b> . Les noms de légende correspondent aux éléments répertoriés dans la boîte de dialogue Légende automatique (menu Insertion). Vous devez correspondre exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché dans la boîte de dialogue AutoCaption.</para>
-      <para>Le numéro d’index représente la position de l’objet <b>AutoCaption</b> dans la liste des éléments dans la boîte de dialogue AutoCaption.</para>
+    <remarks><para>L' <b></b> objet AutoCaption est un membre de <see cref="T:Microsoft.Office.Interop.Word.AutoCaptions" /> la collection. La <b></b> collection AutoCaptions contient toutes les légendes figurant dans la boîte de dialogue AutoCaption (menu Insertion).</para>
+      <para>Utilisez <b></b>AutoCaptions (<paramref name="index" />), où <paramref name="index" /> est le nom de la légende ou le numéro d’index, pour renvoyer un seul objet AutoCaption. <b></b> Les noms de légende correspondent aux éléments figurant dans la boîte de dialogue AutoCaption (menu Insertion). Vous devez respecter exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché dans la boîte de dialogue AutoCaption.</para>
+      <para>Le numéro d'index représente la position de l'objet <b>AutoCaption</b> dans la liste des éléments dans la boîte de dialogue AutoCaption.</para>
       <para>Objets 
-        <b>AutoCaption</b> ne peuvent pas être ajoutés ou supprimés de la collection <b>AutoCaptions</b> par programmation.</para>
-      <para />
-    </remarks>
+        <b>AutoCaption</b> ne peut pas être ajoutés à ou supprimés de la collection <b>AutoCaptions</b> par programme.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur qui représente un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente le créateur de l’objet spécifié.</summary>
+        <summary>Renvoie une valeur qui représente un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objet qui représente le créateur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +81,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur indiquant si une légende est automatiquement ajoutée lorsqu’un élément est inséré dans un document.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur indiquant si une légende est automatiquement ajoutée lors de l’insertion de l’élément dans un document.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,10 +114,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la légende (« Figure », « Table » ou « Équation », par exemple) de l'étiquette de la légende spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété peut être définie à une étiquette de légende ou un <see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" /> constante.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété peut être définie sur une étiquette de légende ou <see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" /> une constante.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -155,11 +143,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">

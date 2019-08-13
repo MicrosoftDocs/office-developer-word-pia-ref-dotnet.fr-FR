@@ -1,13 +1,5 @@
 <Type Name="MailMergeFieldName" FullName="Microsoft.Office.Interop.Word.MailMergeFieldName">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="17a0081b8837d936e44189872bd9579df6529bc8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667575" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeFieldName" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b4c0158d84ccca477189a42554fd7e06a18f8c96" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147892" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeFieldName" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeFieldName" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeFieldName" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeFieldName" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Représente un nom de champ de fusion et publipostage dans une source de données.</summary>
-    <remarks>
-      <para>L’objet <b>MailMergeFieldName</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.MailMergeFieldNames" /> collection. La collection <b>MailMergeFieldNames</b> inclut tous les noms de champ de données dans une source de données de fusion et publipostage.</para>
-      <para>Utiliser <b>FieldNames</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>MailMergeFieldName</b> . Le numéro d’index représente la position du champ dans la source de données de fusion et publipostage.</para>
-      <para>Vous ne pouvez pas ajouter des champs dans la collection <b>MailMergeFieldNames</b> . Noms de champs dans une source de données sont automatiquement inclus dans la collection <b>MailMergeFieldNames</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>L’objet <b>MailMergeFieldName</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.MailMergeFieldNames" /> collection. La collection <b>MailMergeFieldNames</b> contient tous les noms de champs de données dans une source de données de fusion et publipostage.</para>
+      <para>Utilisez <b>NomsChamps</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>MailMergeFieldName</b> . Le numéro d’index représente la position du champ dans la source de données de publipostage.</para>
+      <para>Vous ne pouvez pas ajouter de champs dans la collection <b>MailMergeFieldNames</b>. Les noms des champs contenus dans une source de données sont automatiquement inclus dans la collection <b>MailMergeFieldNames</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -118,7 +106,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>entier</b> qui représente la position d’un élément dans une collection.</summary>
+        <summary>Renvoie une <b>valeur de type Integer</b> qui représente la position d’un élément dans une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +134,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

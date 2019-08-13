@@ -1,13 +1,5 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Word.DiagramNode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="781ae7dde743bb26d8b688f166e2d47c3047c43d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667424" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9738bbfbf5c67a83fbc7807283833051a5fadce7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147094" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DiagramNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNode" />
@@ -26,10 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente un seul nœud de diagramme dans un diagramme.</summary>
-    <remarks>
-      <para>L’objet <b>DiagramNode</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" /> collection.</para> Propriété 
-      <para>utiliser le <b>DiagramNode</b> de le <see cref="T:Microsoft.Office.Interop.Word.Shape" /> ou <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> object pour renvoyer un objet <b>DiagramNode</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> pour ajouter un nœud à un diagramme.</para><para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" /> méthode pour supprimer un nœud à partir d’un diagramme.</para><para /></remarks>
+    <summary>Représente un nœud de diagramme unique dans un diagramme.</summary>
+    <remarks><para>L’objet <b>DiagramNode</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" /> collection.</para>
+      <para>Utilisez la propriété <b>DiagramNode</b> de l' <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objet <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> ou pour renvoyer un objet <b>DiagramNode</b> . Utilisez la <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> méthode pour ajouter un nœud à un diagramme.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" /> méthode pour supprimer un nœud d’un diagramme.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -55,9 +48,9 @@
         <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="Pos">Facultatif <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Spécifie où le nœud sera ajouté, par rapport au nœud d’appel.</param>
+        <param name="Pos">Facultatif <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Spécifie l’emplacement auquel le nœud sera ajouté, par rapport au nœud appelant.</param>
         <param name="NodeType">Facultatif <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />. Spécifie le type de nœud.</param>
-        <summary>Crée un nœud de diagramme et renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object qui représente le nouveau nœud de diagramme. Diagrammes conceptuels, l’objet <b>DiagramNode</b> est ajouté à la fin de la liste des formes.</summary>
+        <summary>Crée un nœud de diagramme, renvoyant un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objet qui représente le nouveau nœud de diagramme. Pour les diagrammes conceptuels, l’objet <b>DiagramNode</b> est ajouté à la fin de la liste des formes.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,11 +135,10 @@
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="copyChildren">
-          <b>Boolean</b>obligatoire. True pour cloner également les enfants du noeud de diagramme.</param>
-        <param name="TargetNode">Objet <b>DiagramNode</b> facultatif. Le nœud où le nouveau nœud sera placé.</param>
-        <param name="Pos">Facultatif <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Si <paramref name="TargetNode" /> est spécifié, indique où le nœud sera ajouté relative à <paramref name="TargetNode" />.</param>
-        <summary>Clone un nœud de diagramme spécifié. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object qui représente le clone.</summary>
+        <param name="copyChildren"><b>Boolean</b> obligatoire. True pour cloner également les enfants du nœud de diagramme.</param>
+        <param name="TargetNode">Objet <b>DiagramNode</b> facultatif. Nœud dans lequel le nouveau nœud sera placé.</param>
+        <param name="Pos">Facultatif <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Si <paramref name="TargetNode" /> est spécifié, indique l’emplacement auquel le nœud sera ajouté par <paramref name="TargetNode" />rapport à.</param>
+        <summary>Clone un nœud de diagramme spécifié. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objet qui représente le clone.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,11 +168,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Par exemple, si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Par exemple, si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -262,7 +252,7 @@
         <ReturnType>Microsoft.Office.Core.MsoOrgChartLayoutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Core.MsoOrgChartLayoutType" /> constante pour indiquer la mise en forme des nœuds enfants dans un organigramme.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Core.MsoOrgChartLayoutType" /> définit une constante indiquant la mise en forme des nœuds enfants dans un organigramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -291,9 +281,9 @@
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">Requis <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objet. Le nœud de diagramme où le nœud spécifié est déplacé.</param>
-        <param name="Pos">Requis <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Spécifie où le nœud sera ajouté relative à <paramref name="TargetNode" />.</param>
-        <summary>Déplace un nœud et ses nœuds enfants au sein d’un diagramme.</summary>
+        <param name="TargetNode">Objet <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> required. Nœud de diagramme dans lequel le nœud spécifié est déplacé.</param>
+        <param name="Pos">Obligatoire <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Spécifie l’emplacement auquel le nœud sera ajouté <paramref name="TargetNode" />par rapport à.</param>
+        <summary>Déplace un nœud de diagramme et l’un de ses nœuds enfants dans un diagramme.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,12 +308,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Renvoie la prochaine <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objet dans une collection de nœuds de diagramme.</summary>
+        <summary>Renvoie l’objet <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> suivant dans une collection de nœuds de diagramme.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.PrevNode" /> méthode pour renvoyer l’objet <b>DiagramNode</b> précédent d’une collection de nœuds de diagramme.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.PrevNode" /> méthode pour renvoyer l’objet <b>DiagramNode</b> précédent dans une collection de nœuds de diagramme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -375,12 +363,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object qui représente le nœud de diagramme précédent dans une collection de nœuds de diagramme.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Object qui représente le nœud de diagramme précédent dans une collection de nœuds de diagramme.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.NextNode" /> méthode pour renvoyer l’objet <b>DiagramNode</b> suivant dans une collection de nœuds de diagramme.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.NextNode" /> méthode pour renvoyer l’objet <b>DiagramNode</b> suivant dans une collection de nœuds de diagramme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplaceNode">
@@ -406,12 +392,10 @@
         <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">Requis <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objet. Le nœud de diagramme à remplacer.</param>
+        <param name="TargetNode">Objet <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> required. Nœud de diagramme à remplacer.</param>
         <summary>Remplace un nœud de diagramme cible par le nœud de diagramme source.</summary>
-        <remarks>
-          <para>Le nœud de diagramme cible est supprimé et le nœud de diagramme source, y compris tous ses nœuds enfants, sont déplacés vers où était le nœud de diagramme cible.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le nœud de diagramme cible est supprimé et le nœud de diagramme source, y compris ses nœuds enfants, sont déplacés vers l’endroit où se trouve le nœud de diagramme cible.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -437,7 +421,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object qui représente le nœud de diagramme racine auquel appartient le nœud de diagramme source.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Object qui représente le nœud de diagramme racine auquel appartient le nœud de diagramme source.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -493,13 +477,11 @@
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">Requis <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objet. Le nœud avec lequel échanger.</param>
-        <param name="Pos">Facultatif <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Position du nœud par rapport au nœud auquel elle est transférée.</param>
+        <param name="TargetNode">Objet <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> required. Nœud avec lequel effectuer le swap.</param>
+        <param name="Pos">Facultatif <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Position du nœud par rapport au nœud avec lequel il est en cours de permutation.</param>
         <summary>Permute le nœud de diagramme cible avec le nœud de diagramme source.</summary>
-        <remarks>
-          <para>Les nœuds de diagramme enfants sont déplacés avec leurs noeuds racine.</para>
-          <para />
-        </remarks>
+        <remarks><para>Tous les nœuds de diagramme enfants sont déplacés avec leurs nœuds racine correspondants.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextShape">
@@ -525,7 +507,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objet qui représente la forme de la zone de texte associé à un nœud de diagramme.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> Object qui représente la forme de la zone de texte associée à un nœud de diagramme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -553,8 +535,8 @@
         <Parameter Name="ReceivingNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ReceivingNode">Requis <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objet. Le nœud vers lequel transférer les nœuds enfants.</param>
-        <summary>Déplace les nœuds enfants du nœud de diagramme source vers le nœud de diagramme cible.</summary>
+        <param name="ReceivingNode">Objet <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> required. Nœud vers lequel transférer les nœuds enfants.</param>
+        <summary>Déplace les nœuds enfants du nœud de diagramme source vers le nœud de diagramme cible (récepteur).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

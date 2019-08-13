@@ -1,13 +1,5 @@
 <Type Name="Comments" FullName="Microsoft.Office.Interop.Word.Comments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8bc416b351699f1aeed94e35b4392b7a8d626e66" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667949" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Comments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e889768b79d325f4fa4910b0f457ac3a01ccde03" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147220" /></Metadata><TypeSignature Language="C#" Value="public interface Comments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Comments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Comments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Comments&#xA;Implements IEnumerable" />
@@ -30,11 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Comment" /> objets qui représentent les commentaires contenus dans une sélection, une plage ou un document.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Document.Comments" /> propriété permet de renvoyer la collection <b>Comments</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> méthode pour ajouter un commentaire à la plage spécifiée.</para> Utilisez des <b>commentaires</b>de 
-      <para>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Comment</b> . Le numéro d’index représente la position du commentaire de la sélection spécifiée, une plage ou un document.</para><para /></remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Comment" /> objets qui représentent les commentaires contenus dans une sélection, une plage ou un document.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.Comments" /> propriété pour renvoyer la <b></b> collection comments.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> méthode pour ajouter un commentaire au niveau de la plage spécifiée.</para>
+      <para>Utilisez <b></b>comments<paramref name="index" />(), <paramref name="index" /> où est le numéro d’index, pour renvoyer un seul objet <b>Comment</b> . Le numéro d'index représente la position du commentaire de la sélection spécifiée, une plage ou un document.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -60,8 +52,8 @@
       </Parameters>
       <Docs>
         <param name="Range">Objet <b>Range</b> obligatoire. Plage à laquelle doit être ajoutée un commentaire.</param>
-        <param name="Text">Facultatif <b>Object</b>. Texte du commentaire.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Comment" /> object qui représente un commentaire ajouté à une plage.</summary>
+        <param name="Text"><b>Objet</b>facultatif. Texte du commentaire.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Comment" /> Object qui représente un Commentaire ajouté à une plage.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,11 +139,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -212,7 +202,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -274,10 +264,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le nom du réviseur dont les commentaires sont affichés dans le volet de commentaires.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez choisir d’afficher les commentaires effectués par un seul ou tous les relecteurs. Pour afficher les commentaires de tous les relecteurs, définir cette propriété sur « Tous les relecteurs ».</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez afficher les commentaires effectués par un seul ou tous les relecteurs. Pour afficher les commentaires apportés par l'ensemble des relecteurs, affectez la valeur « Tous les relecteurs » à cette propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

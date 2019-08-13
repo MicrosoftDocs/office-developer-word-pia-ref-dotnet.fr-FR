@@ -1,13 +1,5 @@
 <Type Name="PageSetup" FullName="Microsoft.Office.Interop.Word.PageSetup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="558d1f8af2b21e49d591c611c2670c360008123e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668597" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PageSetup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="433e93ba8183c9b0045586babe477ca93fb72916" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144203" /></Metadata><TypeSignature Language="C#" Value="public interface PageSetup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageSetup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PageSetup" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageSetup" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente une description de mise en page. L'objet  <b>PageSetup</b> contient tous les attributs de mise en page (marge gauche, marge inférieure, taille du papier, etc.) en tant que propriétés.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>PageSetup</b> pour renvoyer un objet <b>PageSetup</b> .</para>
-      <para />
-    </remarks>
+    <summary>Cet objet représente une description de mise en page. L’objet <b>PageSetup</b> contient tous les attributs de mise en page (marge gauche, marge inférieure, format du papier, etc.) en tant que propriétés.</summary>
+    <remarks><para>Utilisez la propriété <b>PageSetup</b> pour renvoyer un objet <b>PageSetup</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,8 +77,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> pour que Microsoft Word imprimer un document dans une série de livrets afin que les pages imprimées peuvent être intégrées et lire comme un livre.</summary>
+        <summary><b>True</b> pour que Microsoft Word imprimer un document dans une série de livrets afin que les pages imprimées peuvent être intégrées et lire comme un livre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,7 +108,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>entier</b> qui représente le nombre de pages contenues dans chaque livret.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>entier</b> qui représente le nombre de pages pour chaque livret.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,8 +139,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> pour que Microsoft Word afin d'inverser l'ordre d'impression de livre pliez l'impression des documents bidirectionnels ou langues asiatiques.</summary>
+        <summary><b>True</b> pour que Microsoft Word afin d'inverser l'ordre d'impression de livre pliez l'impression des documents bidirectionnels ou langues asiatiques.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,11 +231,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DifferentFirstPageHeaderFooter">
@@ -276,8 +262,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si un en-tête ou un pied de page est utilisé dans la première page. Peut être <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
+        <summary><b>True</b> si un en-tête ou un pied de page est utilisé dans la première page. Peut être <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -370,12 +355,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la quantité (en points) d’espace de marge supplémentaire ajouté à chaque page dans un document ou une section pour la liaison.</summary>
+        <summary>Renvoie ou définit l'espace, exprimé en points, de marge supplémentaire ajouté à chaque page d'un document ou d'une section en vue de sa reliure.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si le <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> est définie sur <b>True</b>, la propriété <b>Gutter</b> ajoute l’espace supplémentaire à l’intérieur marges. Sinon, l’espace supplémentaire est ajouté à la marge de gauche.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> propriété a la valeur <b>true</b>, la propriété <b>gouttière</b> ajoute l’espace supplémentaire aux marges intérieures. Sinon, l’espace est ajouté à la marge gauche.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GutterOnTop">
@@ -503,7 +486,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la distance (en points) entre l’en-tête et le haut de la page.</summary>
+        <summary>Renvoie ou définit la distance, exprimée en points, qui sépare l’en-tête du haut de la page.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -567,10 +550,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la distance (en points) entre le bord gauche de la page et le bord gauche du corps de texte.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si le <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> est définie sur <b>True</b>, la propriété <b>LeftMargin</b> contrôle la définition des marges intérieures et la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.RightMargin" /> propriété contrôle la définition des marges extérieures.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> propriété a la valeur <b>true</b>, la propriété <b>LeftMargin</b> contrôle la définition des marges intérieures et <see cref="P:Microsoft.Office.Interop.Word.PageSetup.RightMargin" /> la propriété contrôle la définition des marges extérieures.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineNumbering">
@@ -599,12 +580,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LineNumbering</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le <see cref="T:Microsoft.Office.Interop.Word.LineNumbering" /> object qui représente le nombre de lignes spécifié <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objet.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.LineNumbering" /> définit l’objet qui représente les numéros de ligne <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> de l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous devez être en mode page pour voir la numérotation des lignes.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour voir la numérotation des lignes, activez l'affichage en mode Page.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinesPage">
@@ -633,7 +612,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nombre de lignes par page dans la grille du document.</summary>
+        <summary>Renvoie ou définit le nombre de lignes par page de la grille du document.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -664,13 +643,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si les marges intérieures et extérieures des pages en vis-à-vis ont la même largeur. Peut être <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
+        <summary><b>True</b> si les marges intérieures et extérieures des pages en vis-à-vis ont la même largeur. Peut être <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la propriété <b>MirrorMargins</b> est définie sur <b>True</b>, le <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LeftMargin" /> propriété contrôle la définition des marges intérieures et la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.RightMargin" /> propriété contrôle la définition des marges extérieures.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la propriété <b>MirrorMargins</b> est définie sur <b>true</b>, la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LeftMargin" /> propriété contrôle la définition des marges intérieures et <see cref="P:Microsoft.Office.Interop.Word.PageSetup.RightMargin" /> la propriété contrôle la définition des marges extérieures.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OddAndEvenPagesHeaderFooter">
@@ -699,8 +675,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur True</b> si le texte spécifié <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objet a des en-têtes et pieds de page pour les pages paires et impaires. Peut être <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
+        <summary><b>True</b> si l’objet <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> spécifié possède des en-têtes et des pieds de page différents pour les pages paires et impaires. Peut être <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -733,10 +708,8 @@
       <Docs>
         <summary>Renvoie ou définit l'orientation de la page.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Parmi les <see cref="T:Microsoft.Office.Interop.Word.WdOrientation" /> constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Il se peut <see cref="T:Microsoft.Office.Interop.Word.WdOrientation" /> que certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge linguistique (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherPagesTray">
@@ -765,7 +738,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPaperTray</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le bac à papier à utiliser pour tous, mais la première page d’un document ou une section.</summary>
+        <summary>Renvoie ou définit le bac d’alimentation papier à utiliser pour toutes les pages d’un document ou d’une section à l’exception de la première page.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -796,13 +769,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la hauteur de la page en points.</summary>
+        <summary>Renvoie ou définit la hauteur de page, exprimée en points.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Définition de la propriété <b>PageHeight</b> change la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PaperSize" /> propriété <b>prend la valeur wdPaperCustom</b>.</para>
-          <para>Utilisez la propriété <b>PaperSize</b> pour définir la hauteur et la largeur à celles d’un format de papier prédéfini, comme lettre ou A4.</para>
-          <para />
-        </remarks>
+        <remarks><para>La définition <b></b> de la propriété PageHeight <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PaperSize" /> remplace la propriété par <b>wdPaperCustom</b>.</para>
+          <para>Utilisez la propriété <b>PaperSize</b> pour définir la hauteur et la largeur à celles d'un format de papier prédéfini, comme lettre ou A4.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageWidth">
@@ -833,11 +804,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la largeur de la page en points.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Définition de la propriété <b>PageWidth</b> change la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PaperSize" /> propriété <b>prend la valeur wdPaperCustom</b>.</para>
-          <para>Utilisez la propriété <b>PaperSize</b> pour définir la hauteur et la largeur à celles d’un format de papier prédéfini, comme lettre ou A4.</para>
-          <para />
-        </remarks>
+        <remarks><para>La définition <b></b> de la propriété PageWidth <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PaperSize" /> affecte la valeur <b>wdPaperCustom</b>à la propriété.</para>
+          <para>Utilisez la propriété <b>PaperSize</b> pour définir la hauteur et la largeur à celles d'un format de papier prédéfini, comme lettre ou A4.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PaperSize">
@@ -868,10 +837,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la taille du papier.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Définition de la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PageHeight" /> ou <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PageWidth" /> propriété change la propriété <b>PaperSize</b> à <b>wdPaperCustom</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le fait <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PageHeight" /> de <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PageWidth" /> définir la propriété ou affecte à la propriété <b>PaperSize</b> la valeur <b>wdPaperCustom</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -930,10 +897,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la distance (en points) entre le bord droit de la page et le bord droit du corps de texte.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si le <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> est définie sur <b>True</b>, la propriété <b>RightMargin</b> contrôle la définition des marges extérieures et la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LeftMargin" /> propriété contrôle la définition des marges intérieures.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> propriété a la valeur <b>true</b>, la propriété <b>RightMargin</b> contrôle la définition des marges extérieures et <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LeftMargin" /> la propriété contrôle la définition des marges intérieures.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SectionDirection">
@@ -1080,13 +1045,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si les notes de fin sont imprimées à la fin de la section suivante qui ne les notes. Notes de fin supprimées sont imprimées avant les notes de fin dans cette section.</summary>
+        <summary><b>True</b> si les notes de fin sont imprimées à la fin de la section suivante qui ne les notes. Notes de fin supprimées sont imprimées avant les notes de fin dans cette section.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété prend effet uniquement si la <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Location" /> propriété est définie sur <b>wdEndOfSection</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété ne prend effet que si <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Location" /> la propriété est définie sur <b>wdEndOfSection</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextColumns">
@@ -1115,12 +1077,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextColumns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> collection qui représente l’ensemble des colonnes de texte spécifié <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objet.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> collection qui représente l’ensemble des colonnes de texte de l' <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Il y aura toujours au moins une colonne de texte dans la collection. Lorsque vous créez des colonnes de texte, vous ajoutez à une collection d’une colonne.</para>
-          <para />
-        </remarks>
+        <remarks><para>La collection contient toujours au moins une colonne de texte. Lorsque vous créez des colonnes de texte, vous ajoutez à une collection d’une colonne.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TogglePortrait">
@@ -1145,10 +1105,8 @@
       <Parameters />
       <Docs>
         <summary>Alterne entre l'orientation portrait et l'orientation paysage pour les pages d'un document ou d'une section.</summary>
-        <remarks>
-          <para>Si les sections spécifiées ont différents pour les pages, une erreur se produit.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si les pages sont orientées de différentes façons dans les sections spécifiées, une erreur sera générée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopMargin">
@@ -1208,8 +1166,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si Microsoft Word imprime les document spécifié deux pages par feuille.</summary>
+        <summary><b>La valeur true</b> si Microsoft Word imprime les document spécifié deux pages par feuille.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

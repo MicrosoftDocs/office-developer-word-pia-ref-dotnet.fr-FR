@@ -1,13 +1,5 @@
 <Type Name="DocumentEvents2_XMLBeforeDeleteEventHandler" FullName="Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bdccc03eae449e6d6d0cebfd1fb535ccc2027181" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668599" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dd959bd70dac23bc982627c03dc51ca9e3940e13" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146935" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocumentEvents2_XMLBeforeDeleteEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocumentEvents2_XMLBeforeDeleteEventHandler(DeletedRange As Range, OldXMLNode As XMLNode, InUndoRedo As Boolean)" />
@@ -36,17 +28,12 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="DeletedRange">
-      <see cref="T:Microsoft.Office.Interop.Word.Range" />objet. Le contenu de l'élément XML en cours de suppression. Si seul un élément est supprimé et texte, pas associé le <paramref name="DeletedRange" /> n’existe pas de paramètre et sera, par conséquent, la valeur <b>Nothing</b>.</param>
-    <param name="OldXMLNode">
-      <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />objet. Nœud supprimé.</param>
-    <param name="InUndoRedo">
-      <b>Boolean</b>. <b>True</b> indique que l'action a été effectuée à l'aide de la fonctionnalité <b>Annuler</b> ou <b>Rétablir</b> dans Microsoft Word.</param>
-    <summary>Un type de <b>délégué</b> utilisé pour ajouter un gestionnaire d’événements pour le <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> événement. L’événement <b>XMLBeforeDelete</b> se produit lorsqu’un utilisateur supprime un élément XML à partir d’un document.</summary>
-    <remarks>
-      <para>Si le <paramref name="InUndoRedo" /> paramètre a la <b>valeur True</b>, ne modifiez jamais le XML dans un document lorsque la <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> et <b>XMLBeforeDelete</b> sont exécutés. </para>
-      <para>Si le <paramref name="InUndoRedo" /> paramètre a la <b>valeur False</b>, vous pouvez insérer et supprimer l’élément XML dans le document, mais vérifiez que les événements <b>XMLAfterInsert</b> et <b>XMLBeforeDelete ne</b> seront pas mutuellement, une boucle infinie. Vous pouvez empêcher les boucles infinies en utilisant un global variable de <b>type Boolean</b> et effectuer cette vérification au début du Gestionnaire d’erreurs.</para>
-      <para />
-    </remarks>
+    <param name="DeletedRange"><see cref="T:Microsoft.Office.Interop.Word.Range" />dessin. Le contenu de l'élément XML en cours de suppression. Si seul un élément est supprimé et qu’il n’y a <paramref name="DeletedRange" /> pas de texte associé, le paramètre n’existera pas et sera donc défini sur <b>Nothing</b>.</param>
+    <param name="OldXMLNode"><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />dessin. Nœud supprimé.</param>
+    <param name="InUndoRedo"><b>Boolean</b>. <b>True</b> indique que l'action a été effectuée à l'aide de la fonctionnalité <b>Annuler</b> ou <b>Rétablir</b> dans Microsoft Word.</param>
+    <summary>Type <b>délégué</b> utilisé pour ajouter un gestionnaire d’événements pour l' <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> événement. L’événement <b>XMLBeforeDelete</b> se produit lorsqu’un utilisateur supprime un élément XML d’un document.</summary>
+    <remarks><para>Si le <paramref name="InUndoRedo" /> paramètre est <b>true</b>, ne modifiez jamais le XML dans un document pendant <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> que les événements et <b>XMLBeforeDelete</b> sont en cours d’exécution. </para>
+      <para>Si le <paramref name="InUndoRedo" /> paramètre est <b></b>défini sur false, vous pouvez insérer et supprimer les données XML dans le document, mais veillez à ce que les événements <b>XMLAfterInsert</b> et <b>XMLBeforeDelete</b> ne tentent pas de s’annuler mutuellement, entraînant une boucle infinie. Vous pouvez empêcher les boucles infinies à l’aide d’une variable <b>booléenne</b> globale et vérifier qu’elles se trouvent au début du gestionnaire d’erreurs.</para>
+      <para> </para></remarks>
   </Docs>
 </Type>

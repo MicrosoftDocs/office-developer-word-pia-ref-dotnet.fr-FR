@@ -1,13 +1,5 @@
 <Type Name="DataLabels" FullName="Microsoft.Office.Interop.Word.DataLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a33924104c6a32705d90232fdb8eadce5b62224e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667474" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="849af9e318dead8239cad6dd722fca3def9aadf0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147115" /></Metadata><TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataLabels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DataLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataLabels&#xA;Implements IEnumerable" />
@@ -30,15 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> les objets de la série spécifiée.</summary>
-    <remarks>
-      <para>Chaque <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objet représente une étiquette de données pour une courbe de tendance ou un point. Pour une série sans point définissable (par exemple, une série de zone), la <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> collection contient une seule étiquette de données.</para>
-      <para />
-    </remarks>
-    <example>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Series.DataLabels(System.Object)" /> méthode pour renvoyer la <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> collection. L’exemple suivant définit le format numérique des étiquettes de données de la première série du premier graphique du document actif.</para>
-      <para>Utiliser <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> (<paramref name="Index" />), où <paramref name="Index" /> est le numéro d’index, pour renvoyer un seul l’étiquette les données <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objet.</para>
-    </example>
+    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objets de la série spécifiée.</summary>
+    <remarks><para>Chaque <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objet représente une étiquette de données pour un point ou une courbe de tendance. Pour une série sans point définissable (par exemple, une série en aires) <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> , la collection contient une seule étiquette de données.</para>
+      <para> </para></remarks>
+    <example><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Series.DataLabels(System.Object)" /> méthode pour renvoyer la <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> collection. L'exemple suivant définit le format numérique des étiquettes de données sur la première série du premier graphique du document actif.</para>
+      <para>Utilisez <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> (<paramref name="Index" />), où <paramref name="Index" /> est le numéro d’index de l’étiquette de données, <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> pour renvoyer un seul objet.</para></example>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -96,10 +84,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,11 +121,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le texte de l’objet modifie la taille de police lorsque la taille de l’objet change. La valeur par défaut est <b>True</b>. <b>Objet</b> en lecture/écriture.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Cette propriété a la valeur <b>True</b> si la taille de la police du texte situé dans l'objet change lorsque l'objet est redimensionné. La valeur par défaut est <b>True</b>. <b>Objet</b> en lecture/écriture.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,14 +152,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La valeur <b>true</b> si tous les objets de la collection de génèrent automatiquement le texte approprié en fonction du contexte. Type de données <b>Boolean</b> en lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Définition de la valeur de cette propriété définit la <see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" /> propriété de toutes les <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objets contenus dans la collection. Cette propriété renvoie <b>la valeur True</b> uniquement lorsque le <see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" /> propriété pour tous les <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objets contenus dans la collection est définie sur <b>True</b>; dans le cas contraire, cette propriété renvoie la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <summary>Valeur <b>true</b> si tous les objets de la collection génèrent automatiquement le texte approprié en fonction du contexte. <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>La définition de la valeur de cette propriété <see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" /> définit la propriété <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> de tous les objets contenus dans la collection. Cette propriété renvoie la <b>valeur true</b> uniquement <see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" /> lorsque la propriété <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> de tous les objets contenus dans la collection a la valeur <b>true</b>; dans le cas contraire, cette propriété renvoie la <b>valeur false</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -205,10 +184,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Border" /> objet qui représente la bordure de l’objet.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Border" /> Object qui représente la bordure de l’objet.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,10 +212,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur <b>entière</b> qui représente le nombre d’objets dans la collection.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Renvoie une valeur de <b>type Integer</b> qui représente le nombre d’objets dans la collection.</summary>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,14 +240,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. Valeur <b>Integer</b> en lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, le <see cref="P:Microsoft.Office.Interop.Word.DataLabels.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.DataLabels.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -297,9 +268,7 @@
       <Parameters />
       <Docs>
         <summary>Supprime l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,10 +298,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> objet pour une forme spécifiée ou un <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objet pour un graphique spécifié qui contient les propriétés de la forme ou le graphique de la mise en forme du remplissage. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> objet pour une forme spécifiée ou un <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objet d’un graphique spécifique qui contient les propriétés de mise en forme du remplissage pour la forme ou le graphique. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,10 +329,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Font" /> objet qui représente la police de l’objet spécifié.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Font" /> Object qui représente la police de l’objet spécifié.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,9 +359,7 @@
       <Docs>
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet.
 En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -458,15 +421,11 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>objet</b> qui représente l’alignement horizontal de l’objet spécifié.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>La valeur de cette propriété peut être définie à un de la <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> constantes.</para>
-          <para>Remarque : certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>objet</b> qui représente l’alignement horizontal de l’objet spécifié.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>La valeur de cette propriété peut être définie sur l’une des <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> constantes.</para>
+          <para>Remarque: il se peut que certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge linguistique (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -495,10 +454,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Interior" /> object qui représente l’intérieur de l’objet spécifié.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Interior" /> Object qui représente l’intérieur de l’objet spécifié.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -528,12 +485,9 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b>obligatoire. Nom ou numéro d'index de l'objet.</param>
+        <param name="Index"><b>Objet</b>required. Nom ou numéro d'index de l'objet.</param>
         <summary>Renvoie un seul objet de la collection.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DataLabel" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -561,9 +515,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie une valeur de <b>type String</b> qui représente le nom de l'objet.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -594,13 +546,9 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur de type <b>String</b> qui représente le code du format de l'objet.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
-        <remarks>
-          <para>Le code de format est la même chaîne que l’option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction <b>Format</b> utilise des chaînes de code de format différentes propriétés <b>NumberFormat</b> et <b>NumberFormatLocal</b> .</para>
-          <para />
-        </remarks>
+        <value><b>String</b></value>
+        <remarks><para>Le code de format est la même chaîne que l'option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction <b>Format</b> utilise des chaînes de code de format différentes de celles auxquelles ont recours les propriétés <b>NumberFormat</b> et <b>NumberFormatLocal</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -629,10 +577,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La valeur <b>true</b> si le format numérique est lié aux cellules (de sorte que le format de nombre est modifié dans les étiquettes lorsqu’il est modifié dans les cellules). Type de données <b>Boolean</b> en lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Cette propriété a la valeur <b>true</b> si le format numérique est lié aux cellules (de sorte que le format de nombre est modifié dans les étiquettes lorsqu’il est modifié dans les cellules). <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -662,14 +608,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>objet</b> qui représente le code du format de l’objet sous la forme d’une chaîne dans la langue de l’utilisateur.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>La fonction <b>Format</b> utilise des chaînes de code de format différentes que la <see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormat" /> et <see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormatLocal" /> propriétés.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>objet</b> qui représente le code du format de l’objet sous la forme d’une chaîne dans la langue de l’utilisateur.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>La fonction <b>format</b> utilise des chaînes de code de format différentes <see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormat" /> de <see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormatLocal" /> celles utilisées par les propriétés et.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -698,14 +640,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>entière</b> qui représente l’orientation du texte.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>La valeur de cette propriété peut être un nombre entier compris entre – 90 et 90 degrés ou l’un de la <see cref="T:Microsoft.Office.Interop.Word.XlOrientation" /> constantes.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>type Integer</b> qui représente l’orientation du texte.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>La valeur de cette propriété peut être une valeur entière comprise entre – 90 et 90 degrés ou <see cref="T:Microsoft.Office.Interop.Word.XlOrientation" /> l’une des constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -732,9 +670,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule <b>Object</b>.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -764,10 +700,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.XlDataLabelPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" /> valeur qui représente la position des étiquettes de données.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" />
-        </value>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" /> définit une valeur qui représente la position des étiquettes de données.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -794,12 +728,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Numéro d’index de la collection <b>DataLabels</b> de l’étiquette de données pour propager.</param>
-        <summary>Propage le contenu et la mise en forme de l’étiquette de données spécifié pour toutes les autres étiquettes de données de la série.</summary>
-        <remarks>
-          <para>Si l’étiquette de données source prend en charge les champs qui sont incompatibles avec l’étiquette de données de destination, les champs sont insérés dans l’écran [nom du champ].</para>
-          <para />
-        </remarks>
+        <param name="Index">Numéro d’index dans la collection <b>DataLabels</b> de l’étiquette de données à propager.</param>
+        <summary>Propage le contenu et la mise en forme de l’étiquette de données spécifiée à toutes les autres étiquettes de données de la série.</summary>
+        <remarks><para>Si l’étiquette de données source prend en charge les champs incompatibles avec l’étiquette de données de destination, ces champs sont insérés dans le formulaire [nom du champ].</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingOrder">
@@ -828,10 +760,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" /> constante représentant le sens de lecture de l’objet spécifié. Type de données <b>Integer</b> en lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" /> définit une constante qui représente le sens de lecture de l’objet spécifié. <b>Entier</b> en lecture/écriture.</summary>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -857,9 +787,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Parameters />
       <Docs>
         <summary>Sélectionne l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -889,14 +817,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit ou renvoie un <b>objet</b> représentant le séparateur utilisé pour les étiquettes de données dans un graphique. Lecture/écriture.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>Si vous utilisez une chaîne, vous obtiendrez une chaîne comme séparateur. Si vous lui affectez l’équivalent de la <see cref="F:Microsoft.Office.Interop.Word.XlDataLabelSeparator.xlDataLabelSeparatorDefault" /> constante (= 1), vous obtiendrez le séparateur d’étiquettes de données par défaut, qui est une virgule ou un saut de ligne, en fonction de l’étiquette de données.</para>
-          <para />
-        </remarks>
+        <summary>Définit ou renvoie un <b>objet</b> représentant le séparateur utilisé pour les étiquettes de données dans un graphique. En lecture/écriture</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Si vous utilisez une chaîne, vous obtiendrez une chaîne comme séparateur. Si vous lui affectez la valeur équivalente <see cref="F:Microsoft.Office.Interop.Word.XlDataLabelSeparator.xlDataLabelSeparatorDefault" /> (= 1), vous obtiendrez le séparateur d’étiquettes de données par défaut, qui peut être une virgule ou un saut de ligne, en fonction de l’étiquette de données.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -926,9 +850,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit une valeur de type <b>Boolean</b> qui détermine si l’objet est ombré.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -958,10 +880,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définissez sur <b>True</b> pour afficher la taille des bulles pour les étiquettes de données dans un graphique. <b>False</b> pour masquer. Type de données <b>Boolean</b> en lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Affectez à cet argument la <b>valeur true</b> pour afficher la taille des bulles pour les étiquettes de données dans un graphique. La valeur <b>False</b> les masque. <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -991,10 +911,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définissez sur <b>True</b> pour afficher le nom de catégorie pour les étiquettes de données dans un graphique. <b>False</b> pour masquer. Type de données <b>Boolean</b> en lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Affectez à cet argument la valeur <b>true</b> pour afficher le nom de catégorie pour les étiquettes de données dans un graphique. La valeur <b>False</b> les masque. <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1024,10 +942,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Affectez la <b>valeur True</b> si le symbole de légende des étiquettes de données est visible. Type de données <b>Boolean</b> en lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Valeur <b>true</b> si la touche de légende de l’étiquette de données est visible. <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1057,10 +973,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définissez sur <b>True</b> pour afficher la valeur du pourcentage pour les étiquettes de données dans un graphique. <b>False</b> pour masquer. Type de données <b>Boolean</b> en lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Affectez à cet argument la valeur <b>true</b> pour afficher la valeur du pourcentage pour les étiquettes de données dans un graphique. La valeur <b>False</b> les masque. <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1090,7 +1004,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définissez sur <b>True</b> pour afficher le champ de la plage <b>De cellules de valeurs</b> dans toutes les étiquettes de données de graphique pour un graphique spécifié. A la valeur <b>False</b> pour masquer ce champ. En lecture/écriture <b>booléen</b> (<b>bool</b> en c#).</summary>
+        <summary>Affectez à cet argument la valeur <b>true</b> pour afficher la <b>valeur du</b> champ plage de cellules dans toutes les étiquettes de données de graphique pour un graphique spécifié. Affectez <b></b> la valeur false pour masquer ce champ. Type de données <b>Boolean</b> en lecture/écriture (<b>bool</b> en C#).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1121,10 +1035,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un objet de type <b>Boolean</b> pour indiquer le comportement d'affichage du nom de la série pour les étiquettes de données dans un graphique. Cette propriété a la valeur <b>True</b> pour afficher le nom de la série. Elle a la valeur <b>False</b> pour le masquer. En lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit un objet de type <b>Boolean</b> pour indiquer le comportement d'affichage du nom de la série pour les étiquettes de données dans un graphique. Cette propriété a la valeur <b>True</b> pour afficher le nom de la série. La valeur <b>False</b> les masque. En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1154,10 +1066,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un objet de type <b>Boolean</b> correspondant à un comportement d'affichage des valeurs d'étiquettes de données d'un graphique spécifié. La valeur <b>True</b> affiche les valeurs. La valeur <b>False</b> les masque. En lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit un objet de type <b>Boolean</b> correspondant à un comportement d'affichage des valeurs d'étiquettes de données d'un graphique spécifié. La valeur <b>True</b> affiche les valeurs. La valeur <b>False</b> les masque. En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1194,9 +1104,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit le type d’étiquette. <b>Objet</b> en lecture/écriture.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1226,14 +1134,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>objet</b> qui représente l’alignement vertical de l’objet spécifié.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>La valeur de cette propriété peut être définie à un de la <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> constantes.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>objet</b> qui représente l’alignement vertical de l’objet spécifié.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>La valeur de cette propriété peut être définie sur l’une des <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

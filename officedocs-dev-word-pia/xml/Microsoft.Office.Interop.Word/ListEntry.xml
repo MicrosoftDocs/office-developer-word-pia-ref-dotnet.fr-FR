@@ -1,13 +1,5 @@
 <Type Name="ListEntry" FullName="Microsoft.Office.Interop.Word.ListEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1d89cf6c617af843338ae18827509a86e36d9a8c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668790" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3ce5e066aaa8a27420cee5f4174fb1ab23f7c2c3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146562" /></Metadata><TypeSignature Language="C#" Value="public interface ListEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListEntry" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente un élément dans un champ liste déroulante.</summary>
-    <remarks>
-      <para>L’objet <b>ListEntry</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.ListEntries" /> collection. La collection <b>ListEntries</b> contient tous les éléments dans un champ de formulaire de liste déroulante.</para>
-      <para>Utiliser <b>ListEntries</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de l’entrée de liste ou le numéro d’index, pour renvoyer un objet <b>ListEntry</b> . Le numéro d’index représente la position de l’entrée dans le champ liste déroulante (le premier élément est le numéro d’index 1).</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.ListEntries.Add(System.String,System.Object@)" /> pour ajouter un élément à un champ de formulaire de liste déroulante.</para>
-      <para />
-    </remarks>
+    <summary>Représente un élément d’un champ liste déroulante.</summary>
+    <remarks><para>L’objet <b>ListEntry</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.ListEntries" /> collection. La collection <b>ListEntries</b> contient l’ensemble des éléments situés dans un champ de formulaire de type liste déroulante.</para>
+      <para>Utilisez <b>ListEntries</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de l’entrée de liste ou le numéro d’index, pour renvoyer un seul objet <b>ListEntry</b> . Le numéro d'index représente la position de l'entrée dans le champ de formulaire de liste déroulante (le premier élément est le numéro d'index 1).</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListEntries.Add(System.String,System.Object@)" /> méthode pour ajouter un élément à un champ de formulaire de liste déroulante.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -143,7 +131,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>entier</b> qui représente la position d’un élément dans une collection.</summary>
+        <summary>Renvoie une <b>valeur de type Integer</b> qui représente la position d’un élément dans une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,7 +162,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

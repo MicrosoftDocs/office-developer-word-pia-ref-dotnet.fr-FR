@@ -1,13 +1,5 @@
 <Type Name="PageNumber" FullName="Microsoft.Office.Interop.Word.PageNumber">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="84335aeefbe91fe9d5f4003bc39813a7196ba593" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668118" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PageNumber" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b811b0b2c2b1792d369b2150ed58810310943396" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144211" /></Metadata><TypeSignature Language="C#" Value="public interface PageNumber" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageNumber" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PageNumber" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageNumber" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Représente un numéro de page dans un en-tête ou un pied de page.</summary>
-    <remarks>
-      <para>L’objet <b>PageNumber</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> collection. La collection <b>PageNumbers</b> contient tous les numéros de page dans un en-tête ou un pied de page.</para>
-      <para>Utiliser <b>PageNumbers</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>PageNumber</b> . Dans la plupart des cas, un en-tête ou un pied de page contient uniquement un numéro de page, qui est le numéro d’index 1.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> pour ajouter un numéro de page (un champ de PAGE) à un en-tête ou un pied de page.</para>
-      <para />
-    </remarks>
+    <remarks><para>L’objet <b>pageNumber</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> collection. La collection <b>PageNumbers</b> contient tous les numéros de page dans un en-tête ou un pied de page.</para>
+      <para>Utilisez <b>PageNumbers</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>pageNumber</b> . Dans la plupart des cas, un en-tête ou un pied de page contient uniquement un numéro de page, qui est le numéro d'index 1.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> méthode pour ajouter un numéro de page (un champ de page) à un en-tête ou un pied de page.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageNumberAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> constante qui représente l’alignement du numéro de page.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> définit une constante qui représente l’alignement du numéro de page.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,11 +134,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -224,7 +212,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>entier</b> qui représente la position d’un élément dans une collection.</summary>
+        <summary>Renvoie une <b>valeur de type Integer</b> qui représente la position d’un élément dans une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,11 +266,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cette méthode sélectionne l'objet spécifié.</summary>
-        <remarks>
-          <para>Après avoir exécuté cette méthode, utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriété pour travailler avec les éléments sélectionnés.</para>
-          <para />
-        </remarks>
+        <summary>Sélectionne l'objet spécifié.</summary>
+        <remarks><para>Après avoir utilisé cette méthode, utilisez <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propriété pour travailler avec les éléments sélectionnés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

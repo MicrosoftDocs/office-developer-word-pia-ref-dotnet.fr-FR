@@ -1,13 +1,5 @@
 <Type Name="MailMergeFields" FullName="Microsoft.Office.Interop.Word.MailMergeFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="81695bc0d7c2fa5c37720ad879012f8adc13b827" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667328" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3120d6713fa67507a7ea299781a6f722aba24386" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147878" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeFields&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objets qui représentent la fusion et publipostage des champs liés dans un document.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" /> propriété pour renvoyer la collection <b>MailMergeFields</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> pour ajouter un champ de fusion à la collection <b>MailMergeFields</b> .</para>
-      <para>Utilisez les <b>champs</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>MailMergeField</b> .</para>
-      <para>La collection <b>MailMergeFields</b> dispose de méthodes supplémentaires, telles que <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> et <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />, pour ajouter des champs associés à une opération de fusion et publipostage.</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objets qui représentent les champs liés au publipostage dans un document.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" /> propriété pour renvoyer la collection <b>MailMergeFields</b> .</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> méthode pour ajouter un champ de fusion à la collection <b>MailMergeFields</b> .</para>
+      <para>Utilisez <b></b>Fields<paramref name="index" />(), <paramref name="index" /> où est le numéro d’index, pour renvoyer un seul objet <b>MailMergeField</b> .</para>
+      <para>La collection <b>MailMergeFields</b> comporte des méthodes supplémentaires, telles <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> que <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />et, pour l’ajout de champs associés à une opération de fusion et publipostage.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,9 +53,8 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Plage où vous souhaitez faire figurer le champ. Si la plage n'est pas réduite, ce champ la remplace.</param>
-        <param name="Name">
-          <b>String</b>obligatoire. Nom du champ.</param>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Plage où vous souhaitez faire figurer le champ. Si la plage n'est pas réduite, ce champ la remplace.</param>
+        <param name="Name">Argument de type <b>String</b> obligatoire. Nom du champ.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet qui représente un champ de fusion et publipostage ajouté à la source de données.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -96,18 +85,15 @@
         <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ ASK.</param>
-        <param name="Name">
-          <b>String</b>obligatoire. Le nom du signet auquel est affecté le texte par défaut ou de réponse. Utilisez un champ REF avec le nom du signet pour afficher le résultat dans un document.</param>
-        <param name="Prompt">Facultatif <b>Object</b>. Texte affiché dans la boîte de dialogue.</param>
-        <param name="DefaultAskText">Facultatif <b>Object</b>. Réponse qui sera automatiquement proposée dans la zone de texte de la boîte de dialogue. Correspond au commutateur \d pour un champ ASK.</param>
-        <param name="AskOnce">Facultatif <b>Object</b>. <b>True</b> pour afficher la boîte de dialogue une seule fois au lieu de chaque fois qu’un nouvel enregistrement de données est fusionné. Correspond au commutateur \o pour un champ ASK.</param>
-        <summary>Ajoute un champ ASK à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement du champ ASK.</param>
+        <param name="Name">Argument de type <b>String</b> obligatoire. Nom du signet auquel la réponse ou le texte par défaut est affecté. Pour afficher le résultat dans un document, utilisez un champ REF contenant le nom du signet.</param>
+        <param name="Prompt"><b>Objet</b>facultatif. Texte affiché dans la boîte de dialogue.</param>
+        <param name="DefaultAskText"><b>Objet</b>facultatif. Réponse qui sera automatiquement proposée dans la zone de texte de la boîte de dialogue. Correspond au commutateur \d d'un champ ASK.</param>
+        <param name="AskOnce"><b>Objet</b>facultatif. <b>True</b> pour afficher la boîte de dialogue une seule fois au lieu de chaque fois qu’un nouvel enregistrement de données est fusionné. Correspond au commutateur \o d’un champ ASK.</param>
+        <summary>Ajoute un champ ASK à un document principal de fusion. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Lors de la mise à jour, un champ ASK affiche une boîte de dialogue qui vous demande le texte à affecter au signet spécifié.</para>
-          <para />
-        </remarks>
+        <remarks><para>À la mise à jour, un champ ASK affiche une boîte de dialogue qui vous demande le texte à affecter au signet spécifié.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFillIn">
@@ -134,17 +120,15 @@
         <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ FILLIN.</param>
-        <param name="Prompt">Facultatif <b>Object</b>. Texte affiché dans la boîte de dialogue.</param>
-        <param name="DefaultFillInText">Facultatif <b>Object</b>. Réponse qui sera automatiquement proposée dans la zone de texte de la boîte de dialogue. Correspond au commutateur \d d'un champ FILLIN.</param>
-        <param name="AskOnce">Facultatif <b>Object</b>. <b>True</b> pour afficher l’invite une seule fois au lieu de chaque fois qu’un nouvel enregistrement de données est fusionné. Correspond au commutateur \o pour un champ FILLIN. La valeur par défaut est <b>False</b>.</param>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement du champ FILLIN.</param>
+        <param name="Prompt"><b>Objet</b>facultatif. Texte affiché dans la boîte de dialogue.</param>
+        <param name="DefaultFillInText"><b>Objet</b>facultatif. Réponse qui sera automatiquement proposée dans la zone de texte de la boîte de dialogue. Correspond au commutateur \d d'un champ FILLIN.</param>
+        <param name="AskOnce"><b>Objet</b>facultatif. <b>True</b> pour afficher l’invite une seule fois au lieu de chaque fois qu’un nouvel enregistrement de données est fusionné. Correspond au commutateur \o pour un champ FILLIN. La valeur par défaut est <b>False</b>.</param>
         <summary>Ajoute un champ FILLIN à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Lors de la mise à jour, un champ FILLIN affiche une boîte de dialogue qui vous demande le texte à insérer dans le document à l’emplacement du champ FILLIN.</para>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> méthode avec la <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection d’objets pour ajouter un champ FILLIN à un document autre qu’un document principal de fusion et publipostage.</para>
-          <para />
-        </remarks>
+        <remarks><para>Lors de la mise à jour, un champ FILLIN affiche une boîte de dialogue qui vous demande le texte à insérer dans le document à l'emplacement du champ FILLIN.</para>
+          <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> méthode avec l' <see cref="T:Microsoft.Office.Interop.Word.Fields" /> objet collection pour ajouter un champ FILLIN à un document autre qu’un document principal de fusion et publipostage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIf">
@@ -175,21 +159,18 @@
         <Parameter Name="FalseText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ IF.</param>
-        <param name="MergeField">
-          <b>String</b>obligatoire. Nom du champ de fusion.</param>
-        <param name="Comparison">Requis <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Opérateur utilisé dans la comparaison.</param>
-        <param name="CompareTo">Facultatif <b>Object</b>. Le texte à comparer avec le contenu de <paramref name="MergeField" />.</param>
-        <param name="TrueAutoText">Facultatif <b>Object</b>. Insertion automatique effectuée si le résultat de la comparaison est vrai. Si cet argument n’est spécifié, <paramref name="TrueText" /> est ignorée.</param>
-        <param name="TrueText">Facultatif <b>Object</b>. Texte inséré si le résultat de la comparaison est vrai.</param>
-        <param name="FalseAutoText">Facultatif <b>Object</b>. Insertion automatique effectuée si le résultat de la comparaison est faux. Si cet argument n’est spécifié, <paramref name="FalseText" /> est ignorée.</param>
-        <param name="FalseText">Facultatif <b>Object</b>. Texte inséré si le résultat de la comparaison est faux.</param>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement du champ IF.</param>
+        <param name="MergeField">Argument de type <b>String</b> obligatoire. Nom du champ de fusion.</param>
+        <param name="Comparison">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Opérateur utilisé dans la comparaison.</param>
+        <param name="CompareTo"><b>Objet</b>facultatif. Texte à comparer avec le contenu de <paramref name="MergeField" />.</param>
+        <param name="TrueAutoText"><b>Objet</b>facultatif. Insertion automatique effectuée si le résultat de la comparaison est vrai. Si cet argument est spécifié, <paramref name="TrueText" /> est ignoré.</param>
+        <param name="TrueText"><b>Objet</b>facultatif. Texte inséré si le résultat de la comparaison est vrai.</param>
+        <param name="FalseAutoText"><b>Objet</b>facultatif. Insertion automatique effectuée si le résultat de la comparaison est faux. Si cet argument est spécifié, <paramref name="FalseText" /> est ignoré.</param>
+        <param name="FalseText"><b>Objet</b>facultatif. Texte inséré si le résultat de la comparaison est faux.</param>
         <summary>Ajoute un champ IF à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Lors de la mise à jour, un champ IF compare un champ d’un enregistrement de données avec une valeur spécifiée, puis insère le texte approprié en fonction du résultat de la comparaison.</para>
-          <para />
-        </remarks>
+        <remarks><para>Une fois mis à jour, un champ IF compare un champ d’un enregistrement de données à une valeur spécifiée, puis insère le texte approprié en fonction du résultat de la comparaison.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMergeRec">
@@ -214,13 +195,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ MERGEREC.</param>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement du champ MERGEREC.</param>
         <summary>Ajoute un champ MERGEREC à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Un champ MERGEREC insère le numéro de l’enregistrement de données actuel (position de l’enregistrement de données dans le résultat de requête) au cours d’une fusion et publipostage.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un champ MERGEREC insère le numéro de l’enregistrement de données actif (la position de l’enregistrement de données dans le résultat de la requête) pendant une fusion et publipostage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMergeSeq">
@@ -245,13 +224,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ MERGESEQ.</param>
-        <summary>Ajoute un champ MERGESEQ à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement du champ MERGESEQ.</param>
+        <summary>Ajoute un champ MERGESEQ à un document principal de fusion. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Un champ MERGESEQ insère un numéro basé sur l’ordre dans lequel les données des enregistrements sont fusionnés (par exemple, lors de l’enregistrement 50 enregistrements 50 à 100 est fusionné, MERGESEQ insère le numéro 1).</para>
-          <para />
-        </remarks>
+        <remarks><para>Un champ MERGESEQ insère un numéro basé sur l’ordre dans lequel les enregistrements de données sont fusionnés (par exemple, lorsque l’enregistrement 50 des enregistrements 50 à 100 est fusionné, le champ MERGESEQ insère le numéro 1).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNext">
@@ -276,13 +253,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ NEXT.</param>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement du champ NEXT.</param>
         <summary>Ajoute un champ NEXT à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Un champ NEXT passe à l’enregistrement de données suivant afin que les données à partir de plusieurs enregistrements peuvent être fusionnées dans le même document (par exemple, une feuille d’étiquettes de publipostage).</para>
-          <para />
-        </remarks>
+        <remarks><para>Un champ NEXT passe à l’enregistrement de données suivant afin que les données de plusieurs enregistrements puissent être fusionnées dans le même document de fusion (par exemple, une feuille d’étiquettes de publipostage).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNextIf">
@@ -309,18 +284,14 @@
         <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ NEXTIF.</param>
-        <param name="MergeField">
-          <b>String</b>obligatoire. Nom du champ de fusion.</param>
-        <param name="Comparison">Requis <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Opérateur utilisé dans la comparaison.</param>
-        <param name="CompareTo">
-          <b>String</b>obligatoire. Le texte à comparer avec le contenu de <paramref name="MergeField" />.</param>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement du champ NEXTIF.</param>
+        <param name="MergeField">Argument de type <b>String</b> obligatoire. Nom du champ de fusion.</param>
+        <param name="Comparison">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Opérateur utilisé dans la comparaison.</param>
+        <param name="CompareTo">Argument de type <b>String</b> obligatoire. Texte à comparer avec le contenu de <paramref name="MergeField" />.</param>
         <summary>Ajoute un champ NEXTIF à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Un champ NEXTIF compare deux expressions, et si la comparaison est vrai, l’enregistrement de données suivant est fusionné dans le document actif.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un champ NEXTIF compare deux expressions, et si la comparaison a la valeur true, l’enregistrement de données suivant est fusionné dans le document de fusion actif.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSet">
@@ -347,17 +318,14 @@
         <Parameter Name="ValueAutoText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ SET.</param>
-        <param name="Name">
-          <b>String</b>obligatoire. Nom du signet qui <paramref name="ValueText" /> est affectée à.</param>
-        <param name="ValueText">Facultatif <b>Object</b>. Texte attaché au signet spécifié par le <paramref name="Name" /> argument.</param>
-        <param name="ValueAutoText">Facultatif <b>Object</b>. L’insertion automatique qui contient le texte attaché au signet spécifié par le <paramref name="Name" /> argument. Si cet argument n’est spécifié, <paramref name="ValueText" /> est ignorée.</param>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement du champ SET.</param>
+        <param name="Name">Argument de type <b>String</b> obligatoire. Nom <paramref name="ValueText" /> du signet affecté à.</param>
+        <param name="ValueText"><b>Objet</b>facultatif. Texte associé au signet spécifié par l' <paramref name="Name" /> argument.</param>
+        <param name="ValueAutoText"><b>Objet</b>facultatif. Insertion automatique qui contient le texte associé au signet spécifié par l' <paramref name="Name" /> argument. Si cet argument est spécifié, <paramref name="ValueText" /> est ignoré.</param>
         <summary>Ajoute un champ SET à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Un champ SET permet de définir le texte du signet spécifié.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un champ SET permet de définir le texte du signet spécifié.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSkipIf">
@@ -384,17 +352,14 @@
         <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du champ SKIPIF.</param>
-        <param name="MergeField">
-          <b>String</b>obligatoire. Nom du champ de fusion.</param>
-        <param name="Comparison">Requis <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Opérateur utilisé dans la comparaison.</param>
-        <param name="CompareTo">Facultatif <b>Object</b>. Le texte à comparer avec le contenu de <paramref name="MergeField" />.</param>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement du champ SKIPIF.</param>
+        <param name="MergeField">Argument de type <b>String</b> obligatoire. Nom du champ de fusion.</param>
+        <param name="Comparison">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Opérateur utilisé dans la comparaison.</param>
+        <param name="CompareTo"><b>Objet</b>facultatif. Texte à comparer avec le contenu de <paramref name="MergeField" />.</param>
         <summary>Ajoute un champ SKIPIF à un document principal de fusion et publipostage. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Un champ SKIPIF compare deux expressions, et si la comparaison est vrai, SKIPIF passe à l’enregistrement de données suivant dans la source de données et démarre un nouveau document de fusion.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un champ SKIPIF compare deux expressions, et si la comparaison a la valeur true, SKIPIF passe à l’enregistrement de données suivant dans la source de données et commence un nouveau document de fusion.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -420,7 +385,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -478,11 +443,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -543,7 +506,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

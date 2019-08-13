@@ -1,13 +1,5 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Word.Pane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6da467368e532f2064abfe444b232f810bf1434" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668025" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c6d2b532972458c15ddcaf3f76f72a0ddd27d36" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147738" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
@@ -26,9 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente un volet de fenêtre. L'objet <b>Pane</b> est un membre de la collection <b>Panes</b>. Le <see cref="Panes#SameCHM" /> collection contient tous les volets d’une fenêtre donnée.</summary>
-    <remarks>
-      <para>Utilisez <b>Panes</b>(<paramref name="Index" />), où <paramref name="Index" /> est le numéro d’index, pour renvoyer un seul objet <b>Pane</b> . L’exemple suivant ferme le volet actif.</para>
+    <summary>Représente un volet de fenêtre. L'objet <b>Pane</b> est un membre de la collection <b>Panes</b>. La <see cref="Panes#SameCHM" /> collection inclut tous les volets d’une fenêtre unique.</summary>
+    <remarks><para>Utilisez <b>Panes</b>(<paramref name="Index" />), où <paramref name="Index" /> est le numéro d’index, pour renvoyer un seul objet <b>Pane</b> . L'exemple suivant ferme le volet actif.</para>
       <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -285,9 +276,14 @@
 
 
 
-    ActiveDocument.ActiveWindow.ActivePane.Close&lt;/span&gt;</code>Méthode 
-      <para>utiliser l' <b>Ajout</b> ou la propriété <b>Split</b> pour ajouter un volet de fenêtre. L’exemple suivant fractionne la fenêtre active à 20 pour cent de la taille de la fenêtre en cours.</para><code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes.Add SplitVertical:=20&lt;/span&gt;</code><para>Suivant montre comment fractionner la fenêtre active en deux.</para><code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Split = True&lt;/span&gt;</code><para>Vous pouvez utiliser la propriété <b>SplitSpecial</b> pour afficher les commentaires, les pieds de page ou les notes de fin dans un volet séparé.</para> Une fenêtre de 
-      <para>a plusieurs volets si la fenêtre est fractionnée ou l’affichage n’est pas en mode d’affichage et des informations telles que des notes ou les commentaires sont affichés. L’exemple suivant affiche le volet de commentaires en mode normal et puis invite l’utilisateur à fermer le volet.</para><code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.View.Type = wdNormalView 
+    ActiveDocument.ActiveWindow.ActivePane.Close&lt;/span&gt;</code>
+      <para>Utilisez la méthode <b>Add</b> ou la propriété <b>Split</b> pour ajouter un volet de fenêtre. L'exemple suivant fractionne la fenêtre active à 20 pour cent de la taille de la fenêtre active.</para>
+      <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes.Add SplitVertical:=20&lt;/span&gt;</code>
+      <para>L'exemple suivant montre comment fractionner la fenêtre active en deux.</para>
+      <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Split = True&lt;/span&gt;</code>
+      <para>Vous pouvez utiliser la propriété <b>SplitSpecial</b> pour afficher les commentaires, les pieds de page ou les notes de fin dans un volet séparé.</para>
+      <para>Une fenêtre contient plusieurs volets si elle est fractionnée ou si elle n'est pas affichée en mode Page et que des informations, telles que les notes de bas de page ou les commentaires, sont affichées. L'exemple suivant montre comment afficher le volet des commentaires en mode Normal, puis inviter l'utilisateur à fermer ce volet.</para>
+      <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.View.Type = wdNormalView 
 
 
 
@@ -2079,7 +2075,8 @@ If ActiveDocument.Comments.Count &amp;gt;= 1 Then
 
 
 
-End If&lt;/span&gt;</code><para /></remarks>
+End If&lt;/span&gt;</code>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -2105,8 +2102,7 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Docs>
         <summary>Active le volet spécifié.</summary>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Cet exemple montre comment fractionne la fenêtre active, puis active le premier volet.</para>
+        <example><para>Cet exemple montre comment fractionner la fenêtre active, puis activer le premier volet.</para>
           <code>&lt;span class="label"&gt;Sub SplitWindow() 
 
 
@@ -2877,8 +2873,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Activate&lt;/span&gt;
-&lt;span class="label"&gt;End WithEnd Sub&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;End WithEnd Sub&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -2904,12 +2899,10 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les fonctions CreateObject et GetObject de Visual Basic vous donnent accès à un objet OLE Automation à partir d’un projet Visual Basic pour Applications.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les fonctions CreateObject et GetObject de Visual Basic vous permettent d'accéder à un objet OLE Automation à partir d'un projet Visual Basic pour Applications.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScroll">
@@ -3002,10 +2995,8 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Docs>
         <summary>Propriété renvoie la largeur (en points) de la zone dans laquelle le texte à la ligne dans le volet spécifié. En lecture seule <b>longue</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété ne fonctionne que lorsque vous êtes en mode Web.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété ne fonctionne que lorsque vous sélectionnez l'affichage en mode Web.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -3031,8 +3022,7 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Docs>
         <summary>Ferme la source de données, le volet ou la tâche de publipostage.</summary>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Cet exemple montre comment ferme le volet actif si la fenêtre active est fractionnée.</para>
+        <example><para>Cet exemple montre comment fermer le volet actif si la fenêtre active est fractionnée.</para>
           <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -3290,8 +3280,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
 
     ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;Close&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;Close&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -3317,12 +3306,10 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. En lecture seule <b>longue</b>.</summary>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Long</b> (en lecture seule).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayRulers">
@@ -3351,15 +3338,11 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si les règles sont affichées pour le volet spécifié. En lecture/écriture <b>booléen</b>.</summary>
+        <summary><b>True</b> si les règles sont affichées pour le volet spécifié. <b>Boolean</b> (en lecture/écriture).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>DisplayRulers</b> équivaut à la commande règle dans le menu Affichage. Si <b>DisplayRulers</b> a la <b>valeur False</b>, les règles horizontales et verticale ne sont pas affichées, quel que soit l’état de la propriété <b>DisplayVerticalRuler</b> .</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Cet exemple montre comment afficher le volet actif en mode et affiche les règles horizontales et verticale.</para>
+        <remarks><para>La propriété <b>DisplayRulers</b> équivaut à la commande règle dans le menu affichage. Si <b>DisplayRulers</b> a la <b>valeur False</b>, les règles horizontales et verticales ne sont pas affichées, quel que soit l'état de la propriété <b>DisplayVerticalRuler</b>.</para>
+          <para> </para></remarks>
+        <example><para>Cet exemple montre comment activer le mode Page du volet actif et afficher les règles horizontale et verticale.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -3874,8 +3857,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .&lt;/span&gt;
 &lt;span class="label"&gt;DisplayRulers&lt;/span&gt;
-&lt;span class="label"&gt;= True    .DisplayVerticalRuler = TrueEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= True    .DisplayVerticalRuler = TrueEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="DisplayVerticalRuler">
@@ -3904,15 +3886,11 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la règle verticale est affichée pour le volet spécifié. En lecture/écriture <b>booléen</b>.</summary>
+        <summary><b>True</b> si la règle verticale est affichée pour le volet spécifié. En lecture/écriture <b>booléen</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La règle verticale s’affiche uniquement en mode page, et uniquement si la propriété <b>DisplayRulers</b> a la valeur <b>true</b>.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Cet exemple montre comment afficher le volet actif en mode et affiche les règles horizontales et verticale.</para>
+        <remarks><para>La règle verticale s'affiche uniquement en mode page, et uniquement si la propriété <b>DisplayRulers</b> a la valeur <b>true</b>.</para>
+          <para> </para></remarks>
+        <example><para>Cet exemple montre comment activer le mode Page du volet actif et afficher les règles horizontale et verticale.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -4683,8 +4661,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .&lt;/span&gt;
 &lt;span class="label"&gt;DisplayVerticalRuler&lt;/span&gt;
-&lt;span class="label"&gt;= TrueEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= TrueEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -4710,7 +4687,7 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet associé avec le volet spécifié. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet associé au volet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4738,19 +4715,15 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objet qui représente une page de cadres entière ou un seule cadre dans une page de cadres. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objet qui représente une page de cadres entière ou un seul cadre sur une page de cadres. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur la création de pages de cadres, voir <see cref="Creatingframespages#SameCHM" />.</para>
-          <para />
-          <para />
-        </remarks>
-        <example>
-          <para>Cet exemple ajoute un nouveau cadre à droite du cadre spécifié.</para>
+        <remarks><para>Pour plus d’informations sur la création de pages <see cref="Creatingframespages#SameCHM" />de cadres, voir.</para>
+          <para> </para>
+          <para> </para></remarks>
+        <example><para>Cet exemple montre comment ajouter un nouveau cadre à la droite du cadre spécifié.</para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Frameset&lt;/span&gt;
-&lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="HorizontalPercentScrolled">
@@ -4782,8 +4755,7 @@ End If&lt;/span&gt;</code><para /></remarks>
         <summary>Cette propriété renvoie ou définit la position de défilement horizontale sous forme de pourcentage de la largeur du document. En lecture/écriture de données <b>Long</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Cet exemple montre comment défile horizontalement le volet actif de la fenêtre Document1 vers la gauche.</para>
+        <example><para>Cet exemple montre comment faire défiler horizontalement jusqu'à l'extrémité gauche le volet actif de la fenêtre Document1.</para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -5298,8 +5270,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;HorizontalPercentScrolled&lt;/span&gt;
-&lt;span class="label"&gt;= 0End With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= 0End With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -5360,10 +5331,8 @@ End If&lt;/span&gt;</code><para /></remarks>
         <param name="ToRight">Nombre d'écrans dont la fenêtre doit défiler vers la droite.</param>
         <param name="ToLeft">Nombre d'écrans dont la fenêtre doit défiler vers la gauche.</param>
         <summary>Fait défiler une fenêtre ou un volet du nombre d'écrans spécifié.</summary>
-        <remarks>
-          <para>Cette méthode équivaut à cliquer immédiatement avant ou après les curseurs de défilement dans les barres de défilement horizontale et verticale.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode équivaut à cliquer immédiatement avant ou après les curseurs de défilement dans les barres de défilement horizontale et verticale.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumFontSize">
@@ -5392,14 +5361,11 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la taille de police minimale (en points) affichée pour le volet spécifié. En lecture/écriture de données <b>Long</b>.</summary>
+        <summary>Cette propriété renvoie ou définit la taille de police minimale (en points) affichée pour le volet spécifié. <b>Long</b> (en lecture/écriture).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété affecte uniquement le texte comme indiqué dans l’affichage en mode Web. Les tailles de point affichées dans la barre d’outils Mise en forme et utilisées pour l’impression ne sont pas modifiées.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Cet exemple montre comment définir la fenêtre active en mode en ligne et puis définit la taille de police minimale pour le volet actif à 12 points.</para>
+        <remarks><para>Cette propriété affecte uniquement l'affichage du texte en mode Web. Les tailles de point affichées dans la barre d'outils Mise en forme et utilisées pour l'impression ne sont pas modifiées.</para>
+          <para> </para></remarks>
+        <example><para>Cet exemple montre comment affecter le mode en ligne à la fenêtre active, puis définir à 12 points la taille minimale de la police dans le volet actif.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow 
 
 
@@ -5915,7 +5881,7 @@ End If&lt;/span&gt;</code><para /></remarks>
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;
 &lt;span class="label"&gt;= 12End With&lt;/span&gt;</code>
-          <para>Cet exemple montre comment renvoyer la taille de police minimale pour le volet actif.</para>
+          <para>Cet exemple montre comment renvoyer la taille minimale de la police dans le volet actif.</para>
           <code>&lt;span class="label"&gt;Msgbox _ 
 
 
@@ -6173,8 +6139,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
 
     ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="NewFrameset">
@@ -6199,12 +6164,9 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Parameters />
       <Docs>
         <summary>Crée une nouvelle page de cadres basée sur le volet spécifié.</summary>
-        <remarks>
-          <para>Pour plus d’informations sur la création de pages de cadres, voir <see cref="Creatingframespages#SameCHM" />.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Cet exemple ouvre un document appelé « Temp.doc » et crée ensuite une nouvelle page de cadres dont l’unique cadre contient « Temp.doc ».</para>
+        <remarks><para>Pour plus d’informations sur la création de pages <see cref="Creatingframespages#SameCHM" />de cadres, voir.</para>
+          <para> </para></remarks>
+        <example><para>Cet exemple montre comment ouvrir un document appelé « Temp.doc » et créer ensuite une nouvelle page de cadres dont l'unique cadre contient « Temp.doc ».</para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Temp.doc" 
 
 
@@ -6462,8 +6424,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
 
 ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;NewFrameset&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;NewFrameset&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -6517,7 +6478,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Pages" /> collection qui représente les pages dans un document.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.Pages" /> collection qui représente les pages dans un document.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6545,7 +6506,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down">Le nombre de pages à faire défiler vers le bas.</param>
+        <param name="Down">Nombre de pages à faire défiler vers le bas.</param>
         <param name="Up">Nombre de pages à faire défiler vers le haut.</param>
         <summary>Permet de faire défiler la fenêtre ou le volet spécifié, page par page.</summary>
         <remarks>To be added.</remarks>
@@ -6690,12 +6651,9 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <Parameters />
       <Docs>
         <summary>Crée une table des matières basée sur le document spécifié et la place dans un nouveau cadre situé à gauche de la page de cadres.</summary>
-        <remarks>
-          <para>Pour plus d’informations sur la création de pages de cadres, voir <see cref="Creatingframespages#SameCHM" />.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Cet exemple montre comment ouvrir un fichier nommé « Proposal.doc », crée une page de cadres basée sur le fichier et ajouter un cadre (sur le côté gauche de la page) contenant une table des matières pour le fichier.</para>
+        <remarks><para>Pour plus d’informations sur la création de pages <see cref="Creatingframespages#SameCHM" />de cadres, voir.</para>
+          <para> </para></remarks>
+        <example><para>Cet exemple montre comment ouvrir un fichier appelé « Proposal.doc », créer une page de cadres basée sur ce fichier et ajouter un cadre (à gauche de la page) contenant une table des matières pour ce fichier.</para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Proposal.doc" 
 
 
@@ -7209,8 +7167,7 @@ ActiveDocument.ActiveWindow.ActivePane.NewFrameset
 
 
 ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;TOCInFrameset&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;TOCInFrameset&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="VerticalPercentScrolled">
@@ -7239,11 +7196,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la position de défilement verticale sous forme de pourcentage de la longueur du document. En lecture/écriture de données <b>Long</b>.</summary>
+        <summary>Cette propriété renvoie ou définit la position de défilement verticale sous forme de pourcentage de la longueur du document. <b>Long</b> (en lecture/écriture).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Cet exemple montre comment faire défiler verticalement le volet actif de la fenêtre pour Document1 à la fin.</para>
+        <example><para>Cet exemple montre comment faire défiler verticalement jusqu'à la fin le volet actif de la fenêtre Document1.</para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -7758,8 +7714,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;VerticalPercentScrolled&lt;/span&gt;
-&lt;span class="label"&gt;= 100End With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= 100End With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="View">
@@ -7788,8 +7743,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <summary>Renvoie un objet <b>View</b> qui représente l'affichage du volet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Cet exemple affiche tous les caractères non imprimables pour les volets associés à la première fenêtre de la collection <b>Windows</b> .</para>
+        <example><para>Cet exemple affiche tous les caractères non imprimables pour les volets associés à la première fenêtre de la collection <b>Windows</b>.</para>
           <code>&lt;span class="label"&gt;For Each myPane In Windows(1).Panes 
 
 
@@ -8048,8 +8002,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 
     myPane.&lt;/span&gt;
 &lt;span class="label"&gt;View&lt;/span&gt;
-&lt;span class="label"&gt;.ShowAll = TrueNext myPane&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;.ShowAll = TrueNext myPane&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Zooms">
@@ -8075,14 +8028,11 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Zooms</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="Zooms#SameCHM" /> collection qui représente les options d’agrandissement pour chaque mode d’affichage (affichage normal, mode plan ou page).</summary>
+        <summary>Renvoie une <see cref="Zooms#SameCHM" /> collection qui représente les options d’agrandissement pour chaque mode d’affichage (affichage normal, mode plan ou mode page).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’un seul membre d’une collection, voir <see cref="ReturninganObjectfromaCollection#SameCHM" />.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Cet exemple montre comment définir le facteur d’agrandissement en mode normal à 100 % pour chaque fenêtre ouverte.</para>
+        <remarks><para>Pour plus d’informations sur le renvoi d’un seul membre d' <see cref="ReturninganObjectfromaCollection#SameCHM" />une collection, reportez-vous à la rubrique.</para>
+          <para> </para></remarks>
+        <example><para>Cet exemple montre comment fixer à 100 le pourcentage d'agrandissement en mode Normal pour chaque fenêtre ouverte.</para>
           <code>&lt;span class="label"&gt;Dim wndLoop as Window 
 
 
@@ -8854,11 +8804,10 @@ For Each wndLoop In Windows
     wndLoop.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
 &lt;span class="label"&gt;(wdNormalView).Percentage = 100Next wndLoop&lt;/span&gt;</code>
-          <para>Cet exemple définit le facteur d’agrandissement en mode d’affichage pour qu’une page entière est visible.</para>
+          <para>Cet exemple montre comment définir le pourcentage d'agrandissement en mode Page de sorte que la totalité d'une page soit visible.</para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
-&lt;span class="label"&gt;(wdPrintView).PageFit = _    wdPageFitFullPage&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;(wdPrintView).PageFit = _    wdPageFitFullPage&lt;/span&gt;</code></example>
       </Docs>
     </Member>
   </Members>

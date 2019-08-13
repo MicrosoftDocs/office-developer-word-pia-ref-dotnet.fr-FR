@@ -1,13 +1,5 @@
 <Type Name="ListGallery" FullName="Microsoft.Office.Interop.Word.ListGallery">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="966516dad1e0dd08ab38c58e333200e586d28db7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668797" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListGallery" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5bd7ff965569856360b744ab132d1fadf6ac4b2d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147885" /></Metadata><TypeSignature Language="C#" Value="public interface ListGallery" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListGallery" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListGallery" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListGallery" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Représente une seule galerie des formats de liste.</summary>
-    <remarks>
-      <para>L’objet <b>ListGallery</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection. Chaque objet <b>ListGallery</b> représente un des trois onglets de puces et numérotation boîte.</para>
-      <para>Utiliser <b>ListGalleries</b>(<paramref name="index" />), où <paramref name="index" /> est <b>wdBulletGallery</b>, <b>wdNumberGallery</b>ou <b>wdOutlineNumberGallery</b>pour renvoyer un seul objet <b>ListGallery</b> .</para>
-      <para>Pour voir si le modèle de liste spécifié contient la mise en forme intégrés dans Microsoft Word, utilisez la <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> propriété de l’objet <b>ListGallery</b> . Pour réinitialiser la mise en forme au format de liste d’origine, utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> méthode pour l’objet <b>ListGallery</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>L’objet <b>ListGallery</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection. Chaque objet <b>ListGallery</b> représente un des trois onglets de la boîte de dialogue Puces et numéros.</para>
+      <para>Utilisez <b>ListGalleries</b>(<paramref name="index" />), où <paramref name="index" /> est <b>wdBulletGallery</b>, <b>wdNumberGallery</b>ou <b>wdOutlineNumberGallery</b>, pour renvoyer un seul objet <b>ListGallery</b> .</para>
+      <para>Pour savoir si le modèle de liste spécifié contient la mise en forme prédéfinie dans Microsoft <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> Word, utilisez la propriété de l’objet <b>ListGallery</b> . Pour rétablir la mise en forme du format de liste d’origine <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> , utilisez la méthode pour l’objet <b>ListGallery</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplates">
@@ -118,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> collection qui représente la liste de tous les formats pour les modèles de liste spécifiée.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> collection qui représente tous les formats de liste de la bibliothèque de listes spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,15 +137,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire. Nombre compris entre 1 à 7 qui correspond à la position du modèle de puces et numéros, boîte de dialogue (menu Format). À l’exception d’aucune option, les modèles sont numérotés de gauche à droite, en commençant par la ligne du haut.</param>
-        <summary>
-          <b>True</b> si le modèle de liste spécifié n'est pas le modèle de liste prédéfini situé à cet emplacement dans la bibliothèque de listes.</summary>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire. Nombre compris entre 1 et 7 qui correspond à la position du modèle dans la boîte de dialogue Puces et numéros (menu Format). À l’exception de l’option aucun, les modèles sont numérotés de gauche à droite, en commençant par la ligne supérieure.</param>
+        <summary><b>True</b> si le modèle de liste spécifié n'est pas le modèle de liste prédéfini situé à cet emplacement dans la bibliothèque de listes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> pour définir un modèle de liste dans une bibliothèque de listes dans le modèle de liste prédéfini.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> méthode pour rétablir un modèle de liste dans une bibliothèque de listes sur le modèle de liste prédéfini.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -211,9 +195,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire.</param>
-        <summary>Réinitialise le modèle de liste spécifié pour la galerie de liste au format de modèle de liste prédéfini.</summary>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire.</param>
+        <summary>Rétablit le format de modèle de liste prédéfini dans le modèle de liste spécifié pour la bibliothèque de listes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

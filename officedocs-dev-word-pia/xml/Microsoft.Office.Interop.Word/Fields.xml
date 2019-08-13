@@ -1,13 +1,5 @@
 <Type Name="Fields" FullName="Microsoft.Office.Interop.Word.Fields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fdd77cf26598c9ff9a9d497e81fbed99577fb24" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668082" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="57c76419b1fbb163aa0a4e6e8b8649d94596aa1d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148074" /></Metadata><TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Fields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Fields" />
   <TypeSignature Language="VB.NET" Value="Public Interface Fields&#xA;Implements IEnumerable" />
@@ -30,11 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Field" /> objets qui représentent tous les champs dans une sélection, une plage ou un document.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>Fields</b> pour renvoyer la collection <b>Fields</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> pour ajouter un champ à la collection <b>Fields</b> .</para> Utilisez les <b>champs</b>de 
-      <para>(<paramref name="index" />), où index est le <paramref name="index" /> numéro, pour renvoyer un seul objet <b>Field</b> . Le numéro d’index représente la position du champ de la sélection, une plage ou un document.</para><para>Utilisez la propriété <b>Fields</b> avec un objet <b>MailMerge</b> pour renvoyer la collection <b>MailMergeFields</b> .</para><para>La <see cref="P:Microsoft.Office.Interop.Word.Fields.Count" /> propriété pour cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d’autres articles utilisez la collection avec le <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet.</para><para /></remarks>
+    <summary>Collection d’objets <see cref="T:Microsoft.Office.Interop.Word.Field" /> qui représentent tous les champs d’une sélection, d’une plage ou d’un document.</summary>
+    <remarks><para>Utilisez la propriété <b>Fields</b> pour renvoyer la collection <b>Fields</b>.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> méthode pour ajouter un champ à la <b></b> collection Fields.</para>
+      <para>Utilisez <b></b>Fields<paramref name="index" />(), où index est <paramref name="index" /> le nombre, pour renvoyer un seul objet <b>Field</b> . Le numéro d'index représente la position du champ dans la sélection, une plage ou un document.</para>
+      <para>Utilisez la <b></b> propriété Fields avec un objet <b>MailMerge</b> pour renvoyer la collection <b>MailMergeFields</b> .</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Fields.Count" /> propriété de cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments d’autres articles, utilisez la collection <see cref="T:Microsoft.Office.Interop.Word.Range" /> avec l’objet.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,17 +55,15 @@
         <Parameter Name="PreserveFormatting" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Plage où vous souhaitez ajouter le champ. Si la plage n’est pas réduite, le champ remplace la plage.</param>
-        <param name="Type">Facultatif <b>Object</b>. Il peut s’agir <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> constante. Pour obtenir la liste des constantes valides, consultez l’Explorateur d’objets. La valeur par défaut est <b>wdFieldEmpty</b>.</param>
-        <param name="Text">Facultatif <b>Object</b>. Texte supplémentaire nécessaire pour le champ. Par exemple, si vous souhaitez spécifier un commutateur pour le champ, vous devez l’ajouter ici.</param>
-        <param name="PreserveFormatting">Facultatif <b>Object</b>. <b>True</b> : pour conserver le format du champ lors des mises à jour.</param>
-        <summary>Ajoute un <see cref="T:Microsoft.Office.Interop.Word.Field" /> objet dans le <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection.</summary>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Plage où vous souhaitez ajouter le champ. Si la plage n'est pas réduite, le champ remplace la plage.</param>
+        <param name="Type"><b>Objet</b>facultatif. Peut être n' <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> importe quelle constante. Pour obtenir une liste des constantes valides, consultez l'Explorateur d'objets. La valeur par défaut est <b>wdFieldEmpty</b>.</param>
+        <param name="Text"><b>Objet</b>facultatif. Texte supplémentaire qui peut être nécessaire pour le champ. Vous pouvez l'utiliser, par exemple, pour ajouter un commutateur.</param>
+        <param name="PreserveFormatting"><b>Objet</b>facultatif. <b>True</b> : pour conserver le format du champ lors des mises à jour.</param>
+        <summary>Ajoute un <see cref="T:Microsoft.Office.Interop.Word.Field" /> objet à la <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cette méthode renvoie l’objet <b>Field</b> à la plage spécifiée.</para>
-          <para>Vous ne pouvez pas insérer certains champs (notamment <b>wdFieldOCX</b> et <b>wdFieldFormCheckBox</b>) à l’aide de la méthode <b>Add</b> de la collection <b>Fields</b> . Au lieu de cela, vous devez utiliser des méthodes spécifiques telles que la <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode et la méthode <b>Add</b> de la <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> collection.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode renvoie l’objet <b>Field</b> au niveau de la plage spécifiée.</para>
+          <para>Certains champs (notamment <b>wdFieldOCX</b> et <b>wdFieldFormCheckBox</b>) ne peuvent pas être insérés au moyen de la méthode <b>Add</b> de la collection <b>Fields</b>. Au lieu de cela, vous devez utiliser des méthodes <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> spécifiques, telles que la méthode et <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> la méthode <b>Add</b> de la collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -97,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,11 +147,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -220,7 +210,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -252,12 +242,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si tous les champs de la <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection sont verrouillés.</summary>
+        <summary>Détermine si tous les champs de <see cref="T:Microsoft.Office.Interop.Word.Fields" /> la collection sont verrouillés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si tous les champs dans le <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection sont verrouillés et <b>False</b> dans le cas contraire.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si tous les <see cref="T:Microsoft.Office.Interop.Word.Fields" /> champs de la collection sont verrouillés et la <b>valeur false</b> dans le cas contraire.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -309,11 +297,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Active ou désactive l’affichage des champs entre les codes de champ et les valeurs de champ.</summary>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Field.ShowCodes" /> propriété pour contrôler l’affichage individuel d’un champ.</para>
-          <para />
-        </remarks>
+        <summary>Active/désactive l’affichage des champs entre les codes de champ et les valeurs de champ.</summary>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Field.ShowCodes" /> propriété pour contrôler l’affichage d’un champ individuel.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Unlink">
@@ -337,11 +323,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Remplace tous les champs dans le <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection avec leurs résultats les plus récents.</summary>
-        <remarks>
-          <para>Lorsque vous Brisez le lien d’un champ, son résultat actuel est converti en texte ou en graphique et permettre ne plus être mis à jour automatiquement. Notez que certains champs, tels que des champs XE (entrée d’Index) et les champs SEQ (Sequence) — ne peut pas être dissociée.</para>
-          <para />
-        </remarks>
+        <summary>Remplace tous les champs de la <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection par leurs résultats les plus récents.</summary>
+        <remarks><para>Lorsque vous brisez le lien d'un champ, son résultat actuel est converti en texte ou en graphique et ne peut plus être mis à jour automatiquement. Notez que certains champs, tels que XE (entrée d’index) et SEQ (Sequence) Fields, ne peuvent pas être dissociés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -367,10 +351,8 @@
       <Docs>
         <summary>Met à jour le résultat de l'objet Fields.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Lorsqu’elle est appliquée à un <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection, renvoie la valeur 0 (zéro) si aucune erreur ne se produit lorsque les champs sont mis à jour ou renvoie un <b>entier</b> représentant l’index du premier champ qui contient une erreur.</para>
-          <para />
-        </remarks>
+        <remarks><para>Lorsqu’elle est appliquée <see cref="T:Microsoft.Office.Interop.Word.Fields" /> à une collection, cette propriété renvoie la valeur 0 (zéro) si aucune erreur n’est générée lors de la mise à jour des champs ou renvoie un <b>entier</b> qui représente l’index du premier champ qui contient une erreur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateSource">
@@ -395,10 +377,8 @@
       <Parameters />
       <Docs>
         <summary>Enregistre dans le document source les modifications apportées aux valeurs d'un champ INCLUDETEXT.</summary>
-        <remarks>
-          <para>Le document source doit être mis en forme en tant qu’un document Microsoft Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le document source doit être mis en forme en tant que document Microsoft Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

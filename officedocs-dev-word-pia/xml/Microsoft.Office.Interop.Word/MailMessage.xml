@@ -1,13 +1,5 @@
 <Type Name="MailMessage" FullName="Microsoft.Office.Interop.Word.MailMessage">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f1bc7701ac4bfc8d2bb8fe6029a2d018dfdd0031" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668216" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMessage" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="79cb7fd3ce8a5755942cbbc77c5979e3c87edcf8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144441" /></Metadata><TypeSignature Language="C#" Value="public interface MailMessage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMessage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMessage" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMessage" />
@@ -26,12 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente le message électronique actif si vous utilisez Microsoft Word comme éditeur de courrier électronique.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Application.MailMessage" /> propriété permet de renvoyer l’objet <b>MailMessage</b> .</para>
-      <para>Les méthodes de l’objet <b>MailMessage</b> nécessitent que vous utilisez Word comme éditeur de messagerie et qu’un message électronique est actif. Si une de ces conditions n’est pas la valeur true, une erreur se produit.</para>
-      <para />
-    </remarks>
+    <summary>Représente le message électronique actif si vous utilisez Microsoft Word comme éditeur de messagerie électronique.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.MailMessage" /> propriété pour renvoyer l’objet <b>MailMessage</b> .</para>
+      <para>Les méthodes de l'objet <b>MailMessage</b> nécessitent que vous utilisez Word comme votre messagerie électronique éditeur et qu'un message électronique est actif. Si l’une de ces conditions n’est pas true, une erreur se produit.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,11 +73,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Valide les adresses de messagerie qui s’affichent dans le champ à :, Cc : et Cci : lignes dans le message électronique actif. Cette méthode est disponible uniquement si vous utilisez Microsoft Word comme éditeur de courrier électronique.</summary>
-        <remarks>
-          <para>Si les noms ne peuvent pas être validés, la boîte de dialogue Vérifier les noms s’affiche.</para>
-          <para />
-        </remarks>
+        <summary>Valide les adresses de messagerie qui apparaissent dans les lignes à:, CC: et CCI: du message électronique actif. Cette méthode est disponible uniquement si vous utilisez Microsoft Word comme éditeur de messagerie électronique.</summary>
+        <remarks><para>Si les noms ne peuvent pas être validés, la boîte de dialogue Vérification des noms s'affiche.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -115,11 +103,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -168,7 +154,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Affiche la boîte de dialogue Déplacer, dans laquelle l'utilisateur peut spécifier le nouvel emplacement d'une banque de messages disponible au niveau duquel il souhaite stocker le message électronique actif. Cette méthode est disponible uniquement si vous utilisez Microsoft Word comme éditeur de courrier électronique.</summary>
+        <summary>Affiche la boîte de dialogue Déplacer, dans laquelle l'utilisateur peut spécifier le nouvel emplacement d'une banque de messages disponible au niveau duquel il souhaite stocker le message électronique actif. Cette méthode est disponible uniquement si vous utilisez Microsoft Word comme éditeur de messagerie électronique.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,7 +179,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Affiche la boîte de dialogue Propriétés correspondant au message électronique actif. Cette méthode est disponible uniquement si vous utilisez Microsoft Word comme éditeur de courrier électronique.</summary>
+        <summary>Affiche la boîte de dialogue Propriétés correspondant au message électronique actif. Cette méthode est disponible uniquement si vous utilisez Microsoft Word comme éditeur de messagerie électronique.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,7 +204,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Affiche la boîte de dialogue Sélectionner des noms dans lequel l’utilisateur peut ajouter des adresses à :, Cc : et Cci : lignes dans le message électronique actif, en attente. Cette méthode est disponible uniquement si vous utilisez Microsoft Word comme éditeur de courrier électronique.</summary>
+        <summary>Affiche la boîte de dialogue Sélectionner des noms, dans laquelle l’utilisateur peut ajouter des adresses aux lignes à:, CC: et CCI: du message électronique actif non envoyé. Cette méthode est disponible uniquement si vous utilisez Microsoft Word comme éditeur de messagerie électronique.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,7 +229,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ouvre un nouveau message électronique avec à est vide : ligne pour transférer le message actif. Cette méthode est disponible uniquement si vous utilisez Microsoft Word comme éditeur de courrier électronique.</summary>
+        <summary>Ouvre un nouveau message électronique avec une ligne vide à: pour transférer le message actif. Cette méthode est disponible uniquement si vous utilisez Microsoft Word comme éditeur de messagerie électronique.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,7 +254,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Affiche le message électronique suivant si vous utilisez Microsoft Word comme éditeur de courrier électronique.</summary>
+        <summary>Affiche le message électronique suivant si vous utilisez Microsoft Word comme éditeur de messagerie électronique.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,7 +279,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Affiche le message électronique précédent si vous utilisez Microsoft Word comme éditeur de courrier électronique.</summary>
+        <summary>Affiche le message électronique précédent si vous utilisez Microsoft Word comme éditeur de messagerie électronique.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,7 +332,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ouvre un nouveau message électronique, avec l’adresse de l’expéditeur à : ligne — afin de répondre au message actif.</summary>
+        <summary>Ouvre un nouveau message électronique, dont la ligne à indique l’adresse de l’expéditeur, afin de répondre au message actif.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,7 +357,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ouvre un nouveau message électronique, avec les adresses de l’expéditeur et tous les autres destinataires à : et Cc : lignes, selon le cas, afin de répondre au message actif.</summary>
+        <summary>Ouvre un nouveau message électronique (avec les adresses de l’expéditeur et de tous les autres destinataires) sur les lignes à: et CC:, le cas échéant, afin de répondre au message actif.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

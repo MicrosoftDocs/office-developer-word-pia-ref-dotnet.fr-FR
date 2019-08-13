@@ -1,13 +1,5 @@
 <Type Name="Broadcast" FullName="Microsoft.Office.Interop.Word.Broadcast">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="98d790daa433768bcb289537f5925f957d798e48" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668273" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Broadcast" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0d509697e025a0a6da57a59ccf0c2e2d3d1b050a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146212" /></Metadata><TypeSignature Language="C#" Value="public interface Broadcast" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Broadcast" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Broadcast" />
   <TypeSignature Language="VB.NET" Value="Public Interface Broadcast" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente une session de diffusion de Service de diffusion Windows Live.</summary>
+    <summary>Représente une session de diffusion de service de diffusion Windows Live.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,13 +46,11 @@
         <Parameter Name="notesWacUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="notesUrl">Spécifie l’URL où sont stockés les notes de réunion partagé, pour les participants qui utilisent le client riche OneNote.</param>
-        <param name="notesWacUrl">Spécifie l’URL où sont stockés les notes de réunion partagé, pour les participants à l’aide du client OneNote en ligne.</param>
-        <summary>Ajoute des notes de réunion partagé pour la diffusion spécifiée qui sont accessibles aux participants qui utilisent le client riche OneNote 2013 ou web app.</summary>
-        <remarks>
-          <para>Si vous ne parvenez pas à passer une chaîne d’un des deux paramètres, la méthode <b>AddMeetingNotes</b> renvoie une erreur paramètre non valide. Si pour une raison quelconque, l’appel de méthode échoue, Word renvoie une erreur générique de diffusion.</para>
-          <para />
-        </remarks>
+        <param name="notesUrl">Spécifie l’URL où sont stockées les notes de réunion partagées, pour les participants qui utilisent le client riche OneNote.</param>
+        <param name="notesWacUrl">Spécifie l’URL où sont stockées les notes de réunion partagées, pour les participants utilisant le client OneNote online.</param>
+        <summary>Ajoute des notes de réunion partagées pour la diffusion spécifiée accessibles aux participants qui utilisent le client enrichi ou l’application Web OneNote 2013.</summary>
+        <remarks><para>Si vous ne parvenez pas à transmettre une chaîne pour l’un des deux paramètres, la méthode <b>AddMeetingNotes</b> renvoie une erreur de paramètre non valide. Si, pour une raison quelconque, l’appel de la méthode échoue, Word renvoie une erreur de diffusion générique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -86,7 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,12 +104,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Si une diffusion est en cours, renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente l’URL du lien de participant. En lecture seule.</summary>
+        <summary>Si une diffusion est en cours, renvoie une <b>chaîne</b> (<b>String</b> en C#) qui représente l’URL du lien du participant. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si une diffusion n’est pas en cours, <b>AttendeeUrl</b> renvoie une chaîne vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si une diffusion n’est pas en cours, <b>attendeeurl,</b> renvoie une chaîne vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Capabilities">
@@ -145,11 +133,34 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>UInteger</b> (<b>uint</b> en c#) qui représente les fonctionnalités de la diffusion spécifiée. En lecture seule.</summary>
+        <summary>Renvoie un <b>UInteger</b> (<b>uint</b> en C#) qui représente les fonctionnalités de la diffusion spécifiée. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>possibilités</b> peut renvoyer les valeurs suivantes :</para>prend en charge
-          <list type="table"><item><description><b>MSOBroadcastCapFileSizeLimited</b></description><description>1</description><description>taille de fichier limitée</description></item><item><description><b>MSOBroadcastCapSupportsMeetingNotes</b></description><description>2</description><description> notes de réunion</description></item><item><description><b>MSOBroadcastCapSupportsUpdateDoc</b></description><description>4</description><description>prend en charge la mise à jour</description></item></list><para>les valeurs retournées correspondent aux soit Microsoft Office 2013 ou Microsoft Office 2010 de diffusion fonctionnalités de service de présentation.</para><para /></remarks>
+        <remarks><para>La propriété <b>Capabilities</b> peut renvoyer les valeurs suivantes:</para>
+          <list type="table">
+            <item>
+              <description>
+                <b>MSOBroadcastCapFileSizeLimited</b>
+              </description>
+              <description>0,1</description>
+              <description>Taille de fichier limitée</description>
+            </item>
+            <item>
+              <description>
+                <b>MSOBroadcastCapSupportsMeetingNotes</b>
+              </description>
+              <description>n°2</description>
+              <description>Prise en charge des notes de réunion</description>
+            </item>
+            <item>
+              <description>
+                <b>MSOBroadcastCapSupportsUpdateDoc</b>
+              </description>
+              <description>4</description>
+              <description>Prend en charge la mise à jour de document</description>
+            </item>
+          </list>
+          <para>Les valeurs renvoyées correspondent à Microsoft Office 2013 ou Microsoft Office 2010 Broadcast Presentation service Capabilities.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -174,11 +185,9 @@
       <Parameters />
       <Docs>
         <summary>Met fin à la session de diffusion spécifiée.</summary>
-        <remarks>
-          <para>L’appel de la méthode <b>End</b> met fin à la session de diffusion sans afficher d’invite de confirmation à l’utilisateur. Il définit également la valeur de la <see cref="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrlproperty" /> sur une chaîne vide.</para>
-          <para>Si le document n’est pas en cours diffusion, la méthode renvoie erreur d’exécution 4702.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’appel de la méthode <b>end</b> met fin à la session de diffusion sans afficher de invite de confirmation à l’utilisateur. Il définit également la valeur de la <see cref="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrlproperty" /> propriété sur une chaîne vide.</para>
+          <para>Si le document n’est pas diffusé, la méthode renvoie l’erreur d’exécution 4702.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -204,7 +213,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>objet</b> qui représente l’objet parent de l’objet de <b>diffusion</b></summary>
+        <summary>Renvoie un <b>Object</b> qui représente l’objet parent de l’objet de <b>diffusion</b> spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -230,11 +239,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Suspend la diffusion spécifiée.</summary>
-        <remarks>
-          <para>Si la diffusion spécifiée n’est pas en cours, <b>Pause</b> renvoie 4702 erreur d’exécution.</para>
-          <para />
-        </remarks>
+        <summary>Interrompt la diffusion spécifiée.</summary>
+        <remarks><para>Si la diffusion spécifiée n’est pas en cours, la méthode <b>Pause</b> renvoie l’erreur d’exécution 4702.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresenterServiceUrl">
@@ -260,12 +267,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Si une diffusion est en cours, cette propriété renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente l’URL du service présentateur hébergeant la diffusion. En lecture seule.</summary>
+        <summary>Si une diffusion est en cours, renvoie une <b>chaîne</b> (<b>String</b> en C#) qui représente l’URL du service de présentateur hébergeant la diffusion. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si une diffusion n’est pas en cours, <b>PresenterServiceUrl</b> renvoie une chaîne vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si une diffusion n’est pas en cours, <b>PresenterServiceUrl</b> renvoie une chaîne vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Resume">
@@ -290,10 +295,8 @@
       <Parameters />
       <Docs>
         <summary>Reprend la diffusion spécifiée.</summary>
-        <remarks>
-          <para>La méthode <b>Resume</b> renvoie une erreur (#4700) si le document est protégé par DRM, est déjà en cours diffusion (#4698), n’est pas diffusé à tous les (#4702), ou comporte des modifications conflictuelles (est en mode de fusion, 4701 #).</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>Resume</b> renvoie une erreur (#4700) si le document est protégé par DRM, qu’il est en cours de diffusion (#4698), qu’il n’est pas diffusé (#4702) ou qu’il est en conflit (est en mode de fusion, #4701).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SessionID">
@@ -319,12 +322,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Si une diffusion est en cours, cette propriété renvoie une <b>chaîne</b> (<b>string</b> en c#) qui spécifie l’ID de la session. En lecture seule.</summary>
+        <summary>Si une diffusion est en cours, renvoie une <b>chaîne</b> (<b>String</b> en C#) qui spécifie l’ID de la session. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si une diffusion n’est pas en cours, <b>SessionID</b> renvoie une chaîne vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si une diffusion n’est pas en cours, <b>SessionID</b> renvoie une chaîne vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -352,11 +353,9 @@
       <Docs>
         <param name="serverUrl">L’URL du serveur de diffusion.</param>
         <summary>Lance la session de diffusion spécifiée.</summary>
-        <remarks>
-          <para>Appel de la méthode <b>Démarrer</b> configure le serveur authentifie l’utilisateur et télécharge la présentation.</para>
-          <para>Si la valeur passée <paramref name="serverUrl" /> a non valide renvoie de <b>Démarrer</b> la mise en forme, une erreur « Paramètre non valide ». En outre, la méthode renvoie une erreur si le document est protégé par, DRM est déjà en cours de diffusion ou des modifications conflictuelles (est en mode de fusion).</para>
-          <para />
-        </remarks>
+        <remarks><para>L’appel de la méthode <b>Start</b> configure le serveur, authentifie l’utilisateur et télécharge la présentation.</para>
+          <para>Si la valeur <paramref name="serverUrl" /> transmise au formatage n’est pas valide, <b>Start</b> renvoie une erreur «paramètre non valide». En outre, la méthode renvoie une erreur si le document est protégé par DRM, s’il est déjà en cours de diffusion ou s’il présente des modifications conflictuelles (est en mode fusion).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -382,23 +381,21 @@
         <ReturnType>Microsoft.Office.Core.MsoBroadcastState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une constante <b>MSOBroadcastState</b> qui décrit l’état actuel de diffusion. En lecture seule.</summary>
+        <summary>Renvoie une constante <b>MSOBroadcastState</b> qui décrit l’état de diffusion actuel. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>State</b> peut renvoyer l’une des trois états suivants :</para>
+        <remarks><para>La propriété <b>State</b> peut renvoyer l’un des trois États suivants:</para>
           <list type="bullet">
             <item>
-              <para>aucune diffusion (0)</para>
+              <para>Aucune diffusion (0)</para>
             </item>
             <item>
-              <para>diffusion en route (1)</para>
+              <para>Diffusion démarrée (1)</para>
             </item>
             <item>
-              <para>diffusion suspendu (2)</para>
+              <para>Diffusion suspendue (2)</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

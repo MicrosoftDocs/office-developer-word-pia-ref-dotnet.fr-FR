@@ -1,13 +1,5 @@
 <Type Name="Find" FullName="Microsoft.Office.Interop.Word.Find">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f63dc36acb8e1cf56f86311f5fd23d30d0daa392" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668031" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Find" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="771250bff76eecefd95fd6cad7906709cfc8f69c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146842" /></Metadata><TypeSignature Language="C#" Value="public interface Find" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Find" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Find" />
   <TypeSignature Language="VB.NET" Value="Public Interface Find" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Représente les critères d'une opération de recherche.</summary>
-    <remarks>
-      <para>Les propriétés et méthodes de l’objet <b>Find</b> correspondent aux options dans la boîte de dialogue Rechercher et remplacer.</para>
-      <para>Utilisez la propriété <b>Find</b> pour renvoyer un objet <b>Find</b> .</para>
-      <para>Si vous avez obtenu l’objet <b>Find</b> à partir de la <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objet, la sélection est modifiée lorsque le texte correspondant aux critères de recherche est trouvé.</para>
-      <para>Si vous avez obtenu l’objet <b>Find</b> à partir de la <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet, la sélection n’est pas modifiée lorsque le texte correspondant aux critères de recherche est trouvé, mais l’objet <b>Range</b> est redéfini.</para>
-      <para />
-    </remarks>
+    <remarks><para>Les propriétés et les méthodes de l’objet <b>Find</b> correspondent aux options de la boîte de dialogue Rechercher et remplacer.</para>
+      <para>Utilisez la propriété <b>Find</b> pour renvoyer un objet <b>Find</b>.</para>
+      <para>Si vous avez obtenu l’objet <b>Find</b> à partir de <see cref="T:Microsoft.Office.Interop.Word.Selection" /> l’objet, la sélection est modifiée lorsque le texte correspondant aux critères de recherche est trouvé.</para>
+      <para>Si vous avez obtenu l’objet <b>Find</b> à partir de <see cref="T:Microsoft.Office.Interop.Word.Range" /> l’objet, la sélection n’est pas modifiée lorsque le texte correspondant aux critères de recherche est trouvé, mais que l’objet <b>Range</b> est redéfini.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,8 +76,7 @@
       <Parameters />
       <Docs>
         <summary>Désactive toutes les options de recherche non spécifiques associées au texte japonais.</summary>
-        <remarks>
-          <para>Cette méthode définit la valeur des propriétés suivantes sur <b>False</b>:</para>
+        <remarks><para>Cette méthode affecte la valeur false aux propriétés suivantes <b></b>:</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyAY" />
           </para>
@@ -142,8 +131,7 @@
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyZJ" />
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearFormatting">
@@ -167,11 +155,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Supprime le texte et mise en forme à partir d’une sélection ou de la mise en forme spécifiée dans une opération de recherche ou de remplacement.</summary>
-        <remarks>
-          <para>Pour vous assurer que la mise en forme n’est pas inclus comme critères dans une recherche ou remplacement, utilisez cette méthode avant d’effectuer l’opération.</para>
-          <para />
-        </remarks>
+        <summary>Supprime la mise en forme de texte et de paragraphe d’une sélection ou de la mise en forme spécifiée dans une opération de recherche ou de remplacement.</summary>
+        <remarks><para>Pour vous assurer que la mise en forme n’est pas incluse dans les critères d’une opération de recherche ou de remplacement, utilisez cette méthode avant d’exécuter l’opération.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearHitHighlight">
@@ -196,13 +182,9 @@
       <Parameters />
       <Docs>
         <summary>Supprime le surlignage du texte situé dans une opération Rechercher avec mise en surbrillance des correspondances et renvoie un <b>type Boolean</b> qui indique si l'opération a réussi.</summary>
-        <returns>
-          <b>Boolean</b>
-        </returns>
-        <remarks>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Find.HitHighlight(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour mettre en surbrillance le texte trouvé.</para>
-          <para />
-        </remarks>
+        <returns><b>Boolean</b></returns>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Find.HitHighlight(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour mettre en surbrillance le texte trouvé.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CorrectHangulEndings">
@@ -233,10 +215,8 @@
       <Docs>
         <summary>Détermine si Microsoft Word corrige automatiquement les terminaisons hangûl lors du remplacement de texte en hangûl.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Microsoft Word corrige automatiquement les terminaisons hangûl lors du remplacement de texte en hangûl et <b>False</b> dans le cas contraire.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si Microsoft Word corrige automatiquement les terminaisons hangûl lors du remplacement de <b></b> texte en hangûl et false dans le cas contraire.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -264,11 +244,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -307,31 +285,29 @@
         <Parameter Name="MatchControl" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FindText">Facultatif <b>Object</b>. Texte à rechercher. Utilisez une chaîne vide ("") pour rechercher la mise en forme uniquement. Vous pouvez rechercher des caractères spéciaux en spécifiant les codes de caractère appropriés. Par exemple, « ^ p » correspond à une marque de paragraphe et « ^ t » correspond à un caractère de tabulation.</param>
-        <param name="MatchCase">Facultatif <b>Object</b>. <b>True</b> pour spécifier que le texte à rechercher est sensible à la casse. Correspond à la case à cocher Respecter la casse dans la boîte de dialogue Rechercher et remplacer (menu Edition).</param>
-        <param name="MatchWholeWord">Facultatif <b>Object</b>. <b>True</b> pour que l’opération de recherche rechercher uniquement des mots entiers et non du texte qui fait partie d’un mot. Correspond à la case à cocher mot entier dans la boîte de dialogue Rechercher et remplacer.</param>
-        <param name="MatchWildcards">Facultatif <b>Object</b>. <b>True</b> pour que le texte à rechercher soit un opérateur de recherche spécial. Correspond à la case à cocher utiliser les caractères génériques dans la boîte de dialogue Rechercher et remplacer.</param>
-        <param name="MatchSoundsLike">Facultatif <b>Object</b>. <b>True</b> pour que l'opération de recherche s'effectue sur les mots similaires au texte à rechercher. Correspond à la case à cocher Recherche phonétique dans la boîte de dialogue Rechercher et remplacer.</param>
-        <param name="MatchAllWordForms">Facultatif <b>Object</b>. <b>True</b> pour que l'opération de recherche s'effectue sur toutes les formes du texte à rechercher (par exemple, « sit » recherche « assis » et « assis »). Correspond à la case à cocher Rechercher toutes les formes du mot dans la boîte de dialogue Rechercher et remplacer.</param>
-        <param name="Forward">Facultatif <b>Object</b>. <b>True</b> pour rechercher l'occurrence suivante (vers la fin du document).</param>
-        <param name="Wrap">Facultatif <b>Object</b>. Contrôles que se passe-t-il si la recherche commence à un point autre que le début du document et la fin du document est atteinte (ou vice versa si <paramref name="Forward" /> est défini sur <b>False</b>). Cet argument contrôle également que se passe-t-il si une sélection ou la plage et le texte de recherche n’est pas trouvé dans la sélection ou la plage. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" /> constantes :<b>wdFindAsk</b> après une recherche de la sélection ou la plage, Microsoft Word affiche un message demandant si la recherche dans le reste du document. <b>wdFindContinue</b> L’opération de recherche continue si le début ou la fin de la plage de recherche est atteinte. <b>wdFindStop</b> La recherche se termine si le début ou la fin de la plage de recherche est atteinte.</param>
-        <param name="Format">Facultatif <b>Object</b>. <b>True</b> pour que l’opération de recherche toutes les formes en plus ou au lieu de texte à rechercher.</param>
-        <param name="ReplaceWith">Facultatif <b>Object</b>. Texte de remplacement. Pour supprimer le texte spécifié par le <paramref name="Find" /> argument, utilisez une chaîne vide (« »). Vous spécifiez des caractères spéciaux et des critères de recherche avancée simplement comme vous le feriez pour le <paramref name="Find" /> argument. Pour spécifier un objet graphique ou un autre élément de texte non en remplacement, déplacer l’élément dans le Presse-papiers et spécifiez « ^ c » pour <paramref name="ReplaceWith" />.</param>
-        <param name="Replace">Facultatif <b>Object</b>. Spécifie le nombre de remplacements à effectuer : un, tous ou aucun. Il peut s’agir <see cref="T:Microsoft.Office.Interop.Word.WdReplace" /> constante :<b>wdReplaceAll </b><b>wdReplaceNone </b><b>wdReplaceOne</b></param>
-        <param name="MatchKashida">Facultatif <b>Object</b>. <b>La valeur True</b> si recherche mettent en correspondance le texte des signes kachidés dans un document en langue arabe. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
-        <param name="MatchDiacritics">Facultatif <b>Object</b>. <b>La valeur True</b> si recherche mettent en correspondance le texte en signes diacritiques dans un document en langue de droite à gauche. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
-        <param name="MatchAlefHamza">Facultatif <b>Object</b>. <b>La valeur True</b> si recherche mettent en correspondance le texte en signes alef hamza dans un document en langue arabe. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
-        <param name="MatchControl">Facultatif <b>Object</b>. <b>La valeur True</b> si recherche mettent en correspondance le texte en caractères de contrôle bidirectionnels dans un document en langue de droite à gauche. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
+        <param name="FindText"><b>Objet</b>facultatif. Texte à rechercher. Utilisez une chaîne vide ("") pour rechercher la mise en forme uniquement. Vous pouvez rechercher des caractères spéciaux en spécifiant les codes de caractère appropriés. Par exemple, « ^p » correspond à une marque de paragraphe et « ^t » correspond à un caractère de tabulation.</param>
+        <param name="MatchCase"><b>Objet</b>facultatif. <b>True</b> pour spécifier que le texte à rechercher est sensible à la casse. Correspond à la case à cocher Respecter la casse de la boîte de dialogue Rechercher et remplacer (menu Édition).</param>
+        <param name="MatchWholeWord"><b>Objet</b>facultatif. <b>True</b> pour que l’opération de recherche localise uniquement les mots entiers, et non du texte qui fait partie d’un mot plus long. Correspond à la case à cocher Mot entier de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchWildcards"><b>Objet</b>facultatif. <b>True</b> pour que le texte à rechercher soit un opérateur de recherche spécial. Correspond à la case Caractères génériques de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchSoundsLike"><b>Objet</b>facultatif. <b>True</b> pour que l'opération de recherche s'effectue sur les mots similaires au texte à rechercher. Correspond à la case à cocher Recherche phonétique dans la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchAllWordForms"><b>Objet</b>facultatif. <b>True</b> pour que l'opération de recherche s'effectue sur toutes les formes du texte à rechercher (par exemple, « sit » recherche « assis » et « assis »). Correspond à la case à cocher Rechercher toutes les formes du mot dans la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="Forward"><b>Objet</b>facultatif. <b>True</b> pour rechercher l'occurrence suivante (vers la fin du document).</param>
+        <param name="Wrap"><b>Objet</b>facultatif. Contrôle ce qui se passe si la recherche commence à un point autre que le début du document et que la fin du document est atteinte (ou vice versa <paramref name="Forward" /> si est défini <b></b>sur false). Cet argument contrôle également ce qui se passe s’il existe une sélection ou une plage et que le texte recherché est introuvable dans la sélection ou la plage. Il peut s’agir de l' <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" /> une des constantes suivantes:<b>wdFindAsk</b> après avoir effectué une recherche dans la sélection ou la plage, Microsoft Word affiche un message demandant s’il faut effectuer une recherche dans le reste du document. <b>wdFindContinue</b> L’opération de recherche continue si le début ou la fin de la plage de recherche est atteinte. <b>wdFindStop</b> L’opération de recherche se termine si le début ou la fin de la plage de recherche est atteinte.</param>
+        <param name="Format"><b>Objet</b>facultatif. <b>True</b> pour que l’opération de recherche localise la mise en forme en plus ou à la place du texte à rechercher.</param>
+        <param name="ReplaceWith"><b>Objet</b>facultatif. Texte de remplacement. Pour supprimer le texte spécifié par l' <paramref name="Find" /> argument, utilisez une chaîne vide (""). Vous pouvez spécifier des caractères spéciaux et des critères de recherche avancée de la <paramref name="Find" /> même manière que pour l’argument. Pour spécifier un objet graphique ou un élément autre qu’un élément de texte en tant que remplacement, déplacez l’élément dans le presse-papiers et <paramref name="ReplaceWith" />spécifiez «^ c» pour.</param>
+        <param name="Replace"><b>Objet</b>facultatif. Spécifie le nombre de remplacements à effectuer : un, tous ou aucun. Peut être n' <see cref="T:Microsoft.Office.Interop.Word.WdReplace" /> importe quelle constante:<b>wdReplaceAll </b> <b>wdReplaceNone </b> <b>wdReplaceOne</b></param>
+        <param name="MatchKashida"><b>Objet</b>facultatif. <b>La valeur True</b> si recherche mettent en correspondance le texte des signes kachidés dans un document en langue arabe. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
+        <param name="MatchDiacritics"><b>Objet</b>facultatif. <b>La valeur True</b> si recherche mettent en correspondance le texte en signes diacritiques dans un document en langue de droite à gauche. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
+        <param name="MatchAlefHamza"><b>Objet</b>facultatif. <b>La valeur True</b> si recherche mettent en correspondance le texte en signes alef hamza dans un document en langue arabe. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
+        <param name="MatchControl"><b>Objet</b>facultatif. <b>La valeur True</b> si recherche mettent en correspondance le texte en caractères de contrôle bidirectionnels dans un document en langue de droite à gauche. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
         <summary>Opération de recherche spécifié s'exécute.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cette méthode renvoie <b>la valeur True</b> si l’opération de recherche est réussie.</para>
-          <para>Si <paramref name="MatchWildcards" /> est <b>True</b>, vous pouvez spécifier des caractères génériques et autres critères de recherche avancée pour la <paramref name="FindText" /> argument. Par exemple, « * (ant) » recherche tous les mots qui se termine par « appel ».</para>
-          <para>Pour rechercher un symbole, tapez un accent circonflexe (^), un zéro (0), puis le code de caractère du symbole. Par exemple, « ^ 0151 » correspond à un tiret cadratin (—).</para>
-          <para>, Sauf indication contraire, le texte de remplacement hérite la mise en forme du texte qu’il remplace dans le document. Par exemple, si vous remplacez la chaîne « abc » par « xyz », occurrences de « abc » en gras sont remplacées par la chaîne « xyz » avec mise en forme en gras.</para>
-          <para>En outre, si <paramref name="MatchCase" /> est <b>False</b>, les occurrences du texte en majuscules seront remplacés par une version en majuscules du texte de remplacement, quelle que soit la casse du texte de la recherche et de remplacement. À l’aide de l’exemple précédent, les occurrences de « ABC » sont remplacés par « XYZ. »</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode renvoie la <b>valeur true</b> si l’opération de recherche a réussi.</para>
+          <para>Si <paramref name="MatchWildcards" /> la <b>valeur est true</b>, vous pouvez spécifier des caractères génériques et d’autres critères <paramref name="FindText" /> de recherche avancée pour l’argument. Par exemple, «* (ING)» trouve un mot qui se termine par «ING».</para>
+          <para>Pour rechercher un caractère de symbole, tapez un accent circonflexe (^), un zéro (0), puis le code de caractère du symbole. Par exemple, «^ 0151» correspond à un tiret cadratin (—).</para>
+          <para>À moins que ce soit spécifié, le texte de remplacement hérite du format du texte qu'il remplace dans le document. Par exemple, si vous remplacez la chaîne «ABC» par «XYZ», les occurrences de «ABC» avec une mise en forme en gras sont remplacées par la chaîne «XYZ» en gras.</para>
+          <para>En outre, <paramref name="MatchCase" /> si la <b>valeur</b>est false, les occurrences du texte de recherche qui sont en majuscules sont remplacées par une version en majuscules du texte de remplacement, indépendamment de la casse du texte de recherche et de remplacement. À l’aide de l’exemple précédent, les occurrences de «ABC» sont remplacées par «XYZ».</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute2007">
@@ -376,50 +352,32 @@
       </Parameters>
       <Docs>
         <param name="FindText">Texte à rechercher. Utilisez une chaîne vide ("") pour rechercher la mise en forme uniquement. Vous pouvez rechercher des caractères spéciaux en spécifiant les codes de caractère appropriés. Par exemple, « ^p » correspond à une marque de paragraphe et « ^t » correspond à un caractère de tabulation.</param>
-        <param name="MatchCase">
-          <b>True</b> pour spécifier que le texte de recherche doit respecter la casse. Correspond à la case à cocher Respecter la casse dans la boîte de dialogue Rechercher et remplacer (menu Edition).</param>
-        <param name="MatchWholeWord">
-          <b>True</b> pour que l'opération de recherche rechercher uniquement des mots entiers et non du texte qui fait partie d'un mot. Correspond à la case à cocher mot entier dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="MatchWildcards">
-          <b>True</b> pour que le texte à rechercher soit un opérateur de recherche spécial. Correspond à la case à cocher utiliser les caractères génériques dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="MatchSoundsLike">
-          <b>True</b> pour que l'opération de recherche s'effectue sur les mots similaires au texte à rechercher. Correspond à la case à cocher Recherche phonétique dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="MatchAllWordForms">
-          <b>True</b> pour que l'opération de recherche s'effectue sur toutes les formes du texte à rechercher (par exemple, « sit » recherche « assis » et « assis »). Correspond à la case à cocher Rechercher toutes les formes du mot dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="Forward">
-          <b>True</b> pour rechercher l'occurrence suivante (vers la fin du document).</param>
-        <param name="Wrap">Contrôles que se passe-t-il si la recherche commence à un point autre que le début du document et la fin du document est atteinte (ou vice versa si <paramref name="Forward" /> est défini sur <b>False</b>). Cet argument contrôle également ce qui se passe s'il existe une sélection ou la plage et le texte recherché est introuvable dans la sélection ou la plage. Peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" /> valeurs d’énumération.</param>
-        <param name="Format">
-          <b>True</b> pour que l’opération de recherche s’effectue sur toutes les formes en plus ou à la place du mot à rechercher.</param>
-        <param name="ReplaceWith">Texte de remplacement. Pour supprimer le texte spécifié par le <paramref name="Find" /> argument, utilisez une chaîne vide (« »). Vous spécifiez des caractères spéciaux et des critères de recherche avancée simplement comme vous le feriez pour le <paramref name="Find" /> argument. Pour spécifier un objet graphique ou un autre élément non textuels en remplacement, déplacer l’élément dans le Presse-papiers et spécifiez « ^ c » pour <paramref name="ReplaceWith" />.</param>
-        <param name="Replace">Spécifie le nombre de remplacements à effectuer : un, tous ou aucun. Il peut s’agir <see cref="T:Microsoft.Office.Interop.Word.WdReplace" /> valeur d’énumération.</param>
-        <param name="MatchKashida">
-          <b>La valeur True</b> si recherche mettent en correspondance le texte des signes kachidés dans un document en langue arabe. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
-        <param name="MatchDiacritics">
-          <b>La valeur True</b> si recherche mettent en correspondance le texte en signes diacritiques dans un document en langue de droite à gauche. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
-        <param name="MatchAlefHamza">
-          <b>La valeur True</b> si recherche mettent en correspondance le texte en signes alef hamza dans un document en langue arabe. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
-        <param name="MatchControl">
-          <b>La valeur True</b> si recherche mettent en correspondance le texte en caractères de contrôle bidirectionnels dans un document en langue de droite à gauche. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
-        <param name="MatchPrefix">
-          <b>True</b> pour faire correspondre les mots commençant par la chaîne de recherche. Correspond à la case à cocher préfixe dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="MatchSuffix">
-          <b>True</b> pour faire correspondre les mots se terminant par la chaîne de recherche.  Correspond à la case à cocher suffixe dans la boîte de dialogue Rechercher et remplacer.</param>
-        <param name="MatchPhrase">
-          <b>True</b> ignore tous les espaces et les caractères de contrôle situés entre les mots.</param>
-        <param name="IgnoreSpace">
-          <b>True</b> ignore tous les espaces entre les mots. Correspond à la case à cocher Ignorer les caractères d'espace blanc dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="IgnorePunct">
-          <b>True</b> ignore tous les caractères de ponctuation entre les mots. Correspond à la case à cocher Ignorer ponctuation dans la boîte de dialogue Rechercher et remplacer. </param>
+        <param name="MatchCase"><b>True</b> pour spécifier que le texte de recherche doit respecter la casse. Correspond à la case à cocher Respecter la casse de la boîte de dialogue Rechercher et remplacer (menu Édition).</param>
+        <param name="MatchWholeWord"><b>True</b> pour que l'opération de recherche rechercher uniquement des mots entiers et non du texte qui fait partie d'un mot. Correspond à la case à cocher Mot entier de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchWildcards"><b>True</b> pour que le texte à rechercher soit un opérateur de recherche spécial. Correspond à la case Caractères génériques de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchSoundsLike"><b>True</b> pour que l'opération de recherche s'effectue sur les mots similaires au texte à rechercher. Correspond à la case à cocher Recherche phonétique dans la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchAllWordForms"><b>True</b> pour que l'opération de recherche s'effectue sur toutes les formes du texte à rechercher (par exemple, « sit » recherche « assis » et « assis »). Correspond à la case à cocher Rechercher toutes les formes du mot dans la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="Forward"><b>True</b> pour rechercher l'occurrence suivante (vers la fin du document).</param>
+        <param name="Wrap">Contrôle ce qui se passe si la recherche commence à un point autre que le début du document et que la fin du document est atteinte (ou vice versa <paramref name="Forward" /> si est défini <b></b>sur false). Cet argument contrôle également ce qui se passe s'il existe une sélection ou la plage et le texte recherché est introuvable dans la sélection ou la plage. Il peut s’agir de <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" /> l’une des valeurs d’énumération.</param>
+        <param name="Format"><b>True</b> pour que l’opération de recherche s’effectue sur toutes les formes en plus ou à la place du mot à rechercher.</param>
+        <param name="ReplaceWith">Texte de remplacement. Pour supprimer le texte spécifié par l' <paramref name="Find" /> argument, utilisez une chaîne vide (""). Vous pouvez spécifier des caractères spéciaux et des critères de recherche avancée de la <paramref name="Find" /> même manière que pour l’argument. Pour spécifier un objet graphique ou un élément autre qu’un élément de texte en tant que remplacement, déplacez l’élément dans le presse-papiers <paramref name="ReplaceWith" />et spécifiez «^ c» pour.</param>
+        <param name="Replace">Spécifie le nombre de remplacements à effectuer : un, tous ou aucun. Peut être n' <see cref="T:Microsoft.Office.Interop.Word.WdReplace" /> importe quelle valeur d’énumération.</param>
+        <param name="MatchKashida"><b>La valeur True</b> si recherche mettent en correspondance le texte des signes kachidés dans un document en langue arabe. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
+        <param name="MatchDiacritics"><b>La valeur True</b> si recherche mettent en correspondance le texte en signes diacritiques dans un document en langue de droite à gauche. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
+        <param name="MatchAlefHamza"><b>La valeur True</b> si recherche mettent en correspondance le texte en signes alef hamza dans un document en langue arabe. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
+        <param name="MatchControl"><b>La valeur True</b> si recherche mettent en correspondance le texte en caractères de contrôle bidirectionnels dans un document en langue de droite à gauche. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
+        <param name="MatchPrefix"><b>True</b> pour faire correspondre les mots commençant par la chaîne de recherche. Correspond à la case à cocher Préfixe de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchSuffix"><b>True</b> pour faire correspondre les mots se terminant par la chaîne de recherche.  Correspond à la case à cocher Suffixe de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchPhrase"><b>True</b> ignore tous les espaces et les caractères de contrôle situés entre les mots.</param>
+        <param name="IgnoreSpace"><b>True</b> ignore tous les espaces entre les mots. Correspond à la case à cocher Ignorer les caractères d’espacement de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="IgnorePunct"><b>True</b> ignore tous les caractères de ponctuation entre les mots. Correspond à la case à cocher Ignorer les marques de ponctuation de la boîte de dialogue Rechercher et remplacer.</param>
         <summary>Opération de recherche spécifié s'exécute. Renvoie <b>la valeur True</b> si l'opération a réussi.</summary>
-        <returns>Une valeur <b>booléenne</b> indiquant si l’opération de recherche a réussi.</returns>
-        <remarks>
-          <para>Si <paramref name="MatchWildcards" /> est <b>True</b>, vous pouvez spécifier des caractères génériques et autres critères de recherche avancée pour la <paramref name="FindText" /> argument. Par exemple, « * (ant) » recherche tous les mots qui se termine par « appel ».</para>
-          <para>Pour rechercher un symbole, tapez un accent circonflexe (^), un zéro (0), puis le code de caractère du symbole. Par exemple, « ^ 0151 » correspond à un tiret cadratin (—).</para>
-          <para>, Sauf indication contraire, le texte de remplacement hérite la mise en forme du texte qu’il remplace dans le document. Par exemple, si vous remplacez la chaîne « abc » par « xyz », occurrences de « abc » en gras sont remplacées par la chaîne « xyz » avec mise en forme en gras.</para>
-          <para>En outre, si <paramref name="MatchCase" /> est <b>False</b>, les occurrences du texte en majuscules seront remplacés par une version en majuscules du texte de remplacement, quelle que soit la casse du texte de remplacement. À l’aide de l’exemple précédent, les occurrences de « ABC » sont remplacés par « XYZ ».</para>
-          <para />
-        </remarks>
+        <returns>Valeur de <b>type Boolean</b> indiquant si l’opération de recherche a réussi.</returns>
+        <remarks><para>Si <paramref name="MatchWildcards" /> la <b>valeur est true</b>, vous pouvez spécifier des caractères génériques et d’autres critères <paramref name="FindText" /> de recherche avancée pour l’argument. Par exemple, « *(ant) » recherche tous les mots se terminant par « ant ».</para>
+          <para>Pour rechercher un symbole, tapez le signe (^) suivi d’un zéro (0), puis le code de caractère du symbole. Par exemple, « ^0151 » correspond à un tiret cadratin (—).</para>
+          <para>À moins que ce soit spécifié, le texte de remplacement hérite du format du texte qu'il remplace dans le document. Par exemple, si vous remplacez la chaîne « abc » par « xyz », les occurrences de « abc » en gras sont remplacées par la chaîne « xyz » en gras.</para>
+          <para>En outre, <paramref name="MatchCase" /> si la <b>valeur</b>est false, les occurrences du texte de recherche qui sont en majuscules seront remplacées par une version en majuscules du texte de remplacement, indépendamment de la casse du texte de remplacement. À l'aide de l'exemple précédent, les occurrences de « ABC » sont remplacés par « XYZ ».</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteOld">
@@ -499,7 +457,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.Font" /> object qui représente la mise en forme de caractères de l’objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.Font" /> définit un objet qui représente la mise en forme de caractères de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -532,10 +490,8 @@
       <Docs>
         <summary>Déterminer si la mise en forme est incluse dans l’opération de recherche.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si la mise en forme est inclus dans l’opération de recherche, <b>False</b> dans le cas contraire. Définissez la valeur de la propriété <b>la valeur True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si la mise en forme est incluse dans l’opération de recherche et la <b>valeur false</b> dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Forward">
@@ -564,12 +520,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si l’opération de recherche s’effectue vers l’avant dans le document.</summary>
+        <summary>Détermine si l’opération de recherche effectue la recherche vers l’avant du document.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si l’opération de recherche effectue la recherche vers l’avant du document et <b>False</b> si la recherche vers l’arrière du document. Définissez la valeur de la propriété <b>la valeur True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si l’opération de recherche effectue la recherche vers l’avant du document, et la <b>valeur false</b> si elle effectue une recherche vers l’arrière du document. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Found">
@@ -595,12 +549,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si la recherche de l’objet spécifié a généré une correspondance.</summary>
+        <summary>Détermine si la recherche de l’objet spécifié a produit une correspondance.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si la recherche, vous obtiendrez une correspondance et <b>False</b> dans le cas contraire.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si la recherche produit une correspondance et <b>false</b> dans le cas contraire.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -626,7 +578,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Frame" /> object qui représente le cadre de la mise en forme pour le style spécifié ou l’opération de recherche et remplacement.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Frame" /> Object qui représente la mise en forme de cadre pour le style spécifié ou l’opération de recherche et de remplacement.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -657,10 +609,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> qui indique si localiser phonétiques hangûl et hanja opération de recherche de caractères dans une langue coréenne. En lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> qui indique si localiser phonétiques hangûl et hanja opération de recherche de caractères dans une langue coréenne. En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -690,13 +640,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si la mise en forme surlignée est inclus dans les critères de recherche.</summary>
+        <summary>Détermine si la mise en forme surlignée est incluse dans les critères de recherche.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de la <b>constante wdUndefined</b> peut être utilisée avec le <see cref="T:Microsoft.Office.Interop.Word.Find" /> objet pour ignorer l’état de mise en surbrillance de la mise en forme de la sélection ou la plage qui est recherchée.</para>
-          <para>Cette propriété renvoie <b>la valeur True</b> si la mise en forme surlignée est inclus dans les critères de recherche. Peut renvoyer ou avoir la valeur <b>True</b>, <b>False</b>ou <b>wdUndefined</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <b>constante wdUndefined</b> peut être utilisée avec l' <see cref="T:Microsoft.Office.Interop.Word.Find" /> objet pour ignorer l’état de la mise en surbrillance dans la sélection ou la plage dans laquelle la recherche est effectuée.</para>
+          <para>Cette propriété renvoie la <b>valeur true</b> si la mise en forme surlignée est incluse dans les critères de recherche. Peut renvoyer ou avoir la valeur <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HitHighlight">
@@ -741,48 +689,29 @@
       </Parameters>
       <Docs>
         <param name="FindText">Spécifie le texte à rechercher. Utilisez une chaîne vide ("") pour rechercher la mise en forme uniquement. Vous pouvez rechercher des caractères spéciaux en spécifiant les codes de caractère appropriés. Par exemple, « ^p » correspond à une marque de paragraphe et « ^t » correspond à un caractère de tabulation.</param>
-        <param name="HighlightColor">Spécifie la couleur de surbrillance pour le texte. Peut être n’importe quelle couleur RVB ou l’un de la <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> valeurs d’énumération.</param>
-        <param name="TextColor">Spécifie la couleur du texte. Peut être n’importe quelle couleur RVB ou l’un de la <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> valeurs d’énumération.</param>
-        <param name="MatchCase">
-          <b>True</b> pour spécifier que le texte à rechercher est sensible à la casse. Correspond à la case à cocher respecter la casse dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="MatchWholeWord">
-          <b>True</b> pour que l'opération de recherche rechercher uniquement des mots entiers et non du texte qui fait partie d'un mot. Correspond à la case à cocher mot entier dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="MatchPrefix">
-          <b>True</b> pour faire correspondre les mots commençant par la chaîne de recherche. Correspond à la case à cocher préfixe dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="MatchSuffix">
-          <b>True</b> pour faire correspondre les mots se terminant par la chaîne de recherche.  Correspond à la case à cocher suffixe dans la boîte de dialogue Rechercher et remplacer.</param>
-        <param name="MatchPhrase">
-          <b>True</b> ignore tous les espaces et les caractères de contrôle situés entre les mots.</param>
-        <param name="MatchWildcards">
-          <b>True</b> pour que le texte à rechercher soit un opérateur de recherche spécial. Correspond à la case à cocher utiliser les caractères génériques dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="MatchSoundsLike">
-          <b>True</b> pour que l'opération de recherche s'effectue sur les mots similaires au texte à rechercher. Correspond à la case à cocher Recherche phonétique dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="MatchAllWordForms">
-          <b>True</b> pour que l'opération de recherche s'effectue sur toutes les formes du texte à rechercher (par exemple, « sit » recherche « assis » et « assis »). Correspond à la case à cocher Rechercher toutes les formes du mot dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="MatchByte">
-          <b>True</b> pour faire la distinction entre les caractères pleine chasse et demi-chasse lettres pendant une recherche.</param>
-        <param name="MatchFuzzy">
-          <b>True</b> pour utiliser les options de recherche non spécifiques du texte japonais pendant une recherche. En lecture-écriture. </param>
-        <param name="MatchKashida">
-          <b>La valeur True</b> si recherche mettent en correspondance le texte des signes kachidés dans un document en langue arabe. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
-        <param name="MatchDiacritics">
-          <b>La valeur True</b> si recherche mettent en correspondance le texte en signes diacritiques dans un document en langue de droite à gauche. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
-        <param name="MatchAlefHamza">
-          <b>La valeur True</b> si recherche mettent en correspondance le texte en signes alef hamza dans un document en langue arabe. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
-        <param name="MatchControl">
-          <b>La valeur True</b> si recherche mettent en correspondance le texte en caractères de contrôle bidirectionnels dans un document en langue de droite à gauche. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
-        <param name="IgnoreSpace">
-          <b>True</b> ignore tous les espaces entre les mots. Correspond à la case à cocher Ignorer les caractères d'espace blanc dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="IgnorePunct">
-          <b>True</b> ignore tous les caractères de ponctuation entre les mots. Correspond à la case à cocher Ignorer ponctuation dans la boîte de dialogue Rechercher et remplacer. </param>
-        <param name="HanjaPhoneticHangul">
-          <b>True</b> ignore les caractères phonétiques hangûl et hanja. Cette option est disponible uniquement si vous devez prendre en charge des langues coréens. </param>
+        <param name="HighlightColor">Spécifie la couleur de surbrillance pour le texte. Peut être n’importe quelle couleur RVB ou l' <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> une des valeurs d’énumération.</param>
+        <param name="TextColor">Spécifie la couleur du texte. Peut être n’importe quelle couleur RVB ou l' <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> une des valeurs d’énumération.</param>
+        <param name="MatchCase"><b>True</b> pour spécifier que le texte à rechercher est sensible à la casse. Correspond à la case à cocher respecter la casse dans la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchWholeWord"><b>True</b> pour que l'opération de recherche rechercher uniquement des mots entiers et non du texte qui fait partie d'un mot. Correspond à la case à cocher Mot entier de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchPrefix"><b>True</b> pour faire correspondre les mots commençant par la chaîne de recherche. Correspond à la case à cocher Préfixe de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchSuffix"><b>True</b> pour faire correspondre les mots se terminant par la chaîne de recherche.  Correspond à la case à cocher Suffixe de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchPhrase"><b>True</b> ignore tous les espaces et les caractères de contrôle situés entre les mots.</param>
+        <param name="MatchWildcards"><b>True</b> pour que le texte à rechercher soit un opérateur de recherche spécial. Correspond à la case Caractères génériques de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchSoundsLike"><b>True</b> pour que l'opération de recherche s'effectue sur les mots similaires au texte à rechercher. Correspond à la case à cocher Recherche phonétique dans la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchAllWordForms"><b>True</b> pour que l'opération de recherche s'effectue sur toutes les formes du texte à rechercher (par exemple, « sit » recherche « assis » et « assis »). Correspond à la case à cocher Rechercher toutes les formes du mot dans la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="MatchByte"><b>True</b> pour faire la distinction entre les caractères pleine chasse et demi-chasse lettres pendant une recherche.</param>
+        <param name="MatchFuzzy"><b>True</b> pour utiliser les options de recherche non spécifiques du texte japonais pendant une recherche. En lecture/écriture</param>
+        <param name="MatchKashida"><b>La valeur True</b> si recherche mettent en correspondance le texte des signes kachidés dans un document en langue arabe. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
+        <param name="MatchDiacritics"><b>La valeur True</b> si recherche mettent en correspondance le texte en signes diacritiques dans un document en langue de droite à gauche. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
+        <param name="MatchAlefHamza"><b>La valeur True</b> si recherche mettent en correspondance le texte en signes alef hamza dans un document en langue arabe. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
+        <param name="MatchControl"><b>La valeur True</b> si recherche mettent en correspondance le texte en caractères de contrôle bidirectionnels dans un document en langue de droite à gauche. Cet argument n'est peut-être pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée. </param>
+        <param name="IgnoreSpace"><b>True</b> ignore tous les espaces entre les mots. Correspond à la case à cocher Ignorer les caractères d’espacement de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="IgnorePunct"><b>True</b> ignore tous les caractères de ponctuation entre les mots. Correspond à la case à cocher Ignorer les marques de ponctuation de la boîte de dialogue Rechercher et remplacer.</param>
+        <param name="HanjaPhoneticHangul"><b>True</b> ignore les caractères phonétiques hangûl et hanja. Cette option est disponible uniquement si vous devez prendre en charge des langues coréens.</param>
         <summary>Met en surbrillance toutes les correspondances trouvées et renvoie un <b>type Boolean</b> qui indique si des correspondances ont été trouvées.</summary>
-        <returns>Bool�en</returns>
-        <remarks>
-          <para>La méthode <b>HitHighlight</b> s’applique principalement pour rechercher la mise en surbrillance dans Microsoft Office Outlook lorsque Microsoft Office Word est défini comme éditeur de messagerie électronique.  Toutefois, vous pouvez utiliser cette méthode pour des documents dans Word si vous souhaitez mettre en surbrillance le texte trouvé.  Sinon, utilisez la <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode.</para>
-          <para />
-        </remarks>
+        <returns>Boolean</returns>
+        <remarks><para>La méthode <b>HitHighlight</b> s’applique principalement à la mise en surbrillance de recherche dans Microsoft Office Outlook lorsque Microsoft Office Word est spécifié en tant qu’éditeur de courrier électronique.  Cependant, vous pouvez utiliser cette méthode pour des documents dans Word si vous souhaitez mettre en surbrillance le texte trouvé.  Dans le cas contraire <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> , utilisez la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnorePunct">
@@ -811,14 +740,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> qui indique si une opération de recherche doit ignorer la ponctuation dans le texte trouvé. En lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Cette propriété correspond à la case à cocher Ignorer ponctuation caractères dans la boîte de dialogue Rechercher et remplacer.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> qui indique si une opération de recherche doit ignorer la ponctuation dans le texte trouvé. En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cette propriété correspond à la case à cocher Ignorer les marques de ponctuation de la boîte de dialogue Chercher et remplacer.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreSpace">
@@ -848,13 +773,9 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> qui indique si une opération de recherche doit ignorer l'espace supplémentaire dans le texte trouvé. En lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Cette propriété correspond à la case à cocher espaces ignorer la boîte de dialogue Rechercher et remplacer.</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cette propriété correspond à la case à cocher Ignorer les caractères d'espacement de la boîte de dialogue Chercher et remplacer.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageID">
@@ -885,10 +806,8 @@
       <Docs>
         <summary>Renvoie ou définit la langue de l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Certaines des constantes <b>WdLanguageID</b> ci-dessus ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Certaines des constantes <b>WdLanguageID</b> ci-dessus ne sont peut-être pas disponibles, en fonction de la prise en charge linguistique (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -919,10 +838,8 @@
       <Docs>
         <summary>Renvoie ou définit une langue d'Asie orientale pour l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Il s’agit de la méthode recommandée pour renvoyer ou définir la langue du texte d’Asie orientale dans un document créé dans une version d’Asie orientale de Microsoft Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode est recommandée pour renvoyer ou définir la langue d'un texte à caractères d'Asie orientale utilisée dans un document créé dans une version en langue d'Asie orientale de Microsoft Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDOther">
@@ -982,12 +899,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si recherche mettent en correspondance le texte en signes alef hamza dans un document en langue arabe.</summary>
+        <summary>Détermine si les opérations Rechercher mettent en correspondance le texte en signes alef hamza dans un document en langue arabe.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si recherche mettent en correspondance le texte en signes alef hamza dans un document en langue arabe et <b>False</b> dans le cas contraire. Définissez la valeur de la propriété <b>la valeur True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les opérations Rechercher mettent en correspondance le texte en signes alef hamza dans un <b></b> document en langue arabe et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchAllWordForms">
@@ -1016,13 +931,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si toutes les formes du texte à rechercher sont trouvées par l’opération de recherche (par exemple, si le texte à rechercher est « sit », « sat » et « assis » sont également trouvés).</summary>
+        <summary>Détermine si toutes les formes du texte à rechercher sont trouvées par l’opération de recherche (par exemple, si le texte à rechercher est «Sit», «SAT» et «asseyant» sont également trouvés).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si toutes les formes du texte à rechercher sont trouvées par l’opération de recherche (par exemple, si le texte à rechercher est « sit », « sat » et « assis » sont également trouvés) et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.Find" /> objet ou le <paramref name="FindText" /> argument avec le <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour spécifier le texte à rechercher dans un document.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si tous les formulaires du texte à rechercher sont trouvés par l’opération de recherche (par exemple, si le texte à rechercher est «Sit», «SAT» et «asseyant» sont également trouvés <b></b> ), et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Word.Find" /> objet ou de <paramref name="FindText" /> l’argument avec <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> la méthode pour spécifier le texte à rechercher dans un document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchByte">
@@ -1051,12 +964,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si Microsoft Word fait la distinction entre les lettres ou caractères pleine chasse et demi-chasse lors d’une recherche.</summary>
+        <summary>Détermine si Microsoft Word distingue entre les caractères pleine chasse et demi-chasse ou les caractères pendant une recherche.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Word fait la distinction entre les lettres ou caractères pleine chasse et demi-chasse lors d’une recherche et <b>False</b> dans le cas contraire. Définissez la valeur de la propriété <b>la valeur True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si Word se distingue entre les caractères pleine chasse et demi-chasse pendant une recherche, et <b>false</b> dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchCase">
@@ -1087,11 +998,9 @@
       <Docs>
         <summary>Détermine si l’opération de recherche respecte la casse.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si l’opération de recherche respecte la casse et <b>False</b> dans le cas contraire. La valeur par défaut est <b>False</b>. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.Find" /> ou d’utiliser le <paramref name="FindText" /> argument avec le <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour spécifier le texte à rechercher dans un document.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si l’opération de recherche respecte la casse et la <b>valeur false</b> dans le cas contraire. La valeur par défaut est <b>False</b>. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Word.Find" /> objet ou utilisez l' <paramref name="FindText" /> argument avec la <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour spécifier le texte à rechercher dans un document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchControl">
@@ -1120,12 +1029,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si recherche mettent en correspondance le texte en caractères de contrôle bidirectionnels dans un document de langue de droite à gauche.</summary>
+        <summary>Détermine si les opérations Rechercher mettent en correspondance le texte avec des caractères de contrôle bidirectionnels dans un document rédigé dans une langue de droite à gauche.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si recherche mettent en correspondance le texte en caractères de contrôle bidirectionnels dans un document en langue de droite à gauche et <b>False</b> dans le cas contraire. Définissez la valeur de la propriété <b>la valeur True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les opérations Rechercher mettent en correspondance le texte avec des caractères de contrôle bidirectionnels dans un document en <b></b> langue de droite à gauche et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchDiacritics">
@@ -1154,12 +1061,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si recherche mettent en correspondance le texte dans un document de langue de droite à gauche.</summary>
+        <summary>Détermine si les opérations Rechercher mettent en correspondance le texte en signes diacritiques dans un document rédigé dans une langue de droite à gauche.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si recherche mettent en correspondance le texte en signes diacritiques dans un document en langue de droite à gauche et <b>False</b> dans le cas contraire. Définissez la valeur de la propriété <b>la valeur True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les opérations Rechercher mettent en correspondance le texte avec des signes diacritiques dans un document rédigé dans <b></b> une langue de droite à gauche et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchFuzzy">
@@ -1190,10 +1095,8 @@
       <Docs>
         <summary>Détermine si Microsoft Word utilise les options de recherche non spécifiques du texte japonais pendant une recherche.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Word utilise les options de recherche non spécifiques du texte japonais pendant une recherche et <b>False</b> dans le cas contraire. Définissez la valeur de la propriété <b>la valeur True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si Word utilise les options de recherche non spécifiques du texte japonais pendant une <b></b> recherche, et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchKashida">
@@ -1222,12 +1125,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si recherche mettent en correspondance le texte des signes kachidés dans un document en langue arabe.</summary>
+        <summary>Détermine si les opérations Rechercher mettent en correspondance le texte en respectant les signes kachidés dans un document en langue arabe.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si recherche mettent en correspondance le texte des signes kachidés dans un document en langue arabe et <b>False</b> dans le cas contraire. Définissez la valeur de la propriété <b>la valeur True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les opérations Rechercher mettent en correspondance le texte avec des signes kachidés <b></b> dans un document en langue arabe et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchPhrase">
@@ -1256,11 +1157,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> ignore tous les espaces et les caractères de contrôle situés entre les mots. En lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> ignore tous les espaces et les caractères de contrôle situés entre les mots. En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1290,15 +1188,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> pour faire correspondre les mots commençant par la chaîne de recherche. En lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Cette propriété correspond à la case à cocher préfixe dans la boîte de dialogue Rechercher et remplacer.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> pour faire correspondre les mots commençant par la chaîne de recherche. En lecture-écriture.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cette propriété correspond à la case à cocher Préfixe dans la boîte de dialogue Rechercher et remplacer.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchSoundsLike">
@@ -1327,13 +1220,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si l’opération de recherche renvoie des mots similaires au texte à rechercher.</summary>
+        <summary>Détermine si les mots similaires au texte à rechercher sont renvoyés par l’opération de recherche.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si les mots similaires au texte à rechercher sont renvoyées par l’opération de recherche et sur <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.Find" /> objet ou le <paramref name="FindText" /> argument avec le <see cref="M:Microsoft.Office.Interop.Word.Find.ExecuteOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour spécifier le texte à rechercher dans un document.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les mots similaires au texte recherché sont renvoyés par l’opération de recherche et <b>false</b> dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Word.Find" /> objet ou de <paramref name="FindText" /> l’argument avec <see cref="M:Microsoft.Office.Interop.Word.Find.ExecuteOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> la méthode pour spécifier le texte à rechercher dans un document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchSuffix">
@@ -1362,15 +1253,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> pour faire correspondre les mots se terminant par la chaîne recherchée.  En lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Cette propriété correspond à la case à cocher suffixe dans la boîte de dialogue Rechercher et remplacer.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> pour faire correspondre les mots se terminant par la chaîne de recherche.  En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cette propriété correspond à la case à cocher Suffixe dans la boîte de dialogue Rechercher et remplacer.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchWholeWord">
@@ -1399,13 +1285,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si l’opération de recherche recherche uniquement les mots entiers et non du texte qui fait partie d’un mot.</summary>
+        <summary>Détermine si l’opération de recherche localise uniquement les mots entiers et non du texte qui fait partie d’un mot plus long.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si l’opération de recherche recherche uniquement les mots entiers et non du texte qui fait partie d’un mot et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.Find" /> objet ou le <paramref name="FindText" /> argument avec le <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour spécifier le texte à rechercher dans un document.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si l’opération de recherche localise uniquement les mots entiers et non du texte qui fait partie <b></b> d’un mot plus long, et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Word.Find" /> objet ou de <paramref name="FindText" /> l’argument avec <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> la méthode pour spécifier le texte à rechercher dans un document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchWildcards">
@@ -1436,12 +1320,10 @@
       <Docs>
         <summary>Détermine si le texte à rechercher contient des caractères génériques.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si le texte à rechercher contient des caractères génériques et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Correspond à la case utiliser de caractères génériques dans la boîte de dialogue Rechercher et remplacer (menu Edition).</para>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.Find" /> ou d’utiliser le <paramref name="FindText" /> argument avec le <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour spécifier le texte à rechercher dans un document.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si le texte à rechercher contient des caractères <b></b> génériques et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Correspond à la case à cocher utiliser les caractères génériques dans la boîte de dialogue Rechercher et remplacer (menu Edition).</para>
+          <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Word.Find" /> objet ou utilisez l' <paramref name="FindText" /> argument avec la <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour spécifier le texte à rechercher dans un document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -1470,12 +1352,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si Microsoft Word recherche et remplace le texte ignore le vérificateur d’orthographe et grammaire.</summary>
+        <summary>Détermine si Microsoft Word trouve ou remplace le texte ignoré par le vérificateur d’orthographe et de grammaire.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Renvoie <b>la valeur True</b> si Word recherche et remplace le texte ignore le vérificateur d’orthographe et grammaire et <b>False</b> dans le cas contraire.</para>
-          <para />
-        </remarks>
+        <remarks><para>Renvoie la <b>valeur true</b> si Word trouve ou remplace le texte ignoré par le vérificateur d’orthographe et de <b></b> grammaire, et false dans le cas contraire.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ParagraphFormat">
@@ -1504,7 +1384,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> object qui représente les paramètres de la plage spécifiée, sélection, opération de recherche ou remplacement ou style de paragraphe.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> définit un objet qui représente les paramètres de paragraphe pour la plage, la sélection, l’opération de recherche ou de remplacement, ou le style spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1587,10 +1467,7 @@
       <Parameters />
       <Docs>
         <summary>Active toutes les options de recherche non spécifiques associées au texte japonais.</summary>
-        <remarks>
-          <para>
-            <b>Cette méthode affecte les propriétés suivantes :</b>
-          </para>
+        <remarks><para>Cette méthode définit les propriétés suivantes sur <b>True</b>:</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyAY" />
           </para>
@@ -1645,8 +1522,7 @@
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyZJ" />
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -1677,11 +1553,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le style de l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour définir cette propriété, spécifiez le nom local du style, un entier, une <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou un objet qui représente le style.</para>
-          <para>Lorsque vous retournez le style d’une plage concernée comporte plusieurs styles, seul le style premier caractère ou de paragraphe est renvoyé.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour définir cette propriété, spécifiez le nom local du style, un entier, une <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou un objet qui représente le style.</para>
+          <para>Si la plage concernée comporte plusieurs styles, seul le style du premier caractère ou du premier paragraphe est renvoyé.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1710,12 +1584,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le texte à rechercher ou remplacer dans la plage spécifiée ou la sélection.</summary>
+        <summary>Cette propriété renvoie ou définit le texte à rechercher ou à remplacer dans la plage spécifiée ou la sélection.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Text</b> renvoie le texte brut sans mise en forme de la sélection ou la plage. Lorsque vous définissez cette propriété, le texte de la plage ou la sélection est remplacé.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>Text</b> renvoie le texte brut sans mise en forme de la sélection ou la plage. Lorsque vous définissez cette propriété, le texte de la plage ou la sélection est remplacé.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -1744,19 +1616,17 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFindWrap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit que se passe-t-il si la recherche commence à un point autre que le début du document et la fin du document est atteinte (ou vice versa si <see cref="P:Microsoft.Office.Interop.Word.Find.Forward" /> est défini sur <b>False</b>) ou si le texte recherché est introuvable dans la plage ou la sélection spécifiée.</summary>
+        <summary>Cette propriété renvoie ou définit ce qui se passe si la recherche commence à un point autre que le début du document et que la fin du document est atteinte (ou inversement si <see cref="P:Microsoft.Office.Interop.Word.Find.Forward" /> est défini sur <b>false</b>) ou si le texte recherché est introuvable dans la sélection ou la plage spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />Il peut s’agir de l’une des constantes suivantes:</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" /> peut être une des constantes suivantes :</para>
+            <b>wdFindAsk</b> Après la recherche dans la sélection ou la plage, Microsoft Word affiche un message demandant s’il faut effectuer une recherche dans le reste du document.</para>
           <para>
-            <b>wdFindAsk</b> après une recherche de la sélection ou la plage, Microsoft Word affiche un message demandant si la recherche dans le reste du document.</para>
+            <b>wdFindContinue</b> L’opération de recherche se poursuit lorsque le début ou la fin de la plage de recherche est atteinte.</para>
           <para>
-            <b>wdFindContinue</b> la recherche se poursuit quand le début ou la fin de la plage de recherche est atteinte.</para>
-          <para>
-            <b>wdFindStop</b> la recherche se termine lorsque le début ou la fin de la plage de recherche est atteinte.</para>
-          <para />
-        </remarks>
+            <b>wdFindStop</b> L’opération de recherche se termine lorsque le début ou la fin de la plage de recherche est atteinte.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

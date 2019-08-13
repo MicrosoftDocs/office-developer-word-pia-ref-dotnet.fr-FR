@@ -1,13 +1,5 @@
 <Type Name="Task" FullName="Microsoft.Office.Interop.Word.Task">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a293fe302e518f71d73a2b60dd8cf985017ecc8a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668351" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Task" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="475c1671362444c8d7ebcb134d01290da862e462" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143874" /></Metadata><TypeSignature Language="C#" Value="public interface Task" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Task" />
   <TypeSignature Language="VB.NET" Value="Public Interface Task" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Représente une seule tâche en cours d'exécution sur le système.</summary>
-    <remarks>
-      <para>L’objet <b>Task</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> collection. <b>Cette collection</b> contient toutes les applications qui sont en cours d’exécution sur le système.</para>
-      <para>Utilisez les <b>tâches</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de l’application ou le numéro d’index, pour renvoyer un seul objet <b>Task</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>L’objet <b>Task</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> collection. <b>Cette collection</b> contient toutes les applications qui sont en cours d'exécution sur le système.</para>
+      <para>Utilisez <b></b>Tasks<paramref name="index" />(), <paramref name="index" /> où est le nom de l’application ou le numéro d’index, pour renvoyer un seul objet <b>Task</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -56,8 +46,8 @@
         <Parameter Name="Wait" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Wait">Facultatif <b>Object</b>. <b>True</b> pour attendre que l’utilisateur a activé Microsoft Word avant l’activation de la tâche. <b>False</b> pour activer immédiatement la tâche, même si Word n'est pas actif.</param>
-        <summary>Active le <see cref="T:Microsoft.Office.Interop.Word.Task" /> objet.</summary>
+        <param name="Wait"><b>Objet</b>facultatif. <b>True</b> pour attendre que l’utilisateur ait activé Microsoft Word avant d’activer la tâche. <b>False</b> pour activer immédiatement la tâche, même si Word n'est pas actif.</param>
+        <summary>Active l' <see cref="T:Microsoft.Office.Interop.Word.Task" /> objet.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +74,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,11 +129,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -172,7 +160,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la hauteur de la fenêtre de tâche spécifiée, en points.</summary>
+        <summary>Cette propriété renvoie ou définit la hauteur de la fenêtre de tâche spécifiée, exprimée en points.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,10 +220,8 @@
         <Parameter Name="Top" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <b>Integer</b>obligatoire. Position horizontale à l'écran de la fenêtre spécifiée.</param>
-        <param name="Top">
-          <b>Integer</b>obligatoire. Position verticale à l'écran de la fenêtre spécifiée.</param>
+        <param name="Left">Argument de type <b>Integer</b> obligatoire. Position horizontale à l'écran de la fenêtre spécifiée.</param>
+        <param name="Top">Argument de type <b>Integer</b> obligatoire. Position verticale à l'écran de la fenêtre spécifiée.</param>
         <summary>Positionne une fenêtre de tâche.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -263,7 +249,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -320,16 +306,12 @@
         <Parameter Name="Height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Width">
-          <b>Integer</b>obligatoire. Largeur de la fenêtre, en points.</param>
-        <param name="Height">
-          <b>Integer</b>obligatoire. Hauteur de la fenêtre, en points.</param>
+        <param name="Width">Argument de type <b>Integer</b> obligatoire. Largeur de la fenêtre, en points.</param>
+        <param name="Height">Argument de type <b>Integer</b> obligatoire. Hauteur de la fenêtre, en points.</param>
         <summary>Dimensionne la fenêtre de tâche spécifiée. Si la fenêtre est agrandie ou réduite, une erreur se produit.</summary>
-        <remarks>
-          <para>
-            <b>Remarque</b>  Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Task.Width" /> ou <see cref="P:Microsoft.Office.Interop.Word.Task.Height" /> propriété pour définir la hauteur et la largeur de la fenêtre indépendante.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Note</b>  Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Task.Width" /> propriété <see cref="P:Microsoft.Office.Interop.Word.Task.Height" /> ou pour définir la largeur et la hauteur de la fenêtre indépendamment.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SendWindowMessage">
@@ -357,12 +339,9 @@
         <Parameter Name="lParam" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Message">
-          <b>Integer</b>obligatoire. Un nombre hexadécimal correspondant au message que vous souhaitez envoyer. Si vous avez le Kit de développement logiciel Microsoft Platform, vous pouvez rechercher le nom du message dans les fichiers d’en-tête (Winuser.h, par exemple) vers le haut pour trouver le nombre hexadécimal associé (faites précéder la valeur hexadécimale avec &amp;h).</param>
-        <param name="wParam">
-          <b>Integer</b>obligatoire. Paramètres appropriés pour le message que vous envoyez. Pour plus d’informations sur la signification de ces valeurs, consultez la rubrique de référence pour ce message dans la documentation incluse avec le Kit de développement logiciel Microsoft Platform. Pour récupérer les valeurs appropriées, vous devrez peut-être utiliser l’utilitaire Spy (fourni avec le kit).</param>
-        <param name="lParam">
-          <b>Integer</b>obligatoire. Paramètres appropriés pour le message que vous envoyez. Pour plus d’informations sur la signification de ces valeurs, consultez la rubrique de référence pour ce message dans la documentation incluse avec le Kit de développement logiciel Microsoft Platform. Pour récupérer les valeurs appropriées, vous devrez peut-être utiliser l’utilitaire Spy (fourni avec le kit).</param>
+        <param name="Message">Argument de type <b>Integer</b> obligatoire. Nombre hexadécimal correspondant au message que vous voulez envoyer. Si vous disposez du kit de développement logiciel de la plate-forme Microsoft, vous pouvez rechercher le nom du message dans les fichiers d’en-tête (winuser. h, par exemple) pour trouver le nombre hexadécimal associé &amp;(faites précéder la valeur hexadécimale par h).</param>
+        <param name="wParam">Argument de type <b>Integer</b> obligatoire. Paramètres appropriés au message que vous envoyez. Pour plus d’informations sur ce que ces valeurs représentent, consultez la rubrique de référence pour ce message dans la documentation incluse avec le kit de développement logiciel de la plateforme Microsoft. Pour récupérer les valeurs appropriées, vous devrez peut-être utiliser l’utilitaire Spy (qui est fourni avec le kit).</param>
+        <param name="lParam">Argument de type <b>Integer</b> obligatoire. Paramètres appropriés au message que vous envoyez. Pour plus d’informations sur ce que ces valeurs représentent, consultez la rubrique de référence pour ce message dans la documentation incluse avec le kit de développement logiciel de la plateforme Microsoft. Pour récupérer les valeurs appropriées, vous devrez peut-être utiliser l’utilitaire Spy (qui est fourni avec le kit).</param>
         <summary>Envoie à la tâche spécifiée un message Windows ainsi que les paramètres qui lui sont associés.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -393,7 +372,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la position verticale de la tâche spécifiée, en points.</summary>
+        <summary>Cette propriété renvoie ou définit la position verticale de la tâche spécifiée, exprimée en points.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -424,13 +403,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l'objet spécifié est visible.</summary>
+        <summary><b>True</b> si l'objet spécifié est visible.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Certaines méthodes et propriétés sont peut-être pas disponibles si la propriété <b>Visible</b> a la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Certaines méthodes et propriétés sont peut-être pas disponibles si la propriété <b>Visible</b> a la <b>valeur False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -459,7 +435,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la largeur de l’objet spécifié, en points.</summary>
+        <summary>Renvoie ou définit la largeur de l’objet spécifié, en points.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -492,21 +468,19 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l’état de la fenêtre de tâche spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />Il peut s’agir de l’une des constantes <b>WdWindowState</b> suivantes. </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />peut être une de ces constantes <b>WdWindowState</b> . </para>
-          <para>
-            <b>wdWindowStateMaximize </b>
+            <b>wdWindowStateMaximize</b>
           </para>
           <para>
-            <b>wdWindowStateNormal </b>
+            <b>wdWindowStateNormal</b>
           </para>
           <para>
             <b>wdWindowStateMinimize</b>
           </para>
-          <para>la constante <b>wdWindowStateNormal</b> indique une fenêtre qui n’a pas été agrandie ou réduite. Impossible de définir l’état d’une fenêtre inactive. Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> méthode permettant d’activer une fenêtre avant de définir l’état de la fenêtre.</para>
-          <para />
-        </remarks>
+          <para>La constante <b>wdWindowStateNormal</b> indique une fenêtre qui n'a pas été agrandie ou réduite. Impossible de définir l'état d'une fenêtre inactive. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> méthode pour activer une fenêtre avant de définir l’état de la fenêtre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

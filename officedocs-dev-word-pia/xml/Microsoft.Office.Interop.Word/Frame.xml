@@ -1,13 +1,5 @@
 <Type Name="Frame" FullName="Microsoft.Office.Interop.Word.Frame">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="93685f2efab8eeb1f85d85951ceaf3df016bd8a9" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667994" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Frame" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fb0b4e93fe0bae1fe610e0ade71e1764cb1b13bb" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146779" /></Metadata><TypeSignature Language="C#" Value="public interface Frame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Frame" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Frame" />
   <TypeSignature Language="VB.NET" Value="Public Interface Frame" />
@@ -26,10 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente une image dans une sélection, une plage ou un document.</summary>
-    <remarks>
-      <para>L’objet <b>Frame</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.Frames" /> collection. La collection <b>Frames</b> contient l’ensemble des cadres contenus dans une sélection, une plage ou un document.</para> Utiliser des <b>cadres</b>de 
-      <para>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Frame</b> . Le numéro d’index représente la position du cadre de la sélection, une plage ou un document.</para><para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Frames.Add(Microsoft.Office.Interop.Word.Range)" /> méthode pour ajouter un cadre autour d’une plage.</para><para /></remarks>
+    <summary>Représente un cadre dans une sélection, une plage ou un document.</summary>
+    <remarks><para>L’objet <b>Frame</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.Frames" /> collection. La collection <b>Frames</b> contient l’ensemble des cadres situés dans une sélection, une plage ou un document.</para>
+      <para>Utilisez <b></b>des cadres<paramref name="index" />(), <paramref name="index" /> où est le numéro d’index, pour renvoyer un seul objet <b>Frame</b> . Le numéro d'index représente la position du cadre dans la sélection, la plage ou le document.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Frames.Add(Microsoft.Office.Interop.Word.Range)" /> méthode pour ajouter un cadre entourant une plage.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection qui représente la totalité des bordures de l’objet spécifié.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection qui représente toutes les bordures de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,11 +134,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -317,12 +308,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la distance horizontale entre le bord du cadre et l’élément spécifié par le <see cref="P:Microsoft.Office.Interop.Word.Frame.RelativeHorizontalPosition" /> propriété.</summary>
+        <summary>Cette propriété renvoie ou définit la distance horizontale entre le bord du cadre et l’élément spécifié par <see cref="P:Microsoft.Office.Interop.Word.Frame.RelativeHorizontalPosition" /> la propriété.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>HorizontalPosition</b> peut être un nombre indiquant une mesure en points ou peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdFramePosition" /> constantes : <b>wdFrameLeft</b>, <b>wdFrameRight</b>, <b>wdFrameCenter</b>, <b>wdFrameInside</b>ou <b> wdFrameOutside</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <b>propriété HorizontalPosition</b> peut être un nombre qui indique une mesure en points ou peut être l’une des constantes <see cref="T:Microsoft.Office.Interop.Word.WdFramePosition" /> suivantes: <b>wdFrameLeft</b>, <b>wdFrameRight</b>, <b>wdFrameCenter</b>, <b>wdFrameInside</b>ou <b> wdFrameOutside</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockAnchor">
@@ -351,13 +340,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si le cadre spécifié est verrouillé.</summary>
+        <summary><b>True</b> si le cadre spécifié est verrouillé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le point d’ancrage du cadre indique où l’image s’affiche en mode Normal. Vous ne pouvez pas repositionner un ancrage verrouillé.</para>
-          <para />
-        </remarks>
+        <remarks><para>L'ancrage du cadre indique où il apparaît en mode Normal. Vous ne pouvez pas repositionner un ancrage verrouillé.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -411,12 +397,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> de formes à partir d’une collection de formes, voir la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeHorizontalPosition">
@@ -445,7 +429,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie à quel la position horizontale d’un cadre est relative.</summary>
+        <summary>Indique la position relative de la position horizontale d’un cadre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -476,7 +460,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie à quel la position verticale d’un cadre est relative.</summary>
+        <summary>Indique la position verticale d’un cadre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -502,11 +486,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cette méthode sélectionne l'objet spécifié.</summary>
-        <remarks>
-          <para>Après avoir exécuté cette méthode, utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriété pour travailler avec les éléments sélectionnés.</para>
-          <para />
-        </remarks>
+        <summary>Sélectionne l'objet spécifié.</summary>
+        <remarks><para>Après avoir utilisé cette méthode, utilisez <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propriété pour travailler avec les éléments sélectionnés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -532,7 +514,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objet qui fait référence à la mise en forme de la trame de fond pour l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Object qui fait référence à la mise en forme de la trame de fond pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -563,8 +545,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si le texte du document habille le cadre spécifié.</summary>
+        <summary><b>True</b> si le texte du document habille le cadre spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -626,12 +607,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la distance verticale entre le bord du cadre et l’élément spécifié par le <see cref="P:Microsoft.Office.Interop.Word.Frame.RelativeVerticalPosition" /> propriété.</summary>
+        <summary>Cette propriété renvoie ou définit la distance verticale entre le bord du cadre et l’élément spécifié par <see cref="P:Microsoft.Office.Interop.Word.Frame.RelativeVerticalPosition" /> la propriété.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>VerticalPosition</b> peut être un nombre indiquant une mesure en points ou peut être valide <see cref="T:Microsoft.Office.Interop.Word.WdFramePosition" /> constante.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>VerticalPosition</b> peut être un nombre indiquant une mesure en points ou peut être n’importe quelle constante <see cref="T:Microsoft.Office.Interop.Word.WdFramePosition" /> valide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -660,7 +639,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la largeur de l’objet spécifié, en points.</summary>
+        <summary>Renvoie ou définit la largeur de l’objet spécifié, en points.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

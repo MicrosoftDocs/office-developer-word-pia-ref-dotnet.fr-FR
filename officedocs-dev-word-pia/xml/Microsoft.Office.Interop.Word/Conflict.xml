@@ -1,13 +1,5 @@
 <Type Name="Conflict" FullName="Microsoft.Office.Interop.Word.Conflict">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0b87b76ff93cbb3eea67868bd57964e4eb8e0287" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668268" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Conflict" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="21e74154c2475877e56ac3b4b4b6917cedd06347" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147206" /></Metadata><TypeSignature Language="C#" Value="public interface Conflict" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflict" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Conflict" />
   <TypeSignature Language="VB.NET" Value="Public Interface Conflict" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente une modification dans un document co-créé en conflit. Le type d’un <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet est spécifié par le <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> énumération.</summary>
-    <remarks>
-      <para>Normalement, lorsqu’un document avec la co-création activé est simultanément modifiés mais seulement un co-auteur peut modifier une plage spécifique à la fois. Microsoft Word 2010 place automatiquement un verrou sur la plage au moment où le co-auteur commence à modifier afin que d’autres co-auteurs ne peut pas modifier la même plage en même temps.</para>
-      <para>Un conflit peut se produire lorsqu’une plage spécifique dans un document de co-création activé est modifiée simultanément avant toute co-auteur unique Obtient un verrou sur la plage. En cas de conflit, il s’affiche pour chaque co-auteur qu’ils ont un accès exclusif sur la plage, mais leur verrouillage n’est pas communiquée aux co-auteurs. Le co-créer qui enregistre sur le serveur s’affiche pas, tout d’abord le conflit, car leur version du document devienne la version en vigueur. Co-auteurs qui tentent d’enregistrer une fois le premier co-auteur a enregistré confronté à un conflit. Le conflit est entre les différentes versions de la même plage.</para>
-      <para>, Par exemple, si un co-auteur modifie la phrase, « The quick brown fox « lire « Le fox rouge rapide » et co-créer une autre simultanément modifie la phrase pour lire, « The fox blanc rapide » et les deux modifications se produisent avant soit co-auteur Obtient un verrou sur le paragraphe, un conflit se produit. Dans ce cas, « rapide rouge » et « blanc rapide » ne peut pas être rapproché par Word 2010. Le premier co-auteur à enregistrer leur version du document sur le serveur ne détecte un conflit. Lorsque le co-créer suivant tente d’enregistrer leur version du document sur le serveur, un conflit se produit et le co-créer doit choisir de résoudre le conflit en accepter ou rejeter les modifications.</para>
-      <para />
-    </remarks>
+    <summary>Représente une modification conflictuelle dans un document co-créé. Le type d’un <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet est spécifié par l' <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> énumération.</summary>
+    <remarks><para>Normalement, lorsqu’un document prenant en charge la co-création est modifié simultanément, un seul co-auteur peut modifier une plage particulière à un moment donné. Microsoft Word 2010 place automatiquement un verrou sur la plage le moment où le co-auteur commence à modifier les modifications de sorte que les autres co-auteurs ne puissent pas modifier la même plage en même temps.</para>
+      <para>Un conflit peut se produire lorsqu’une plage particulière d’un document avec la co-création activée est simultanément modifiée avant qu’un seul co-auteur n’obtienne un verrou exclusif sur la plage. Dans une situation de conflit, il s’affiche pour chaque co-auteur qu’il a un verrou exclusif sur la plage, mais son verrou n’est pas communiqué aux autres co-auteurs. Le co-auteur qui effectue l’enregistrement sur le serveur ne verra pas le conflit, car sa version du document devient la version établie. Les co-auteurs qui tentent d’enregistrer après le premier co-auteur ont enregistré un conflit. Le conflit se trouve entre les différentes versions de la même plage.</para>
+      <para>Par exemple, si un co-auteur modifie la phrase «The Quick Brown Fox» pour lire «Fast Red Fox», et qu’un autre co-auteur modifie simultanément la phrase pour lire, «The Speedy White Fox» et les deux modifications ont lieu avant que le co-auteur obtienne un verrou exclusif sur le paragraphe, un conflit se produit. Dans ce cas, le «rouge rapide» et le «blanc rapide» ne peuvent pas être rapprochés par Word 2010. Le premier co-auteur qui enregistre sa version du document sur le serveur ne rencontre pas de conflit. Lorsque le co-auteur suivant essaie d’enregistrer sa version du document sur le serveur, un conflit se produit et le co-auteur doit résoudre le conflit en acceptant ou en rejetant les modifications.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -57,10 +47,8 @@
       <Parameters />
       <Docs>
         <summary>Accepte la modification conflictuelle spécifiée par l’utilisateur, supprime le conflit et fusionne la modification dans la copie serveur du document.</summary>
-        <remarks>
-          <para>Cette méthode accepte la version utilisateur d’une modification conflictuelle et rejette la version du serveur de la modification conflictuelle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode accepte la version utilisateur d’une modification de conflit et rejette la version serveur de la modification du conflit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -86,12 +74,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
-        <value>Un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objet qui représente l’application Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Application" /> Objet qui représente l’application Microsoft Word.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -117,14 +103,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
+        <summary>Obtient un nombre entier de 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>Entier 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</value>
-        <remarks>
-          <para>En lecture seule <b>long</b>. Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette propriété est principalement conçue pour être utilisée sur Apple Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Word a le code créateur MSWD.</para>
+        <remarks><para>Type de données <b>long</b>en lecture seule. Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». Cette propriété est principalement conçue pour être utilisée sur Apple Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Word possède le code de créateur MSWD.</para>
           <para>
-            <b>Mise en garde</b>: cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para />
-        </remarks>
+            <b>Attention</b>: cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -151,7 +135,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie une valeur qui représente la position d’un élément dans une collection.</summary>
-        <value>Cette propriété renvoie <see cref="T:System.Int32" />.</value>
+        <value>Renvoie <see cref="T:System.Int32" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,8 +162,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un <see cref="T:System.Object" /> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet.</summary>
-        <value>Un <see cref="T:System.Object" /> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet.</value>
+        <summary>Obtient un <see cref="T:System.Object" /> objet qui représente l’objet parent de l' <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet spécifié.</summary>
+        <value><see cref="T:System.Object" /> Qui représente l’objet parent de l’objet spécifié <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,11 +191,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Range" /> Objet qui représente la partie d’un document contenue dans l’objet spécifié.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reject">
@@ -236,10 +218,8 @@
       <Parameters />
       <Docs>
         <summary>Rejette la modification de l'utilisateur, supprime le conflit et accepte la copie serveur de la modification conflictuelle.</summary>
-        <remarks>
-          <para>Cette méthode rejette la version utilisateur d’un conflit et accepte la version se trouvant actuellement sur le serveur.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode rejette la version utilisateur d’un conflit et accepte la version se trouvant actuellement sur le serveur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -265,12 +245,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient le <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> pour la <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet.</summary>
-        <value>Le <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> pour la <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <summary>Obtient le <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> pour l' <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> Pour l' <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Footnote" FullName="Microsoft.Office.Interop.Word.Footnote">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="45ece3408c4d3718e87d615152a5a54015787e1f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668462" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Footnote" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="50cf85c804e083cb3f2277cf406a348b3a3b6c73" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148053" /></Metadata><TypeSignature Language="C#" Value="public interface Footnote" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Footnote" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Footnote" />
   <TypeSignature Language="VB.NET" Value="Public Interface Footnote" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente une note de bas de page au bas de la page ou sous le texte. L’objet <b>Footnote</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.Footnotes" /> collection. La collection <b>Footnotes</b> contient les notes de fin d'une sélection, une plage ou un document.</summary>
-    <remarks>
-      <para>Utilisez les <b>notes de fin</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Footnote</b> . Le numéro d’index représente la position de la note de la sélection, une plage ou un document.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> pour ajouter une note de bas de page à la collection <b>Footnotes</b> .</para>
-      <para>Bas de page situées à la fin d’un document ou d’une section sont considérées comme des notes de fin et sont inclus dans le <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> collection.</para>
-      <para />
-    </remarks>
+    <summary>Représente une note de bas de page au bas de la page ou sous le texte. L’objet <b>footnote</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.Footnotes" /> collection. La collection <b>Footnotes</b> contient les notes de fin d'une sélection, une plage ou un document.</summary>
+    <remarks><para>Utilisez des <b>notes de bas de page</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>footnote</b> . Le numéro d'index représente la position de la note de bas de page dans la sélection, une plage ou un document.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> méthode pour ajouter une note de bas de page à la collection <b>de notes de bas de page</b> .</para>
+      <para>Les notes de bas de page situées à la fin d’un document ou d’une section sont considérées <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> comme des notes de fin et sont incluses dans la collection.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -143,7 +131,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>entier</b> qui représente la position d’un élément dans une collection.</summary>
+        <summary>Renvoie une <b>valeur de type Integer</b> qui représente la position d’un élément dans une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,12 +187,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="P:Microsoft.Office.Interop.Word.Footnote.Range" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="P:Microsoft.Office.Interop.Word.Footnote.Range" /> de formes à partir d’une collection de formes, voir la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reference">
@@ -230,7 +216,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente un pied de page, note de fin ou marque d’appel de commentaire.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente une note de bas de page, une note de fin ou une marque d’appel de commentaire.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

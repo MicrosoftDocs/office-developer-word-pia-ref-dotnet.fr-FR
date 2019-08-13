@@ -1,13 +1,5 @@
 <Type Name="Paragraphs" FullName="Microsoft.Office.Interop.Word.Paragraphs">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f7a4ec3a3f9cef850ee4d2525ac862807859cba1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667330" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Paragraphs : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4a2d70536ec093f37369ebe6d8b316aed7b9976a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144167" /></Metadata><TypeSignature Language="C#" Value="public interface Paragraphs : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Paragraphs implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Paragraphs" />
   <TypeSignature Language="VB.NET" Value="Public Interface Paragraphs&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> objets dans une sélection, une plage ou un document.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>Paragraphs</b> pour renvoyer la collection <b>Paragraphs</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraph" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" />, ou <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphBefore" /> pour ajouter un nouveau paragraphe à un document.</para>
-      <para>Utiliser <b>paragraphes</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Paragraph</b> .</para>
-      <para>La <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.Count" /> propriété pour cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d’autres articles utilisez la collection avec le <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet.</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> objets dans une sélection, une plage ou un document.</summary>
+    <remarks><para>Utilisez la propriété <b>Paragraphs</b> pour renvoyer la collection <b>Paragraphs</b>.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" />méthode <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraph" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" />, ou <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphBefore" /> pour ajouter un nouveau paragraphe à un document.</para>
+      <para>Utilisez <b></b>des paragraphes<paramref name="index" />(), <paramref name="index" /> où est le numéro d’index, pour renvoyer un seul objet <b>paragraph</b> .</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.Count" /> propriété de cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments d’autres articles, utilisez la collection <see cref="T:Microsoft.Office.Interop.Word.Range" /> avec l’objet.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,13 +52,11 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Facultatif <b>Object</b>. Plage avant laquelle vous souhaitez ajouter le paragraphe. Le nouveau paragraphe ne remplace pas la plage.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> object qui représente un nouveau paragraphe vide ajouté à un document.</summary>
+        <param name="Range"><b>Objet</b>facultatif. Plage avant laquelle vous souhaitez ajouter le paragraphe. Le nouveau paragraphe ne remplace pas la plage.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> Object qui représente un nouveau paragraphe vide ajouté à un document.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Si <paramref name="Range" /> n’est pas spécifié, le nouveau paragraphe est ajouté après la sélection ou la plage ou à la fin du document.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si <paramref name="Range" /> n’est pas spécifié, le nouveau paragraphe est ajouté après la sélection ou la plage ou à la fin du document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSpaceBetweenFarEastAndAlpha">
@@ -97,13 +85,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si Microsoft Word est configuré pour ajouter automatiquement des espaces entre le texte Latin et japonais pour les paragraphes spécifiés.</summary>
+        <summary>Détermine si Microsoft Word est configuré pour ajouter automatiquement des espaces entre le texte latin et japonais pour les paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Word est configuré pour ajouter automatiquement des espaces entre le texte Latin et japonais pour les paragraphes spécifiés et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Cette propriété renvoie <b>wdUndefined</b> si elle est définie sur <b>True</b> uniquement pour certains des paragraphes spécifiés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si Word est configuré pour ajouter automatiquement des espaces entre le texte japonais et latin pour les <b></b> paragraphes spécifiés, et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Cette propriété renvoie <b>wdUndefined</b> si elle est définie sur <b>true</b> uniquement pour certains des paragraphes spécifiés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSpaceBetweenFarEastAndDigit">
@@ -132,13 +118,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si Microsoft Word est configuré pour ajouter automatiquement des espaces entre le texte japonais et les nombres pour les paragraphes spécifiés.</summary>
+        <summary>Détermine si Microsoft Word est configuré pour ajouter automatiquement des espaces entre le texte japonais et les nombres dans les paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Word est configuré pour ajouter automatiquement des espaces entre le texte japonais et les nombres pour les paragraphes spécifiés et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Cette propriété renvoie <b>wdUndefined</b> si elle est définie sur <b>True</b> uniquement pour certains des paragraphes spécifiés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si Word est configuré pour ajouter automatiquement des espaces entre le texte japonais et les nombres pour <b></b> les paragraphes spécifiés, et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Cette propriété renvoie <b>wdUndefined</b> si elle est définie sur <b>true</b> uniquement pour certains des paragraphes spécifiés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -167,12 +151,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdParagraphAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.WdParagraphAlignment" /> constante qui représente l’alignement pour les paragraphes spécifiés.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.WdParagraphAlignment" /> définit une constante qui représente l’alignement pour les paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Certaines des constantes énumérées ci-dessus ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Il se peut que certaines des constantes énumérées ci-dessus ne soient pas disponibles, selon la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -198,7 +180,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,11 +213,9 @@
       <Docs>
         <summary>Détermine si Microsoft Word est configuré pour ajuster automatiquement le retrait à droite pour les paragraphes spécifiés si vous avez spécifié un nombre défini de caractères par ligne.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Word est configuré pour ajuster automatiquement le retrait à droite pour les paragraphes spécifiés si vous avez spécifié un nombre défini de caractères par ligne et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Cette propriété renvoie <b>wdUndefined</b> si la propriété <b>AutoAdjustRightIndent</b> est définie sur <b>True</b> uniquement pour certains des paragraphes spécifiés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si Word est configuré pour ajuster automatiquement le retrait à droite pour les paragraphes spécifiés si vous avez spécifié un nombre défini de caractères <b></b> par ligne et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Cette propriété renvoie <b>wdUndefined</b> si la propriété <b>AutoAdjustRightIndent,</b> est définie sur <b>true</b> uniquement pour certains des paragraphes spécifiés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseLineAlignment">
@@ -264,7 +244,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.WdBaselineAlignment" /> constante qui représente la position verticale des polices sur une ligne.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.WdBaselineAlignment" /> définit une constante qui représente la position verticale des polices sur une ligne.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,7 +275,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection qui représente la totalité des bordures de l’objet spécifié.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection qui représente toutes les bordures de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -328,10 +308,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la valeur (en caractères) pour un retrait de première ligne ou négatif de première ligne.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utilisez une valeur positive pour définir un retrait de première ligne et utilisez une valeur négative pour définir un retrait négatif.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez une valeur positive pour définir un retrait de première ligne et utilisez une valeur négative pour définir un retrait négatif.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CharacterUnitLeftIndent">
@@ -391,7 +369,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur de retrait à droite (en caractères) pour les paragraphes spécifiés.</summary>
+        <summary>Renvoie ou définit la valeur du retrait à droite (en caractères) pour les paragraphes spécifiés.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -474,11 +452,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DecreaseSpacing">
@@ -532,13 +508,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si Microsoft Word aligne les caractères dans les paragraphes spécifiés sur la grille des lignes quand un nombre défini de lignes par page est spécifié.</summary>
+        <summary>Détermine si Microsoft Word aligne les caractères des paragraphes spécifiés sur la grille des lignes lorsqu’un nombre défini de lignes par page est spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Word aligne les caractères dans les paragraphes spécifiés sur la grille des lignes lorsqu’un nombre défini de lignes par page est spécifié et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Renvoie <b>wdUndefined</b> si la propriété <b>DisableLineHeightGrid</b> est définie sur <b>True</b> uniquement pour certains des paragraphes spécifiés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si Word aligne les caractères des paragraphes spécifiés sur la grille des lignes lorsqu’un nombre défini de lignes par page est <b></b> spécifié et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Cette propriété renvoie <b>wdUndefined</b> si la propriété <b>DisableLineHeightGrid</b> est définie sur <b>True</b> uniquement pour certains des paragraphes spécifiés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakControl">
@@ -569,11 +543,9 @@
       <Docs>
         <summary>Détermine si Microsoft Word applique les règles de saut de ligne d’Asie orientale aux paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Word applique les règles de saut de ligne d’Asie orientale aux paragraphes spécifiés et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si Word applique les règles de saut de ligne d’Asie orientale aux <b></b> paragraphes spécifiés, et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
           <para>Cette propriété renvoie <b>wdUndefined</b> si la propriété <b>FarEastLineBreakControl</b> a la valeur <b>true</b> uniquement pour certains des paragraphes spécifiés.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -599,7 +571,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> object qui représente le premier élément de la <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> collection.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> Object qui représente le premier élément de la <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -632,10 +604,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la valeur (en points) pour un retrait de première ligne ou négatif.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utilisez une valeur positive pour définir un retrait de première ligne et utilisez une valeur négative pour définir un retrait négatif.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez une valeur positive pour définir un retrait de première ligne et une valeur négative pour définir un retrait négatif.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -664,7 +634,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> object qui représente la mise en forme de l’ou des paragraphes spécifiés.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> définit un objet qui représente la mise en forme du ou des paragraphes spécifiés.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -727,13 +697,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si Microsoft Word change les signes de ponctuation au début d’une ligne en caractères à demi-chasse pour les paragraphes spécifiés.</summary>
+        <summary>Détermine si Microsoft Word remplace les symboles de ponctuation au début d’une ligne par des caractères à demi-chasse pour les paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Word change les signes de ponctuation au début d’une ligne en caractères à demi-chasse pour les paragraphes spécifiés et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Cette propriété renvoie <b>wdUndefined</b> si la valeur <b>true</b> uniquement pour certains des paragraphes spécifiés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si Word remplace les symboles de ponctuation au début d’une ligne par des caractères à demi-chasse pour <b></b> les paragraphes spécifiés, et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Cette propriété renvoie <b>wdUndefined</b> si la valeur <b>true</b> ne s’applique qu’à certains des paragraphes spécifiés. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HangingPunctuation">
@@ -764,11 +732,9 @@
       <Docs>
         <summary>Détermine si la ponctuation en retrait est activée pour les paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si la ponctuation en retrait est activée pour les paragraphes spécifiés et sur <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Cette propriété renvoie <b>wdUndefined</b> si la valeur <b>true</b> uniquement pour certains des paragraphes spécifiés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si la ponctuation en retrait est activée pour les paragraphes spécifiés et la <b>valeur false</b> dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Cette propriété renvoie <b>wdUndefined</b> si la valeur <b>true</b> ne s’applique qu’à certains des paragraphes spécifiés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hyphenation">
@@ -799,12 +765,10 @@
       <Docs>
         <summary>Détermine si les paragraphes spécifiés sont inclus dans la coupure de mots automatique.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si les paragraphes spécifiés sont inclus dans la coupure de mots automatique et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Cette propriété renvoie la <b>valeur False</b> si les paragraphes spécifiés doivent être exclus de la coupure de mots automatique.</para>
-          <para>Possibles renvoie les valeurs <b>True</b>, <b>False</b> et <b>wdUndefined</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les paragraphes spécifiés sont inclus dans la coupure de mots automatique et la <b>valeur false</b> dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Cette propriété renvoie la <b>valeur false</b> si les paragraphes spécifiés doivent être exclus de la coupure de mots automatique.</para>
+          <para>Les valeurs renvoyées possibles sont <b>true</b>, <b>false</b> et <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncreaseSpacing">
@@ -854,10 +818,8 @@
       <Parameters />
       <Docs>
         <summary>Cette méthode applique un niveau de retrait à un ou plusieurs paragraphes.</summary>
-        <remarks>
-          <para>Cette méthode équivaut à cliquer sur le bouton augmenter le retrait dans la barre d’outils Mise en forme.</para>
-          <para />
-        </remarks>
+        <remarks><para>L'application de cette méthode équivaut à cliquer sur le bouton Augmenter le retrait de la barre d'outils Mise en forme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentCharWidth">
@@ -883,12 +845,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">Nécessaire <b>courte</b>. Nombre de caractères marquant le retrait des paragraphes spécifiés.</param>
+        <param name="Count"><b>Short</b>obligatoire. Nombre de caractères marquant le retrait des paragraphes spécifiés.</param>
         <summary>Insère dans un ou plusieurs paragraphes un retrait équivalent à un nombre de caractères défini.</summary>
-        <remarks>
-          <para>Cette méthode équivaut à cliquer sur le bouton augmenter le retrait dans la barre d’outils Mise en forme.</para>
-          <para />
-        </remarks>
+        <remarks><para>L'application de cette méthode équivaut à cliquer sur le bouton Augmenter le retrait de la barre d'outils Mise en forme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentFirstLineCharWidth">
@@ -914,12 +874,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">Nécessaire <b>courte</b>. Nombre de caractères marquant le retrait des paragraphes spécifiés.</param>
+        <param name="Count"><b>Short</b>obligatoire. Nombre de caractères marquant le retrait des paragraphes spécifiés.</param>
         <summary>Insère dans un ou plusieurs paragraphes un retrait équivalent à un nombre de caractères défini.</summary>
-        <remarks>
-          <para>Cette méthode équivaut à cliquer sur le bouton augmenter le retrait dans la barre d’outils Mise en forme.</para>
-          <para />
-        </remarks>
+        <remarks><para>L'application de cette méthode équivaut à cliquer sur le bouton Augmenter le retrait de la barre d'outils Mise en forme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -948,7 +906,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -980,13 +938,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si toutes les lignes dans les paragraphes spécifiés restent sur la même page lorsque Microsoft Word repagine le document.</summary>
+        <summary>Détermine si toutes les lignes des paragraphes spécifiés restent sur la même page lorsque Microsoft Word Repagine le document.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si toutes les lignes dans les paragraphes spécifiés restent sur la même page lorsque Microsoft Word repagine le document et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Les valeurs possibles sont <b>True</b>, <b>False</b>et <b>wdUndefined</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si toutes les lignes dans les paragraphes spécifiés restent sur la même page lorsque Microsoft Word Repagine le document, et <b>false</b> dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Les valeurs possibles sont <b>true</b>, <b>false</b>et <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeepWithNext">
@@ -1015,13 +971,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si le paragraphe spécifié reste sur la même page que le paragraphe qui suit lorsque Microsoft Word repagine le document.</summary>
+        <summary>Détermine si le paragraphe spécifié reste sur la même page que le paragraphe qui suit lorsque Microsoft Word Repagine le document.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si le paragraphe spécifié reste sur la même page que le paragraphe qui suit lorsque Microsoft Word repagine le document et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Les valeurs possibles sont <b>True</b>, <b>False</b>ou <b>wdUndefined</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si le paragraphe spécifié reste sur la même page que le paragraphe qui suit lorsque Microsoft Word Repagine le document et <b>false</b> dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Les valeurs possibles sont <b>true</b>, <b>false</b>ou <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Last">
@@ -1047,7 +1001,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le dernier élément dans le <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> collection comme un <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> objet.</summary>
+        <summary>Renvoie le dernier élément de la <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> collection sous la <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> forme d’un objet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1111,17 +1065,15 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l'interligne (en points) pour les paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>LineSpacing</b> peut être définie après la <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" /> propriété a été définie à la suivante :</para>
+        <remarks><para>La propriété <b>LineSpacing</b> peut être définie une fois <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" /> que la propriété a la valeur suivante:</para>
           <para>
-            <b>wdLineSpaceAtLeast</b> : l’interligne peut être supérieur ou égal à, mais jamais inférieur à la valeur spécifiée de la <b>propriété LineSpacing</b> .</para>
+            <b>wdLineSpaceAtLeast:</b> -l’interligne peut être supérieur ou égal à, mais jamais inférieur à, la valeur <b>LineSpacing</b> spécifiée.</para>
           <para>
-            <b>wdLineSpaceExactly</b> : l’interligne ne change jamais valeur affectée à la <b>propriété LineSpacing</b> , même si une police plus grande est utilisée dans le paragraphe.</para>
+            <b>wdLineSpaceExactly:</b> -l’interligne ne change jamais à partir de la valeur <b>LineSpacing</b> spécifiée, même si une police plus grande est utilisée dans le paragraphe.</para>
           <para>
-            <b>wdLineSpaceMultiple</b> - une valeur de la propriété <b>LineSpacing</b> doit être spécifiée, en points.</para>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word._Application.LinesToPoints(System.Single)" /> méthode pour convertir un nombre de lignes à la valeur en points.</para>
-          <para />
-        </remarks>
+            <b>wdLineSpaceMultiple</b> -une valeur de la propriété <b>LineSpacing</b> doit être spécifiée, en points.</para>
+          <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word._Application.LinesToPoints(System.Single)" /> méthode pour convertir un nombre de lignes en une valeur correspondante en points.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineSpacingRule">
@@ -1152,20 +1104,19 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l'interligne pour les paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdLineSpacing" /> peut être une des constantes suivantes :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdLineSpacing" />Il peut s’agir de l’une des constantes suivantes: </para>
           <para>
             <b>wdLineSpace1pt5</b>
           </para>
           <para>
-            <b>wdLineSpaceAtLeast :</b>
+            <b>wdLineSpaceAtLeast:</b>
           </para>
           <para>
             <b>wdLineSpaceDouble</b>
           </para>
           <para>
-            <b>wdLineSpaceExactly</b>
+            <b>wdLineSpaceExactly:</b>
           </para>
           <para>
             <b>wdLineSpaceMultiple</b>
@@ -1173,9 +1124,8 @@
           <para>
             <b>wdLineSpaceSingle</b>
           </para>
-          <para>Utilisez <b>wdLineSpaceSingle</b>, <b>wdLineSpace1pt5</b>ou <b>wdLineSpaceDouble</b> pour définir l’espacement des lignes à une de ces valeurs. Pour définir l’espacement des lignes à un nombre exact de points ou un nombre de lignes, vous devez également définir la <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" /> propriété.</para>
-          <para />
-        </remarks>
+          <para>Utilisez <b>wdLineSpaceSingle</b>, <b>wdLineSpace1pt5</b> ou <b>wdLineSpaceDouble</b> pour définir l'espacement des lignes sur une des valeurs suivantes. Pour définir l’interligne sur un nombre exact de points ou sur un nombre de lignes, vous devez également définir la <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineUnitAfter">
@@ -1266,14 +1216,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si lignes sont numérotées pour les paragraphes spécifiés.</summary>
+        <summary>Détermine si les numéros de ligne sont redéfinis pour les paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si les lignes sont numérotées pour les paragraphes spécifiés et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Les valeurs possibles sont <b>True</b>, <b>False</b>et <b>wdUndefined</b>.</para>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" /> propriété à définir les numéros de ligne.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les numéros de ligne sont redéfinis pour les <b></b> paragraphes spécifiés et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Les valeurs possibles sont <b>true</b>, <b>false</b>et <b>wdUndefined</b>. </para>
+          <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" /> propriété pour définir les numéros de ligne.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenOrCloseUp">
@@ -1348,10 +1296,8 @@
       <Parameters />
       <Docs>
         <summary>Cette méthode supprime un niveau de retrait dans un ou plusieurs paragraphes.</summary>
-        <remarks>
-          <para>Cette méthode équivaut à cliquer sur le bouton Diminuer le retrait dans la barre d’outils Mise en forme.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’utilisation de cette méthode équivaut à cliquer sur le bouton diminuer le retrait de la barre d’outils mise en forme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineDemote">
@@ -1376,10 +1322,8 @@
       <Parameters />
       <Docs>
         <summary>Applique le style de niveau de titre suivant (de Titre 1 à Titre 8) au(x) paragraphe(s) spécifié(s).</summary>
-        <remarks>
-          <para>Si un paragraphe est mis en forme avec le style Titre 2, cette méthode abaisse le paragraphe en modifiant le style Titre 3.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si un paragraphe est mis en forme avec le style Titre 2, cette méthode abaisse le niveau de titre du paragraphe en lui affectant le style Titre 3.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineDemoteToBody">
@@ -1433,10 +1377,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdOutlineLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le niveau hiérarchique pour les paragraphes spécifiés.</summary>
+        <summary>Renvoie ou définit le niveau, dans le plan, des paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur renvoyée peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdOutlineLevel" /> constantes :</para>
+        <remarks><para>La Vale de retour peut être l’une des <see cref="T:Microsoft.Office.Interop.Word.WdOutlineLevel" /> constantes suivantes:</para>
           <para>
             <b>wdOutLineLevel1</b>
           </para>
@@ -1456,7 +1399,7 @@
             <b>wdOutLineLevel6</b>
           </para>
           <para>
-            <b> wdOutLineLevel7</b>
+            <b>wdOutLineLevel7</b>
           </para>
           <para>
             <b>wdOutLineLevel8</b>
@@ -1467,10 +1410,9 @@
           <para>
             <b>wdOutLineLevelBodyText</b>
           </para>
-          <para>Si un paragraphe est un style de titre appliqué (titre 1 à titre 9), le niveau hiérarchique est le même que le style de titre et ne peut pas être modifiée.</para>
-          <para>Niveaux hiérarchiques sont uniquement visibles en mode plan ou le volet Explorateur de documents.</para>
-          <para />
-        </remarks>
+          <para>Si un style de titre a été appliqué à un paragraphe (Titre 1 à Titre 9), le niveau dans le plan est celui du style du titre et ne peut pas être modifié.</para>
+          <para>Les niveaux du plan ne sont visibles qu'en mode Plan ou dans le volet de l'Explorateur de documents.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlinePromote">
@@ -1495,10 +1437,8 @@
       <Parameters />
       <Docs>
         <summary>Applique le style de niveau de titre précédent (de Titre 1 à Titre 8) au(x) paragraphe(s) spécifié(s).</summary>
-        <remarks>
-          <para>Si un paragraphe est mis en forme avec le style Titre 2, cette méthode hausse le paragraphe en modifiant le style Titre 1.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si un paragraphe est mis en forme avec le style Titre 2, cette méthode hausse le niveau de titre du paragraphe en lui affectant le style Titre 1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageBreakBefore">
@@ -1529,11 +1469,9 @@
       <Docs>
         <summary>Détermine si un saut de page est forcé avant les paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si un saut de page forcé est inséré avant les paragraphes spécifiés et sur <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Possibles renvoie les valeurs <b>True</b>, <b>False</b>et <b>wdUndefined</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si un saut de page est forcé avant les paragraphes <b></b> spécifiés et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Les valeurs renvoyées possibles sont <b>true</b>, <b>false</b>et <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1592,18 +1530,16 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le sens de lecture des paragraphes spécifiés sans modifier leur alignement.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdReadingOrder" />Il peut s’agir de l’une des constantes <b>WdReadingOrder</b> suivantes:</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdReadingOrder" />peut être une des constantes <b>WdReadingOrder</b> suivantes :</para>
-          <para>
-            <b>wdReadingOrderLtr </b>
+            <b>wdReadingOrderLtr</b>
           </para>
           <para>
             <b>wdReadingOrderRtl</b>
           </para>
-          <para>utiliser le <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrPara" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrRun" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlPara" />, et <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlRun" /> méthodes pour modifier l’alignement des paragraphes ainsi que la lecture ordre.</para>
-          <para />
-        </remarks>
+          <para>Utilisez les <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrPara" />méthodes <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrRun" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlPara" />, et <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlRun" /> pour modifier l’alignement du paragraphe en même temps que le sens de lecture.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -1628,10 +1564,8 @@
       <Parameters />
       <Docs>
         <summary>Supprime la mise en forme manuelle des paragraphes (à savoir la mise en forme qui n'est pas appliquée à l'aide d'un style).</summary>
-        <remarks>
-          <para>Si vous alignez manuellement droite un paragraphe et le style sous-jacent comporte un alignement différent, la méthode <b>Reset</b> modifie l’alignement afin de respecter la mise en forme du style sous-jacent.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous alignez manuellement droite un paragraphe et le style sous-jacent comporte un alignement différent, la méthode <b>Reset</b> modifie l'alignement afin de respecter la mise en forme du style sous-jacent.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightIndent">
@@ -1660,7 +1594,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le retrait à droite (en points) pour les paragraphes spécifiés.</summary>
+        <summary>Renvoie ou définit le retrait à droite, exprimé en points, pour les paragraphes spécifiés.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1688,7 +1622,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objet qui fait référence à la mise en forme de la trame de fond pour l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Object qui fait référence à la mise en forme de la trame de fond pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1715,10 +1649,8 @@
       <Parameters />
       <Docs>
         <summary>Applique un interligne simple aux paragraphes spécifiés.</summary>
-        <remarks>
-          <para>L’interligne exact est déterminé par la taille de police des plus grands caractères de chaque paragraphe.</para>
-          <para />
-        </remarks>
+        <remarks><para>L'interligne exact est déterminé par la taille de police des plus grands caractères de chaque paragraphe.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Space15">
@@ -1743,10 +1675,8 @@
       <Parameters />
       <Docs>
         <summary>Applique aux paragraphes spécifiés un interligne de 1,5.</summary>
-        <remarks>
-          <para>L’interligne exact est déterminé en ajoutant 6 points à la taille de police du plus grand caractère de chaque paragraphe.</para>
-          <para />
-        </remarks>
+        <remarks><para>L'interligne exact est déterminé en ajoutant 6 points à la taille de police du plus gros caractère de chaque paragraphe.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Space2">
@@ -1771,10 +1701,8 @@
       <Parameters />
       <Docs>
         <summary>Applique un interligne double aux paragraphes spécifiés.</summary>
-        <remarks>
-          <para>L’interligne exact est déterminé en ajoutant 12 points à la taille de police du plus grand caractère de chaque paragraphe.</para>
-          <para />
-        </remarks>
+        <remarks><para>L'interligne exact est déterminé en ajoutant 12 points à la taille de police du plus grand caractère de chaque paragraphe.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SpaceAfter">
@@ -1836,13 +1764,11 @@
       <Docs>
         <summary>Détermine si Microsoft Word définit automatiquement le nombre d’espacements après les paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Word définit automatiquement le nombre d’espacements après les paragraphes spécifiés et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si Word définit automatiquement le nombre d’espacements après les paragraphes <b></b> spécifiés, et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
           <para>Cette propriété renvoie <b>wdUndefined</b> si la propriété <b>SpaceAfterAuto</b> a la valeur <b>true</b> uniquement pour certains des paragraphes spécifiés.</para>
-          <para>Lorsque vous ouvrez un document HTML sans feuille de style en cascade, Word affecte automatiquement la propriété <b>SpaceAfterAuto</b><b>True</b> pour afficher l’espacement du paragraphe exactement tel qu’il apparaîtrait dans un navigateur Web.</para>
-          <para>Si <b>SpaceAfterAuto</b> a la valeur <b>True</b>, les <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" /> propriété est ignorée.</para>
-          <para />
-        </remarks>
+          <para>Lorsque vous ouvrez un document HTML sans feuille de style en cascade, Word définit automatiquement la propriété <b>SpaceAfterAuto</b> sur <b>true</b> pour afficher l’espacement du paragraphe exactement comme il apparaît dans un navigateur Web.</para>
+          <para>Si <b>SpaceAfterAuto</b> a la valeur <b>true</b>, la <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" /> propriété est ignorée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SpaceBefore">
@@ -1902,15 +1828,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si Microsoft Word définit automatiquement la quantité de l’espacement avant les paragraphes spécifiés.</summary>
+        <summary>Détermine si Microsoft Word définit automatiquement le nombre d’espacements avant les paragraphes spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Word définit automatiquement la quantité d’espace situé avant les paragraphes spécifiés et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Cette propriété renvoie <b>wdUndefined</b> si la propriété <b>SpaceBeforeAuto</b> a la valeur True pour certains des paragraphes spécifiés uniquement.</para>
-          <para>Lorsque vous ouvrez un document HTML sans feuille de style en cascade, Word affecte automatiquement la propriété <b>SpaceBeforeAuto</b><b>True</b> pour afficher l’espacement du paragraphe exactement tel qu’il apparaîtrait dans un navigateur Web.</para>
-          <para>Si <b>SpaceBeforeAuto</b> a la valeur <b>True</b>, les <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" /> propriété est ignorée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si Word définit automatiquement le nombre d’espacements avant les paragraphes <b></b> spécifiés et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Cette propriété renvoie <b>wdUndefined</b> si la propriété <b>SpaceBeforeAuto</b> a la valeur true uniquement pour certains des paragraphes spécifiés.</para>
+          <para>Lorsque vous ouvrez un document HTML sans feuille de style en cascade, Word définit automatiquement la propriété <b>SpaceBeforeAuto</b> sur <b>true</b> pour afficher l’espacement du paragraphe exactement comme il apparaît dans un navigateur Web.</para>
+          <para>Si <b>SpaceBeforeAuto</b> a la valeur <b>true</b>, la <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" /> propriété est ignorée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -1941,11 +1865,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le style de l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour définir cette propriété, spécifiez le nom local du style, un entier, une <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou un objet qui représente le style.</para>
-          <para>Lorsque vous retournez le style d’une plage concernée comporte plusieurs styles, seul le style premier caractère ou de paragraphe est renvoyé.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour définir cette propriété, spécifiez le nom local du style, un entier, une <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou un objet qui représente le style.</para>
+          <para>Si la plage concernée comporte plusieurs styles, seul le style du premier caractère ou du premier paragraphe est renvoyé.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabHangingIndent">
@@ -1971,12 +1893,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">Nécessaire <b>courte</b>. Nombre de tabulations à appliquer au retrait (si positif) ou à supprimer du retrait (si négatif).</param>
+        <param name="Count"><b>Short</b>obligatoire. Nombre de tabulations à appliquer au retrait (si positif) ou à supprimer du retrait (si négatif).</param>
         <summary>Définit un retrait négatif égal à un nombre de tabulations spécifié.</summary>
-        <remarks>
-          <para>Permet de supprimer des tabulations d’un retrait négatif si la valeur de <paramref name="Count" /> est un nombre négatif.</para>
-          <para />
-        </remarks>
+        <remarks><para>Peut être utilisé pour supprimer des taquets de tabulation d’un retrait négatif si <paramref name="Count" /> la valeur de est un nombre négatif.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabIndent">
@@ -2002,12 +1922,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">Nécessaire <b>courte</b>. Nombre de tabulations à appliquer au retrait (si positif) ou à supprimer du retrait (si négatif).</param>
+        <param name="Count"><b>Short</b>obligatoire. Nombre de tabulations à appliquer au retrait (si positif) ou à supprimer du retrait (si négatif).</param>
         <summary>Définit, pour les paragraphes spécifiés, un retrait gauche correspondant au nombre de tabulations spécifié.</summary>
-        <remarks>
-          <para>Peut également être utilisée pour supprimer le retrait si la valeur de <paramref name="Count" /> est un nombre négatif.</para>
-          <para />
-        </remarks>
+        <remarks><para>Peut également être utilisé pour supprimer le retrait si la valeur de <paramref name="Count" /> est un nombre négatif.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStops">
@@ -2036,7 +1954,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TabStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.TabStops" /> cesse de la collection qui représente toutes les l’onglet personnalisé pour les paragraphes spécifiés.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.TabStops" /> définit une collection qui représente tous les taquets de tabulation personnalisés pour les paragraphes spécifiés.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2067,13 +1985,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si les première et dernière lignes du paragraphe spécifié restent sur la même page que le reste du paragraphe lorsque Microsoft Word repagine le document.</summary>
+        <summary>Détermine si les première et dernière lignes du paragraphe spécifié restent sur la même page que le reste du paragraphe lorsque Microsoft Word Repagine le document.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si les première et dernière lignes du paragraphe spécifié restent sur la même page que le reste du paragraphe lorsque Microsoft Word repagine le document et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Possibles renvoie les valeurs <b>True</b>, <b>False</b> et <b>wdUndefined</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les première et dernière lignes du paragraphe spécifié restent sur la même page que le reste du paragraphe lorsque Word Repagine le document et <b>false</b> dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Les valeurs renvoyées possibles sont <b>true</b>, <b>false</b> et <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -2102,14 +2018,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si Microsoft Word ajuste le texte Latin au milieu d’un mot dans les paragraphes spécifiés ou les cadres de texte.</summary>
+        <summary>Détermine si Microsoft Word ajuste le texte latin au milieu d’un mot dans les paragraphes ou les cadres de texte spécifiés.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si Word ajuste le texte en caractères latins au milieu d’un mot dans les paragraphes ou les cadres de texte et <b>False</b> dans le cas contraire. La valeur de la propriété la valeur <b>True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para>Cette propriété renvoie <b>wdUndefined</b> si la valeur <b>true</b> pour une partie seulement des paragraphes spécifiés ou des cadres de texte.</para>
-          <para>Cette utilisation ne soient pas disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si Word ajuste le texte latin au milieu d’un mot dans les paragraphes ou les cadres de <b></b> texte spécifiés, et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para>Cette propriété renvoie <b>wdUndefined</b> si la valeur <b>true</b> ne s’applique qu’à certains des paragraphes ou des cadres de texte spécifiés.</para>
+          <para>Il se peut que cette utilisation ne soit pas disponible, en fonction de la prise en charge linguistique (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

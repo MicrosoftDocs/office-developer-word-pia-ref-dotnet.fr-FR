@@ -1,13 +1,5 @@
 <Type Name="TablesOfAuthorities" FullName="Microsoft.Office.Interop.Word.TablesOfAuthorities">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b04829d6e20038907ae0e4d3dfef9a45a8da9159" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667937" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fef3d3e5c7ec2a8397d6977b226d1f8051218c96" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143930" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfAuthorities implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" />
   <TypeSignature Language="VB.NET" Value="Public Interface TablesOfAuthorities&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> objets (champs TOA) qui représente la table de références dans un document.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" /> propriété permet de renvoyer la collection <b>TableOfAuthorities</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> pour ajouter une table de références à un document. Une table de références est établie à partir des champs TA (entrée de Table de références) dans un document.</para>
-      <para>Utilisez <b>TablesOfAuthorities</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>TableOfAuthorities</b> . Le numéro d’index représente la position de la table de références dans le document.</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> objets (champs TOA) qui représente les tables de références dans un document.</summary>
+    <remarks><para>Utilisez la <see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" /> propriété pour renvoyer la collection <b>TablesOfAuthorities</b> .</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour ajouter une table de références à un document. Une table de références est construite à partir des champs TA (entrée de Table de références) dans un document.</para>
+      <para>Utilisez <b>TablesOfAuthorities</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>TableOfAuthorities</b> . Le numéro d'index représente la position de la table de références dans le document.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -70,23 +60,21 @@
         <Parameter Name="PageNumberSeparator" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Plage où vous souhaitez faire figurer la table de références. La table de références remplace la plage si la plage n’est pas réduite.</param>
-        <param name="Category">Facultatif <b>Object</b>. Catégorie d'entrées que vous souhaitez inclure dans la table de références. Correspond au commutateur \c pour un champ TOA. Valeurs de 0 à 16 correspondent aux éléments répertoriés dans la zone catégorie sous l’onglet Table de références dans la boîte de dialogue Tables et Index (menu Insertion, commande référence). La valeur par défaut est 1 (un).</param>
-        <param name="Bookmark">Facultatif <b>Object</b>. Nom de chaîne du signet à partir duquel regrouper les entrées d'une table de références. Si <paramref name="Bookmark" /> est spécifié, les entrées sont regroupées uniquement à partir de la partie du document marquée par le signet. Correspond au commutateur \b pour un champ TOA.</param>
-        <param name="Passim">Facultatif <b>Object</b>. <b>True</b> pour remplacer au moins cinq références de pages pour la même autorité par Passim dans la table de références. Correspond au commutateur \p pour un champ de Table de références (champ TOA). Si cet argument est omis, <paramref name="Passim" /> est supposé pour avoir la <b>valeur False</b>.</param>
-        <param name="KeepEntryFormatting">Facultatif <b>Object</b>. <b>True</b> pour appliquer la mise en forme à partir de la table de références aux entrées dans la table de références. Correspond au commutateur \f pour un champ de Table de références (champ TOA). Si cet argument est omis, <paramref name="KeepEntryFormatting" /> est supposé avoir la <b>valeur True</b>.</param>
-        <param name="Separator">Facultatif <b>Object</b>. Caractères (cinq au maximum) entre chaque numéro de séquence et son numéro de page dans la table de références. Correspond au commutateur \d pour un champ TOA. Si vous ne spécifiez pas cet argument, le séparateur par défaut est un tiret (-).</param>
-        <param name="IncludeSequenceName">Facultatif <b>Object</b>. Chaîne définissant l'identificateur de champ SEQ (Sequence) pour la table de références. Correspond au commutateur \s pour un champ TOA (champ de table de références).</param>
-        <param name="EntrySeparator">Facultatif <b>Object</b>. Caractères (cinq au maximum) entre chaque entrée et son numéro de page dans la table de références. Correspond au commutateur \e pour un champ TOA. Si vous ne spécifiez pas cet argument, aucun séparateur n'est utilisé.</param>
-        <param name="PageRangeSeparator">Facultatif <b>Object</b>. Caractères (cinq au maximum) séparant les numéros de la page de début et de la page de fin dans chaque étendue de pages de la table de références. Correspond au commutateur \g pour un champ de table de références (champ TOA). Si vous ne spécifiez pas cet argument, le caractère utilisé est un tiret demi-cadratin.</param>
-        <param name="IncludeCategoryHeader">Facultatif <b>Object</b>. <b>True</b> pour que le nom de catégorie pour chaque groupe d'entrées s'affichent dans la table de références (par exemple, affaires). Correspond au commutateur \h pour un champ de Table de références (champ TOA). Si cet argument est omis, <paramref name="IncludeCategoryHeader" /> est supposé avoir la <b>valeur True</b>.</param>
-        <param name="PageNumberSeparator">Facultatif <b>Object</b>. Caractères (cinq au maximum) séparant les différents numéros de page au sein des références de page de la table de références. Correspond au commutateur \l pour un champ de table de références (champ TOA). Si vous ne spécifiez pas cet argument, la valeur par défaut est une virgule et un espace.</param>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Plage où vous souhaitez faire figurer la table de références. La table de références remplace la plage si la plage n’est pas réduite.</param>
+        <param name="Category"><b>Objet</b>facultatif. Catégorie d'entrées que vous souhaitez inclure dans la table de références. Correspond au commutateur \c pour un champ TOA. Les valeurs comprises entre 0 (zéro) et 16 correspondent aux éléments répertoriés dans la zone Catégorie sous l'onglet Table des références de la boîte de dialogue Tables et index (menu Insertion, commande Référence). La valeur par défaut est 1.</param>
+        <param name="Bookmark"><b>Objet</b>facultatif. Nom de chaîne du signet à partir duquel regrouper les entrées d'une table de références. Si <paramref name="Bookmark" /> est spécifié, les entrées sont collectées uniquement à partir de la partie du document marquée par le signet. Correspond au commutateur \b pour un champ TOA.</param>
+        <param name="Passim"><b>Objet</b>facultatif. <b>True</b> pour remplacer au moins cinq références de pages pour la même autorité par Passim dans la table de références. Correspond au commutateur \p pour un champ de Table de références (champ TOA). Si vous ne spécifiez pas cet <paramref name="Passim" /> argument, la <b>valeur</b>par défaut est false.</param>
+        <param name="KeepEntryFormatting"><b>Objet</b>facultatif. <b>True</b> pour appliquer la mise en forme à partir de la table de références aux entrées dans la table de références. Correspond au commutateur \f pour un champ de Table de références (champ TOA). Si vous ne spécifiez pas cet <paramref name="KeepEntryFormatting" /> argument, la valeur par défaut est <b>true</b>.</param>
+        <param name="Separator"><b>Objet</b>facultatif. Caractères (cinq au maximum) entre chaque numéro de séquence et son numéro de page dans la table de références. Correspond au commutateur \d pour un champ TOA. Si vous ne spécifiez pas cet argument, le séparateur par défaut est un tiret (-).</param>
+        <param name="IncludeSequenceName"><b>Objet</b>facultatif. Chaîne définissant l'identificateur de champ SEQ (Sequence) pour la table de références. Correspond au commutateur \s pour un champ TOA (champ de table de références).</param>
+        <param name="EntrySeparator"><b>Objet</b>facultatif. Caractères (cinq au maximum) entre chaque entrée et son numéro de page dans la table de références. Correspond au commutateur \e pour un champ TOA. Si vous ne spécifiez pas cet argument, aucun séparateur n'est utilisé.</param>
+        <param name="PageRangeSeparator"><b>Objet</b>facultatif. Caractères (cinq au maximum) séparant les numéros de la page de début et de la page de fin dans chaque étendue de pages de la table de références. Correspond au commutateur \g pour un champ de table de références (champ TOA). Si vous ne spécifiez pas cet argument, le caractère utilisé est un tiret demi-cadratin.</param>
+        <param name="IncludeCategoryHeader"><b>Objet</b>facultatif. <b>True</b> pour que le nom de catégorie pour chaque groupe d'entrées s'affichent dans la table de références (par exemple, affaires). Correspond au commutateur \h pour un champ de Table de références (champ TOA). Si vous ne spécifiez pas cet <paramref name="IncludeCategoryHeader" /> argument, la valeur par défaut est <b>true</b>.</param>
+        <param name="PageNumberSeparator"><b>Objet</b>facultatif. Caractères (cinq au maximum) séparant les différents numéros de page au sein des références de page de la table de références. Correspond au commutateur \l pour un champ de table de références (champ TOA). Si vous ne spécifiez pas cet argument, la valeur par défaut est une virgule et un espace.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> objet qui représente une table de références ajoutée à un document.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Une table de références est générée à partir des champs de l’entrée de Table de références (TA) dans un document. Utiliser le <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> méthode pour marquer les citations à inclure dans la table de références.</para>
-          <para />
-        </remarks>
+        <remarks><para>Une table de références est générée à partir des champs de l'entrée de Table de références (TA) dans un document. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> méthode pour marquer les citations à inclure dans la table de références.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -112,7 +100,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,11 +158,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -203,11 +189,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdToaFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la mise en forme pour les tables de références dans le document spécifié.</summary>
+        <summary>Renvoie ou définit la mise en forme des tables de références du document spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdToaFormat" />peut être une des constantes <b>WdToaFormat</b> suivantes :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdToaFormat" />Il peut s’agir de l’une des constantes <b>WdToaFormat</b> suivantes:</para>
           <para>
             <b>wdTOAClassic</b>
           </para>
@@ -223,8 +208,7 @@
           <para>
             <b>wdTOASimple</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -285,7 +269,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -316,12 +300,11 @@
         <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ShortCitation">
-          <b>String</b>obligatoire. Citation courte pour l'entrée telle qu'elle apparaîtra dans la boîte de dialogue Citation (menu Insertion, commande Tables et index).</param>
-        <param name="LongCitation">Facultatif <b>Object</b>. Citation longue pour l'entrée telle qu'elle apparaîtra dans la table de références.</param>
-        <param name="LongCitationAutoText">Facultatif <b>Object</b>. Nom de l'insertion automatique qui contient le texte de la citation longue tel qu'il apparaîtra dans la table de références.</param>
-        <param name="Category">Facultatif <b>Object</b>. Nombre de catégories à associer avec l'entrée : 1 correspond à la première catégorie de la zone Category dans la boîte de dialogue Citation, 2 correspond à la deuxième catégorie, et ainsi de suite.</param>
-        <summary>Insère un champ TA (entrée de Table de références) après toutes les instances de le <paramref name="ShortCitation" /> texte.</summary>
+        <param name="ShortCitation">Argument de type <b>String</b> obligatoire. Citation courte pour l'entrée telle qu'elle apparaîtra dans la boîte de dialogue Citation (menu Insertion, commande Tables et index).</param>
+        <param name="LongCitation"><b>Objet</b>facultatif. Citation longue pour l'entrée telle qu'elle apparaîtra dans la table de références.</param>
+        <param name="LongCitationAutoText"><b>Objet</b>facultatif. Nom de l'insertion automatique qui contient le texte de la citation longue tel qu'il apparaîtra dans la table de références.</param>
+        <param name="Category"><b>Objet</b>facultatif. Nombre de catégories à associer avec l'entrée : 1 correspond à la première catégorie de la zone Category dans la boîte de dialogue Citation, 2 correspond à la deuxième catégorie, et ainsi de suite.</param>
+        <summary>Insère un champ TA (entrée de table de références) après toutes les occurrences <paramref name="ShortCitation" /> du texte.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,13 +333,12 @@
         <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement de l'entrée de la table de références. Le champ TA est inséré après <paramref name="Range" />.</param>
-        <param name="ShortCitation">
-          <b>String</b>obligatoire. Citation courte pour l'entrée telle qu'elle apparaîtra dans la boîte de dialogue Citation (menu Insertion, commande Tables et index).</param>
-        <param name="LongCitation">Facultatif <b>Object</b>. Citation longue pour l'entrée telle qu'elle apparaîtra dans la table de références.</param>
-        <param name="LongCitationAutoText">Facultatif <b>Object</b>. Nom de l'insertion automatique qui contient le texte d'une citation longue tel qu'il apparaîtra dans la table de références.</param>
-        <param name="Category">Facultatif <b>Object</b>. Nombre de catégories à associer avec l'entrée : 1 correspond à la première catégorie de la zone Category dans la boîte de dialogue Citation, 2 correspond à la deuxième catégorie, et ainsi de suite.</param>
-        <summary>Insère un champ TA (entrée de Table de références) et renvoie le champ comme un <see cref="T:Microsoft.Office.Interop.Word.Field" /> objet.</summary>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement de l'entrée de la table de références. Le champ TA est inséré après <paramref name="Range" />.</param>
+        <param name="ShortCitation">Argument de type <b>String</b> obligatoire. Citation courte pour l'entrée telle qu'elle apparaîtra dans la boîte de dialogue Citation (menu Insertion, commande Tables et index).</param>
+        <param name="LongCitation"><b>Objet</b>facultatif. Citation longue pour l'entrée telle qu'elle apparaîtra dans la table de références.</param>
+        <param name="LongCitationAutoText"><b>Objet</b>facultatif. Nom de l'insertion automatique qui contient le texte d'une citation longue tel qu'il apparaîtra dans la table de références.</param>
+        <param name="Category"><b>Objet</b>facultatif. Nombre de catégories à associer avec l'entrée : 1 correspond à la première catégorie de la zone Category dans la boîte de dialogue Citation, 2 correspond à la deuxième catégorie, et ainsi de suite.</param>
+        <summary>Insère un champ TA (entrée de table de références) et renvoie le champ sous la <see cref="T:Microsoft.Office.Interop.Word.Field" /> forme d’un objet.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -384,8 +366,7 @@
         <Parameter Name="ShortCitation" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ShortCitation">
-          <b>String</b>obligatoire. Texte de la citation courte.</param>
+        <param name="ShortCitation">Argument de type <b>String</b> obligatoire. Texte de la citation courte.</param>
         <summary>Recherche et sélectionne l’occurrence suivante d’une citation spécifiée.</summary>
         <remarks>To be added.</remarks>
       </Docs>

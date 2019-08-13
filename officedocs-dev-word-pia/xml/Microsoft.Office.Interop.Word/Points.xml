@@ -1,13 +1,5 @@
 <Type Name="Points" FullName="Microsoft.Office.Interop.Word.Points">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e6ec73c293d015a6238b804a975848286853fb8c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668628" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Points : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5975220702129151c3928a376d05fe3cd4618651" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147717" /></Metadata><TypeSignature Language="C#" Value="public interface Points : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Points implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Points" />
   <TypeSignature Language="VB.NET" Value="Public Interface Points&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Word.Point" /> des objets dans la série spécifiée d’un graphique.</summary>
-    <remarks>
-      <para>Utilisez <see cref="M:Microsoft.Office.Interop.Word.Series.Points(System.Object)" />(<paramref name="Index" />), où <paramref name="Index" /> est le numéro d’index du point, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.Point" /> objet. Points sont numérotées de gauche à droite dans la série. Points (1) est le point le plus à gauche et points (points.Count) est le point le plus à droite.</para>
-      <para />
-    </remarks>
+    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Word.Point" /> objets de la série spécifiée dans un graphique.</summary>
+    <remarks><para>Utilisez <see cref="M:Microsoft.Office.Interop.Word.Series.Points(System.Object)" />(<paramref name="Index" />), où <paramref name="Index" /> est le numéro d’index du point, pour renvoyer <see cref="T:Microsoft.Office.Interop.Word.Point" /> un seul objet. Points sont numérotées de gauche à droite dans la série. Points(1) représente le point le plus à gauche et Points(Points.Count) le point le plus à droite.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -65,7 +55,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>Réservé à une utilisation interne.</summary>
-        <returns>Cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word.Point" />.</returns>
+        <returns>Renvoie <see cref="T:Microsoft.Office.Interop.Word.Point" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +82,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Application</b> (voir ci-dessus)</value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Application</b> (voir ci-dessus)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,9 +111,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie une valeur  <b>Integer</b> qui représente le nombre d'objets de la collection.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,14 +138,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. Valeur <b>Integer</b> en lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -189,7 +172,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Cette propriété renvoie <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <returns>Renvoie <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,12 +202,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire. Numéro d'index de l'objet.</param>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire. Numéro d'index de l'objet.</param>
         <summary>Renvoie un seul objet de la collection.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Point" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Point" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,9 +232,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule <b>Object</b>.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

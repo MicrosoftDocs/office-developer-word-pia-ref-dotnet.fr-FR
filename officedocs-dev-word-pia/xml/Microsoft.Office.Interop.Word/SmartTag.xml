@@ -1,13 +1,5 @@
 <Type Name="SmartTag" FullName="Microsoft.Office.Interop.Word.SmartTag">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d90397c8f538990a390264fd3d1b286f3e023f2a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668467" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTag" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5fa49cb1dcddf81834677aefdc8cd50240fa9578" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146121" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTag" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTag" />
@@ -26,12 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente une chaîne dans un document ou une plage qui contient les informations de type reconnu.</summary>
-    <remarks>
-      <para>L’objet <b>SmartTag</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> collection. La collection <b>SmartTags</b> contient toutes les balises actives dans un document ou une plage de texte dans un document. Microsoft Word utilise un fichier module de reconnaissance des balises actives étiquette, et un fichier d’action à exécuter les actions associées à des balises actives, telles que la liaison à des sites Web.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" /> méthode — ou <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> (<paramref name="index" />), où <paramref name="index" /> représente le numéro de la balise active, pour renvoyer un seul objet <b>SmartTag</b> .</para>
-      <para />
-    </remarks>
+    <summary>Dans un document ou une plage, cet objet représente une chaîne contenant des informations de type reconnu.</summary>
+    <remarks><para>L’objet <b>SmartTag</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> collection. La collection <b>SmartTags</b> contient toutes les balises actives d’un document ou d’une plage de texte dans un document. Microsoft Word utilise un fichier de reconnaissance pour libeller les balises actives et un fichier d'action pour exécuter les opérations liées à ces balises (création de liaisons à des sites Web, par exemple).</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" /> méthode — ou <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> (<paramref name="index" />), où <paramref name="index" /> représente le numéro de la balise active — pour renvoyer un seul objet <b>SmartTag</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,11 +83,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -154,12 +142,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> qui représente l’adresse URL d’une balise active.</summary>
+        <summary>Renvoie une <b>valeur de type String</b> qui représente l’adresse URL d’une balise active.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’adresse URL est spécifiée dans le fichier de module de reconnaissance de balise active associées. Lorsqu’un élément de texte est reconnu et sélectionnée, l’URL fait partie des informations contenues dans la balise active. La propriété <b>DownloadURL</b> est utile si un document est envoyé à une personne qui ne dispose pas de fichiers de reconnaissance et d’action nécessaires sur leur ordinateur. L’utilisateur peut suivre l’URL afin de télécharger les fichiers de balise active nécessaires.</para>
-          <para />
-        </remarks>
+        <remarks><para>L'adresse URL est spécifiée dans le fichier de détecteur de balise active correspondant. Lorsqu'un fragment de texte est détecté et marqué, l'URL est intégrée aux informations contenues dans la balise active. La propriété <b>DownloadURL</b> peut être utile lorsque vous envoyez un document à quelqu'un qui ne dispose pas des fichiers de détecteur et d'actions nécessaires sur son ordinateur. Cette personne peut alors suivre l'URL afin de télécharger les fichiers de balise active nécessaires.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -250,12 +236,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CustomProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.CustomProperties" /> objet qui représente les propriétés d’une balise active.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.CustomProperties" /> Object qui représente les propriétés d’une balise active.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" /> méthode pour ajouter des propriétés personnalisées. Toutefois, les propriétés personnalisées sont généralement spécifiées dans les fichiers de reconnaissance et d’action de balise active.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" /> méthode pour ajouter des propriétés personnalisées. Toutefois, les propriétés personnalisées sont généralement spécifiées dans les fichiers d’action et de reconnaissance des balises actives.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -284,12 +268,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> de formes à partir d’une collection de formes, voir la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -316,11 +298,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cette méthode sélectionne l'objet spécifié.</summary>
-        <remarks>
-          <para>Après avoir exécuté cette méthode, utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriété pour travailler avec les éléments sélectionnés.</para>
-          <para />
-        </remarks>
+        <summary>Sélectionne l'objet spécifié.</summary>
+        <remarks><para>Après avoir utilisé cette méthode, utilisez <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propriété pour travailler avec les éléments sélectionnés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartTagActions">
@@ -349,7 +329,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> collection qui représente la collection d’actions disponibles pour une balise active.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> collection qui représente la collection d’actions disponibles pour une balise active.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -380,7 +360,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> qui représente les données XML associé pour une balise active.</summary>
+        <summary>Renvoie une <b>chaîne</b> qui représente le code XML associé à une balise active.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -411,12 +391,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> object qui représente l’élément XML d’une balise active.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> Object qui représente l’élément XML d’une balise active.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pas toutes les balises actives contient les nœuds XML ; Toutefois, la propriété <b>XMLNode</b> permet aux développeurs d’accéder aux nœuds XML pour les balises actives qui contiennent des nœuds XML.</para>
-          <para />
-        </remarks>
+        <remarks><para>Toutes les balises actives ne contiennent pas de nœuds XML; Toutefois, la propriété <b>XmlNode</b> permet aux développeurs d’accéder aux nœuds XML pour les balises actives qui contiennent des nœuds XML.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

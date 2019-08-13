@@ -1,13 +1,5 @@
 <Type Name="Tables" FullName="Microsoft.Office.Interop.Word.Tables">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0295eb260914340962417034fdb652888fbf97c0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667541" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Tables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="73c9bbc17f2a0e8f243a1e02441a94bc43b4d4be" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146029" /></Metadata><TypeSignature Language="C#" Value="public interface Tables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Tables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Tables" />
   <TypeSignature Language="VB.NET" Value="Public Interface Tables&#xA;Implements IEnumerable" />
@@ -30,11 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Table" /> objets qui représentent les tableaux d’une sélection, une plage ou un document.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>Tables</b> pour renvoyer la collection <b>Tables</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Tables.Add(Microsoft.Office.Interop.Word.Range,System.Int32,System.Int32,System.Object@,System.Object@)" /> méthode pour ajouter un tableau à la plage spécifiée.</para> Utilisez des <b>Tables</b>de 
-      <para>(<paramref name="index" />), où index est le <paramref name="index" /> numéro, pour renvoyer un seul objet <b>Table</b> . Le numéro d’index représente la position de la table de la sélection, une plage ou un document.</para><para>La <see cref="P:Microsoft.Office.Interop.Word.Tables.Count" /> propriété pour cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d’autres articles utilisez la collection avec le <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet.</para><para /></remarks>
+    <summary>Collection d’objets <see cref="T:Microsoft.Office.Interop.Word.Table" /> qui représentent les tableaux d’une sélection, d’une plage ou d’un document.</summary>
+    <remarks><para>Utilisez la propriété <b>Tables</b> pour renvoyer la collection <b>Tables</b>.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Tables.Add(Microsoft.Office.Interop.Word.Range,System.Int32,System.Int32,System.Object@,System.Object@)" /> méthode pour ajouter un tableau au niveau de la plage spécifiée.</para>
+      <para>Utilisez <b>tables</b>(<paramref name="index" />), où index est le <paramref name="index" /> numéro, pour renvoyer un seul objet <b>table</b> . Ce numéro représente la position du tableau dans la sélection, la plage ou le document.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Tables.Count" /> propriété de cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments d’autres articles, utilisez la collection <see cref="T:Microsoft.Office.Interop.Word.Range" /> avec l’objet.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,14 +55,12 @@
         <Parameter Name="AutoFitBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Plage où vous souhaitez la table apparaisse. Le tableau remplace la plage, si la plage n’est pas réduite.</param>
-        <param name="NumRows">
-          <b>Integer</b>obligatoire. Nombre de lignes que vous souhaitez inclure dans le tableau.</param>
-        <param name="NumColumns">
-          <b>Integer</b>obligatoire. Nombre de colonnes que vous souhaitez inclure dans le tableau.</param>
-        <param name="DefaultTableBehavior">Facultatif <b>Object</b>. Définit une valeur qui spécifie si Word redimensionne automatiquement les cellules de tableaux pour ajuster au contenu des cellules (ajustement automatique). Peut être l’une des constantes suivantes : <b>wdWord8TableBehavior</b> (ajustement automatique désactivé) ou <b>wdWord9TableBehavior</b> (ajustement automatique activé). La constante par défaut est <b>wdWord8TableBehavior</b>.</param>
-        <param name="AutoFitBehavior">Facultatif <b>Object</b>. Définit les règles d’ajustement automatique de la façon dont Microsoft Word redimensionne les tableaux. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" /> constantes : <b>wdAutoFitContent</b>, <b>wdAutoFitFixed</b>ou <b>wdAutoFitWindow</b>. Si <paramref name="DefaultTableBehavior" /> a la valeur <b>wdWord8TableBehavior</b>, cet argument est ignoré.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Table" /> object qui représente un nouveau tableau vide ajouté à un document.</summary>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Plage dans laquelle vous souhaitez faire figurer le tableau. Si la plage n'est pas réduite, le tableau la remplace.</param>
+        <param name="NumRows">Argument de type <b>Integer</b> obligatoire. Nombre de lignes que vous souhaitez inclure dans le tableau.</param>
+        <param name="NumColumns">Argument de type <b>Integer</b> obligatoire. Nombre de colonnes que vous souhaitez inclure dans le tableau.</param>
+        <param name="DefaultTableBehavior"><b>Objet</b>facultatif. Définit une valeur qui spécifie si Word redimensionne automatiquement les cellules des tableaux en fonction du contenu des cellules (ajustement automatique). Il peut s’agir de l’une des constantes suivantes: <b>wdWord8TableBehavior</b> (AutoFit Disabled) ou <b>wdWord9TableBehavior</b> (ajustement automatique activé). La constante par défaut est <b>wdWord8TableBehavior</b>.</param>
+        <param name="AutoFitBehavior"><b>Objet</b>facultatif. Définit les règles d’ajustement automatique pour la taille des tableaux par Microsoft Word. Il peut s’agir de l' <see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" /> une des constantes suivantes: <b>wdAutoFitContent</b>, <b>wdAutoFitFixed</b>ou <b>wdAutoFitWindow</b>. Si <paramref name="DefaultTableBehavior" /> est défini sur <b>wdWord8TableBehavior</b>, cet argument est ignoré.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Table" /> Object qui représente un nouveau tableau vide ajouté à un document.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -132,7 +123,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -190,11 +181,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -255,7 +244,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -286,10 +275,8 @@
       <Docs>
         <summary>Renvoie le niveau d'imbrication des tables spécifiées.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La table externe possède un niveau d’imbrication de 1. Le niveau d’imbrication de chaque tableau imbriqué successivement est une fois plus grand que le tableau précédent.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le niveau d'imbrication 1 correspond au tableau le plus à l'extérieur. Le niveau augmente ensuite d'une unité pour chaque imbrication successive.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

@@ -1,13 +1,5 @@
 <Type Name="TextInput" FullName="Microsoft.Office.Interop.Word.TextInput">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4c269a8af7d2406a141bb70d586f5cf03e141f7d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668840" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextInput" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="25278b86c7e130fb95e96e6347a7d97c8e594d89" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143804" /></Metadata><TypeSignature Language="C#" Value="public interface TextInput" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextInput" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextInput" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextInput" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Représente un champ de formulaire donné de type texte.</summary>
-    <remarks>
-      <para>Utilisez <b>FormFields</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de signet associé avec le champ de formulaire texte ou le numéro d’index, pour renvoyer un <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> propriété avec l’objet <b>FormField</b> pour renvoyer un objet <b>TextInput</b> .</para>
-      <para>Le numéro d’index représente la position du champ de formulaire dans le <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> collection.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> méthode avec l’objet <b>FormFields</b> pour ajouter un champ de formulaire texte.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilisez <b>FormFields</b>(<paramref name="index" />), où <paramref name="index" /> est le nom du signet associé au champ de formulaire texte ou le numéro d’index, pour renvoyer <see cref="T:Microsoft.Office.Interop.Word.FormField" /> un objet. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> propriété avec l’objet <b>FormField</b> pour renvoyer un objet <b>TextInput</b> .</para>
+      <para>Le numéro d’index représente la position du champ de formulaire dans <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> la collection.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> méthode avec l’objet <b>FormFields</b> pour ajouter un champ de formulaire de texte.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,11 +103,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -176,10 +164,10 @@
         <Parameter Name="Enabled" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">Requis <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />. Le type de zone de texte. <b>WdTextFormFieldType</b> peut être une de ces constantes : <b>wdCalculationText </b><b>wdCurrentDateText </b><b>wdCurrentTimeText </b><b>wdDateText </b><b>wdNumberText </b><b>wdRegularText</b></param>
-        <param name="Default">Facultatif <b>Object</b>. Texte par défaut qui s'affiche dans la zone de texte.</param>
-        <param name="Format">Facultatif <b>Object</b>. La chaîne de mise en forme utilisée pour mettre en forme le texte, nombre ou date (par exemple, « 0,00 », « Casse de titre » ou « Jj/aa »). Pour plus d’exemples de formats, voir la liste des formats pour le champ de formulaire texte spécifié type dans la boîte de dialogue Options de champ texte.</param>
-        <param name="Enabled">Facultatif <b>Object</b>. <b>True</b> : pour activer la saisie de texte dans le champ de formulaire.</param>
+        <param name="Type">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />. Type de zone de texte. <b>WdTextFormFieldType</b> peut être l’une de ces constantes suivantes: <b>wdCalculationText </b> <b>wdCurrentDateText </b> <b>wdCurrentTimeText </b> <b>wdDateText </b> <b>wdNumberText </b> <b>wdRegularText</b></param>
+        <param name="Default"><b>Objet</b>facultatif. Texte par défaut qui s'affiche dans la zone de texte.</param>
+        <param name="Format"><b>Objet</b>facultatif. Chaîne de mise en forme utilisée pour la mise en forme du texte, du numéro ou de la date (par exemple, « 0,00 », « 1re lettre des mots en majuscule » ou « M/j/aa »). Pour des exemples supplémentaires de mise en forme, consultez la liste des formats pour le type de champ de formulaire de type texte spécifié dans la boîte de dialogue Options de champ: texte.</param>
+        <param name="Enabled"><b>Objet</b>facultatif. <b>True</b> : pour activer la saisie de texte dans le champ de formulaire.</param>
         <summary>Définit les options du champ de formulaire de type texte spécifié.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -265,29 +253,27 @@
       <Docs>
         <summary>Renvoie le type de champ texte.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />peut être l’une de ces constantes <b>WdTextFormFieldType</b> : </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />peut être une de ces constantes <b>WdTextFormFieldType</b> : </para>
-          <para>
-            <b>wdCalculationText </b>
+            <b>wdCalculationText</b>
           </para>
           <para>
-            <b>wdCurrentDateText </b>
+            <b>wdCurrentDateText</b>
           </para>
           <para>
-            <b>wdCurrentTimeText </b>
+            <b>wdCurrentTimeText</b>
           </para>
           <para>
-            <b>wdDateText </b>
+            <b>wdDateText</b>
           </para>
           <para>
-            <b>wdNumberText </b>
+            <b>wdNumberText</b>
           </para>
           <para>
             <b>wdRegularText</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Valid">
@@ -313,13 +299,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l'objet de champ de formulaire spécifié est un champ de formulaire de case à cocher valide.</summary>
+        <summary><b>True</b> si l'objet de champ de formulaire spécifié est un champ de formulaire de case à cocher valide.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet pour déterminer le type de champ de formulaire (<b>wdFieldFormCheckBox</b>, <b>wdFieldFormDropDown</b>ou <b>wdFieldFormTextInput</b>) avant d’appliquer le <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> propriété. Cette précaution garantit que l’objet <b>FormField</b> correspond au type attendu.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet pour déterminer le type de champ de formulaire (<b>wdFieldFormCheckBox</b>, <b>wdFieldFormDropDown</b>ou <b>wdFieldFormTextInput</b>) avant d’appliquer <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> la propriété. Cette précaution permet de s’assurer que le type de l’objet <b>FormField</b> est attendu.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -348,7 +331,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la largeur de l’objet spécifié, en points.</summary>
+        <summary>Renvoie ou définit la largeur de l’objet spécifié, en points.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Footnotes" FullName="Microsoft.Office.Interop.Word.Footnotes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1270ec604789e3a9b5487a8698f15fad638a340" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668105" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Footnotes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ddceb8450faffca19e7338fa2807f77d0c4b3148" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148039" /></Metadata><TypeSignature Language="C#" Value="public interface Footnotes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Footnotes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Footnotes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Footnotes&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Footnote" /> objets qui représentent toutes les notes de fin dans une sélection, une plage ou un document.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>notes de fin</b> d’une <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet pour renvoyer la collection <b>Footnotes</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> pour ajouter une note de bas de page à la collection <b>Footnotes</b> .</para>
-      <para>Utiliser <b>Footnotes</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un objet <b>Footnot</b>e. Le numéro d’index représente la position de la note de la sélection, une plage ou un document.</para>
-      <para>Bas de page situées à la fin d’un document ou d’une section sont considérées comme des notes de fin et sont inclus dans le <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> collection.</para>
-      <para />
-    </remarks>
+    <summary>Collection d’objets <see cref="T:Microsoft.Office.Interop.Word.Footnote" /> qui représentent toutes les notes de bas de page d’une sélection, d’une plage ou d’un document.</summary>
+    <remarks><para>Utilisez la <b></b> propriété Footnotes d’un <see cref="T:Microsoft.Office.Interop.Word.Selection" />objet <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> pour renvoyer la collection <b>Footnotes</b> .</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> méthode pour ajouter une note de bas de page à la collection <b>de notes de bas de page</b> .</para>
+      <para>Utilisez des <b>notes de bas de page</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Footnot</b>e. Le numéro d'index représente la position de la note de bas de page dans la sélection, une plage ou un document.</para>
+      <para>Les notes de bas de page situées à la fin d’un document ou d’une section sont considérées <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> comme des notes de fin et sont incluses dans la collection.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -64,14 +54,12 @@
       </Parameters>
       <Docs>
         <param name="Range">Objet <b>Range</b> obligatoire. Plage du document où doit figurer la note de fin ou la note de bas de page. Il peut s'agir d'une plage réduite (point d'insertion).</param>
-        <param name="Reference">Facultatif <b>Object</b>. Texte d'une marque de référence personnalisée. Si cet argument est omis, Microsoft Word insère une marque de référence numérotée automatiquement.</param>
-        <param name="Text">Facultatif <b>Object</b>. Texte de la note de fin ou de la note de bas de page.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Footnote" /> object qui représente un commentaire ajouté à une plage.</summary>
+        <param name="Reference"><b>Objet</b>facultatif. Texte d'une marque de référence personnalisée. Si vous ne spécifiez pas cet argument, Microsoft Word insère une marque d’appel numérotée automatiquement.</param>
+        <param name="Text"><b>Objet</b>facultatif. Texte de la note de fin ou de la note de bas de page.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Footnote" /> objet qui représente une note de bas de page ajoutée à une plage.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Pour spécifier un symbole pour le <paramref name="Reference" /> argument, utilisez la syntaxe {<paramref name="FontName CharNum" />}. <paramref name="FontName" /> est le nom de la police qui contient le symbole. Noms des polices décoratives s’affichent dans la zone Police de la boîte de dialogue symbole (menu Insertion). <paramref name="CharNum" /> est la somme de 31 et le numéro correspondant à la position du symbole que vous voulez insérer, en partant de gauche à droite dans la table des symboles. Par exemple, pour spécifier le symbole oméga (ω) occupe la position 56 dans la table de symboles de la police Symbol, l’argument serait « {Symbol 87} ».</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour spécifier un symbole pour l' <paramref name="Reference" /> argument, utilisez la syntaxe {<paramref name="FontName CharNum" />}. <paramref name="FontName" />est le nom de la police qui contient le symbole. Le nom des polices décoratives s’affiche dans la zone Police de la boîte de dialogue Caractères spéciaux (menu Insertion). <paramref name="CharNum" />est la somme de 31 et du nombre correspondant à la position du symbole que vous souhaitez insérer, en comptant de gauche à droite dans la table des symboles. Par exemple, pour spécifier un symbole oméga (ω) à la position 56 dans la table des symboles de la police Symbol, l’argument doit être «{Symbol 87}».</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -97,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -125,7 +113,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente la continuation de note de bas de page.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente l’indicateur de continuation de note de bas de page.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,7 +141,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente le séparateur de continuation de note.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente le séparateur de continuation de note de bas de page.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,7 +167,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Convertit les notes de fin en notes de fin.</summary>
+        <summary>Convertit les notes de bas de page en notes de fin.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,11 +224,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -301,7 +287,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -335,10 +321,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la position de toutes les notes de bas de page.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Location</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdFootnoteLocation" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>location</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdFootnoteLocation" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberingRule">
@@ -367,12 +351,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNumberingRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit les notes de fin de la façon dont est numérotées après les sauts de page ou de section.</summary>
+        <summary>Cette propriété renvoie ou définit la façon dont les notes de bas de page sont numérotées après les sauts de page ou les sauts de section.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>NumberingRule</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdNumberingRule" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>NumberingRule</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdNumberingRule" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberStyle">
@@ -401,12 +383,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNoteNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le style de numérotation pour les notes de fin dans une sélection, une plage ou un document. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit le style de numérotation pour les notes de bas de page d’une sélection, d’une plage ou d’un document. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>NumberStyle</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdNoteNumberStyle" /> constantes. Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>NumberStyle</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdNoteNumberStyle" /> constantes. Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -458,7 +438,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Rétablit l’indicateur de continuation de bas de page par défaut. L'indicateur par défaut est vide (sans texte).</summary>
+        <summary>Rétablit l’indicateur de continuation de note de bas de page par défaut. L'indicateur par défaut est vide (sans texte).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,7 +463,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Rétablit le séparateur de continuation de note par défaut. Le séparateur par défaut est représenté par une longue ligne horizontale qui sépare le texte du document de la suite des notes de la page précédente.</summary>
+        <summary>Rétablit le séparateur de continuation de note de bas de page par défaut. Le séparateur par défaut est représenté par une longue ligne horizontale qui sépare le texte du document de la suite des notes de la page précédente.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -535,7 +515,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente le séparateur de note.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente le séparateur de note de bas de page.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -566,7 +546,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le numéro de la première note.</summary>
+        <summary>Cette propriété renvoie ou définit le numéro de la note de départ.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -592,11 +572,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Convertit toutes les notes de bas de page dans un document en notes de fin, et inversement.</summary>
-        <remarks>
-          <para>Pour convertir une plage de notes de fin en notes de fin, utilisez la <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Convert" /> méthode.</para>
-          <para />
-        </remarks>
+        <summary>Convertit toutes les notes de bas de page d’un document en notes de fin et inversement.</summary>
+        <remarks><para>Pour convertir une plage de notes de bas de page en notes de <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Convert" /> fin, utilisez la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

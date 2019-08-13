@@ -1,13 +1,5 @@
 <Type Name="Replacement" FullName="Microsoft.Office.Interop.Word.Replacement">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4985169de481c1ed3cf3fdc2889fc8652b1a9f74" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668638" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Replacement" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c7eadfe1a27659ab4f508fb009a9a7a299dace9" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144126" /></Metadata><TypeSignature Language="C#" Value="public interface Replacement" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Replacement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Replacement" />
   <TypeSignature Language="VB.NET" Value="Public Interface Replacement" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente les critères de remplacement pour une opération Rechercher et remplacer.</summary>
-    <remarks>
-      <para>Les propriétés et méthodes de l’objet <b>Replacement</b> correspondent aux options dans la boîte de dialogue Rechercher et remplacer.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Find.Replacement" /> propriété permet de renvoyer un objet <b>Replacement</b> .</para>
-      <para>Pour rechercher et remplacer la mise en forme, attribuez à la fois le texte à rechercher et remplacer du texte aux chaînes vides (« ») et définir le <paramref name="Format" /> argument de la <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode <b>la valeur True</b>.</para>
-      <para />
-    </remarks>
+    <remarks><para>Les propriétés et méthodes de l'objet <b>Replacement</b> correspondent aux options dans la boîte de dialogue Rechercher et remplacer.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Find.Replacement" /> propriété pour renvoyer un <b></b> objet replacement.</para>
+      <para>Pour rechercher et remplacer la mise en forme, définissez le texte de recherche et le texte de remplacement à des chaînes vides ("" <paramref name="Format" /> ) et définissez <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> l’argument de la méthode sur <b>true</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,11 +74,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Supprime le texte et mise en forme à partir d’une sélection ou de la mise en forme spécifiée dans une opération de recherche ou de remplacement.</summary>
-        <remarks>
-          <para>Pour vous assurer que la mise en forme n’est pas inclus comme critères dans une recherche ou remplacement, utilisez cette méthode avant d’effectuer l’opération.</para>
-          <para />
-        </remarks>
+        <summary>Supprime la mise en forme de texte et de paragraphe d’une sélection ou de la mise en forme spécifiée dans une opération de recherche ou de remplacement.</summary>
+        <remarks><para>Pour vous assurer que la mise en forme n’est pas incluse dans les critères d’une opération de recherche ou de remplacement, utilisez cette méthode avant d’exécuter l’opération.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -116,11 +104,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -149,12 +135,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.Font" /> object qui représente la mise en forme de caractères de l’objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.Font" /> définit un objet qui représente la mise en forme de caractères de l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour définir cette propriété, spécifiez une expression qui renvoie un objet <b>Font</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour définir cette propriété, spécifiez une expression qui renvoie un objet <b>Font</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -180,7 +164,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Frame" /> object qui représente le cadre de la mise en forme pour le style spécifié ou l’opération de recherche et remplacement.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Frame" /> Object qui représente la mise en forme de cadre pour le style spécifié ou l’opération de recherche et de remplacement.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,8 +195,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la mise en forme surlignée est appliquée au texte de remplacement. Peut renvoyer ou avoir la valeur <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
+        <summary><b>True</b> si la mise en forme surlignée est appliquée au texte de remplacement. Peut renvoyer ou avoir la valeur <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,10 +228,8 @@
       <Docs>
         <summary>Renvoie ou définit la langue de l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>LanguageID</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes. Ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>LanguageID</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes. Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -279,11 +260,9 @@
       <Docs>
         <summary>Renvoie ou définit une langue d'Asie orientale pour l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>LanuageIDFarEast</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</para>
-          <para>Il s’agit de la méthode recommandée pour renvoyer ou définir la langue du texte d’Asie orientale dans un document créé dans une version d’Asie orientale de Microsoft Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>LanuageIDFarEast</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</para>
+          <para>Cette méthode est recommandée pour renvoyer ou définir la langue d'un texte à caractères d'Asie orientale utilisée dans un document créé dans une version en langue d'Asie orientale de Microsoft Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -312,8 +291,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si Microsoft Word recherche et remplace le texte qui le vérificateur d'orthographe et de grammaire ignore.</summary>
+        <summary><b>La valeur true</b> si Microsoft Word recherche et remplace le texte qui le vérificateur d'orthographe et de grammaire ignore.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -344,7 +322,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> objet qui représente les paramètres de paragraphe pour l’opération de remplacement spécifiée.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> définit un objet qui représente les paramètres de paragraphe pour l’opération de remplacement spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -405,10 +383,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le style de l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour définir cette propriété, spécifiez le nom local du style, un entier, une <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou un objet qui représente le style.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour définir cette propriété, spécifiez le nom local du style, un entier, une <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou un objet qui représente le style.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -437,12 +413,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le texte à rechercher ou remplacer dans la plage spécifiée ou la sélection.</summary>
+        <summary>Cette propriété renvoie ou définit le texte à rechercher ou à remplacer dans la plage spécifiée ou la sélection.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Text</b> renvoie le texte brut sans mise en forme de la sélection ou la plage. Lorsque vous définissez cette propriété, le texte de la plage ou la sélection est remplacé.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>Text</b> renvoie le texte brut sans mise en forme de la sélection ou la plage. Lorsque vous définissez cette propriété, le texte de la plage ou la sélection est remplacé.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

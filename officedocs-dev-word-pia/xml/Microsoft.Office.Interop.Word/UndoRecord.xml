@@ -1,13 +1,5 @@
 <Type Name="UndoRecord" FullName="Microsoft.Office.Interop.Word.UndoRecord">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cad0a001261dae8c6e1145efa4c99df630fc70b1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668065" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UndoRecord" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dccd67ac1bae806d140ca00b07a8119ac1166895" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143790" /></Metadata><TypeSignature Language="C#" Value="public interface UndoRecord" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UndoRecord" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.UndoRecord" />
   <TypeSignature Language="VB.NET" Value="Public Interface UndoRecord" />
@@ -53,12 +45,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word 2010.</summary>
-        <value>Un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word 2010.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objet qui représente l’application Microsoft Word 2010.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Application" /> Objet qui représente l’application Microsoft Word 2010.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -84,14 +74,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
+        <summary>Obtient un nombre entier de 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>Entier 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</value>
-        <remarks>
-          <para>En lecture seule <b>long</b>. Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette propriété est principalement conçue pour être utilisée sur Apple Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Word a le code créateur MSWD.</para>
+        <remarks><para>Type de données <b>long</b>en lecture seule. Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». Cette propriété est principalement conçue pour être utilisée sur Apple Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Word possède le code de créateur MSWD.</para>
           <para>
-            <b>Mise en garde</b>: cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para />
-        </remarks>
+            <b>Attention</b>: cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomRecordLevel">
@@ -117,12 +105,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient une valeur qui spécifie le nombre d’appels d’action d’annulation qui sont actuellement actives.</summary>
-        <value>Spécifie le nombre d’appels d’action d’annulation qui sont actuellement actives.</value>
-        <remarks>
-          <para>En lecture seule. Si aucune action d’annulation personnalisée n’est active, cette propriété est définie sur zéro.</para>
-          <para />
-        </remarks>
+        <summary>Obtient une valeur qui spécifie le nombre d’appels d’action d’annulation personnalisés actuellement actifs.</summary>
+        <value>Indique le nombre d’appels d’action d’annulation personnalisés actuellement actifs.</value>
+        <remarks><para>En lecture seule. Si aucune action d’annulation personnalisée n’est active, cette propriété est définie sur zéro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomRecordName">
@@ -148,12 +134,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient une chaîne qui spécifie l’entrée qui apparaît sur la pile d’annulation lorsque toutes les actions d’annulation personnalisée est terminé.</summary>
-        <value>Spécifie l’entrée qui apparaît sur la pile d’annulation lorsque toutes les actions d’annulation personnalisée est terminé.</value>
-        <remarks>
-          <para>En lecture seule. Si les enregistrements annulés sont imbriquées dans d’autres enregistrements annulés, cette propriété spécifie la chaîne qui s’affiche sur la pile d’annulation personnalisée après que toutes les actions d’annulation s’est terminé. Si plusieurs appels à la <see cref="M:Microsoft.Office.Interop.Word.UndoRecord.StartCustomRecord" /> méthode sont imbriquées, la chaîne spécifiée par le premier appel est renvoyée par cette propriété. Si aucune action n’est active, la propriété renvoie une chaîne vide.</para>
-          <para />
-        </remarks>
+        <summary>Obtient une valeur de type String qui spécifie l’entrée qui apparaît sur la pile d’annulation lorsque toutes les actions d’annulation personnalisées sont terminées.</summary>
+        <value>Spécifie l’entrée qui apparaît sur la pile d’annulation lorsque toutes les actions d’annulation personnalisée sont terminées.</value>
+        <remarks><para>En lecture seule. Si des enregistrements d'annulation personnalisés sont imbriqués dans d'autres enregistrements d'annulation personnalisés, cette propriété spécifie quelle chaîne apparaît sur la pile d'annulation une fois toutes les actions d'annulation terminées. Si plusieurs appels à la <see cref="M:Microsoft.Office.Interop.Word.UndoRecord.StartCustomRecord" /> méthode sont imbriqués, la chaîne spécifiée par le premier appel est renvoyée par cette propriété. Si aucune action n'est active, la propriété renvoie une chaîne vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCustomRecord">
@@ -204,13 +188,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indique si une action d’annulation personnalisée est en cours d’enregistrement.</summary>
-        <value>
-          <b>la valeur true</b> si une action d’annulation personnalisée est en cours d’enregistrement ; Sinon, <b>false</b>.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <summary>Obtient une valeur qui indique si une action d’annulation personnalisée est en cours d’enregistrement.</summary>
+        <value><b>true</b> si une action d’annulation personnalisée est en cours d’enregistrement; Sinon, <b>false</b>.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -236,8 +217,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un <see cref="T:System.Object" /> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> objet.</summary>
-        <value>Un <see cref="T:System.Object" /> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> objet.</value>
+        <summary>Obtient un <see cref="T:System.Object" /> objet qui représente l’objet parent de l' <see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> objet spécifié.</summary>
+        <value><see cref="T:System.Object" /> Qui représente l’objet parent de l’objet spécifié <see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,11 +246,9 @@
       <Docs>
         <param name="Name">Spécifie le nom de l'enregistrement d'annulation personnalisé. Cette chaîne est limitée à 64 caractères. Si une chaîne plus longue est fournie, la chaîne est tronquée à 64 caractères.</param>
         <summary>Commence la création d'un enregistrement d'annulation personnalisé.</summary>
-        <remarks>
-          <para>Si le <paramref name="Name" /> paramètre est omis ou est une chaîne vide, Word 2010 utilise le nom de la première commande exécutée en tant que le nom de l’enregistrement d’annulation.</para>
-          <para>Cette méthode commence la création d’un enregistrement d’annulation personnalisé qui enregistre toutes les actions réalisées sur l’application lorsqu’elle est active dans un enregistrement défini par un nom.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si le <paramref name="Name" /> paramètre est omis ou s’il s’agit d’une chaîne vide, Word 2010 utilise le nom de la première commande exécutée en tant que nom de l’enregistrement d’annulation.</para>
+          <para>Cette méthode commence la création d’un enregistrement d’annulation personnalisé, qui enregistre toutes les actions effectuées dans l’application pendant qu’elle est active sous un enregistrement défini par son nom.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

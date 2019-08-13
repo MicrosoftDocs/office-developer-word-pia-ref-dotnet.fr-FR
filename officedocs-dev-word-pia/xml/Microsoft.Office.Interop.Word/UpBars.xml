@@ -1,13 +1,5 @@
 <Type Name="UpBars" FullName="Microsoft.Office.Interop.Word.UpBars">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="da7a0dd3ce7608353af8d2e30e9de9182997566b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667542" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UpBars" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="226af72472e06bb3185db435171039a38e6e808e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143763" /></Metadata><TypeSignature Language="C#" Value="public interface UpBars" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UpBars" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.UpBars" />
   <TypeSignature Language="VB.NET" Value="Public Interface UpBars" />
@@ -26,15 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente les barres Hausse d’un groupe de graphiques.</summary>
-    <remarks>
-      <para>Les barres connectent les points de la série 1 à des valeurs supérieures de la dernière série du groupe de graphiques (lignes croissantes à partir de la série 1). Uniquement les groupes de ligne 2D contenant au moins deux séries peuvent posséder des barres. Cet objet n’est pas une collection. Il n’existe aucun objet qui représente un seul haut de la barre ; vous avez des barres activé pour tous les points d’un groupe de graphiques ou que vous les avez désactivés.</para>
-      <para>Si le <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" /> propriété est <b>False</b>, la plupart des propriétés de la <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> objet sont désactivées.</para>
-      <para />
-    </remarks>
-    <example>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.UpBars" /> propriété permet de renvoyer la <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> objet. L’exemple suivant active vers un groupe de graphiques 1 du premier graphique du document actif. L’exemple définit la couleur bleue et comment définir la couleur de la barre de bas de la barre à distance en rouge.</para>
-    </example>
+    <summary>Cet objet représente les barres Hausse d'un groupe de graphiques.</summary>
+    <remarks><para>Les barres Hausse relient les points de la première série avec les valeurs supérieures de la dernière série du groupe de graphiques (lignes croissantes partant de la première série). Seuls les groupes de graphiques en courbes 2D comptant au moins deux séries possèdent des barres Hausse. Cet objet n'est pas une collection. Il n'existe aucun objet représentant une seule barre Hausse. Les barres Hausse sont soit activées, soit désactivées pour tous les points d'un groupe de graphiques.</para>
+      <para>Si la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" /> propriété a la <b>valeur false</b>, la <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> plupart des propriétés de l’objet sont désactivées.</para>
+      <para> </para></remarks>
+    <example><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.UpBars" /> propriété pour renvoyer l' <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> objet. L’exemple suivant montre comment activer les barres haut et bas pour le groupe de graphiques 1 du premier graphique du document actif. L'exemple définit la distance de la barre de couleur bleue et comment définir la couleur de la barre de bas en rouge.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,9 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Application</b> (voir ci-dessus)</value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Application</b> (voir ci-dessus)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,10 +76,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objet qui représente la bordure de l’objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> Object qui représente la bordure de l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,14 +104,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. Valeur <b>Integer</b> en lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, le <see cref="P:Microsoft.Office.Interop.Word.UpBars.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.UpBars.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -151,9 +132,7 @@
       <Parameters />
       <Docs>
         <summary>Supprime l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,10 +159,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objet pour l’élément de graphique parent qui contient les propriétés de l’élément de graphique de la mise en forme du remplissage. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objet pour l’élément de graphique parent qui contient les propriétés de mise en forme du remplissage pour l’élément de graphique. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,9 +190,7 @@
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet.
 
 En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,10 +217,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Interior" /> object qui représente l’intérieur de l’objet.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Interior" /> Object qui représente l’intérieur de l’objet.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,9 +246,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie une valeur de <b>type String</b> qui représente le nom de l'objet.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,9 +274,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule <b>Object</b>.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,9 +300,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Parameters />
       <Docs>
         <summary>Sélectionne l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

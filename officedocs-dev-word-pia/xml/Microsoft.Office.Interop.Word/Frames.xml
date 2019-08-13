@@ -1,13 +1,5 @@
 <Type Name="Frames" FullName="Microsoft.Office.Interop.Word.Frames">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1adc04b5a7dda1cca2d2cfb08c364b56a352a82" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668328" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Frames : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3bb02e91ce21432108f0e38d622554ad3fd66826" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148032" /></Metadata><TypeSignature Language="C#" Value="public interface Frames : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Frames implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Frames" />
   <TypeSignature Language="VB.NET" Value="Public Interface Frames&#xA;Implements IEnumerable" />
@@ -30,11 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Frame" /> objets dans une sélection, une plage ou un document.</summary>
-    <remarks>
-      <para>Utilisez la propriété des <b>cadres</b> d’une <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet pour renvoyer la collection <b>Frames</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Frames.Add(Microsoft.Office.Interop.Word.Range)" /> méthode pour ajouter un cadre autour d’une plage.</para> Utiliser des <b>cadres</b>de 
-      <para>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Frame</b> . Le numéro d’index représente la position du cadre de la sélection, une plage ou un document.</para><para>La <see cref="P:Microsoft.Office.Interop.Word.Frames.Count" /> propriété pour cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d’autres articles utilisez la collection avec l’objet <b>Range</b> .</para><para /></remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Frame" /> objets dans une sélection, une plage ou un document.</summary>
+    <remarks><para>Utilisez la <b></b> propriété frames d' <see cref="T:Microsoft.Office.Interop.Word.Selection" />un <see cref="T:Microsoft.Office.Interop.Word.Range" />objet, <see cref="T:Microsoft.Office.Interop.Word.Document" /> ou pour renvoyer la <b></b> collection frames.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Frames.Add(Microsoft.Office.Interop.Word.Range)" /> méthode pour ajouter un cadre entourant une plage.</para>
+      <para>Utilisez <b></b>des cadres<paramref name="index" />(), <paramref name="index" /> où est le numéro d’index, pour renvoyer un seul objet <b>Frame</b> . Le numéro d'index représente la position du cadre dans la sélection, la plage ou le document.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Frames.Count" /> propriété de cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d'autres articles utilisent la collection avec l'objet <b>Range</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -59,8 +52,8 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Plage que vous voulez encadrer.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Frame" /> object qui représente un nouveau cadre ajouté à une plage, une sélection ou un document.</summary>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Plage que vous voulez encadrer.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Frame" /> objet qui représente un nouveau cadre ajouté à une plage, une sélection ou un document.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,11 +139,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -236,7 +227,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

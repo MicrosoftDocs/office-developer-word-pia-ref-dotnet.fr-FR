@@ -1,13 +1,5 @@
 <Type Name="TextEffectFormat" FullName="Microsoft.Office.Interop.Word.TextEffectFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="535c52f83ff14879047adca8e3275089ad459d85" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667434" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextEffectFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3bccc6953b9e4d0fcd66b37d7cece52b10c81de8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143832" /></Metadata><TypeSignature Language="C#" Value="public interface TextEffectFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextEffectFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextEffectFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextEffectFormat" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Contient les propriétés et méthodes applicables aux objets WordArt.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Shape.TextEffect" /> propriété pour renvoyer un objet <b>TextEffectFormat</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Shape.TextEffect" /> propriété pour renvoyer un objet <b>TextEffectFormat</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -61,32 +51,30 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une constante qui représente l’alignement pour l’effet de texte spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTextEffectAlignment" />peut être l’une de ces constantes <b>MsoTextEffectAlignment</b> :</para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTextEffectAlignment" />peut être une de ces constantes <b>MsoTextEffectAlignment</b> :</para>
-          <para>
-            <b>msoTextEffectAlignmentCentered </b>
+            <b>msoTextEffectAlignmentCentered</b>
           </para>
           <para>
-            <b>msoTextEffectAlignmentLeft </b>
+            <b>msoTextEffectAlignmentLeft</b>
           </para>
           <para>
-            <b>msoTextEffectAlignmentLetterJustify </b>
+            <b>msoTextEffectAlignmentLetterJustify</b>
           </para>
           <para>
             <b>msoTextEffectAlignmentMixed</b>
           </para>
           <para>
-            <b> msoTextEffectAlignmentRight </b>
+            <b>msoTextEffectAlignmentRight</b>
           </para>
           <para>
-            <b>msoTextEffectAlignmentStretchJustify </b>
+            <b>msoTextEffectAlignmentStretchJustify</b>
           </para>
           <para>
             <b>msoTextEffectAlignmentWordJustify</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -112,7 +100,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,11 +130,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontBold">
@@ -175,27 +161,25 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit une constante qui représente comment gras est gérée pour l’effet de texte spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit une constante qui représente la manière dont la police en gras est gérée pour l’effet de texte spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Il peut s’agir de l’une des constantes <b>MsoTriState</b> suivantes: </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />peut être une de ces constantes <b>MsoTriState</b> : </para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> la police de l’objet WordArt spécifié est en gras.</para>
-          <para />
-        </remarks>
+            <b>msoTrue</b> La police dans l’objet WordArt spécifié est en gras.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontItalic">
@@ -226,26 +210,24 @@
       <Docs>
         <summary>Met en italique le texte WordArt.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Il peut s’agir de l’une des constantes <b>MsoTriState</b> suivantes: </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />peut être une de ces constantes <b>MsoTriState</b> : </para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
             <b>msoTrue</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontName">
@@ -274,7 +256,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nom de la police pour la lettrine.</summary>
+        <summary>Renvoie ou définit le nom de la police de la lettrine.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -338,26 +320,24 @@
       <Docs>
         <summary>Indique que les paires de caractères dans un objet WordArt ont subi un crénage.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Il peut s’agir de l’une des constantes <b>MsoTriState</b> suivantes: </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />peut être une de ces constantes <b>MsoTriState</b> : </para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
             <b>msoTrue</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NormalizedHeight">
@@ -386,29 +366,26 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> si tous les caractères (majuscules et minuscules) dans l'objet WordArt spécifié ont la même hauteur.</summary>
+        <summary><b>MsoTrue</b> si tous les caractères (majuscules et minuscules) dans l'objet WordArt spécifié ont la même hauteur.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Il peut s’agir de l’une des constantes <b>MsoTriState</b> suivantes: </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />peut être une de ces constantes <b>MsoTriState</b> : </para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
             <b>msoTrue</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -467,10 +444,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la forme de l'objet WordArt spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Définition de la <see cref="P:Microsoft.Office.Interop.Word.TextEffectFormat.PresetTextEffect" /> propriété définit automatiquement la propriété <b>PresetShape</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>La définition <see cref="P:Microsoft.Office.Interop.Word.TextEffectFormat.PresetTextEffect" /> de la propriété définit automatiquement la propriété <b>PresetShape</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetTextEffect">
@@ -501,11 +476,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le style de l'objet WordArt spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les valeurs pour cette propriété correspondent aux formats contenus dans la boîte de dialogue Galerie WordArt (menu Insertion), numérotées de gauche à droite, de haut en bas.</para>
-          <para>Définir automatiquement de la propriété <b>PresetTextEffect</b> définit de nombreuses autres propriétés de mise en forme de la forme spécifiée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les valeurs de cette propriété correspondent aux formats contenus dans la boîte de dialogue Galerie WordArt (menuInsertion ), numérotées de gauche à droite et de haut en bas.</para>
+          <para>Configuration automatique de la propriété <b>PresetTextEffect</b> définit les nombreuses autres propriétés de mise en forme de la forme spécifiée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RotatedChars">
@@ -534,31 +507,28 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> si les caractères contenus dans l'objet WordArt spécifié sont pivotés de 90 degrés par rapport à la forme de délimitation WordArt. <b>MsoFalse</b> si les caractères contenus dans l'objet WordArt spécifié conservent leur orientation d'origine par rapport à la forme de délimitation.</summary>
+        <summary><b>MsoTrue</b> si les caractères contenus dans l'objet WordArt spécifié sont pivotés de 90 degrés par rapport à la forme de délimitation WordArt. <b>MsoFalse</b> si les caractères contenus dans l'objet WordArt spécifié conservent leur orientation d'origine par rapport à la forme de délimitation.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Il peut s’agir de l’une des constantes <b>MsoTriState</b> suivantes: </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />peut être une de ces constantes <b>MsoTriState</b> : </para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
             <b>msoTrue</b>
           </para>
-          <para>Si l’objet WordArt comporte du texte horizontal, définir la <b>RotatedChars</b> propriété la <b>valeur True</b> fait pivoter les caractères de 90 degrés vers la gauche. Si l’objet WordArt comporte du texte vertical, la définition de <b>cette propriété</b> sur <b>False</b> fait pivoter les caractères de 90 degrés vers la droite. Utiliser le <see cref="M:Microsoft.Office.Interop.Word.TextEffectFormat.ToggleVerticalText" /> méthode pour basculer entre le texte horizontal et vertical.</para>
-          <para>La <see cref="M:Microsoft.Office.Interop.Word.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> méthode et <see cref="P:Microsoft.Office.Interop.Word.Shape.Rotation" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objet et la propriété <b>RotatedChars</b> et la méthode <b>ToggleVerticalText</b> de <b>TextEffectFormat</b> objet affectent l’orientation des caractères et sens du texte dans un objet <b>Shape</b> qui représente l’objet WordArt. Vous devrez peut-être plusieurs essais pour savoir comment combiner les effets de ces propriétés et méthodes pour obtenir le résultat souhaité.</para>
-          <para />
-        </remarks>
+          <para>Si l'objet WordArt comporte du texte horizontal, la définition de la propriété <b>RotatedChars</b> sur <b>True</b> fait pivoter les caractères de 90 degrés vers la gauche. Si l'objet WordArt comporte du texte vertical, la définition de la propriété <b>RotatedChars</b> sur <b>False</b> fait pivoter les caractères de 90 degrés vers la droite. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.TextEffectFormat.ToggleVerticalText" /> méthode pour basculer entre le texte horizontal et vertical.</para>
+          <para>La <see cref="M:Microsoft.Office.Interop.Word.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> méthode et <see cref="P:Microsoft.Office.Interop.Word.Shape.Rotation" /> la propriété de <see cref="T:Microsoft.Office.Interop.Word.Shape" /> l’objet et la propriété <b>RotatedChars</b> et la méthode <b>ToggleVerticalText</b> de l’objet <b>TextEffectFormat</b> affectent toutes l’orientation des caractères et le sens du flux de texte dans une Objet <b>Shape</b> qui représente l’objet WordArt. Vous devrez peut-être plusieurs essais pour savoir comment combiner les effets de ces propriétés et méthodes pour obtenir le résultat souhaité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -587,7 +557,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le texte de l’objet WordArt spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le texte dans l’objet WordArt spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -614,11 +584,9 @@
       <Parameters />
       <Docs>
         <summary>Cette méthode passe, dans l'objet WordArt spécifié, de l'orientation horizontale de l'enchaînement de texte à l'orientation verticale et vice-versa.</summary>
-        <remarks>
-          <para>À l’aide de la méthode <b>ToggleVerticalText</b> intervertit les valeurs de la <see cref="P:Microsoft.Office.Interop.Word.Shape.Width" /> et <see cref="P:Microsoft.Office.Interop.Word.Shape.Height" /> propriétés de la <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object qui représente l’objet WordArt et conserve la <see cref="P:Microsoft.Office.Interop.Word.Shape.Left" /> et <see cref="P:Microsoft.Office.Interop.Word.Shape.Top" /> propriétés.</para>
-          <para>La <see cref="M:Microsoft.Office.Interop.Word.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> méthode et <see cref="P:Microsoft.Office.Interop.Word.Shape.Rotation" /> propriété de l’objet <b>Shape</b> et la <see cref="P:Microsoft.Office.Interop.Word.TextEffectFormat.RotatedChars" /> propriété et la méthode <b>ToggleVerticalText</b> de <b>TextEffectFormat</b> affectent l’orientation des caractères et la direction du texte d’objet flux d’un objet <b>Shape</b> qui représente l’objet WordArt. Vous devrez peut-être plusieurs essais pour savoir comment combiner les effets de ces propriétés et méthodes pour obtenir le résultat souhaité.</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>ToggleVerticalText</b> permet de permuter les valeurs <see cref="P:Microsoft.Office.Interop.Word.Shape.Width" /> des <see cref="P:Microsoft.Office.Interop.Word.Shape.Height" /> propriétés et de <see cref="T:Microsoft.Office.Interop.Word.Shape" /> l’objet qui représente l’objet WordArt et <see cref="P:Microsoft.Office.Interop.Word.Shape.Left" /> de <see cref="P:Microsoft.Office.Interop.Word.Shape.Top" /> ne pas modifier les propriétés et.</para>
+          <para>La <see cref="M:Microsoft.Office.Interop.Word.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> méthode et <see cref="P:Microsoft.Office.Interop.Word.Shape.Rotation" /> la propriété de l’objet <b>Shape</b> , <see cref="P:Microsoft.Office.Interop.Word.TextEffectFormat.RotatedChars" /> ainsi que la méthode Property et <b>ToggleVerticalText</b> de l’objet <b>TextEffectFormat</b> affectent toutes l’orientation des caractères et le sens du flux de texte dans une <b> Objet Shape</b> qui représente l’objet WordArt. Vous devrez peut-être plusieurs essais pour savoir comment combiner les effets de ces propriétés et méthodes pour obtenir le résultat souhaité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Tracking">
@@ -649,16 +617,15 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le rapport entre l'espace horizontal alloué à chaque caractère dans l'objet WordArt spécifié par rapport à la largeur du caractère.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Tracking</b> peut être une valeur comprise entre 0 (zéro) et 5. (Des valeurs élevées pour cette propriété spécifient un espace entre les caractères ; les valeurs inférieures à 1 peuvent entraîner un chevauchement des caractères.)</para>
-          <para>Le tableau suivant reprend les valeurs de la propriété <b>Tracking</b> correspondant aux paramètres disponibles dans l’interface utilisateur.</para>
+        <remarks><para>La <b></b> propriété Tracking peut être une valeur comprise entre 0 (zéro) et 5. (Une valeur élevée pour cette propriété correspond à un espace important entre les caractères ; si la valeur est inférieure à 1, les caractères risquent de se chevaucher.)</para>
+          <para>Le tableau suivant reprend les valeurs de la propriété <b>Tracking</b> correspondant aux paramètres disponibles par le biais de l’interface utilisateur.</para>
           <list type="table">
             <item>
-              <description>Très serré</description>
+              <description>Très rapproché</description>
               <description>0,8</description>
             </item>
             <item>
-              <description>serré</description>
+              <description>Rapproché</description>
               <description>0,9</description>
             </item>
             <item>
@@ -666,16 +633,15 @@
               <description>1.0</description>
             </item>
             <item>
-              <description>libre</description>
+              <description>Espacé</description>
               <description>1.2</description>
             </item>
             <item>
-              <description>très espacé</description>
+              <description>Très espacé</description>
               <description>1,5</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

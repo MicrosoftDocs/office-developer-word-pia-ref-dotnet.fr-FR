@@ -1,13 +1,5 @@
 <Type Name="TablesOfContents" FullName="Microsoft.Office.Interop.Word.TablesOfContents">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="34f7f3f0b04b6f94b3b32e279d16090a2318aa78" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668844" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TablesOfContents : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1dba7adac0f83b8430c22e283a149c42e38aadef" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143923" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfContents : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfContents implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfContents" />
   <TypeSignature Language="VB.NET" Value="Public Interface TablesOfContents&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.TableOfContents" /> objets qui représentent les tables des matières d’un document.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Document.TablesOfContents" /> propriété pour renvoyer la collection <b>TablesOfContents</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> pour ajouter une table des matières à un document.</para>
-      <para>Utiliser <b>TablesOfContents</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>TableOfContents</b> . Le numéro d’index représente la position de la table des matières du document.</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.TableOfContents" /> objets qui représentent les tables des matières d’un document.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.TablesOfContents" /> propriété pour renvoyer la collection <b>TablesOfContents</b> .</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour ajouter une table des matières à un document.</para>
+      <para>Utilisez <b>TablesOfContents</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>TableOfContents</b> . Le numéro d'index représente la position de la table des matières du document.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -71,19 +61,19 @@
         <Parameter Name="UseOutlineLevels" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Plage où vous souhaitez faire figurer la table des matières. La table des matières remplace la plage si la plage n’est pas réduite.</param>
-        <param name="UseHeadingStyles">Facultatif <b>Object</b>. <b>True</b> pour utiliser des styles de titre prédéfinis pour créer la table des matières. La valeur par défaut est <b>True</b>.</param>
-        <param name="UpperHeadingLevel">Facultatif <b>Object</b>. Premier niveau de titre de la table des matières. Correspond à la valeur de départ utilisée avec le commutateur \o pour un champ de table des matières (TOC). La valeur par défaut est 1.</param>
-        <param name="LowerHeadingLevel">Facultatif <b>Object</b>. Dernier niveau de titre de la table des matières. Elle correspond à la valeur de fin utilisée avec le commutateur \o d'un champ TOC (table des matières). La valeur par défaut est 9.</param>
-        <param name="UseFields">Facultatif <b>Object</b>. <b>True</b> si les champs d'entrée de Table des matières (TC) sont utilisés pour créer la table des matières. Utiliser le <see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour marquer les entrées à inclure dans la table des matières. <b>False</b> est la valeur par défaut.</param>
-        <param name="TableID">Facultatif <b>Object</b>. Un identificateur d’une lettre qui permet de créer une table des matières à partir des champs TC. Correspond au commutateur \f d'un champ TOC. Par exemple, « T » crée une table des matières à partir des champs TC à l’aide de l’identificateur de table T. Si cet argument est omis, les champs TC ne sont pas utilisés.</param>
-        <param name="RightAlignPageNumbers">Facultatif <b>Object</b>. <b>True</b> si les numéros de page dans la table des matières sont alignés sur la marge de droite. La valeur par défaut est <b>True</b>.</param>
-        <param name="IncludePageNumbers">Facultatif <b>Object</b>. <b>True</b> pour inclure les numéros de page dans la table des matières. La valeur par défaut est <b>True</b>.</param>
-        <param name="AddedStyles">Facultatif <b>Object</b>. Nom des styles supplémentaires utilisés pour compiler la table des matières (styles autres que les styles Titre 1 à titre 9). Utiliser le <see cref="M:Microsoft.Office.Interop.Word.HeadingStyles.Add(System.Object@,System.Int16)" /> méthode d’un <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> objet pour créer des styles de titre.</param>
-        <param name="UseHyperlinks">Facultatif <b>Object</b>. <b>True</b> si les entrées dans une table des matières doivent être mises en forme comme des liens hypertexte lorsque le document est publié sur le site Web. La valeur par défaut est <b>True</b>.</param>
-        <param name="HidePageNumbersInWeb">Facultatif <b>Object</b>. <b>True :</b> pour utiliser les niveaux hiérarchiques pour créer la table des matières. La valeur par défaut est <b>False</b>.</param>
-        <param name="UseOutlineLevels">Facultatif <b>Object</b>. <b>True :</b> pour utiliser les niveaux hiérarchiques pour créer la table des matières. La valeur par défaut est <b>False</b>.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.TableOfContents" /> objet qui représente une table des matières ajoutée à un document.</summary>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Plage où vous souhaitez faire figurer la table des matières. La table des matières remplace la plage si la plage n’est pas réduite.</param>
+        <param name="UseHeadingStyles"><b>Objet</b>facultatif. <b>True</b> pour utiliser des styles de titre prédéfinis pour créer la table des matières. La valeur par défaut est <b>True</b>.</param>
+        <param name="UpperHeadingLevel"><b>Objet</b>facultatif. Premier niveau de titre de la table des matières. Correspond à la valeur de départ utilisée avec le commutateur \o pour un champ de table des matières (TOC). La valeur par défaut est 1.</param>
+        <param name="LowerHeadingLevel"><b>Objet</b>facultatif. Dernier niveau de titre de la table des matières. Elle correspond à la valeur de fin utilisée avec le commutateur \o d'un champ TOC (table des matières). La valeur par défaut est 9.</param>
+        <param name="UseFields"><b>Objet</b>facultatif. <b>True</b> si les champs d'entrée de Table des matières (TC) sont utilisés pour créer la table des matières. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour marquer les entrées à inclure dans la table des matières. La valeur par défaut est <b>False</b>.</param>
+        <param name="TableID"><b>Objet</b>facultatif. Identificateur d'une lettre qui permet de générer une table des matières à partir des champs TC. Correspond au commutateur \f d'un champ TOC. Par exemple, « T » crée une table des matières à partir des champs TC à l'aide de l'identificateur de table T. Si vous ne spécifiez pas cet argument, les champs TC sont ignorés.</param>
+        <param name="RightAlignPageNumbers"><b>Objet</b>facultatif. <b>True</b> si les numéros de page dans la table des matières sont alignés sur la marge de droite. La valeur par défaut est <b>True</b>.</param>
+        <param name="IncludePageNumbers"><b>Objet</b>facultatif. <b>True</b> pour inclure les numéros de page dans la table des matières. La valeur par défaut est <b>True</b>.</param>
+        <param name="AddedStyles"><b>Objet</b>facultatif. Nom des styles supplémentaires utilisés pour compiler la table des matières (styles autres que les titres de niveaux 1 à 9). Utilisez la <see cref="M:Microsoft.Office.Interop.Word.HeadingStyles.Add(System.Object@,System.Int16)" /> méthode d’un <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> objet pour créer des styles de titre.</param>
+        <param name="UseHyperlinks"><b>Objet</b>facultatif. <b>True</b> si les entrées dans une table des matières doivent être mises en forme comme des liens hypertexte lorsque le document est publié sur le site Web. La valeur par défaut est <b>True</b>.</param>
+        <param name="HidePageNumbersInWeb"><b>Objet</b>facultatif. <b>True :</b> pour utiliser les niveaux hiérarchiques pour créer la table des matières. La valeur par défaut est <b>False</b>.</param>
+        <param name="UseOutlineLevels"><b>Objet</b>facultatif. <b>True :</b> pour utiliser les niveaux hiérarchiques pour créer la table des matières. La valeur par défaut est <b>False</b>.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.TableOfContents" /> Object qui représente une table des matières ajoutée à un document.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,7 +123,7 @@
         <param name="AddedStyles">To be added.</param>
         <param name="UseHyperlinks">To be added.</param>
         <param name="HidePageNumbersInWeb">To be added.</param>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,7 +169,7 @@
         <param name="RightAlignPageNumbers">To be added.</param>
         <param name="IncludePageNumbers">To be added.</param>
         <param name="AddedStyles">To be added.</param>
-        <summary>Réservé à une utilisation interne.</summary>
+        <summary>Réservé à un usage interne.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,7 +197,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -265,11 +255,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -298,34 +286,32 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTocFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la mise en forme des tables des matières du document spécifié.</summary>
+        <summary>Renvoie ou définit la mise en forme des tables des matières du document spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTocFormat" />Il peut s’agir de l’une des constantes <b>WdTocFormat</b> suivantes. </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTocFormat" />peut être une de ces constantes <b>WdTocFormat</b> . </para>
-          <para>
-            <b>wdTOCDistinctive </b>
+            <b>wdTOCDistinctive</b>
           </para>
           <para>
-            <b>wdTOCFormal </b>
+            <b>wdTOCFormal</b>
           </para>
           <para>
-            <b>wdTOCSimple </b>
+            <b>wdTOCSimple</b>
           </para>
           <para>
-            <b>wdTOCClassic </b>
+            <b>wdTOCClassic</b>
           </para>
           <para>
-            <b>wdTOCFancy </b>
+            <b>wdTOCFancy</b>
           </para>
           <para>
-            <b>wdTOCModern </b>
+            <b>wdTOCModern</b>
           </para>
           <para>
             <b>wdTOCTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -386,7 +372,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -417,11 +403,11 @@
         <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement de l'entrée. Le champ TC est inséré après <paramref name="Range" />.</param>
-        <param name="Entry">Facultatif <b>Object</b>. Texte qui apparaît dans la table des matières ou la table des illustrations. Pour indiquer une sous-entrée, séparez le texte de l'entrée principale de celui de la sous-entrée par un signe deux-points (:) (par exemple, « Introduction:Le produit »).</param>
-        <param name="EntryAutoText">Facultatif <b>Object</b>. Le nom de l’entrée d’insertion automatique qui contient le texte de l’index, table des illustrations ou table des matières (<paramref name="Entry" /> est ignorée).</param>
-        <param name="TableID">Facultatif <b>Object</b>. Lettre qui identifie l'élément de la table des illustrations ou de la table des matières (par exemple, « i » pour une illustration).</param>
-        <param name="Level">Facultatif <b>Object</b>. Niveau de l'entrée dans la table des matières ou la table des illustrations.</param>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement de l'entrée. Le champ TC est inséré après <paramref name="Range" />.</param>
+        <param name="Entry"><b>Objet</b>facultatif. Texte qui apparaît dans la table des matières ou la table des illustrations. Pour indiquer une sous-entrée, séparez le texte de l'entrée principale de celui de la sous-entrée par un signe deux-points (:) (par exemple, « Introduction:Le produit »).</param>
+        <param name="EntryAutoText"><b>Objet</b>facultatif. Nom de l’insertion automatique qui contient le texte de l’index, de la table des illustrations ou de la<paramref name="Entry" /> table des matières (est ignoré).</param>
+        <param name="TableID"><b>Objet</b>facultatif. Lettre qui identifie l'élément de la table des illustrations ou de la table des matières (par exemple, « i » pour une illustration).</param>
+        <param name="Level"><b>Objet</b>facultatif. Niveau de l'entrée dans la table des matières ou la table des illustrations.</param>
         <summary>Insère un champ TC (entrée de Table des matières) après la plage spécifiée. La méthode renvoie un <see cref="T:Microsoft.Office.Interop.Word.Field" /> objet représentant le champ TC.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

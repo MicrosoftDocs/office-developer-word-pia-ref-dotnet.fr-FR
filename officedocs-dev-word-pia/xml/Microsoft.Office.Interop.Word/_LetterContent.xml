@@ -1,13 +1,5 @@
 <Type Name="_LetterContent" FullName="Microsoft.Office.Interop.Word._LetterContent">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="935d8ead36e24d408c303d383bb7e1226d4740d6" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667322" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _LetterContent" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="935d8ead36e24d408c303d383bb7e1226d4740d6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145246" /></Metadata><TypeSignature Language="C#" Value="public interface _LetterContent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _LetterContent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word._LetterContent" />
   <TypeSignature Language="VB.NET" Value="Public Interface _LetterContent" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Word.LetterContent" />.</summary>
+    <summary>Il s'agit d'une interface principale dans une coclasse COM qui est requise par du code managé en vue de son interopérabilité avec l'objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous voulez utiliser partage le même nom qu'un événement de l'objet COM ; en l'occurrence, effectuez un transtypage vers cette interface pour appeler la méthode et effectuez un transtypage vers la dernière interface d'événements pour vous connecter à l'événement. Sinon, utilisez l'interface .NET qui est dérivée de la coclasse COM pour accéder aux méthodes, propriétés et événements de l'objet COM. Pour plus d’informations sur la obect COM, <see cref="T:Microsoft.Office.Interop.Word.LetterContent" />voir.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,11 +168,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Par exemple, si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Par exemple, si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateFormat">
@@ -237,12 +227,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LetterContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie en lecture seule <see cref="T:Microsoft.Office.Interop.Word.LetterContent" /> object qui représente le contenu de la lettre spécifiée créée par l’Assistant courrier.</summary>
+        <summary>Renvoie un objet en lecture <see cref="T:Microsoft.Office.Interop.Word.LetterContent" /> seule qui représente le contenu de la lettre spécifiée créée par l’Assistant Courrier.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez utiliser la propriété <b>Duplicate</b> pour collecter les paramètres de toutes les propriétés d’un objet <b>LetterContent</b> dupliqué. Vous pouvez assigner l’objet renvoyé par la propriété <b>Duplicate</b> à un autre objet du même type pour appliquer ces paramètres en une seule fois. Avant d’assigner l’objet dupliqué à un autre objet, vous pouvez modifier les propriétés de l’objet dupliqué sans affecter l’original.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez utiliser la propriété <b>Duplicate</b> pour collecter les paramètres de toutes les propriétés d'un objet <b>LetterContent</b> dupliqué. Vous pouvez assigner l'objet renvoyé par la propriété <b>Duplicate</b> à un autre objet du même type pour appliquer ces paramètres en une seule fois. Avant d'assigner l'objet dupliqué à un autre objet, vous pouvez modifier les propriétés de l'objet dupliqué sans affecter l'original.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnclosureNumber">
@@ -271,7 +259,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nombre de pièces jointes d’une lettre créée par l’Assistant courrier.</summary>
+        <summary>Renvoie ou définit le nombre de pièces jointes à une lettre créée à l'aide de l'Assistant Courrier.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,13 +290,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l'en-tête et le pied de page à partir du modèle de conception de page sont inclus dans une lettre créée par l'Assistant courrier.</summary>
+        <summary><b>True</b> si l'en-tête et le pied de page à partir du modèle de conception de page sont inclus dans une lettre créée par l'Assistant courrier.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._LetterContent.PageDesign" /> propriété à définir le nom du modèle attaché à un document créé par l’Assistant courrier.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._LetterContent.PageDesign" /> propriété pour définir le nom du modèle attaché à un document créé par l’Assistant Courrier.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InfoBlock">
@@ -339,10 +324,8 @@
       <Docs>
         <summary>Cette propriété est associée à l'Assistant Courrier de Microsoft Word. Elle n'est pas utilisée dans la version nord-américaine de Word.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété ne peut pas être disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété peut s'avérer indisponible selon la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Letterhead">
@@ -371,13 +354,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si un espace est réservé pour un en-tête de lettre pré-imprimé dans une lettre créée par l'Assistant courrier.</summary>
+        <summary><b>True</b> si un espace est réservé pour un en-tête de lettre pré-imprimé dans une lettre créée par l'Assistant courrier.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <see cref="P:Microsoft.Office.Interop.Word._LetterContent.LetterheadSize" /> propriété contrôle la taille de l’espace réservé à un en-tête.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Word._LetterContent.LetterheadSize" /> propriété contrôle la taille de l’espace réservé aux en-têtes de la zone.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LetterheadLocation">
@@ -408,10 +388,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l'emplacement de l'en-tête de lettre pré-imprimé dans une lettre créée par l'Assistant courrier.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>LetterheadLocation</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdLetterheadLocation" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>LetterheadLocation,</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdLetterheadLocation" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LetterheadSize">
@@ -471,12 +449,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLetterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la disposition d’une lettre créée par l’Assistant courrier.</summary>
+        <summary>Renvoie ou définit la mise en page d'une lettre créée à l'aide de l'Assistant Courrier.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>LetterStyle</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdLetterStyle" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>LetterStyle,</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdLetterStyle" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailingInstructions">
@@ -626,12 +602,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le code du destinataire. Non utilisé dans la version anglaise de Microsoft Word.</summary>
+        <summary>Cette propriété renvoie ou définit le code du destinataire. Non utilisée dans la version anglaise de Microsoft Word destinée aux États-Unis.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété ne peut pas être disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété peut s'avérer indisponible selon la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecipientGender">
@@ -660,12 +634,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSalutationGender</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le genre du destinataire, s'il est connu. Non utilisé dans la version anglaise de Microsoft Word.</summary>
+        <summary>Cette propriété renvoie ou définit le genre du destinataire, s'il est connu. Non utilisé dans la version américaine de Microsoft Word.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>RecipientGender</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdSalutationGender" /> constantes. Cette propriété ne peut pas être disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>RecipientGender,</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdSalutationGender" /> constantes. Cette propriété peut s'avérer indisponible selon la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecipientName">
@@ -694,7 +666,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nom de la personne que vous recevez la lettre créée par l’Assistant courrier.</summary>
+        <summary>Renvoie ou définit le nom du destinataire de la lettre créée par l'Assistant Courrier.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -725,7 +697,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la ligne de référence (par exemple, « en réponse à : ») d’une lettre créée par l’Assistant courrier.</summary>
+        <summary>Renvoie ou définit la ligne de référence (par exemple, « En réponse à : ») d'une lettre créée à l'aide de l'Assistant Courrier.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -787,12 +759,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l'adresse de la forme abrégée. Non utilisé dans la version anglaise de Microsoft Word.</summary>
+        <summary>Cette propriété renvoie ou définit l'adresse de la forme abrégée. Non utilisée dans la version anglaise de Microsoft Word destinée aux États-Unis.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété ne peut pas être disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété peut s'avérer indisponible selon la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Salutation">
@@ -852,12 +822,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSalutationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de formule de politesse d’une lettre créée par l’Assistant courrier.</summary>
+        <summary>Renvoie ou définit le type de formule de politesse d’une lettre créée à l’aide de l’Assistant Courrier.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>SalutationType</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdSalutationType" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>SalutationType,</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdSalutationType" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderCity">
@@ -886,12 +854,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la ville de l'expéditeur. Non utilisé dans la version anglaise de Microsoft Word.</summary>
+        <summary>Cette propriété renvoie ou définit la ville de l'expéditeur. Non utilisée dans la version anglaise de Microsoft Word destinée aux États-Unis.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété ne peut pas être disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété peut s'avérer indisponible selon la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderCode">
@@ -920,12 +886,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le code de l’expéditeur. Non utilisé dans la version anglaise de Microsoft Word.</summary>
+        <summary>Renvoie ou définit le code de l'expéditeur. Non utilisée dans la version anglaise de Microsoft Word destinée aux États-Unis.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété ne peut pas être disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété peut s'avérer indisponible selon la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderCompany">
@@ -987,10 +951,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le sexe utilisé dans la formule de politesse. Non utilisé dans la version anglaise de Microsoft Word.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>SenderGender</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdSalutationGender" /> constantes. Cette propriété ne peut pas être disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>SenderGender,</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdSalutationGender" /> constantes. Cette propriété peut s'avérer indisponible selon la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderInitials">
@@ -1112,12 +1074,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Non utilisé dans la version anglaise de Microsoft Word.</summary>
+        <summary>Non utilisée dans la version anglaise de Microsoft Word destinée aux États-Unis.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété ne peut pas être disponible, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété peut s'avérer indisponible selon la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Subject">

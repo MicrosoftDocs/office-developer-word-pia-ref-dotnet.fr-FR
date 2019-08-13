@@ -1,13 +1,5 @@
 <Type Name="Bookmark" FullName="Microsoft.Office.Interop.Word.Bookmark">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2164b8c51939ffb7e00b90163ced95a4db5c49d8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668716" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Bookmark" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4d16f348543910c5ebcb48db2c87d1c11e3f73c5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146345" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmark" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bookmark" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bookmark" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bookmark" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Représente un signet unique.</summary>
-    <remarks>
-      <para>L’objet <b>Bookmark</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> collection. La collection Bookmarks contient l’ensemble des signets répertoriés dans la boîte de dialogue Signet (menu Insertion).</para>
-      <para>Use <b>Bookmarks</b>(<paramref name="index" />), où <paramref name="index" /> est le nom du signet ou le numéro d’index, pour renvoyer un seul objet <b>Bookmark</b> . Vous devez respecter l’orthographe (mais pas nécessairement la casse) du nom du signet.</para>
-      <para>Le numéro d’index représente la position du signet dans le <see cref="T:Microsoft.Office.Interop.Word.Selection" /> ou <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Pour le <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet, le numéro d’index représente la position du signet dans la liste alphabétique de signets dans la boîte de dialogue Signet (cliquez sur nom pour trier la liste des signets par ordre alphabétique).</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> pour ajouter un signet à une plage de documents.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Range.BookmarkID" /> propriété avec un objet range ou selection pour renvoyer le numéro d’index de l’objet <b>Bookmark</b> dans la collection <b>Bookmarks</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> méthode afin de déterminer si un signet existe déjà dans la sélection, une plage ou un document.</para>
-      <para />
-    </remarks>
+    <remarks><para>L’objet <b>Bookmark</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> collection. La collection Bookmarks contient l’ensemble des signets répertoriés dans la boîte de dialogue Signet (menu Insertion).</para>
+      <para>Utilisez <b></b>les signets<paramref name="index" />(), <paramref name="index" /> où est le nom du signet ou le numéro d’index, pour renvoyer un seul objet <b>Bookmark</b> . You must exactly match the spelling (but not necessarily the capitalization) of the bookmark name.</para>
+      <para>Le numéro d’index représente la position du signet dans l' <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> ou. Pour l' <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet, le numéro d’index représente la position du signet dans la liste alphabétique de signets de la boîte de dialogue signets (cliquez sur nom pour trier la liste des signets par ordre alphabétique).</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> méthode pour ajouter un signet à une plage de documents.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Range.BookmarkID" /> propriété avec un objet Range ou Selection pour renvoyer le numéro d’index de l’objet <b>Bookmark</b> dans <b></b> la collection Bookmarks.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> méthode pour déterminer si un signet existe déjà dans la sélection, la plage ou le document.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente le créateur de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente le créateur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +79,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur qui indique si le signet spécifié est une colonne de table.</summary>
+        <summary>Renvoie une valeur qui indique si le signet spécifié est une colonne de tableau.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,7 +108,7 @@
       </Parameters>
       <Docs>
         <param name="Name">Nom du nouveau signet.</param>
-        <summary>Définit un signet identifié par le <paramref name="Name" /> argument à l’emplacement marqué par le <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objet.</summary>
+        <summary>Définit un nouveau signet identifié par l' <paramref name="Name" /> argument à l’emplacement marqué par l’objet <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> spécifié.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,11 +138,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -176,7 +164,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Supprime le texte spécifié <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objet.</summary>
+        <summary>Supprime l’objet spécifié <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> .</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,11 +193,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique si le signet spécifié est vide.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Un signet vide marque un emplacement (une sélection réduite) ; il ne marque aucun texte.</para>
-          <para>Une erreur se produit si le signet spécifié n’existe pas. Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> méthode afin de déterminer si le signet existe.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un signet vide marque un emplacement (une sélection réduite) ; il ne marque aucun texte.</para>
+          <para>Si le signet spécifié n'existe pas, une erreur se produit. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> méthode pour déterminer si le signet existe ou non.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -240,12 +226,10 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la position du caractère de fin d’un signet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objet possède une position de début et de fin. La position de fin est le point éloigné du début de l’histoire.</para>
-          <para>Cette propriété renvoie la position du caractère de fin par rapport au début de l’article. Le niveau principal (<b>wdMainTextStory</b>) commence par le caractère 0 (zéro). Vous pouvez modifier la taille d’un signet en définissant cette propriété.</para>
-          <para>Si cette propriété est définie sur une valeur inférieure à la <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> propriété, la propriété <b>Start</b> est définie sur la même valeur (autrement dit, le <b>démarrage</b> et <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> propriétés sont identiques).</para>
-          <para />
-        </remarks>
+        <remarks><para>L' <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objet a une position de départ et une position de fin. La position de fin est le point éloigné du début de l'histoire.</para>
+          <para>Cette propriété renvoie la position du caractère de fin par rapport au début de l'histoire. L’article principal du document (<b>wdMainTextStory</b>) commence par le caractère de la position 0 (zéro). Vous pouvez modifier la taille d'un signet en définissant cette propriété.</para>
+          <para>Si cette propriété a une valeur inférieure à celle de la <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> propriété, la propriété <b>Start</b> est définie sur la même valeur (c’est-à-dire, le <b>début</b> et <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> la propriété sont égaux).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -271,7 +255,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nom de l’objet <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objet.</summary>
+        <summary>Renvoie le nom de l’objet <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -299,7 +283,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objet.</summary>
+        <summary>Cette propriété renvoie l’objet parent de <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -327,12 +311,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenant le texte spécifié <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objet.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> .</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document, voir la <see cref="M:Microsoft.Office.Interop.Word.DocumentClass.Range(System.Object@,System.Object@)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir <see cref="M:Microsoft.Office.Interop.Word.DocumentClass.Range(System.Object@,System.Object@)" /> d’un document, voir la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -356,11 +338,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sélectionne le texte spécifié <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objet.</summary>
-        <remarks>
-          <para>Après avoir exécuté cette méthode, utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriété pour travailler avec les éléments sélectionnés.</para>
-          <para />
-        </remarks>
+        <summary>Sélectionne l’objet <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> spécifié.</summary>
+        <remarks><para>Après avoir utilisé cette méthode, utilisez <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propriété pour travailler avec les éléments sélectionnés. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -391,12 +371,10 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la position du caractère de départ d'un signet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objet possède une position de début et de fin. La position de fin est le point éloigné du début de l’histoire.</para>
-          <para>Cette propriété renvoie la position du caractère de fin par rapport au début de l’article. Le niveau principal (<b>wdMainTextStory</b>) commence par le caractère 0 (zéro). Vous pouvez modifier la taille d’un signet en définissant cette propriété.</para>
-          <para>Si cette propriété est définie sur une valeur supérieure à celle de la <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> propriété, la propriété <b>End</b> est définie sur la même valeur que celle du <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>L' <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objet a une position de départ et une position de fin. La position de fin est le point éloigné du début de l'histoire.</para>
+          <para>Cette propriété renvoie la position du caractère de fin par rapport au début de l'histoire. L’article principal du document (<b>wdMainTextStory</b>) commence par le caractère de la position 0 (zéro). Vous pouvez modifier la taille d'un signet en définissant cette propriété.</para>
+          <para>Si cette propriété est définie sur une valeur supérieure à celle de la <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> propriété, la propriété <b>end</b> est définie sur la même valeur que celle de <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> la propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StoryType">

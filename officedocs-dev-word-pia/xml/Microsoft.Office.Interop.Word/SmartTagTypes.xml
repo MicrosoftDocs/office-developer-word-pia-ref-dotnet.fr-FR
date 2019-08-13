@@ -1,13 +1,5 @@
 <Type Name="SmartTagTypes" FullName="Microsoft.Office.Interop.Word.SmartTagTypes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a49ca323f0f41c5bfa25fc50c47ab2888e4a8f1e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668834" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagTypes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="47336effcfda82fa039ee08e69fc47508e23a420" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146101" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagTypes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagTypes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagTypes" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagTypes&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente une collection de <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objets.</summary>
-    <remarks>
-      <para>Un type de balise active est un élément unique dans un composant de balise active. Composants de balise active peuvent contenir plusieurs types de balise active. Par exemple, le composant de balise active adresse (en anglais) installé sur les systèmes anglais par défaut contient un type de balise active « nom », un type de balise active « rue » et un type de balise active « city », pour renommer un petit nombre. La collection <b>SmartTagTypes</b> contient tous les types de balise active pour tous les composants installés sur l’ordinateur d’un utilisateur.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Application.SmartTagTypes" /> propriété permet de renvoyer une collection de tous les types de balise active pour toutes les listes installées sur l’ordinateur d’un utilisateur. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> propriété permet de renvoyer un type de balise active spécifique dans une collection de types de balises actives.</para>
-      <para />
-    </remarks>
+    <summary>Représente une collection d' <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objets.</summary>
+    <remarks><para>Un type de balise active est un élément unique dans un composant de balise active. Les composants de balise active peuvent contenir plusieurs types de balises actives. Par exemple, le composant de balise active Adresse (anglais) installé sur les systèmes anglais contient par défaut un type de balise active « nom », « rue » et « ville » pour n'en citer que quelques-uns. La collection <b>SmartTagTypes</b> contient tous les types de balises actives de tous les composants installés sur l'ordinateur d'un utilisateur.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.SmartTagTypes" /> propriété pour renvoyer une collection de tous les types de balises actives pour toutes les listes installées sur l’ordinateur d’un utilisateur. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> propriété pour renvoyer un type de balise active spécifique dans une collection de types de balises actives.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,11 +118,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -196,8 +184,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</param>
+        <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
