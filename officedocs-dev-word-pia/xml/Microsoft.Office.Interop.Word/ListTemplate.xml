@@ -1,13 +1,5 @@
 <Type Name="ListTemplate" FullName="Microsoft.Office.Interop.Word.ListTemplate">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6ee663e8d8d86e765adeb286114c48281180a479" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667887" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListTemplate" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1139c365cea882b428ac0f0075b3c20e4756cad2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144504" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListTemplate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListTemplate" />
@@ -26,38 +18,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="25c15-101">Représente un modèle de liste qui inclut la mise en forme qui définit une liste.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="25c15-101">Represents a single list template that includes all the formatting that defines a list.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="25c15-102">
-        <para>L’objet <b>ListTemplate</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> collection. Chacun des sept formats (excepté Aucun) qui se trouvent dans chacun des trois onglets de puces et numérotation boîte de dialogue correspond à un modèle de liste. Ces modèles de liste prédéfinis est accessible à partir de trois <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> des objets dans le <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection. Modèles et documents peuvent également contenir des collections de modèles de liste.</para>
-        <para>Utiliser <b>ListTemplates</b>(<paramref name="index" />), où <paramref name="index" /> est un nombre de 1 à 7, pour renvoyer un modèle de liste à partir d’une bibliothèque de listes.</para>
-        <para>
-          <b>Remarque</b>: certaines propriétés et méthodes — <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> et <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, par exemple, ne fonctionneront pas avec les modèles de liste qui sont accessibles à partir d’une bibliothèque de listes. Vous pouvez modifier ces modèles de liste, mais vous ne pouvez pas modifier le type de la bibliothèque (<b>wdBulletGallery</b>, <b>wdNumberGallery</b>ou <b>wdOutlineNumberGallery</b>).</para>
-        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> pour ajouter un modèle de liste à la collection de modèles de liste dans un document ou modèle.</para>
-        <para>Pour voir si le modèle de liste spécifié contient la mise en forme intégrés dans Microsoft Word, utilisez la <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> propriété avec un objet <b>ListGallery</b> . Pour réinitialiser la mise en forme au format de liste d’origine, utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> méthode pour l’objet <b>ListGallery</b> .</para>
-        <para>Fois un objet <b>ListTemplate</b> renvoyé, spécifiez <b>ListLevels</b>(<paramref name="index" />), où <paramref name="index" /> est un nombre compris entre 1 et 9, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objet. L’objet <b>ListLevel</b> , vous avez accès à toutes les propriétés de mise en forme pour le niveau de liste spécifié, tel que <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, et <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</para>
-        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> méthode pour convertir un modèle de liste à un seul niveau.</para>
-        <para />
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="25c15-102">
-          <para>The <b>ListTemplate</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> collection. Each of the seven formats (excluding None) found on each of the three tabs in the Bullets and Numbering dialog box corresponds to a list template object. These predefined list templates can be accessed from the three <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objects in the <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection. Documents and templates can also contain collections of list templates.</para>
-          <para>Use <b>ListTemplates</b>(<paramref name="index" />), where <paramref name="index" /> is a number from 1 through 7, to return a single list template from a list gallery.</para>
-          <para>
-            <b>Note</b>: Some properties and methods— <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> and <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, for example— won't work with list templates that are accessed from a list gallery. You can modify these list templates, but you cannot change their list gallery type (<b>wdBulletGallery</b>, <b>wdNumberGallery</b>, or <b>wdOutlineNumberGallery</b>).</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> method to add a list template to the collection of list templates in a document or template.</para>
-          <para>To see whether the specified list template contains the formatting built into Microsoft Word, use the <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> property with the <b>ListGallery</b> object. To reset formatting to the original list format, use the <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> method for the <b>ListGallery</b> object.</para>
-          <para>After you have returned a <b>ListTemplate</b> object, use <b>ListLevels</b>(<paramref name="index" />), where <paramref name="index" /> is a number from 1 through 9, to return a single <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> object. With a <b>ListLevel</b> object, you have access to all the formatting properties for the specified list level, such as <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, and <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> method to convert a multiple-level list template to a single-level template.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="2ec87-101">Représente un modèle de liste donné qui contient tous les attributs de mise en forme définissant une liste.</span><span class="sxs-lookup"><span data-stu-id="2ec87-101">Represents a single list template that includes all the formatting that defines a list.</span></span></summary>
+    <remarks><para><span data-ttu-id="2ec87-102">L’objet <b>ListTemplate</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> collection.</span><span class="sxs-lookup"><span data-stu-id="2ec87-102">The <b>ListTemplate</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> collection.</span></span> <span data-ttu-id="2ec87-103">Chacun des sept formats (excepté Aucun) proposés sous les trois onglets de la boîte de dialogue Puces et numéros correspond à un modèle de liste.</span><span class="sxs-lookup"><span data-stu-id="2ec87-103">Each of the seven formats (excluding None) found on each of the three tabs in the Bullets and Numbering dialog box corresponds to a list template object.</span></span> <span data-ttu-id="2ec87-104">Ces modèles de liste prédéfinis sont accessibles à partir des <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> trois objets de <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> la collection.</span><span class="sxs-lookup"><span data-stu-id="2ec87-104">These predefined list templates can be accessed from the three <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objects in the <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection.</span></span> <span data-ttu-id="2ec87-105">Les documents et les modèles peuvent également contenir des collections de modèles de liste.</span><span class="sxs-lookup"><span data-stu-id="2ec87-105">Documents and templates can also contain collections of list templates.</span></span></para>
+      <para><span data-ttu-id="2ec87-106">Utilisez <b>ListTemplates</b>(<paramref name="index" />), où <paramref name="index" /> est un nombre compris entre 1 et 7, pour renvoyer un seul modèle de liste à partir d’une bibliothèque de listes.</span><span class="sxs-lookup"><span data-stu-id="2ec87-106">Use <b>ListTemplates</b>(<paramref name="index" />), where <paramref name="index" /> is a number from 1 through 7, to return a single list template from a list gallery.</span></span></para>
+      <para><span data-ttu-id="2ec87-107">
+        <b>Remarque</b>: certaines propriétés et méthodes ( <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> et <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, par exemple) ne fonctionnent pas avec les modèles de liste accessibles à partir d’une bibliothèque de listes.</span><span class="sxs-lookup"><span data-stu-id="2ec87-107">
+        <b>Note</b>: Some properties and methods— <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> and <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, for example— won't work with list templates that are accessed from a list gallery.</span></span> <span data-ttu-id="2ec87-108">Vous pouvez modifier ces modèles de liste, mais vous ne pouvez pas changer le type de la bibliothèque auquel ils appartiennent (<b>wdBulletGallery</b>, <b>wdNumberGallery</b> ou <b>wdOutlineNumberGallery</b>).</span><span class="sxs-lookup"><span data-stu-id="2ec87-108">You can modify these list templates, but you cannot change their list gallery type (<b>wdBulletGallery</b>, <b>wdNumberGallery</b>, or <b>wdOutlineNumberGallery</b>).</span></span></para>
+      <para><span data-ttu-id="2ec87-109">Utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> méthode pour ajouter un modèle de liste à la collection de modèles de liste dans un document ou un modèle.</span><span class="sxs-lookup"><span data-stu-id="2ec87-109">Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> method to add a list template to the collection of list templates in a document or template.</span></span></para>
+      <para><span data-ttu-id="2ec87-110">Pour savoir si le modèle de liste spécifié contient la mise en forme prédéfinie dans Microsoft <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> Word, utilisez la propriété avec l’objet <b>ListGallery</b> .</span><span class="sxs-lookup"><span data-stu-id="2ec87-110">To see whether the specified list template contains the formatting built into Microsoft Word, use the <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> property with the <b>ListGallery</b> object.</span></span> <span data-ttu-id="2ec87-111">Pour rétablir la mise en forme du format de liste d’origine <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> , utilisez la méthode pour l’objet <b>ListGallery</b> .</span><span class="sxs-lookup"><span data-stu-id="2ec87-111">To reset formatting to the original list format, use the <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> method for the <b>ListGallery</b> object.</span></span></para>
+      <para><span data-ttu-id="2ec87-112">Une fois que vous avez renvoyé un objet <b>ListTemplate</b> , utilisez<paramref name="index" /> <b>ListLevels</b>() <paramref name="index" /> , où est un nombre compris entre 1 et 9, pour <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> renvoyer un seul objet.</span><span class="sxs-lookup"><span data-stu-id="2ec87-112">After you have returned a <b>ListTemplate</b> object, use <b>ListLevels</b>(<paramref name="index" />), where <paramref name="index" /> is a number from 1 through 9, to return a single <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> object.</span></span> <span data-ttu-id="2ec87-113">Avec un <b>objet ListLevel</b> , vous avez accès à toutes les propriétés de mise en forme pour le niveau de liste spécifié <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />par <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />exemple <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />,, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />, et.</span><span class="sxs-lookup"><span data-stu-id="2ec87-113">With a <b>ListLevel</b> object, you have access to all the formatting properties for the specified list level, such as <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, and <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</span></span></para>
+      <para><span data-ttu-id="2ec87-114">Utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> méthode pour convertir un modèle de liste à plusieurs niveaux en un modèle de liste unique.</span><span class="sxs-lookup"><span data-stu-id="2ec87-114">Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> method to convert a multiple-level list template to a single-level template.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -83,12 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="25c15-103">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-103">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2ec87-115">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="2ec87-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,47 +81,11 @@
         <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Level">
-          <span data-ttu-id="25c15-104">Facultatif <b>Object</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-104">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="25c15-105">Niveau à utiliser pour la mise en forme de la nouvelle liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-105">The level to use for formatting the new list.</span>
-          </span>
-          <span data-ttu-id="25c15-106">Lors de la conversion d'une liste hiérarchisée en une liste simple, cet argument peut prendre une valeur comprise entre 1 et 9.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-106">When converting a multiple-level list to a single-level list, this argument can be a number from 1 through 9.</span>
-          </span>
-          <span data-ttu-id="25c15-107">Lors de la conversion inverse, seule la valeur 1 est valide.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-107">When converting a single-level list to a multiple-level list, 1 is the only valid value.</span>
-          </span>
-          <span data-ttu-id="25c15-108">Si vous ne spécifiez pas cet argument, la valeur par défaut est 1.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-108">If this argument is omitted, 1 is the default value.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="25c15-109">Convertit une liste hiérarchisée en une liste simple, et inversement.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-109">Converts a multiple-level list to a single-level list, or vice versa.</span>
-          </span>
-        </summary>
+        <param name="Level"><span data-ttu-id="2ec87-116"><b>Objet</b>facultatif.</span><span class="sxs-lookup"><span data-stu-id="2ec87-116">Optional <b>Object</b>.</span></span> <span data-ttu-id="2ec87-117">Niveau à utiliser pour la mise en forme de la nouvelle liste.</span><span class="sxs-lookup"><span data-stu-id="2ec87-117">The level to use for formatting the new list.</span></span> <span data-ttu-id="2ec87-118">Lors de la conversion d'une liste hiérarchisée en une liste simple, cet argument peut prendre une valeur comprise entre 1 et 9.</span><span class="sxs-lookup"><span data-stu-id="2ec87-118">When converting a multiple-level list to a single-level list, this argument can be a number from 1 through 9.</span></span> <span data-ttu-id="2ec87-119">Lors de la conversion inverse, seule la valeur 1 est valide.</span><span class="sxs-lookup"><span data-stu-id="2ec87-119">When converting a single-level list to a multiple-level list, 1 is the only valid value.</span></span> <span data-ttu-id="2ec87-120">Si vous ne spécifiez pas cet argument, la valeur par défaut est 1.</span><span class="sxs-lookup"><span data-stu-id="2ec87-120">If this argument is omitted, 1 is the default value.</span></span></param>
+        <summary><span data-ttu-id="2ec87-121">Convertit une liste hiérarchisée en une liste simple, et inversement.</span><span class="sxs-lookup"><span data-stu-id="2ec87-121">Converts a multiple-level list to a single-level list, or vice versa.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <span data-ttu-id="25c15-110">
-            <para>Vous ne pouvez pas utiliser la méthode <b>Convert</b> sur un modèle de liste qui est dérivé de le <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-110">
-              <para>You cannot use the <b>Convert</b> method on a list template that is derived from the <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="2ec87-122">Vous ne pouvez pas utiliser la méthode <b>Convert</b> sur un modèle de liste qui est <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> dérivé de la collection.</span><span class="sxs-lookup"><span data-stu-id="2ec87-122">You cannot use the <b>Convert</b> method on a list template that is derived from the <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -181,27 +111,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="25c15-111">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-111">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2ec87-123">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span><span class="sxs-lookup"><span data-stu-id="2ec87-123">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="25c15-112">
-            <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-112">
-              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
-              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="2ec87-124">Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».</span><span class="sxs-lookup"><span data-stu-id="2ec87-124">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="2ec87-125">[!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="2ec87-125">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="2ec87-126">La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères.</span><span class="sxs-lookup"><span data-stu-id="2ec87-126">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="2ec87-127">Par exemple, Microsoft Word possède le code de créateur MSWD.</span><span class="sxs-lookup"><span data-stu-id="2ec87-127">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="2ec87-128">Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</span><span class="sxs-lookup"><span data-stu-id="2ec87-128">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListLevels">
@@ -227,12 +141,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="25c15-113">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> collection qui représente tous les niveaux pour spécifié <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> collection that represents all the levels for the specified <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2ec87-129">Renvoie une <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> collection qui représente tous les niveaux de l’objet <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />spécifié.</span><span class="sxs-lookup"><span data-stu-id="2ec87-129">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> collection that represents all the levels for the specified <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -263,12 +172,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="25c15-114">Renvoie ou définit le nom de l'objet spécifié.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-114">Returns or sets the name of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2ec87-130">Cette propriété renvoie ou définit le nom de l'objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="2ec87-130">Returns or sets the name of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -299,29 +203,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="25c15-115">
-            <b>La valeur True</b> si le texte spécifié <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objet est numérotée de type plan.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-115">
-              <b>True</b> if the specified <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object is outline numbered.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2ec87-131"><b>True</b> si l’objet <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> spécifié est un plan numéroté.</span><span class="sxs-lookup"><span data-stu-id="2ec87-131"><b>True</b> if the specified <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object is outline numbered.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="25c15-116">
-            <para>Définir cette propriété sur <b>False</b> convertit le modèle de liste à une liste à un niveau qui utilise la mise en forme du premier niveau.</para>
-            <para>Vous ne pouvez pas définir cette propriété pour un objet <b>ListTemplate</b> renvoyé par un <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objet.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-116">
-              <para>Setting this property to <b>False</b> converts the list template to a single-level list that uses the formatting of the first level.</para>
-              <para>You cannot set this property for a <b>ListTemplate</b> object returned from a <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> object.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="2ec87-132">Définir cette propriété sur <b>False</b> convertit le modèle de liste à une liste à un niveau qui utilise la mise en forme du premier niveau.</span><span class="sxs-lookup"><span data-stu-id="2ec87-132">Setting this property to <b>False</b> converts the list template to a single-level list that uses the formatting of the first level.</span></span></para>
+          <para><span data-ttu-id="2ec87-133">Vous ne pouvez pas définir cette propriété pour un objet <b>ListTemplate</b> renvoyé <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> à partir d’un objet.</span><span class="sxs-lookup"><span data-stu-id="2ec87-133">You cannot set this property for a <b>ListTemplate</b> object returned from a <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> object.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -347,12 +233,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="25c15-117">Cette propriété renvoie un objet qui représente l'objet parent de l'objet spécifié.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="25c15-117">Returns an object that represents the parent object of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="2ec87-134">Cette propriété renvoie un objet qui représente l'objet parent de l'objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="2ec87-134">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
