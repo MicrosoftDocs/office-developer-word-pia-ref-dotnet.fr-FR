@@ -1,13 +1,5 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Word.ColorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dcf4bb34b09a1742a595fe81e3cf40a11a84fc5b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668276" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="009c7bf5816a06a2dbe1390b58db24c3e4dfd954" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147193" /></Metadata><TypeSignature Language="C#" Value="public interface ColorFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorFormat" />
@@ -26,9 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente la couleur d'un objet unicolore ou la couleur de premier plan ou d'arrière-plan d'un objet doté d'un remplissage à motif ou d'un dégradé.</summary>
-    <remarks>
-      <para>Utilisez une des propriétés répertoriées dans le tableau suivant pour renvoyer un objet <b>ColorFormat</b> .</para>
+    <summary>Représente la couleur d’un objet d’une seule couleur ou la couleur de premier plan ou d’arrière-plan d’un objet avec un dégradé ou un remplissage avec motif.</summary>
+    <remarks><para>Utilisez l'une des propriétés du tableau ci-dessous pour renvoyer un objet <b>ColorFormat</b>.</para>
       <list type="table">
         <item>
           <description>
@@ -36,7 +27,8 @@
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.FillFormat" />
-          </description>Couleur de remplissage d’arrière-plan (utilisée dans un remplissage ombré ou à motif)
+          </description>
+          <description>la couleur de remplissage d'arrière-plan (utilisée pour un remplissage à motif ou à ombrage).</description>
         </item>
         <item>
           <description>
@@ -44,15 +36,17 @@
           </description>
           <description>
             <b>FillFormat</b>
-          </description>de
-          <description>remplissage de premier plan couleur (ou simplement la couleur de remplissage d’un remplissage uniforme)</description></item>
+          </description>
+          <description>La couleur de remplissage du premier plan (ou simplement la couleur de remplissage d’un remplissage Uni)</description>
+        </item>
         <item>
           <description>
             <see cref="P:Microsoft.Office.Interop.Word.LineFormat.BackColor" />
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.LineFormat" />
-          </description>en arrière-plan couleur (utilisée dans un trait avec motif)
+          </description>
+          <description>la couleur de la ligne d'arrière-plan (utilisée dans une ligne à motif).</description>
         </item>
         <item>
           <description>
@@ -60,15 +54,17 @@
           </description>
           <description>
             <b>LineFormat</b>
-          </description>de
-          <description>premier plan de couleur (ou simplement la couleur d’une ligne unie) ligne</description></item>
+          </description>
+          <description>La couleur des traits du premier plan (ou simplement la couleur d’un trait plein)</description>
+        </item>
         <item>
           <description>
             <see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.ForeColor" />
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />
-          </description>couleur de l’ombre
+          </description>
+          <description>la couleur d'ombrage.</description>
         </item>
         <item>
           <description>
@@ -76,12 +72,12 @@
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />
-          </description>couleur de la côtés d’un objet extrudé
+          </description>
+          <description>la couleur des côtés d'un objet extrudé.</description>
         </item>
       </list>
-      <para>utiliser le <see cref="P:Microsoft.Office.Interop.Word.ColorFormat.RGB" /> propriété à définir une couleur sur une valeur rouge-vert-bleu explicite.</para>
-      <para />
-    </remarks>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.ColorFormat.RGB" /> propriété pour définir une couleur sur une valeur rouge-vert-bleu explicite.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -107,7 +103,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,12 +171,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient la luminosité d’une couleur de la forme spécifiée.</summary>
-        <value>La luminosité d’une couleur de la forme spécifiée.</value>
-        <remarks>
-          <para>En lecture-écriture. Vous pouvez entrer un nombre compris entre -1 (sombre) et 1 (le plus clair) pour cette propriété, zéro est neutre.</para>
-          <para />
-        </remarks>
+        <summary>Obtient la luminosité d’une couleur de forme spécifiée.</summary>
+        <value>Luminosité d’une couleur de forme spécifiée.</value>
+        <remarks><para>En lecture/écriture Vous pouvez entrer un nombre compris entre-1 (le plus foncé) et 1 (le plus clair) pour cette propriété, zéro étant neutre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -208,11 +202,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cyan">
@@ -247,7 +239,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui représente le composant cyan d’une couleur CMJN.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui représente la composante cyan d’une couleur CMJN.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,8 +279,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Le numéro de l’encre.</param>
-        <summary>Cette propriété renvoie ou définit une valeur qui représente le degré de saturation de l’encre spécifiée.</summary>
+        <param name="Index">Numéro de l’entrée manuscrite.</param>
+        <summary>Cette propriété renvoie ou définit une valeur qui représente le degré de saturation d’une encre spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -362,7 +354,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -393,10 +385,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdThemeColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur de thème pour un format de couleur. Lecture/écriture.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdThemeColorIndex" />
-        </value>
+        <summary>Cette propriété renvoie ou définit la couleur de thème pour un format de couleur. En lecture/écriture</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdThemeColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,7 +422,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique les lors de la création de plaques de séparation pour l’impression professionnelle, que la forme spécifiée n’est pas imprimée sur les plaques de séparation où le niveau d’encre de la forme est défini sur 0 (zéro).</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique lors de la création de plaques de séparation pour l’impression professionnelle, si la forme spécifiée n’est pas imprimée sur les plaques de séparation où le niveau d’encre de la forme est défini sur 0 (zéro).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -528,7 +518,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui représente la couleur dans le jeu de couleurs appliqué qui est associé à l’objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui représente la couleur du jeu de couleurs appliqué qui est associé à l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -562,10 +552,10 @@
         <Parameter Name="Black" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Cyan">Une valeur qui représente le composant de la couleur cyan. Peut être n’importe quelle valeur comprise entre 0 et 255.</param>
-        <param name="Magenta">Une valeur qui représente la composante magenta de la couleur. Peut être n’importe quelle valeur comprise entre 0 et 255.</param>
-        <param name="Yellow">Une valeur qui représente la composante jaune de la couleur. Peut être n’importe quelle valeur comprise entre 0 et 255.</param>
-        <param name="Black">Une valeur qui représente le composant noir de la couleur. Peut être n’importe quelle valeur comprise entre 0 et 255.</param>
+        <param name="Cyan">Valeur qui représente la composante cyan de la couleur. Il peut s’agir de n’importe quelle valeur comprise entre 0 et 255.</param>
+        <param name="Magenta">Valeur qui représente la composante magenta de la couleur. Il peut s’agir de n’importe quelle valeur comprise entre 0 et 255.</param>
+        <param name="Yellow">Valeur qui représente la composante jaune de la couleur. Il peut s’agir de n’importe quelle valeur comprise entre 0 et 255.</param>
+        <param name="Black">Valeur qui représente la composante noire de la couleur. Il peut s’agir de n’importe quelle valeur comprise entre 0 et 255.</param>
         <summary>Définit une valeur de couleur cyan-magenta-jaune-noir (CMJN).</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -596,12 +586,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui représente l’éclaircissement ou obscurcissement de couleur d’une forme spécifiée.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui représente l’éclaircissement ou l’assombrissement de la couleur d’une forme spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez entrer un nombre compris entre -1 (sombre) et 1 (le plus clair) pour la propriété <b>TintAndShade</b> , 0 (zéro) est neutre.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez entrer un nombre compris entre -1 (sombre) et 1 (le plus clair) pour la propriété <b>TintAndShade</b>, 0 (zéro) est neutre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -627,7 +615,7 @@
         <ReturnType>Microsoft.Office.Core.MsoColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le type de couleur de forme.</summary>
+        <summary>Renvoie le type de couleur de la forme.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

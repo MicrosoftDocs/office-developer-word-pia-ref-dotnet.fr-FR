@@ -1,13 +1,5 @@
 <Type Name="MailMergeDataSource" FullName="Microsoft.Office.Interop.Word.MailMergeDataSource">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d2e937147dc7f6dd07ddb11fc242a7e8007f5285" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668622" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeDataSource" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="263ac1a3dcb0cca2f828e652dcaa7b7f382a381b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144469" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeDataSource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeDataSource" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente la source de données de publipostage dans une opération de publipostage.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.MailMerge.DataSource" /> propriété permet de renvoyer l’objet <b>MailMergeDataSource</b> .</para>
-      <para />
-    </remarks>
+    <summary>Cet objet représente la source de données de publipostage dans une opération de publipostage.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.MailMerge.DataSource" /> propriété pour renvoyer l’objet <b>MailMergeDataSource</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveRecord">
@@ -61,11 +51,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l’enregistrement de données de fusion et publipostage active.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>ActiveRecord</b> peut être un numéro d’enregistrement valide dans le résultat de requête ou celui de la <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeActiveRecord" /> constantes.</para>
-          <para>Le numéro d’enregistrement actif est la position de l’enregistrement dans le résultat de requête généré par les options de requête actuelles ; par conséquent, ce numéro n’est pas nécessairement la position de l’enregistrement dans la source de données.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>ActiveRecord</b> peut être un numéro d’enregistrement de données valide dans le résultat de la requête ou <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeActiveRecord" /> une des constantes.</para>
+          <para>Le numéro de l’enregistrement de données actif est la position de l’enregistrement dans le résultat de requête généré par les options de requête actuelles; en tant que tel, ce numéro n’est pas nécessairement la position de l’enregistrement dans la source de données.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -91,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,7 +132,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la chaîne de connexion pour la source de données de fusion et publipostage spécifiée.</summary>
+        <summary>Renvoie la chaîne de connexion qui correspond à la source de données de publipostage.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,11 +162,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFields">
@@ -204,7 +190,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeDataFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> collection qui représente les champs de la source de données de fusion et publipostage spécifiée.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> collection qui représente les champs de la source de données de fusion et publipostage spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,7 +218,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeFieldNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeFieldNames" /> collection qui représente les noms de tous les champs dans la source de données de fusion et publipostage spécifiée.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.MailMergeFieldNames" /> collection qui représente les noms de tous les champs dans la source de données de fusion et publipostage spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -260,15 +246,13 @@
         <Parameter Name="Field" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FindText">
-          <b>String</b>obligatoire. Texte à rechercher.</param>
-        <param name="Field">
-          <b>Variant</b>obligatoire. Nom du champ dans lequel la recherche doit être effectuée.</param>
+        <param name="FindText">Argument de type <b>String</b> obligatoire. Texte à rechercher.</param>
+        <param name="Field">Argument de type <b>Variant</b> obligatoire. Nom du champ dans lequel la recherche doit être effectuée.</param>
         <summary>Recherche le contenu de la source de données de fusion et publipostage spécifiée pour le texte dans un champ particulier. Renvoie <b>la valeur True</b> si le texte recherché est trouvé.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>La méthode <b>FindRecord</b> correspond au bouton Rechercher l’enregsitrement dans la barre d’outils Fusion et publipostage.</para> Méthode de 
-          <para>la <b>FindRecord</b> effectue une recherche vers l’avant uniquement. Par conséquent, si l’enregistrement actif n’est pas le premier enregistrement de la source de données et l’enregistrement que vous recherchez se trouve avant l’enregistrement actif, la méthode <b>FindRecord</b> ne renvoie aucun résultat. Pour vous assurer que la source de données entière est recherchée, définissez la <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> propriété <b>wdFirstRecord</b>.</para><para /></remarks>
+        <remarks><para>La méthode <b>FindRecord</b> correspond au bouton Rechercher un enregistrement de la barre d’outils fusion et publipostage.</para>
+          <para>La méthode <b>FindRecord</b> effectue une recherche vers l'avant uniquement. Par conséquent, si l'enregistrement actif n'est pas le premier enregistrement dans la source de données et l'enregistrement que vous recherchez se trouve avant l'enregistrement actif, la méthode <b>FindRecord</b> ne renvoie aucun résultat. Pour vous assurer que la totalité de la source de données est <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> recherchée, définissez la propriété sur <b>wdFirstRecord</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FindRecord2000">
@@ -387,13 +371,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMailMergeDataSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur qui indique la façon dont la source d’en-tête est fournie pour l’opération de fusion et publipostage.</summary>
+        <summary>Renvoie une valeur qui indique la façon dont la source d'en-tête est fournie pour l'opération de publipostage.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>HeaderSourceType,</b> de la propriété peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDataSource" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>HeaderSourceType,</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDataSource" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Included">
@@ -422,13 +403,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si un enregistrement est inclus dans une fusion et publipostage.</summary>
+        <summary><b>True</b> si un enregistrement est inclus dans une fusion et publipostage.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllIncludedFlags(System.Boolean)" /> méthode pour inclure ou exclure tous les enregistrements dans une source de données de fusion et publipostage.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllIncludedFlags(System.Boolean)" /> méthode pour inclure ou exclure tous les enregistrements dans une source de données de fusion et publipostage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidAddress">
@@ -457,13 +435,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> pour que Microsoft Word marque un enregistrement dans une source de données de fusion et publipostage s'il contient des données non valides dans un champ d'adresse.</summary>
+        <summary><b>True</b> pour que Microsoft Word marque un enregistrement dans une source de données de fusion et publipostage s'il contient des données non valides dans un champ d'adresse.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllErrorFlags(System.Boolean,System.String)" /> pour définir les <b>propriétés InvalidAddress</b> et <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidComments" /> pour tous les enregistrements dans une source de données.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllErrorFlags(System.Boolean,System.String)" /> méthode pour définir les propriétés <b>InvalidAddress</b> et <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidComments" /> Properties de tous les enregistrements d’une source de données.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidComments">
@@ -492,12 +467,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Si le <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" /> propriété a la <b>valeur True</b>, cette propriété renvoie ou définit une <b>chaîne</b> qui décrit une erreur d’adresse non valide.</summary>
+        <summary>Si la <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" /> propriété a la <b>valeur true</b>, cette propriété renvoie ou définit une <b>chaîne</b> qui décrit une erreur d’adresse non valide.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllErrorFlags(System.Boolean,System.String)" /> méthode la <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" /> et propriétés <b>InvalidComments</b> pour tous les enregistrements dans une source de données.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllErrorFlags(System.Boolean,System.String)" /> méthode pour définir les propriétés <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" /> et <b>InvalidComments</b> pour tous les enregistrements d’une source de données.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastRecord">
@@ -554,7 +527,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MappedDataFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" /> object qui représente les champs de données mappés disponibles dans Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" /> Object qui représente les champs de données mappés disponibles dans Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -582,7 +555,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -671,10 +644,8 @@
       <Docs>
         <summary>Renvoie un <b>entier</b> qui représente le nombre d’enregistrements dans la source de données.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si Microsoft Word ne peut pas déterminer le nombre d’enregistrements dans une source de données, la propriété <b>RecordCount</b> renvoie la valeur -1.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si Microsoft Word n’est pas en mesure de déterminer le nombre d’enregistrements de la source de données, la propriété <b>RecordCount</b> renvoie la valeur -1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAllErrorFlags">
@@ -701,15 +672,11 @@
         <Parameter Name="InvalidComment" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Invalid">
-          <b>Boolean</b>obligatoire. <b>La valeur True</b> marque tous les enregistrements de la source de données de publipostage comme étant non valide.</param>
-        <param name="InvalidComment">
-          <b>String</b>obligatoire. Texte décrivant le paramètre non valide.</param>
+        <param name="Invalid"><b>Boolean</b> obligatoire. <b>La valeur True</b> marque tous les enregistrements de la source de données de publipostage comme étant non valide.</param>
+        <param name="InvalidComment">Argument de type <b>String</b> obligatoire. Texte décrivant le paramètre non valide.</param>
         <summary>Marque tous les enregistrements d'une source de données de fusion et publipostage pour indiquer qu'ils contiennent des données non valides dans un champ d'adresse.</summary>
-        <remarks>
-          <para>Vous pouvez marquer individuellement les enregistrements de source de données qui contiennent des données non valides dans un champ d’adresse à l’aide de la <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" /> et <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidComments" /> propriétés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez marquer individuellement les enregistrements de la source de données qui contiennent des données non valides <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" /> dans <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidComments" /> un champ d’adresse en utilisant les propriétés et.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAllIncludedFlags">
@@ -735,14 +702,10 @@
         <Parameter Name="Included" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Included">
-          <b>Boolean</b>obligatoire. <b>True</b> pour inclure tous les enregistrements de source de données dans une fusion et publipostage. <b>False</b> pour exclure tous les enregistrements de source de données à partir d'une fusion et publipostage.</param>
-        <summary>
-          <b>True</b> pour inclure tous les enregistrements de source de données dans une fusion et publipostage.</summary>
-        <remarks>
-          <para>Vous pouvez définir des enregistrements dans une source de données pour être inclus ou exclu d’une opération de publipostage à l’aide de la <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.Included" /> propriété.</para>
-          <para />
-        </remarks>
+        <param name="Included"><b>Boolean</b> obligatoire. <b>True</b> pour inclure tous les enregistrements de source de données dans une fusion et publipostage. <b>False</b> pour exclure tous les enregistrements de source de données à partir d'une fusion et publipostage.</param>
+        <summary><b>True</b> pour inclure tous les enregistrements de source de données dans une fusion et publipostage.</summary>
+        <remarks><para>Vous pouvez définir des enregistrements individuels dans une source de données à inclure ou exclure d’une opération de fusion et <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.Included" /> publipostage à l’aide de la propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableName">
@@ -768,7 +731,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retourne une <b>chaîne</b> avec la requête SQL utilisée pour récupérer les enregistrements à partir du fichier de source de données associé à un document de fusion et publipostage. Peut être vide si le nom de la table est inconnu ou non applicable à la source de données en cours.</summary>
+        <summary>Retourne une <b>chaîne</b> avec la requête SQL utilisée pour récupérer les enregistrements à partir du fichier de source de données associé à un document de fusion et publipostage. Peut être vide si le nom de la table est inconnu ou non applicable à la source de données actuelle.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -798,10 +761,8 @@
       <Docs>
         <summary>Renvoie le type de la source de données de fusion et publipostage.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Type</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDataSource" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>type</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDataSource" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="DownBars" FullName="Microsoft.Office.Interop.Word.DownBars">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="afe32958072786003f671a96246de5d7c5f9f62b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668051" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DownBars" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f83d3ab2ff75cc5513807729e60d0a241fa1cd13" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144581" /></Metadata><TypeSignature Language="C#" Value="public interface DownBars" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DownBars" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DownBars" />
   <TypeSignature Language="VB.NET" Value="Public Interface DownBars" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente les barres Baisse d'un groupe de graphiques.</summary>
-    <remarks>
-      <para>Des barres baisse relient les points de la première série contenue dans le groupe de graphiques avec les valeurs inférieures à la dernière série (la ligne vers le bas à partir de la première série). Uniquement les groupes de ligne 2D contenant au moins deux séries peuvent comporter des barres baisse. Cet objet n’est pas une collection. Il n’existe aucun objet qui représente un seul vers le bas de la barre ; sont soit barres haut et bas barres activées pour tous les points d’un groupe de graphiques ou que vous les avez désactivés.</para>
-      <para>Si le <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" /> propriété a la <b>valeur False</b>, la plupart des propriétés de l’objet <b>DownBars</b> sont désactivées.</para>
-      <para />
-    </remarks>
+    <remarks><para>Les barres Baisse relient les points de la première série du groupe de graphiques avec les points inférieurs de la dernière série (lignes descendantes, partant de la première série). Seuls les groupes de graphiques en courbes 2D contenant au minimum deux séries peuvent comporter des barres Baisse. Cet objet n'est pas une collection. Il n'existe pas d'objet représentant une seule barre Baisse. Les barres Hausse et les barres Baisse sont soit activées, soit désactivées pour tous les points du groupe de graphiques.</para>
+      <para>Si la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" /> propriété a la <b>valeur false</b>, la plupart des propriétés de l’objet <b>DownBars</b> sont désactivées.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,10 +78,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objet qui représente la bordure de l’objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> Object qui représente la bordure de l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,14 +106,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. Valeur <b>Integer</b> en lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, le <see cref="P:Microsoft.Office.Interop.Word.DownBars.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.DownBars.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -152,9 +134,7 @@
       <Parameters />
       <Docs>
         <summary>Supprime l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,10 +164,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objet pour l’élément de graphique parent qui contient les propriétés de l’élément de graphique de la mise en forme du remplissage. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objet pour l’élément de graphique parent qui contient les propriétés de mise en forme du remplissage pour l’élément de graphique. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,9 +195,7 @@
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet.
 
 En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,10 +225,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Interior" /> object qui représente l’intérieur de l’objet.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Interior" /> Object qui représente l’intérieur de l’objet.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,9 +254,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie une valeur de <b>type String</b> qui représente le nom de l'objet.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,9 +282,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule <b>Object</b>.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,9 +308,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Parameters />
       <Docs>
         <summary>Sélectionne l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

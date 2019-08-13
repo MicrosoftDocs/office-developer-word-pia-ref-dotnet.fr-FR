@@ -1,13 +1,5 @@
 <Type Name="Subdocuments" FullName="Microsoft.Office.Interop.Word.Subdocuments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a21d5c2632a3938485eff78ac0f2f1d8a922befc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667556" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ddd1247b7607cf6fdec9c86653bd6de16fa1156f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143916" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Subdocuments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Subdocuments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Subdocuments&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> objets qui représentent les sous-documents de la plage ou du document.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>sous-documents</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Range" /> ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet pour renvoyer la collection de <b>sous-documents</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> ou <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> pour ajouter un sous-document à un document.</para>
-      <para>Utiliser <b>sous-documents</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Subdocument</b> .</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> objets qui représentent les sous-documents d’une plage ou d’un document.</summary>
+    <remarks><para>Utilisez la <b></b> propriété Subdocuments d’un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet <see cref="T:Microsoft.Office.Interop.Word.Document" /> ou pour renvoyer la <b></b> collection Subdocuments.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> ou pour ajouter un sous-document à un document.</para>
+      <para>Utilisez <b></b>Subdocuments (<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet Subdocument. <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddFromFile">
@@ -68,22 +58,19 @@
         <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>Objet</b>obligatoire. Nom de fichier du sous-document à insérer dans le document maître.</param>
-        <param name="ConfirmConversions">Facultatif <b>Object</b>. <b>True :</b> pour confirmer la conversion du fichier dans la boîte de dialogue Convertir un fichier si le fichier n’est pas au format Microsoft Word.</param>
-        <param name="ReadOnly">Facultatif <b>Object</b>. <b>True</b> pour insérer le sous-document en tant qu'un document en lecture seule.</param>
-        <param name="PasswordDocument">Facultatif <b>Object</b>. Le mot de passe requis pour ouvrir le sous-document, s’il est protégé par mot de passe.</param>
-        <param name="PasswordTemplate">Facultatif <b>Object</b>. Mot de passe à spécifier pour ouvrir le modèle associé au sous-document, s'il est protégé par mot de passe.</param>
-        <param name="Revert">Facultatif <b>Object</b>. Contrôles que se passe-t-il si <paramref name="Name" /> est le nom de fichier d’un document ouvert. <b>True :</b> pour insérer la version enregistrée du sous-document. <b>False</b> pour insérer la version ouverte du sous-document, qui peut contenir des modifications non enregistrées.</param>
-        <param name="WritePasswordDocument">Facultatif <b>Object</b>. Le mot de passe requis pour enregistrer les modifications apportées au document si elle est protégé en écriture.</param>
-        <param name="WritePasswordTemplate">Facultatif <b>Object</b>. Le mot de passe requis pour enregistrer les modifications apportées au modèle associé au sous-document, s’il est protégé en écriture.</param>
+        <param name="Name"><b>Objet</b>required. Nom de fichier du sous-document à insérer dans le document maître.</param>
+        <param name="ConfirmConversions"><b>Objet</b>facultatif. <b>True:</b> pour confirmer la conversion du fichier dans la boîte de dialogue convertir un fichier si le fichier n’est pas au format Microsoft Word.</param>
+        <param name="ReadOnly"><b>Objet</b>facultatif. <b>True</b> pour insérer le sous-document en tant qu'un document en lecture seule.</param>
+        <param name="PasswordDocument"><b>Objet</b>facultatif. Mot de passe à spécifier pour ouvrir le sous-document s’il est protégé par mot de passe.</param>
+        <param name="PasswordTemplate"><b>Objet</b>facultatif. Mot de passe à spécifier pour ouvrir le modèle associé au sous-document, s'il est protégé par mot de passe.</param>
+        <param name="Revert"><b>Objet</b>facultatif. Contrôle ce qui se <paramref name="Name" /> passe si est le nom de fichier d’un document ouvert. <b>True :</b> pour insérer la version enregistrée du sous-document. <b>False</b> pour insérer la version ouverte du sous-document, qui peut contenir des modifications non enregistrées.</param>
+        <param name="WritePasswordDocument"><b>Objet</b>facultatif. Mot de passe à spécifier pour enregistrer les modifications apportées au fichier de document s’il est protégé en écriture.</param>
+        <param name="WritePasswordTemplate"><b>Objet</b>facultatif. Mot de passe à spécifier pour enregistrer les modifications apportées au modèle attaché au sous-document s’il est protégé en écriture.</param>
         <summary>Ajoute le sous-document spécifié dans le document maître au début de la sélection et renvoie un <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>Remarque</b>  Si l’affichage actif n’est pas en mode plan ou document maître, une erreur se produit.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Note</b>  Si l’affichage actif n’est ni le mode plan ni le mode document maître, une erreur se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFromRange">
@@ -108,14 +95,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. L’objet <b>Range</b> permet de créer un ou plusieurs sous-documents.</param>
-        <summary>Crée un ou plusieurs sous-documents à partir du texte de la plage spécifiée et renvoie un <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> objet.</summary>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Objet <b>Range</b> utilisé pour créer un ou plusieurs sous-documents.</param>
+        <summary>Crée un ou plusieurs sous-documents à partir du texte de la plage spécifiée et renvoie <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> un objet.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>Remarque</b>  La plage doit commencer par un des prédéfinis (par exemple, titre 1) styles de titre. Sous-documents sont créés au niveau de chaque paragraphe mis en forme avec le même format de titre utilisé au début de la plage. Fichiers sous-document sont enregistrées lors de l’enregistrement du document maître et sont nommés automatiquement à l’aide du texte de la première ligne dans le fichier.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Note</b>  La plage doit commencer par l’un des styles de titre prédéfinis (par exemple, titre 1). Les sous-documents sont créés à chaque paragraphe au format de titre utilisé au début de la plage. Les fichiers de sous-documents sont enregistrés lorsque le document maître est enregistré et sont automatiquement nommés à l’aide du texte de la première ligne du fichier.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -141,7 +126,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,11 +184,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -257,8 +240,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si les sous-documents contenus dans le document spécifié sont développés.</summary>
+        <summary><b>True</b> si les sous-documents contenus dans le document spécifié sont développés.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -321,7 +303,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -350,8 +332,8 @@
         <Parameter Name="LastSubdocument" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FirstSubdocument">Facultatif <b>Object</b>. Chemin d'accès et nom du document d'origine avec lequel les modifications doivent être fusionnées.</param>
-        <param name="LastSubdocument">Facultatif <b>Object</b>. Dernier sous-document de la plage de sous-documents à fusionner.</param>
+        <param name="FirstSubdocument"><b>Objet</b>facultatif. Chemin d'accès et nom du document d'origine avec lequel les modifications doivent être fusionnées.</param>
+        <param name="LastSubdocument"><b>Objet</b>facultatif. Dernier sous-document de la plage de sous-documents à fusionner.</param>
         <summary>Dans un document maître, fusionne les sous-documents spécifiés dans un même sous-document.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -405,12 +387,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cette méthode sélectionne l'objet spécifié.</summary>
-        <remarks>
-          <para>
-            <b>Remarque</b>  Après avoir exécuté cette méthode, utilisez la propriété <b>Selection</b> pour travailler avec les éléments sélectionnés.</para>
-          <para />
-        </remarks>
+        <summary>Sélectionne l'objet spécifié.</summary>
+        <remarks><para>
+            <b>Note</b>  Après avoir utilisé cette méthode, utilisez la propriété <b>Selection</b> pour travailler avec les éléments sélectionnés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

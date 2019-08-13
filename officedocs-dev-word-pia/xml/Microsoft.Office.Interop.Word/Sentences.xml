@@ -1,13 +1,5 @@
 <Type Name="Sentences" FullName="Microsoft.Office.Interop.Word.Sentences">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f1ebc46195bb79e4bf8899f5ce4a33bf16c62d2b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667311" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Sentences : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b9c8f2df0c924a72bb12132f74fa03d11816de86" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144049" /></Metadata><TypeSignature Language="C#" Value="public interface Sentences : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Sentences implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Sentences" />
   <TypeSignature Language="VB.NET" Value="Public Interface Sentences&#xA;Implements IEnumerable" />
@@ -30,12 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Range" /> objets qui représentent l’ensemble des phrases d’une sélection, une plage ou un document. Il n'existe aucun objet de phrase.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>Sentences</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" /> , ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet pour renvoyer la collection <b>Sentences</b> .</para>
-      <para>Utiliser <b>Sentences</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un objet <b>Range</b> qui représente une phrase. Le numéro d’index représente la position d’une phrase dans la collection <b>Sentences</b> .</para>
-      <para>La <see cref="P:Microsoft.Office.Interop.Word.Sentences.Count" /> propriété pour cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d’autres articles utilisez la collection avec l’objet <b>Range</b> .</para> Méthode 
-      <para><b>Ajouter</b> n’est pas disponible pour la collection <b>Sentences</b> . Au lieu de cela, utilisez la <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> ou <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> pour ajouter une phrase à un objet <b>Range</b> .</para><para /></remarks>
+    <summary>Collection d’objets <see cref="T:Microsoft.Office.Interop.Word.Range" /> qui représentent l’ensemble des phrases d’une sélection, d’une plage ou d’un document. Il n'existe aucun objet de phrase.</summary>
+    <remarks><para>Utilisez la <b></b> propriété sentences d' <see cref="T:Microsoft.Office.Interop.Word.Selection" />un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet, <see cref="T:Microsoft.Office.Interop.Word.Document" /> ou pour renvoyer la <b></b> collection Sentences.</para>
+      <para>Utilisez <b></b>sentences<paramref name="index" />(), <paramref name="index" /> où est le numéro d’index, pour renvoyer un objet <b>Range</b> qui représente une phrase. Le numéro d'index représente la position d'une phrase dans la collection <b>Sentences</b>.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Sentences.Count" /> propriété de cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments placés dans d'autres articles, utilisez la collection avec l'objet <b>Range</b>.</para>
+      <para>La méthode <b>Add</b> n'est pas disponible pour la collection <b>Sentences</b>. À la place, <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> utilisez <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> la méthode ou pour ajouter une phrase à un objet de <b>plage</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,11 +111,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>. </para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>. </para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -149,7 +139,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente la première phrase, mot ou caractère dans un document, la sélection ou la plage.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la première phrase, le premier mot ou le premier caractère d’un document, d’une sélection ou d’une plage.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,7 +202,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -241,7 +231,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente le dernier caractère, mot ou phrase dans un document, la sélection ou la plage.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente le dernier caractère, mot ou phrase d’un document, d’une sélection ou d’une plage.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

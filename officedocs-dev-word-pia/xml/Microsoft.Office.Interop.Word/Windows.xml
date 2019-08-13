@@ -1,13 +1,5 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Word.Windows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="aa5d387f914422cf8c79854703cd4dd7eb61e181" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668191" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="485e25bf5a3ae2e6749378af1596be5bee3a3b09" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142660" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Windows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
@@ -30,16 +22,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Window" /> objets qui représentent toutes les fenêtres disponibles.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>Windows</b> de le <see cref="T:Microsoft.Office.Interop.Word.Application" /> ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet pour renvoyer la collection <b>Windows</b> . La collection <b>Windows</b> de l’objet <b>Application</b> contient toutes les fenêtres dans l’application, alors que la collection <b>Windows</b> de l’objet <b>Document</b> ne contient que les fenêtres qui affichent le document spécifié.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" /> pour ajouter une nouvelle fenêtre à la collection Windows.</para>
-      <para>Utiliser <b>Windows</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la fenêtre ou le numéro d’index, pour renvoyer un seul objet <b>Window</b> .</para>
-      <para>Le numéro d’index est le numéro à gauche du nom de la fenêtre dans le menu fenêtre.</para>
-      <para>Un signe deux-points ( :)) et un nombre apparaissent dans la légende de la fenêtre lorsque plusieurs fenêtres sont ouvertes pour un document.</para>
-      <para>Lorsque vous passez du mode Aperçu avant impression, une nouvelle fenêtre est créée. Cette fenêtre est supprimée de la collection <b>Windows</b> lorsque vous fermez l’aperçu avant impression.</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Window" /> objets qui représentent toutes les fenêtres disponibles.</summary>
+    <remarks><para>Utilisez la propriété <b>Windows</b> de l' <see cref="T:Microsoft.Office.Interop.Word.Application" /> objet <see cref="T:Microsoft.Office.Interop.Word.Document" /> ou pour renvoyer la collection <b>Windows</b> . La collection <b>Windows</b> de l'objet <b>Application</b> contient toutes les fenêtres dans l'application, alors que la collection <b>Windows</b> de l'objet <b>Document</b> ne contient que les fenêtres qui affichent le document spécifié.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" /> méthode ou la <see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" /> méthode pour ajouter une nouvelle fenêtre à la collection Windows.</para>
+      <para>Utilisez <b>Windows</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la fenêtre ou le numéro d’index, pour renvoyer un seul objet <b>Window</b> .</para>
+      <para>Le numéro d'index est le numéro à gauche du nom de la fenêtre dans le menu fenêtre.</para>
+      <para>Le signe deux points (:) et un nombre apparaissent dans le titre de la fenêtre lorsque plusieurs fenêtres sont ouvertes pour un même document.</para>
+      <para>Lorsque vous passez du mode Aperçu avant impression, une nouvelle fenêtre est créée. Cette fenêtre est supprimée de la collection <b>Windows</b> lorsque vous fermez l'aperçu avant impression.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,13 +53,11 @@
         <Parameter Name="Window" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Window">Facultatif <b>Object</b>. L'objet <b>Window</b> que vous souhaitez ouvrir une autre fenêtre pour. Si cet argument est omis, une nouvelle fenêtre est ouverte pour le document actif.</param>
+        <param name="Window"><b>Objet</b>facultatif. L'objet <b>Window</b> que vous souhaitez ouvrir une autre fenêtre pour. Si cet argument est omis, une nouvelle fenêtre est ouverte pour le document actif.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Window" /> objet qui représente une nouvelle fenêtre d’un document.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Un signe deux-points ( :)) et un nombre apparaissent dans la légende de la fenêtre lorsque plusieurs fenêtres sont ouvertes pour le document.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un signe deux-points (:) et un nombre s'affichent dans la légende de la fenêtre lorsque plusieurs fenêtres sont ouvertes pour le même document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -95,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,7 +110,7 @@
         <Parameter Name="ArrangeStyle" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ArrangeStyle">Facultatif <b>Object</b>. L'organisation des fenêtres. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdArrangeStyle" /> constantes : <b>wdIcons</b> ou <b>wdTiled</b>.</param>
+        <param name="ArrangeStyle"><b>Objet</b>facultatif. L'organisation des fenêtres. Peut être l’une des constantes suivantes <see cref="T:Microsoft.Office.Interop.Word.WdArrangeStyle" /> : <b>wdIcons</b> ou <b>wdTiled</b>.</param>
         <summary>Réorganise toutes les fenêtres de document ouvertes dans l'espace de travail de l'application. Dans la mesure où Microsoft Word fait appel à une interface mono-document (SDI), cette méthode n'a plus aucun effet</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,7 +136,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Met fin au mode côte à côte si deux fenêtres sont en mode côte à côte. Renvoie un <b>type Boolean</b> qui indique si la méthode a réussi.</summary>
+        <summary>Cette méthode met fin au mode côte à côte lorsque deux fenêtres utilisent ce mode. Renvoie un <b>type Boolean</b> qui indique si la méthode a réussi.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,14 +164,11 @@
         <Parameter Name="Document" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Document">
-          <b>Objet</b>obligatoire. Le document à afficher en fenêtres côte-à-côte.</param>
-        <summary>Ouvre deux fenêtres en mode côte à côte.</summary>
+        <param name="Document"><b>Objet</b>required. Document à afficher dans les fenêtres côte à côte.</param>
+        <summary>Cette méthode ouvre deux fenêtres en mode côte à côte.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Vous ne pouvez pas utiliser la méthode <b>CompareSideBySideWith</b> avec le <see cref="T:Microsoft.Office.Interop.Word.Application" /> objet ou le <see cref="P:Microsoft.Office.Interop.Word._Application.ActiveDocument" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous ne pouvez pas <b></b> utiliser la méthode CompareSideBySideWith <see cref="T:Microsoft.Office.Interop.Word.Application" /> avec l’objet <see cref="P:Microsoft.Office.Interop.Word._Application.ActiveDocument" /> ou la propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -239,11 +224,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -304,8 +287,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</param>
+        <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -361,9 +343,9 @@
       <Parameters />
       <Docs>
         <summary>Réinitialise deux fenêtres de document qui utilisent le mode d'affichage Comparer en côte à côte.</summary>
-        <remarks>
-          <para>La méthode <b>ResetPositionsSideBySide</b> correspond au bouton Rétablir la Position de fenêtre dans la barre d’outils de comparer en côte à côte.</para> Méthode 
-          <para>utiliser le <b>ResetPositionsSideBySide</b> pour rétablir l’affichage de deux documents. Par exemple, si un utilisateur réduit ou agrandit une des deux fenêtres, la méthode <b>ResetPositionsSideBySide</b> rétablit l’affichage afin que les deux fenêtres sont affichée côte à côte à nouveau.</para><para /></remarks>
+        <remarks><para>La méthode <b>ResetPositionsSideBySide</b> correspond au bouton rétablir la position de la fenêtre sur la barre d’outils comparer en côte à côte.</para>
+          <para>Utilisez la méthode <b>ResetPositionsSideBySide</b> pour réinitialiser l'affichage de deux documents. Par exemple, si un utilisateur réduit ou agrandit l’une des deux fenêtres de document comparées, la méthode <b>ResetPositionsSideBySide</b> réinitialise l’affichage de sorte que les deux fenêtres s’affichent côte à côte.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncScrollingSideBySide">
@@ -392,8 +374,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> permet de faire défiler le contenu de windows en même temps. <b>La valeur False</b> désactive la faire défiler des fenêtres en même temps.</summary>
+        <summary><b>True</b> : pour activer le défilement du contenu de fenêtres en même temps. La <b>valeur false</b> désactive le défilement de Windows en même temps.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

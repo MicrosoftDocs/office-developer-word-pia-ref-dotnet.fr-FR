@@ -1,13 +1,5 @@
 <Type Name="Variables" FullName="Microsoft.Office.Interop.Word.Variables">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9c2b6ad10492a0ea22a2cb22b7ede41be953247c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667752" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Variables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="644ab7343db817764d5aa3ab3fa23f78b8f047eb" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143776" /></Metadata><TypeSignature Language="C#" Value="public interface Variables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Variables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Variables" />
   <TypeSignature Language="VB.NET" Value="Public Interface Variables&#xA;Implements IEnumerable" />
@@ -30,16 +22,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Variable" /> objets qui représentent les variables ajoutées à un document ou un modèle. Les variables de document servent à conserver les paramètres de macro entre les sessions de macro.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Document.Variables" /> propriété pour renvoyer la collection <b>Variables</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> pour ajouter une variable à un document.</para>
-      <para>Si vous essayez d’ajouter une variable de document avec un nom qui existe déjà dans la collection <b>Variables</b> , une erreur se produit. Pour éviter cette erreur, vous pouvez énumérer la collection avant d’ajouter de nouvelles variables.</para>
-      <para>Utiliser des <b>Variables</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la variable de document ou le numéro d’index, pour renvoyer un seul objet <b>Variable</b> .</para>
-      <para>Le numéro d’index représente la position de la variable de document dans la collection <b>Variables</b> . La première variable ajoutée à la collection <b>Variables</b> est le numéro d’index 1 ; la deuxième variable ajoutée à la collection est le numéro d’index 2 et ainsi de suite.</para>
-      <para>Pour ajouter une variable à un modèle, ouvrez le modèle en tant que document à l’aide de la <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> méthode.</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Variable" /> objets qui représentent les variables ajoutées à un document ou un modèle. Les variables de document servent à conserver les paramètres de macro entre les sessions de macro.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.Variables" /> propriété pour renvoyer la collection <b>variables</b> .</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> méthode pour ajouter une variable à un document.</para>
+      <para>Si vous essayez d'ajouter une variable de document avec un nom qui existe déjà dans la collection <b>Variables</b>, une erreur se produit. Pour éviter cette erreur, vous pouvez énumérer la collection avant d'ajouter de nouvelles variables.</para>
+      <para>Utilisez <b>variables</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de la variable de document ou le numéro d’index, pour renvoyer un seul objet <b>variable</b> .</para>
+      <para>Le numéro d'index représente la position de la variable de document dans la collection <b>Variables</b>. La première variable ajoutée à la collection <b>Variables</b> est le numéro d'index 1 ; la deuxième variable ajoutée à la collection est le numéro d'index 2 et ainsi de suite.</para>
+      <para>Pour ajouter une variable à un modèle, ouvrez le modèle en tant que document à l' <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> aide de la méthode.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,10 +55,9 @@
         <Parameter Name="Value" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b>obligatoire. Nom de la variable.</param>
-        <param name="Value">Facultatif <b>Object</b>. Valeur de la variable.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Variable" /> objet qui représente une variable ajoutée à un document.</summary>
+        <param name="Name">Argument de type <b>String</b> obligatoire. Nom de la variable.</param>
+        <param name="Value"><b>Objet</b>facultatif. Valeur de la variable.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Variable" /> Object qui représente une variable ajoutée à un document.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,11 +143,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -219,8 +206,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</param>
+        <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

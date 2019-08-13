@@ -1,13 +1,5 @@
 <Type Name="Section" FullName="Microsoft.Office.Interop.Word.Section">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5c702a4f22186e2c8dd36d4c7af1c0c4030c1d81" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668425" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Section" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="15d5b626e3ad97e6bd9d5b96a9cc32a2356d9fe4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146135" /></Metadata><TypeSignature Language="C#" Value="public interface Section" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Section" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Section" />
   <TypeSignature Language="VB.NET" Value="Public Interface Section" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une section dans une sélection, une plage ou un document.</summary>
-    <remarks>
-      <para>L’objet <b>Section</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.Sections" /> collection. <b>Cette collection</b> contient toutes les sections dans une sélection, une plage ou un document.</para>
-      <para>Utilisez <b>Sections</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Section</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Sections.Add(System.Object@,System.Object@)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertBreak(System.Object@)" /> pour ajouter une nouvelle section à un document.</para>
-      <para>Remarque la <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> et <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> propriétés de la <b>Section</b> spécifiée d’objets retour un <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> objet.</para>
-      <para />
-    </remarks>
+    <remarks><para>L’objet <b>section</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.Sections" /> collection. <b>Cette collection</b> contient toutes les sections dans une sélection, une plage ou un document.</para>
+      <para>Utilisez <b>sections</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>section</b> .</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Sections.Add(System.Object@,System.Object@)" /> méthode ou la <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertBreak(System.Object@)" /> méthode pour ajouter une nouvelle section à un document.</para>
+      <para>Remarque les <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> propriétés <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> et de l’objet <b>section</b> spécifié renvoient <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> un objet.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection qui représente la totalité des bordures de l’objet spécifié.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection qui représente toutes les bordures de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,11 +110,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Footers">
@@ -150,12 +138,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.HeadersFooters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> collection qui représente les pieds de page dans la section spécifiée.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> collection qui représente les pieds de page dans la section spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour renvoyer une collection <b>HeadersFooters</b> qui représente les en-têtes de la section spécifiée, utilisez la <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour renvoyer une collection <b>HeadersFooters</b> qui représente les en-têtes de la section spécifiée, utilisez <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> la propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -181,12 +167,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.HeadersFooters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> collection qui représente les en-têtes de la section spécifiée.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> collection qui représente les en-têtes de la section spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour renvoyer une collection <b>HeadersFooters</b> qui représente les pieds de page de la section spécifiée, utilisez la <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour renvoyer une collection <b>HeadersFooters</b> qui représente les pieds de page de la section spécifiée, utilisez <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> la propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -212,7 +196,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>entier</b> qui représente la position d’un élément dans une collection.</summary>
+        <summary>Renvoie une <b>valeur de type Integer</b> qui représente la position d’un élément dans une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,13 +286,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la section spécifiée est protégée pour les formulaires. Lorsqu’une section est protégée pour les formulaires, vous pouvez sélectionner et modifier le texte uniquement dans les champs de formulaire.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si la section spécifiée est protégée contre la modification des formulaires. Si tel est le cas, vous pouvez sélectionner et modifier le texte uniquement dans les champs de formulaire.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour protéger un document entier, utilisez la <see cref="M:Microsoft.Office.Interop.Word._Document.Protect(Microsoft.Office.Interop.Word.WdProtectionType,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour protéger un document entier, utilisez la <see cref="M:Microsoft.Office.Interop.Word._Document.Protect(Microsoft.Office.Interop.Word.WdProtectionType,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode de l' <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -334,12 +315,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> de formes à partir d’une collection de formes, voir la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Adjustments" FullName="Microsoft.Office.Interop.Word.Adjustments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="04d00f5197d85b4aee3912704a4c99c46098e504" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667872" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Adjustments" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f71474edc1a4cdff5dca9567b6a826b678d59ad6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144651" /></Metadata><TypeSignature Language="C#" Value="public interface Adjustments" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Adjustments" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Adjustments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Adjustments" />
@@ -26,10 +18,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contient une collection de valeurs d’ajustement pour l’objet AutoShape ou WordArt spécifié.</summary>
-    <remarks>
-      <para>Chaque valeur de réglage représente une façon qu'une poignée d’ajustement peut être ajustée. Étant donné que certaines poignées d’ajustement peuvent être ajustées de deux façons : par exemple, certaines poignées peuvent être ajustées horizontalement et verticalement, une forme peut avoir plus de valeurs d’ajustement que poignées d’ajustement. Une forme peut avoir jusqu'à huit ajustements.</para> Utilisation de 
-      <para>les <see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" /> propriété permet de renvoyer un objet <b>Adjustments</b> . Utilisez <b>des ajustements</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de la valeur d’ajustement, pour renvoyer une seule valeur de réglage.</para><para>Différentes formes possèdent différents nombres de valeurs d’ajustement, différents types d’ajustements changent la géométrie d’une forme de différentes manières et différents types d’ajustements présentent des plages de valeurs valides.</para><para>Étant donné que chaque forme ajustable possède un ensemble différent d’ajustements, la meilleure façon de vérifier le comportement de l’ajustement d’une forme spécifique consiste à créer manuellement une instance de la forme, d’effectuer des ajustements avec l’enregistreur de macros activé, puis examinez l’enregistrement code.</para><para>Le tableau suivant récapitule les plages de valeurs d’ajustement pour différents types d’ajustements. Dans la plupart des cas, si vous spécifiez une valeur qui dépasse la plage de valeurs valides, la valeur valide la plus proche est fixée à l’ajustement.</para><list type="table"><item><description>Linéaire (horizontal ou vertical)</description><description>généralement la valeur 0,0 représente le bord gauche ou supérieur de la forme et la valeur 1,0 représente le bord droit ou inférieur de la forme. Les valeurs valides correspondent aux ajustements valides que vous pouvez effectuer manuellement à la forme. Par exemple, si vous pouvez uniquement extrayez manuellement une poignée d’ajustement moitié de la forme, la valeur maximale de l’ajustement correspondant sera 0,5. Pour les formes telles que les légendes, où les valeurs 0,0 et 1,0 représentent les limites du rectangle défini par le début et de fin de la ligne de légende, négative nombres et les nombres supérieurs à 1.0 sont des valeurs valides.</description></item><item><description>Circulaire</description><description>une valeur de 1.0 correspond à la largeur de la forme. La valeur maximale est 0,5, soit la moitié de la forme.</description></item><item><description>Angle</description><description>valeurs sont exprimées en degrés. Si vous spécifiez une valeur en dehors de la plage – 180 et 180, elle sera normalisée à l’intérieur de cette plage.</description></item></list><para /></remarks>
+    <summary>Contient une collection de valeurs d'ajustement pour la forme automatique ou l'objet WordArt spécifié.</summary>
+    <remarks><para>Chaque valeur d'ajustement représente l'un des réglages possibles d'une poignée d'ajustement. Certaines de ces poignées pouvant être ajustées de deux façons (à la fois horizontalement et verticalement, par exemple), une forme peut disposer d'un nombre de valeurs d'ajustement supérieur à celui des poignées d'ajustement. Une forme peut avoir jusqu'à huit ajustements.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" /> propriété pour renvoyer un <b></b> objet Adjustments. Utilisez <b></b>Adjustments (<paramref name="index" />) <paramref name="index" /> , où est le numéro d’index de la valeur d’ajustement, pour renvoyer une seule valeur d’ajustement.</para>
+      <para>Le nombre des valeurs d'ajustement varie en fonction des formes. Les types d'ajustements modifient la géométrie d'une forme de plusieurs façons et ils possèdent différentes plages de valeurs valides.</para>
+      <para>Dans la mesure où chaque forme ajustable dispose de différents ajustements, la meilleure manière de contrôler le comportement d'un ajustement d'une forme spécifique consiste à créer manuellement une occurrence de la forme, à effectuer les ajustements requis avec l'enregistreur de macros activé, puis à analyser le code enregistré.</para>
+      <para>Le tableau suivant répertorie les plages de valeurs valides pour différents types d'ajustements. En règle générale, lorsque vous spécifiez une valeur non comprise dans la plage des valeurs valides, la valeur valide la plus proche est affectée à l'ajustement.</para>
+      <list type="table">
+        <item>
+          <description>Linéaire (horizontal ou vertical)</description>
+          <description>En général, la valeur 0 représente le bord gauche ou supérieur de la forme et la valeur 1, le bord droit ou inférieur de la forme. Les valeurs valides correspondent aux réglages valides que vous pouvez effectuer manuellement sur la forme. Par exemple, si vous pouvez tirer uniquement une poignée de réglage manuellement à la moitié de la longueur de la forme, la valeur maximale pour l'ajustement correspondant sera de 0,5. Pour les formes comme les légendes, pour lesquelles les valeurs 0 et 1 représentent les limites du rectangle défini par les points de début et de fin de la ligne de légende, les nombres négatifs et les nombres supérieurs à 1 sont des valeurs valides.</description>
+        </item>
+        <item>
+          <description>Radial</description>
+          <description>Valeur 1,0 qui correspond à la largeur de la forme. La valeur maximale est 0,5, soit la moitié de la zone couverte par la forme.</description>
+        </item>
+        <item>
+          <description>Angle</description>
+          <description>Les valeurs sont exprimées en degrés. Si vous spécifiez une valeur en dehors de la plage (180 à 180), elle sera normalisée pour être comprise dans cette plage.</description>
+        </item>
+      </list>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,7 +64,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente le créateur de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente le créateur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,7 +92,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur indiquant le nombre d’éléments spécifié <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> collection.</summary>
+        <summary>Renvoie une valeur indiquant le nombre d’éléments dans la collection <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,11 +122,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Par exemple, si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh</para>
-          <para />
-        </remarks>
+        <remarks><para>Par exemple, si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d’informations sur cette propriété, consultez l’aide de référence du langage fournie avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -150,13 +157,11 @@
       </Parameters>
       <Docs>
         <param name="Index">Numéro d'index de l'ajustement.</param>
-        <summary>Cette propriété renvoie ou définit la valeur de réglage spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit la valeur d’ajustement spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour les ajustements linéaires, une valeur de 0.0 correspond généralement au bord gauche ou supérieur de la forme et une valeur de 1.0 généralement correspond au bord droit ou inférieur de la forme. Toutefois, les ajustements peuvent passer au-delà des limites de la forme pour certaines formes. Pour les ajustements radiales, une valeur de 1.0 correspond à la largeur de la forme. Pour les ajustements angulaires, la valeur de réglage est spécifiée en degrés. La propriété <b>Item</b> s’applique uniquement à des formes possédant des ajustements.</para>
-          <para>Formes automatiques et les objets WordArt ont jusqu'à huit ajustements.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour des ajustements linéaires, une valeur de réglage de 0,0 correspond généralement sur le bord gauche ou supérieur de la forme et une valeur de 1.0 correspond généralement sur le bord droit ou inférieur de la forme. Toutefois, les ajustements peuvent passer au-delà des limites de la forme pour certaines formes. Pour les ajustements radiales, une valeur de réglage de 1,0 correspond à la largeur de la forme. Pour les ajustements angulaires, la valeur de réglage est spécifiée en degrés. La propriété <b>Item</b> s'applique uniquement à des formes possédant des ajustements.</para>
+          <para>Les formes automatiques et les objets WordArt ont jusqu’à huit ajustements.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -182,7 +187,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un object qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> collection.</summary>
+        <summary>Renvoie un Object qui représente l’objet parent de la collection <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

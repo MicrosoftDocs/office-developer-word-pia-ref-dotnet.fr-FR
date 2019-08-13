@@ -1,13 +1,5 @@
 <Type Name="ApplicationEvents4_Event" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e8fc8679de3e808303fc2750b432e5243a2d864f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668316" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ApplicationEvents4_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5a8775d8e740f980588b7c678e2c9ffe63481ea2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144833" /></Metadata><TypeSignature Language="C#" Value="public interface ApplicationEvents4_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ApplicationEvents4_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface ApplicationEvents4_Event" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Événements de l’interface pour Word<see cref="T:Microsoft.Office.Interop.Excel.Application" /> objet des événements. Il s’agit d’une interface .NET créée lors du traitement d’une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Cette interface implémente tous les événements des interfaces antérieures et tous les nouveaux événements supplémentaires. Utilisez cette interface uniquement lorsque l’événement que vous souhaitez utiliser partageant le même nom qu’une méthode de l’objet COM ; Dans ce cas, effectuer un cast à cette interface pour se connecter à l’événement, puis effectuer un cast à l’interface principale pour appeler la méthode. Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM.</summary>
+    <summary>Interface d’événements pour<see cref="T:Microsoft.Office.Interop.Excel.Application" /> les événements d’objet Word. Il s’agit d’une interface .NET créée lors du traitement d’une coclasse COM requise par le code managé pour l’interopérabilité avec l’objet COM correspondant. Cette interface implémente tous les événements des interfaces antérieures et tous les nouveaux événements supplémentaires. Utilisez cette interface uniquement lorsque l'événement que vous voulez utiliser partage le même nom qu'une méthode de l'objet COM ; dans ce cas, effectuez un transtypage vers cette interface pour vous connecter à l'événement et effectuez un transtypage vers l'interface principale pour appeler la méthode. Sinon, utilisez l'interface .NET qui est dérivée de la coclasse COM pour accéder aux méthodes, propriétés et événements de l'objet COM.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -201,10 +193,8 @@
       </ReturnValue>
       <Docs>
         <summary>Intervient lorsqu'un utilisateur clique sur le bouton Propriétés de l'affranchissement électronique (boîte de dialogue Enveloppes et étiquettes) ou sur le bouton de barre d'outils Imprimer un affranchissement électronique.</summary>
-        <remarks>
-          <para>Cet événement permet à une application de logiciels tiers d’intercepter et d’afficher leur boîte de dialogue Propriétés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cela permet à l'application logicielle d'un autre développeur d'interférer et d'afficher la boîte de dialogue de ses propriétés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeAfterMerge">
@@ -318,10 +308,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsqu'un utilisateur effectue une vérification d'adresses en cliquant sur Valider dans la boîte de dialogue Destinataires du publipostage .</summary>
-        <remarks>
-          <para>Si vous n’avez pas installé sur votre ordinateur logiciel de vérification d’adresses, l’événement <b>MailMergeDataSourceValidate</b> permet vous permet de créer des routines de filtrage simples, telles que la boucle des enregistrements pour vérifier les codes postaux et supprimer ceux qui sont non (u.s.)</para>
-          <para />
-        </remarks>
+        <remarks><para>Si le logiciel de vérification des adresses n’est pas installé sur votre ordinateur, l’événement <b>MailMergeDataSourceValidate</b> vous permet de créer des routines de filtrage simples, telles que la boucle dans les enregistrements pour vérifier les codes postaux et supprimer ceux qui sont non U. S.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeDataSourceValidate2">
@@ -339,14 +327,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_MailMergeDataSourceValidate2EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-		Survient lorsqu'un utilisateur valide les destinataires du publipostage en cliquant sur le bouton de lien Valider les adresses dans la boîte de dialogue Destinataires du publipostage.</summary>
-        <remarks>
-          <para>Si vous n’avez pas le logiciel de vérification d’adresse installé sur votre ordinateur, l’événement <b>MailMergeDataSourceValidate2</b> permet vous permet de créer des routines de filtrage simples, telles que la boucle des enregistrements pour vérifier les codes postaux et supprimer ceux qui sont américain</para>
+        <summary>Survient lorsqu'un utilisateur valide les destinataires du publipostage en cliquant sur le bouton de lien Valider les adresses dans la boîte de dialogue Destinataires du publipostage.</summary>
+        <remarks><para>Si le logiciel de vérification d'adresses n'est pas installé sur votre ordinateur, l'événement <b>MailMergeDataSourceValidate2</b> vous permet de créer de simples routines de filtrage, tels que la boucle entre les enregistrements pour vérifier les codes postaux et la suppression de ceux qui ne sont pas américains.</para>
           <para>
-            <b>Remarque</b>: vous ne pouvez pas déclencher cet événement à partir d’un Microsoft projet Visual Basic pour Applications (VBA).  Cet événement ne fonctionne correctement que dans les compléments gérés et les applications externes. Pour les compléments COM, utilisez la <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.MailMergeDataSourceValidate" /> événement.</para>
-          <para />
-        </remarks>
+            <b>Remarque</b>: vous ne pouvez pas déclencher cet événement à partir d’un projet Microsoft Visual Basic pour applications (VBA).  Cet événement ne fonctionne correctement que dans les compléments gérés et les applications externes. Pour les compléments COM, utilisez l' <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.MailMergeDataSourceValidate" /> événement.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeWizardSendToCustom">
@@ -365,10 +350,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsque l’utilisateur clique sur le bouton personnalisé à l’étape six de l’Assistant Fusion et publipostage.</summary>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.MailMerge.ShowSendToCustom" /> propriété pour créer un bouton personnalisé à la sixième étape de l’Assistant Fusion et publipostage.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.MailMerge.ShowSendToCustom" /> propriété pour créer un bouton personnalisé à la sixième étape de l’Assistant Fusion et publipostage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeWizardStateChange">
@@ -386,7 +369,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_MailMergeWizardStateChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsqu'un utilisateur passe d'une étape donnée à une autre étape dans l'Assistant Fusion et publipostage.</summary>
+        <summary>Se produit lorsqu'un utilisateur passe d'une étape spécifiée de l'Assistant Fusion et publipostage à une autre.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -519,7 +502,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowSizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsqu’une fenêtre en mode protégé est déplacée ou redimensionnée.</summary>
+        <summary>Se produit lorsqu’une fenêtre mode protégé est déplacée ou redimensionnée.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

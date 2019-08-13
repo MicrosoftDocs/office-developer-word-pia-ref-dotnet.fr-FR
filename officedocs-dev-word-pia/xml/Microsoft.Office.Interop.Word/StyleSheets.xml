@@ -1,13 +1,5 @@
 <Type Name="StyleSheets" FullName="Microsoft.Office.Interop.Word.StyleSheets">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="415546f5018b33b6f674dcbe8715760966a62c30" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667554" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface StyleSheets : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f5e7d2970cc046f6ff039df36db9be51e896453e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146058" /></Metadata><TypeSignature Language="C#" Value="public interface StyleSheets : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StyleSheets implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.StyleSheets" />
   <TypeSignature Language="VB.NET" Value="Public Interface StyleSheets&#xA;Implements IEnumerable" />
@@ -30,10 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.StyleSheet" /> objets représentant les en cascade attachés à un document de feuilles de style.</summary>
-    <remarks>
-      <para>La collection <b>StyleSheets</b> comprend toutes les feuilles de style affichés dans la boîte de dialogue feuilles de Style CSS liée, accessible à l’aide de la commande modèles et compléments (menu Outils).</para> Utilisation de 
-      <para>les <see cref="P:Microsoft.Office.Interop.Word._Document.StyleSheets" /> propriété pour renvoyer la collection de <b>feuilles de style</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Word.StyleSheets.Add(System.String,Microsoft.Office.Interop.Word.WdStyleSheetLinkType,System.String,Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" /> pour ajouter une feuille de style à la collection <b>StyleSheets</b> .</para><para /></remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.StyleSheet" /> objets qui représente les feuilles de style en cascade attachées à un document.</summary>
+    <remarks><para>La <b></b> collection StyleSheets comprend toutes les feuilles de style en cascade affichées dans la boîte de dialogue feuilles de style CSS liées, accessible à l’aide de la commande modèles et compléments (menu Outils).</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.StyleSheets" /> propriété pour renvoyer la collection de <b>feuilles de style</b> . Utilisez la <see cref="M:Microsoft.Office.Interop.Word.StyleSheets.Add(System.String,Microsoft.Office.Interop.Word.WdStyleSheetLinkType,System.String,Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" /> méthode pour ajouter une feuille de style à <b></b> la collection StyleSheets.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,13 +54,11 @@
         <Parameter Name="Precedence" Type="Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b>obligatoire. Chemin et nom de fichier de la feuille de style en cascade.</param>
-        <param name="LinkType">Requis <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetLinkType" />. Indique si la feuille de style doit être ajoutée en tant que lien ou importée dans le document Web. Peut être une des constantes suivantes : <b>wdStyleSheetLinkTypeImported </b><b>wdStyleSheetLinkTypeLinked Valeur</b><paramref name="default" /></param>
-        <param name="Title">
-          <b>String</b>obligatoire. Nom de la feuille de style.</param>
-        <param name="Precedence">Requis <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />. Indique le niveau d’importance par rapport aux autres feuilles de style en cascade attachées au document Web. Peut être une des constantes suivantes :<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest valeur</b><paramref name="default" /><b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.StyleSheet" /> objet qui représente une nouvelle feuille de style ajoutée à un document Web.</summary>
+        <param name="FileName">Argument de type <b>String</b> obligatoire. Chemin et nom de fichier de la feuille de style en cascade.</param>
+        <param name="LinkType">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetLinkType" />. Indique si la feuille de style doit être ajoutée en tant que lien ou importée dans le document Web. Il peut s’agir de l’une des constantes suivantes: <b>wdStyleSheetLinkTypeImported </b> <b>wdStyleSheetLinkTypeLinked</b><paramref name="default" /></param>
+        <param name="Title">Argument de type <b>String</b> obligatoire. Nom de la feuille de style.</param>
+        <param name="Precedence">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />. Indique le niveau d’importance comparé aux autres feuilles de style en cascade attachées au document Web. Il peut s’agir de l’une des constantes suivantes:<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest</b><paramref name="default" /><b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.StyleSheet" /> Object qui représente une nouvelle feuille de style ajoutée à un document Web.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,11 +144,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -219,8 +207,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</param>
+        <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

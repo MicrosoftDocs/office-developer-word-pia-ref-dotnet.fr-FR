@@ -1,13 +1,5 @@
 <Type Name="SeriesLines" FullName="Microsoft.Office.Interop.Word.SeriesLines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5e59e7a5c31aee69e69e9ddc5fa491ec4a6cf6c6" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667669" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SeriesLines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="55cf8420da87920af7d7dc437b2d926031899488" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147654" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesLines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesLines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SeriesLines" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesLines" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Représente les lignes de séries dans un groupe de graphiques.</summary>
-    <remarks>
-      <para>Les lignes de séries connectent les valeurs de données de chaque série.  Secteurs de secteur ou de barre de graphiques en secteurs 2D uniquement barres empilées, 2D en histogrammes empilés, peut avoir les lignes de séries. Cet objet n’est pas une collection. Il n’existe aucun objet qui représente une seule ligne de série ; les lignes de série est activées pour tous les points d’un groupe de graphiques sont soit ou que vous les avez désactivés.</para>
-      <para>Si le <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasSeriesLines" /> propriété a la <b>valeur False</b>, la plupart des propriétés de l’objet <b>SeriesLines</b> sont désactivées.</para>
-      <para />
-    </remarks>
+    <remarks><para>Les lignes de série connectent les valeurs de données de chaque série.  Seules les barres empilées 2D, les histogrammes empilés 2D, les graphiques en secteurs de secteur ou la barre de secteurs peuvent avoir des lignes de série. Il n'existe pas d'objet représentant une seule ligne de projection. Il n’existe aucun objet qui représente une seule ligne de série; les lignes de série sont soit activées pour tous les points d’un groupe de graphiques, soit désactivées.</para>
+      <para>Si la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasSeriesLines" /> propriété a la <b>valeur false</b>, la plupart des propriétés de l’objet <b>SeriesLines</b> sont désactivées.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,9 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Application</b> (voir ci-dessus)</value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Application</b> (voir ci-dessus)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +75,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objet qui représente la bordure de l’objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> Object qui représente la bordure de l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,14 +103,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. Valeur <b>Integer</b> en lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, le <see cref="P:Microsoft.Office.Interop.Word.SeriesLines.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.SeriesLines.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -178,9 +161,7 @@
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet.
 
 En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,9 +189,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie une valeur de <b>type String</b> qui représente le nom de l'objet.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,9 +217,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule <b>Object</b>.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

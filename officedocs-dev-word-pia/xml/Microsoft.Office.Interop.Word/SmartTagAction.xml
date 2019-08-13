@@ -1,13 +1,5 @@
 <Type Name="SmartTagAction" FullName="Microsoft.Office.Interop.Word.SmartTagAction">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e5c4bc9e1f8c1df339fe6ea64518ce507e0f8afe" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667429" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ec49e7fe750928cbb025ed46930bedb2516ad95e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143993" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagAction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagAction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagAction" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagAction" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Représente une seule action pour une balise active.</summary>
-    <remarks>
-      <para>Actions des balises actives sont des processus qui sont programmés dans des balises actives qui permettent aux utilisateurs d’effectuer certaines fonctions liées à la balise active. Par exemple, une seule action pour une balise active peut avoir accès à un site Web, alors une autre action insère des informations de contact dans Microsoft Outlook, qu’un autre affiche une carte et des itinéraires.</para>
-      <para>Actions des balises actives sont également liées aux actions intégrées dans les documents dynamiques et aux contrôles dans le volet Office Actions de Document. Par exemple, vous pouvez avoir un contrôle textbox affiché dans le volet de tâches pour un document dynamique qui effectue une action lorsqu’un utilisateur modifie le contenu de la zone de texte.</para>
+    <remarks><para>Les actions de balise active sont des processus programmés dans des balises actives qui permettent aux utilisateurs d'effectuer certaines fonctions liées à la balise active. Par exemple, une action pour une balise active peut consister à accéder à un site Web, tandis qu’une autre action insère des informations de contact dans Microsoft Outlook, tandis qu’une autre affiche une carte et des instructions routières.</para>
+      <para>Les actions de balise active sont également liées aux actions intégrées dans les documents dynamiques et aux contrôles dans le volet Office actions de document. Par exemple, vous pouvez avoir un contrôle TextBox affiché dans le volet Office pour un document dynamique qui effectue une action lorsqu’un utilisateur modifie le contenu de la zone de texte.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <b>SmartTagAction</b>, et <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objets liés dans la mesure où chaque élément reconnu par un composant de balise active est un <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objet. Par exemple, « city » dans le composant de balise active adresse est un objet <b>SmartTagType</b> spécifique. Le type de balise active ville possède des objets <b>SmartTagRecognizer</b> (la partie du composant de balise active qui reconnaît les balises actives du type « city » dans les documents) et des objets <b>SmartTagAction</b> (la partie du composant de balise active qui fournit les actions associés au type de balise active spécifique, qui peut inclure la recherche d’une ville reconnue dans Microsoft MapPoint ou MSN). En réalité, le module de reconnaissance est l’étiquetage, le Gestionnaire d’action fournit des fonctionnalités de l’utilisateur final et ce qui relie les deux est le type de balise active lequel ils travaillent.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.SmartTagActions.Item(System.Object@)" /> méthode pour renvoyer un objet <b>SmartTagAction</b> spécifique d’une <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> collection.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.SmartTagAction.Type" /> propriété pour déterminer le type de contrôle associé à un objet <b>SmartTagAction</b> .</para>
-      <para />
-    </remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <b>SmartTagAction</b>et <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objets sont liés en ce que chaque élément reconnu par un composant de balise active <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> est un objet. Par exemple, l'élément « ville » dans le composant de balise active Adresse est un objet <b>SmartTagType</b> spécifique. Le type de balise active « ville » contient des objets <b>SmartTagRecognizer</b> associés (la partie du composant de balise active qui reconnaît les balises actives du type « ville » dans les documents) et des objets <b>SmartTagAction</b> (la partie du composant de balise active qui fournit les actions associées au type de balise active spécifique, qui peut inclure la recherche d'une ville reconnue dans Microsoft MapPoint ou MSN). En d’autres termes, le module de reconnaissance effectue l’étiquetage, le gestionnaire d’actions fournit les fonctionnalités de l’utilisateur final et ce qui les lie est le type de balise active sur laquelle ils travaillent.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.SmartTagActions.Item(System.Object@)" /> méthode pour renvoyer un objet <b>SmartTagAction</b> spécifique à partir <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> d’une collection.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.SmartTagAction.Type" /> propriété pour déterminer le type de contrôle associé à un objet <b>SmartTagAction</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveXControl">
@@ -64,12 +54,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>objet</b> qui représente un contrôle ActiveX affiché dans le volet Office Actions de Document.</summary>
+        <summary>Renvoie un <b>Object</b> qui représente un contrôle ActiveX affiché dans le volet Office actions de document.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur les documents dynamiques, consultez le Kit de développement sur le site Web Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d'informations sur les documents dynamiques, consultez le Kit de développement (SDK) Smart Document sur le site MSDN de Microsoft.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -98,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,13 +123,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> qui indique si une case à cocher dans un document dynamique est sélectionnée.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> qui indique si une case à cocher dans un document actif est activée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si la case à cocher est activée et <b>False</b> si elle est désactivée.</para>
-          <para>Pour plus d’informations sur les documents dynamiques, consultez le Kit de développement sur le site Web Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si la case à cocher activée est activée, et la <b>valeur false</b> si elle est désactivée.</para>
+          <para>Pour plus d'informations sur les documents dynamiques, consultez le Kit de développement (SDK) Smart Document sur le site MSDN de Microsoft.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -172,11 +158,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -239,13 +223,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> qui indique si le contrôle de fragment de document spécifié est développé ou réduit dans le volet Office Actions de Document.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> qui indique si le contrôle de fragment de document spécifié est développé ou réduit dans le volet Office actions de document.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> pour indiquer que le contrôle est développé et <b>False</b> pour indiquer que le contrôle est réduit.</para>
-          <para>Pour plus d’informations sur les documents dynamiques, consultez le Kit de développement sur le site Web Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> pour indiquer que le contrôle est développé et la <b>valeur false</b> pour indiquer que le contrôle est réduit.</para>
+          <para>Pour plus d'informations sur les documents dynamiques, consultez le Kit de développement (SDK) Smart Document sur le site MSDN de Microsoft.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandHelp">
@@ -280,13 +262,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> qui indique si le contrôle de texte d’aide du document dynamique spécifié est développé ou réduit dans le volet Office Actions de Document.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> qui indique si le contrôle de texte d’aide du document dynamique spécifié est développé ou réduit dans le volet Office actions du document.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> pour indiquer que le contrôle est développé et <b>False</b> pour indiquer que le contrôle est réduit.</para>
-          <para>Pour plus d’informations sur les documents dynamiques, consultez le Kit de développement logiciel Smart Document sur le site Web Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> pour indiquer que le contrôle est développé et la <b>valeur false</b> pour indiquer que le contrôle est réduit.</para>
+          <para>Pour plus d'informations sur les documents dynamiques, consultez le Kit de développement (SDK) Smart Document sur le site MSDN de Microsoft.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListSelection">
@@ -323,10 +303,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit un <b>entier</b> qui représente le numéro d’index de l’élément sélectionné dans un contrôle de zone de liste de document dynamique.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur les documents dynamiques, consultez le Kit de développement sur le site Web Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d'informations sur les documents dynamiques, consultez le Kit de développement (SDK) Smart Document sur le site MSDN de Microsoft.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -417,7 +395,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>type Boolean</b> qui indique si un contrôle de document dynamique est actuellement affiché dans le volet Office Actions de Document.</summary>
+        <summary>Renvoie une <b>valeur de type Boolean</b> qui indique si un contrôle de document dynamique est actuellement affiché ou non dans le volet Office actions de document.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -454,12 +432,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>entier</b> qui représente le numéro d’index de l’élément sélectionné dans un groupe de contrôles de bouton de case d’option dans un document dynamique.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>entier</b> qui représente le numéro d’index de l’élément sélectionné dans un groupe de contrôles de case d’option dans un document dynamique.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur les documents dynamiques, consultez le Kit de développement sur le site Web Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d'informations sur les documents dynamiques, consultez le Kit de développement (SDK) Smart Document sur le site MSDN de Microsoft.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextboxText">
@@ -496,10 +472,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une <b>chaîne</b> qui représente le texte dans un contrôle de zone de texte de document dynamique.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur les documents dynamiques, consultez le Kit de développement sur le site Web Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d'informations sur les documents dynamiques, consultez le Kit de développement (SDK) Smart Document sur le site MSDN de Microsoft.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -528,11 +502,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSmartTagControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" /> qui représente le type de contrôle de Document dynamique affiché dans le volet Office Actions de Document.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" /> qui représente le type de contrôle de document dynamique affiché dans le volet Office actions de document.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" /> peut être une des constantes suivantes :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" />Il peut s’agir de l’une des constantes suivantes: </para>
           <para>
             <b>wdControlActiveX</b>
           </para>
@@ -581,8 +554,7 @@
           <para>
             <b>wdControlTextbox</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Gridlines" FullName="Microsoft.Office.Interop.Word.Gridlines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="46e2954651cbcd79fec45fc109c9f6414cd798d8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667289" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Gridlines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dfaa6be729fee8db0d7f8dc03acea0656715c6f5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146762" /></Metadata><TypeSignature Language="C#" Value="public interface Gridlines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Gridlines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Gridlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Gridlines" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Représente un quadrillage principal ou secondaire sur un axe de graphique.</summary>
-    <remarks>
-      <para>Le quadrillage prolonge la marques de graduation sur un axe de graphique pour le rendre plus facile à voir les valeurs associées aux marques de données. Cet objet n’est pas une collection. Il n’existe aucun objet qui représente un seul quadrillage. vous avez activé le quadrillage ou tous les désactivés.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorGridlines" /> propriété permet de renvoyer la <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> object qui représente le quadrillage principal de l’axe. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Axis.MinorGridlines" /> propriété permet de renvoyer la <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> object qui représente le quadrillage secondaire. Il est possible de revenir à la fois de quadrillage en même temps.</para>
-      <para />
-    </remarks>
+    <remarks><para>Le quadrillage prolonge les marques de graduation d'un axe de graphique afin de faciliter la lecture des valeurs associées aux indicateurs de données. Cet objet n'est pas une collection. Il n'existe aucun objet représentant un seul quadrillage. Le quadrillage est soit activé soit désactivé.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorGridlines" /> propriété pour renvoyer l' <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> objet qui représente le quadrillage principal de l’axe. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Axis.MinorGridlines" /> propriété pour renvoyer l' <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> objet qui représente le quadrillage secondaire. Il est possible de renvoyer ces deux types de quadrillage simultanément.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,10 +75,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objet qui représente la bordure de l’objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> Object qui représente la bordure de l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,13 +104,9 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. En lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, le <see cref="P:Microsoft.Office.Interop.Word.Gridlines.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.Gridlines.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -149,9 +131,7 @@
       <Parameters />
       <Docs>
         <summary>Supprime l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,9 +159,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +187,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le nom de l'objet.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,9 +215,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,9 +241,7 @@
       <Parameters />
       <Docs>
         <summary>Sélectionne l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

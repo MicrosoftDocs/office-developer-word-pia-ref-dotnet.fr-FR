@@ -1,13 +1,5 @@
 <Type Name="Revisions" FullName="Microsoft.Office.Interop.Word.Revisions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="05758c729b81dbb4be141a7989f2b0e4ff125db8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668127" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Revisions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dcf957961a05e06b776741ff11ebc85cce0581a2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147661" /></Metadata><TypeSignature Language="C#" Value="public interface Revisions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Revisions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Revisions" />
   <TypeSignature Language="VB.NET" Value="Public Interface Revisions&#xA;Implements IEnumerable" />
@@ -30,10 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Revision" /> les objets qui représentent les modifications marqués avec marques de révision dans une plage ou un document.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>révisions</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Document" /> ou <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet pour renvoyer la collection <b>Revisions</b> .</para> Méthode 
-      <para><b>Ajouter</b> n’est pas disponible pour la collection <b>Revisions</b> . Les objets <b>Revision</b> sont ajoutés lorsque le suivi des modifications est activé. Définir le <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> propriété sur <b>True</b> pour effectuer le suivi des modifications apportées au texte du document.</para><para>Utilisation <b>des révisions</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Revision</b> . Le numéro d’index représente la position de la révision dans la plage ou du document.</para><para>La <see cref="P:Microsoft.Office.Interop.Word.Revisions.Count" /> propriété pour cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d’autres articles utilisez la collection avec l’objet <b>Range</b> .</para><para /></remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Revision" /> objets qui représentent les modifications signalées par des marques de révision dans une plage ou un document.</summary>
+    <remarks><para>Utilisez la <b></b> propriété revisions d’un <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> ou pour renvoyer la <b></b> collection Revisions.</para>
+      <para>La méthode <b>Add</b> n'est pas disponible pour la collection <b>Revisions</b>. Les objets <b>Revision</b> sont ajoutés lorsque le suivi des modifications est activé. Affectez <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> la <b>valeur true</b> à la propriété pour effectuer le suivi des révisions apportées au texte du document.</para>
+      <para>Utilisez <b></b>des révisions<paramref name="index" />(), <paramref name="index" /> où est le numéro d’index, pour renvoyer un seul objet Revision. <b></b> Le numéro d'index représente la position de la révision dans la plage ou du document.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Revisions.Count" /> propriété de cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d'autres articles utilisent la collection avec l'objet <b>Range</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AcceptAll">
@@ -57,11 +51,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Accepte toutes les modifications comprises dans une plage ou un document. Les marques de révision sont supprimés et les modifications sont intégrées dans le document.</summary>
-        <remarks>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word._Document.AcceptAllRevisions" /> méthode accepte toutes les révisions dans un document.</para>
-          <para />
-        </remarks>
+        <summary>Accepte toutes les modifications d’un document ou d’une plage. Les marques de révision sont supprimées et les modifications sont incorporées dans le document.</summary>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word._Document.AcceptAllRevisions" /> méthode pour accepter toutes les révisions dans un document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -87,12 +79,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Visual Basic <b>CreateObject</b> et <b>GetObject</b> fonctions vous donnent accès à un objet OLE Automation à partir d’un Visual Basic projet VBA.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les fonctions <b>CreateObject</b> et <b>GetObject</b> de Visual Basic vous permettent d'accéder à un objet OLE Automation à partir d'un projet Visual Basic pour Applications.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -148,11 +138,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -213,7 +201,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -268,11 +256,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Rejette toutes les modifications comprises dans une plage. Les marques de révision sont supprimés, en laissant le texte d’origine intacts.</summary>
-        <remarks>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word._Document.RejectAllRevisions" /> méthode pour rejeter toutes les révisions dans un document. Modifications de mise en forme ne peut pas être rejetées.</para>
-          <para />
-        </remarks>
+        <summary>Rejette toutes les modifications d’une plage. Les marques de révision sont supprimées et le texte d'origine reste intact.</summary>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word._Document.RejectAllRevisions" /> méthode pour rejeter toutes les révisions dans un document. Les modifications de mise en forme ne peuvent pas être rejetées.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

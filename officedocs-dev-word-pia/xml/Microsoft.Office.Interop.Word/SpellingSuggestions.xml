@@ -1,13 +1,5 @@
 <Type Name="SpellingSuggestions" FullName="Microsoft.Office.Interop.Word.SpellingSuggestions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c30fd4820009953509a43ffbb37abf5462125885" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668476" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SpellingSuggestions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4cee29ad3d8de668efc42731bf2fa1ab75a7b415" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146093" /></Metadata><TypeSignature Language="C#" Value="public interface SpellingSuggestions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SpellingSuggestions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />
   <TypeSignature Language="VB.NET" Value="Public Interface SpellingSuggestions&#xA;Implements IEnumerable" />
@@ -30,8 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestion" /> objets qui représentent les suggestions proposées pour le mot spécifié ou pour le premier mot de la plage spécifiée.</summary>
-    <remarks>Méthode <para>utiliser le <b>GetSpellingSuggestions</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Application" /> ou <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet pour renvoyer la collection <b>SpellingSuggestions</b> . La méthode <b>SpellingSuggestions</b> , lorsqu’elle est appliquée à l’objet <b>Application</b> , vous devez spécifier le mot à vérifier. Lorsque <b>la méthode</b> est appliquée à une plage, le premier mot de la plage est vérifié.</para><para>Vous ne pouvez pas ajouter suggestions pour ou des suggestions de supprimer de la collection de suggestions d’orthographe. Les suggestions d’orthographe sont dérivées de fichiers du dictionnaire principal et personnalisées.</para><para /></remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestion" /> objets qui représentent toutes les suggestions pour le mot spécifié ou pour le premier mot de la plage spécifiée.</summary>
+    <remarks><para>Utilisez la méthode <b>GetSpellingSuggestions</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> ou pour renvoyer la collection <b>SpellingSuggestions</b> . La méthode <b>SpellingSuggestions</b>, lorsqu'elle est appliquée à l'objet <b>Application</b>, vous devez spécifier le mot à vérifier. Lorsque la méthode <b>GetSpellingSuggestions</b> est appliquée à une plage, le premier mot de la plage est vérifié.</para>
+      <para>Vous ne pouvez ni ajouter ni supprimer des suggestions dans la collection des suggestions orthographiques. Ces suggestions sont extraites des fichiers des dictionnaires personnels et principal.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,11 +109,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -180,7 +172,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -239,9 +231,8 @@
       <Docs>
         <summary>Renvoie le type d'erreur de l'orthographe.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSpellingErrorType" />peut être une de ces constantes <b>WdSpellingErrorType</b> .</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSpellingErrorType" />Il peut s’agir de l’une des constantes <b>WdSpellingErrorType</b> suivantes.</para>
           <para>
             <b>wdSpellingCapitalization</b>
           </para>
@@ -251,9 +242,8 @@
           <para>
             <b>wdSpellingNotInDictionary</b>
           </para>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word._Application.GetSpellingSuggestions(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour retourner une collection de mots suggérés en remplacement. Si un mot est mal orthographié, la <see cref="M:Microsoft.Office.Interop.Word._Application.CheckSpelling(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode renvoie <b>la valeur True</b>.</para>
-          <para />
-        </remarks>
+          <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word._Application.GetSpellingSuggestions(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour renvoyer une collection de mots suggérés en remplacement de l’orthographe. Si un mot est mal orthographié, la méthode <see cref="M:Microsoft.Office.Interop.Word._Application.CheckSpelling(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> renvoie la <b>valeur true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

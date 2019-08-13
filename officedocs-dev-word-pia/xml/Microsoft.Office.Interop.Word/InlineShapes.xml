@@ -1,13 +1,5 @@
 <Type Name="InlineShapes" FullName="Microsoft.Office.Interop.Word.InlineShapes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c25c65b0fb5c59926539a5d393bfd72559673469" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668447" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface InlineShapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="37073b7d0cfd73d163e623520cf1f2b791991061" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147941" /></Metadata><TypeSignature Language="C#" Value="public interface InlineShapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InlineShapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.InlineShapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface InlineShapes&#xA;Implements IEnumerable" />
@@ -30,10 +22,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objets qui représentent toutes les formes insérées dans un document, range ou selection.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>InlineShapes</b> d’une <see cref="T:Microsoft.Office.Interop.Word._Document" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objet à renvoyer un <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection.</para> Utilisation de 
-      <para>les <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" /> méthode pour créer une nouvelle image en tant que forme insérée. Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" /> et <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthodes pour ajouter des images ou les objets OLE et les lier à un fichier source. Utiliser le <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" /> pour ajouter un contrôle ActiveX.</para><para><see cref="T:Microsoft.Office.Interop.Word.Shape" /> objets sont ancrés à une plage de texte mais sont flottants et peuvent être placés n’importe où dans la page. Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> méthode et la <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> méthode pour convertir des formes d’un type à l’autre. Vous pouvez convertir uniquement les objets OLE, les images et les contrôles ActiveX en formes insérées.</para><para>La <see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" /> propriété pour cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d’autres articles utilisez la collection avec le <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet.</para><para>Lorsque vous ouvrez un document créé dans une version antérieure de Microsoft Word, les images sont converties en formes insérées.</para><para /></remarks>
+    <summary>Collection d’objets <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> qui représente toutes les formes insérées d’un document, d’une plage ou d’une sélection.</summary>
+    <remarks><para>Utilisez la propriété <b>InlineShapes</b> d’un <see cref="T:Microsoft.Office.Interop.Word._Document" />objet <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Selection" /> pour renvoyer une <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" /> méthode pour créer une nouvelle image en tant que forme insérée. Vous pouvez utiliser les <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" /> méthodes <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> et pour ajouter des images ou des objets OLE et les lier à un fichier source. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" /> méthode pour ajouter un contrôle ActiveX.</para>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.Word.Shape" />les objets sont ancrés à une plage de texte mais sont flottants et peuvent être placés n’importe où sur la page. Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> méthode et la <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> méthode pour convertir des formes d’un type à l’autre. Seuls les objets OLE, les images et les contrôles ActiveX peuvent être convertis en formes insérées.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" /> propriété de cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments d’autres articles, utilisez la collection <see cref="T:Microsoft.Office.Interop.Word.Range" /> avec l’objet.</para>
+      <para>Lorsque vous ouvrez un document créé dans une version antérieure de Microsoft Word, les images sont converties en formes insérées.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddChart">
@@ -64,7 +60,7 @@
       <Docs>
         <param name="Type">To be added.</param>
         <param name="Range">To be added.</param>
-        <summary>Cet objet, ce membre ou cette énumération est déconseillé et n'est pas destiné à être utilisé dans votre code.</summary>
+        <summary>Cet objet, ce membre ou cette énumération est déconseillé et n’est pas destiné à être utilisé dans votre code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,11 +90,11 @@
         <Parameter Name="NewLayout" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Style">Le style du graphique.</param>
+        <param name="Style">Style du graphique.</param>
         <param name="Type">Type du graphique</param>
-        <param name="Range">Plage où le graphique sera placé dans le texte. Le graphique remplace la plage, sauf si la plage est réduite. Si cet argument est omis, le graphique est automatiquement placé.</param>
-        <param name="NewLayout">Si <paramref name="NewLayout" /> est true, le graphique est inséré en utilisant les nouvelles règles de mise en forme dynamiques (titre est activée, et légende est sur uniquement s’il y a plusieurs séries).</param>
-        <summary>Ajoute un graphique dans le document. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object qui représente le graphique et l’ajoute à la collection spécifiée.</summary>
+        <param name="Range">Plage dans laquelle le graphique est placé dans le texte. Le graphique remplace la plage, sauf si la plage est réduite. Si vous ne spécifiez pas cet argument, le graphique est placé automatiquement.</param>
+        <param name="NewLayout">Si <paramref name="NewLayout" /> la valeur est true, le graphique est inséré en utilisant les nouvelles règles de mise en forme dynamique (le titre est activé et légende est activé uniquement s’il y a plusieurs séries).</param>
+        <summary>Ajoute un graphique au document. Renvoie un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> Object qui représente le graphique et l’ajoute à la collection spécifiée.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,15 +122,12 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b>obligatoire. Nom de fichier de l'image à utiliser pour la ligne horizontale.</param>
-        <param name="Range">Facultatif <b>Object</b>. Plage au-dessus de laquelle Microsoft Word place la ligne horizontale. Si cet argument est omis, Word place la ligne horizontale au-dessus de la sélection actuelle.</param>
+        <param name="FileName">Argument de type <b>String</b> obligatoire. Nom de fichier de l'image à utiliser pour la ligne horizontale.</param>
+        <param name="Range"><b>Objet</b>facultatif. Plage au-dessus de laquelle Microsoft Word place la ligne horizontale. Si vous ne spécifiez pas cet argument, Word place la ligne horizontale au-dessus de la sélection active.</param>
         <summary>Ajoute une ligne horizontale créée à partir d'un fichier image au document actif.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Pour ajouter une ligne horizontale qui n’est pas basée sur un fichier image existant, utilisez la <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour ajouter une ligne horizontale qui n’est pas basée sur un fichier image existant, <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" /> utilisez la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddHorizontalLineStandard">
@@ -159,13 +152,11 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Facultatif <b>Object</b>. Plage au-dessus de laquelle Microsoft Word place la ligne horizontale. Si cet argument est omis, Word place la ligne horizontale au-dessus de la sélection actuelle.</param>
+        <param name="Range"><b>Objet</b>facultatif. Plage au-dessus de laquelle Microsoft Word place la ligne horizontale. Si vous ne spécifiez pas cet argument, Word place la ligne horizontale au-dessus de la sélection active.</param>
         <summary>Ajoute une ligne horizontale au document actif.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Pour ajouter une ligne horizontale basée sur un fichier image existant, utilisez la <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour ajouter une ligne horizontale basée sur un fichier image existant, utilisez la <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" /> méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOLEControl">
@@ -191,13 +182,13 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ClassType">Facultatif <b>Object</b>. Identificateur programmatique du contrôle ActiveX à créer.</param>
-        <param name="Range">Facultatif <b>Object</b>. Plage dans laquelle sera placé le contrôle ActiveX dans le texte. Le contrôle ActiveX remplace cette plage, si cette dernière n'est pas réduite. Si vous ne spécifiez pas cet argument, le contrôle ActiveX est placé automatiquement.</param>
+        <param name="ClassType"><b>Objet</b>facultatif. Identificateur programmatique du contrôle ActiveX à créer.</param>
+        <param name="Range"><b>Objet</b>facultatif. Plage dans laquelle sera placé le contrôle ActiveX dans le texte. Le contrôle ActiveX remplace cette plage, si cette dernière n'est pas réduite. Si vous ne spécifiez pas cet argument, le contrôle ActiveX est placé automatiquement.</param>
         <summary>Crée un contrôle ActiveX (anciennement contrôle OLE).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cette méthode renvoie le <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object qui représente le nouveau contrôle ActiveX.</para> Contrôles ActiveX de 
-          <para>sont représentés sous la forme <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objets ou les objets <b>InlineShape</b> dans Microsoft Word. Pour modifier les propriétés d’un contrôle ActiveX, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" /> propriété de la <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> objet pour la forme spécifiée ou d’une forme insérée.</para><para /></remarks>
+        <remarks><para>Cette méthode renvoie l' <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objet qui représente le nouveau contrôle ActiveX.</para>
+          <para>Les contrôles ActiveX sont représentés sous <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> la forme d’objets ou d’objets <b>InlineShape</b> dans Microsoft Word. Pour modifier les propriétés d’un contrôle ActiveX, utilisez la <see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> objet de la forme spécifiée ou de la forme insérée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOLEObject">
@@ -229,20 +220,18 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ClassType">Facultatif <b>Object</b>. Nom de l'application utilisée pour activer l'objet OLE spécifié.</param>
-        <param name="FileName">Facultatif <b>Object</b>. Fichier à partir duquel créer l'objet. Si vous ne spécifiez pas cet argument, c'est le dossier actif qui est utilisé. Vous devez spécifier soit le <paramref name="ClassType" /> ou <paramref name="FileName" /> argument de l’objet, mais pas les deux.</param>
-        <param name="LinkToFile">Facultatif <b>Object</b>. <b>True</b> pour lier l’objet OLE au fichier à partir de laquelle il a été créé ; <b>False</b> pour que l’objet d’une copie indépendante du fichier OLE. Si vous avez spécifié une valeur pour <paramref name="ClassType" />, <paramref name="LinkToFile" /> est <b>False</b>. <b>False</b> est la valeur par défaut.</param>
-        <param name="DisplayAsIcon">Facultatif <b>Object</b>. <b>True</b> pour afficher l'objet OLE en tant qu'icône. La valeur par défaut est <b>False</b>.</param>
-        <param name="IconFileName">Facultatif <b>Object</b>. Fichier contenant l'icône à afficher.</param>
-        <param name="IconIndex">Facultatif <b>Object</b>. Le numéro d’index de l’icône dans <paramref name="IconFileName" />. L’ordre des icônes dans le fichier spécifié correspond à l’ordre dans lequel les icônes apparaissent dans la boîte de dialogue Changer d’icône (menu Insertion, boîte de dialogue objet) lorsque l’affichage de la case à cocher est activée. La première icône dans le fichier porte le numéro d'index 0 (zéro). Si une icône avec le numéro d’index donné n’existe pas dans <paramref name="IconFileName" />, l’icône avec le numéro d’index 1 (la deuxième icône dans le fichier) est utilisée. La valeur par défaut est 0 (zéro).</param>
-        <param name="IconLabel">Facultatif <b>Object</b>. Légende à afficher sous l'icône.</param>
-        <param name="Range">Facultatif <b>Object</b>. Plage dans laquelle l'objet OLE est placé dans le texte. L'objet OLE remplace cette plage, sauf si elle est réduite. Si vous ne spécifiez pas cet argument, l'objet se place automatiquement.</param>
+        <param name="ClassType"><b>Objet</b>facultatif. Nom de l'application utilisée pour activer l'objet OLE spécifié.</param>
+        <param name="FileName"><b>Objet</b>facultatif. Fichier à partir duquel créer l'objet. Si vous ne spécifiez pas cet argument, c'est le dossier actif qui est utilisé. Vous devez spécifier l' <paramref name="ClassType" /> argument ou <paramref name="FileName" /> pour l’objet, mais pas les deux.</param>
+        <param name="LinkToFile"><b>Objet</b>facultatif. <b>True</b> pour lier l’objet OLE au fichier à partir duquel il a été créé; <b>False</b> pour transformer l’objet OLE en une copie indépendante du fichier. Si vous avez spécifié une valeur <paramref name="ClassType" />pour, <paramref name="LinkToFile" /> l’argument doit avoir la valeur <b>false</b>. La valeur par défaut est <b>False</b>.</param>
+        <param name="DisplayAsIcon"><b>Objet</b>facultatif. <b>True</b> pour afficher l'objet OLE en tant qu'icône. La valeur par défaut est <b>False</b>.</param>
+        <param name="IconFileName"><b>Objet</b>facultatif. Fichier contenant l'icône à afficher.</param>
+        <param name="IconIndex"><b>Objet</b>facultatif. Numéro d’index de l’icône dans <paramref name="IconFileName" />. L'ordre des icônes défini dans le fichier spécifié correspond à l'ordre d'affichage des icônes dans la boîte de dialogue Changer d'icône (menu Insertion, boîte de dialogue Insérer un objet), quand la case à cocher Afficher sous forme d'icône est activée. La première icône dans le fichier porte le numéro d'index 0 (zéro). Si une icône avec le numéro d’index donné n’existe <paramref name="IconFileName" />pas dans, l’icône avec le numéro d’index 1 (la deuxième icône dans le fichier) est utilisée. La valeur par défaut est 0 (zéro).</param>
+        <param name="IconLabel"><b>Objet</b>facultatif. Légende à afficher sous l'icône.</param>
+        <param name="Range"><b>Objet</b>facultatif. Plage dans laquelle l'objet OLE est placé dans le texte. L'objet OLE remplace cette plage, sauf si elle est réduite. Si vous ne spécifiez pas cet argument, l'objet se place automatiquement.</param>
         <summary>Crée un objet OLE.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Renvoie le <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object qui représente le nouvel objet OLE.</para>
-          <para />
-        </remarks>
+        <remarks><para>Renvoie l' <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objet qui représente le nouvel objet OLE.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPicture">
@@ -270,17 +259,14 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b>obligatoire. Chemin et nom de fichier de l'image.</param>
-        <param name="LinkToFile">Facultatif <b>Object</b>. <b>True</b> pour lier l'image au fichier à partir duquel il a été créé. <b>False</b> pour transformer l'image une copie indépendante du fichier. La valeur par défaut est <b>False</b>.</param>
-        <param name="SaveWithDocument">Facultatif <b>Object</b>. <b>True</b> pour enregistrer l'image liée avec le document. La valeur par défaut est <b>False</b>.</param>
-        <param name="Range">Facultatif <b>Object</b>. Emplacement où se positionnera l'image dans le texte. L'image remplace la plage, si cette dernière n'est pas réduite ; si elle l'est, l'image est insérée. Si vous ne spécifiez pas cet argument, l'image se place automatiquement.</param>
+        <param name="FileName">Argument de type <b>String</b> obligatoire. Chemin et nom de fichier de l'image.</param>
+        <param name="LinkToFile"><b>Objet</b>facultatif. <b>True</b> pour lier l'image au fichier à partir duquel il a été créé. <b>False</b> pour transformer l'image une copie indépendante du fichier. La valeur par défaut est <b>False</b>.</param>
+        <param name="SaveWithDocument"><b>Objet</b>facultatif. <b>True</b> pour enregistrer l'image liée avec le document. La valeur par défaut est <b>False</b>.</param>
+        <param name="Range"><b>Objet</b>facultatif. Emplacement où se positionnera l'image dans le texte. L'image remplace la plage, si cette dernière n'est pas réduite ; si elle l'est, l'image est insérée. Si vous ne spécifiez pas cet argument, l'image se place automatiquement.</param>
         <summary>Ajoute une image à un document.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cette méthode renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object qui représente l’image et l’ajoute à la <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objet qui représente l’image et l’ajoute à la <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPictureBullet">
@@ -306,15 +292,12 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b>obligatoire. Nom de fichier de l'image que vous souhaitez utiliser pour la puce image.</param>
-        <param name="Range">Facultatif <b>Object</b>. Plage à laquelle Microsoft Word ajoute la puce image. Word ajoute la puce image à chaque paragraphe contenu dans cette plage. Si vous ne spécifiez pas cet argument, Word ajoute la puce image à chaque paragraphe de la sélection active.</param>
+        <param name="FileName">Argument de type <b>String</b> obligatoire. Nom de fichier de l'image que vous souhaitez utiliser pour la puce image.</param>
+        <param name="Range"><b>Objet</b>facultatif. Plage à laquelle Microsoft Word ajoute la puce image. Word ajoute la puce image à chaque paragraphe contenu dans cette plage. Si vous ne spécifiez pas cet argument, Word ajoute la puce image à chaque paragraphe de la sélection active.</param>
         <summary>Ajoute une puce image provenant d'un fichier image dans le document actif.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cette méthode renvoie un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode renvoie un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSmartArt">
@@ -340,10 +323,10 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Layout">A <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> objet qui spécifie la disposition du graphique SmartArt.</param>
-        <param name="Range">Spécifie le texte auquel le graphique SmartArt est lié. Si <paramref name="Range" /> est spécifié, le graphique SmartArt est positionné au début du premier paragraphe de la plage. Si ce paramètre est omis, la plage est sélectionnée automatiquement et le graphique SmartArt est positionné par rapport aux bords supérieur et gauche de la page.</param>
+        <param name="Layout"><see cref="T:Microsoft.Office.Core.SmartArtLayout" /> Objet qui spécifie la disposition du graphique SmartArt.</param>
+        <param name="Range">Spécifie le texte auquel le graphique SmartArt est lié. Si <paramref name="Range" /> est spécifié, le graphique SmartArt est placé au début du premier paragraphe de la plage. Si ce paramètre est omis, la plage est sélectionnée automatiquement et le graphique SmartArt est positionné par rapport aux bords supérieur et gauche de la page.</param>
         <summary>Insère un graphique SmartArt en tant que forme insérée dans le document actif.</summary>
-        <returns>Le graphique SmartArt à insérer.</returns>
+        <returns>Graphique SmartArt à insérer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,13 +357,13 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="EmbedCode">Le code intégré pour la vidéo.</param>
-        <param name="VideoWidth">Entier qui représente la largeur de la vidéo en pixels web.</param>
-        <param name="VideoHeight">Entier qui représente la hauteur de la vidéo en pixels web.</param>
-        <param name="PosterFrameImage">Une chaîne qui pointe vers le fichier à utiliser en tant que l’image postérisée pour le site web vidéo.</param>
+        <param name="EmbedCode">Code incorporé pour la vidéo.</param>
+        <param name="VideoWidth">Entier qui représente la largeur de la vidéo Web en pixels.</param>
+        <param name="VideoHeight">Entier qui représente la hauteur de la vidéo Web en pixels.</param>
+        <param name="PosterFrameImage">Chaîne qui pointe vers le fichier à utiliser comme cadre d’affiche pour la vidéo Web.</param>
         <param name="Url">URL de la vidéo.</param>
-        <param name="Range">La plage à laquelle insérer la vidéo sur le web. Si <paramref name="Range" /> est omis, la sélection actuelle est utilisée.</param>
-        <summary>Ajoute une nouvelle vidéo web dans le document.</summary>
+        <param name="Range">Plage à laquelle insérer la vidéo Web. Si <paramref name="Range" /> est omis, la sélection actuelle est utilisée.</param>
+        <summary>Ajoute une nouvelle vidéo Web au document.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -408,7 +391,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -466,11 +449,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -531,7 +512,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -559,13 +540,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Emplacement du nouveau graphisme.</param>
-        <summary>Insère un objet image de Microsoft Word vide, 1 centimètres carrés entouré d’une bordure.</summary>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement du nouveau graphisme.</param>
+        <summary>Insère un objet image Microsoft Word vierge d’un pouce carré et entouré d’une bordure.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cette méthode renvoie le nouveau graphisme en tant qu’un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode renvoie le nouveau graphique sous la <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> forme d’un objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

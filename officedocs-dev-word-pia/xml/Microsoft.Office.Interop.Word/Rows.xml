@@ -1,13 +1,5 @@
 <Type Name="Rows" FullName="Microsoft.Office.Interop.Word.Rows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c032ac142ab5f86099a7cac58f78d136a83ef5c6" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667333" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Rows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="692ba17be6d8254b9f6cc3026ef3363c48d90ec8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144042" /></Metadata><TypeSignature Language="C#" Value="public interface Rows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Rows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Rows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Rows&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Row" /> objets qui représentent les lignes de tableau dans la sélection spécifiée, une plage ou un tableau.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>Rows</b> pour renvoyer la collection <b>Rows</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Rows.Add(System.Object@)" /> pour ajouter une ligne à une table.</para>
-      <para>Utiliser <b>lignes</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Row</b> . Le numéro d’index représente la position de la ligne dans la sélection, une plage ou un tableau.</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Row" /> objets qui représentent les lignes de tableau dans la sélection, la plage ou le tableau spécifié.</summary>
+    <remarks><para>Utilisez la propriété <b>Rows</b> pour renvoyer la collection <b>Rows</b>.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Rows.Add(System.Object@)" /> méthode pour ajouter une ligne à un tableau.</para>
+      <para>Utilisez <b>Rows</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Row</b> . Le numéro d'index représente la position de la ligne dans la sélection, une plage ou un tableau.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,7 +51,7 @@
         <Parameter Name="BeforeRow" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeRow">Facultatif <b>Object</b>. Un objet <b>Row</b> qui représente la ligne située immédiatement sous la nouvelle ligne.</param>
+        <param name="BeforeRow"><b>Objet</b>facultatif. Objet <b>Row</b> qui représente la ligne située immédiatement sous la nouvelle ligne.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Row" /> objet qui représente une ligne ajoutée à un tableau.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -93,11 +83,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRowAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.WdRowAlignment" /> constante qui représente l’alignement des lignes spécifiées.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.WdRowAlignment" /> définit une constante qui représente l’alignement pour les lignes spécifiées.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>WdRowAlignment</b> peut être une des constantes suivantes :</para>
+        <remarks><para>
+            <b>WdRowAlignment</b> peut être l’une des constantes suivantes:</para>
           <para>
             <b>wdAlignRowLeft</b>
           </para>
@@ -107,8 +96,7 @@
           <para>
             <b>wdAlignRowRight</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowBreakAcrossPages">
@@ -137,13 +125,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Déterminer si le texte dans une table ou plusieurs lignes est autorisé à fractionner un saut de page.</summary>
+        <summary>Déterminer si le texte d’une ou plusieurs lignes d’un tableau est autorisé à fractionner un saut de page.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si le texte dans une table ou plusieurs lignes est autorisé à fractionner un saut de page et <b>False</b> dans le cas contraire.</para>
-          <para>La valeur de retour peut être <b>True</b>, <b>False</b> ou <b>wdUndefined</b> (uniquement une partie du texte spécifié est autorisé à fractionner).</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si le texte dans une ou plusieurs lignes d’un tableau est autorisé à fractionner un <b></b> saut de page, et false dans le cas contraire.</para>
+          <para>La valeur renvoyée peut être <b>true</b>, <b>false</b> ou <b>wdUndefined</b> (seule une partie du texte spécifié est autorisée à être fractionnée).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowOverlap">
@@ -174,13 +160,11 @@
       <Docs>
         <summary>Renvoie ou définit une valeur qui spécifie si une forme particulière peut se superposer avec d'autres formes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>wdUndefined</b> si les lignes spécifiées incluent à la fois des lignes et sans chevauchement.</para>
-          <para>La valeur de la propriété peut être définie à <b>True</b> ou <b>False</b>.</para>
-          <para>Paramètre <b>AllowOverlap</b> sur <b>True</b> définit également <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> sur <b>True</b>. Définition de <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> sur <b>False</b> définit également <b>la propriété AllowOverlap</b> sur <b>False</b>.</para>
-          <para>Car HTML ne prend en charge les tableaux et les formes qui se chevauchent, la <b>propriété AllowOverlap</b> est ignorée dans l’affichage en mode Web.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie <b>wdUndefined</b> si les lignes spécifiées incluent des lignes qui se chevauchent et des lignes qui ne se chevauchent pas.</para>
+          <para>La valeur de la propriété peut être <b>true</b> ou false. <b></b></para>
+          <para>La définition de <b></b> <b>AllowOverlap</b> sur true <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> définit également <b>true</b>. La <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> définition de la <b>valeur false</b> affecte également la <b>valeur false</b>à <b>AllowOverlap</b> .</para>
+          <para>HTML ne prenant en charge les tableaux et les formes qui se superposent, la <b>propriété AllowOverlap</b> est ignorée dans l'affichage en mode Web.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -206,7 +190,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +221,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection qui représente la totalité des bordures de l’objet spécifié.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection qui représente toutes les bordures de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -265,14 +249,12 @@
         <Parameter Name="NestedTables" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Separator">Facultatif <b>Object</b>. Le caractère délimitant les colonnes converties (les lignes converties sont délimitées par des marques de paragraphe). Peut être n’importe quel suivant <see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" /> constantes :<b>wdSeparateByCommas</b><b>wdSeparateByDefaultListSeparator</b><b>wdSeparateByParagraphs</b><b>wdSeparateByTabs</b> (valeur par défaut)</param>
-        <param name="NestedTables">Facultatif <b>Object</b>. <b>True</b> si les tableaux imbriqués sont convertis en texte. Cet argument est ignoré si <paramref name="Separator" /> n’a pas <b>pour valeur wdSeparateByParagraphs</b>. La valeur par défaut est <b>True</b>.</param>
-        <summary>Convertit un tableau en texte et renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente le texte délimité.</summary>
+        <param name="Separator"><b>Objet</b>facultatif. Le caractère délimitant les colonnes converties (les lignes converties sont délimitées par des marques de paragraphe). Peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" /> constantes suivantes:<b>wdSeparateByCommas</b><b>wdSeparateByDefaultListSeparator</b><b>wdSeparateByParagraphs</b><b>wdSeparateByTabs</b> (valeur par défaut)</param>
+        <param name="NestedTables"><b>Objet</b>facultatif. <b>True</b> si les tableaux imbriqués sont convertis en texte. Cet argument est ignoré si <paramref name="Separator" /> n’est pas <b>wdSeparateByParagraphs</b>. La valeur par défaut est <b>True</b>.</param>
+        <summary>Convertit un tableau en texte et renvoie <see cref="T:Microsoft.Office.Interop.Word.Range" /> un objet qui représente le texte délimité.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Lorsque vous appliquez la méthode <b>ConvertToText</b> à un <see cref="T:Microsoft.Office.Interop.Word.Table" /> objet, l’objet est supprimé. Pour maintenir une référence au contenu converti du tableau, vous devez affecter la <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet renvoyé par la méthode <b>ConvertToText</b> à une nouvelle variable d’objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Lorsque vous appliquez la méthode <b>ConvertToText</b> à un <see cref="T:Microsoft.Office.Interop.Word.Table" /> objet, l’objet est supprimé. Pour conserver une référence au contenu converti du tableau, vous devez affecter l' <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet renvoyé par la méthode <b>ConvertToText</b> à une nouvelle variable d’objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToTextOld">
@@ -359,11 +341,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -419,10 +399,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la distance (en points) entre le texte du document et le bord inférieur du tableau spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété n’a aucun effet si <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> a la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété n’a aucun effet si <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> la <b>valeur</b>est false.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceLeft">
@@ -453,10 +431,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la distance (en points) entre le texte du document et le bord gauche du tableau spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété n’a aucun effet si <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> a la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété n’a aucun effet si <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> la <b>valeur</b>est false.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceRight">
@@ -487,10 +463,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la distance (en points) entre le texte du document et le bord droit du tableau spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété n’a aucun effet si <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> a la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété n’a aucun effet si <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> la <b>valeur</b>est false.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceTop">
@@ -521,10 +495,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la distance (en points) entre le texte du document et le bord supérieur du tableau spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété n’a aucun effet si <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> a la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété n’a aucun effet si <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> la <b>valeur</b>est false.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistributeHeight">
@@ -548,7 +520,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ajuste la hauteur des lignes spécifiées afin qu’elles sont identiques.</summary>
+        <summary>Ajuste la hauteur des lignes spécifiées de manière à ce qu’elles soient égales.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -575,7 +547,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Row</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Row" /> object qui représente le premier élément de la <see cref="T:Microsoft.Office.Interop.Word.Rows" /> collection.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Row" /> Object qui représente le premier élément de la <see cref="T:Microsoft.Office.Interop.Word.Rows" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -638,14 +610,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Déterminer si l’ou les lignes spécifiées sont mises en forme comme titre de tableau.</summary>
+        <summary>Déterminer si la ou les lignes spécifiées sont mises en forme en tant que titre de tableau.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie la valeur true si l’ou les lignes spécifiées sont mises en forme sous forme de tableau titre et la valeur false dans le cas contraire.</para>
-          <para>Lignes mis en forme comme en-têtes de tableau sont répétées lorsqu’un tableau s’étend sur plusieurs pages.</para>
-          <para>Ce cette propriété peut avoir les valeurs sont <b>True</b>, <b>False</b> et <b>wdUndefined</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la valeur true si la ou les lignes spécifiées sont mises en forme en tant que titre de tableau et la valeur false dans le cas contraire.</para>
+          <para>Lignes de mise en forme comme en-têtes de tableau sont répétées lorsqu'un tableau s'étend sur plusieurs pages.</para>
+          <para>Cette propriété peut être définie sur <b>true</b>, false et <b></b> <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -674,12 +644,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la hauteur de la ligne spécifiée ou les lignes d’un tableau.</summary>
+        <summary>Cette propriété renvoie ou définit la hauteur de la ou des lignes spécifiées dans un tableau.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si le <see cref="P:Microsoft.Office.Interop.Word.Rows.HeightRule" /> propriété des lignes spécifiées est <b>wdRowHeightAuto</b>, <b>Height</b> renvoie <b>wdUndefined</b>; définition de la propriété <b>Height</b> attribue à <b>HeightRule</b> la <b>valeur wdRowHeightAtLeast</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.Rows.HeightRule" /> propriété des lignes spécifiées est <b>wdRowHeightAuto</b>, <b>Height</b> renvoie <b>wdUndefined</b>; la définition de la propriété <b>Height</b> définit <b>HeightRule</b> sur <b>wdRowHeightAtLeast</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightRule">
@@ -710,11 +678,10 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la règle permettant de déterminer la hauteur des lignes spécifiées.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />Il peut s’agir de l’une des constantes suivantes:</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" /> peut être une des constantes suivantes :</para>
-          <para>
-            <b>valeur wdRowHeightAtLeast</b>
+            <b>wdRowHeightAtLeast</b>
           </para>
           <para>
             <b>wdRowHeightExactly</b>
@@ -722,8 +689,7 @@
           <para>
             <b>wdRowHeightAuto</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalPosition">
@@ -752,13 +718,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la distance horizontale entre le bord des lignes et l’élément spécifié par le <see cref="P:Microsoft.Office.Interop.Word.Rows.RelativeHorizontalPosition" /> propriété.</summary>
+        <summary>Cette propriété renvoie ou définit la distance horizontale entre le bord des lignes et l’élément spécifié par <see cref="P:Microsoft.Office.Interop.Word.Rows.RelativeHorizontalPosition" /> la propriété.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>HorizonalPosition</b> peut être un nombre indiquant une mesure en points ou peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdTablePosition" /> constantes : <b>wdTableLeft</b>, <b>wdTableRight</b>, <b>wdTableCenter</b>, <b>wdTableInside</b>ou <b> wdTableOutside</b>.</para>
-          <para>Cette propriété n’a aucun effet si <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> a la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <b>propriété HorizonalPosition</b> peut être un nombre qui indique une mesure en points ou peut être l’une des constantes <see cref="T:Microsoft.Office.Interop.Word.WdTablePosition" /> suivantes: <b>wdTableLeft</b>, <b>wdTableRight</b>, <b>wdTableCenter</b>, <b>wdTableInside</b>ou <b> wdTableOutside</b>.</para>
+          <para>Cette propriété n’a aucun effet si <see cref="P:Microsoft.Office.Interop.Word.Rows.WrapAroundText" /> la <b>valeur</b>est false.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -787,7 +751,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -816,7 +780,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Row</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le dernier élément dans le <see cref="T:Microsoft.Office.Interop.Word.Rows" /> collection comme un <see cref="T:Microsoft.Office.Interop.Word.Row" /> objet.</summary>
+        <summary>Renvoie le dernier élément de la <see cref="T:Microsoft.Office.Interop.Word.Rows" /> collection sous la <see cref="T:Microsoft.Office.Interop.Word.Row" /> forme d’un objet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -877,10 +841,8 @@
       <Docs>
         <summary>Renvoie le niveau d’imbrication des lignes spécifiées.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La table externe possède un niveau d’imbrication de 1. Le niveau d’imbrication de chaque tableau imbriqué successivement est une fois plus grand que le tableau précédent.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le niveau d'imbrication 1 correspond au tableau le plus à l'extérieur. Le niveau augmente ensuite d'une unité pour chaque imbrication successive.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -937,11 +899,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie l’élément dont dépend la position horizontale d’un groupe de lignes.</summary>
+        <summary>Indique l’élément de la position horizontale d’un groupe de lignes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition" /> peut être une des constantes suivantes :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition" />Il peut s’agir de l’une des constantes suivantes:</para>
           <para>
             <b>wdRelativeHorizontalPositionCharacter</b>
           </para>
@@ -954,8 +915,7 @@
           <para>
             <b>wdRelativeHorizontalPositionPage</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeVerticalPosition">
@@ -984,11 +944,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie l’élément dont dépend la position verticale d’un groupe de lignes.</summary>
+        <summary>Indique la position relative de la position verticale d’un groupe de lignes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalPosition" /> peut être une des constantes suivantes :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalPosition" />Il peut s’agir de l’une des constantes suivantes:</para>
           <para>
             <b>wdRelativeVerticalPositionLine</b>
           </para>
@@ -1001,8 +960,7 @@
           <para>
             <b>wdRelativeVerticalPositionParagraph</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1026,11 +984,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cette méthode sélectionne l'objet spécifié.</summary>
-        <remarks>
-          <para>Après avoir exécuté cette méthode, utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriété pour travailler avec les éléments sélectionnés.</para>
-          <para />
-        </remarks>
+        <summary>Sélectionne l'objet spécifié.</summary>
+        <remarks><para>Après avoir utilisé cette méthode, utilisez <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propriété pour travailler avec les éléments sélectionnés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHeight">
@@ -1057,9 +1013,8 @@
         <Parameter Name="HeightRule" Type="Microsoft.Office.Interop.Word.WdRowHeightRule" />
       </Parameters>
       <Docs>
-        <param name="RowHeight">
-          <b>Single</b>obligatoire. Hauteur de la (ou des) ligne(s), en points.</param>
-        <param name="HeightRule">Requis <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />. Règle permettant de déterminer la hauteur des lignes spécifiées. Peut être une des constantes <b>WdRowHeightRule</b> suivantes : <b>wdRowHeightAtLeast</b><b>wdRowHeightExactly</b><b>wdRowHeightAuto</b></param>
+        <param name="RowHeight">Argument de type <b>Single</b> obligatoire. Hauteur de la (ou des) ligne(s), en points.</param>
+        <param name="HeightRule">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />. Règle permettant de déterminer la hauteur des lignes spécifiées. Il peut s’agir de l’une des constantes <b>WdRowHeightRule</b> suivantes: <b>wdRowHeightAtLeast</b><b>wdRowHeightExactly</b><b>wdRowHeightAuto</b></param>
         <summary>Dans un tableau, définit la hauteur des lignes</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1088,14 +1043,11 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="LeftIndent">
-          <b>Single</b>obligatoire. Distance (en points) entre le bord gauche actuel de la ou des lignes spécifiées et le bord gauche souhaité.</param>
-        <param name="RulerStyle">Requis <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />. Contrôle la façon dont Microsoft Word ajuste le tableau lorsque le retrait gauche est modifié. Peut être une des constantes <b>WdRulerStyle</b> suivantes : <b>wdAdjustNone</b> – ajuste le bord gauche de l’ou des lignes, conserve la largeur de toutes les colonnes en les déplaçant vers la gauche ou droite. Il s’agit de la valeur par défaut. <b>wdAdjustSameWidth</b> – ajuste le bord gauche de la première colonne, en conservant la position du bord droit du tableau en définissant la largeur de toutes les cellules dans l’ou les lignes à la même valeur spécifiée. <b>wdAdjustFirstColumn</b> – ajuste le bord gauche de la première colonne uniquement, et conserve les positions des autres colonnes et le bord droit du tableau. <b>wdAdjustProportional</b> – ajuste le bord gauche de la première colonne, conserve la position du bord droit du tableau en ajustant de manière proportionnelle les largeurs de toutes les cellules de l’ou les lignes spécifiées.</param>
+        <param name="LeftIndent">Argument de type <b>Single</b> obligatoire. Distance (en points) entre le bord gauche actuel de la ou des lignes spécifiées et le bord gauche souhaité.</param>
+        <param name="RulerStyle">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />. Contrôle la façon dont Microsoft Word ajuste le tableau lorsque le retrait gauche est modifié. Il peut s’agir de l’une des constantes <b>WdRulerStyle</b> suivantes: <b>wdAdjustNone</b> – ajuste le bord gauche de ligne ou de lignes, en conservant la largeur de toutes les colonnes en les déplaçant vers la gauche ou vers la droite. Il s’agit de la valeur par défaut. <b>wdAdjustSameWidth</b> : ajuste le bord gauche de la première colonne, en conservant la position du bord droit du tableau en affectant la même valeur aux largeurs de toutes les cellules de la ou des lignes spécifiées. <b>wdAdjustFirstColumn</b> : ajuste le bord gauche de la première colonne uniquement, en conservant les positions des autres colonnes et le bord droit du tableau. <b>wdAdjustProportional</b> : ajuste le bord gauche de la première colonne, en conservant la position du bord droit du tableau en ajustant proportionnellement les largeurs de toutes les cellules de la ou des lignes spécifiées.</param>
         <summary>Définit le retrait d'une ou plusieurs lignes d'un tableau.</summary>
-        <remarks>
-          <para>Le comportement de <b>WdRulerStyle</b> décrit ci-dessus s’applique aux tables aligné à gauche. Le comportement de <b>WdRulerStyle</b> pour les tableaux alignés à droite et peut être inattendu ; Dans ce cas, la méthode <b>SetLeftIndent</b> doit être utilisée avec précaution.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le comportement de <b>WdRulerStyle</b> décrit ci-dessus s'applique aux tables aligné à gauche. Le comportement de <b>WdRulerStyle</b> pour les tableaux alignés à droite et centrés peut être inattendu; dans ce cas, la méthode <b>SetLeftIndent,</b> doit être utilisée avec précaution.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -1121,7 +1073,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objet qui fait référence à la mise en forme de la trame de fond pour l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Object qui fait référence à la mise en forme de la trame de fond pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1185,18 +1137,16 @@
       <Docs>
         <summary>Renvoie ou définit le sens dans lequel Microsoft Word ordonne les cellules dans le tableau ou la ligne spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTableDirection" /> peut être une des constantes suivantes :</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTableDirection" />Il peut s’agir de l’une des constantes suivantes:</para>
           <para>
             <b>wdTableDirectionLtr</b>
           </para>
           <para>
             <b>wdTableDirectionRtl</b>
           </para>
-          <para>Si la propriété <b>TableDirection</b> est définie à <b>wdTableDirectionLtr</b>, les lignes sélectionnées sont organisées avec la première colonne dans la position la plus à gauche. Si la propriété <b>TableDirection</b> a la valeur <b>wdTableDirectionRtl</b>, les lignes sélectionnées sont organisées avec la première colonne à l’extrême droite.</para>
-          <para />
-        </remarks>
+          <para>Si la propriété <b>TableDirection</b> est définie à <b>wdTableDirectionLtr</b>, les lignes sélectionnées sont organisées avec la première colonne dans la position la plus à gauche. Si la propriété <b>TableDirection</b> a la valeur <b>wdTableDirectionRtl</b>, les lignes sélectionnées sont organisées avec la première colonne dans la position la plus à droite.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalPosition">
@@ -1225,12 +1175,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la distance verticale entre le bord des lignes et l’élément spécifié par le <see cref="P:Microsoft.Office.Interop.Word.Rows.RelativeVerticalPosition" /> propriété.</summary>
+        <summary>Cette propriété renvoie ou définit la distance verticale entre le bord des lignes et l’élément spécifié par <see cref="P:Microsoft.Office.Interop.Word.Rows.RelativeVerticalPosition" /> la propriété.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de retour peut être un nombre indiquant une mesure en points ou peut être valide <see cref="T:Microsoft.Office.Interop.Word.WdFramePosition" /> constante.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur renvoyée peut être un nombre qui indique une mesure en points ou peut être n’importe <see cref="T:Microsoft.Office.Interop.Word.WdFramePosition" /> quelle constante valide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapAroundText">
@@ -1261,12 +1209,10 @@
       <Docs>
         <summary>Détermine si le texte doit habiller les lignes spécifiées.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Renvoie <b>wdUndefined</b> si uniquement certaines des lignes spécifiées habillage activé.</para>
-          <para>La propriété peut être définie à <b>True</b> ou <b>False</b>.</para>
-          <para>Définition la propriété <b>WrapAroundText</b> sur <b>False</b> définit également le <see cref="P:Microsoft.Office.Interop.Word.Rows.AllowOverlap" /> propriété la <b>valeur False</b>. Définition de la propriété <b>AllowOverlap</b> sur <b>True</b> définit également la propriété <b>WrapAroundText</b> sur <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Renvoie <b>wdUndefined</b> si seulement certaines des lignes spécifiées ont habillage activé.</para>
+          <para>La propriété peut avoir la valeur <b>true</b> ou <b>false</b>.</para>
+          <para>La définition de la propriété <b></b> <b>WrapAroundText</b> sur false <see cref="P:Microsoft.Office.Interop.Word.Rows.AllowOverlap" /> définit également la propriété sur <b>false</b>. La définition de la propriété <b>AllowOverlap</b> sur <b>True</b> définit également la propriété <b>WrapAroundText</b> sur <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

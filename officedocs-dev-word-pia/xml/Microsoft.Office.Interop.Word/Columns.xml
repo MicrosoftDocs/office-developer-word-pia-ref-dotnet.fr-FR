@@ -1,13 +1,5 @@
 <Type Name="Columns" FullName="Microsoft.Office.Interop.Word.Columns">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c007cc7ae474302abe84669e0809beb36b236122" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667661" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Columns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3ae32a4fd4b94ca8c949579a32bc324ed5723ab8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147256" /></Metadata><TypeSignature Language="C#" Value="public interface Columns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Columns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Columns" />
   <TypeSignature Language="VB.NET" Value="Public Interface Columns&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Column" /> objets qui représentent les colonnes dans un tableau.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>Columns</b> pour renvoyer la collection <b>Columns</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> pour ajouter une colonne à une table.</para>
-      <para>Utiliser <b>colonnes</b>(<paramref name="index" />), où <b>index</b> est le numéro d’index, pour renvoyer un seul objet <b>Column</b> .</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Column" /> objets qui représentent les colonnes d’un tableau.</summary>
+    <remarks><para>Utilisez la propriété <b>Columns</b> pour renvoyer la collection <b>Columns</b>.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> méthode pour ajouter une colonne à un tableau.</para>
+      <para>Utilisez <b></b>Columns<paramref name="index" />(), où <b>index</b> est le numéro d’index, pour renvoyer un seul objet <b>Column</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,7 +51,7 @@
         <Parameter Name="BeforeColumn" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeColumn">A <see cref="T:Microsoft.Office.Interop.Word.Column" /> objet qui représente la colonne située immédiatement à droite de la nouvelle colonne.</param>
+        <param name="BeforeColumn"><see cref="T:Microsoft.Office.Interop.Word.Column" /> Objet qui représente la colonne qui apparaît immédiatement à droite de la nouvelle colonne.</param>
         <summary>Ajoute une colonne à un tableau.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente le créateur de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente le créateur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,10 +107,8 @@
       <Parameters />
       <Docs>
         <summary>Modifie la largeur d'une colonne d'un tableau pour s'adapter à la largeur du texte sans modifier l'habillage de texte dans les cellules.</summary>
-        <remarks>
-          <para>Si la table est déjà aussi large que la distance entre les marges gauche et droite, cette méthode est sans effet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si le tableau a déjà une largeur égale à la distance qui sépare les marges gauche et droite, cette méthode n’a aucun effet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -149,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection qui représente la totalité des bordures de l’objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.Borders" /> définit une collection qui représente toutes les bordures de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,11 +195,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -260,7 +246,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ajuste la largeur des colonnes spécifiées afin qu’elles sont identiques.</summary>
+        <summary>Ajuste la largeur des colonnes spécifiées de manière à ce qu’elles soient égales.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,7 +273,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Column" /> object qui représente le premier élément de la <see cref="T:Microsoft.Office.Interop.Word.Columns" /> collection.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Column" /> Object qui représente le premier élément de la <see cref="T:Microsoft.Office.Interop.Word.Columns" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -350,7 +336,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Une valeur qui indique la position ordinale de l’objet spécifique.</param>
+        <param name="Index">Valeur qui indique la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -379,7 +365,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Column" /> object qui représente le dernier élément de la <see cref="T:Microsoft.Office.Interop.Word.Columns" /> collection.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Column" /> Object qui représente le dernier élément de la <see cref="T:Microsoft.Office.Interop.Word.Columns" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -409,10 +395,8 @@
       <Docs>
         <summary>Renvoie le niveau d'imbrication des colonnes spécifiées.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La table externe possède un niveau d’imbrication de 1. Le niveau d’imbrication de chaque tableau imbriqué successivement est une fois plus grand que le tableau précédent.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le niveau d'imbrication 1 correspond au tableau le plus à l'extérieur. Le niveau augmente ensuite d'une unité pour chaque imbrication successive.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -438,7 +422,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet spécifié.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -526,11 +510,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cette méthode sélectionne l'objet spécifié.</summary>
-        <remarks>
-          <para>Après avoir exécuté cette méthode, utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriété pour travailler avec les éléments sélectionnés.</para>
-          <para />
-        </remarks>
+        <summary>Sélectionne l'objet spécifié.</summary>
+        <remarks><para>Après avoir utilisé cette méthode, utilisez <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propriété pour travailler avec les éléments sélectionnés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetWidth">
@@ -557,13 +539,11 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="ColumnWidth">La largeur des colonnes spécifiées, en points.</param>
-        <param name="RulerStyle">Une valeur qui contrôle la façon dont Microsoft Word ajuste la largeur des cellules.</param>
+        <param name="ColumnWidth">Largeur des colonnes spécifiées, en points.</param>
+        <param name="RulerStyle">Valeur qui détermine la façon dont Microsoft Word ajuste la largeur des cellules.</param>
         <summary>Définit la largeur des colonnes d'un tableau.</summary>
-        <remarks>
-          <para>Le <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> comportement s’applique aux tables aligné à gauche. Le comportement de <b>WdRulerStyle</b> pour les tableaux alignés à droite et peut être inattendu ; Dans ce cas, la méthode <b>SetWidth</b> doit être utilisée avec précaution.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> comportement s’applique aux tableaux alignés à gauche. Le comportement de <b>WdRulerStyle</b> pour les tableaux alignés à droite et centrés peut être inattendu ; dans ces cas-là, la méthode <b>SetWidth</b> doit être utilisée avec précaution.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -589,7 +569,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objet qui fait référence à la mise en forme de la trame de fond pour l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shading" /> Object qui fait référence à la mise en forme de la trame de fond pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

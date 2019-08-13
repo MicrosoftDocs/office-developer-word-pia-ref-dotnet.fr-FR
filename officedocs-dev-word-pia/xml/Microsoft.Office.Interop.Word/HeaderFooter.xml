@@ -1,13 +1,5 @@
 <Type Name="HeaderFooter" FullName="Microsoft.Office.Interop.Word.HeaderFooter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3faeda5db3d1edc0e95dabebc04e03aa6a82943f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667297" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HeaderFooter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a143517844b5f5cef61ab0c3f18904999b976958" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146730" /></Metadata><TypeSignature Language="C#" Value="public interface HeaderFooter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HeaderFooter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HeaderFooter" />
   <TypeSignature Language="VB.NET" Value="Public Interface HeaderFooter" />
@@ -26,15 +18,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente un en-tête ou un pied de page.</summary>
-    <remarks>
-      <para>L’objet <b>HeaderFooter</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> collection. La collection <b>HeadersFooters</b> inclut tous les en-têtes et pieds de page dans la section du document spécifié.</para>
-      <para>Utiliser <b>en-têtes</b>(<paramref name="index" />) ou <b>des pieds de page</b>(<paramref name="index" />), où <paramref name="index" /> est un de la <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constantes (<b>donné</b>, <b>wdHeaderFooterFirstPage</b>ou <b>wdHeaderFooterPrimary</b>), pour renvoyer un objet <b>HeaderFooter</b> .</para>
-      <para>Vous pouvez également renvoyer un seul objet <b>HeaderFooter</b> à l’aide de la <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> propriété avec une <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objet.</para>
+    <summary>Représente un en-tête ou un pied de page donné.</summary>
+    <remarks><para>L’objet <b>HeaderFooter</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> collection. La collection <b>HeadersFooters</b> réunit l'ensemble des en-têtes et des pieds de page situés dans la section spécifiée du document.</para>
+      <para>Utilisez <b>les en-têtes</b><paramref name="index" />( <b></b>) ou les<paramref name="index" /> <paramref name="index" /> <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> pieds de page (), où est l’une des constantes (<b>dewdheaderfooterevenpages</b>, <b>wdHeaderFooterFirstPage</b>ou <b>dewdheaderfooterprimary</b>), pour renvoyer une seule <b> HeaderFooter</b> , objet.</para>
+      <para>Vous pouvez également renvoyer un seul objet <b>HeaderFooter</b> en utilisant la <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> propriété avec un <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objet.</para>
       <para>
         <b>Remarque</b>: vous ne pouvez pas ajouter d’objets <b>HeaderFooter</b> à la collection <b>HeadersFooters</b> .</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propriété avec la <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objet pour spécifier une première page différente.</para> Utilisation de 
-      <para>les <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> propriété avec l’objet <b>PageSetup</b> pour spécifier différents impair et même des en-têtes et pieds de. Si la propriété <b>OddAndEvenPagesHeaderFooter</b> a la <b>valeur True</b>, vous pouvez retourner un en-tête impair ou le pied de page à l’aide de <b>wdHeaderFooterPrimary</b>, et vous pouvez retourner un en-tête ou pied de page à l’aide de <b>donné</b>.</para><para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> méthode avec la <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> objet pour ajouter un numéro de page à un en-tête ou un pied de page.</para><para /></remarks>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propriété avec l' <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objet pour spécifier une première page différente.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> propriété avec l’objet <b>PageSetup</b> pour spécifier différents en-têtes et pieds de page pairs et impairs. Si la propriété <b>OddAndEvenPagesHeaderFooter</b> a la valeur <b>True</b>, vous pouvez renvoyer l'en-tête ou le pied de page des pages impaires à l'aide de la constante <b>wdHeaderFooterPrimary</b>, et l'en-tête ou le pied de page des pages paires à l'aide de la constante <b>wdHeaderFooterEvenPages</b>.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> méthode avec l' <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> objet pour ajouter un numéro de page à un en-tête ou un pied de page.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,11 +83,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -123,13 +114,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur True</b> si le texte spécifié <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objet existe.</summary>
+        <summary><b>True</b> si l’objet <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> spécifié existe.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le premier en-tête et pied de page existent dans tous les nouveaux documents par défaut. Utilisez cette méthode pour déterminer s’il existe un en-tête de première page ou page impaire ou le pied de page. Vous pouvez également utiliser le <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> ou <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> propriété pour renvoyer ou définir le nombre d’en-têtes et pieds de page dans la section ou le document spécifié.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le premier en-tête et pied de page existent dans tous les nouveaux documents par défaut. Cette méthode permet de déterminer s'il existe un en-tête de première page ou page impaire ou le pied de page. Vous pouvez également utiliser la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propriété <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> ou pour renvoyer ou définir le nombre d’en-têtes et de pieds de page dans la section ou le document spécifié.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -155,7 +143,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdHeaderFooterIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constante qui représente l’en-tête spécifié ou le pied de page dans un document ou une section.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constante qui représente l’en-tête ou le pied de page spécifié dans un document ou une section.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,8 +171,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur True</b> si le texte spécifié <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objet est un en-tête.</summary>
+        <summary><b>True</b> si l’objet <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> spécifié est un en-tête.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,12 +202,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l’en-tête spécifié ou le pied de page est lié à l’en-tête correspondant ou le pied de page dans la section précédente. Lorsqu’un en-tête ou un pied de page est liée, son contenu est le même que dans l’en-tête précédent ou le pied de page.</summary>
+        <summary><b>True</b> si l'en-tête ou le pied de page spécifié est lié à l'en-tête ou au pied de page correspondant de la section précédente. Si un en-tête ou un pied de page est lié, son contenu est identique à celui de l'en-tête ou du pied de page précédent.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Étant donné que la propriété <b>LinkToPrevious</b> a la valeur <b>true</b> par défaut, vous pouvez ajouter des en-têtes, pieds de page, et les numéros de page pour l’intégralité de votre document en travaillant avec les en-têtes, pieds de page et les numéros de page dans la première section.</para> Propriété 
-          <para>le <b>LinkToPrevious</b> s’applique individuellement à chaque en-tête ou le pied de page. Par exemple, la propriété <b>LinkToPrevious</b> peut être définie sur <b>True</b> pour l’en-tête des pages paires, et <b>False</b> pour le pied de page paire.</para><para /></remarks>
+        <remarks><para>Dans la mesure où la propriété <b>LinkToPrevious</b> a, par défaut, la valeur <b>True</b>, vous pouvez modifier les en-têtes, les pieds de page et les numéros de page de la première section pour les appliquer à l'ensemble du document.</para>
+          <para>La propriété <b>LinkToPrevious</b> s'applique à chacun des en-têtes et des pieds de page individuellement. Par exemple, la propriété <b>LinkToPrevious</b> peut être affectée de la valeur <b>True</b> pour l'en-tête des pages paires, et <b>False</b> pour le pied de page des pages paires.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageNumbers">
@@ -246,7 +232,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PageNumbers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> collection qui représente tous les champs de numéro de page inclus dans l’en-tête spécifié ou le pied de page.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> collection qui représente tous les champs de numéro de page inclus dans l’en-tête ou le pied de page spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,12 +288,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> de formes à partir d’une collection de formes, voir la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shapes">
@@ -333,12 +317,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection qui représente tous les <see cref="T:Microsoft.Office.Interop.Word.Shape" /> des objets dans l’en-tête spécifié ou le pied de page. Cette collection peut contenir des dessins, des formes, des images, des objets OLE, des contrôles ActiveX, des objets texte et des légendes.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection qui représente tous les <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objets de l’en-tête ou du pied de page spécifié. Cette collection peut contenir des dessins, des formes, des images, des objets OLE, des contrôles ActiveX, des objets texte et des légendes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Lorsqu’elle est appliquée à un <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objet, la propriété <b>Shapes</b> renvoie tous les objets <b>Shape</b> trouvés dans tous les en-têtes et pieds de page dans le document.</para>
-          <para />
-        </remarks>
+        <remarks><para>Lorsqu’elle est appliquée <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> à un objet, la propriété <b>Shapes</b> renvoie tous les objets <b>Shape</b> trouvés dans tous les en-têtes et pieds de page du document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="AutoCorrect" FullName="Microsoft.Office.Interop.Word.AutoCorrect">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ca43994f83473019aa3b0432bbcd6a293001a6ed" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668394" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoCorrect" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b6793eb4cb098abceff96e7f0050f949fc1ed8a7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146296" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrect" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrect" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoCorrect" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrect" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Représente la fonctionnalité de correction automatique dans Microsoft Word.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.AutoCorrect" /> propriété permet de renvoyer l’objet AutoCorrect.</para>
-      <para>La <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" /> propriété retourne le <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" /> objet qui représente les entrées de <b>correction automatique</b> dans la boîte de dialogue Correction automatique (menu Outils).</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.AutoCorrect" /> propriété pour renvoyer l’objet AutoCorrect.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" /> propriété renvoie l' <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" /> objet qui représente les entrées de <b>Correction automatique</b> dans la boîte de dialogue Correction automatique (menu Outils).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente le créateur de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente le créateur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +78,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique si Microsoft Word corrige automatiquement dans laquelle vous utilisez la touche VERR.MAJ par inadvertance en cours de frappe.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique si Microsoft Word corrige automatiquement les instances dans lesquelles vous utilisez la touche VERR. Maj par inadvertance lorsque vous tapez.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,10 +142,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur qui indique si Microsoft Word applique automatiquement la police correcte aux mots en caractères latins tapés au milieu d’un texte en hangûl, et inversement.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur l’utilisation de Word avec des langues asiatiques, voir l’aide de Microsoft Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur l’utilisation de Word avec des langues asiatiques, consultez l’aide de Microsoft Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CorrectInitialCaps">
@@ -184,7 +172,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique si Microsoft Word met automatiquement la deuxième lettre minuscule si les deux premières lettres d’un mot sont tapés dans en majuscules. Par exemple, « WOrd » a été corrigée à « Word ».</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique si Microsoft Word met automatiquement en minuscule la deuxième lettre d’un mot en majuscules. Par exemple, « WOrd » a été corrigée à « Word ».</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,13 +203,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique si Microsoft Word doit transposer automatiquement les mots dans leur alphabet natif si vous tapez le texte dans une langue autre que la langue du clavier.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique si Microsoft Word transpose automatiquement les mots dans leur alphabet natif si vous tapez du texte dans une langue autre que la langue actuelle du clavier.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.CheckLanguage" /> propriété doit être définie sur <b>True</b> pour utiliser la propriété <b>CorrectKeyboardSetting</b> .</para>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.CheckLanguage" /> propriété doit avoir la valeur <b>true</b> pour pouvoir utiliser la propriété <b>CorrectKeyboardSetting,</b> .</para>
           <para>Pour plus d’informations sur l’utilisation de Word avec plusieurs langues, consultez l’aide de Microsoft Word.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CorrectSentenceCaps">
@@ -311,11 +297,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayAutoCorrectOptions">
@@ -374,10 +358,8 @@
       <Docs>
         <summary>Renvoie une valeur qui indique une <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" /> collection qui représente la liste actuelle des entrées de correction automatique.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette liste correspond à la liste des entrées de correction automatique sous l’onglet Correction automatique dans la boîte de dialogue Correction automatique (menu Outils).</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette liste correspond à la liste des entrées de correction automatique figurant sous l’onglet correction automatique de la boîte de dialogue Correction automatique (menu Outils).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstLetterAutoAdd">
@@ -408,10 +390,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur qui indique si Microsoft Word ajoute automatiquement des abréviations dans la liste des exceptions de correction automatique des initiales.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Word ajoute une abréviation dans cette liste si vous supprimez, puis retapez la lettre que Word a mise en majuscule juste après le point qui suit l’abréviation.</para>
-          <para />
-        </remarks>
+        <remarks><para>Word ajoute une abréviation dans la liste si vous supprimez, puis retapez la lettre que Word a mise en majuscule juste après le point qui suit l'abréviation.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstLetterExceptions">
@@ -437,12 +417,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.FirstLetterExceptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" /> collection qui représente la liste des abréviations après lequel Microsoft Word ne mettre automatiquement en majuscule la première lettre.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" /> collection qui représente la liste des abréviations après lesquelles Microsoft Word ne mettra pas automatiquement en majuscule la lettre suivante.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette liste correspond à la liste des exceptions de correction automatique sous l’onglet première lettre dans la boîte de dialogue Exceptions de correction automatique (menu Outils, commande Correction automatique).</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette liste correspond à la liste des exceptions de correction automatique figurant sous l’onglet première lettre de la boîte de dialogue exceptions de correction automatique (menu Outils, commande Correction automatique).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HangulAndAlphabetAutoAdd">
@@ -471,9 +449,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique si des exceptions de correction automatique sur le coréen tabulation pour ajouter automatiquement des mots à la liste de l’hangûl et alphabétiques dans la boîte de dialogue Exceptions de correction automatique.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique si les mots doivent être automatiquement ajoutés à la liste des exceptions de correction automatique de l’alphabet ou de l’hangûl figurant sous l’onglet coréen de la boîte de dialogue exceptions de correction automatique.</summary>
         <value>To be added.</value>
-        <remarks>Boîte de dialogue <para>les Exceptions de correction automatique se trouve dans le menu Outils. Cliquez sur Options de correction automatique, puis cliquez sur l’onglet Correction automatique, puis cliquez sur le bouton Exceptions. </para><para>Microsoft Word ajoute un mot à cette liste si vous supprimez, puis retapez un mot que vous souhaitez que Word de manière à corriger.</para><para>Pour plus d’informations sur l’utilisation de Word avec des langues asiatiques, consultez l’aide de Microsoft Word.</para><para /></remarks>
+        <remarks><para>La boîte de dialogue exceptions de correction automatique se trouve dans le menu outils. Cliquez sur options de correction automatique, puis cliquez sur l’onglet correction automatique, puis cliquez sur le bouton exceptions. </para>
+          <para>Microsoft Word ajoute un mot à cette liste si vous supprimez, puis retapez un mot que vous ne souhaitez pas que Word corrige.</para>
+          <para>Pour plus d’informations sur l’utilisation de Word avec des langues asiatiques, consultez l’aide de Microsoft Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HangulAndAlphabetExceptions">
@@ -499,11 +480,12 @@
         <ReturnType>Microsoft.Office.Interop.Word.HangulAndAlphabetExceptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.HangulAndAlphabetExceptions" /> collection qui représente la liste de l’hangûl et alphabétiques correction automatique exceptions.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.HangulAndAlphabetExceptions" /> collection qui représente la liste des exceptions de correction automatique de l’alphabet ou de l’hangûl.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La liste renvoyée correspond à la liste de l’hangûl et alphabétiques exceptions de correction automatique dans l’onglet Coréen de la boîte de dialogue Exceptions de correction automatique.</para> Boîte de dialogue 
-          <para>les Exceptions de correction automatique se trouve dans le menu Outils. Cliquez sur Options de correction automatique, puis cliquez sur l’onglet Correction automatique, puis cliquez sur le bouton Exceptions.</para><para>Pour plus d’informations sur l’utilisation de Microsoft Word avec des langues asiatiques, consultez l’aide de Microsoft Word.</para><para /></remarks>
+        <remarks><para>La liste renvoyée correspond à la liste des exceptions de correction automatique de l’alphabet et de l’hangûl figurant sous l’onglet coréen de la boîte de dialogue exceptions de correction automatique.</para>
+          <para>La boîte de dialogue exceptions de correction automatique se trouve dans le menu outils. Cliquez sur options de correction automatique, puis cliquez sur l’onglet correction automatique, puis cliquez sur le bouton exceptions.</para>
+          <para>Pour plus d’informations sur l’utilisation de Microsoft Word avec des langues asiatiques, consultez l’aide de Microsoft Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherCorrectionsAutoAdd">
@@ -532,9 +514,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique s’il faut ajouter des mots à la liste des exceptions de correction automatique sur l’onglet autres Corrections de la boîte de dialogue Exceptions de correction automatique.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique si les mots doivent être ajoutés à la liste des exceptions de correction automatique figurant sous l’onglet autres corrections de la boîte de dialogue exceptions de correction automatique.</summary>
         <value>To be added.</value>
-        <remarks>Boîte de dialogue <para>les Exceptions de correction automatique se trouve dans le menu Outils. Cliquez sur Options de correction automatique, puis cliquez sur l’onglet Correction automatique, puis cliquez sur le bouton Exceptions.</para><para>Microsoft Word ajoute un mot à cette liste si vous supprimez, puis retapez un mot que vous souhaitez que Word de manière à corriger.</para><para /></remarks>
+        <remarks><para>La boîte de dialogue exceptions de correction automatique se trouve dans le menu outils. Cliquez sur options de correction automatique, puis cliquez sur l’onglet correction automatique, puis cliquez sur le bouton exceptions.</para>
+          <para>Microsoft Word ajoute un mot à cette liste si vous supprimez, puis retapez un mot que vous ne souhaitez pas que Word corrige.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherCorrectionsExceptions">
@@ -560,12 +544,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.OtherCorrectionsExceptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions" /> collection qui représente la liste des mots que Microsoft Word ne corrige pas automatiquement.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions" /> collection qui représente la liste des mots que Microsoft Word ne corrige pas automatiquement.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette liste correspond à la liste des exceptions de correction automatique sur l’onglet autres Corrections de la boîte de dialogue Exceptions de correction automatique (menu Outils, commande Correction automatique).</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette liste correspond à la liste des exceptions de correction automatique figurant sous l’onglet autres corrections de la boîte de dialogue exceptions de correction automatique (menu Outils, commande Correction automatique).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -622,7 +604,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique s’il faut remplace automatiquement le texte spécifié par des entrées provenant de la liste de correction automatique.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique s’il faut remplacer automatiquement le texte spécifié par des entrées de la liste de correction automatique.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -653,12 +635,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique s’il faut remplacer automatiquement le texte mal orthographié par les suggestions émanant du vérificateur d’orthographe par l’utilisateur.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique s’il faut remplacer automatiquement le texte mal orthographié par des suggestions du vérificateur d’orthographe au fur et à mesure que l’utilisateur tape.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Word remplace uniquement les mots qui contiennent une seule faute d’orthographe et pour lequel le dictionnaire d’orthographe répertorie uniquement une alternative.</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Word ne remplace que les mots qui contiennent une seule faute d’orthographe et pour lesquels le dictionnaire d’orthographe ne répertorie qu’une alternative.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TwoInitialCapsAutoAdd">
@@ -687,12 +667,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique s’il faut ajouter automatiquement des mots à la liste des exceptions de correction automatique majuscule.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique s’il faut ajouter automatiquement des mots à la liste des exceptions de correction automatique des majuscules.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Un mot est ajouté à cette liste si vous supprimez, puis retapez la lettre majuscule (qui suit la lettre initiale) qui a été modifié par Microsoft Word en minuscules.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un mot est ajouté à cette liste si vous supprimez, puis retapez la lettre majuscule (après la lettre majuscule initiale) que Microsoft Word convertit en minuscules.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TwoInitialCapsExceptions">
@@ -718,12 +696,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.TwoInitialCapsExceptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions" /> collection qui représente la liste des termes contenant des majuscules et que Microsoft Word ne corrige pas automatiquement.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.TwoInitialCapsExceptions" /> collection qui représente la liste des termes contenant des combinaisons de majuscules et minuscules que Microsoft Word ne corrige pas automatiquement.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette liste correspond à la liste des exceptions de correction automatique sur l’onglet deux majuscules dans la boîte de dialogue Exceptions de correction automatique (menu Outils, commande Options de correction automatique).</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette liste correspond à la liste des exceptions de correction automatique figurant sous l’onglet Début de mot de la boîte de dialogue Exceptions de correction automatique (menu Outils, commande Correction automatique).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

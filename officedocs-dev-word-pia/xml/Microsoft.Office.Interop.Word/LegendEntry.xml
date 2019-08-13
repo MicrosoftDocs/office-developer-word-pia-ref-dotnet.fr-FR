@@ -1,13 +1,5 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Word.LegendEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a77193ef54e946d0aa957ead0685d6bff35e8048" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668607" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LegendEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="059f71dc3edd40069b1147fe21cabdefa3e8042d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146625" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LegendEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntry" />
@@ -27,16 +19,14 @@
   </Attributes>
   <Docs>
     <summary>Représente une entrée de légende dans une légende de graphique.</summary>
-    <remarks>
-      <para>Le <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection. Le <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection contient tous les <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objets de la légende.</para>
-      <para>Chaque entrée de légende est composée de deux parties : le texte de l’entrée, qui est le nom de la série associée à l’entrée de légende ; et du marqueur d’entrée qui relie visuellement l’entrée de légende avec la courbe de tendance dans le graphique ou la série associée. Propriétés de mise en forme pour la marque d’entrée et sa courbe de tendance ou la série associée sont contenues dans le <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> objet.</para>
-      <para>Le texte d’une entrée de légende ne peut pas être modifié. <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objets prennent en charge la mise en forme de police et peuvent être supprimés. Aucune mise en forme du modèle n’est pris en charge pour les entrées de légende. La position et la taille des entrées est fixe.</para>
-      <para>Il n’existe aucun moyen direct de renvoyer la série ou la courbe de tendance correspondant à l’entrée de légende.</para>
-      <para>Après la suppression des entrées de légende, la seule façon de les restaurer consiste à supprimer et recréer la légende en définissant la <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> propriété pour le graphique sur <b>False</b> , puis <b>la valeur True</b>.</para>
-      <para />
-    </remarks>
-    <example>Utilisation de <para><see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de l’entrée de légende, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objet. Vous ne peut pas renvoyer des entrées de légende par un nom.</para> Nombre de 
-      <para>l’index représente la position de l’entrée de légende dans la légende. LegendEntries(1) se trouve en haut de la légende et LegendEntries.Count se trouve en bas. </para></example>
+    <remarks><para>L' <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection. La <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection contient tous les <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objets de la légende.</para>
+      <para>Chaque entrée de légende se compose de deux parties : le texte, c'est-à-dire le nom de la série associée à l'entrée de légende, et le marqueur d'entrée qui relie visuellement l'entrée de légende avec la courbe de tendance ou la série associée dans le graphique. Les propriétés de mise en forme du marqueur d’entrée et de la série ou de <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> la courbe de tendance associée sont contenues dans l’objet.</para>
+      <para>Impossible de modifier le texte d'une entrée de légende. <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />les objets prennent en charge la mise en forme des polices et peuvent être supprimés. Aucun motif de mise en forme n'est prise en charge pour les entrées de légende. La position et la taille des entrées sont fixes.</para>
+      <para>Il n'existe aucun moyen direct de renvoyer la série ou la courbe de tendance correspondant à l'entrée de légende.</para>
+      <para>Une fois les entrées de légende supprimées, la seule façon de les restaurer est de supprimer et de recréer la légende qui les contenait en définissant la <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> propriété du graphique sur <b>false</b> , puis de nouveau sur <b>true</b>.</para>
+      <para> </para></remarks>
+    <example><para>Utilisez <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de l’entrée de légende, <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> pour renvoyer un seul objet. Vous ne peut pas renvoyer des entrées de légende par un nom.</para>
+      <para>Le numéro d'index représente la position de l'entrée de légende dans la légende. LegendEntries(1) se trouve en haut de la légende et LegendEntries(LegendEntries.Count) en bas. </para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,10 +52,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,11 +89,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le texte de l’objet modifie la taille de police lorsque la taille de l’objet change. La valeur par défaut est <b>True</b>.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Cette propriété a la valeur <b>True</b> si la taille de la police du texte situé dans l'objet change lorsque l'objet est redimensionné. La valeur par défaut est <b>True</b>.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,14 +117,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. Valeur <b>Integer</b> en lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -164,9 +145,7 @@
       <Parameters />
       <Docs>
         <summary>Supprime l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,10 +172,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> objet qui représente la police de l’objet spécifié.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> Object qui représente la police de l’objet spécifié.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,9 +202,7 @@
       <Docs>
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet.
 En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,9 +230,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie une valeur de type <b>Double</b> qui représente la hauteur, en points, de l’objet.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,9 +258,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie le numéro d'index de l'objet dans la collection des objets similaires.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,10 +285,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur <b>Double</b> qui représente la distance, en points, entre le bord gauche de l’objet et le bord gauche de la zone de graphique.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Cette propriété renvoie une valeur de type <b>Double</b> qui représente la distance estimée en points entre le bord gauche de l'objet et le bord gauche de la zone de graphique.</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,10 +313,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.LegendKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> object qui représente le symbole de légende associé à l’entrée.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.LegendKey" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> Object qui représente le symbole de légende associé à l’entrée.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.LegendKey" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,9 +342,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule <b>Object</b>.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,9 +368,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Parameters />
       <Docs>
         <summary>Sélectionne l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,9 +396,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie une valeur de type <b>Double</b> qui représente la distance en points entre le bord supérieur de l'objet et le haut de ligne 1 (dans une feuille de calcul) ou le haut de la zone de graphique (dans un graphique).</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -463,9 +424,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie une valeur de type <b>Double</b> qui représente la largeur de l'objet, estimée en points.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

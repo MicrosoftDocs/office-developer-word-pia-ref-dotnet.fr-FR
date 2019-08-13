@@ -1,13 +1,5 @@
 <Type Name="XSLTransform" FullName="Microsoft.Office.Interop.Word.XSLTransform">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5afe73d6a3b568590a9d71b5f56818207a8810b5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668887" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XSLTransform" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="324dfb612385ddd52c1fa1790b0f5a2a602515b4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145400" /></Metadata><TypeSignature Language="C#" Value="public interface XSLTransform" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XSLTransform" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XSLTransform" />
   <TypeSignature Language="VB.NET" Value="Public Interface XSLTransform" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Représente une transformation XSLT (Extensible Stylesheet Language Transformation) enregistrée donnée.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> collection pour ajouter une transformation XSLT unique à la liste des transformations XSLT disponibles pour un schéma.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> collection pour renvoyer un seul objet <b>XSLTransform</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> collection pour ajouter une transformation XSLT individuelle à la liste des transformations XSLT disponibles pour un schéma.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> collection pour renvoyer un seul objet <b>XslTransform</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alias">
@@ -63,9 +53,8 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">
-          <b>true</b> pour enregistrer l’alias dans la clé de Registre HKEY_LOCAL_MACHINE ; <b>false</b> pour stocker l’alias dans la clé de Registre HKEY_CURRENT_USER. Utilisez uniquement ce paramètre pour définir la <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  valeur de la propriété, ne pas à obtenir le <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  valeur de la propriété.</param>
-        <summary>Renvoie une <b>chaîne</b> qui représente le nom convivial de l’objet spécifié.</summary>
+        <param name="AllUsers"><b>true</b> pour stocker l’alias dans la clé de Registre HKEY_LOCAL_MACHINE; <b>false</b> pour stocker l’alias dans la clé de Registre HKEY_CURRENT_USER. Utilisez uniquement ce paramètre pour définir la <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  valeur de la propriété, et non <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  pour obtenir la valeur de la propriété.</param>
+        <summary>Renvoie une <b>valeur de type String</b> qui représente le nom convivial de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,11 +112,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -178,7 +165,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur qui contient le GUID affecté à l’objet <b>XSLTransform</b> actuel.</summary>
+        <summary>Renvoie une valeur contenant le GUID affecté à l’objet <b>XslTransform</b> actif.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,8 +199,7 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">
-          <b>Boolean</b> facultatif. <b>True</b> si tous les utilisateurs ont accès à l’objet spécifié.</param>
+        <param name="AllUsers">Facultatif <b>Boolean</b>. <b>True</b> si tous les utilisateurs ont accès à l’objet spécifié.</param>
         <summary>Cette propriété renvoie ou définit l’emplacement de la transformation spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

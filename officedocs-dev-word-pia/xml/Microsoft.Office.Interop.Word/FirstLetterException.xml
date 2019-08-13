@@ -1,13 +1,5 @@
 <Type Name="FirstLetterException" FullName="Microsoft.Office.Interop.Word.FirstLetterException">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d471bbc02a21b87dfe03d212e18b23ef9c5542ad" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668169" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FirstLetterException" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4ae232b80e55fea218975f3d9714a8531449d4ef" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146835" /></Metadata><TypeSignature Language="C#" Value="public interface FirstLetterException" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FirstLetterException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FirstLetterException" />
   <TypeSignature Language="VB.NET" Value="Public Interface FirstLetterException" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Représente une abréviation exclue de la correction automatique.</summary>
-    <remarks>
-      <para>L’objet <b>FirstLetterException</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" /> collection. La collection <b>FirstLetterExceptions</b> comprend toutes les abréviations exclues. Le premier caractère suivant un point est automatiquement mis en majuscule lorsque la <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" /> propriété est définie sur <b>True</b>. Le caractère tapé après un élément de la collection <b>FirstLetterExceptions</b> n’est pas mise en majuscule.</para>
-      <para>Utiliser <b>FirstLetterExceptions</b>(<paramref name="index" />), où <paramref name="index" /> est l’abréviation ou le numéro d’index, pour renvoyer un seul objet <b>FirstLetterException</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" /> pour ajouter une abréviation à la liste des exceptions de.</para>
-      <para />
-    </remarks>
+    <remarks><para>L’objet <b>FirstLetterException</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" /> collection. La collection <b>FirstLetterExceptions</b> contient toutes les abréviations exclues. Le premier caractère qui suit un point est automatiquement mis en majuscule <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" /> lorsque la propriété est définie sur <b>true</b>. Le caractère que vous tapez après un élément dans la collection <b>FirstLetterExceptions</b> n’est pas mis en majuscules.</para>
+      <para>Utilisez <b>FirstLetterExceptions</b>(<paramref name="index" />), où <paramref name="index" /> est l’abréviation ou le numéro d’index, pour renvoyer un seul objet <b>FirstLetterException</b> .</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" /> méthode pour ajouter une abréviation à la liste des exceptions de première lettre.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -143,7 +131,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>entier</b> qui représente la position d’un élément dans une collection.</summary>
+        <summary>Renvoie une <b>valeur de type Integer</b> qui représente la position d’un élément dans une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,7 +159,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

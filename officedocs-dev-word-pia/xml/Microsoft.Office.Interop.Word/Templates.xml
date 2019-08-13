@@ -1,13 +1,5 @@
 <Type Name="Templates" FullName="Microsoft.Office.Interop.Word.Templates">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4fe7644306f01e74a51b86f41f1804f6d1567d98" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668522" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Templates : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca599c52638f5408c860ce6ae6c04bd7ff85d141" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143846" /></Metadata><TypeSignature Language="C#" Value="public interface Templates : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Templates implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Templates" />
   <TypeSignature Language="VB.NET" Value="Public Interface Templates&#xA;Implements IEnumerable" />
@@ -30,12 +22,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Template" /> objets qui représentent tous les modèles qui sont actuellement disponibles.</summary>
-    <remarks>
-      <para>Cette collection contient des modèles ouverts, des modèles attachés aux documents ouverts et des modèles globaux chargés dans la boîte de dialogue Modèles et compléments (menu Outils).</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Application.Templates" /> propriété permet de renvoyer la collection <b>Templates</b> .</para> Méthode 
-      <para><b>Ajouter</b> n’est pas disponible pour la collection <b>Templates</b> . Au lieu de cela, vous pouvez ajouter un modèle à la collection <b>Templates</b> en effectuant l’une des opérations suivantes :</para><list type="bullet"><item><para>à l’aide du <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode avec la <see cref="T:Microsoft.Office.Interop.Word.Documents" /> collection pour ouvrir un document basé sur un modèle ou un modèle.</para></item><item><para>à l’aide de la <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode avec la collection <b>Documents</b> pour ouvrir un nouveau document basé sur un modèle.</para></item><item><para>à l’aide de la <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> méthode avec la <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection pour charger un modèle global.</para></item><item><para>à l’aide de la <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> propriété avec l’objet <b>Document</b> pour attacher un modèle à un document.</para></item></list><para><b>Modèles</b>(<paramref name="index" />), où <paramref name="index" /> est le nom du modèle ou le numéro d’index, pour renvoyer un seul objet de <b>modèle de</b> numéro d’index représente la position du modèle dans la collection <b>Templates</b> .</para> Utilisation de 
-      <para>les <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> propriété pour renvoyer un objet de modèle qui fait référence au modèle Normal. Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> propriété pour renvoyer le modèle attaché au document spécifié.</para><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> propriété pour déterminer l’emplacement des modèles utilisateur ou groupe de travail (autrement dit, le dossier où vous souhaitez stocker ces modèles).</para><para /></remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Template" /> objets qui représentent tous les modèles actuellement disponibles.</summary>
+    <remarks><para>Cette collection comprend des modèles ouverts, des modèles attachés à des documents ouverts et des modèles globaux chargés dans la boîte de dialogue modèles et compléments (menu Outils).</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.Templates" /> propriété pour renvoyer la <b></b> collection Templates.</para>
+      <para>La méthode <b>Add</b> n'est pas disponible pour la collection <b>Templates</b>. Au lieu de cela, vous pouvez ajouter un modèle à la collection <b>Templates</b> en effectuant l'une des opérations suivantes :</para>
+      <list type="bullet">
+        <item>
+          <para>Utilisation de <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> la méthode avec <see cref="T:Microsoft.Office.Interop.Word.Documents" /> la collection pour ouvrir un document basé sur un modèle ou un modèle.</para>
+        </item>
+        <item>
+          <para>Utilisation de <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> la méthode avec la collection <b>documents</b> pour ouvrir un nouveau document basé sur un modèle.</para>
+        </item>
+        <item>
+          <para>Utilisation de <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> la méthode avec <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> la collection pour charger un modèle global.</para>
+        </item>
+        <item>
+          <para>Utilisation de <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> la propriété avec l’objet <b>document</b> pour attacher un modèle à un document.</para>
+        </item>
+      </list>
+      <para>Utiliser <b></b>des modèles<paramref name="index" />(), <paramref name="index" /> où est le nom du modèle ou le numéro d’index, pour renvoyer un seul objet de <b>modèle</b> , le numéro d’index représente la position du modèle dans la collection de <b>modèles</b> .</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> propriété pour renvoyer un objet template qui fait référence au modèle normal. Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> propriété pour renvoyer le modèle attaché au document spécifié.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> propriété pour déterminer l’emplacement des modèles d’utilisateur ou de groupe de travail (autrement dit, le dossier dans lequel vous souhaitez stocker ces modèles).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +69,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,11 +127,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -184,8 +190,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</param>
+        <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -213,10 +218,8 @@
       <Parameters />
       <Docs>
         <summary>Charge les blocs de construction pour tous les modèles dans Microsoft Office Word.</summary>
-        <remarks>
-          <para>Word charge généralement des blocs de construction lorsqu’ils sont nécessaires, par exemple lorsqu’un utilisateur affiche une galerie à l’aide du ruban. Cette méthode oblige Word à charger immédiatement tous les blocs de construction.</para>
-          <para />
-        </remarks>
+        <remarks><para>Word charge normalement les blocs de construction lorsqu’ils sont nécessaires, par exemple lorsqu’un utilisateur affiche une galerie à l’aide du ruban. Cette méthode force Word à charger immédiatement tous les blocs de construction.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

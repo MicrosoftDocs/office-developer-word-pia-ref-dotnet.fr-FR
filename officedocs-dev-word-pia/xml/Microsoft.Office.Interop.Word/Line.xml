@@ -1,13 +1,5 @@
 <Type Name="Line" FullName="Microsoft.Office.Interop.Word.Line">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e9afdfda2906e3594ac08ac1c2a61aa3b30d2dd4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668014" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Line" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="80960bb8019b1b081227269cce20a4f7158fa50d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147906" /></Metadata><TypeSignature Language="C#" Value="public interface Line" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Line" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Line" />
   <TypeSignature Language="VB.NET" Value="Public Interface Line" />
@@ -27,10 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Représente une ligne individuelle dans un <see cref="T:Microsoft.Office.Interop.Word.Rectangle" /> objet de type <b>wdTextRectangle</b>.</summary>
-    <remarks>
-      <para>Permet de définir par programme la mise en page dans un document de la <b>ligne</b> objet et les méthodes associées.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Shapes.Item(System.Object@)" /> méthode pour renvoyer un objet <b>Line</b> spécifique.</para> Utilisation de 
-      <para>les <see cref="P:Microsoft.Office.Interop.Word.Line.LineType" /> propriété pour déterminer si la ligne spécifiée est une ligne de texte (<b>wdTextLine</b>) ou une ligne de tableau (<b>wdTableRow</b>). Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> à accéder au contenu et la mise en forme de la ligne de propriété.</para><para /></remarks>
+    <remarks><para>Utilisez l'objet <b>Line</b> et les méthodes associées et des propriétés pour définir par programme la mise en page dans un document.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Shapes.Item(System.Object@)" /> méthode pour renvoyer un objet <b>line</b> spécifique.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Line.LineType" /> propriété pour déterminer si la ligne spécifiée est une ligne de texte (<b>wdTextLine</b>) ou une ligne de tableau (<b>wdTableRow</b>). Utilisez ensuite la <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> propriété pour accéder au contenu et à la mise en forme de la ligne.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,11 +78,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -172,7 +162,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLineType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.WdLineType" /> constante qui indique si une ligne correspond à une ligne de texte ou une ligne de tableau.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.WdLineType" /> constante qui indique si un trait est une ligne de texte ou une ligne de tableau.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,12 +218,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou le renvoi d’une plage de formes à partir d’une collection de formes, voir la méthode <b>Range</b> de la <see cref="T:Microsoft.Office.Interop.Word.Document" /> ou <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> objets.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage de formes à partir <see cref="T:Microsoft.Office.Interop.Word.Document" /> d' <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> une collection de formes, voir la méthode <b>Range</b> des objets ou.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rectangles">
@@ -259,12 +247,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Rectangles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Rectangles" /> collection qui représente une partie du texte ou des graphiques d’une page dans un document.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.Rectangles" /> collection qui représente une partie du texte ou des graphiques d’une page dans un document.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utilisez la collection <b>Rectangles</b> et les objets associés et des propriétés pour définir par programme la mise en page dans un document. La propriété Rectangles correspond à des parties du texte ou des graphiques sur une page dans un document.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour définir par programme la mise en page dans un document, utilisez la collection <b>Rectangles</b> et les objets associés et les propriétés. La propriété Rectangles correspond à des parties du texte ou des graphiques dans une page dans un document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -318,7 +304,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la largeur de l’objet spécifié, en points.</summary>
+        <summary>Renvoie ou définit la largeur de l’objet spécifié, en points.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="DropDown" FullName="Microsoft.Office.Interop.Word.DropDown">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d1aa9b15f2b37ab9a12aa1f385ead515fc2994b0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667569" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DropDown" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="657342fc0405fbd6f204e36ef3b45bfddf99d76e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144574" /></Metadata><TypeSignature Language="C#" Value="public interface DropDown" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DropDown" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DropDown" />
   <TypeSignature Language="VB.NET" Value="Public Interface DropDown" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Représente un champ liste déroulante qui contient la liste des éléments d'un formulaire.</summary>
-    <remarks>
-      <para>Utilisez <b>FormFields</b>(<paramref name="index" />), où index est le numéro d’index ou le nom du signet associé au champ liste déroulante, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /> propriété avec l’objet <b>FormField</b> pour renvoyer un objet <b>DropDown</b> .</para>
-      <para>Le numéro d’index représente la position du champ de formulaire dans le <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> collection.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> méthode avec la collection <b>FormFields</b> pour ajouter un champ liste déroulante.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilisez <b>FormFields</b>(<paramref name="index" />), où index est le numéro d’index ou le nom de signet associé au champ de formulaire de liste déroulante, <see cref="T:Microsoft.Office.Interop.Word.FormField" /> pour renvoyer un seul objet. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /> propriété avec l’objet <b>FormField</b> pour renvoyer un objet <b>DropDown</b> .</para>
+      <para>Le numéro d’index représente la position du champ de formulaire dans <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> la collection.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> méthode avec la collection <b>FormFields</b> pour ajouter un champ de formulaire de liste déroulante.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -123,10 +111,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l’élément de liste déroulante par défaut.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le premier élément dans un champ liste déroulante 1, le deuxième élément 2 et ainsi de suite.</para>
-          <para />
-        </remarks>
+        <remarks><para>Dans un champ de liste déroulante, le premier élément porte le numéro 1, le deuxième le numéro 2, et ainsi de suite.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListEntries">
@@ -152,7 +138,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ListEntries" /> collection qui représente tous les éléments dans un <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> objet.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.ListEntries" /> collection qui représente tous les éléments d’un <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> objet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,13 +194,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si l’objet de champ de formulaire spécifié est un champ case à cocher valide.</summary>
+        <summary>Détermine si l’objet de champ de formulaire spécifié est un champ de formulaire de case à cocher valide.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si l’objet de champ de formulaire spécifié est un champ de formulaire de case à cocher valide et <b>False</b> dans le cas contraire.</para>
-          <para>Pour la <see cref="T:Microsoft.Office.Interop.Word.CheckBox" />, <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, et <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> objets, utilisez la <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet pour déterminer le type de champ de formulaire (<b>wdFieldFormCheckBox</b>, <b>wdFieldFormDropDown</b>ou <b>wdFieldFormTextInput</b>) avant application de la <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />, <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />, ou <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> propriété. Cette précaution garantit que l’objet <b>FormField</b> correspond au type attendu.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si l’objet de champ de formulaire spécifié est un champ de formulaire de case à cocher valide et la <b>valeur false</b> dans le cas contraire.</para>
+          <para>Pour les <see cref="T:Microsoft.Office.Interop.Word.CheckBox" />objets <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, et <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> , <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> utilisez la propriété de l' <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet pour déterminer le type de champ de formulaire (<b>wdFieldFormCheckBox</b>, <b>wdFieldFormDropDown</b>ou <b>wdFieldFormTextInput</b>) avant l’application la <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />propriété <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />, ou <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> . Cette précaution permet de s’assurer que le type de l’objet <b>FormField</b> est attendu.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">

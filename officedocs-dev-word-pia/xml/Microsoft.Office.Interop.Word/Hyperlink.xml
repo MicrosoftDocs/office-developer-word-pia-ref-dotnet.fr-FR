@@ -1,13 +1,5 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Word.Hyperlink">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b20d04082a16f963ccc15d9f6d80fa09a9949c11" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668696" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Hyperlink" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b605957f028ab3eb567ae3d9d066ecf695f2ce45" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146709" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlink" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Hyperlink" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlink" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente un lien hypertexte.</summary>
-    <remarks>
-      <para>L’objet <b>Hyperlink</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" /> collection.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" /> propriété permet de renvoyer un objet <b>Hyperlink</b> associé à une forme (une forme peut avoir qu’un lien hypertexte).</para>
-      <para>Utiliser <b>des liens hypertexte</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Hyperlink</b> à partir d’un document, range ou selection.</para>
-      <para />
-    </remarks>
+    <remarks><para>L' <b></b> objet Hyperlink est un membre de <see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" /> la collection.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" /> propriété pour renvoyer un <b></b> objet Hyperlink associé à une forme (une forme ne peut avoir qu’un seul lien hypertexte).</para>
+      <para>Utilisez les <b>liens hypertexte</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet Hyperlink à partir d’un document, d’une plage ou d’une sélection. <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Address">
@@ -61,7 +51,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’adresse (par exemple, un nom de fichier ou URL) du lien hypertexte spécifié.</summary>
+        <summary>Renvoie ou définit l’adresse (par exemple, un nom de fichier ou une URL) du lien hypertexte spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,12 +165,9 @@
         <Parameter Name="Overwrite" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b>obligatoire. Représente le nom de fichier du document spécifié.</param>
-        <param name="EditNow">
-          <b>Boolean</b>obligatoire. <b>True</b> pour que le document spécifié s’ouvre immédiatement dans son environnement d’édition associé. La valeur par défaut est <b>True</b>.</param>
-        <param name="Overwrite">
-          <b>Boolean</b>obligatoire. <b>True</b> pour remplacer tout fichier existant du même nom dans le même dossier. <b>False</b> si tous les fichiers existants du même nom sont conservées et <paramref name="FileName" /> argument spécifie un nouveau nom de fichier. <b>False</b> est la valeur par défaut.</param>
+        <param name="FileName">Argument de type <b>String</b> obligatoire. Représente le nom de fichier du document spécifié.</param>
+        <param name="EditNow"><b>Boolean</b> obligatoire. Affectez-lui la valeur <b>True</b> pour que le document spécifié s'ouvre directement dans l'environnement d'édition qui lui est associé. La valeur par défaut est <b>True</b>.</param>
+        <param name="Overwrite"><b>Boolean</b> obligatoire. Affectez-lui la valeur <b>True</b> pour remplacer tout fichier portant un même nom dans le même dossier. <b>False</b> si un fichier existant du même nom est conservé et que <paramref name="FileName" /> l’argument spécifie un nouveau nom de fichier. La valeur par défaut est <b>False</b>.</param>
         <summary>Crée un document lié au lien hypertexte spécifié.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -210,11 +197,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -268,12 +253,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la chaîne de texte pour la ligne d’objet du lien hypertexte spécifié. La ligne d’objet est ajoutée à l’adresse de lien hypertexte Internet, ou l’URL.</summary>
+        <summary>Renvoie ou définit la chaîne de texte pour la ligne d’objet du lien hypertexte spécifié. La ligne d’objet est ajoutée à l’adresse Internet du lien hypertexte, ou URL.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est généralement utilisée avec des liens hypertexte du courrier électronique. La valeur de cette propriété est prioritaire sur n’importe quel objet du message électronique spécifié dans le <see cref="P:Microsoft.Office.Interop.Word.Hyperlink.Address" /> propriété de la même <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est couramment utilisée avec les liens hypertexte du courrier électronique. La valeur de cette propriété est prioritaire sur tout objet de courrier électronique spécifié <see cref="P:Microsoft.Office.Interop.Word.Hyperlink.Address" /> dans la propriété du <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" /> même objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtraInfoRequired">
@@ -299,13 +282,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si des informations supplémentaires sont obligatoires pour rechercher le lien hypertexte spécifié.</summary>
+        <summary><b>True</b> si des informations supplémentaires sont obligatoires pour rechercher le lien hypertexte spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez spécifier des informations supplémentaires à l’aide de la <paramref name="ExtraInfo" /> argument avec le <see cref="M:Microsoft.Office.Interop.Word.Hyperlink.Follow(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> ou <see cref="M:Microsoft.Office.Interop.Word._Document.FollowHyperlink(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode. Par exemple, vous pouvez utiliser <paramref name="ExtraInfo" /> pour spécifier les coordonnées d’une image interactive, le contenu d’un formulaire ou un nom de fichier FAT.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez spécifier des informations supplémentaires à l' <paramref name="ExtraInfo" /> aide de l' <see cref="M:Microsoft.Office.Interop.Word.Hyperlink.Follow(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> argument <see cref="M:Microsoft.Office.Interop.Word._Document.FollowHyperlink(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> avec la méthode ou. Par exemple, vous pouvez utiliser <paramref name="ExtraInfo" /> pour spécifier les coordonnées d’une image interactive, le contenu d’un formulaire ou un nom de fichier FAT.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Follow">
@@ -334,16 +314,14 @@
         <Parameter Name="HeaderInfo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NewWindow">Facultatif <b>Object</b>. <b>True</b> pour afficher le document cible dans une nouvelle fenêtre. <b>False</b> est la valeur par défaut.</param>
-        <param name="AddHistory">Facultatif <b>Object</b>. Cet argument est réservé pour une utilisation future.</param>
-        <param name="ExtraInfo">Facultatif <b>Object</b>. Un chaîne ou tableau d’octets qui spécifie des informations supplémentaires pour HTTP à utiliser pour résoudre le lien hypertexte. Par exemple, vous pouvez utiliser <paramref name="ExtraInfo" /> pour spécifier les coordonnées d’une image interactive, le contenu d’un formulaire ou un nom de fichier FAT. La chaîne est publiée ou ajoutée, selon la valeur de <paramref name="Method" />. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" /> propriété pour déterminer si des informations supplémentaires sont requises.</param>
-        <param name="Method">Facultatif <b>Object</b>. Spécifie que les informations de façon supplémentaires pour le protocole HTTP sont gérées. Il peut s’agir <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> constante.</param>
-        <param name="HeaderInfo">Facultatif <b>Object</b>. Chaîne qui spécifie les informations d’en-tête pour la requête HTTP. La valeur par défaut est une chaîne vide. Vous pouvez combiner plusieurs lignes d’en-tête dans une chaîne unique. La chaîne spécifiée est automatiquement convertie en caractères ANSI. Notez que la <paramref name="HeaderInfo" /> argument remplace les champs d’en-tête HTTP par défaut.</param>
-        <summary>Affiche un document mis en cache spécifié <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> objet, s’il a déjà été téléchargé. Dans le cas contraire, cette méthode résout le lien hypertexte, télécharge le document cible et affiche le document dans l’application appropriée.</summary>
-        <remarks>
-          <para>Si le lien hypertexte utilise le protocole de fichier, cette méthode ouvre le document au lieu de le télécharger.</para>
-          <para />
-        </remarks>
+        <param name="NewWindow"><b>Objet</b>facultatif. <b>True</b> : pour afficher le document cible dans une nouvelle fenêtre. La valeur par défaut est <b>False</b>.</param>
+        <param name="AddHistory"><b>Objet</b>facultatif. Cet argument est réservé pour une utilisation future.</param>
+        <param name="ExtraInfo"><b>Objet</b>facultatif. Chaîne ou tableau d'octets qui spécifie des informations supplémentaires destinées à HTTP pour rechercher le lien hypertexte. Par exemple, vous pouvez utiliser <paramref name="ExtraInfo" /> pour spécifier les coordonnées d’une image interactive, le contenu d’un formulaire ou un nom de fichier FAT. La chaîne est publiée ou ajoutée, en fonction de la valeur de <paramref name="Method" />. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" /> propriété pour déterminer si des informations supplémentaires sont requises.</param>
+        <param name="Method"><b>Objet</b>facultatif. Spécifie la manière dont les informations supplémentaires destinées à HTTP sont traitées. Peut être n' <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> importe quelle constante.</param>
+        <param name="HeaderInfo"><b>Objet</b>facultatif. Chaîne qui indique les informations d’en-tête pour la requête HTTP. La valeur par défaut est une chaîne vide. Vous pouvez combiner plusieurs lignes d’en-tête en une seule chaîne. La chaîne indiquée est automatiquement convertie en caractères ANSI. Notez que l' <paramref name="HeaderInfo" /> argument peut remplacer les champs d’en-tête http par défaut.</param>
+        <summary>Affiche un document mis en cache associé à l' <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> objet spécifié, s’il a déjà été téléchargé. Sinon, cette méthode résout le lien hypertexte, télécharge le document cible et affiche le document dans l'application appropriée.</summary>
+        <remarks><para>Si le lien hypertexte utilise le protocole de fichier, la méthode ouvre le document au lieu de le télécharger.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -369,7 +347,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -425,12 +403,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> de formes à partir d’une collection de formes, voir la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenTip">
@@ -489,10 +465,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objet pour le lien hypertexte spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si un lien hypertexte n’est pas représenté par une forme, une erreur se produit.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si le lien hypertexte n'est pas représenté par une forme, une erreur se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubAddress">
@@ -523,10 +497,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit un emplacement nommé dans la destination du lien hypertexte spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’emplacement nommé peut être un signet dans un document Microsoft Word, une cellule nommée ou une référence de cellule dans une feuille de calcul Microsoft Excel, un objet nommé dans une base de données Microsoft Access ou un numéro de diapositive dans une présentation Microsoft PowerPoint.</para>
-          <para />
-        </remarks>
+        <remarks><para>L'emplacement nommé peut être un signet dans un document Microsoft Word, une cellule nommée ou une référence de cellule dans une feuille de calcul Microsoft Excel, un objet nommé dans une base de données Microsoft Access ou un numéro de diapositive dans une présentation Microsoft PowerPoint.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubAddressOld">
@@ -647,10 +619,8 @@
       <Docs>
         <summary>Renvoie le type de lien hypertexte.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Type</b> peut être une de le <see cref="T:Microsoft.Office.Core.MsoHyperlinkType" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>type</b> peut être une des <see cref="T:Microsoft.Office.Core.MsoHyperlinkType" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

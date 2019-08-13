@@ -1,13 +1,5 @@
 <Type Name="Revision" FullName="Microsoft.Office.Interop.Word.Revision">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="19a4a8beaa52c27421cb617ffa9da73b2b75908e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667318" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Revision" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f8799ae269a5dff96f44f56fb3d688f17d795494" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144035" /></Metadata><TypeSignature Language="C#" Value="public interface Revision" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Revision" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Revision" />
   <TypeSignature Language="VB.NET" Value="Public Interface Revision" />
@@ -27,10 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Représente une modification marquée par une marque de révision.</summary>
-    <remarks>
-      <para>L’objet <b>Revision</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.Revisions" /> collection. <b>Cette collection</b> contient toutes les marques de révision dans une plage ou un document.</para>
-      <para>Utilisation <b>des révisions</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Revision</b> . Le numéro d’index représente la position de la révision dans la plage ou du document.</para> Méthode 
-      <para><b>Ajouter</b> n’est pas disponible pour la collection <b>Revisions</b> . Les objets <b>Revision</b> sont ajoutés lorsque le suivi des modifications est activé. Définir le <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> propriété sur <b>True</b> pour effectuer le suivi des modifications apportées au texte du document.</para><para /></remarks>
+    <remarks><para>L' <b></b> objet Revision est membre de la <see cref="T:Microsoft.Office.Interop.Word.Revisions" /> collection. La <b></b> collection Revisions inclut toutes les marques de révision dans une plage ou un document.</para>
+      <para>Utilisez <b></b>des révisions<paramref name="index" />(), <paramref name="index" /> où est le numéro d’index, pour renvoyer un seul objet Revision. <b></b> Le numéro d'index représente la position de la révision dans la plage ou du document.</para>
+      <para>La méthode <b>Add</b> n'est pas disponible pour la collection <b>Revisions</b>. Les objets <b>Revision</b> sont ajoutés lorsque le suivi des modifications est activé. Affectez <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> la <b>valeur true</b> à la propriété pour effectuer le suivi des révisions apportées au texte du document.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -81,7 +73,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,14 +129,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Cells</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Cells" /> collection qui représente les cellules de tableau qui ont été marquées avec marques de révision. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Cells" />
-        </value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’un seul membre d’une collection, voir <a href="HV10056838">renvoi d’un objet à partir d’une Collection</a></para>
-          <para />
-        </remarks>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.Cells" /> collection qui représente les cellules de tableau qui ont été marquées avec des marques de révision. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Cells" /></value>
+        <remarks><para>Pour plus d’informations sur le renvoi d’un seul membre d’une collection, voir <a href="HV10056838">renvoi d’un objet à partir d’une collection</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -172,11 +160,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -258,7 +244,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>entier</b> qui représente la position d’un élément dans une collection.</summary>
+        <summary>Renvoie une <b>valeur de type Integer</b> qui représente la position d’un élément dans une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,10 +272,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente une plage de texte qui a été déplacé d’un endroit à un autre dans un document avec suivi des modifications. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Range" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente une plage de texte déplacée d’un endroit à un autre dans un document avec des marques de révision. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,12 +328,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou le renvoi d’une plage de formes à partir d’une collection de formes, voir la méthode <b>Range</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Document" /> ou <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage de formes à partir <see cref="T:Microsoft.Office.Interop.Word.Document" /> d' <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> une collection de formes, voir la méthode <b>Range</b> d’un objet ou.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reject">
@@ -374,11 +356,9 @@
       <Parameters />
       <Docs>
         <summary>Rejette la modification spécifiée. Les marques de révision sont supprimées et le texte d'origine reste intact.</summary>
-        <remarks>
-          <para>
-            <b>Remarque</b>  Modifications de mise en forme ne peut pas être rejetées.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Note</b>  La mise en forme des modifications ne peut pas être rejetée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -404,7 +384,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Style" /> object qui représente le style associé à l’auteur actuel pour les révisions.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Style" /> Object qui représente le style associé à l’auteur actuel pour les révisions.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -434,9 +414,8 @@
       <Docs>
         <summary>Renvoie le type de révision.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />peut être une de ces constantes <b>WdRevisionType</b> .</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />Il peut s’agir de l’une des constantes <b>WdRevisionType</b> suivantes.</para>
           <para>
             <b>wdNoRevision</b>
           </para>
@@ -479,8 +458,7 @@
           <para>
             <b>wdRevisionTableProperty</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

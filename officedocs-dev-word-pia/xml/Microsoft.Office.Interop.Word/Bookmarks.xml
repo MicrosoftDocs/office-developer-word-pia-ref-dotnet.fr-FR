@@ -1,13 +1,5 @@
 <Type Name="Bookmarks" FullName="Microsoft.Office.Interop.Word.Bookmarks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="559e2005557e5b0811ba9d6921064eb66efff775" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667867" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Bookmarks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="164f4a022f0e0f2ed1514f8a343f3dcbfd3f7cef" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146331" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmarks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bookmarks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bookmarks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bookmarks&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objets qui représentent les signets contenus dans la sélection spécifiée, une plage ou un document.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Document.Bookmarks" /> propriété permet de renvoyer la collection <b>Bookmarks</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> pour définir un signet pour une plage dans un document.</para>
-      <para>Use <b>Bookmarks</b>(<paramref name="index" />), où <paramref name="index" /> est le nom du signet ou le numéro d’index, pour renvoyer un seul objet <b>Bookmark</b> . Vous devez respecter l’orthographe (mais pas nécessairement la casse) du nom du signet.</para>
-      <para>Le numéro d’index représente la position du signet dans le <see cref="T:Microsoft.Office.Interop.Word.Selection" /> ou <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet. Pour le <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet, le numéro d’index représente la position du signet dans la liste alphabétique de signets dans la boîte de dialogue Signet (cliquez sur nom pour trier la liste des signets par ordre alphabétique). </para>
-      <para>Le <see cref="P:Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" /> propriété affecte le nombre d’éléments dans la collection <b>Bookmarks</b> . Si <b>ShowHidden</b> a la <b>valeur True</b>, les signets masqués sont inclus dans la collection <b>Bookmarks</b> .</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objets qui représentent les signets contenus dans la sélection, la plage ou le document spécifié.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.Bookmarks" /> propriété pour renvoyer la <b></b> collection Bookmarks.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> méthode pour définir un signet pour une plage dans un document.</para>
+      <para>Utilisez <b></b>les signets<paramref name="index" />(), <paramref name="index" /> où est le nom du signet ou le numéro d’index, pour renvoyer un seul objet <b>Bookmark</b> . You must exactly match the spelling (but not necessarily the capitalization) of the bookmark name.</para>
+      <para>Le numéro d’index représente la position du signet dans l' <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> ou. Pour l' <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet, le numéro d’index représente la position du signet dans la liste alphabétique de signets de la boîte de dialogue signets (cliquez sur nom pour trier la liste des signets par ordre alphabétique). </para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" /> propriété affecte le nombre d’éléments dans la <b></b> collection Bookmarks. Si  <b>ShowHidden</b> a la valeur <b>True</b>, les signets masqués sont inclus dans la collection  <b>Bookmarks</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -66,8 +56,8 @@
       <Docs>
         <param name="Name">Nom du signet. Il ne doit comporter qu'un seul mot.</param>
         <param name="Range">Plage de texte incluse dans le signet. Il est possible d'insérer un signet dans une plage réduite (le point d'insertion).</param>
-        <summary>Ajouter un signet à une plage.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> object qui représente le signet ajouté à la plage.</returns>
+        <summary>Ajoute un signet à une plage.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objet qui représente le signet ajouté à la plage.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente le créateur de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente le créateur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,11 +142,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultSorting">
@@ -187,10 +175,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l'option de tri pour les noms de signets affichés dans la boîte de dialogue signet (menuInsertion ).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété n’affecte pas l’ordre des objets Bookmark contenus dans le <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> collection.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété n’a aucune incidence sur l’ordre des objets <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> Bookmark dans la collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -218,8 +204,7 @@
       <Docs>
         <param name="Name">Nom du signet.</param>
         <summary>Détermine si le signet spécifié existe.</summary>
-        <returns>
-          <b>La valeur true</b> si le signet spécifié existe, <b>False</b> dans le cas contraire.</returns>
+        <returns><b>True</b> si le signet spécifié existe, <b>false</b> dans le cas contraire.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,7 +266,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Le nom de l’objet à renvoyer.</param>
+        <param name="Index">Nom de l’objet individuel à renvoyer.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -310,7 +295,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet spécifié.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,13 +326,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique si des signets masqués sont inclus dans le <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> collection.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique si les signets masqués <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> sont inclus dans la collection.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété contrôle également si des signets masqués sont répertoriés dans la boîte de dialogue Signet (menu Insertion).</para>
+        <remarks><para>Cette propriété contrôle également si les signets masqués sont répertoriés dans la boîte de dialogue signet (menu Insertion).</para>
           <para>Signets masqués sont insérés automatiquement lorsque des renvois sont insérés dans le document.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

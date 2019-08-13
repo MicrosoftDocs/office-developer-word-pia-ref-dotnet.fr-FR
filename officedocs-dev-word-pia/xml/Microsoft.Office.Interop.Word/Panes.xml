@@ -1,13 +1,5 @@
 <Type Name="Panes" FullName="Microsoft.Office.Interop.Word.Panes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d90b242373bbbcaf3d57c22154e720e2f2e43252" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667958" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Panes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c93e1f96de2b3c9480f4dadee3a64fe30ee9c1e5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144175" /></Metadata><TypeSignature Language="C#" Value="public interface Panes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Panes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Panes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Panes&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objets qui représentent les volets d’une fenêtre donnée.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Window.Panes" /> propriété permet de renvoyer la collection <b>Panes</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Panes.Add(System.Object@)" /> méthode ou <see cref="P:Microsoft.Office.Interop.Word.Window.Split" /> propriété pour ajouter un volet de fenêtre.</para>
-      <para>Que vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Word.View.SplitSpecial" /> propriété pour afficher les commentaires, les pieds de page ou les notes de fin dans un volet séparé.</para>
-      <para>Une fenêtre contient plusieurs volets si elle est fractionnée ou si l’affichage actif n’est pas en mode d’affichage et des informations telles que des notes ou des commentaires sont affichées.</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objets qui représentent les volets d’une fenêtre donnée.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Window.Panes" /> propriété pour renvoyer la <b></b> collection Panes.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Panes.Add(System.Object@)" /> méthode ou la <see cref="P:Microsoft.Office.Interop.Word.Window.Split" /> propriété pour ajouter un volet de fenêtre.</para>
+      <para>Vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Word.View.SplitSpecial" /> propriété pour afficher les commentaires, les notes de bas de page ou les notes de fin dans un volet séparé.</para>
+      <para>Une fenêtre contient plusieurs volets si elle est fractionnée ou si elle n’est pas affichée en mode page et que des informations telles que des notes de bas de page ou des commentaires sont affichées.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,13 +52,11 @@
         <Parameter Name="SplitVertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="SplitVertical">Facultatif <b>Object</b>. Nombre qui indique, en pourcentage, la proportion de la fenêtre, mesurée de haut en bas, qui doit s'afficher au-dessus du fractionnement.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objet qui représente un nouveau volet à une fenêtre.</summary>
+        <param name="SplitVertical"><b>Objet</b>facultatif. Nombre qui indique, en pourcentage, la proportion de la fenêtre, mesurée de haut en bas, qui doit s'afficher au-dessus du fractionnement.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objet qui représente un nouveau volet dans une fenêtre.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cette méthode échoue si elle est appliquée à une fenêtre déjà fractionnée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode échoue si elle est appliquée à une fenêtre qui a déjà été fractionnée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -94,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,11 +140,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -217,7 +203,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

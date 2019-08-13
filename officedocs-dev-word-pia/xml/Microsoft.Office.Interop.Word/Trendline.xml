@@ -1,13 +1,5 @@
 <Type Name="Trendline" FullName="Microsoft.Office.Interop.Word.Trendline">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9b82db86a793f5b37594ba6a159598dc18ac5a7e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668432" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="daa5f65be508f63497b12aec2cbb8833c613a49e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143783" /></Metadata><TypeSignature Language="C#" Value="public interface Trendline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Trendline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendline" />
@@ -27,15 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une courbe de tendance dans un graphique.</summary>
-    <remarks>
-      <para>Une courbe de tendance indique la tendance, ou direction, des données d’une série. Le <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> collection. Le <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> collection contient tous les <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> objets pour une seule série.</para>
-      <para />
-    </remarks>
-    <example>
-      <para>Utilisez <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> (<paramref name="Index" />), où <paramref name="Index" /> est le numéro d’index de la courbe de tendance, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> objet.</para>
-      <para>Le numéro d’index indique l’ordre dans lequel les courbes de tendance ont été ajoutées à la série. Trendlines (1) est la première courbe de tendance ajoutée à la série et Trendlines (Trendlines.Count) est la dernière série ajoutée.</para>
-      <para>L’exemple suivant modifie le type de courbe de tendance pour la première série du premier graphique du document actif. Si la série ne possède aucune courbe de tendance, cet exemple échouera.</para>
-    </example>
+    <remarks><para>Une courbe de tendance indique la tendance, ou sens, des données d'une série. L' <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> collection. La <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> collection contient tous les <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> objets d’une seule série.</para>
+      <para> </para></remarks>
+    <example><para>Utilisez <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> (<paramref name="Index" />), où <paramref name="Index" /> est le numéro d’index de la courbe de tendance <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> , pour renvoyer un seul objet.</para>
+      <para>Le numéro d'index indique l'ordre dans lequel les courbes de tendance ont été ajoutées à la série. Trendlines(1) est la première courbe de tendance ajoutée à la série et Trendlines(Trendlines.Count), la dernière.</para>
+      <para>L'exemple suivant modifie le type de courbe de tendance de la première série du premier graphique du document actif. Si la série ne possède pas de courbe de tendance, cet exemple échoue.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,9 +49,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Application</b> (voir ci-dessus)</value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Application</b> (voir ci-dessus)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,9 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit le nombre de périodes (ou unités sur un graphique en nuages de points) que la courbe de tendance étend en rétrospective.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,10 +117,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nombre de périodes (ou unités sur un graphique en nuages de points) que la courbe de tendance étend en rétrospective. En lecture/écriture <b>Double</b>.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit le nombre de périodes (ou unités sur un graphique en nuages de points) que la courbe de tendance étend en rétrospective. <b>Double</b> en lecture/écriture.</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,10 +145,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objet qui représente la bordure de l’objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> Object qui représente la bordure de l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,9 +172,7 @@
       <Parameters />
       <Docs>
         <summary>Annule la mise en forme de l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,14 +199,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. Valeur <b>Integer</b> en lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l'objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -253,14 +228,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> object qui représente l’étiquette de données associée à la courbe de tendance. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />
-        </value>
-        <remarks>
-          <para>Pour activer les étiquettes de données pour une courbe de tendance que vous devez définir la <see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayEquation" /> propriété ou la <see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayRSquared" /> propriété la <b>valeur True</b>.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> Object qui représente l’étiquette de données associée à la courbe de tendance. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DataLabel" /></value>
+        <remarks><para>Pour activer les étiquettes de données pour une courbe de tendance, vous <see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayEquation" /> devez définir la <see cref="P:Microsoft.Office.Interop.Word.Trendline.DisplayRSquared" /> propriété ou la propriété sur <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -285,9 +256,7 @@
       <Parameters />
       <Docs>
         <summary>Supprime l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,9 +287,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété a la valeur <b>True</b> si l'équation de la courbe de tendance est affichée sur le graphique (dans la même étiquette de données que le coefficient de détermination). Donner la valeur <b>True</b> à cette propriété active automatiquement les étiquettes de données. Type de données <b>Boolean</b> en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,9 +318,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété a la valeur <b>True</b> si le coefficient de détermination de la courbe de tendance est affiché sur le graphique (dans la même étiquette de données que l'équation). Donner la valeur <b>True</b> à cette propriété active automatiquement les étiquettes de données. Type de données <b>Boolean</b> en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,9 +347,7 @@
       <Docs>
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet.
 En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,9 +384,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit le nombre de périodes (ou unités sur un graphique en nuages de points) que la courbe de tendance étend en prospective.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -454,9 +415,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit le nombre de périodes (ou unités sur un graphique en nuages de points) que la courbe de tendance étend en prospective. En lecture/écriture <b>Double</b>.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -484,8 +443,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie le numéro d'index de l'objet dans la collection des objets similaires.</summary>
-        <value>
-          <b>Nombre entier</b>.</value>
+        <value><b>Integer</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -516,13 +474,9 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit le point d'intersection de la courbe de tendance et de l'axe des ordonnées. Type de données <b>Double</b> en lecture-écriture.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Définir cette propriété affecte la <see cref="P:Microsoft.Office.Interop.Word.Trendline.InterceptIsAuto" /> propriété la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <value><b>Double</b></value>
+        <remarks><para>Définir cette propriété affecte la <see cref="P:Microsoft.Office.Interop.Word.Trendline.InterceptIsAuto" /> <b>valeur false</b>à la propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InterceptIsAuto">
@@ -552,13 +506,9 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété a la valeur <b>True</b> si le point d’intersection de la courbe de tendance et de l’axe des ordonnées est automatiquement déterminé par la régression. Type de données <b>Boolean</b> en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Définition de la <see cref="P:Microsoft.Office.Interop.Word.Trendline.Intercept" /> propriété définit cette propriété sur <b>False</b>.</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>La définition <see cref="P:Microsoft.Office.Interop.Word.Trendline.Intercept" /> de la propriété définit cette propriété sur <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -588,9 +538,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur de type <b>String</b> qui représente le nom de l’objet.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -620,15 +568,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si Microsoft Word détermine automatiquement le nom de la courbe de tendance. En lecture/écriture <b>booléen</b>.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>La valeur true</b> si Microsoft Word détermine automatiquement le nom de la courbe de tendance. En lecture/écriture <b>booléen</b>.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Cet exemple montre comment configure Microsoft Word afin de déterminer automatiquement le nom de la courbe de tendance 1 du premier graphique du document actif. L’exemple doit être exécuté sur un graphique en histogrammes 2D qui contient une seule série avec une courbe de tendance.</para>
-        </example>
+        <example><para>Cet exemple montre comment configurer Microsoft Word de manière à déterminer automatiquement le nom de la courbe de tendance 1 du premier graphique du document actif. L'exemple doit être exécuté sur un histogramme 2D qui contient une seule série avec une courbe de tendance.</para></example>
       </Docs>
     </Member>
     <Member MemberName="Order">
@@ -657,10 +600,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>entière</b> qui représente l’ordre de courbe de tendance (un entier supérieur à 1) lors de la courbe de tendance <see cref="P:Microsoft.Office.Interop.Word.Trendline.Type" /> est <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>type Integer</b> qui représente l’ordre de courbe de tendance (un nombre entier <see cref="P:Microsoft.Office.Interop.Word.Trendline.Type" /> supérieur <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />à 1) lorsque la courbe de tendance est.</summary>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -688,9 +629,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule <b>Object</b>.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -720,10 +659,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la période de la courbe de tendance à moyenne mobile. Peut être une valeur comprise entre 2 et 255. Type de données <b>Integer</b> en lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit la période de la courbe de tendance à moyenne mobile. Il peut s’agir d’une valeur comprise entre 2 et 255. <b>Entier</b> en lecture/écriture.</summary>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -749,9 +686,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Parameters />
       <Docs>
         <summary>Sélectionne l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -781,10 +716,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.XlTrendlineType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" /> valeur représentant le type de courbe de tendance.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" />
-        </value>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" /> définit une valeur qui représente le type de courbe de tendance.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="MailMerge" FullName="Microsoft.Office.Interop.Word.MailMerge">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f5bb8ad4de7fc159ec30e1c17d9fcf1851962f01" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668666" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMerge" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6af9ade1b4ba89c72ee01b49396483c2c4e1bb64" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146184" /></Metadata><TypeSignature Language="C#" Value="public interface MailMerge" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMerge" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMerge" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMerge" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Représente la fonctionnalité de fusion et publipostage dans Microsoft Word.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Document.MailMerge" /> propriété permet de renvoyer l’objet <b>MailMerge</b> . L’objet <b>MailMerge</b> est toujours disponible, l’opération de fusion et publipostage ait commencé ou non. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.MailMerge.State" /> propriété pour déterminer l’état de l’opération de fusion et publipostage.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.MailMerge" /> propriété pour renvoyer l’objet <b>MailMerge</b> . L'objet <b>MailMerge</b> est toujours disponible, que l'opération de publipostage ait commencé ou non. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.MailMerge.State" /> propriété pour déterminer l’état de l’opération de fusion et publipostage.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,19 +106,19 @@
         <Parameter Name="LinkToSource" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">Facultatif <b>Object</b>. Chemin d'accès et nom de fichier de la nouvelle source de données à utiliser.</param>
-        <param name="PasswordDocument">Facultatif <b>Object</b>. Mot de passe à spécifier pour ouvrir la nouvelle source de données.</param>
-        <param name="WritePasswordDocument">Facultatif <b>Object</b>. Mot de passe à spécifier pour enregistrer les modifications apportées à la source de données.</param>
-        <param name="HeaderRecord">Facultatif <b>Object</b>. Noms des champs de la ligne d'en-tête. Si vous ne spécifiez pas cet argument, la ligne d'en-tête standard est utilisée : « Titre, Prénom, Nom, Poste, Société, Adresse1, Adresse2, Code postal, Ville, État, Pays, TéléphoneDomicile, TéléphoneBureau ». Pour séparer les noms des champs, utilisez le séparateur de liste sélectionné dans la boîte de dialogue Propriétés pour Paramètres régionaux du Panneau de configuration.</param>
-        <param name="MSQuery">Facultatif <b>Object</b>. <b>La valeur true</b> pour démarrer Microsoft Query, s’il est installé. Le <paramref name="Name" />, <paramref name="PasswordDocument" />, et <paramref name="HeaderRecord" /> arguments sont ignorés.</param>
-        <param name="SQLStatement">Facultatif <b>Object</b>. Définit les options de la requête à utiliser pour extraire des données.</param>
-        <param name="SQLStatement1">Facultatif <b>Object</b>. Si la chaîne de requête dépasse 255 caractères, <paramref name="SQLStatement" /> spécifie la première partie de la chaîne, et <paramref name="SQLStatement1" /> spécifie la deuxième partie.</param>
-        <param name="Connection">Facultatif <b>Object</b>. Une plage dans laquelle la requête spécifiée par <paramref name="SQLStatement" /> sera effectuée. Comment vous spécifiez la plage dépend de la façon dont les données sont extraites. Pour exemple : lors de la récupération des données via ODBC, vous spécifiez une chaîne de connexion. Lors de la récupération des données à partir de Microsoft Excel à l’aide de l’échange dynamique de données (DDE), vous spécifiez une plage nommée. <b>Sécurité</b>  Dynamic data exchange (DDE) est une technologie plus ancienne qui n’est pas sécurisée. Si possible, utilisez une alternative plus fiable à DDE. Lors de la récupération des données à partir de Microsoft Access, vous spécifiez le mot « Table » ou « Requête » suivi du nom d’une table ou une requête.</param>
-        <param name="LinkToSource">Facultatif <b>Object</b>. <b>True</b> pour exécuter la requête spécifiée par <paramref name="Connection" /> et <paramref name="SQLStatement" /> chaque fois que le document principal est ouvert.</param>
+        <param name="Name"><b>Objet</b>facultatif. Chemin d'accès et nom de fichier de la nouvelle source de données à utiliser.</param>
+        <param name="PasswordDocument"><b>Objet</b>facultatif. Mot de passe à spécifier pour ouvrir la nouvelle source de données.</param>
+        <param name="WritePasswordDocument"><b>Objet</b>facultatif. Mot de passe à spécifier pour enregistrer les modifications apportées à la source de données.</param>
+        <param name="HeaderRecord"><b>Objet</b>facultatif. Noms des champs de la ligne d'en-tête. Si vous ne spécifiez pas cet argument, la ligne d'en-tête standard est utilisée : « Titre, Prénom, Nom, Poste, Société, Adresse1, Adresse2, Code postal, Ville, État, Pays, TéléphoneDomicile, TéléphoneBureau ». Pour séparer les noms des champs, utilisez le séparateur de liste sélectionné dans la boîte de dialogue Propriétés pour Paramètres régionaux du Panneau de configuration.</param>
+        <param name="MSQuery"><b>Objet</b>facultatif. <b>True</b> : pour lancer Microsoft Query, s’il est installé. Les <paramref name="Name" />arguments <paramref name="PasswordDocument" />, et <paramref name="HeaderRecord" /> sont ignorés.</param>
+        <param name="SQLStatement"><b>Objet</b>facultatif. Définit les options de la requête à utiliser pour extraire des données.</param>
+        <param name="SQLStatement1"><b>Objet</b>facultatif. Si la chaîne de requête est plus longue que 255 <paramref name="SQLStatement" /> caractères, il spécifie la première partie de <paramref name="SQLStatement1" /> la chaîne et spécifie la deuxième partie.</param>
+        <param name="Connection"><b>Objet</b>facultatif. Plage dans laquelle <paramref name="SQLStatement" /> doit être exécutée la requête spécifiée. La manière dont vous pouvez spécifier la plage dépend du mode d'extraction des données. Par exemple: lorsque vous récupérez des données via ODBC, vous spécifiez une chaîne de connexion. Lorsque vous récupérez des données à partir de Microsoft Excel à l’aide de l’échange dynamique de données (DDE), vous spécifiez une plage nommée. <b>Sécurité</b>  L’échange dynamique de données (DDE) est une technologie plus ancienne qui n’est pas sécurisée. Dans la mesure du possible, utilisez une alternative plus sécurisée à DDE. Lorsque vous récupérez des données à partir de Microsoft Access, vous spécifiez le mot «table» ou «requête» suivi du nom d’une table ou d’une requête.</param>
+        <param name="LinkToSource"><b>Objet</b>facultatif. <b>True</b> pour effectuer la requête spécifiée par <paramref name="Connection" /> et <paramref name="SQLStatement" /> à chaque ouverture du document principal.</param>
         <summary>Crée un document Microsoft Word dans lequel la source de données de publipostage est disposée dans un tableau.</summary>
-        <remarks>
-          <para>La nouvelle source de données est attachée au document spécifié, lequel devient alors un document principal s’il n’est pas déjà.</para> Évitez de 
-          <para>à l’aide de mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demander le mot de passe de l’utilisateur, stockez-le dans une variable et ensuite utiliser la variable dans votre code.</para><para /></remarks>
+        <remarks><para>La nouvelle source de données est attachée au document spécifié, qui devient alors un document principal s’il ne l’est pas déjà.</para>
+          <para>Évitez d'utiliser des mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demandez-le à l'utilisateur, stockez-le dans une variable et servez-vous de la variable dans votre code.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHeaderSource">
@@ -156,16 +146,15 @@
         <Parameter Name="HeaderRecord" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b>obligatoire. Chemin d'accès et nom du nouveau fichier d'en-tête.</param>
-        <param name="PasswordDocument">Facultatif <b>Object</b>. Mot de passe à spécifier pour ouvrir le nouveau fichier d'en-tête.</param>
-        <param name="WritePasswordDocument">Facultatif <b>Object</b>. Mot de passe à spécifier pour enregistrer les modifications apportées au nouveau fichier d'en-tête.</param>
-        <param name="HeaderRecord">Facultatif <b>Object</b>. Chaîne spécifiant les noms des champs de la ligne d'en-tête. Si vous ne spécifiez pas cet argument, la ligne d'en-tête standard est utilisée : « Titre, Prénom, Nom, Poste, Société, Adresse1, Adresse2, Code postal, Ville, État, Pays, TéléphoneDomicile, TéléphoneBureau ». Pour séparer les noms de champs dans Windows, utilisez le séparateur de liste spécifié dans les paramètres régionaux dans le panneau de configuration.</param>
-        <summary>Crée un document Microsoft Word qui stocke un enregistrement d’en-tête utilisé à la place de l’enregistrement d’en-tête de données source d’une fusion.</summary>
-        <remarks>
-          <para>Cette méthode attache la nouvelle source d’en-tête au document spécifié, qui devient alors un document principal s’il n’est pas déjà.</para>
-          <para>La source d’en-tête utilise un tableau pour organiser les noms de champs de fusion et publipostage.</para> Évitez de 
-          <para>à l’aide de mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demander le mot de passe de l’utilisateur, stockez-le dans une variable et ensuite utiliser la variable dans votre code.</para><para /></remarks>
+        <param name="Name">Argument de type <b>String</b> obligatoire. Chemin d'accès et nom du nouveau fichier d'en-tête.</param>
+        <param name="PasswordDocument"><b>Objet</b>facultatif. Mot de passe à spécifier pour ouvrir le nouveau fichier d'en-tête.</param>
+        <param name="WritePasswordDocument"><b>Objet</b>facultatif. Mot de passe à spécifier pour enregistrer les modifications apportées au nouveau fichier d'en-tête.</param>
+        <param name="HeaderRecord"><b>Objet</b>facultatif. Chaîne spécifiant les noms des champs de la ligne d'en-tête. Si vous ne spécifiez pas cet argument, la ligne d'en-tête standard est utilisée : « Titre, Prénom, Nom, Poste, Société, Adresse1, Adresse2, Code postal, Ville, État, Pays, TéléphoneDomicile, TéléphoneBureau ». Pour séparer les noms des champs dans Windows, utilisez le séparateur de liste spécifié dans paramètres régionaux dans le panneau de configuration.</param>
+        <summary>Crée un document Microsoft Word qui stocke un enregistrement d’en-tête utilisé à la place de l’en-tête de la source de données dans une opération de fusion et publipostage.</summary>
+        <remarks><para>Cette méthode attache la nouvelle source d’en-tête au document spécifié, qui devient alors un document principal s’il ne l’est pas déjà.</para>
+          <para>La nouvelle source d’en-tête utilise un tableau pour organiser les noms de champs de fusion et publipostage.</para>
+          <para>Évitez d'utiliser des mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demandez-le à l'utilisateur, stockez-le dans une variable et servez-vous de la variable dans votre code.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -193,11 +182,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -223,7 +210,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeDataSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataSource" /> objet qui fait référence à la source de données lié à un document principal de fusion et publipostage.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataSource" /> objet qui fait référence à la source de données attachée à un document principal de fusion et publipostage.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,8 +243,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la destination des résultats de fusion et publipostage.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Destination</b> peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDestination" /> constantes : </para>
+        <remarks><para>La propriété <b>destination</b> peut être une des constantes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDestination" /> suivantes: </para>
           <para>
             <b>wdSendToFax</b>
           </para>
@@ -270,8 +256,7 @@
           <para>
             <b>wdSendToNewDocument</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditDataSource">
@@ -296,13 +281,11 @@
       <Parameters />
       <Docs>
         <summary>Ouvre ou active la source de données de fusion.</summary>
-        <remarks>
-          <para>Si la source de données est un document Microsoft Word, cette méthode ouvre la source de données (ou Active la source de données si elle est déjà ouverte).</para>
-          <para>Si Word est accédant aux données par le biais de l’échange dynamique de données (DDE) — une application telle que Microsoft Excel ou Microsoft Access, cette méthode affiche la source de données dans cette application.</para>
-          <para>Dynamic data exchange (DDE) est une technologie qui n’est pas sécurisée. Si possible, utilisez une alternative plus fiable à DDE.</para>
-          <para>Si Word est pour accéder aux données (ODBC) open database connectivity, cette méthode affiche les données dans un document Word. Notez que si Microsoft Query est installé, un message s’affiche, fournissant l’option d’affichage Microsoft Query au lieu de convertir des données.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la source de données est un document Microsoft Word, cette méthode ouvre la source de données (ou active la source de données si elle est déjà ouverte).</para>
+          <para>Si Word accède aux données par le biais de l’échange dynamique de données (DDE), à l’aide d’une application telle que Microsoft Excel ou Microsoft Access, cette méthode affiche la source de données dans cette application.</para>
+          <para>L’échange dynamique de données (DDE) est une technologie plus ancienne qui n’est pas sécurisée. Dans la mesure du possible, utilisez une alternative plus sécurisée à DDE.</para>
+          <para>Si Word utilise ODBC pour accéder aux données, cette méthode affiche ces dernières dans un document Word. Notez que si Microsoft Query est installé, un message s’affiche et vous permet d’afficher Microsoft Query au lieu de convertir les données.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditHeaderSource">
@@ -326,11 +309,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ouvre la source d’en-tête attachée à un document principal de fusion et publipostage, ou l’active si elle est déjà ouverte.</summary>
-        <remarks>
-          <para>Si le document principal de fusion et publipostage ne possède pas une source d’en-tête, cette méthode provoque une erreur.</para>
-          <para />
-        </remarks>
+        <summary>Ouvre la source d’en-tête attachée à un document principal de fusion et publipostage, ou active la source d’en-tête si elle est déjà ouverte.</summary>
+        <remarks><para>Si aucune source d'en-tête n'est attachée au document principal de fusion, cette méthode provoque une erreur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditMainDocument">
@@ -355,10 +336,8 @@
       <Parameters />
       <Docs>
         <summary>Active le document principal de publipostage associé au fichier d'en-tête ou à la source de données spécifié.</summary>
-        <remarks>
-          <para>Si le document principal n’est pas ouvert, une erreur se produit. Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode si le document principal n’est pas actuellement ouvert.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si le document principal n'est pas ouvert, une erreur se produit. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode si le document principal n’est pas ouvert.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -383,7 +362,7 @@
         <Parameter Name="Pause" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Pause">Facultatif <b>Object</b>. <b>True</b> pour que Microsoft Word suspendre et afficher une boîte de dialogue de résolution des problèmes si une erreur de fusion et publipostage est trouvée ; <b>False</b> pour signaler des erreurs dans un nouveau document.</param>
+        <param name="Pause"><b>Objet</b>facultatif. <b>True</b> pour que Microsoft Word s’arrête et affiche une boîte de dialogue de dépannage Si une erreur de fusion et publipostage est trouvée; <b>False</b> pour signaler les erreurs dans un nouveau document.</param>
         <summary>Exécute l'opération de publipostage spécifiée.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -411,7 +390,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.MailMergeFields" /> collection qui représente la fusion des champs liés dans le document spécifié.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.MailMergeFields" /> collection qui représente tous les champs de fusion et publipostage dans le document spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -444,10 +423,8 @@
       <Docs>
         <summary>Détermine si les champs de fusion dans un document sont mis en surbrillance.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si les champs de fusion sont mis en surbrillance et <b>False</b> dans le cas contraire. Définissez la valeur de la propriété <b>la valeur True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les champs de fusion sont mis en surbrillance et la <b>valeur false</b> dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailAddressFieldName">
@@ -507,12 +484,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si les documents fusionnés sont envoyés en tant que pièces jointes lorsque la fusion et publipostage est un message électronique ou une télécopie.</summary>
+        <summary>Détermine si les documents de fusion sont envoyés en tant que pièces jointes lorsque la destination de fusion et publipostage est un message électronique ou une télécopie.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si les documents fusionnés sont envoyés en tant que pièces jointes lorsque la fusion et publipostage est un message électronique ou une télécopie et <b>False</b> dans le cas contraire. Définissez la valeur de la propriété <b>la valeur True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les documents de fusion sont envoyés en tant que pièces jointes lorsque la destination de fusion et publipostage est un message électronique ou une télécopie, et la <b>valeur false</b> dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailFormat">
@@ -541,18 +516,16 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMailMergeMailFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMailFormat" /> constante représentant le format à utiliser lors de la fusion et publipostage est un message électronique.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMailFormat" /> constante qui représente le format à utiliser lorsque la destination de fusion et publipostage est un message électronique.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <b>WdMailMergeMailFormat</b> peut être l’une des constantes <b>WdMailMergeMailFormat</b> suivantes:</para>
           <para>
-            <b>WdMailMergeMailFormat</b> peut être une des constantes <b>WdMailMergeMailFormat</b> suivantes :</para>
-          <para>documents de courrier électronique
-            <b>wdMailFormatHTML</b> envoie fusion et publipostage au format HTML.</para>
+            <b>wdMailFormatHTML</b> Envoie des documents électroniques de fusion et publipostage au format HTML.</para>
           <para>
-            <b>wdMailFormatPlainText</b> envoie messages électroniques de fusion en texte brut.</para>
-          <para>La propriété <b>MailFormat</b> est ignorée si la <see cref="P:Microsoft.Office.Interop.Word.MailMerge.MailAsAttachment" /> propriété est définie sur <b>True</b>.</para>
-          <para />
-        </remarks>
+            <b>wdMailFormatPlainText</b> Envoie des documents électroniques de fusion et publipostage en texte brut.</para>
+          <para>La propriété <b>MailFormat</b> est ignorée si <see cref="P:Microsoft.Office.Interop.Word.MailMerge.MailAsAttachment" /> la propriété a la valeur <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailSubject">
@@ -614,9 +587,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le type de document principal de fusion et publipostage.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>MainDocumentType,</b> de la propriété peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMainDocType" /> constantes :</para>
+        <remarks><para>La propriété <b>MainDocumentType,</b> peut être l’une des constantes suivantes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMainDocType" /> :</para>
           <para>
             <b>wdCatalog</b>
           </para>
@@ -641,9 +612,8 @@
           <para>
             <b>wdNotAMergeDocument</b>
           </para>
-          <para>Si vous définissez cette propriété pour un document qui est déjà un document principal, la source de données est supprimée.</para>
-          <para />
-        </remarks>
+          <para>Si vous définissez cette propriété pour un document qui est déjà un document principal, la source de données attachée est supprimée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenDataSource">
@@ -683,49 +653,50 @@
         <Parameter Name="SubType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b>obligatoire. Nom de fichier de la source de données. Vous pouvez spécifier un fichier Microsoft Query (.qry) au lieu de la spécification d’une source de données, une chaîne de connexion et une chaîne de requête.</param>
-        <param name="Format">Facultatif <b>Object</b>. Le convertisseur de fichier utilisé pour ouvrir le document. Peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constantes. Pour spécifier un format de fichier externe, utilisez la <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> propriété avec la <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> objet afin de déterminer la valeur à utiliser avec cet argument. <b>WdOpenFormat</b> peut être une des constantes suivantes :<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto par défaut.</b><b>wdOpenFormatDocument</b><b>wdOpenFormatEncodedText</b><b>wdOpenFormatRTF</b><b>wdOpenFormatTemplate</b><b>wdOpenFormatText</b><b>wdOpenFormatUnicodeText</b><b>wdOpenFormatWebPages</b><b>wdOpenFormatXML</b></param>
-        <param name="ConfirmConversions">Facultatif <b>Object</b>. <b>True</b> pour afficher la boîte de dialogue Convertir un fichier si le fichier n'est pas au format Microsoft Word.</param>
-        <param name="ReadOnly">Facultatif <b>Object</b>. <b>True</b>: pour ouvrir la source de données en lecture seule.</param>
-        <param name="LinkToSource">Facultatif <b>Object</b>. <b>True</b> pour exécuter la requête spécifiée par <paramref name="Connection" /> et <paramref name="SQLStatement" /> chaque fois que le document principal est ouvert.</param>
-        <param name="AddToRecentFiles">Facultatif <b>Object</b>. <b>True</b> pour ajouter le nom de fichier à la liste des fichiers récemment utilisés en bas du menu Fichier.</param>
-        <param name="PasswordDocument">Facultatif <b>Object</b>. Le mot de passe utilisé pour ouvrir la source de données. (Voir les remarques ci-dessous.)</param>
-        <param name="PasswordTemplate">Facultatif <b>Object</b>. Le mot de passe utilisé pour ouvrir le modèle. (Voir les remarques ci-dessous.)</param>
-        <param name="Revert">Facultatif <b>Object</b>. Contrôles que se passe-t-il si <paramref name="Name" /> est le nom de fichier d’un document ouvert. <b>True</b> pour ignorer les modifications non enregistrées dans le document ouvert et rouvrez le fichier ; <b>False</b> pour activer le document ouvert.</param>
-        <param name="WritePasswordDocument">Facultatif <b>Object</b>. Le mot de passe utilisé pour enregistrer les modifications apportées au document. (Voir les remarques ci-dessous.)</param>
-        <param name="WritePasswordTemplate">Objet facultatif. Le mot de passe utilisé pour enregistrer les modifications apportées au modèle. (Voir les remarques ci-dessous.)</param>
-        <param name="Connection">Facultatif <b>Object</b>. Une plage dans laquelle la requête spécifiée par <paramref name="SQLStatement" /> doit être effectuée. (Voir Remarque ci-dessous). Comment vous spécifiez la plage dépend de la façon dont les données sont extraites. Pour exemple : lors de la récupération des données via ODBC Open Database Connectivity (), vous spécifiez une chaîne de connexion. Lors de la récupération des données à partir de Microsoft Excel à l’aide de l’échange dynamique de données (DDE), vous spécifiez une plage nommée. Dynamic data exchange (DDE) est une technologie plus ancienne qui n’est pas sécurisée. Si possible, utilisez une alternative plus fiable à DDE. Lors de la récupération des données à partir de Microsoft Access, vous spécifiez le mot « Table » ou « Requête » suivi du nom d’une table ou une requête.</param>
-        <param name="SQLStatement">Facultatif <b>Object</b>. Définit les options de la requête à utiliser pour extraire des données. (Voir les remarques ci-dessous.)</param>
-        <param name="SQLStatement1">Facultatif <b>Object</b>. Si la chaîne de requête dépasse 255 caractères, <paramref name="SQLStatement" /> spécifie la première partie de la chaîne, et <paramref name="SQLStatement1" /> spécifie la deuxième partie. (Voir les remarques ci-dessous.)</param>
-        <param name="OpenExclusive">Facultatif <b>Object</b>. <b>True</b> pour ouvrir en mode exclusif.</param>
-        <param name="SubType">Facultatif <b>Object</b>. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdMergeSubType" /> constantes : wdMergeSubTypeAccess 1wdMergeSubTypeOAL 2wdMergeSubTypeOLEDBText 5wdMergeSubTypeOLEDBWord 3wdMergeSubTypeOther 0wdMergeSubTypeOutlook 6wdMergeSubTypeWord 7wdMergeSubTypeWord2000 8wdMergeSubTypeWorks 4</param>
-        <summary>Associe une source de données au document spécifié, qui devient alors un document principal s’il n’est pas déjà.</summary>
-        <remarks>
-          <para>Pour déterminer les chaînes de requête et de connexion ODBC, définir manuellement les options de requête et utiliser le <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.QueryString" /> propriété permet de renvoyer la chaîne de connexion. Le tableau suivant comprend certains mots clés SQL couramment utilisés.</para>
+        <param name="Name">Argument de type <b>String</b> obligatoire. Nom de fichier de la source de données. Vous pouvez spécifier un fichier Microsoft Query (.qry) à la place d'une source de données, d'une chaîne de connexion et d'une chaîne de requête.</param>
+        <param name="Format"><b>Objet</b>facultatif. Le convertisseur de fichier utilisé pour ouvrir le document. Il peut s’agir de <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> l’une des constantes. Pour spécifier un format de fichier externe, utilisez <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> la propriété avec <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> l’objet pour déterminer la valeur à utiliser avec cet argument. <b>WdOpenFormat</b> peut être l’une des constantes suivantes:<b>WdOpenFormatAllWord</b><b>wdOpenFormatAuto par défaut.</b> <b>wdOpenFormatDocument</b> <b>wdOpenFormatEncodedText</b> <b>wdOpenFormatRTF</b> <b>wdOpenFormatTemplate</b> <b>wdOpenFormatText</b> <b>wdOpenFormatUnicodeText</b> <b>wdOpenFormatWebPages</b> <b>wdOpenFormatXML</b></param>
+        <param name="ConfirmConversions"><b>Objet</b>facultatif. <b>True</b> pour afficher la boîte de dialogue Convertir un fichier si le fichier n'est pas au format Microsoft Word.</param>
+        <param name="ReadOnly"><b>Objet</b>facultatif. <b>True</b>: pour ouvrir la source de données en lecture seule.</param>
+        <param name="LinkToSource"><b>Objet</b>facultatif. <b>True</b> pour effectuer la requête spécifiée par <paramref name="Connection" /> et <paramref name="SQLStatement" /> à chaque ouverture du document principal.</param>
+        <param name="AddToRecentFiles"><b>Objet</b>facultatif. <b>True</b> pour ajouter le nom de fichier à la liste des fichiers récemment utilisés en bas du menu Fichier.</param>
+        <param name="PasswordDocument"><b>Objet</b>facultatif. Mot de passe à spécifier pour ouvrir la source de données. (Voir les remarques ci-dessous.)</param>
+        <param name="PasswordTemplate"><b>Objet</b>facultatif. Mot de passe à spécifier pour ouvrir le modèle. (Voir les remarques ci-dessous.)</param>
+        <param name="Revert"><b>Objet</b>facultatif. Contrôle ce qui se <paramref name="Name" /> passe si est le nom de fichier d’un document ouvert. <b>True</b> : pour ignorer les modifications apportées au document ouvert depuis son dernier enregistrement et rouvrir le fichier, <b>False</b> : pour activer le document ouvert.</param>
+        <param name="WritePasswordDocument"><b>Objet</b>facultatif. Mot de passe à spécifier pour enregistrer les modifications apportées au document. (Voir les remarques ci-dessous.)</param>
+        <param name="WritePasswordTemplate">Objet facultatif. Mot de passe à spécifier pour enregistrer les modifications apportées au modèle. (Voir les remarques ci-dessous.)</param>
+        <param name="Connection"><b>Objet</b>facultatif. Plage dans laquelle <paramref name="SQLStatement" /> doit être exécutée la requête spécifiée. (Consultez les remarques ci-dessous.) La manière dont vous spécifiez la plage dépend de la façon dont les données sont récupérées. Par exemple: lorsque vous récupérez des données via ODBC (Open Database Connectivity), vous spécifiez une chaîne de connexion. Lorsque vous récupérez des données à partir de Microsoft Excel à l’aide de l’échange dynamique de données (DDE), vous spécifiez une plage nommée. L’échange dynamique de données (DDE) est une technologie plus ancienne qui n’est pas sécurisée. Dans la mesure du possible, utilisez une alternative plus sécurisée à DDE. Lorsque vous récupérez des données à partir de Microsoft Access, vous spécifiez le mot «table» ou «requête» suivi du nom d’une table ou d’une requête.</param>
+        <param name="SQLStatement"><b>Objet</b>facultatif. Définit les options de la requête à utiliser pour extraire des données. (Voir les remarques ci-dessous.)</param>
+        <param name="SQLStatement1"><b>Objet</b>facultatif. Si la chaîne de requête est plus longue que 255 <paramref name="SQLStatement" /> caractères, il spécifie la première partie de <paramref name="SQLStatement1" /> la chaîne et spécifie la deuxième partie. (Voir les remarques ci-dessous.)</param>
+        <param name="OpenExclusive"><b>Objet</b>facultatif. <b>True</b> pour ouvrir en mode exclusif.</param>
+        <param name="SubType"><b>Objet</b>facultatif. Il peut s’agir de l' <see cref="T:Microsoft.Office.Interop.Word.WdMergeSubType" /> une des constantes suivantes: WdMergeSubTypeAccess 1WdMergeSubTypeOAL 2WdMergeSubTypeOLEDBText 5WdMergeSubTypeOLEDBWord 3wdMergeSubTypeOther 0wdMergeSubTypeOutlook 6wdMergeSubTypeWord 7wdMergeSubTypeWord2000 8wdMergeSubTypeWorks 4</param>
+        <summary>Attache une source de données au document spécifié, qui devient alors un document principal s’il ne l’est pas déjà.</summary>
+        <remarks><para>Pour déterminer les chaînes de connexion et de requête ODBC, définissez les options de requête manuellement <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.QueryString" /> et utilisez la propriété pour renvoyer la chaîne de connexion. Le tableau suivant répertorie certains des mots clés SQL couramment utilisés.</para>
           <list type="table">
             <item>
               <description>DSN</description>
-              <description>le nom de la source de données ODBC</description>
+              <description>Nom de la source de données ODBC</description>
             </item>
             <item>
               <description>UID</description>
-              <description>l’ID d’ouverture de session utilisateur</description>
+              <description>Identificateur de connexion de l'utilisateur</description>
             </item>
             <item>
-              <description>mot de passe</description>,
-              <description>le mot de passe spécifié par l’utilisateur</description></item>
+              <description>PWD</description>
+              <description>Mot de passe spécifié par l'utilisateur</description>
+            </item>
             <item>
               <description>DBQ</description>
-              <description>le nom du fichier de base de données</description>
+              <description>Nom de fichier de la base de données</description>
             </item>
             <item>
-              <description>Fichier</description>
-              <description>Le type de fichier</description>
+              <description>FIL</description>
+              <description>Type de fichier</description>
             </item>
-          </list> Évitez d’utiliser le compte administrateur système intégré (sa) d’ouverture de session 
-          <para>. Au lieu de cela, rendre système administrateurs les membres du rôle de serveur fixe sysadmin et qu’ils utilisent leurs propres comptes pour ouvrir une session. Utilisez sa que lorsqu’il est impossible à se connecter. Pour empêcher l’accès non autorisé par le biais du compte d’ouverture de session administrateur système, vous devez affecter un mot de passe fort unique à ce compte.</para><para>Dans la mesure du possible, utilisez l’authentification Windows (également appelé une connexion approuvée), qui utilise un compte d’utilisateur Windows pour se connecter à SQL Server. Lorsqu’un utilisateur se connecte via un compte d’utilisateur Windows, SQL Server utilise les informations dans le système d’exploitation Windows pour valider le nom de compte et mot de passe. Avant de pouvoir utiliser l’authentification Windows, un administrateur de serveur doit configurer SQL Server pour utiliser ce mode d’authentification. Si l’authentification Windows n’est pas disponible, évitez d’enregistrer les informations d’ouverture de session des utilisateurs. Il est plus sécurisée pour les utilisateurs à entrer leurs informations d’ouverture de session chaque fois qu’ils se connectent.</para> Évitez de 
-          <para>à l’aide de mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demander le mot de passe de l’utilisateur, stockez-le dans une variable et ensuite utiliser la variable dans votre code.</para><para /></remarks>
+          </list>
+          <para>Évitez d’utiliser le compte d’ouverture de session de l’administrateur système (sa) intégré. À la place, demandez aux administrateurs système de devenir membres du rôle serveur fixe sysadmin et d’utiliser leur propre compte pour se connecter. Utilisez le sa uniquement lorsqu’il n’est pas possible de se connecter autrement. Pour éviter l’accès non autorisé via le compte d’ouverture de session du sa, affectez à ce compte un mot de passe unique et fort.</para>
+          <para>Dans la mesure du possible, utilisez l’authentification Windows (également appelée connexion approuvée), qui utilise un compte d’utilisateur Windows pour vous connecter à SQL Server. Lorsqu’un utilisateur se connecte via un compte d’utilisateur Windows, SQL Server se sert d’informations qui se trouvent dans le système d’exploitation Windows pour valider le nom du compte et le mot de passe. Pour pouvoir utiliser l’authentification Windows, un administrateur serveur doit configurer SQL Server pour utiliser ce mode d’authentification. Si l’authentification Windows n’est pas disponible, évitez d’enregistrer les informations de connexion. Il est plus sûr pour les utilisateurs d’entrer ces informations lors de chaque connexion.</para>
+          <para>Évitez d'utiliser des mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demandez-le à l'utilisateur, stockez-le dans une variable et servez-vous de la variable dans votre code.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenDataSource2000">
@@ -816,22 +787,21 @@
         <Parameter Name="OpenExclusive" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b>obligatoire. Nom du fichier d'en-tête.</param>
-        <param name="Format">Facultatif <b>Object</b>. Le convertisseur de fichier utilisé pour ouvrir le document. Peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constantes. Pour spécifier un format de fichier externe, utilisez la <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> propriété avec une <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> objet afin de déterminer la valeur à utiliser avec cet argument. <b>WdOpenFormat</b> peut être une des constantes suivantes :<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto par défaut.</b><b>wdOpenFormatDocument</b><b>wdOpenFormatEncodedText</b><b>wdOpenFormatRTF</b><b>wdOpenFormatTemplate</b><b>wdOpenFormatText</b><b>wdOpenFormatUnicodeText</b><b>wdOpenFormatWebPages</b><b>wdOpenFormatXML</b></param>
-        <param name="ConfirmConversions">Facultatif <b>Object</b>. <b>True</b> pour afficher la boîte de dialogue Convertir un fichier si le fichier n'est pas au format Microsoft Word.</param>
-        <param name="ReadOnly">Facultatif <b>Object</b>. <b>True</b> pour ouvrir le fichier d'en-tête en lecture seule.</param>
-        <param name="AddToRecentFiles">Facultatif <b>Object</b>. <b>True</b> pour ajouter le nom de fichier à la liste des fichiers récemment utilisés en bas du menu Fichier.</param>
-        <param name="PasswordDocument">Facultatif <b>Object</b>. Mot de passe à spécifier pour ouvrir le fichier d'en-tête. (Voir les remarques ci-dessous.)</param>
-        <param name="PasswordTemplate">Facultatif <b>Object</b>. Mot de passe à spécifier pour ouvrir le modèle de fichier d'en-tête. (Voir les remarques ci-dessous.)</param>
-        <param name="Revert">Facultatif <b>Object</b>. Contrôles que se passe-t-il si <paramref name="Name" /> est le nom de fichier d’un document ouvert. <b>True</b> pour ignorer les modifications non enregistrées dans le document ouvert et rouvrez le fichier ; <b>False</b> pour activer le document ouvert.</param>
-        <param name="WritePasswordDocument">Facultatif <b>Object</b>. Mot de passe à spécifier pour enregistrer les modifications apportées à la source de données. (Voir les remarques ci-dessous.)</param>
-        <param name="WritePasswordTemplate">Facultatif <b>Object</b>. Mot de passe à spécifier pour enregistrer les modifications apportées au modèle de source de données. (Voir les remarques ci-dessous.)</param>
-        <param name="OpenExclusive">Facultatif <b>Object</b>. True pour ouvrir en mode exclusif.</param>
+        <param name="Name">Argument de type <b>String</b> obligatoire. Nom du fichier d'en-tête.</param>
+        <param name="Format"><b>Objet</b>facultatif. Le convertisseur de fichier utilisé pour ouvrir le document. Il peut s’agir de <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> l’une des constantes. Pour spécifier un format de fichier externe, utilisez <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> la propriété avec <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> un objet pour déterminer la valeur à utiliser avec cet argument. <b>WdOpenFormat</b> peut être l’une des constantes suivantes:<b>WdOpenFormatAllWord</b><b>wdOpenFormatAuto par défaut.</b> <b>wdOpenFormatDocument</b> <b>wdOpenFormatEncodedText</b> <b>wdOpenFormatRTF</b> <b>wdOpenFormatTemplate</b> <b>wdOpenFormatText</b> <b>wdOpenFormatUnicodeText</b> <b>wdOpenFormatWebPages</b> <b>wdOpenFormatXML</b></param>
+        <param name="ConfirmConversions"><b>Objet</b>facultatif. <b>True</b> pour afficher la boîte de dialogue Convertir un fichier si le fichier n'est pas au format Microsoft Word.</param>
+        <param name="ReadOnly"><b>Objet</b>facultatif. <b>True</b> pour ouvrir le fichier d'en-tête en lecture seule.</param>
+        <param name="AddToRecentFiles"><b>Objet</b>facultatif. <b>True</b> pour ajouter le nom de fichier à la liste des fichiers récemment utilisés en bas du menu Fichier.</param>
+        <param name="PasswordDocument"><b>Objet</b>facultatif. Mot de passe à spécifier pour ouvrir le fichier d'en-tête. (Voir les remarques ci-dessous.)</param>
+        <param name="PasswordTemplate"><b>Objet</b>facultatif. Mot de passe à spécifier pour ouvrir le modèle de fichier d'en-tête. (Voir les remarques ci-dessous.)</param>
+        <param name="Revert"><b>Objet</b>facultatif. Contrôle ce qui se <paramref name="Name" /> passe si est le nom de fichier d’un document ouvert. <b>True</b> : pour ignorer les modifications apportées au document ouvert depuis son dernier enregistrement et rouvrir le fichier, <b>False</b> : pour activer le document ouvert.</param>
+        <param name="WritePasswordDocument"><b>Objet</b>facultatif. Mot de passe à spécifier pour enregistrer les modifications apportées à la source de données. (Voir les remarques ci-dessous.)</param>
+        <param name="WritePasswordTemplate"><b>Objet</b>facultatif. Mot de passe à spécifier pour enregistrer les modifications apportées au modèle de source de données. (Voir les remarques ci-dessous.)</param>
+        <param name="OpenExclusive"><b>Objet</b>facultatif. True pour ouvrir en mode exclusif.</param>
         <summary>Associe un fichier d'en-tête de fusion et publipostage au document spécifié.</summary>
-        <remarks>
-          <para>Lorsqu’une source d’en-tête est attachée, le premier enregistrement dans la source d’en-tête est utilisé à la place de l’enregistrement d’en-tête de la source de données.</para> Évitez de 
-          <para>à l’aide de mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demander le mot de passe de l’utilisateur, stockez-le dans une variable et ensuite utiliser la variable dans votre code.</para><para /></remarks>
+        <remarks><para>Si un fichier d'en-tête est associé, son premier enregistrement est utilisé à la place de la ligne d'en-tête de la source de données.</para>
+          <para>Évitez d'utiliser des mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demandez-le à l'utilisateur, stockez-le dans une variable et servez-vous de la variable dans votre code.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenHeaderSource2000">
@@ -938,10 +908,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une <b>chaîne</b> correspondant à la légende d'un bouton personnalisé dans la fin de la fusion étape 6 () de l'Assistant Fusion et publipostage.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Lorsqu’un utilisateur clique sur le bouton personnalisé, l’événement <b>MailMergeWizardSendToCustom</b> se produit.</para>
-          <para />
-        </remarks>
+        <remarks><para>Lorsqu’un utilisateur clique sur le bouton personnalisé, l’événement <b>MailMergeWizardSendToCustom</b> se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowWizard">
@@ -972,14 +940,13 @@
         <Parameter Name="ShowMergeStep" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="InitialState">
-          <b>Objet</b>obligatoire. Nombre d'étapes de l'Assistant qui doivent s'afficher.</param>
-        <param name="ShowDocumentStep">Facultatif <b>Object</b>. <b>True</b> conserve l'étape « Sélection du type de document » dans la séquence d'étapes de fusion et publipostage. <b>Valeur False</b>, la première étape est supprimée.</param>
-        <param name="ShowTemplateStep">Facultatif <b>Object</b>. <b>True</b> conserve l’étape « Sélection du document » dans la séquence d’étapes de fusion et publipostage ; <b>False</b> supprime la deuxième étape.</param>
-        <param name="ShowDataStep">Facultatif <b>Object</b>. <b>True</b> conserve l’étape « Sélection des destinataires » dans la séquence d’étapes de fusion et publipostage ; <b>Valeur False</b> , la troisième étape est supprimée.</param>
-        <param name="ShowWriteStep">Facultatif <b>Object</b>. <b>True</b> conserve l’étape « Écriture de votre lettre » dans la séquence d’étapes de fusion et publipostage ; <b>Valeur False</b> , la quatrième étape est supprimée.</param>
-        <param name="ShowPreviewStep">Facultatif <b>Object</b>. <b>True</b> conserve l’étape « Aperçu de vos lettres » dans la séquence d’étapes de fusion et publipostage ; <b>Valeur False</b> , la cinquième étape est supprimée.</param>
-        <param name="ShowMergeStep">Facultatif <b>Object</b>. <b>True</b> conserve l’étape « Effectuer la fusion » dans la séquence d’étapes de fusion et publipostage ; <b>Valeur False</b> , la sixième étape est supprimée.</param>
+        <param name="InitialState"><b>Objet</b>required. Nombre d'étapes de l'Assistant qui doivent s'afficher.</param>
+        <param name="ShowDocumentStep"><b>Objet</b>facultatif. <b>True</b> conserve l'étape « Sélection du type de document » dans la séquence d'étapes de fusion et publipostage. <b>Valeur False</b>, la première étape est supprimée.</param>
+        <param name="ShowTemplateStep"><b>Objet</b>facultatif. <b>True</b> conserve l’étape «sélectionner le document de départ» dans la séquence d’étapes de fusion et publipostage; <b>False</b> supprime l’étape 2.</param>
+        <param name="ShowDataStep"><b>Objet</b>facultatif. <b>True</b> conserve l’étape «sélectionner les destinataires» dans la séquence d’étapes de fusion et publipostage; La <b>valeur false</b> supprime l’étape 3.</param>
+        <param name="ShowWriteStep"><b>Objet</b>facultatif. <b>True</b> conserve l’étape «écriture de votre lettre» dans la séquence d’étapes de fusion et publipostage; La <b>valeur false</b> supprime l’étape quatre.</param>
+        <param name="ShowPreviewStep"><b>Objet</b>facultatif. <b>True</b> conserve l’étape «aperçu de vos lettres» dans la séquence d’étapes de fusion et publipostage; La <b>valeur false</b> supprime l’étape cinq.</param>
+        <param name="ShowMergeStep"><b>Objet</b>facultatif. <b>True</b> conserve l’étape «effectuer la fusion» dans la séquence d’étapes de fusion et publipostage; La <b>valeur false</b> supprime l’étape six.</param>
         <summary>Affiche l'Assistant Fusion et publipostage dans un document.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1009,8 +976,7 @@
       <Docs>
         <summary>Renvoie l’état actuel d’une opération de fusion et publipostage.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>State</b> peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeState" /> constantes :</para>
+        <remarks><para>La propriété <b>State</b> peut être une des constantes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeState" /> suivantes:</para>
           <para>
             <b>wdDataSource</b>
           </para>
@@ -1027,10 +993,9 @@
             <b>wdMainDocumentOnly</b>
           </para>
           <para>
-            <b> wdNormalDocument</b>
+            <b>wdNormalDocument</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SuppressBlankLines">
@@ -1061,10 +1026,8 @@
       <Docs>
         <summary>Détermine si les lignes vides sont supprimées quand les champs de fusion et publipostage dans un document principal de fusion et publipostage sont vides.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si les lignes vides sont supprimées et <b>False</b> dans le cas contraire. Définissez la valeur de la propriété <b>la valeur True</b> ou <b>False</b> pour activer ou désactiver la fonctionnalité.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les lignes vides sont supprimées et la <b>valeur false</b> dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseAddressBook">
@@ -1124,13 +1087,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si les noms des champs sont affichés dans un document principal de fusion et publipostage.</summary>
+        <summary>Détermine si les noms de champs de fusion sont affichés dans un document principal de fusion et publipostage.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si les noms de champs de fusion sont affichés dans un document principal de fusion et publipostage et <b>False</b> si les informations de l’enregistrement de données actuel sont affichées.</para>
-          <para>Si le document actif n’est pas un document principal de fusion et publipostage, cette propriété génère une erreur. Pour afficher les noms des champs ou les résultats, définissez la <see cref="P:Microsoft.Office.Interop.Word.View.ShowFieldCodes" /> propriété la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les noms de champs de fusion sont affichés dans un document principal de fusion et la <b>valeur false</b> si les informations de l’enregistrement de données actif sont affichées.</para>
+          <para>Si le document actif n’est pas un document principal de fusion et publipostage, cette propriété provoque une erreur. Pour afficher les noms des champs de fusion ou leurs résultats <see cref="P:Microsoft.Office.Interop.Word.View.ShowFieldCodes" /> , affectez la valeur <b>false</b>à la propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WizardState">
@@ -1159,12 +1120,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>entier</b> indiquant l’étape Assistant Fusion et publipostage en cours d’un document.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>entier</b> indiquant l’étape actuelle de l’Assistant Fusion et publipostage pour un document.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La méthode <b>WizardState</b> renvoie un numéro qui correspond à l’étape actuelle de l’Assistant Fusion et publipostage. un zéro (0) signifie que l’Assistant Fusion et publipostage est fermé.</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>WizardState</b> renvoie un nombre qui correspond à l’étape actuelle de l’Assistant Fusion et publipostage; la valeur zéro (0) signifie que l’Assistant Fusion et publipostage est fermé.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

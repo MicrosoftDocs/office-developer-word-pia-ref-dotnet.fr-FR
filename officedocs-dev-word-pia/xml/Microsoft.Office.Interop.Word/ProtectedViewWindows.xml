@@ -1,13 +1,5 @@
 <Type Name="ProtectedViewWindows" FullName="Microsoft.Office.Interop.Word.ProtectedViewWindows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="506d1829c1c4c6385365d719f17a17c3f44c87a3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668636" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2e9ac6ba9dba7949a597ac1a0f57c956ed0366db" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144154" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProtectedViewWindows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProtectedViewWindows&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> les objets qui sont actuellement ouverts dans Word 2010.</summary>
-    <remarks>
-      <para>Les documents affichés dans une fenêtre en mode protégé ne peuvent pas être modifiés et sont pas autorisés à exécuter du contenu actif tel que des connexions de données et des macros.</para>
-      <para>Utilisez <b>ProtectedViewWindows</b>(<paramref name="Index" />), où <paramref name="Index" /> est le numéro d’index pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> objet.</para>
-      <para />
-    </remarks>
+    <summary>Collection de tous les <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> objets actuellement ouverts dans Word 2010.</summary>
+    <remarks><para>Les documents affichés dans une fenêtre en mode protégé ne peuvent pas être modifiés et ne sont pas autorisés à exécuter du contenu actif tel que des macros et des connexions de données.</para>
+      <para>Utilisez <b>ProtectedViewWindows</b>(<paramref name="Index" />), où <paramref name="Index" /> est le numéro d’index pour renvoyer un <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> seul objet.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,12 +51,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
-        <value>Un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objet qui représente l’application Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Application" /> Objet qui représente l’application Microsoft Word.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -93,11 +81,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtient le nombre de fenêtres en mode protégé dans la collection.</summary>
-        <value>Le nombre de fenêtres en mode protégé dans la collection.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <value>Nombre de fenêtres en mode protégé dans la collection.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -123,14 +109,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
+        <summary>Obtient un nombre entier de 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>Entier 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</value>
-        <remarks>
-          <para>En lecture seule <b>long</b>. Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette propriété est principalement conçue pour être utilisée sur Apple Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Word a le code créateur MSWD.</para>
+        <remarks><para>Type de données <b>long</b>en lecture seule. Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». Cette propriété est principalement conçue pour être utilisée sur Apple Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Word possède le code de créateur MSWD.</para>
           <para>
-            <b>Mise en garde</b>: cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para />
-        </remarks>
+            <b>Attention</b>: cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -161,7 +145,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Cette propriété renvoie <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <returns>Renvoie <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,7 +177,7 @@
       <Docs>
         <param name="Index">Objet spécifique qui doit être renvoyé.</param>
         <summary>Renvoie un objet <b>ProtectedViewWindows</b> spécifique appartenant à une collection.</summary>
-        <value>Cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />.</value>
+        <value>Renvoie <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,19 +208,14 @@
       </Parameters>
       <Docs>
         <param name="FileName">Nom du document (les chemins d'accès sont acceptés).</param>
-        <param name="AddToRecentFiles">
-          <b>true</b> pour ajouter le nom de fichier à la liste des derniers fichiers utilisés au bas du menu fichier. Sinon, <b>false</b>.</param>
+        <param name="AddToRecentFiles"><b>true</b> : pour ajouter le nom du fichier à la liste des derniers fichiers utilisés au bas du menu fichier; Sinon, <b>false</b>.</param>
         <param name="PasswordDocument">Mot de passe nécessaire pour ouvrir le document.</param>
-        <param name="Visible">
-          <b>la valeur true</b> si le document est ouvert dans une fenêtre visible. Sinon, <b>false</b>. La valeur par défaut est True.</param>
-        <param name="OpenAndRepair">
-          <b>true</b> pour réparer le document afin d’éviter toute altération ; Sinon, <b>false</b>.</param>
+        <param name="Visible"><b>true</b> si le document est ouvert dans une fenêtre visible; Sinon, <b>false</b>. La valeur par défaut est True.</param>
+        <param name="OpenAndRepair"><b>true</b> pour réparer le document afin d’éviter toute altération du document; Sinon, <b>false</b>.</param>
         <summary>Ouvre le document spécifié dans une nouvelle fenêtre en mode protégé.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> objet.</returns>
-        <remarks>
-          <para>Évitez d’utiliser des mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demander le mot de passe de l’utilisateur, stockez-le dans une variable et ensuite utiliser la variable dans le code.</para>
-          <para />
-        </remarks>
+        <returns>Objet <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />.</returns>
+        <remarks><para>Évitez d’utiliser des mots de passe codés en dur dans vos applications. Si un mot de passe est requis dans une procédure, demandez-le à l’utilisateur, stockez-le dans une variable, puis utilisez la variable dans le code.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -262,8 +241,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un <see cref="T:System.Object" /> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> objet.</summary>
-        <value>Un <see cref="T:System.Object" /> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> objet.</value>
+        <summary>Obtient un <see cref="T:System.Object" /> objet qui représente l’objet parent de l' <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> objet spécifié.</summary>
+        <value><see cref="T:System.Object" /> Qui représente l’objet parent de l’objet spécifié <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="XMLSchemaReference" FullName="Microsoft.Office.Interop.Word.XMLSchemaReference">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="acaac46d8cdaa975c35ab2d3b765efb532a14120" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667315" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLSchemaReference" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eda28c551cfb233a178c64483141f2ff3f4a18e4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145407" /></Metadata><TypeSignature Language="C#" Value="public interface XMLSchemaReference" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLSchemaReference" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLSchemaReference" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLSchemaReference" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Représente un schéma individuel attaché à un document.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion.XMLSchemaReference" /> propriété permet de renvoyer un objet XMLSchemaReference pour un <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion" /> objet.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion.XMLSchemaReference" /> propriété pour renvoyer un objet XMLSchemaReference pour un <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion" /> objet.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,11 +76,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -141,7 +129,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> indiquant l’emplacement du schéma XML spécifié.</summary>
+        <summary>Renvoie une <b>valeur de type String</b> qui indique l’emplacement du schéma XML spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,10 +159,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> qui indique l'identificateur de ressource uniforme (URI) de l'espace de noms de schéma pour l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si vous utilisez des schémas XML pour une utilisation avec Microsoft Word, il est vivement recommandé de spécifier le paramètre <b>targetNamespace</b> dans le schéma.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous créez des schémas XML à utiliser avec Microsoft Word, il est vivement recommandé de spécifier le paramètre <b>targetNamespace</b> dans le schéma.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -227,10 +213,8 @@
       <Parameters />
       <Docs>
         <summary>Cette méthode recharge un document mis en mémoire cache en recherchant le lien hypertexte relatif au document et en le téléchargeant.</summary>
-        <remarks>
-          <para>Cette méthode recharge le document de manière asynchrone ; Autrement dit, les instructions suivant la méthode <b>Reload</b> dans votre procédure peuvent être exécutées avant que le document est effectivement rechargé. Pour cette raison, vous pouvez obtenir des résultats inattendus à partir de l’aide de cette méthode dans votre code.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode recharge le document de manière asynchrone ; en d'autres termes, les instructions suivent la méthode <b>Reload</b> dans votre procédure peuvent être exécutées avant que le document soit effectivement rechargé. Pour cette raison, vous pouvez obtenir des résultats inattendus lors de l’utilisation de cette méthode dans votre code.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

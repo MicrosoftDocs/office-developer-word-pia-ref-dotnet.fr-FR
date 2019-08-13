@@ -1,13 +1,5 @@
 <Type Name="HorizontalLineFormat" FullName="Microsoft.Office.Interop.Word.HorizontalLineFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fe6e8c1b21cd0e5c5699e9be6ad117fc96f4cb4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668601" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HorizontalLineFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="30d72e401ad1525809a469a29b41b655b4299d81" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147990" /></Metadata><TypeSignature Language="C#" Value="public interface HorizontalLineFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HorizontalLineFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface HorizontalLineFormat" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Représente la mise en forme des lignes horizontales.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.InlineShape.HorizontalLineFormat" /> propriété pour renvoyer un objet <b>HorizontalLineFormat</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.InlineShape.HorizontalLineFormat" /> propriété pour renvoyer un objet <b>HorizontalLineFormat</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdHorizontalLineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.WdHorizontalLineAlignment" /> constante qui représente l’alignement de la ligne horizontale spécifiée.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.WdHorizontalLineAlignment" /> définit une constante qui représente l’alignement de la ligne horizontale spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,11 +107,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoShade">
@@ -150,13 +138,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Word trace le trait horizontal spécifié sans ombre en 3D.</summary>
+        <summary><b>True</b> si Microsoft Word trace le trait horizontal spécifié sans ombre en 3D.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez uniquement utiliser cette propriété avec des traits horizontaux qui ne reposent sur un fichier image existant.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous ne pouvez utiliser cette propriété qu'avec des traits horizontaux qui ne reposent sur aucun fichier image existant.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -215,10 +200,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la longueur de la ligne horizontale spécifiée, exprimée sous la forme d'un pourcentage de la largeur de la fenêtre.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Définition de cette propriété définit également le <see cref="P:Microsoft.Office.Interop.Word.HorizontalLineFormat.WidthType" /> propriété <b>wdHorizontalLinePercentWidth</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La définition de cette propriété affecte <see cref="P:Microsoft.Office.Interop.Word.HorizontalLineFormat.WidthType" /> également à la propriété la valeur <b>widthtypewdhorizontallinepercentwidth</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WidthType">
@@ -247,7 +230,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdHorizontalLineWidthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de largeur pour spécifié <see cref="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" /> objet.</summary>
+        <summary>Cette propriété renvoie ou définit le type de largeur <see cref="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" /> pour l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

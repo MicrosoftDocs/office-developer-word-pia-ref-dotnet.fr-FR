@@ -1,13 +1,5 @@
 <Type Name="ListTemplates" FullName="Microsoft.Office.Interop.Word.ListTemplates">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d310b851d2271c26e1d4aa7224eb7cc832228f87" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668021" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListTemplates : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8a116bd1e716c5b1c23d5751a9411b77f6343408" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146156" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplates : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListTemplates implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListTemplates" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListTemplates&#xA;Implements IEnumerable" />
@@ -30,18 +22,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objets qui représentent les sept formats de liste prédéfinis dans chaque onglet Puces et la boîte de dialogue de numérotation.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Document.ListTemplates" /> propriété pour renvoyer la collection <b>ListTemplates</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> pour ajouter un modèle de liste à la collection dans le modèle ou le document spécifié.</para>
-      <para>Utiliser <b>ListTemplates</b>(<paramref name="index" />), où <paramref name="index" /> est un nombre de 1 à 7, pour renvoyer un modèle de liste à partir d’une bibliothèque de listes.</para>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objets qui représentent les sept formats de liste prédéfinis dans chaque onglet de la boîte de dialogue Puces et numéros.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.ListTemplates" /> propriété pour renvoyer la collection <b>ListTemplates</b> .</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> méthode pour ajouter un modèle de liste à la collection dans le document ou le modèle spécifié.</para>
+      <para>Utilisez <b>ListTemplates</b>(<paramref name="index" />), où <paramref name="index" /> est un nombre compris entre 1 et 7, pour renvoyer un seul modèle de liste à partir d’une bibliothèque de listes.</para>
       <para>
-        <b>Remarque</b>: certaines propriétés et méthodes — <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> et <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, par exemple, ne fonctionneront pas avec les modèles de liste qui sont accessibles à partir d’une bibliothèque de listes. Vous pouvez modifier ces modèles de liste, mais vous ne pouvez pas modifier le type de la bibliothèque (<b>wdBulletGallery</b>, <b>wdNumberGallery</b>ou <b>wdOutlineNumberGallery</b>).</para>
-      <para>Pour voir si le modèle de liste spécifié contient la mise en forme intégrés dans Microsoft Word, utilisez la <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> propriété avec la <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objet. Pour réinitialiser la mise en forme au format de liste d’origine, utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> méthode pour l’objet <b>ListGallery</b> .</para>
-      <para>Fois un objet <b>ListTemplate</b> renvoyé, spécifiez <b>ListLevels</b>(<paramref name="index" />), où <paramref name="index" /> est un nombre compris entre 1 et 9, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objet. L’objet <b>ListLevel</b> , vous avez accès à toutes les propriétés de mise en forme pour le niveau de liste spécifié, tel que <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, et <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> méthode pour convertir un modèle de liste à un seul niveau.</para>
-      <para />
-    </remarks>
+        <b>Remarque</b>: certaines propriétés et méthodes ( <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> et <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, par exemple) ne fonctionnent pas avec les modèles de liste accessibles à partir d’une bibliothèque de listes. Vous pouvez modifier ces modèles de liste, mais vous ne pouvez pas changer le type de la bibliothèque auquel ils appartiennent (<b>wdBulletGallery</b>, <b>wdNumberGallery</b> ou <b>wdOutlineNumberGallery</b>).</para>
+      <para>Pour savoir si le modèle de liste spécifié contient la mise en forme prédéfinie dans Microsoft <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> Word, utilisez <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> la propriété avec l’objet. Pour rétablir la mise en forme du format de liste d’origine <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> , utilisez la méthode pour l’objet <b>ListGallery</b> .</para>
+      <para>Une fois que vous avez renvoyé un objet <b>ListTemplate</b> , utilisez<paramref name="index" /> <b>ListLevels</b>() <paramref name="index" /> , où est un nombre compris entre 1 et 9, pour <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> renvoyer un seul objet. Avec un <b>objet ListLevel</b> , vous avez accès à toutes les propriétés de mise en forme pour le niveau de liste spécifié <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />par <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />exemple <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />,, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />, et.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> méthode pour convertir un modèle de liste à plusieurs niveaux en un modèle de liste unique.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -67,14 +57,12 @@
         <Parameter Name="Name" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="OutlineNumbered">Facultatif <b>Object</b>. <b>True</b> pour appliquer un plan de numérotation pour le nouveau modèle de liste.</param>
-        <param name="Name">Facultatif <b>Object</b>. Nom facultatif utilisé pour la liaison du modèle de liste à un champ LISTNUM. Vous ne pouvez pas utiliser ce nom pour indexer le modèle de liste dans la collection.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object qui représente un nouveau modèle de liste.</summary>
+        <param name="OutlineNumbered"><b>Objet</b>facultatif. <b>True</b> pour appliquer un plan de numérotation pour le nouveau modèle de liste.</param>
+        <param name="Name"><b>Objet</b>facultatif. Nom facultatif utilisé pour lier le modèle de liste à un champ LISTNUM. Ce nom ne peut pas être utilisé pour indexer le modèle de liste dans la collection.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objet qui représente un nouveau modèle de liste.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Vous ne pouvez pas utiliser la méthode <b>Add</b> sur <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> les objets renvoyés par une <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objet. Vous pouvez, toutefois, modifier les modèles de liste existants dans les galeries.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous ne pouvez pas <b></b> utiliser la méthode <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> Add sur des objets <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> renvoyés à partir d’un objet. Vous pouvez toutefois, modifier les modèles de liste existants dans les galeries.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -100,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -158,11 +146,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -223,8 +209,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</param>
+        <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

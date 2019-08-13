@@ -1,13 +1,5 @@
 <Type Name="Frameset" FullName="Microsoft.Office.Interop.Word.Frameset">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a153326e0a463fab1ea2191a5ff18e8f268d65d4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668083" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a60060da0b1c4ff85a021ce286850c649ffa86e1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146807" /></Metadata><TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Frameset implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Frameset" />
   <TypeSignature Language="VB.NET" Value="Public Interface Frameset&#xA;Implements IEnumerable" />
@@ -31,9 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Représente une page de cadres entière ou un seule cadre dans une page de cadres.</summary>
-    <remarks>
-      <para>Il n’existe aucune collection <b>frames</b> ; chaque <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet ou <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objet contient un seul objet <b>Frameset</b> .</para> Propriété 
-      <para>utiliser <b>Frameset</b> d’un objet <b>Document</b> ou <b>Pane</b> pour renvoyer l’objet <b>Frameset</b> . Pour les propriétés ou méthodes qui affectent l’ensemble des cadres d’une page de cadres, utilisez l’objet <b>Frameset</b> de l’objet <b>Document</b> . Pour les propriétés ou méthodes qui affectent des cadres individuels d’une page de cadres, utilisez l’objet <b>Frameset</b> de l’objet <b>Pane</b> .</para><para /></remarks>
+    <remarks><para>Il n’existe pas de collection de jeux de <b>cadres</b> ; chaque <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet ou <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objet ne contient qu’un seul objet <b>Frameset</b> .</para>
+      <para>Utilisez la propriété <b>Frameset</b> d’un objet <b>document</b> ou <b>Pane</b> pour renvoyer l’objet <b>Frameset</b> . Pour les propriétés ou méthodes qui affectent tous les cadres d’une page de cadres, utilisez l’objet <b>Frameset</b> de l’objet <b>document</b> . Pour les propriétés ou méthodes qui affectent des cadres individuels d’une page de cadres, utilisez l’objet <b>Frameset</b> de l’objet <b>Pane</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNewFrame">
@@ -59,7 +51,7 @@
         <Parameter Name="Where" Type="Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />
       </Parameters>
       <Docs>
-        <param name="Where">Requis <see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />. Définit l'emplacement où le nouveau cadre doit être ajouté par rapport au cadre spécifié.</param>
+        <param name="Where">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />. Définit l'emplacement où le nouveau cadre doit être ajouté par rapport au cadre spécifié.</param>
         <summary>Ajoute un nouveau cadre à une page de cadres.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -88,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,12 +108,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nombre d’enfants <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> associés à l’objet <b>Frameset</b> spécifié.</summary>
+        <summary>Renvoie le nombre d’objets <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> enfants associés à l’objet <b>Frameset</b> spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété s’applique uniquement aux objets <b>Frameset</b> de type <b>wdFramesetTypeFrameset</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété s'applique uniquement aux objets <b>Frameset</b> de type <b>wdFramesetTypeFrameset</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildFramesetItem">
@@ -150,14 +140,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>obligatoire. Numéro d'index du cadre spécifié.</param>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object qui représente l’objet <b>Frameset</b> enfant spécifié.</summary>
+        <param name="Index">Argument de type <b>Integer</b> obligatoire. Numéro d'index du cadre spécifié.</param>
+        <summary>Renvoie l' <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objet qui représente l’objet <b>Frameset</b> enfant spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété s’applique uniquement aux objets <b>Frameset</b> de type <b>wdFramesetTypeFrameset</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété s'applique uniquement aux objets <b>Frameset</b> de type <b>wdFramesetTypeFrameset</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -185,11 +172,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -274,8 +259,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si les bordures des cadres dans la page de cadres spécifiée sont affichées.</summary>
+        <summary><b>True</b> si les bordures des cadres dans la page de cadres spécifiée sont affichées.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,8 +290,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la page Web ou un autre document spécifié par la <see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" /> propriété est un fichier externe avec lequel Microsoft Word maintient un lien seulement à partir du cadre spécifié.</summary>
+        <summary><b>True</b> si la page Web ou un autre document spécifié par <see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" /> la propriété est un fichier externe dans lequel Microsoft Word conserve uniquement un lien à partir du cadre spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -338,7 +321,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le nom du cadre spécifié sur une page de cadres.</summary>
+        <summary>Renvoie ou définit le nom du cadre spécifié dans une page de cadres.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -369,8 +352,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l'utilisateur peut redimensionner le cadre spécifié lors de l'affichage de la page de cadres dans un navigateur Web.</summary>
+        <summary><b>True</b> si l'utilisateur peut redimensionner le cadre spécifié lors de l'affichage de la page de cadres dans un navigateur Web.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -401,7 +383,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdScrollbarType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit quand les barres de défilement sont disponibles pour le cadre spécifié lors de l’affichage de page de cadres correspondante dans un navigateur Web.</summary>
+        <summary>Renvoie ou définit quand les barres de défilement sont disponibles dans le cadre spécifié lors de l'affichage de la page de cadres correspondante dans un navigateur Web.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -432,7 +414,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit la couleur des bordures des cadres dans la page de cadres spécifiée. Peut être un de la <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> constantes.</summary>
+        <summary>Renvoie ou définit la couleur des bordures des cadres dans la page de cadres spécifiée. Peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> constantes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -526,12 +508,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la hauteur de l’objet <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objet.</summary>
+        <summary>Cette propriété renvoie ou définit la hauteur de <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" /> propriété détermine le type d’unité dans laquelle cette valeur est exprimée.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" /> propriété détermine le type d’unité dans laquelle cette valeur est exprimée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightType">
@@ -616,7 +596,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object qui représente le parent de l’objet <b>Frameset</b> spécifié sur une page de cadres.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> Object qui représente le parent de l’objet <b>Frameset</b> spécifié sur une page de cadres.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -675,12 +655,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la largeur de l’objet <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objet.</summary>
+        <summary>Cette propriété renvoie ou définit la largeur de <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" /> propriété détermine le type d’unité dans laquelle cette valeur est exprimée.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" /> propriété détermine le type d’unité dans laquelle cette valeur est exprimée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WidthType">
@@ -709,7 +687,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetSizeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le type de largeur de l’objet <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objet.</summary>
+        <summary>Cette propriété renvoie ou définit le type de largeur <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

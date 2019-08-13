@@ -1,13 +1,5 @@
 <Type Name="AutoCorrectEntries" FullName="Microsoft.Office.Interop.Word.AutoCorrectEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="15161d8d9b96cdc9be82de4a41c0a978915ac25a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668705" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoCorrectEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e9481d541f5385119d68bbf3d4192d324fab9282" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146261" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrectEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrectEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrectEntries&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" /> objets qui représentent toutes les entrées de correction automatique disponibles dans Microsoft Word. La collection AutoCorrectEntries contient toutes les entrées dans la boîte de dialogue Correction automatique (menu Outils).</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" /> propriété pour renvoyer la collection AutoCorrectEntries.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" /> ou <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" /> pour ajouter une entrée de correction automatique à la liste des corrections disponibles.</para>
-      <para>Utiliser <b>entrées</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de l’entrée de correction automatique ou le numéro d’index, pour renvoyer un seul objet AutoCorrectEntry. Vous devez correspondre exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché sous Remplacer dans la boîte de dialogue Correction automatique.</para>
-      <para />
-    </remarks>
+    <summary>Collection d’objets <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" /> qui représentent l’ensemble des corrections automatiques disponibles dans Microsoft Word. La collection AutoCorrectEntries contient toutes les corrections répertoriées dans la boîte de dialogue Correction automatique (menu Outils).</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" /> propriété pour renvoyer la collection AutoCorrectEntries.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" /> <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" /> méthode ou pour ajouter une entrée de correction automatique à la liste des entrées disponibles.</para>
+      <para>Utilisez <b></b>Entries<paramref name="index" />(), <paramref name="index" /> où est le nom de la correction automatique ou le numéro d’index, pour renvoyer un seul objet AutoCorrectEntry. Vous devez respecter exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché sous remplacer dans la boîte de dialogue Correction automatique.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,8 +53,8 @@
         <Parameter Name="Value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">Le texte que vous souhaitez remplacer automatiquement le texte spécifié par <paramref name="Name" /> est de type.</param>
-        <param name="Value">Le texte que vous souhaitez remplacer automatiquement par le texte spécifié par <paramref name="Value" />.</param>
+        <param name="Name">Texte que vous souhaitez insérer automatiquement chaque fois que le texte spécifié par <paramref name="Name" /> est tapé.</param>
+        <param name="Value">Texte à remplacer automatiquement par le texte spécifié par <paramref name="Value" />.</param>
         <summary>Ajoute une entrée de correction automatique en texte brut à la liste des corrections automatiques disponibles.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -93,14 +83,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Name">Microsoft Word insère automatiquement chaque fois que le texte mis en forme <paramref name="Name" /> est de type.</param>
-        <param name="Range">Le texte à remplacer automatiquement par <paramref name="Range" />.</param>
+        <param name="Name">Texte mis en forme que Microsoft Word insère automatiquement chaque <paramref name="Name" /> fois qu’il est tapé.</param>
+        <param name="Range">Texte à remplacer automatiquement par <paramref name="Range" />.</param>
         <summary>Crée une entrée de correction automatique mise en forme, en conservant tous les attributs de texte de la plage spécifiée.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Le <see cref="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.RichText" /> propriété entrées ajoutées à l’aide de cette méthode renvoie <b>la valeur True</b>. Si cette méthode n’est pas utilisée, corrections automatiques insérées sont conformes au style actif.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.RichText" /> propriété pour les entrées ajoutées à l’aide de cette méthode renvoie la <b>valeur true</b>. Si cette méthode n’est pas utilisée, les entrées de correction automatique insérées sont conformes au style actuel.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -126,7 +114,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente le créateur de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente le créateur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,11 +172,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifique a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -249,7 +235,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Le nom de l’objet à renvoyer.</param>
+        <param name="Index">Nom de l’objet individuel à renvoyer.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -278,7 +264,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet spécifié.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

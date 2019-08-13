@@ -1,13 +1,5 @@
 <Type Name="SmartTagRecognizer" FullName="Microsoft.Office.Interop.Word.SmartTagRecognizer">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1596270bff23eea1f59ab9bdc76d1e9433b328f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667293" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagRecognizer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4f6682dbac9852e24913ff87211561eae8bef090" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143979" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagRecognizer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagRecognizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagRecognizer" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente les composants installés qui marque le texte avec des types d’informations.</summary>
-    <remarks>
-      <para>Le composant de balise active adresse (en anglais) contient des modules de reconnaissance pour la rue, ville, état et code postal, entre autres les éléments associés aux adresses. Lorsqu’un utilisateur Active un composant installé par le biais de code ou à l’aide de l’onglet balises actives dans la boîte de dialogue Correction automatique, des étiquettes de texte qui correspond à ces éléments dans un document Microsoft Word.</para>
+    <summary>Représente les composants installés qui fournissent un intitulé à du texte composé de types d’informations.</summary>
+    <remarks><para>Le composant de balise active adresse (anglais) contient des modules de reconnaissance pour la rue, la ville, l’État et le code postal, entre autres éléments liés à l’adresse. Lorsqu’un utilisateur active un composant installé, soit par le biais du code, soit à l’aide de l’onglet balises actives de la boîte de dialogue Correction automatique, Microsoft Word étiquette le texte qui correspond à ces éléments dans un document.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />, et <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objets liés dans la mesure où chaque élément reconnu par un composant de balise active est un objet <b>SmartTagType</b> . Par exemple, « city » dans le composant de balise active adresse est un objet <b>SmartTagType</b> spécifique. Le type de balise active ville possède des objets <b>SmartTagRecognizer</b> (la partie du composant de balise active qui reconnaît les balises actives du type « city » dans les documents) et des objets <b>SmartTagAction</b> (la partie du composant de balise active qui fournit les actions associés au type de balise active spécifique, qui peut inclure la recherche d’une ville reconnue dans Microsoft MapPoint ou MSN). En réalité, le module de reconnaissance est l’étiquetage, le Gestionnaire d’action fournit des fonctionnalités de l’utilisateur final et ce qui relie les deux est le type de balise active lequel ils travaillent.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.SmartTagRecognizers.Item(System.Object@)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> collection pour renvoyer un seul objet <b>SmartTagRecognizer</b> . Une fois qu’un objet <b>SmartTagRecognizer</b> est renvoyé, vous pouvez déterminer si les modules de reconnaissance des balises actives sont activés pour l’application.</para>
-      <para />
-    </remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" /><see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />les objets, <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> et sont liés en ce que chaque élément reconnu par un composant de balise active est un objet <b>SmartTagType</b> . Par exemple, l'élément « ville » dans le composant de balise active Adresse est un objet <b>SmartTagType</b> spécifique. Le type de balise active « ville » contient des objets <b>SmartTagRecognizer</b> associés (la partie du composant de balise active qui reconnaît les balises actives du type « ville » dans les documents) et des objets <b>SmartTagAction</b> (la partie du composant de balise active qui fournit les actions associées au type de balise active spécifique, qui peut inclure la recherche d'une ville reconnue dans Microsoft MapPoint ou MSN). En d’autres termes, le module de reconnaissance effectue l’étiquetage, le gestionnaire d’actions fournit les fonctionnalités de l’utilisateur final et ce qui les lie est le type de balise active sur laquelle ils travaillent.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.SmartTagRecognizers.Item(System.Object@)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> collection pour renvoyer un seul objet <b>SmartTagRecognizer</b> . Une fois qu'un objet <b>SmartTagRecognizer</b> est renvoyé, vous pouvez déterminer si les modules de reconnaissance de balise active sont activés pour l'application.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +83,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’étiquette qui identifie le module de reconnaissance de balise active spécifiée.</summary>
+        <summary>Renvoie l’étiquette qui identifie le module de reconnaissance de balise active spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,11 +116,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -165,8 +153,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le module de reconnaissance de balise d’une puce est activé.</summary>
+        <summary><b>True</b> si un module de reconnaissance de balise active est activé.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -197,7 +184,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Spécifie le nom complet d’un <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" /> objet, y compris le chemin d’accès.</summary>
+        <summary>Spécifie le nom complet d' <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" /> un objet, y compris le chemin d’accès.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -261,10 +248,8 @@
       <Docs>
         <summary>Obtient l’identificateur programmatique (ProgID) de l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Dynamic data exchange (DDE) est une technologie plus ancienne qui n’est pas sécurisée. Si possible, utilisez une alternative plus fiable à DDE.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’échange dynamique de données (DDE) est une technologie plus ancienne qui n’est pas sécurisée. Dans la mesure du possible, utilisez une alternative plus sécurisée à DDE.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

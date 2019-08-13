@@ -1,13 +1,5 @@
 <Type Name="TextColumn" FullName="Microsoft.Office.Interop.Word.TextColumn">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0f7fe58dd0c3656b702f57924033d3dda5aa80ae" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667955" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextColumn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="015769d0ee569bc60722ccfff3efdbf14527bd9a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143860" /></Metadata><TypeSignature Language="C#" Value="public interface TextColumn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextColumn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextColumn" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextColumn" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une seule colonne de texte.</summary>
-    <remarks>
-      <para>L’objet <b>TextColumn</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> collection. <b>Cette collection</b> contient toutes les colonnes dans un document ou une section d’un document.</para>
-      <para>Utiliser <b>TextColumns</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>TextColumn</b> . Le numéro d’index représente la position de la colonne dans la collection <b>TextColumns</b> (en partant de la gauche).</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> pour ajouter une colonne à la collection de colonnes. Par défaut, il est une colonne de texte dans la collection <b>TextColumns</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" /> méthode pour disposer le texte en colonnes.</para>
-      <para />
-    </remarks>
+    <remarks><para>L’objet <b>TextColumn</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> collection. <b>Cette collection</b> contient toutes les colonnes dans un document ou une section d'un document.</para>
+      <para>Utilisez <b>TextColumns</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>TextColumn</b> . Le numéro d'index représente la position de la colonne dans la collection <b>TextColumns</b> (en comptant de gauche à droite).</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> méthode pour ajouter une colonne à la collection de colonnes. Par défaut, la collection <b>TextColumns</b> contient une colonne de texte.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" /> méthode pour réorganiser le texte en colonnes.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,11 +79,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -150,7 +138,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’espacement (en points) après la colonne de texte spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit l’espacement (en points) après la colonne de texte spécifiée.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,7 +169,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la largeur de l’objet spécifié, en points.</summary>
+        <summary>Renvoie ou définit la largeur de l’objet spécifié, en points.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

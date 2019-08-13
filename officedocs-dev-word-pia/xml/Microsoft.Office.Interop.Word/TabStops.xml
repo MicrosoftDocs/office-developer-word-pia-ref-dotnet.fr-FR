@@ -1,13 +1,5 @@
 <Type Name="TabStops" FullName="Microsoft.Office.Interop.Word.TabStops">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a15278e484f9b51a873b81126ea32a88e51e5ce" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668346" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TabStops : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5dccca7a808f17210ed911b946b4012c04f38708" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143902" /></Metadata><TypeSignature Language="C#" Value="public interface TabStops : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TabStops implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TabStops" />
   <TypeSignature Language="VB.NET" Value="Public Interface TabStops&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objets qui représentent les personnalisés et par défaut des onglets d’un paragraphe ou d’un groupe de paragraphes.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>TabStops</b> pour renvoyer la collection <b>TabStops</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" /> pour ajouter un taquet de tabulation.</para>
-      <para>Vous pouvez également ajouter un taquet de tabulation en spécifiant un emplacement avec la propriété <b>TabStops</b> .</para>
-      <para>Use <b>TabStops</b>(<paramref name="index" />), où <paramref name="index" /> est l’emplacement de la tabulation (en points) ou le numéro d’index, pour renvoyer un seul objet <b>TabStop</b> . Taquets de tabulation sont indexés numériquement de gauche à droite le long de la règle.</para>
-      <para>Lorsque vous travaillez avec le <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> collection (ou une plage de plusieurs paragraphes), vous devez modifier chaque paragraphe de la collection séparément si les taquets de tabulation ne sont pas identiques dans tous les paragraphes.</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objets qui représentent les tabulations personnalisées et par défaut d’un paragraphe ou d’un groupe de paragraphes.</summary>
+    <remarks><para>Utilisez la propriété <b>TabStops</b> pour renvoyer la collection <b>TabStops</b>.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" /> méthode pour ajouter un taquet de tabulation.</para>
+      <para>Vous pouvez également ajouter un taquet de tabulation en spécifiant un emplacement avec la propriété <b>TabStops</b>.</para>
+      <para>Utilisez <b>TabStops</b>(<paramref name="index" />), où <paramref name="index" /> est l’emplacement du taquet de tabulation (en points) ou le numéro d’index, pour renvoyer un seul objet <b>TabStop</b> . Taquets de tabulation sont indexés numériquement de gauche à droite le long de la règle.</para>
+      <para>Lorsque vous utilisez la <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> collection (ou une plage de plusieurs paragraphes), vous devez modifier chaque paragraphe de la collection individuellement si les taquets de tabulation ne sont pas identiques dans tous les paragraphes.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,11 +55,10 @@
         <Parameter Name="Leader" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Position">
-          <b>Single</b>obligatoire. Position du taquet de tabulation (exprimée en points) par rapport à la marge de gauche.</param>
-        <param name="Alignment">Facultatif <b>Object</b>. L’alignement du taquet de tabulation. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" /> constantes : <b>wdAlignTabBar</b>, <b>wdAlignTabCenter</b>, <b>wdAlignTabDecimal</b>, <b>wdAlignTabLeft</b>, <b>wdAlignTabList</b>ou <b>wdAlignTabRight</b>. Si cet argument est omis, la <b>constante wdAlignTabLeft</b> est utilisée.</param>
-        <param name="Leader">Facultatif <b>Object</b>. Type de points de suite pour le taquet de tabulation. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" /> constantes : <b>wdTabLeaderDashes</b>, <b>wdTabLeaderDots</b>, <b>wdTabLeaderHeavy</b>, <b>wdTabLeaderLines</b>, <b>wdTabLeaderMiddleDot</b>ou <b>wdTabLeaderSpaces</b>. Si cet argument est omis, la <b>constante wdTabLeaderSpaces</b> est utilisée.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objet qui représente un taquet de tabulation personnalisé ajouté à un document.</summary>
+        <param name="Position">Argument de type <b>Single</b> obligatoire. Position du taquet de tabulation (exprimée en points) par rapport à la marge de gauche.</param>
+        <param name="Alignment"><b>Objet</b>facultatif. Alignement du taquet de tabulation. Il peut s’agir de l' <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" /> une des constantes suivantes: <b>wdAlignTabBar</b>, <b>wdAlignTabCenter</b>, <b>wdAlignTabDecimal</b>, <b>wdAlignTabLeft</b>, <b>wdAlignTabList</b>ou <b>wdAlignTabRight</b>. Si vous ne spécifiez pas cet argument, <b>wdAlignTabLeft</b> est utilisé.</param>
+        <param name="Leader"><b>Objet</b>facultatif. Type de points de suite pour le taquet de tabulation. Il peut s’agir de l' <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" /> une des constantes suivantes: <b>wdTabLeaderDashes</b>, <b>wdTabLeaderDots</b>, <b>wdTabLeaderHeavy</b>, <b>wdTabLeaderLines</b>, <b>wdTabLeaderMiddleDot</b>ou <b>wdTabLeaderSpaces</b>. Si vous ne spécifiez pas cet argument, la constante <b>wdTabLeaderSpaces</b> est utilisée.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> Object qui représente un taquet de tabulation personnalisé ajouté à un document.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,9 +86,8 @@
         <Parameter Name="Position" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Position">
-          <b>Single</b>obligatoire. Spécifie une position sur la règle, exprimée en points.</param>
-        <summary>Renvoie la prochaine <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objet à droite du <paramref name="Position" />.</summary>
+        <param name="Position">Argument de type <b>Single</b> obligatoire. Spécifie une position sur la règle, exprimée en points.</param>
+        <summary>Renvoie l’objet <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> suivant à droite de <paramref name="Position" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,7 +115,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,9 +143,8 @@
         <Parameter Name="Position" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Position">
-          <b>Single</b>obligatoire. Spécifie une position sur la règle, exprimée en points.</param>
-        <summary>Renvoie la prochaine <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objet à gauche du <paramref name="Position" />.</summary>
+        <param name="Position">Argument de type <b>Single</b> obligatoire. Spécifie une position sur la règle, exprimée en points.</param>
+        <summary>Renvoie l’objet <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> suivant à gauche de <paramref name="Position" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,10 +171,8 @@
       <Parameters />
       <Docs>
         <summary>Supprime tous les taquets de tabulation personnalisés des paragraphes spécifiés.</summary>
-        <remarks>
-          <para>Pour effacer un taquet de tabulation donné, utilisez la <see cref="M:Microsoft.Office.Interop.Word.TabStop.Clear" /> méthode de la <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objet. La méthode <b>ClearAll</b> n’efface la valeur par défaut taquets de tabulation. Manipuler l’onglet par défaut, utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> propriété du document.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour effacer un taquet de tabulation, utilisez la <see cref="M:Microsoft.Office.Interop.Word.TabStop.Clear" /> méthode de l' <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objet. La méthode <b>ClearAll</b> n'efface pas la valeur par défaut taquets de tabulation. Pour manipuler les taquets de tabulation par défaut <see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> , utilisez la propriété du document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -243,11 +228,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -308,8 +291,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</param>
+        <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,13 +1,5 @@
 <Type Name="FileConverter" FullName="Microsoft.Office.Interop.Word.FileConverter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b895588fe75d88bfa9fe9416f0d5c82af0369a00" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668643" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FileConverter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e5e73be359807266e9514d8b613947bcb2065ec8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146849" /></Metadata><TypeSignature Language="C#" Value="public interface FileConverter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileConverter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FileConverter" />
   <TypeSignature Language="VB.NET" Value="Public Interface FileConverter" />
@@ -27,12 +19,12 @@
   </Attributes>
   <Docs>
     <summary>Représente un convertisseur de fichier qui est utilisé pour ouvrir ou enregistrer des fichiers.</summary>
-    <remarks>
-      <para>L’objet <b>FileConverter</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.FileConverters" /> collection. La collection <b>FileConverters</b> contient l’ensemble des convertisseurs utilisés pour ouvrir et enregistrer des fichiers.</para>
-      <para>Utiliser <b>FileConverters</b>(<paramref name="index" />), où <paramref name="index" /> est un nom de la classe ou le numéro d’index, pour renvoyer un seul objet <b>FileConverter</b> .</para>
-      <para>Le numéro d’index représente la position du convertisseur de fichier dans la collection <b>FileConverters</b> .</para>
-      <para>, Vous ne pouvez pas créer un convertisseur de fichier ou ajouter à la collection <b>FileConverters</b> . Les objets <b>FileConverter</b> sont ajoutés lors de l’installation de Microsoft Office ou de convertisseurs de fichier supplémentaires. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> ou <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> propriété pour déterminer si un objet <b>FileConverter</b> peut être utilisé pour ouvrir ou enregistrer le document.</para> Convertisseurs 
-      <para>fichier pour enregistrer les documents sont répertoriés dans la boîte de dialogue Enregistrer sous. Convertisseurs de fichiers pour l’ouverture de documents apparaissent dans une boîte de dialogue si la confirmation des conversions Open case à cocher sont sélectionnée sous l’onglet Général dans la boîte de dialogue Options (menu Outils).</para><para /></remarks>
+    <remarks><para>L’objet <b>FileConverter</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.FileConverters" /> collection. La collection <b>FileConverters</b> contient l'ensemble des convertisseurs utilisés pour ouvrir et enregistrer des fichiers.</para>
+      <para>Utilisez <b>FileConverters</b>(<paramref name="index" />), où <paramref name="index" /> est un nom de classe ou un numéro d’index, pour renvoyer un seul objet <b>FileConverter</b> .</para>
+      <para>Le numéro d'index représente la position du convertisseur de fichier dans la collection <b>FileConverters</b>.</para>
+      <para>Vous ne pouvez pas créer un convertisseur de fichier ou ajouté à la collection <b>FileConverters</b>. Les objets <b>FileConverter</b> sont ajoutés lors de l'installation de Microsoft Office ou en installant les convertisseurs de fichier supplémentaires. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> propriété ou <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> pour déterminer si un objet <b>FileConverter</b> peut être utilisé pour ouvrir ou enregistrer un document.</para>
+      <para>Les convertisseurs de fichier utilisés pour enregistrer les documents sont répertoriés dans la boîte de dialogue Enregistrer sous. Ceux qui servent à ouvrir des documents s'affichent dans une boîte de dialogue si la case Confirmation des conversions lors de l'ouverture est activée sous l'onglet Général de la boîte de dialogue Options (menu Outils).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,13 +78,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Détermine si le convertisseur de fichier spécifié est conçu pour ouvrir les fichiers.</summary>
+        <summary>Détermine si le convertisseur de fichier spécifié est conçu pour ouvrir des fichiers.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si le convertisseur de fichier spécifié est conçu pour ouvrir des fichiers et <b>False</b> dans le cas contraire.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> propriété renvoie <b>la valeur True</b> si le convertisseur de fichier spécifié peut être utilisé pour enregistrer (exporter) des fichiers.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si le convertisseur de fichier spécifié est conçu pour ouvrir des fichiers et la <b>valeur false</b> dans le cas contraire.</para>
+          <para>La <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> propriété renvoie la <b>valeur true</b> si le convertisseur de fichier spécifié peut être utilisé pour enregistrer (exporter) des fichiers.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanSave">
@@ -120,10 +110,8 @@
       <Docs>
         <summary>Détermine si le convertisseur de fichier spécifié est conçu pour enregistrer des fichiers.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> propriété renvoie <b>la valeur True</b> si le convertisseur de fichier spécifié peut être utilisé pour ouvrir (importer) des fichiers.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> propriété renvoie la <b>valeur true</b> si le convertisseur de fichier spécifié peut être utilisé pour ouvrir (importer) des fichiers.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassName">
@@ -179,11 +167,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extensions">
@@ -209,7 +195,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie les extensions de nom spécifiées fichier <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> objet.</summary>
+        <summary>Renvoie les extensions de nom de fichier associées à <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,10 +225,8 @@
       <Docs>
         <summary>Renvoie le nom du convertisseur de fichier spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les noms de format sont affichés dans la liste déroulante type dans la boîte de dialogue Enregistrer sous (menu fichier).</para>
-          <para />
-        </remarks>
+        <remarks><para>Les noms de format sont affichés dans la zone Type de fichier de la boîte de dialogue Enregistrer sous (menu Fichier).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -268,7 +252,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,10 +282,8 @@
       <Docs>
         <summary>Renvoie le format de fichier du convertisseur de fichier spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>OpenFormat</b> peut être valide <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constante, ou elle peut être un nombre unique représentant un convertisseur de fichier externe.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>OpenFormat</b> peut être n’importe <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> quelle constante valide ou un nombre unique qui représente un convertisseur de fichier externe.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -357,11 +339,9 @@
       <Docs>
         <summary>Renvoie le disque ou le chemin d'accès au Web à l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le chemin d’accès n’inclut pas un caractère de fin — par exemple, « C:\MSOffice » ou «http://MyServer». Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propriété pour ajouter le caractère qui sépare les dossiers et les lettres de lecteur. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.FileConverter.Name" /> propriété pour renvoyer le nom de fichier sans le chemin</para>
-          <para>Vous pouvez utiliser la propriété <b>PathSeparator</b> pour créer des adresses Web même si elles contiennent des barres obliques (/) et les valeurs par défaut de la propriété <b>PathSeparator utilise</b> une barre oblique inverse (\).</para>
-          <para />
-        </remarks>
+        <remarks><para>Le chemin d'accès n'inclut pas un caractère de fin  par exemple, « C:\MSOffice » ou « http://MyServer ». Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propriété pour ajouter le caractère qui sépare les dossiers et les lettres de lecteur. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FileConverter.Name" /> propriété pour renvoyer le nom de fichier sans le chemin d’accès.</para>
+          <para>[!REMARQUE] Vous pouvez utiliser la propriété <b>PathSeparator</b> pour créer des adresses Web même si elles contiennent des barres obliques (/) et la propriété <b>PathSeparator utilise</b> une barre oblique inverse (\) par défaut.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveFormat">
@@ -389,10 +369,8 @@
       <Docs>
         <summary>Renvoie le format de fichier du convertisseur de fichier spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur renvoyée sera un nombre unique qui spécifie un convertisseur de fichier externe ou une <see cref="T:Microsoft.Office.Interop.Word.WdSaveFormat" /> constante.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur renvoyée est un nombre unique qui spécifie un convertisseur de fichier externe <see cref="T:Microsoft.Office.Interop.Word.WdSaveFormat" /> ou une constante.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="DiagramNodeChildren" FullName="Microsoft.Office.Interop.Word.DiagramNodeChildren">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4320acfa18b50f692a11a011ff3c369f44d39933" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667567" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNodeChildren : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e509f1a815f12770b760243945da953cde10fa51" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147087" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNodeChildren : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNodeChildren implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DiagramNodeChildren" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNodeChildren&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collection d’objets <b>DiagramNode</b> représentant les nœuds enfants dans un diagramme.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Children" /> propriété permet de renvoyer les nœuds dans une collection <b>DiagramNodeChildren</b> . Utiliser le <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> propriété pour accéder au premier nœud enfant dans un diagramme.</para>
-      <para />
-    </remarks>
+    <summary>Collection d’objets <b>DiagramNode</b> qui représente les nœuds enfants d’un diagramme.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Children" /> propriété pour renvoyer les nœuds d’une collection <b>DiagramNodeChildren</b> . Utilisez la <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> propriété pour accéder au premier nœud enfant dans un diagramme.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -60,7 +50,7 @@
         <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="Index">Facultatif <b>Object</b>. L’emplacement d’index où ajouter le nouveau nœud de diagramme : 0 = avant tous les nœuds, -1 = après tous les nœuds et n’importe quelle autre <paramref name="Index" /> nombre ajoutera après ce nœud dans la collection.</param>
+        <param name="Index"><b>Objet</b>facultatif. Emplacement d’index où ajouter le nouveau nœud de diagramme: 0 ajoute avant tous les nœuds,-1 ajoute après tous les nœuds, <paramref name="Index" /> et tout autre nombre est ajouté après ce nœud dans la collection.</param>
         <param name="NodeType">Facultatif <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />. Spécifie le type de nœud.</param>
         <summary>Ajoute un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objet à une collection de nœuds de diagramme enfants.</summary>
         <returns>To be added.</returns>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,11 +138,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Par exemple, si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Par exemple, si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstChild">
@@ -178,12 +166,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object qui représente le premier nœud enfant d’un nœud parent.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Object qui représente le premier nœud enfant d’un nœud parent.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.LastChild" /> propriété pour accéder au dernier nœud enfant. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriété pour accéder au nœud parent dans un diagramme.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.LastChild" /> propriété pour accéder au dernier nœud enfant. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriété pour accéder au nœud parent dans un diagramme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -244,8 +230,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</param>
+        <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -274,12 +259,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object qui représente le dernier nœud enfant d’un nœud parent.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Object qui représente le dernier nœud enfant d’un nœud parent.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> propriété pour accéder au premier nœud enfant dans un diagramme. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriété pour accéder au nœud parent dans un diagramme.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> propriété pour accéder au premier nœud enfant dans un diagramme. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriété pour accéder au nœud parent dans un diagramme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -331,11 +314,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sélectionne toutes les formes dans l’article principal, dans une zone de dessin ou dans les en-têtes et pieds de page d’un document.</summary>
-        <remarks>
-          <para>Cette méthode ne sélectionne pas <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objets.</para>
-          <para />
-        </remarks>
+        <summary>Sélectionne toutes les formes de l’article principal, d’une zone de dessin ou des en-têtes et pieds de page d’un document.</summary>
+        <remarks><para>Cette méthode ne sélectionne <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> pas les objets.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

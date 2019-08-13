@@ -1,13 +1,5 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Word.CalloutFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c04c571668cd9e557fbce92649a5a632d6c743de" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667710" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CalloutFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e225a3d98b4c368d5c9c0b464dfefb3fd25e89a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147321" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalloutFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CalloutFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalloutFormat" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Cet objet contient des propriétés et méthodes qui s'appliquent aux légendes encadrées.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" /> propriété pour renvoyer un objet <b>CalloutFormat</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" /> propriété pour renvoyer un objet <b>CalloutFormat</b> . </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Accent">
@@ -92,11 +82,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur qui indique l’angle de la ligne de légende.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la ligne de légende contient plusieurs segments de ligne, cette propriété renvoie ou définit l’angle du segment plus éloigné de la zone de texte de légende.</para>
+        <remarks><para>Si la ligne de légende contient plusieurs segments de ligne, cette propriété renvoie ou définit l'angle du segment plus éloigné de la zone de texte de légende.</para>
           <para>Si vous définissez la valeur de cette propriété sur une valeur autre que <b>msoCalloutAngleAutomatic</b>, la ligne de légende conserve un angle fixe lorsque vous faites glisser la légende.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -122,7 +110,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,13 +147,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique si l’emplacement où le trait de légende rejoint la zone de texte de légende change selon que l’origine de la ligne de légende (emplacement désigné par la légende) est à gauche ou à droite de la zone de texte de légende.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique si le point de jonction de la ligne de légende avec la zone de texte de la légende change selon que l’origine du trait de légende (l’emplacement vers lequel pointe la légende) est à gauche ou à droite de la zone de texte de la légende.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Lorsque la valeur de cette propriété est <b>True</b>, la valeur de projection (la distance verticale entre le bord de la zone de texte de légende et la jonction de la ligne de légende) est mesurée à partir du haut de la zone de texte lorsque la zone de texte est à droite de l’origine , et elle est mesurée à partir du bas de la zone de texte lorsque la zone de texte est à gauche de l’origine. Lorsque la valeur de cette propriété est <b>False</b>, la valeur de projection est mesurée à partir du haut de la zone de texte, quelle que soit la position relative de la zone de texte et l’origine. Utilisez le <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> méthode pour définir la valeur de déroulement et la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> propriété permet de renvoyer la valeur de projection.</para>
-          <para>Définition de cette propriété n’affecte une légende uniquement si elle est définie de manière explicite drop valeur — autrement dit, si la valeur de la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> propriété est <b>DropType</b>. Par défaut, légendes ont explicitement défini les valeurs de dépôt lorsqu’elles sont créées.</para>
-          <para />
-        </remarks>
+        <remarks><para>Lorsque la valeur de cette propriété est <b>true</b>, la valeur de déroulement (distance verticale entre le bord de la zone de texte de légende et l’emplacement où le trait de légende s’attache) est mesurée à partir du haut de la zone de texte lorsque celle-ci se trouve à droite de l’origine. et il est mesuré à partir du bas de la zone de texte lorsque la zone de texte est située à gauche de l’origine. Lorsque cette propriété a la valeur <b>False</b>, la valeur de projection est toujours mesurée à partir du haut de la zone de texte, sans tenir compte des positions relatives de la zone de texte et de l'origine. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> méthode pour définir la valeur de projection et utilisez la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> propriété pour renvoyer la valeur de déplacement.</para>
+          <para>La définition de cette propriété n’affecte une légende que si elle est explicitement définie sur une valeur de déroulement, autrement dit, <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> si la valeur de la propriété est <b>msoCalloutDropCustom</b>. Par défaut, les légendes se voient explicitement affectées d’une valeur de déroulement au moment de leur création.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoLength">
@@ -193,10 +179,8 @@
       <Docs>
         <summary>Renvoie une valeur qui indique s’il faut définir automatiquement la longueur de la ligne de légende.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utilisez le <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> méthode pour définir cette propriété <b>a la valeur msoTrue</b>et utiliser le <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> pour définir cette propriété <b>a la valeur msoFalse</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> méthode pour affecter à cette propriété la valeur <b>msoTrue</b>et utilisez <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> la méthode pour affecter à cette propriété la valeur <b>msoFalse</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutomaticLength">
@@ -224,11 +208,9 @@
       <Parameters />
       <Docs>
         <summary>Indique le premier segment de la légende (le segment associé à l'emplacement de la légende du texte) à être mis à l'échelle automatiquement lorsque la légende est déplacée.</summary>
-        <remarks>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> méthode pour spécifier que le premier segment du trait de légende conserve la longueur fixe renvoyée par la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> propriété chaque fois que la légende est déplacée. S’applique uniquement aux légendes dont les lignes sont constituées de plusieurs segments (types <b>msoCalloutThree</b> et <b>msoCalloutFour</b>).</para>
-          <para>Application, cette méthode définit la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propriété la <b>valeur True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> méthode pour spécifier que le premier segment de la ligne de légende conserve la longueur fixe renvoyée <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> par la propriété chaque fois que la légende est déplacée. S’applique uniquement aux légendes dont les lignes sont constituées de plusieurs segments (types <b>msoCalloutThree</b> et <b>msoCalloutFour</b>).</para>
+          <para>L’application de cette méthode <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> affecte la <b>valeur true</b>à la propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -287,11 +269,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDrop">
@@ -319,11 +299,9 @@
       <Docs>
         <param name="Drop">Distance du point de jonction, mesurée en points.</param>
         <summary>Cette méthode détermine la distance verticale (en points) séparant le bord de la zone de texte du point de jonction de la ligne de légende avec cette zone.</summary>
-        <remarks>
-          <para>Cette distance est mesurée à partir du haut de la zone de texte, sauf si la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> propriété est définie sur <b>True</b> et la zone de texte se trouve à gauche de l’origine de la ligne de légende (endroit sur lequel la légende), auquel cas la distance de déroulement est mesurée à partir du bas la zone de texte.</para>
-          <para>Si le <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> méthode a été utilisée précédemment déterminé la projection de la légende spécifiée, appelez la méthode <b>PresetDrop</b> à l’aide de l’argument <b>DropType</b> avant d’utiliser la méthode <b>CustomDrop</b> afin que personnalisé drop paramètre prend effet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette distance est mesurée à partir du haut de la zone de texte <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> , sauf si la propriété est définie sur <b>true</b> et que la zone de texte est située à gauche de l’origine de la ligne de légende (l’emplacement vers lequel pointe la légende), auquel cas la distance de déplacement est mesurée à partir du bas de la zone de texte.</para>
+          <para>Si la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> méthode a été précédemment utilisée pour définir le déplacement de la légende spécifiée, appelez de nouveau la méthode <b>PresetDrop</b> à l’aide de l’argument <b>msoCalloutDropCustom</b> avant d’utiliser la méthode <b>CustomDrop</b> afin que le paramètre de projection personnalisée prenne effet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomLength">
@@ -351,11 +329,9 @@
       <Docs>
         <param name="Length">Longueur du premier segment de la ligne de légende, mesuré en points.</param>
         <summary>Cette méthode indique que le premier segment de la ligne de légende (segment attaché à la zone de légende) conserve une longueur fixe en cas de déplacement de la légende.</summary>
-        <remarks>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> méthode pour indiquer que le premier segment du trait de légende est redimensionné automatiquement lorsque la légende est déplacée. S’applique uniquement aux légendes dont les lignes sont constituées de plusieurs segments (types <b>msoCalloutThree</b> et <b>msoCalloutFour</b>).</para>
-          <para>Application, cette méthode définit la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propriété <b>False</b> et la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> propriété à la valeur spécifiée pour le <paramref name="Length" /> argument.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> méthode pour spécifier que le premier segment de la ligne de légende doit être mis à l’horizontale automatiquement lorsque la légende est déplacée. S’applique uniquement aux légendes dont les lignes sont constituées de plusieurs segments (types <b>msoCalloutThree</b> et <b>msoCalloutFour</b>).</para>
+          <para>L’application de cette méthode <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> affecte à la propriété la valeur <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> false et définit la propriété sur <paramref name="Length" /> la valeur spécifiée pour l’argument. <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Drop">
@@ -381,14 +357,12 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Pour les légendes explicitement affectée déroulement, cette propriété renvoie la distance verticale (en points) entre le bord de la zone de texte à l’endroit où la ligne de légende rejoint la zone de texte.</summary>
+        <summary>Cette propriété renvoie la distance verticale (en points) du bord du texte de délimitation de zone vers l’emplacement vers lequel la ligne de légende rejoint la zone de texte pour une légende avec une valeur de déroulement défini explicitement.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette distance est mesurée à partir du haut de la zone de texte, sauf si la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> propriété est définie sur <b>True</b> et la zone de texte se trouve à gauche de l’origine de la ligne de légende (endroit sur lequel la légende), auquel cas la distance de déroulement est mesurée à partir du bas la zone de texte.</para>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> pour définir la valeur de cette propriété.</para>
-          <para>La valeur de cette propriété reflète précisément la position de la pièce jointe trait de légende à la zone de texte uniquement si la légende est définie de manière explicite drop valeur — autrement dit, si la valeur de la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> propriété est <b>DropType</b>. Utiliser le <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> méthode avec un argument <b>msoCalloutCustomDrop</b> pour définir la propriété <b>DropType</b><b>DropType</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette distance est mesurée à partir du haut de la zone de texte <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> , sauf si la propriété est définie sur <b>true</b> et que la zone de texte est située à gauche de l’origine de la ligne de légende (l’emplacement vers lequel pointe la légende), auquel cas la distance de déplacement est mesurée à partir du bas de la zone de texte.</para>
+          <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> méthode pour définir la valeur de cette propriété.</para>
+          <para>La valeur de cette propriété reflète précisément la position du point d’attache du trait de légende à la zone de texte uniquement si la légende possède une valeur de déroulement explicitement définie, autrement dit, si <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> la valeur de la propriété est <b>msoCalloutDropCustom</b>. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> méthode avec un argument <b>msoCalloutCustomDrop</b> pour définir la propriété <b>DropType</b> sur <b>msoCalloutDropCustom</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DropType">
@@ -416,11 +390,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique où la ligne de légende rejoint la zone de texte de légende.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si le type de déplacement est <b>DropType</b>, les valeurs de la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> et <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> propriétés et la position de la zone de texte de légende et le trait de légende (endroit sur lequel la légende) est utilisée pour déterminer où la légende attache de ligne à la zone de texte.</para>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> pour définir la valeur de cette propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si le type de projection de la légende est <b>msoCalloutDropCustom</b>, les <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> valeurs <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> des propriétés et et les positions relatives de la zone de texte de la légende et de l’origine de la ligne de légende (emplacement vers lequel la légende pointe) sont utilisées pour déterminer où la légende liaison de ligne à la zone de texte.</para>
+          <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> méthode pour définir la valeur de cette propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Gap">
@@ -477,13 +449,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lors de la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propriété de la légende spécifiée est définie sur <b>False</b>, la propriété <b>Length</b> renvoie la longueur (en points) du premier segment de la ligne de légende (segment relié à la zone de légende de texte).</summary>
+        <summary>Lorsque la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propriété de la légende spécifiée a la valeur <b>false</b>, la propriété <b>Length</b> renvoie la longueur (en points) du premier segment de la ligne de légende (segment attaché à la zone de texte de la légende).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>S’applique uniquement aux légendes dont les lignes sont constituées de plusieurs segments (types <b>msoCalloutThree</b> et <b>msoCalloutFour</b>).</para>
-          <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> pour définir la valeur de cette propriété pour la <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>S’applique uniquement aux légendes dont les lignes sont constituées de plusieurs segments (types <b>msoCalloutThree</b> et <b>msoCalloutFour</b>).</para>
+          <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> méthode pour définir la valeur de cette propriété pour l' <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -509,7 +479,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet spécifié.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -539,10 +509,8 @@
       <Docs>
         <param name="DropType">La position de départ du trait de légende par rapport à la zone de délimitation du texte.</param>
         <summary>Indique si la jonction de la ligne de légende avec la zone de texte de légende s'effectue en haut, en bas, au milieu ou encore à une distance donnée par rapport au sommet ou à la base de la zone de texte.</summary>
-        <remarks>
-          <para>Si vous spécifiez <b>DropType</b> pour le <paramref name="DropType" /> paramètre, les valeurs de la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> et <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> propriétés et la position de la zone de texte de légende et le trait de légende (endroit sur lequel la légende) est utilisée pour déterminer où la ligne de légende rejoint la zone de texte.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous spécifiez <b>msoCalloutDropCustom</b> comme <paramref name="DropType" /> paramètre, les valeurs des propriétés <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> et <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> et les positions relatives de la zone de texte de la légende et de l’origine de la ligne de légende (emplacement vers lequel la légende pointe) sont utilisées pour déterminer emplacement auquel la ligne de légende rejoint la zone de texte.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

@@ -1,13 +1,5 @@
 <Type Name="LeaderLines" FullName="Microsoft.Office.Interop.Word.LeaderLines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6b4456146fc3eb1340ea69de1b05733c114ea3c7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668111" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LeaderLines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="07d892dc43af47aa5446fa97043969f62582e899" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146639" /></Metadata><TypeSignature Language="C#" Value="public interface LeaderLines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LeaderLines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LeaderLines" />
   <TypeSignature Language="VB.NET" Value="Public Interface LeaderLines" />
@@ -26,15 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Cet objet représente les lignes d'étiquettes d'un graphique.</summary>
-    <remarks>
-      <para>Cet objet n’est pas une collection ; il n’existe aucun objet qui représente une seule ligne d’étiquettes.</para>
-      <para>Cet objet s’applique uniquement aux graphiques en secteurs.</para>
-      <para />
-    </remarks>
-    <example>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Series.LeaderLines" /> propriété permet de renvoyer la <see cref="T:Microsoft.Office.Interop.Word.LeaderLines" /> objet. L’exemple suivant ajoute des étiquettes de données et des lignes d’étiquettes bleues à la série 1 du premier graphique du document actif. Cet exemple de code échouent si les lignes d’étiquettes sont visibles. Dans ce cas, vous pouvez faire glisser manuellement une des étiquettes de données loin du graphique pour afficher une ligne d’étiquettes.</para>
-    </example>
+    <summary>Représente les lignes d’étiquettes d’un graphique. Celles-ci connectent les étiquettes de données aux points de données.</summary>
+    <remarks><para>Cet objet n'est pas une collection ; il n'existe aucun objet qui représente une seule ligne d'étiquettes.</para>
+      <para>Cet objet s'applique uniquement aux graphiques en secteurs.</para>
+      <para> </para></remarks>
+    <example><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Series.LeaderLines" /> propriété pour renvoyer l' <see cref="T:Microsoft.Office.Interop.Word.LeaderLines" /> objet. L’exemple suivant ajoute des étiquettes de données et des lignes d’étiquettes bleues à la série 1 du premier graphique du document actif. Si aucune ligne d'étiquette n'est visible, le code de cet exemple échoue. Si c'est le cas, vous pouvez faire glisser manuellement une des étiquettes de données hors du graphique en secteurs pour faire afficher une ligne d'étiquette.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,10 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,10 +76,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objet qui représente la bordure de l’objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> Object qui représente la bordure de l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,14 +104,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. Valeur <b>Integer</b> en lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, le <see cref="P:Microsoft.Office.Interop.Word.LeaderLines.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.LeaderLines.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -180,9 +160,7 @@
       <Docs>
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet.
 En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,9 +188,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule <b>Object</b>.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

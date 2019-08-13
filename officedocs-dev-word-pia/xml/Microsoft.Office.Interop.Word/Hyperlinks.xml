@@ -1,13 +1,5 @@
 <Type Name="Hyperlinks" FullName="Microsoft.Office.Interop.Word.Hyperlinks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8d151b1c999c955b2def6c04b13e872538ebe676" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668776" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6826833cc30e7cdb396aeda67c34be780ae7876a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147976" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlinks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlinks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Hyperlinks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlinks&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente la collection de <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> des objets dans un document, range ou selection.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>Hyperlinks</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Document" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objet pour renvoyer la collection <b>Hyperlinks</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Hyperlinks.Add(System.Object,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour créer un lien hypertexte et l’ajouter à la collection <b>Hyperlinks</b> .</para>
-      <para>Utiliser <b>des liens hypertexte</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Hyperlink</b> dans un document, range ou selection.</para>
-      <para>La <see cref="P:Microsoft.Office.Interop.Word.Hyperlinks.Count" /> propriété pour cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d’autres articles, utilisez la collection avec l’objet <b>Range</b> .</para>
-      <para />
-    </remarks>
+    <summary>Représente la collection d' <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> objets dans un document, une plage ou une sélection.</summary>
+    <remarks><para>Utilisez la <b></b> propriété Hyperlinks d’un <see cref="T:Microsoft.Office.Interop.Word.Document" />objet <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Selection" /> pour renvoyer la collection <b></b> Hyperlinks.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Hyperlinks.Add(System.Object,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour créer un lien hypertexte et l’ajouter à <b></b> la collection Hyperlinks.</para>
+      <para>Utilisez les <b>liens hypertexte</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet Hyperlink dans un document, une plage ou une sélection. <b></b></para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Hyperlinks.Count" /> propriété de cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d’autres articles, utilisez la collection avec l’objet <b>Range</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Add">
@@ -102,14 +92,13 @@
         <Parameter Name="Target" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Anchor">
-          <b>Objet</b>obligatoire. Texte ou graphisme que vous souhaitez transformer en lien hypertexte.</param>
-        <param name="Address">Facultatif <b>Object</b>. L’adresse du lien spécifié. L’adresse peut être une adresse de messagerie, une adresse Internet ou un nom de fichier. Notez que Microsoft Word ne vérifie pas l’exactitude de l’adresse.</param>
-        <param name="SubAddress">Facultatif <b>Object</b>. Nom de la position dans le fichier de destination, tel un signet, une plage nommée ou un numéro de diapositive.</param>
-        <param name="ScreenTip">Facultatif <b>Object</b>. Le texte qui apparaît dans une info-bulle lorsque le pointeur de souris est positionné sur le lien hypertexte spécifié. La valeur par défaut est <paramref name="Address" />.</param>
-        <param name="TextToDisplay">Facultatif <b>Object</b>. Texte affiché du lien hypertexte spécifié. La valeur de cet argument remplace le texte ou le graphique spécifié par <paramref name="Anchor" />.</param>
-        <param name="Target">Facultatif <b>Object</b>. Nom du cadre ou de la fenêtre où vous désirez charger le lien hypertexte spécifié.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> object qui représente un nouveau lien hypertexte ajouté à une plage, une sélection ou un document.</summary>
+        <param name="Anchor"><b>Objet</b>required. Texte ou graphisme que vous souhaitez transformer en lien hypertexte.</param>
+        <param name="Address"><b>Objet</b>facultatif. Adresse correspondant au lien spécifié. Il peut s'agir d'une adresse de messagerie électronique, d'une adresse Internet ou d'un nom de fichier. Notez que Microsoft Word ne vérifie pas l'adresse.</param>
+        <param name="SubAddress"><b>Objet</b>facultatif. Nom de la position dans le fichier de destination, tel un signet, une plage nommée ou un numéro de diapositive.</param>
+        <param name="ScreenTip"><b>Objet</b>facultatif. Texte qui apparaît sous la forme d'une info-bulle lorsque le pointeur de la souris est placé sur le lien hypertexte spécifié. La valeur par défaut est <paramref name="Address" />.</param>
+        <param name="TextToDisplay"><b>Objet</b>facultatif. Texte affiché du lien hypertexte spécifié. La valeur de cet argument remplace le texte ou le graphique spécifié <paramref name="Anchor" />par.</param>
+        <param name="Target"><b>Objet</b>facultatif. Nom du cadre ou de la fenêtre où vous désirez charger le lien hypertexte spécifié.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> Object qui représente un nouveau lien hypertexte ajouté à une plage, une sélection ou un document.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +126,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,11 +184,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -260,8 +247,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</param>
+        <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

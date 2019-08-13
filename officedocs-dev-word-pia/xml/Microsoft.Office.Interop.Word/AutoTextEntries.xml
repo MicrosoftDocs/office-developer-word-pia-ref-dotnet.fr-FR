@@ -1,13 +1,5 @@
 <Type Name="AutoTextEntries" FullName="Microsoft.Office.Interop.Word.AutoTextEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a31d1e907d820a2005c896aa46cf04f2089738e1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668785" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoTextEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="616542cb10e6c23af21a1d1d91f287e037699d61" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146275" /></Metadata><TypeSignature Language="C#" Value="public interface AutoTextEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoTextEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoTextEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoTextEntries&#xA;Implements IEnumerable" />
@@ -30,12 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> objets qui représentent les insertions automatiques dans un modèle.</summary>
-    <remarks>
-      <para>La collection <b>AutoTextEntries</b> contient toutes les entrées répertoriées sous l’onglet Insertion automatique dans la boîte de dialogue Correction automatique (menu Outils).</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" /> propriété permet de renvoyer la collection <b>AutoTextEntries</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> pour ajouter une insertion automatique à la collection <b>AutoTextEntries</b> .</para> Utilisation de 
-      <para><see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />), où <paramref name="index" /> est le nom de l’insertion ou le numéro d’index, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> objet. Vous devez correspondre exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché sous l’onglet Insertion automatique dans la boîte de dialogue Correction automatique.</para><para /></remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> objets qui représentent les insertions automatiques dans un modèle.</summary>
+    <remarks><para>La collection <b>AutoTextEntries</b> contient l’ensemble des entrées figurant sous l’onglet Insertion automatique de la boîte de dialogue Correction automatique (menu Outils).</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" /> propriété pour renvoyer la collection <b>AutoTextEntries</b> .</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> méthode pour ajouter une insertion automatique à la collection <b>AutoTextEntries</b> .</para>
+      <para>Utilisez <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />), où <paramref name="index" /> est le nom de l’insertion automatique ou le numéro d’index, pour <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> renvoyer un seul objet. Vous devez respecter exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché sous l’onglet Insertion automatique dans la boîte de dialogue Correction automatique.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,9 +53,9 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Name">Une plage de texte qui sera insérée chaque fois que <paramref name="Name" /> est de type.</param>
+        <param name="Name">Plage de texte insérée chaque fois <paramref name="Name" /> que vous tapez.</param>
         <param name="Range">Texte dont la saisie provoque une entrée Texte Auto.</param>
-        <summary>Ajoute une insertion automatique à la liste des corrections automatiques disponibles.</summary>
+        <summary>Ajoute une insertion automatique à la liste des insertions automatiques disponibles.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,10 +85,8 @@
         <param name="Range">Plage supprimée et ajoutée dans le Pique-notes.</param>
         <summary>Supprime la plage spécifiée et ajoute le contenu de la plage dans le Pique-notes (une insertion automatique prédéfinie).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>La méthode <b>AppendToSpike</b> n’est valide que pour les <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> collection dans le modèle Normal.</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>AppendToSpike,</b> est uniquement valide pour la <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> collection dans le modèle normal.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -122,7 +112,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,11 +170,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -245,7 +233,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Le nom de l’objet à renvoyer.</param>
+        <param name="Index">Nom de l’objet individuel à renvoyer.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -274,7 +262,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet spécifié.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

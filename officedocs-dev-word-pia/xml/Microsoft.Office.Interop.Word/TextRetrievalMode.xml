@@ -1,13 +1,5 @@
 <Type Name="TextRetrievalMode" FullName="Microsoft.Office.Interop.Word.TextRetrievalMode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3c05807c4b3080e4b3b90b36cba7f16d48329f62" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668690" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextRetrievalMode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0c1ee93d1968c1b9fe8eb8a0db78df0c1c441410" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143797" /></Metadata><TypeSignature Language="C#" Value="public interface TextRetrievalMode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextRetrievalMode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextRetrievalMode" />
@@ -26,12 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente les options qui contrôlent la façon dont le texte est extrait d’un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Range.TextRetrievalMode" /> propriété pour renvoyer un objet <b>TextRetrievalMode</b> .</para>
-      <para>Modification du <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" /> , <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" /> , ou <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeFieldCodes" /> propriété de l’objet <b>TextRetrievalMode</b> ne modifie pas l’affichage de l’écran. Au lieu de cela, la modification d’une de ces propriétés détermine quel texte est extrait d’un objet <b>Range</b> lorsque la <see cref="P:Microsoft.Office.Interop.Word.Range.Text" /> propriété est utilisée.</para>
-      <para />
-    </remarks>
+    <summary>Représente les options qui contrôlent la façon dont le <see cref="T:Microsoft.Office.Interop.Word.Range" /> texte est extrait d’un objet.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Range.TextRetrievalMode" /> propriété pour renvoyer un objet <b>TextRetrievalMode</b> .</para>
+      <para>La modification <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" /> de <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" /> la propriété <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeFieldCodes" /> , ou de l’objet <b>TextRetrievalMode</b> ne modifie pas l’affichage de l’écran. Au lieu de cela, la modification de l’une de ces propriétés détermine <b></b> quel texte est extrait <see cref="P:Microsoft.Office.Interop.Word.Range.Text" /> d’un objet Range lors de l’utilisation de la propriété.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,11 +77,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Duplicate">
@@ -117,13 +105,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextRetrievalMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie en lecture seule <see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" /> objet qui représente les options liées à l’extraction de texte à partir du <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet.</summary>
+        <summary>Renvoie un objet en lecture <see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" /> seule qui représente les options liées à l’extraction de texte de <see cref="T:Microsoft.Office.Interop.Word.Range" /> l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez utiliser la propriété <b>Duplicate</b> pour collecter les paramètres de toutes les propriétés d’un double <see cref="T:Microsoft.Office.Interop.Word.Font" />, <see cref="T:Microsoft.Office.Interop.Word.LetterContent" />, ou <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> objet. Vous pouvez assigner l’objet renvoyé par la propriété <b>Duplicate</b> à un autre objet du même type pour appliquer ces paramètres en une seule fois. Avant d’assigner l’objet dupliqué à un autre objet, vous pouvez modifier les propriétés de l’objet dupliqué sans affecter l’original.</para>
-          <para>La duplication d’un objet <b>Range</b> , vous pouvez modifier le début ou fin de position du caractère de la plage dupliquée sans modifier la plage d’origine.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez utiliser la propriété <b>duplicate</b> pour collecter les paramètres de toutes les propriétés d’un objet dupliqué <see cref="T:Microsoft.Office.Interop.Word.Font" />, <see cref="T:Microsoft.Office.Interop.Word.LetterContent" />ou. <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> Vous pouvez assigner l'objet renvoyé par la propriété <b>Duplicate</b> à un autre objet du même type pour appliquer ces paramètres en une seule fois. Avant d'assigner l'objet dupliqué à un autre objet, vous pouvez modifier les propriétés de l'objet dupliqué sans affecter l'original.</para>
+          <para>La duplication d'un objet <b>Range</b>, vous pouvez modifier la position du caractère de départ ou de fin de la plage dupliquée sans modifier la plage d'origine.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeFieldCodes">
@@ -152,14 +138,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si le texte récupéré dans la plage spécifiée contient des codes de champ.</summary>
+        <summary><b>La valeur true</b> si le texte récupéré dans la plage spécifiée contient des codes de champ.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Remarque</b>  La valeur par défaut est la même que la valeur de l’option codes de champ sous l’onglet Affichage, dans la boîte de dialogue Options (menu Outils) jusqu'à ce que cette propriété a été définie. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Range.Text" /> propriété avec une <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet à récupérer le texte de la plage spécifiée.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Note</b>  La valeur par défaut est identique au paramètre de l’option codes de champ de l’onglet Affichage de la boîte de dialogue Options (menu Outils) jusqu’à ce que cette propriété ait été définie. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Range.Text" /> propriété avec un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet pour extraire du texte de la plage spécifiée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeHiddenText">
@@ -188,14 +171,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si le texte récupéré dans la plage spécifiée contient du texte masqué.</summary>
+        <summary><b>True</b> si le texte récupéré dans la plage spécifiée contient du texte masqué.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Remarque</b>  La valeur par défaut est la même que la valeur actuelle de l’option texte masqué située sous l’onglet Affichage, dans la boîte de dialogue Options (menu Outils) jusqu'à ce que cette propriété a été définie. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Range.Text" /> propriété avec une <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet à récupérer le texte de la plage spécifiée.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Note</b>  La valeur par défaut est identique à la valeur actuelle de l’option texte masqué située sous l’onglet Affichage de la boîte de dialogue Options (menu Outils) jusqu’à ce que cette propriété ait été définie. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Range.Text" /> propriété avec un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet pour extraire du texte de la plage spécifiée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -252,32 +232,30 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdViewType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’affichage de la <see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" /> objet.</summary>
+        <summary>Cette propriété renvoie ou définit l’affichage <see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" /> de l’objet.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdViewType" />Il peut s’agir de l’une des constantes <b>WdViewType</b> suivantes. </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdViewType" />peut être une de ces constantes <b>WdViewType</b> . </para>
-          <para>
-            <b>wdMasterView </b>
+            <b>wdMasterView</b>
           </para>
           <para>
-            <b>wdNormalView </b>
+            <b>wdNormalView</b>
           </para>
           <para>
-            <b>wdOutlineView </b>
+            <b>wdOutlineView</b>
           </para>
           <para>
-            <b>wdPrintPreview </b>
+            <b>wdPrintPreview</b>
           </para>
           <para>
-            <b>wdPrintView </b>
+            <b>wdPrintView</b>
           </para>
           <para>
             <b>wdWebView</b>
           </para>
-          <para>modification de l’affichage de l’objet <b>TextRetrievalMode</b> ne modifie pas l’affichage d’un document à l’écran. Au lieu de cela, il détermine les caractères du document doivent être incluses lors de l’extraction d’une plage.</para>
-          <para />
-        </remarks>
+          <para>Modification de l'affichage de l'objet <b>TextRetrievalMode</b> ne change pas l'affichage d'un document à l'écran. Au lieu de cela, il détermine les caractères du document qui seront inclus lors de l'extraction d'une plage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

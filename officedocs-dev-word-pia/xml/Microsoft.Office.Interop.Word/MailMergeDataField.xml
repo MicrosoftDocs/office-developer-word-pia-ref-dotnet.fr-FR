@@ -1,13 +1,5 @@
 <Type Name="MailMergeDataField" FullName="Microsoft.Office.Interop.Word.MailMergeDataField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="847238fe1da13e6be4d3d410aab2159918c55b3e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668110" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeDataField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bde8cf0716521eb5937f2d0e38f75cfde3f6bdda" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144483" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeDataField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeDataField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeDataField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeDataField" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente un champ de fusion et publipostage unique dans une source de données.</summary>
-    <remarks>
-      <para>L’objet <b>MailMergeDataField</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> collection. La collection <b>MailMergeDataFields</b> inclut tous les champs de données dans une source de données de fusion et publipostage (par exemple, nom, adresse et ville).</para>
-      <para>Utilisez <b>DataFields</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de champ de données ou le numéro d’index, pour renvoyer un seul objet <b>MailMergeDataField</b> . Le numéro d’index représente la position du champ de données dans la source de données de fusion et publipostage.</para>
-      <para>Vous ne pouvez pas ajouter des champs à la collection <b>MailMergeDataFields</b> . Tous les champs de données dans une source de données sont automatiquement inclus dans la collection <b>MailMergeDataFields</b> .</para>
-      <para />
-    </remarks>
+    <summary>Représente un seul champ de fusion et publipostage dans une source de données.</summary>
+    <remarks><para>L’objet <b>MailMergeDataField</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> collection. La collection <b>MailMergeDataFields</b> inclut tous les champs de données dans une source de données de fusion et publipostage (par exemple, nom, adresse et ville).</para>
+      <para>Utilisez <b>DataFields</b>(<paramref name="index" />), où <paramref name="index" /> est le nom du champ de données ou le numéro d’index, pour renvoyer un seul objet <b>MailMergeDataField</b> . Le numéro d'index représente la position du champ de données dans la source de données de fusion et publipostage.</para>
+      <para>Vous ne pouvez pas ajouter de champs dans la collection <b>MailMergeDataFields</b>. Tous les champs de données dans une source de données sont automatiquement inclus dans la collection <b>MailMergeDataFields</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +78,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -118,7 +106,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>entier</b> qui représente la position d’un élément dans une collection.</summary>
+        <summary>Renvoie une <b>valeur de type Integer</b> qui représente la position d’un élément dans une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +134,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,12 +190,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le contenu du champ de données de fusion et publipostage de l’enregistrement actif.</summary>
+        <summary>Renvoie le contenu du champ de données de fusion et publipostage pour l’enregistrement actif.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> propriété à définir l’enregistrement actif dans une source de données de fusion et publipostage.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> propriété pour définir l’enregistrement actif dans une source de données de fusion et publipostage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

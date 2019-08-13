@@ -1,13 +1,5 @@
 <Type Name="OMathBreaks" FullName="Microsoft.Office.Interop.Word.OMathBreaks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f9c72f843364011a8216932603f09101b9463d96" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668414" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathBreaks" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="57096ad1b41af4f6a8d95ffbf0b00ee20b306376" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147803" /></Metadata><TypeSignature Language="C#" Value="public interface OMathBreaks" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathBreaks" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathBreaks" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathBreaks" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente une collection de <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> objets qui représentent tous les sauts de ligne dans une équation.</summary>
+    <summary>Représente une collection d' <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> objets qui représentent tous les sauts de ligne dans une équation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,12 +44,9 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">
-          <b>Integer</b> obligatoire la position à laquelle insérer le saut de l’équation.</param>
-        <summary>Insère une coupure dans une équation et renvoie un <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> object qui représente le saut.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" />
-        </returns>
+        <param name="Range"><b>Integer</b> obligatoire position à laquelle insérer le saut dans l’équation.</param>
+        <summary>Insère une coupure dans une équation et renvoie un <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> objet qui représente la cassure.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,10 +73,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word._Application" /> Object qui représente l’application Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,10 +101,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le nombre d’éléments dans les <see cref="T:Microsoft.Office.Interop.Word.OMathBreaks" /> collection. En lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Renvoie le nombre d’éléments dans la <see cref="T:Microsoft.Office.Interop.Word.OMathBreaks" /> collection. En lecture seule.</summary>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,15 +129,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un 32 bits <b>entier</b> qui indique l’application dans laquelle le complément a été créé. En lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, le <see cref="P:Microsoft.Office.Interop.Word.OMathBreaks.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette valeur peut également être représentée par la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
-          <para>Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un <b>nombre entier</b> de 32 bits qui indique l’application dans laquelle le complément a été créé. En lecture seule.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.OMathBreaks.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette valeur peut également être représentée par la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
+          <para>Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -178,11 +159,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Requis en <b>entier</b> spécifie la position ordinale de l’objet au sein de la collection.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> object qui représente l’élément spécifié dans la collection.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" />
-        </returns>
+        <param name="Index"><b>Integer</b> obligatoire spécifie la position ordinale de l’objet au sein de la collection.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> Object qui représente l’élément spécifié dans la collection.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,10 +188,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.OMathBreaks" /> objet.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Cette propriété renvoie l’objet parent de <see cref="T:Microsoft.Office.Interop.Word.OMathBreaks" /> l’objet spécifié.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

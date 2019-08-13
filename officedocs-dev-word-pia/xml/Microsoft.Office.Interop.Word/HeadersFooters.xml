@@ -1,13 +1,5 @@
 <Type Name="HeadersFooters" FullName="Microsoft.Office.Interop.Word.HeadersFooters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="32606f0e2fa1a2e01b68a8926235fb029c8bcf6a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668930" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HeadersFooters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bbb3145635811002276f2778bca17d7fa3c40db1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147997" /></Metadata><TypeSignature Language="C#" Value="public interface HeadersFooters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HeadersFooters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HeadersFooters" />
   <TypeSignature Language="VB.NET" Value="Public Interface HeadersFooters&#xA;Implements IEnumerable" />
@@ -30,15 +22,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objets qui représentent les en-têtes et les pieds de page dans la section spécifiée d’un document.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> ou <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> propriété pour renvoyer la collection <b>HeadersFooters</b> .</para>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objets qui représentent les en-têtes et les pieds de page de la section spécifiée d’un document.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> propriété <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> ou pour renvoyer la collection <b>HeadersFooters</b> .</para>
       <para>
         <b>Remarque</b>: vous ne pouvez pas ajouter d’objets <b>HeaderFooter</b> à la collection <b>HeadersFooters</b> .</para>
-      <para>Utiliser <b>en-têtes</b>(<paramref name="index" />) ou <b>des pieds de page</b>(<paramref name="index" />), où <paramref name="index" /> est un de la <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constantes (<b>donné</b>, <b>wdHeaderFooterFirstPage</b>ou <b>wdHeaderFooterPrimary</b>) à renvoyer un seul objet <b>HeaderFooter</b> .</para>
-      <para>Vous pouvez également renvoyer un seul objet <b>HeaderFooter</b> à l’aide de la <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> propriété avec une <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objet.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propriété avec la <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objet pour spécifier une première page différente.</para> Utilisation de 
-      <para>les <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> propriété avec l’objet <b>PageSetup</b> pour spécifier différents impair et même des en-têtes et pieds de. Si la propriété <b>OddAndEvenPagesHeaderFooter</b> a la <b>valeur True</b>, vous pouvez retourner un en-tête impair ou le pied de page à l’aide de <b>wdHeaderFooterPrimary</b>, et vous pouvez retourner un en-tête ou pied de page à l’aide de <b>donné</b>.</para><para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> méthode avec la <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> objet pour ajouter un numéro de page à un en-tête ou un pied de page.</para><para /></remarks>
+      <para>Utilisez <b>les en-têtes</b><paramref name="index" />( <b></b>) ou les<paramref name="index" /> <paramref name="index" /> <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> pieds de page (), où est l’une des constantes (<b>dewdheaderfooterevenpages</b>, <b>wdHeaderFooterFirstPage</b>ou <b>dewdheaderfooterprimary</b>), pour renvoyer une seule <b> HeaderFooter</b> , objet.</para>
+      <para>Vous pouvez également renvoyer un seul objet <b>HeaderFooter</b> en utilisant la <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> propriété avec un <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objet.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propriété avec l' <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objet pour spécifier une première page différente.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> propriété avec l’objet <b>PageSetup</b> pour spécifier différents en-têtes et pieds de page pairs et impairs. Si la propriété <b>OddAndEvenPagesHeaderFooter</b> a la valeur <b>True</b>, vous pouvez renvoyer l'en-tête ou le pied de page des pages impaires à l'aide de la constante <b>wdHeaderFooterPrimary</b>, et l'en-tête ou le pied de page des pages paires à l'aide de la constante <b>wdHeaderFooterEvenPages</b>.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> méthode avec l' <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> objet pour ajouter un numéro de page à un en-tête ou un pied de page.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +57,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,11 +115,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -187,7 +178,7 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />
       </Parameters>
       <Docs>
-        <param name="Index">Requis <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />. Constante qui spécifie l’en-tête ou le pied de page de la sélection. Peut être une des constantes <b>WdHeaderFooterIndex</b> suivantes :<b>donné</b><b>wdHeaderFooterFirstPage</b><b>wdHeaderFooterPrimary</b></param>
+        <param name="Index">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />. Constante qui spécifie l’en-tête ou le pied de page de la sélection. Il peut s’agir de l’une des constantes <b>WdHeaderFooterIndex</b> suivantes:<b>dewdheaderfooterevenpages</b><b>wdHeaderFooterFirstPage</b><b>dewdheaderfooterprimary</b></param>
         <summary>Renvoie un en-tête ou un pied de page dans une plage ou une sélection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

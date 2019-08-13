@@ -1,13 +1,5 @@
 <Type Name="SmartTagActions" FullName="Microsoft.Office.Interop.Word.SmartTagActions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5b790c3f4806a69d27a3e0525d8d0e295a2bae06" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668209" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagActions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bbaa128de1f03453c4353506f7d0299467ce701e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146128" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagActions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagActions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagActions" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagActions&#xA;Implements IEnumerable" />
@@ -31,9 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Représente une collection d'action pour une balise active individuelle ou pour un type de balise active.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="T:Microsoft.Office.Interop.Word.SmartTag" /> objet pour accéder à toutes les actions liées à une seule balise active dans un document ; Utilisez le <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objet pour accéder à toutes les actions associées à un type spécifique de balise active.</para> Actions de balise 
-      <para>à puce sont des processus qui sont programmés dans les balises actives ; ils permettent aux utilisateurs d’effectuer certaines fonctions liées à la balise active. Par exemple, il peut être une action pour une balise active pour accéder à un site Web pendant une autre action insère des informations de contact dans Microsoft Outlook lors de tout autre affiche une carte et des itinéraires.</para><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.SmartTag.SmartTagActions" /> propriété permet de renvoyer toutes les actions de balise active associées à un objet <b>SmartTag</b> ou <b>SmartTagType</b> .</para><para /></remarks>
+    <remarks><para>Utilisez l' <see cref="T:Microsoft.Office.Interop.Word.SmartTag" /> objet pour accéder à toutes les actions associées à une seule balise active dans un document; Utilisez l' <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objet pour accéder à toutes les actions associées à un type spécifique de balise active.</para>
+      <para>Les actions des balises actives sont des processus qui sont programmés dans les balises actives ; elles permettent aux utilisateurs d'exécuter certaines fonctions associées à une balise active. Par exemple, une balise active peut être une action pour accéder à un site Web tandis qu’une autre action insère des informations de contact dans Microsoft Outlook, tandis qu’une autre affiche une carte et des instructions routières.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.SmartTag.SmartTagActions" /> propriété pour renvoyer toutes les actions de balise active associées à un objet <b>SmartTag</b> ou un objet <b>SmartTagType</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,11 +119,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -194,8 +185,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</param>
+        <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

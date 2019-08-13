@@ -1,13 +1,5 @@
 <Type Name="AutoTextEntry" FullName="Microsoft.Office.Interop.Word.AutoTextEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ec70f5beca361e5203612870f616a3ba39891001" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668941" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoTextEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0b55f0ca8e547da196123bbcdcfdca77303d0dfb" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146282" /></Metadata><TypeSignature Language="C#" Value="public interface AutoTextEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoTextEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoTextEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoTextEntry" />
@@ -27,9 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Représente une insertion automatique unique.</summary>
-    <remarks>
-      <para>L’objet <b>AutoTextEntry</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> collection. La collection <b>AutoTextEntries</b> contient toutes les entrées d’insertion automatique dans le modèle spécifié. Les entrées sont répertoriées sous l’onglet Insertion automatique dans la boîte de dialogue Correction automatique (menu Outils).</para> Utilisation de 
-      <para><see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />), où <paramref name="index" /> est le nom de l’insertion ou le numéro d’index, pour renvoyer un objet <b>AutoTextEntry</b> . Vous devez correspondre exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché sous l’onglet Insertion automatique dans la boîte de dialogue Correction automatique.</para><para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> pour ajouter un objet <b>AutoTextEntry</b> à la collection <b>AutoTextEntries</b> .</para><para /></remarks>
+    <remarks><para>L’objet <b>AutoTextEntry</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> collection. La collection <b>AutoTextEntries</b> contient l'ensemble des insertions automatiques contenues dans le modèle spécifié. Les entrées sont répertoriées sous l’onglet Insertion automatique de la boîte de dialogue Correction automatique (menu Outils).</para>
+      <para>Utilisez <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />), où <paramref name="index" /> est le nom de l’insertion automatique ou le numéro d’index, pour renvoyer un seul objet <b>AutoTextEntry</b> . Vous devez respecter exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché sous l’onglet Insertion automatique dans la boîte de dialogue Correction automatique.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> méthode pour ajouter un objet <b>AutoTextEntry</b> à la collection <b>AutoTextEntries</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’Application de Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,11 +78,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -169,13 +160,11 @@
       </Parameters>
       <Docs>
         <param name="Where">Emplacement pour l'insertion automatique.</param>
-        <param name="RichText">Si vous souhaitez insérer l’insertion automatique avec sa mise en forme d’origine.</param>
+        <param name="RichText">Indique s’il faut insérer l’insertion automatique avec sa mise en forme d’origine.</param>
         <summary>Insérer l'insertion automatique à la place de la plage spécifiée.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Si vous ne souhaitez pas remplacer la plage, utilisez la <see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" /> méthode avant d’utiliser cette méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous ne souhaitez pas remplacer la plage, utilisez la <see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" /> méthode avant d’utiliser cette méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -204,7 +193,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -232,7 +221,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet spécifié.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -293,10 +282,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la valeur de l'insertion automatique.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> des objets, la propriété <b>Value</b> ne retourne que les 255 premiers caractères de la valeur de l’objet. Définition de la propriété <b>Value</b> une valeur supérieure à 255 caractères génère une erreur.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> les objets, la propriété <b>value</b> ne renvoie que les premiers caractères 255 de la valeur de l’objet. La définition de la propriété <b>value</b> sur une valeur supérieure à 255 caractères génère une erreur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

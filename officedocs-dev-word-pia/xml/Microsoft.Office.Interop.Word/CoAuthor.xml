@@ -1,13 +1,5 @@
 <Type Name="CoAuthor" FullName="Microsoft.Office.Interop.Word.CoAuthor">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a54fc1ec631ea87a62d012687dd65c54b7edee9d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667528" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthor" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f0255cfbbf0271c447cea6351afd1bdc1f6eca9f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147229" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthor" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthor" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente un seul co-auteur dans le document. Le <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> collection. Le <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> collection contient tous les co-auteurs dans le document (auteurs qui modifient activement le document).</summary>
-    <remarks>
-      <para>Utilisez <b>CoAuthors</b>(<paramref name="Index" />), où <paramref name="Index" /> est le numéro d’index pour renvoyer un seul objet <b>CoAuthor</b> .</para>
+    <summary>Représente un seul co-auteur dans le document. L' <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> collection. La <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> collection contient tous les co-auteurs dans le document (auteurs qui modifient activement le document).</summary>
+    <remarks><para>Utilisez <b></b>coauthors (<paramref name="Index" />), où <paramref name="Index" /> est le numéro d’index pour renvoyer un seul objet <b>coauteur</b> .</para>
       <para>
-        <b>Mise en garde</b>: lorsqu’un nouveau co-auteur commence à modifier le document, il peut prendre jusqu'à une minute ou plus pour le co-créer apparaissent dans le document.</para>
-      <para />
-    </remarks>
+        <b>Attention</b>: lorsqu’un nouveau co-auteur commence à modifier le document, il peut prendre jusqu’à une minute ou plus pour que le co-auteur apparaisse dans le document.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,12 +48,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
-        <value>Un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Word.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objet qui représente l’application Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Application" /> Objet qui représente l’application Word.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -89,15 +77,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
+        <summary>Obtient un nombre entier de 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>Entier 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</value>
-        <remarks>
-          <para>En lecture seule <b>long</b>. Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette propriété est principalement conçue pour être utilisée sur Apple Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Word a le code créateur MSWD.</para>
+        <remarks><para>Type de données <b>long</b>en lecture seule. Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». Cette propriété est principalement conçue pour être utilisée sur Apple Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Word possède le code de créateur MSWD.</para>
           <para>
-            <b>Mise en garde</b>:</para>
-          <para>Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para />
-        </remarks>
+            <b>Attention</b>: </para>
+          <para>[!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EmailAddress">
@@ -123,12 +109,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient une chaîne qui spécifie l’adresse de messagerie de l’auteur de co-création spécifié.</summary>
-        <value>L’adresse de messagerie de l’auteur de co-création spécifié.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <summary>Obtient une valeur de type String qui spécifie l’adresse de messagerie du co-auteur spécifié.</summary>
+        <value>Adresse de messagerie du co-auteur spécifié.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -155,11 +139,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtient l’identificateur unique de l’auteur spécifié.</summary>
-        <value>L’identificateur unique de l’auteur spécifié.</value>
-        <remarks>
-          <para>En lecture seule. L’identificateur unique retourné par cette propriété ne doit pas être supposé avoir une longueur spécifique ou un format.</para>
-          <para />
-        </remarks>
+        <value>Identificateur unique pour l’auteur spécifié.</value>
+        <remarks><para>En lecture seule. L’identificateur unique renvoyé par cette propriété ne doit pas être supposé avoir une longueur ou un format particulier.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMe">
@@ -186,12 +168,9 @@
       </ReturnValue>
       <Docs>
         <summary>Indique si cet auteur représente l’utilisateur actuel.</summary>
-        <value>
-          <b>true</b> si l’auteur représente l’utilisateur actuel ; Sinon, <b>false</b>.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <value><b>true</b> si l’auteur représente l’utilisateur actuel; Sinon, <b>false</b>.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locks">
@@ -217,12 +196,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthLocks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> collection qui représente les verrous associés avec le co-créer spécifié dans le document.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> collection qui représente les verrous associés avec le co-créer spécifié dans le document.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <summary>Obtient une <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> collection qui représente les verrous dans le document qui sont associés au co-auteur spécifié.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> Collection qui représente les verrous dans le document qui sont associés au co-auteur spécifié.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -248,12 +225,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient le nom complet du co-auteur spécifié.</summary>
-        <value>Le nom complet du co-auteur spécifié.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <summary>Obtient le nom d’affichage du co-auteur spécifié.</summary>
+        <value>Nom d’affichage du co-auteur spécifié.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -279,8 +254,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient un <see cref="T:System.Object" /> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> objet.</summary>
-        <value>Un <see cref="T:System.Object" /> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> objet.</value>
+        <summary>Obtient un <see cref="T:System.Object" /> objet qui représente l’objet parent de l' <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> objet spécifié.</summary>
+        <value><see cref="T:System.Object" /> Qui représente l’objet parent de l’objet spécifié <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

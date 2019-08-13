@@ -1,13 +1,5 @@
 <Type Name="Sections" FullName="Microsoft.Office.Interop.Word.Sections">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7164f7e4bfc02da5d54d10cc8a60f240644b351c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667686" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Sections : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fe2cba10cfbd345cb511c3cbdb748c5431925b9f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144063" /></Metadata><TypeSignature Language="C#" Value="public interface Sections : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Sections implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Sections" />
   <TypeSignature Language="VB.NET" Value="Public Interface Sections&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Section" /> objets dans une sélection, une plage ou un document.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>Sections</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet pour renvoyer la collection <b>Sections</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Sections.Add(System.Object@,System.Object@)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertBreak(System.Object@)" /> pour ajouter une nouvelle section à un document.</para>
-      <para>Utilisez <b>Sections</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Section</b> .</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Section" /> objets dans une sélection, une plage ou un document.</summary>
+    <remarks><para>Utilisez la propriété <b>sections</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Selection" />objet <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> pour renvoyer la collection <b>sections</b> .</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Sections.Add(System.Object@,System.Object@)" /> méthode ou la <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertBreak(System.Object@)" /> méthode pour ajouter une nouvelle section à un document.</para>
+      <para>Utilisez <b>sections</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>section</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,9 +52,9 @@
         <Parameter Name="Start" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Facultatif <b>Object</b>. Plage avant laquelle vous souhaitez insérer le saut de section. Si vous ne spécifiez pas cet argument, le saut de section est inséré à la fin du document.</param>
-        <param name="Start">Facultatif <b>Object</b>. Le type de saut de section que vous souhaitez ajouter. Peut être une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.WdSectionStart" /><b></b>constantes : <b>wdSectionContinuous</b>, <b>wdSectionEvenPage</b>, <b>wdSectionNewColumn</b>, <b>wdSectionNewPage</b>ou <b>wdSectionOddPage</b>. Si cet argument est omis, un saut de section Page suivante est ajouté.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Section" /> objet qui représente une nouvelle section ajoutée à un document.</summary>
+        <param name="Range"><b>Objet</b>facultatif. Plage avant laquelle vous souhaitez insérer le saut de section. Si vous ne spécifiez pas cet argument, le saut de section est inséré à la fin du document.</param>
+        <param name="Start"><b>Objet</b>facultatif. Le type de saut de section que vous souhaitez ajouter. Il peut s’agir de l' <see cref="T:Microsoft.Office.Interop.Word.WdSectionStart" /> <b> </b>une des constantes suivantes: <b>wdSectionContinuous</b>, <b>wdSectionEvenPage</b>, <b>wdSectionNewColumn</b>, <b>wdSectionNewPage</b>ou <b>wdSectionOddPage</b>. Si cet argument est omis, un saut de section Page suivante est ajouté.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Section" /> Object qui représente une nouvelle section ajoutée à un document.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,11 +140,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -180,7 +168,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Section</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Section" /> object qui représente le premier élément de la <see cref="T:Microsoft.Office.Interop.Word.Sections" /> collection.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Section" /> Object qui représente le premier élément de la <see cref="T:Microsoft.Office.Interop.Word.Sections" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,7 +231,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -272,7 +260,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Section</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le dernier élément dans le <see cref="T:Microsoft.Office.Interop.Word.Sections" /> collection comme un <see cref="T:Microsoft.Office.Interop.Word.Section" /> objet.</summary>
+        <summary>Renvoie le dernier élément de la <see cref="T:Microsoft.Office.Interop.Word.Sections" /> collection sous la <see cref="T:Microsoft.Office.Interop.Word.Section" /> forme d’un objet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -303,7 +291,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PageSetup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objet associé avec les sections spécifiées</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objet associé aux sections spécifiées.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

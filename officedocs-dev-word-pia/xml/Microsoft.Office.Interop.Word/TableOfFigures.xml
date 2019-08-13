@@ -1,13 +1,5 @@
 <Type Name="TableOfFigures" FullName="Microsoft.Office.Interop.Word.TableOfFigures">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d57be96f8ec7c6ed0a74dc51b351cce11593a3c0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668041" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableOfFigures" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ac4ae4a8b24cb45b90c698437cafe71f03425bcd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146024" /></Metadata><TypeSignature Language="C#" Value="public interface TableOfFigures" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableOfFigures" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TableOfFigures" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableOfFigures" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Représente une table des illustrations d'un document.</summary>
-    <remarks>
-      <para>L’objet <b>TableOfFigures</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.TablesOfFigures" /> collection. <b>Cette collection</b> contient toutes les tables des illustrations dans un document.</para>
-      <para>Utiliser <b>TablesOfFigures</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>TableOfFigures</b> . Le numéro d’index représente la position de la table des illustrations du document.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> pour ajouter une table des illustrations à un document. Une table des illustrations répertorie les légendes dans l’ordre dans lequel ils apparaissent dans le document.</para>
-      <para />
-    </remarks>
+    <remarks><para>L’objet <b>TableOfFigures</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.TablesOfFigures" /> collection. <b>Cette collection</b> contient toutes les tables des illustrations dans un document.</para>
+      <para>Utilisez <b>TablesOfFigures</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>TableOfFigures</b> . Le numéro d'index représente la position de la table des illustrations du document.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour ajouter une table des illustrations à un document. Une table des illustrations répertorie les légendes de la figure dans l'ordre dans lequel ils apparaissent dans le document.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,11 +81,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l'étiquette qui identifie les éléments à inclure dans une table des illustrations.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Caption</b> correspond au commutateur \c pour un champ TOC.</para>
-          <para>Pour modifier la légende de la fenêtre d’application pour le texte par défaut, définissez cette propriété sur une chaîne vide (« »).</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>Caption</b> correspond au commutateur \c pour un champ de table des matières.</para>
+          <para>Pour remplacer le titre de la fenêtre d'application par le texte par défaut, affectez une chaîne vide ("") à cette propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -123,11 +111,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -178,7 +164,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HeadingStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> objet qui représente des styles supplémentaires utilisés pour compiler une table des matières (styles autres que les styles Titre 1 à titre 9).</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> Object qui représente des styles supplémentaires utilisés pour compiler une table des illustrations (styles autres que les styles titre 1 à titre 9).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -240,8 +226,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l'étiquette et le numéro de la légende sont inclus dans une table des illustrations.</summary>
+        <summary><b>True</b> si l'étiquette et le numéro de la légende sont inclus dans une table des illustrations.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -272,8 +257,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si les numéros de page sont inclus dans la table des illustrations.</summary>
+        <summary><b>True</b> si les numéros de page sont inclus dans la table des illustrations.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,11 +290,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le niveau de titre de fin d'une table des illustrations.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>LowerHeadingLevel</b> correspond à la valeur de fin utilisée avec le commutateur \o pour un champ de Table des matières (TOC).</para>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.UpperHeadingLevel" /> propriété à définir le premier niveau de titre. Par exemple, pour définir la syntaxe du champ TOC {TOC \o « 1-3 »}, définissez la propriété <b>LowerHeadingLevel</b> 3 et la propriété <b>UpperHeadingLevel</b> 1.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>LowerHeadingLevel</b> correspond à la valeur de fin utilisée avec le commutateur \o pour un champ de table des matières (TOC).</para>
+          <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.UpperHeadingLevel" /> propriété pour définir le niveau de titre de départ. Par exemple, pour définir la syntaxe du champ TOC {TOC \o "1-3"}, définissez la propriété <b>LowerHeadingLevel</b> 3 et la propriété <b>UpperHeadingLevel</b> 1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -364,12 +346,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.Range" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.Range" /> de formes à partir d’une collection de formes, voir la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightAlignPageNumbers">
@@ -398,8 +378,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les numéros de page sont alignés sur la marge droite d’une table des illustrations.</summary>
+        <summary><b>True</b> si les numéros de page sont alignés sur la marge de droite d’une table des illustrations.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -430,31 +409,29 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTabLeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le caractère entre les entrées et leurs numéros de page dans une table des illustrations.</summary>
+        <summary>Cette propriété renvoie ou définit le caractère situé entre les entrées et leurs numéros de page dans une table des illustrations.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />Il peut s’agir de l’une des constantes <b>WdTabLeader</b> suivantes. </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />peut être une de ces constantes <b>WdTabLeader</b> . </para>
-          <para>
-            <b>wdTabLeaderDashes </b>
+            <b>wdTabLeaderDashes</b>
           </para>
           <para>
-            <b>wdTabLeaderDots </b>
+            <b>wdTabLeaderDots</b>
           </para>
           <para>
-            <b>wdTabLeaderHeavy </b>
+            <b>wdTabLeaderHeavy</b>
           </para>
           <para>
-            <b>wdTabLeaderLines </b>
+            <b>wdTabLeaderLines</b>
           </para>
           <para>
-            <b>wdTabLeaderMiddleDot </b>
+            <b>wdTabLeaderMiddleDot</b>
           </para>
           <para>
             <b>wdTabLeaderSpaces</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableID">
@@ -483,12 +460,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un identificateur d’une lettre qui permet de créer une table des illustrations à partir des champs de table des matières.</summary>
+        <summary>Cette propriété renvoie ou définit un identificateur à une lettre qui est utilisé pour générer une table des illustrations à partir des champs TOC.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>TableID</b> correspond au commutateur \f pour un champ de table des matières. Par exemple, « T » crée une table des matières à partir des champs de table des matières à l’aide de l’identificateur de table T.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>TableID</b> correspond au commutateur \f pour un champ TOC. Par exemple, « T » crée une table des matières à partir des champs TOC à l'aide de l'identificateur de table T.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -513,11 +488,9 @@
       <Parameters />
       <Docs>
         <summary>Met à jour les entrées affichées dans la table des illustrations spécifiée.</summary>
-        <remarks>
-          <para>
-            <b>Remarque</b>   Utiliser le <see cref="M:Microsoft.Office.Interop.Word.TableOfFigures.UpdatePageNumbers" /> pour mettre à jour les numéros de page des éléments contenus dans une table des illustrations.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Note</b>   Utilisez la <see cref="M:Microsoft.Office.Interop.Word.TableOfFigures.UpdatePageNumbers" /> méthode pour mettre à jour les numéros de page des éléments contenus dans une table des illustrations.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdatePageNumbers">
@@ -541,7 +514,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Met à jour les numéros de page des éléments dans la table des illustrations.</summary>
+        <summary>Met à jour les numéros de page des éléments dans la table des illustrations spécifiée.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -573,11 +546,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le niveau de titre de départ pour une table des illustrations.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>UpperHeadingLevel</b> correspond à la valeur de départ utilisée avec le commutateur \o pour un champ de Table des matières (TOC).</para>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.LowerHeadingLevel" /> propriété à définir le niveau de titre de fin. Par exemple, pour définir la syntaxe du champ TOC {TOC \o « 1-3 »}, définissez la propriété <b>LowerHeadingLevel</b> 3 et la propriété <b>UpperHeadingLevel</b> 1.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>UpperHeadingLevel</b> correspond à la valeur de départ utilisée avec le commutateur \o pour un champ de table des matières (TOC).</para>
+          <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.LowerHeadingLevel" /> propriété pour définir le niveau de titre de fin. Par exemple, pour définir la syntaxe du champ TOC {TOC \o "1-3"}, définissez la propriété <b>LowerHeadingLevel</b> 3 et la propriété <b>UpperHeadingLevel</b> 1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseFields">
@@ -606,8 +577,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si les champs d'entrée de Table des matières (TC) sont utilisés pour créer une table des illustrations.</summary>
+        <summary><b>True</b> si les champs d'entrée de Table des matières (TC) sont utilisés pour créer une table des illustrations.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -638,8 +608,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si les styles de titre prédéfinis sont utilisés pour créer une table des illustrations.</summary>
+        <summary>Cette propriété a la valeur <b>True</b> si les styles de titre prédéfinis sont utilisés pour créer une table des illustrations.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -670,7 +639,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit si les entrées dans une table des illustrations doivent être mis en forme comme des liens hypertexte lors de la publication sur le Web.</summary>
+        <summary>Cette propriété renvoie ou définit si les entrées dans une table des illustrations doivent être mises en forme comme des liens hypertexte lors de la publication sur le Web.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

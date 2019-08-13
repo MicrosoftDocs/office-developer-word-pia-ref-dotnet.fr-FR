@@ -1,13 +1,5 @@
 <Type Name="ShadowFormat" FullName="Microsoft.Office.Interop.Word.ShadowFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0b6412510f201bbd4e881c10ec66518079051e6b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668720" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShadowFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eb5a077942f8ab29b6ab8f08c82918caf0ad8bea" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147647" /></Metadata><TypeSignature Language="C#" Value="public interface ShadowFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShadowFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShadowFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShadowFormat" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Représente la mise en forme des ombres pour une forme.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Shape.Shadow" /> propriété permet de renvoyer un <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /> objet.</para>
-      <para />
-    </remarks>
+    <summary>Représente la mise en forme de l'ombrage d'une forme.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Shape.Shadow" /> propriété pour renvoyer un <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /> objet.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,10 +77,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>unique</b> qui représente le niveau de flou pour un format d’ombre. Lecture/écriture.</summary>
-        <value>
-          <b>Unique</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit une valeur <b>unique</b> qui représente le niveau de flou pour un format d’ombre. En lecture/écriture</summary>
+        <value><b>Unique</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,11 +107,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -149,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> objet qui représente la couleur de premier plan de l’ombre.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> définit un objet qui représente la couleur de premier plan pour l’ombre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,13 +163,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>obligatoire. Spécifie en points la distance de décalage horizontal de l'ombre. Spécifiez une valeur positive pour décaler l'ombre vers la droite, ou inversement, une valeur négative, pour la décaler vers la gauche.</param>
+        <param name="Increment">Argument de type <b>Single</b> obligatoire. Spécifie en points la distance de décalage horizontal de l'ombre. Spécifiez une valeur positive pour décaler l'ombre vers la droite, ou inversement, une valeur négative, pour la décaler vers la gauche.</param>
         <summary>Modifie le décalage horizontal de l'ombre selon le nombre de points spécifié.</summary>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetX" /> propriété pour définir le décalage d’ombre horizontal absolu.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetX" /> propriété pour définir le décalage horizontal absolu de l’ombre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementOffsetY">
@@ -209,13 +192,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>obligatoire. Spécifie surtout le décalage d’ombre doit être déplacée verticalement, en points. Une valeur positive déplace l'ombre vers le bas et une valeur négative la déplace vers le haut.</param>
+        <param name="Increment">Argument de type <b>Single</b> obligatoire. Spécifie en points la distance de décalage vertical de l'ombre. Spécifiez une valeur positive pour décaler l'ombre vers le bas, ou inversement, une valeur négative pour la décaler vers le haut.</param>
         <summary>Modifie le décalage vertical de l'ombre suivant le nombre de points spécifié.</summary>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetY" /> propriété pour définir le décalage d’ombre vertical absolu.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetY" /> propriété pour définir le décalage d’ombre vertical absolu.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Obscured">
@@ -244,29 +224,26 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> si l'ombre de la forme spécifiée est renseigné et est obscurcie par la forme, même si la forme n'a pas de remplissage. <b>MsoFalse</b> si l'ombre n'a pas de remplissage et son contour de l'ombre est visible à travers la forme si la forme ne possède pas de remplissage.</summary>
+        <summary><b>MsoTrue</b> si l'ombre de la forme spécifiée est renseigné et est obscurcie par la forme, même si la forme n'a pas de remplissage. <b>MsoFalse</b> si l'ombre n'a pas de remplissage et son contour de l'ombre est visible à travers la forme si la forme ne possède pas de remplissage.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Il peut s’agir de l’une des constantes <b>MsoTriState</b> suivantes. </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />peut être une de ces constantes <b>MsoTriState</b> . </para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
             <b>msoTrue</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetX">
@@ -297,10 +274,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le décalage horizontal (en points) de l'ombre de la forme spécifiée. Une valeur positive décale l'ombre vers la droite de la forme ; une valeur négative la décale vers la gauche.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si vous voulez décaler une ombre horizontalement ou verticalement sans avoir à spécifier une position absolue, utilisez la <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" /> ou <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous voulez décaler une ombre horizontalement ou verticalement par rapport à sa position actuelle sans avoir à spécifier une position absolue, <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" /> utilisez <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" /> la méthode ou.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetY">
@@ -331,10 +306,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le décalage vertical (en points) de l'ombre de la forme spécifiée. Une valeur positive décale l'ombre sous la forme ; une valeur négative la décale au-dessus de la forme.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si vous voulez décaler une ombre horizontalement ou verticalement sans avoir à spécifier une position absolue, utilisez la <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" /> ou <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous voulez décaler une ombre horizontalement ou verticalement par rapport à sa position actuelle sans avoir à spécifier une position absolue, <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" /> utilisez <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" /> la méthode ou.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -391,10 +364,8 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Core.MsoTriState" /> qui indique s’il faut faire pivoter l’ombre faire pivoter la forme. Lecture/écriture.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTriState" />
-        </value>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Core.MsoTriState" /> définit une valeur qui indique s’il faut faire pivoter l’ombre lors de la rotation de la forme. En lecture/écriture</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,10 +395,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>unique</b> qui représente la largeur de l’ombre. Lecture/écriture.</summary>
-        <value>
-          <b>Unique</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit une valeur <b>unique</b> qui représente la largeur de l’ombre. En lecture/écriture</summary>
+        <value><b>Unique</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -457,10 +426,8 @@
         <ReturnType>Microsoft.Office.Core.MsoShadowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Core.MsoShadowType" /> qui représente le type d’ombre mise en forme à appliquer à une forme. Lecture/écriture.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoShadowType" />
-        </value>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Core.MsoShadowType" /> définit un qui représente le type de mise en forme de l’ombre à appliquer à une forme. En lecture/écriture</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoShadowType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,7 +457,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le degré de transparence de la ligne, une ombre ou un remplissage spécifié comme une valeur comprise entre 0.0 (opaque) et 1.0 (clair).</summary>
+        <summary>Renvoie ou définit le degré de transparence du remplissage, de l’ombre ou du trait en tant que valeur comprise entre 0.0 (opaque) et 1.0 (transparent).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -523,74 +490,72 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le type d'ombre de la forme.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoShadowType" />peut être l’une de ces constantes <b>MsoShadowType</b> . </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoShadowType" />peut être une de ces constantes <b>MsoShadowType</b> . </para>
-          <para>
-            <b>msoShadow10 </b>
+            <b>msoShadow10</b>
           </para>
           <para>
-            <b>msoShadow12 </b>
+            <b>msoShadow12</b>
           </para>
           <para>
-            <b>msoShadow14 </b>
+            <b>msoShadow14</b>
           </para>
           <para>
-            <b>msoShadow16 </b>
+            <b>msoShadow16</b>
           </para>
           <para>
-            <b>msoShadow18 </b>
+            <b>msoShadow18</b>
           </para>
           <para>
-            <b>msoShadow2 </b>
+            <b>msoShadow2</b>
           </para>
           <para>
-            <b>msoShadow3 </b>
+            <b>msoShadow3</b>
           </para>
           <para>
-            <b>msoShadow5 </b>
+            <b>msoShadow5</b>
           </para>
           <para>
-            <b>msoShadow7 </b>
+            <b>msoShadow7</b>
           </para>
           <para>
             <b>msoShadow9</b>
           </para>
           <para>
-            <b> msoShadow1 </b>
+            <b>msoShadow1</b>
           </para>
           <para>
-            <b>msoShadow11 </b>
+            <b>msoShadow11</b>
           </para>
           <para>
-            <b>msoShadow13 </b>
+            <b>msoShadow13</b>
           </para>
           <para>
-            <b>msoShadow15 </b>
+            <b>msoShadow15</b>
           </para>
           <para>
-            <b>msoShadow17 </b>
+            <b>msoShadow17</b>
           </para>
           <para>
-            <b>msoShadow19 </b>
+            <b>msoShadow19</b>
           </para>
           <para>
-            <b>msoShadow20 </b>
+            <b>msoShadow20</b>
           </para>
           <para>
-            <b>msoShadow4 </b>
+            <b>msoShadow4</b>
           </para>
           <para>
-            <b>msoShadow6 </b>
+            <b>msoShadow6</b>
           </para>
           <para>
             <b>msoShadow8</b>
           </para>
           <para>
-            <b> msoShadowMixed</b>
+            <b>msoShadowMixed</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -621,27 +586,25 @@
       <Docs>
         <summary>True si l'objet spécifié, ou la mise en forme appliquée, apparaît.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Il peut s’agir de l’une des constantes <b>MsoTriState</b> suivantes. </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />peut être une de ces constantes <b>MsoTriState</b> . </para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
             <b>msoTrue</b>
           </para>
-          <para>pour les objets, certaines méthodes et propriétés peut-être pas disponibles si la propriété <b>Visible</b> a la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+          <para>Pour les objets, certaines méthodes et propriétés est peut-être pas disponibles si la propriété <b>Visible</b> a la <b>valeur False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

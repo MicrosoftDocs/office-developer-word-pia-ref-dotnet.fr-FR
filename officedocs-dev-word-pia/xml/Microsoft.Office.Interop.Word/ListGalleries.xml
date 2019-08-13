@@ -1,13 +1,5 @@
 <Type Name="ListGalleries" FullName="Microsoft.Office.Interop.Word.ListGalleries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7009d72c6dc7295f344db3f160af763e3258dc95" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667307" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListGalleries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dce0fc39c63c03d36e78ba34d181e2db4bf03abd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144518" /></Metadata><TypeSignature Language="C#" Value="public interface ListGalleries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListGalleries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListGalleries" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListGalleries&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objets qui représentent les trois onglets de puces et la boîte de dialogue de numérotation.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Application.ListGalleries" /> propriété pour renvoyer la collection <b>ListGalleries</b> .</para>
-      <para>Utiliser <b>ListGalleries</b>(<paramref name="index" />), où <paramref name="index" /> est <b>wdBulletGallery</b>, <b>wdNumberGallery</b>ou <b>wdOutlineNumberGallery</b>pour renvoyer un seul objet <b>ListGallery</b> .</para>
-      <para>Pour voir si le modèle de liste spécifié contient la mise en forme intégrés dans Microsoft Word, utilisez la <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> propriété avec un objet <b>ListGallery</b> . Pour réinitialiser la mise en forme au format de liste d’origine, utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> méthode pour l’objet <b>ListGallery</b> .</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objets qui représentent les trois onglets de la boîte de dialogue Puces et numéros.</summary>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.ListGalleries" /> propriété pour renvoyer la collection <b>ListGalleries</b> .</para>
+      <para>Utilisez <b>ListGalleries</b>(<paramref name="index" />), où <paramref name="index" /> est <b>wdBulletGallery</b>, <b>wdNumberGallery</b>ou <b>wdOutlineNumberGallery</b>, pour renvoyer un seul objet <b>ListGallery</b> .</para>
+      <para>Pour savoir si le modèle de liste spécifié contient la mise en forme prédéfinie dans Microsoft <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> Word, utilisez la propriété avec l’objet <b>ListGallery</b> . Pour rétablir la mise en forme du format de liste d’origine <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> , utilisez la méthode pour l’objet <b>ListGallery</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,11 +110,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -185,8 +173,8 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdListGalleryType" />
       </Parameters>
       <Docs>
-        <param name="Index">Requis <see cref="T:Microsoft.Office.Interop.Word.WdListGalleryType" />. Constante qui spécifie le type de liste. <b>WdListGalleryType</b> peut être une des constantes suivantes :<b>wdBulletGallery</b><b>wdNumberGallery</b><b>wdOutlineNumberGallery</b></param>
-        <summary>Renvoie le type de liste (à puces, numérotée, ou plan) à partir de la galerie de modèles de liste.</summary>
+        <param name="Index">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdListGalleryType" />. Constante qui spécifie le type de liste. <b>WdListGalleryType</b> peut être l’une des constantes suivantes:<b>wdBulletGallery</b><b>wdNumberGallery</b><b>wdOutlineNumberGallery</b></param>
+        <summary>Renvoie le type de liste (à puces, numérotée ou plan) à partir de la Galerie de modèles de listes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="XMLNamespaces" FullName="Microsoft.Office.Interop.Word.XMLNamespaces">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a28377e4aa15237bf9fa30770fff97380ef9bf73" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667299" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLNamespaces : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d9eb0ff72d7f177eb7bd98e5edbe17f3467652a3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142632" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNamespaces : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNamespaces implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNamespaces" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNamespaces&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> objets qui représente toute la collection de schémas dans la bibliothèque de schémas.</summary>
-    <remarks>
-      <para>Dans Microsoft Word, vous pouvez accéder de la bibliothèque de schémas à partir de l’onglet schéma XML dans la boîte de dialogue Modèles et compléments. La bibliothèque de schémas représente les schémas installés sur l’ordinateur d’un utilisateur qu’un utilisateur a appliqué à un document Word ou qu’un utilisateur a explicitement ajouté à la bibliothèque de schémas à l’aide de la boîte de dialogue Bibliothèque de schémas.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" /> propriété de la collection <b>XMLNamespaces</b> pour renvoyer un objet <b>XMLNameSpace</b> individuel. La valeur d’index de la propriété <b>Item</b> peut être un <b>entier</b>, qui indique la position du schéma dans la bibliothèque de schémas, ou une <b>chaîne</b>qui représente le nom du schéma renvoyé à l’aide de la <see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" /> propriété (la Paramètre TargetNamespace défini dans le schéma).</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> objets qui représente l’intégralité de la collection de schémas dans la bibliothèque de schémas.</summary>
+    <remarks><para>Dans Microsoft Word, vous pouvez accéder à la bibliothèque de schémas à partir de l’onglet schéma XML de la boîte de dialogue modèles et compléments. La bibliothèque de schémas représente les schémas installés sur l’ordinateur d’un utilisateur et qu’un utilisateur a appliqué à un document Word ou qu’un utilisateur a explicitement ajouté à la bibliothèque de schémas à l’aide de la boîte de dialogue Bibliothèque de schémas.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" /> propriété de la collection <b>XMLNamespaces</b> pour renvoyer un objet <b>XmlNamespace</b> spécifique. La valeur d’index de la propriété <b>Item</b> peut être un <b>entier</b>, ce qui indique la position du schéma dans la bibliothèque de schémas ou une <b>chaîne</b>qui représente le nom du schéma tel qu’il est renvoyé à l' <see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" /> aide de la propriété (le Paramètre TargetNamespace défini dans le schéma).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,13 +53,11 @@
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>String</b>obligatoire. Le chemin d’accès et le nom du schéma. Cela peut être un chemin d’accès de fichier local, un chemin d’accès réseau ou une adresse Internet.</param>
-        <param name="NamespaceURI">Valeur <b>String</b> facultative.  URI d’espace de noms comme indiqué dans le schéma. Le <paramref name="NamespaceURI" /> paramètre respecte la casse et doit être orthographié exactement comme indiqué dans le schéma.</param>
-        <param name="Alias">Valeur <b>String</b> facultative.  Nom du schéma tel qu'il figure dans l'onglet Schémas de la boîte de dialogue Modèles et compléments.</param>
-        <param name="InstallForAllUsers">
-          <b>Boolean</b> facultatif. <b>True</b> si tous les utilisateurs qui ouvrent une session sur un ordinateur peuvent accéder et utiliser le nouveau schéma. La valeur par défaut est <b>False</b>.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> objet qui représente un schéma est ajouté à la bibliothèque de schémas, disponible pour les utilisateurs dans Microsoft Word.</summary>
+        <param name="Path">Argument de type <b>String</b> obligatoire. Chemin et nom de fichier du schéma. Il peut s'agir d'un chemin d'accès à un fichier local, d'un chemin d'accès à un réseau ou d'une adresse Internet.</param>
+        <param name="NamespaceURI">Argument de type <b>String</b> facultatif. URI (Uniform Resource Indicator) de l'espace de noms tel qu'il est spécifié dans le schéma. Le <paramref name="NamespaceURI" /> paramètre respecte la casse et doit être orthographié exactement comme spécifié dans le schéma.</param>
+        <param name="Alias">Argument de type <b>String</b> facultatif. Nom du schéma tel qu'il figure dans l'onglet Schémas de la boîte de dialogue Modèles et compléments.</param>
+        <param name="InstallForAllUsers">Facultatif <b>Boolean</b>. <b>True</b> : tous les utilisateurs qui ouvrent une session sur un ordinateur peuvent accéder et utiliser le nouveau schéma. La valeur par défaut est <b>False</b>.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> objet qui représente un schéma ajouté à la bibliothèque de schémas et mis à la disposition des utilisateurs dans Microsoft Word.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,11 +143,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -217,15 +203,11 @@
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>String</b>obligatoire. Chemin d'accès et nom de fichier du kit d'extension XML.</param>
-        <param name="InstallForAllUsers">
-          <b>Boolean</b> facultatif. <b>La valeur True</b> installe le Kit d’extension XML et la rend accessible à tous les utilisateurs sur un ordinateur. <b>False</b> rend le Kit d’extension XML disponible pour l’utilisateur actuel uniquement. Valeur par défaut est <b>False</b>.</param>
+        <param name="Path">Argument de type <b>String</b> obligatoire. Chemin d'accès et nom de fichier du kit d'extension XML.</param>
+        <param name="InstallForAllUsers">Facultatif <b>Boolean</b>. La valeur <b>True</b> installe le kit d'extension XML et le met à la disposition de tous les utilisateurs sur un ordinateur. La valeur <b>False</b> rend le kit d'extension XML disponible pour l'utilisateur actuel uniquement. Valeur par défaut est <b>False</b>.</param>
         <summary>Installe le kit d'extension XML spécifié sur l'ordinateur d'un utilisateur, en mettant la solution de document dynamique XML à la disposition d'au moins un utilisateur.</summary>
-        <remarks>
-          <para>Pour des raisons de sécurité, vous ne pouvez pas installer un manifeste non signé. Pour plus d’informations sur les manifestes, consultez le Kit de développement (SDK) Smart Document sur le site Web Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour des raisons de sécurité, vous ne pouvez pas installer un manifeste non signé. Pour plus d’informations sur les manifestes, voir le kit de développement logiciel (SDK) Smart document sur le site Web Microsoft Developer Network (MSDN).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -254,8 +236,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet spécifique.</param>
+        <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

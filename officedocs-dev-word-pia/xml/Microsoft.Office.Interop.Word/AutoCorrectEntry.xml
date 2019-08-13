@@ -1,13 +1,5 @@
 <Type Name="AutoCorrectEntry" FullName="Microsoft.Office.Interop.Word.AutoCorrectEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a8639360e979edffcee1cc059238ce8aaf63a838" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668262" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoCorrectEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0a3a172351b8c23700ecf22b9e70fafa5b84be51" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146247" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrectEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrectEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrectEntry" />
@@ -27,9 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une seule entrée de correction automatique.</summary>
-    <remarks>
-      <para>L’objet <b>AutoCorrectEntry</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" /> collection. La collection <b>AutoCorrectEntries</b> contient les entrées dans la boîte de dialogue Correction automatique (menu Outils).</para> Utilisation de 
-      <para><see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" />(<paramref name="index" />), où <paramref name="index" /> est le nom de l’entrée de correction automatique ou le numéro d’index, pour renvoyer un seul objet <b>AutoCorrectEntry</b> . Vous devez correspondre exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché sous Remplacer dans la boîte de dialogue Correction automatique.</para><para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntry.Apply(Microsoft.Office.Interop.Word.Range)" /> méthode pour insérer une entrée de correction automatique à la plage spécifiée.</para><para>Utiliser soit le <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" /> ou <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" /> pour ajouter une entrée de correction automatique à la liste des corrections disponibles.</para><para /></remarks>
+    <remarks><para>L’objet <b>AutoCorrectEntry</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" /> collection. La collection <b>AutoCorrectEntries</b> contient les entrées dans la boîte de dialogue Correction automatique (menu Outils).</para>
+      <para>Utilisez <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" />(<paramref name="index" />), où <paramref name="index" /> est le nom de la correction automatique ou le numéro d’index, pour renvoyer un seul objet <b>AutoCorrectEntry</b> . Vous devez respecter exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché sous remplacer dans la boîte de dialogue Correction automatique.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntry.Apply(Microsoft.Office.Interop.Word.Range)" /> méthode pour insérer une entrée de correction automatique à la plage spécifiée.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" /> pour ajouter une correction automatique à la liste des entrées disponibles.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -82,7 +76,7 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Requis <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet.</param>
+        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required.</param>
         <summary>Remplace une plage par la valeur de la correction automatique spécifiée.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,11 +106,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -198,7 +190,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -226,7 +218,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’objet parent de l’objet spécifié.</summary>
+        <summary>Renvoie l'objet parent de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,7 +246,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur qui indique si la mise en forme est stockée avec le texte de remplacement de l’entrée de correction automatique.</summary>
+        <summary>Renvoie une valeur qui indique si la mise en forme est stockée avec le texte de remplacement de la correction automatique.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,10 +279,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la valeur de la correction automatique.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" /> des objets, la propriété <b>Value</b> ne retourne que les 255 premiers caractères de la valeur de l’objet. Définition de la propriété <b>Value</b> une valeur supérieure à 255 caractères génère une erreur.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" /> les objets, la propriété <b>value</b> ne renvoie que les premiers caractères 255 de la valeur de l’objet. La définition de la propriété <b>value</b> sur une valeur supérieure à 255 caractères génère une erreur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

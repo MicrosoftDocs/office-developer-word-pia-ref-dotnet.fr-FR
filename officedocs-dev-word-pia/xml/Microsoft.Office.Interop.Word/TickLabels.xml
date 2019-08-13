@@ -1,13 +1,5 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Word.TickLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7b1c2c7fc3292641641494659a356494a0e138bf" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668838" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TickLabels" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0f6662574427978805ce85168409794e1affd85c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143811" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TickLabels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TickLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface TickLabels" />
@@ -27,12 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente les étiquettes de graduation associées à des marques de graduation sur un axe de graphique.</summary>
-    <remarks>
-      <para>Cet objet n’est pas une collection. Il n’existe aucun objet qui représente une étiquette de graduation unique ; Vous devez renvoyer toutes les étiquettes de graduation comme une unité.</para>
-      <para>Texte d’étiquette de graduation de l’axe des abscisses provient du nom de la catégorie associée dans le graphique. Le texte de l’étiquette par défaut des marques de graduation de l’axe des abscisses est le nombre qui indique la position de la catégorie par rapport à l’extrémité gauche de l’axe. Pour modifier le numéro de graduation non étiquetées marques entre les étiquettes de graduation, vous devez modifier le <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" /> propriété pour l’axe des abscisses.</para> Texte de l’étiquette 
-      <para>des marques de graduation de l’axe des ordonnées sont calculé en fonction de la <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" />, <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" />, et <see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" /> propriétés de l’axe des ordonnées. Pour modifier le texte d’étiquette de graduation de l’axe des ordonnées, vous devez modifier les valeurs de ces propriétés.</para><para /></remarks>
-    <example>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabels" /> propriété permet de renvoyer l’objet <b>TickLabels</b> . L’exemple suivant définit le format numérique des étiquettes de graduation sur l’axe des ordonnées du premier graphique du document actif.</para>
+    <remarks><para>Cet objet n'est pas une collection. Il n'existe aucun objet représentant une seule étiquette de graduation. Vous devez renvoyer toutes les étiquettes de graduation ensemble.</para>
+      <para>Le texte contenu dans l'étiquette de graduation de l'axe des abscisses provient du nom de l'abscisse associée dans le graphique. Le texte par défaut de l'étiquette de graduation de l'axe des abscisses est le nombre indiquant la position de l'abscisse par rapport à l'extrémité gauche de l'axe. Pour modifier le nombre de graduations non étiquetées entre les étiquettes de graduation, vous devez modifier la <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" /> propriété de l’axe des abscisses.</para>
+      <para>Le texte de l’étiquette de graduation de l’axe des ordonnées est <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" />calculé <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" />en fonction <see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" /> des propriétés, et de l’axe des ordonnées. Pour changer le texte des étiquettes de graduation de l'axe des ordonnées, modifiez les valeurs de ces propriétés.</para>
+      <para> </para></remarks>
+    <example><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabels" /> propriété pour renvoyer l’objet <b>TickLabels</b> . L’exemple suivant définit le format numérique des étiquettes de graduation sur l’axe des ordonnées du premier graphique du document actif.</para>
       <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -1057,8 +1048,7 @@
 
 
 
-End With&lt;/span&gt;</code>
-    </example>
+End With&lt;/span&gt;</code></example>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -1087,7 +1077,7 @@ End With&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit une valeur de type <b>Long</b> qui représente l’alignement du texte phonétique ou de l’étiquette de graduation spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de type <b>Long</b> qui représente l’alignement du texte phonétique ou de l’étiquette de graduation.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1115,11 +1105,10 @@ End With&lt;/span&gt;</code>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Cet exemple montre comment afficher un message à l’application ayant servi à créer myObject.</para>
+        <example><para>Cet exemple montre comment afficher un message relatif à l'application qui a servi à créer myObject.</para>
           <code>&lt;span class="label"&gt;Set myObject = ActiveDocument 
 
 
@@ -1378,8 +1367,7 @@ End With&lt;/span&gt;</code>
 
 If myObject.&lt;/span&gt;
 &lt;i&gt;Application&lt;/i&gt;
-&lt;span class="label"&gt;.Value = "Microsoft Word" Then    MsgBox "This is a Word Application object."Else    MsgBox "This is not a Word Application object."End If&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;.Value = "Microsoft Word" Then    MsgBox "This is a Word Application object."Else    MsgBox "This is not a Word Application object."End If&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="AutoScaleFont">
@@ -1415,7 +1403,7 @@ If myObject.&lt;/span&gt;
       </ReturnValue>
       <Docs>
         <summary>Réservé à une utilisation interne.</summary>
-        <value>Cette propriété renvoie <see cref="T:System.Object" />.</value>
+        <value>Renvoie <see cref="T:System.Object" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1444,10 +1432,8 @@ If myObject.&lt;/span&gt;
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. En lecture seule <b>longue</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l'objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1527,7 +1513,7 @@ If myObject.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> objet qui représente la police de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> Object qui représente la police de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1588,12 +1574,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indique si un axe est hiérarchique.  Type de données <b>Boolean</b> en lecture/écriture.</summary>
+        <summary>Définit si un axe est à plusieurs niveaux.  <b>Boolean</b> (en lecture/écriture).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut de cette propriété a la <b>valeur True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut de cette propriété a la <b>valeur True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1652,10 +1636,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur de type <b>String</b> qui représente le code du format de l'objet.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le code de format est la même chaîne que l’option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction <b>Format</b> utilise des chaînes de code de format différentes <b>NumberFormat</b> et <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" /> propriétés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le code de format est la même chaîne que l'option de Codes de Format dans la boîte de dialogue Format de cellule. La fonction <b>format</b> utilise des chaînes de code de format différentes de celles <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" /> du <b>NumberFormat</b> et des propriétés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -1684,12 +1666,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si le format numérique est lié aux cellules (de sorte que le format de nombre est modifié dans les étiquettes lorsqu'il est modifié dans les cellules). En lecture/écriture <b>booléen</b>.</summary>
+        <summary><b>True</b> si le format numérique est lié aux cellules (de sorte que le format de nombre est modifié dans les étiquettes lorsqu'il est modifié dans les cellules). En lecture/écriture <b>booléen</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Cet exemple montre comment lie le format numérique des étiquettes de graduation à celui des cellules pour l’axe des ordonnées du premier graphique du document actif.</para>
+        <example><para>Cet exemple montre comment lier le format numérique des étiquettes de graduation à leurs cellules pour l’axe des ordonnées du premier graphique du document actif.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -2204,8 +2184,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
 
         .Chart.Axes(xlValue).TickLabels.&lt;/span&gt;
 &lt;i&gt;NumberFormatLinked&lt;/i&gt;
-&lt;span class="label"&gt;= True    End IfEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= True    End IfEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLocal">
@@ -2234,12 +2213,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>type Variant</b> qui représente le code du format de l’objet sous forme de chaîne dans la langue de l’utilisateur.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de type <b>Variant</b> qui représente le code du format d’un objet sous la forme d’une chaîne dans la langue de l’utilisateur.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La fonction <b>Format</b> utilise des chaînes de code de format différentes que la <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" /> et propriétés <b>NumberFormatLocal</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>La fonction <b>format</b> utilise des chaînes de code de format différentes <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" /> des propriétés et <b>NumberFormatLocal</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -2270,12 +2247,9 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Docs>
         <summary>Renvoie ou définit une valeur de type <b>Long</b> qui représente la distance entre les niveaux des étiquettes et la distance séparant le premier niveau et la ligne de l’axe.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La distance par défaut est 100 %, qui représente l’espacement par défaut entre les étiquettes d’axe et la ligne de l’axe. La valeur peut être un pourcentage entier compris entre 0 et 1000, par rapport à la taille de police de l’étiquette d’axe.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Cet exemple définit l’espacement des étiquettes de l’axe des abscisses du premier graphique du document actif à deux reprises au paramètre actuel, si le décalage est inférieur à 500.</para>
+        <remarks><para>La distance par défaut est de 100 pour cent, ce qui représente l’espacement par défaut entre les étiquettes de l’axe et la ligne de l’axe. La valeur peut être un nombre entier (pourcentage) compris entre 0 et 1 000, selon la taille de police de l’étiquette de l’axe.</para>
+          <para> </para></remarks>
+        <example><para>Cet exemple montre comment définir l’espacement des étiquettes de l’axe des abscisses pour le premier graphique du document actif sur deux fois la valeur actuelle, si le décalage est inférieur à 500.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -3050,8 +3024,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
 &lt;i&gt;Offset&lt;/i&gt;
 &lt;span class="label"&gt;= .&lt;/span&gt;
 &lt;i&gt;Offset&lt;/i&gt;
-&lt;span class="label"&gt;* 2            End If        End With    End IfEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;* 2            End If        End With    End IfEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -3080,12 +3053,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.XlTickLabelOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit une valeur de type <b>Long</b> qui représente l’orientation de texte.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de type <b>Long</b> qui représente l'orientation de texte.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de cette propriété peut être un nombre entier compris entre – 90 et 90 degrés ou l’un de la <see cref="T:Microsoft.Office.Interop.Word.XlTickLabelOrientation" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur de cette propriété peut être une valeur entière comprise entre – 90 et 90 degrés ou <see cref="T:Microsoft.Office.Interop.Word.XlTickLabelOrientation" /> l’une des constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -3142,7 +3113,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" /> constante représentant le sens de lecture de l’objet spécifié. Type <b>Long</b> en lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" /> définit une constante qui représente le sens de lecture de l’objet spécifié. <b>Long</b> (en lecture/écriture).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

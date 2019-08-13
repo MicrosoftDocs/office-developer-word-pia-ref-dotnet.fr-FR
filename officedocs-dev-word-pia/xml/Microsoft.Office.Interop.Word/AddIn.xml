@@ -1,13 +1,5 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Word.AddIn">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eca0625fe8de93d38c8fe893e6a66c3f0bf7b440" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667306" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="695249a505a14baf5625853d5db3725ed54c358e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144672" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Cet objet représente une macro complémentaire, installée ou non.</summary>
-    <remarks>
-      <para>L’objet <b>AddIn</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection. La collection <b>AddIns</b> contient toutes les macros complémentaires disponibles dans Microsoft Word, qu’ils soient ou non actuellement chargées. La collection <b>AddIns</b> contient des modèles globaux ou les bibliothèques de compléments Word (WLL) affichés dans la boîte de dialogue Modèles et compléments (menu Outils).</para>
-      <para>Utilisez <b>AddIns</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index, pour renvoyer un seul objet <b>AddIn</b> . Vous devez respecter l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché dans la boîte de dialogue Modèles et compléments.</para>
-      <para>Le numéro d’index représente la position de la macro complémentaire dans la liste des compléments dans la boîte de dialogue Modèles et compléments.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> méthode pour ajouter un complément à la liste des compléments disponibles et (facultatif) installer à l’aide de la <paramref name="Install" /> argument.</para>
-      <para>Pour installer un complément indiqué dans la liste des compléments disponibles, utilisez la <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> propriété.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> propriété pour déterminer si un objet <b>AddIn</b> est un modèle ou une bibliothèque WLL.</para>
-      <para />
-    </remarks>
+    <remarks><para>L’objet <b>AddIn</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection. La <b></b> collection AddIns contient toutes les macros complémentaires disponibles dans Microsoft Word, qu’elles soient actuellement chargées ou non. La <b></b> collection AddIns contient les modèles globaux ou les bibliothèques de compléments Word (WLL) qui s’affichent dans la boîte de dialogue modèles et compléments (menu Outils).</para>
+      <para>Utilisez <b>AddIns</b>(<paramref name="index" />), où <paramref name="index" /> est le nom du complément ou le numéro d’index, pour renvoyer un seul objet <b>AddIn</b> . Vous devez respecter exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché dans la boîte de dialogue modèles et compléments.</para>
+      <para>Le numéro d'index représente la position du complément dans la liste de compléments qui est affichée dans la boîte de dialogue Modèles et compléments.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> méthode pour ajouter un complément à la liste des compléments disponibles et (éventuellement) l’installer à l’aide de l' <paramref name="Install" /> argument.</para>
+      <para>Pour installer un complément affiché dans la liste des compléments disponibles, utilisez la <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> propriété.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> propriété pour déterminer si un objet <b>AddIn</b> est un modèle ou une bibliothèque WLL.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente le créateur de l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente le créateur de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,10 +81,8 @@
       <Docs>
         <summary>Renvoie une valeur indiquant si le complément spécifié est automatiquement chargé au démarrage de Microsoft Word.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Compléments que qui se trouvent dans le dossier Démarrage dans le dossier du programme Word sont automatiquement chargés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Compléments que qui se trouvent dans le dossier de démarrage dans le dossier du programme Word sont automatiquement chargés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Compiled">
@@ -120,12 +108,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur qui indique si le complément spécifié est une bibliothèque de composant logiciel complément Microsoft Word (WLL).</summary>
+        <summary>Renvoie une valeur indiquant si le complément spécifié est une bibliothèque WLL (compléments Microsoft Word).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si le complément spécifié n’est pas une bibliothèque WLL, il est un modèle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si le complément spécifié n’est pas une bibliothèque WLL, il s’agit d’un modèle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -153,11 +139,9 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -181,7 +165,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Supprime le texte spécifié <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objet.</summary>
+        <summary>Supprime l’objet spécifié <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> .</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,11 +223,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur indiquant <b>la valeur True</b> si le complément spécifié est installé (chargé).</summary>
+        <summary>Cette propriété renvoie ou définit une valeur indiquant <b>true</b> si le complément spécifié est installé (chargé).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les compléments chargés sont sélectionnés dans la boîte de dialogue Modèles et compléments (menu Outils).</para> Compléments 
-          <para>désinstallés sont inclus dans le <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection. Pour retirer un modèle ou une bibliothèque WLL de la collection <b>AddIns</b> , appliquez la <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> méthode pour le <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objet (le nom du complément est supprimé de la boîte de dialogue Modèles et compléments). Pour décharger tous les modèles et WLL, appliquez le <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> méthode à la collection <b>AddIns</b> .</para><para /></remarks>
+        <remarks><para>Les compléments chargés sont sélectionnés dans la boîte de dialogue Modèles et compléments (menu Outils).</para>
+          <para>Les compléments désinstallés sont inclus dans la <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection. Pour supprimer un modèle ou une bibliothèque WLL <b></b> de la collection AddIns, <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> appliquez la méthode <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> à l’objet (le nom du complément est supprimé de la boîte de dialogue modèles et compléments). Pour décharger tous les modèles et WLL <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> , appliquez la méthode à la collection <b>AddIns</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -269,7 +253,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur qui indique le nom de l’objet <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objet.</summary>
+        <summary>Renvoie une valeur qui indique le nom de l’objet <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -297,7 +281,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objet.</summary>
+        <summary>Renvoie une valeur qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -325,12 +309,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur qui indique l’URL spécifiée à le <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objet.</summary>
+        <summary>Renvoie une valeur qui indique l’URL de l’objet <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le chemin d’accès n’inclut pas le caractère de barre oblique de fin — par exemple, «http://MyServer». Utiliser le <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> caractère de propriété pour ajouter une barre oblique avant même si les valeurs par défaut de la propriété <b>PathSeparator utilise</b> une barre oblique inverse (\).</para>
-          <para />
-        </remarks>
+        <remarks><para>Le chemin d’accès n’inclut pas de barre oblique de fin (par exemplehttp://MyServer, ""). Utilisez la <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> propriété pour ajouter une barre oblique de fin, même si la propriété <b>PathSeparator</b> utilise une barre oblique inverse (\).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

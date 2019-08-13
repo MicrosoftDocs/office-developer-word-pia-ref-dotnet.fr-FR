@@ -1,13 +1,5 @@
 <Type Name="ProofreadingErrors" FullName="Microsoft.Office.Interop.Word.ProofreadingErrors">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f10bd2f36ccd49a6e2ce9df79a605d805e0e9d07" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668059" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ProofreadingErrors : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0c61f910fa45ca20cb739f36d01474a098c8703d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144140" /></Metadata><TypeSignature Language="C#" Value="public interface ProofreadingErrors : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProofreadingErrors implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ProofreadingErrors" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProofreadingErrors&#xA;Implements IEnumerable" />
@@ -31,14 +23,12 @@
   </Attributes>
   <Docs>
     <summary>Collection d'erreurs orthographiques et grammaticales pour la plage ou le document spécifié.</summary>
-    <remarks>
-      <para>Il n’existe aucun objet ProofreadingError ; au lieu de cela, chaque élément de la collection <b>ProofreadingErrors</b> est un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente une erreur d’orthographe ou de grammaire.</para>
-      <para>Utilisez la propriété <b>SpellingErrors</b> ou <b>GrammaticalErrors</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Document" /> ou d’objet Range pour renvoyer la collection <b>ProofreadingErrors</b> .</para>
-      <para>Utiliser <b>SpellingErrors</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer une faute d’orthographe donnée (représentée par un objet <b>Range</b> ).</para>
-      <para>Utiliser <b>spécifiez GrammarErrors faute</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer une faute de grammaire donnée (représentée par un objet <b>Range</b> ).</para>
-      <para>La <see cref="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Count" /> propriété pour cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d’autres articles, utilisez la collection avec l’objet <b>Range</b> . Si tous les mots dans le document ou la plage sont correcte et sont grammaticalement corriger, la propriété <b>Count</b> de l’objet <b>ProofreadingErrors</b> renvoie 0 (zéro) et <b>SpellingChecked</b> et <b>GrammarChecked</b> propriétés de l’objet <b>Document</b> ou une <b>plage</b> retournent <b>True</b>.</para>
-      <para />
-    </remarks>
+    <remarks><para>Il n’existe aucun objet ProofreadingError; au lieu de cela, chaque <b></b> élément de la collection <see cref="T:Microsoft.Office.Interop.Word.Range" /> ProofreadingErrors est un objet qui représente une faute d’orthographe ou de grammaire.</para>
+      <para>Utilisez la propriété <b>SpellingErrors</b> ou <b>GrammaticalErrors</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet Range ou pour renvoyer la collection <b>ProofreadingErrors</b> .</para>
+      <para>Utilisez <b>SpellingErrors</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer une faute d’orthographe unique (représentée par un objet <b>Range</b> ).</para>
+      <para>Utilisez <b>GrammarErrors</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer une faute grammaticale unique (représentée par un objet <b>Range</b> ).</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Count" /> propriété de cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments dans d'autres articles utilisent la collection avec l'objet <b>Range</b>. Si tous les mots dans le document ou la plage sont correctement orthographiés et sont corrects par programmation, la propriété <b>Count</b> de l’objet <b>ProofreadingErrors</b> renvoie la valeur 0 (zéro) et les propriétés <b>SpellingChecked</b> et <b>GrammarChecked</b> de l’objet <b>document</b> ou <b>Range</b> renvoie la <b>valeur true</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,11 +112,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -187,7 +175,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

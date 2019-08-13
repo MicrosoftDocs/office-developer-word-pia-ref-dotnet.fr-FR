@@ -1,13 +1,5 @@
 <Type Name="Research" FullName="Microsoft.Office.Interop.Word.Research">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f3053e80208307ba476ee3813e42cec9f34c18c4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667285" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Research" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="09c7f2651f0df71c7549952dfe0bc63e7b6d09f1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147682" /></Metadata><TypeSignature Language="C#" Value="public interface Research" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Research" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Research" />
   <TypeSignature Language="VB.NET" Value="Public Interface Research" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Fournit l’accès à la fonctionnalité de service de recherche de Microsoft Office Word.</summary>
+    <summary>Permet d’accéder à la fonctionnalité de service de recherche de Microsoft Office Word.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,10 +45,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word._Application" /> Object qui représente l’application Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,16 +73,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle le complément a été créé. Valeur <b>Integer</b> en lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, le <see cref="P:Microsoft.Office.Interop.Word.Research.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle le complément a été créé. <b>Entier</b> en lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.Research.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para>
             <b>Remarque</b>: cette valeur peut également être représentée par la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FavoriteService">
@@ -121,13 +107,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient ou définit une valeur string qui spécifie le service de recherche favori.</summary>
+        <summary>Obtient ou définit une valeur de type String qui spécifie le service de recherche favori.</summary>
         <value>Spécifie le service de recherche favori.</value>
-        <remarks>
-          <para>La chaîne qui est définie ou renvoyée pour cette propriété spécifie le GUID du service de recherche favori.</para>
-          <para>Définition de cette propriété a le même effet que la sélection d’un service de recherche favori par le biais de la boîte de dialogue Options de recherche dans Microsoft Word 2010.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur de type String qui est définie ou renvoyée pour cette propriété spécifie le GUID du service de recherche favori.</para>
+          <para>Définir cette propriété équivaut à choisir un service de recherche favori dans la boîte de dialogue Options de recherche de Microsoft Word 2010.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsResearchService">
@@ -155,9 +139,7 @@
       <Docs>
         <param name="ServiceID">Spécifie un GUID qui identifie le service de recherche.</param>
         <summary>Indique si le GUID spécifié dans le <paramref name="ServiceID" /> paramètre correspond à un service actuellement configuré.</summary>
-        <returns>
-          <b>Boolean</b>
-        </returns>
+        <returns><b>Boolean</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,10 +166,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>objet</b> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.Research" /> objet.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <summary>Renvoie un <b>Object</b> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.Research" /> spécifié.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,10 +200,8 @@
         <param name="ServiceID">Spécifie un GUID qui identifie le service de recherche.</param>
         <param name="QueryString">Spécifie la chaîne de requête.</param>
         <param name="QueryLanguage">Spécifie la langue de requête pour la chaîne de requête.</param>
-        <param name="UseSelection">
-          <b>True</b> pour utiliser la sélection actuelle en tant que la chaîne de requête.  Ce paramètre remplace la <paramref name="QueryString" /> paramètre si la valeur. Valeur par défaut est <b>False</b>.</param>
-        <param name="LaunchQuery">
-          <b>True</b> lance la requête. False affiche le volet Office recherche étendu pour la recherche du service de recherche. </param>
+        <param name="UseSelection"><b>True</b> pour utiliser la sélection actuelle en tant que chaîne de requête.  Cela remplace le <paramref name="QueryString" /> paramètre s’il est défini. Valeur par défaut est <b>False</b>.</param>
+        <param name="LaunchQuery"><b>True</b> lance la requête. False affiche le volet Office recherche étendu pour la recherche du service de recherche.</param>
         <summary>Spécifie une requête de recherche.</summary>
         <returns>Objet</returns>
         <remarks>To be added.</remarks>
@@ -256,9 +234,7 @@
         <param name="LanguageFrom">Spécifie la langue source.</param>
         <param name="LanguageTo">Spécifie la langue cible.</param>
         <summary>Définit les langues pour le service de traduction.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

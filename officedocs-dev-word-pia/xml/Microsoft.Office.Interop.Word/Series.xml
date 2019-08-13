@@ -1,13 +1,5 @@
 <Type Name="Series" FullName="Microsoft.Office.Interop.Word.Series">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7e57a20d817db9a10ad7cd7211af64a04feabae6" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667670" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Series" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="51719d6ceae8ae2f5e9f4ced767d517decf12984" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147668" /></Metadata><TypeSignature Language="C#" Value="public interface Series" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Series" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Series" />
   <TypeSignature Language="VB.NET" Value="Public Interface Series" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Représente une série dans un graphique.</summary>
-    <remarks>
-      <para>Le <see cref="T:Microsoft.Office.Interop.Word.Series" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> collection.</para>
-      <para />
-    </remarks>
+    <remarks><para>L' <see cref="T:Microsoft.Office.Interop.Word.Series" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> collection.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,9 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Utilisée sans qualificateur d’objet, cette propriété renvoie une <see cref="T:Microsoft.Office.Interop.Word._Application" /> object qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
-        <value>
-          <b>Application</b> (voir ci-dessus)</value>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <value><b>Application</b> (voir ci-dessus)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,7 +77,7 @@
         <Parameter Name="ChartType" Type="Microsoft.Office.Core.XlChartType" />
       </Parameters>
       <Docs>
-        <param name="ChartType">Requis <see cref="T:Microsoft.Office.Core.XlChartType" />. Un type de graphique standard.</param>
+        <param name="ChartType">Obligatoire <see cref="T:Microsoft.Office.Core.XlChartType" />. Type de graphique standard.</param>
         <summary>Applique un type de graphique standard ou personnalisé à une série.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -125,11 +114,9 @@
       </Parameters>
       <Docs>
         <param name="Type">Type d'étiquette de données à appliquer.</param>
-        <param name="LegendKey">
-          <b>True</b> pour afficher le symbole de légende à côté du point. La valeur par défaut est <b>False</b>.</param>
-        <param name="AutoText">
-          <b>True</b> si l'objet génère automatiquement un texte approprié d'après le contenu.</param>
-        <param name="HasLeaderLines">Pour le <see cref="T:Microsoft.Office.Interop.Word.Chart" /> et <see cref="T:Microsoft.Office.Interop.Word.Series" /> objets, <b>la valeur True</b> si la série possède des lignes d’étiquettes.</param>
+        <param name="LegendKey"><b>True</b> pour afficher le symbole de légende à côté du point. La valeur par défaut est <b>False</b>.</param>
+        <param name="AutoText"><b>True</b> si l'objet génère automatiquement un texte approprié d'après le contenu.</param>
+        <param name="HasLeaderLines">Pour les <see cref="T:Microsoft.Office.Interop.Word.Chart" /> objets <see cref="T:Microsoft.Office.Interop.Word.Series" /> et, <b>true</b> si la série possède des lignes d’étiquettes.</param>
         <param name="ShowSeriesName">Transmettez une valeur booléenne pour activer ou désactiver le nom de série pour l'étiquette de données.</param>
         <param name="ShowCategoryName">Transmettez une valeur booléenne pour activer ou désactiver le nom de catégorie pour l'étiquette de données.</param>
         <param name="ShowValue">Transmettez une valeur booléenne pour activer ou désactiver la valeur pour l'étiquette de données.</param>
@@ -137,12 +124,10 @@
         <param name="ShowBubbleSize">Transmettez une valeur booléenne pour activer ou désactiver la taille des bulles pour l'étiquette de données.</param>
         <param name="Separator">Séparateur pour l'étiquette de données.</param>
         <summary>Cette méthode applique des étiquettes de données à une série.</summary>
-        <returns>Cette propriété renvoie <see cref="T:System.Object" />.</returns>
-        <remarks>
-          <para>
-            <paramref name="Type" />peut être une de le <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> constantes.</para>
-          <para />
-        </remarks>
+        <returns>Renvoie <see cref="T:System.Object" />.</returns>
+        <remarks><para>
+            <paramref name="Type" />Il peut s’agir de <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> l’une des constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyPictToEnd">
@@ -172,9 +157,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété a la valeur <b>True</b> si une image est appliquée à l'extrémité du point ou de tous les points de la série. Type de données <b>Boolean</b> en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,10 +187,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si une image est appliquée devant le point ou tous les points de la série. Type de données <b>Boolean</b> en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Cette propriété a la valeur <b>True</b> si une image est appliquée devant le point ou tous les points de la série. <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,10 +218,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si une image est appliquée aux côtés du point ou de tous les points de la série. Type de données <b>Boolean</b> en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Cette propriété a la valeur <b>True</b> si une image est appliquée aux côtés du point ou de tous les points de la série. <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,10 +249,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlAxisGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> valeur représentant le type du groupe d’axes. Lecture/écriture.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />
-        </value>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> valeur qui représente le type de groupe d’axes. En lecture/écriture</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,10 +280,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlBarShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la forme utilisée pour une seule série dans un graphique à barres 3D ou d’un graphique en histogrammes. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Word.XlBarShape" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlBarShape" />
-        </value>
+        <summary>Renvoie ou définit la forme utilisée pour une série unique dans un histogramme ou un graphique à barres 3D. En lecture/ <see cref="T:Microsoft.Office.Interop.Word.XlBarShape" />écriture.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlBarShape" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,10 +308,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objet qui représente la bordure de l’objet. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> Object qui représente la bordure de l’objet. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,14 +339,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une chaîne qui fait référence aux cellules de la feuille de calcul contenant les données de valeur x, la valeur y et taille du graphique en bulles. <b>Objet</b> en lecture/écriture.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>Lorsque vous revenez à la référence de cellule, elle retourne une chaîne décrivant les cellules en notation de style A1. Pour définir les données de la taille du graphique en bulles, vous devez utiliser la notation de type R1C1.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit une chaîne en style de référence A1 qui fait référence aux cellules de feuille de calcul qui contiennent la valeur x, la valeur y et des données relatives à la taille du graphique en bulle. <b>Objet</b> en lecture/écriture.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Lorsque vous renvoyez la référence de cellule, elle renverra une chaîne décrivant les cellules en style de référence A1. Pour définir les données relatives à la taille du graphique en bulle, vous devez utiliser le style de référence R1. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartType">
@@ -402,14 +371,10 @@
         <ReturnType>Microsoft.Office.Core.XlChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le type de graphique. En lecture/écriture <see cref="T:Microsoft.Office.Core.XlChartType" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.XlChartType" />
-        </value>
-        <remarks>
-          <para>Certains types de graphiques ne sont pas disponibles pour les rapports de graphique croisé dynamique.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie ou définit le type de graphique. En lecture/ <see cref="T:Microsoft.Office.Core.XlChartType" />écriture.</summary>
+        <value><see cref="T:Microsoft.Office.Core.XlChartType" /></value>
+        <remarks><para>Certains types de graphique ne sont pas disponibles pour les rapports de graphique croisé dynamique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearFormats">
@@ -434,9 +399,7 @@
       <Parameters />
       <Docs>
         <summary>Annule la mise en forme de l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -461,10 +424,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Si la série possède une image de remplissage, cette méthode copie l’image dans le Presse-papiers.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <summary>Si la série possède une image de remplissage, cette méthode copie l'image dans le Presse-papiers.</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,14 +452,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. Valeur <b>Integer</b> en lecture seule.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, le <see cref="P:Microsoft.Office.Interop.Word.Series.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.Series.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabels">
@@ -524,13 +481,11 @@
       </Parameters>
       <Docs>
         <param name="Index">Numéro de l'étiquette de données.</param>
-        <summary>Renvoie un objet qui représente soit une seule étiquette de données (un <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objet), soit une collection de toutes les étiquettes de données de la série (un <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> collection).</summary>
-        <returns>Un <b>objet</b> qui représente soit une seule étiquette de données (un <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objet), soit une collection de toutes les étiquettes de données de la série (un <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> collection).</returns>
-        <remarks>
-          <para>Si la série possède l’option Afficher la valeur est activée pour les étiquettes de données, la collection retournée peut contenir jusqu'à une étiquette pour chaque point. Étiquettes de données peuvent être activées ou désactivée pour les différents points de la série.</para>
-          <para>Si la série est dans un graphique en aires et que l’option Afficher l’étiquette est activée pour les étiquettes de données, la collection retournée contient uniquement une seule étiquette, qui est l’étiquette de la série de zone.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie un objet qui représente soit une seule étiquette de données ( <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> un objet), soit une collection de toutes les étiquettes de données de la <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> série (collection).</summary>
+        <returns><b>Objet</b> qui représente soit une seule étiquette de données (un <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objet), soit une collection de toutes les étiquettes de données de la série <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> (collection).</returns>
+        <remarks><para>Si l'option Afficher la valeur de la série est activée pour les étiquettes de données, la collection renvoyée pourra contenir jusqu'à une étiquette pour chaque point. Les étiquettes de données peuvent être activées ou désactivées pour des points individuels dans la série.</para>
+          <para>Si la série est dans un graphique en aires et que l'option Afficher l'étiquette est activée pour les étiquettes de données, la collection renvoyée contient seulement l'étiquette de la série en aires.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -555,9 +510,7 @@
       <Parameters />
       <Docs>
         <summary>Supprime l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -589,13 +542,11 @@
       <Docs>
         <param name="Direction">Direction de la barre d'erreur.</param>
         <param name="Include">Parties de la barre d'erreur à inclure.</param>
-        <param name="Type">Type de la barre d'erreur.</param>
-        <param name="Amount">La marge d'erreur. Utilisé pour seulement la marge d’erreur positive lorsque <paramref name="Type" /> est <see cref="F:Microsoft.Office.Interop.Word.XlErrorBarType.xlErrorBarTypeCustom" />.</param>
-        <param name="MinusValues">Marge d’erreur négative lorsque <paramref name="Type" /> est <see cref="F:Microsoft.Office.Interop.Word.XlErrorBarType.xlErrorBarTypeCustom" />.</param>
+        <param name="Type">Type de barre d'erreur.</param>
+        <param name="Amount">La marge d'erreur. Utilisé uniquement pour le montant d’erreur positif <paramref name="Type" /> lorsque <see cref="F:Microsoft.Office.Interop.Word.XlErrorBarType.xlErrorBarTypeCustom" />est.</param>
+        <param name="MinusValues">Montant de l’erreur négative <paramref name="Type" /> lorsque <see cref="F:Microsoft.Office.Interop.Word.XlErrorBarType.xlErrorBarTypeCustom" />est.</param>
         <summary>Applique des barres d'erreur à la série. <b>Objet</b>.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -622,10 +573,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ErrorBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ErrorBars" /> object qui représente les barres d’erreur pour la série. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ErrorBars" />
-        </value>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.ErrorBars" /> Object qui représente les barres d’erreur de la série. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ErrorBars" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -655,10 +604,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur d’un secteur-graphique en secteurs ou de graphique en anneau explosion. Renvoie la valeur 0 (zéro) s’il n’existe pas d’explosion (la pointe de la tranche est au centre du graphique en secteurs). Type de données <b>Integer</b> en lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Renvoie ou définit la valeur d’explosion pour une coupe de graphique en secteurs ou de graphique en anneaux. Renvoie 0 (zéro) s’il n’y a aucune explosion (la pointe de la coupe est dans le centre du graphique). <b>Entier</b> en lecture/écriture.</summary>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -689,9 +636,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> pour cette série.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -721,9 +666,7 @@
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet.
 
 En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -754,15 +697,11 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit une valeur de type <b>String</b> qui représente la formule de l’objet dans une notation de style A1 et dans la langue de la macro.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
-        <remarks>
-          <para>Cette propriété n’est pas disponible pour les sources de données OLAP.</para>
-          <para>Si l’objet contient une constante, cette propriété renvoie la constante. Si l’objet est vide, ce <see cref="P:Microsoft.Office.Interop.Word.Series.Formula" /> propriété renvoie une chaîne vide. Si l’objet contient une formule, le <see cref="P:Microsoft.Office.Interop.Word.Series.Formula" /> propriété retourne la formule sous forme de chaîne dans le même format qui s’affiche dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule pour un tableau Visual Basic des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau Visual Basic.</para>
-          <para />
-        </remarks>
+        <value><b>String</b></value>
+        <remarks><para>Cette propriété n'est pas disponible pour les sources de données OLAP.</para>
+          <para>Si l'objet contient une constante, la propriété la renvoie. Si l’objet est vide, cette <see cref="P:Microsoft.Office.Interop.Word.Series.Formula" /> propriété renvoie une chaîne vide. Si l’objet contient une formule, la <see cref="P:Microsoft.Office.Interop.Word.Series.Formula" /> propriété renvoie la formule sous la forme d’une chaîne dans le même format que celui qui doit s’afficher dans la barre de formule (y compris le signe égal).</para>
+          <para>S'il s'agit d'une plage à une ou deux dimensions, vous pouvez désigner la formule comme un tableau Visual Basic possédant les mêmes dimensions. De même, vous pouvez inclure la formule dans un tableau Visual Basic.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaLocal">
@@ -792,16 +731,12 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit la formule de l'objet, à l'aide de références de style A1 dans la langue de l'utilisateur. En lecture/écriture, <b>chaîne</b>.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
-        <remarks>
-          <para>Si la cellule contient une constante, cette propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété renvoie la formule sous forme de chaîne, dans le même format dans lequel il doit être affiché dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Word vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, le format de nombre est remplacé par le format de date courte par défaut.</para>
-          <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule pour un tableau Visual Basic des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau Visual Basic.</para>
-          <para>En définissant la formule d’une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
-          <para />
-        </remarks>
+        <value><b>String</b></value>
+        <remarks><para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété la renvoie sous forme de chaîne, dans le format affiché dans la barre de formule (signe égal inclus).</para>
+          <para>Si vous définissez la valeur ou la formule d’une cellule à une date, Microsoft Word vérifie si cette cellule est déjà mise en forme avec l’un des formats numériques de date ou d’heure. Si ce n'est pas le cas, Microsoft Excel applique le format Date court par défaut.</para>
+          <para>S'il s'agit d'une plage à une ou deux dimensions, vous pouvez désigner la formule comme un tableau Visual Basic possédant les mêmes dimensions. De même, vous pouvez inclure la formule dans un tableau Visual Basic.</para>
+          <para>En définissant la formule d'une plage à cellules multiples, toutes les cellules de la plage sont remplies par la formule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1">
@@ -830,17 +765,13 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la formule de l'objet, en utilisant la notation R1C1 dans la langue de la macro. En lecture/écriture, <b>chaîne</b>.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
-        <remarks>
-          <para>Si la cellule contient une constante, cette propriété renvoie la constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété renvoie la formule sous forme de chaîne, dans le même format dans lequel il doit être affiché dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Word vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, le format de nombre est remplacé par le format de date courte par défaut.</para>
-          <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule pour un tableau Visual Basic des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau Visual Basic.</para>
-          <para>En définissant la formule d’une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit la formule de l'objet, en utilisant la notation R1C1 dans la langue de la macro. <b>String</b> en lecture/écriture.</summary>
+        <value><b>String</b></value>
+        <remarks><para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété la renvoie sous forme de chaîne, dans le format affiché dans la barre de formule (signe égal inclus).</para>
+          <para>Si vous définissez la valeur ou la formule d’une cellule à une date, Microsoft Word vérifie si cette cellule est déjà mise en forme avec l’un des formats numériques de date ou d’heure. Si ce n'est pas le cas, Microsoft Excel applique le format Date court par défaut.</para>
+          <para>S'il s'agit d'une plage à une ou deux dimensions, vous pouvez désigner la formule comme un tableau Visual Basic possédant les mêmes dimensions. De même, vous pouvez inclure la formule dans un tableau Visual Basic.</para>
+          <para>En définissant la formule d'une plage à cellules multiples, toutes les cellules de la plage sont remplies par la formule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1Local">
@@ -869,17 +800,13 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la formule de l'objet, en utilisant la notation R1C1 dans la langue de l'utilisateur. En lecture/écriture, <b>chaîne</b>.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
-        <remarks>
-          <para>Si la cellule contient une constante, cette propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété renvoie la formule sous forme de chaîne, dans le même format dans lequel il doit être affiché dans la formule de la barre (y compris le signe égal).</para>
-          <para>Si vous affectez la valeur ou la formule d’une cellule à une date, Microsoft Word vérifie si cette cellule est déjà mise en forme avec un des formats de nombre date ou heure. Si non, le format de nombre est remplacé par le format de date courte par défaut.</para>
-          <para>Si la plage est une plage d’une ou deux dimensions, vous pouvez définir la formule pour un tableau Visual Basic des dimensions sont identiques. De même, vous pouvez placer la formule dans un tableau Visual Basic.</para>
-          <para>En définissant la formule d’une plage à cellules multiples remplit toutes les cellules de la plage de la formule.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit la formule de l'objet, en utilisant la notation R1C1 dans la langue de l'utilisateur. <b>String</b> en lecture/écriture.</summary>
+        <value><b>String</b></value>
+        <remarks><para>Si la cellule contient une constante, la propriété renvoie cette constante. Si la cellule est vide, la propriété renvoie une chaîne vide. Si la cellule contient une formule, la propriété la renvoie sous forme de chaîne, dans le format affiché dans la barre de formule (signe égal inclus).</para>
+          <para>Si vous définissez la valeur ou la formule d’une cellule à une date, Microsoft Word vérifie si cette cellule est déjà mise en forme avec l’un des formats numériques de date ou d’heure. Si ce n'est pas le cas, Microsoft Excel applique le format Date court par défaut.</para>
+          <para>S'il s'agit d'une plage à une ou deux dimensions, vous pouvez désigner la formule comme un tableau Visual Basic possédant les mêmes dimensions. De même, vous pouvez inclure la formule dans un tableau Visual Basic.</para>
+          <para>En définissant la formule d'une plage à cellules multiples, toutes les cellules de la plage sont remplies par la formule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DEffect">
@@ -909,13 +836,9 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété a la valeur <b>True</b> si la série est en 3D. <b>Boolean</b> en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Cette propriété s’applique uniquement aux graphiques en bulles.</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cette propriété s'applique uniquement aux graphiques en bulles.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDataLabels">
@@ -944,10 +867,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété a la valeur <b>True</b> si la série a des étiquettes de données. Type de données <b>Boolean</b> en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Cette propriété a la valeur <b>True</b> si la série a des étiquettes de données. <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -977,10 +898,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la série possède des barres d'erreur. Cette propriété n’est pas disponible pour les graphiques 3D. Type de données <b>Boolean</b> en lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>.</value>
+        <summary><b>True</b> si la série possède des barres d'erreur. Elle n'est pas disponible pour les graphiques 3D. <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1011,12 +930,9 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété a la valeur <b>True</b> si la série possède des lignes d'étiquettes. Type de données <b>Boolean</b> en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>.</value>
-        <remarks>
-          <para>Cette propriété s’applique uniquement aux graphiques en secteurs.</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b>.</value>
+        <remarks><para>Cette propriété ne s'applique qu'aux graphiques en secteurs.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -1045,9 +961,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Word.Interior" /> objet de la série.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />.</value>
+        <summary>Renvoie l' <see cref="T:Microsoft.Office.Interop.Word.Interior" /> objet de la série.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1077,12 +992,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient ou définit la couleur de remplissage des points de données négatifs dans une série.</summary>
+        <summary>Obtient ou définit la couleur de remplissage pour les points de données négatifs dans une série.</summary>
         <value>La couleur de remplissage pour les points de données négatifs dans une série.</value>
-        <remarks>
-          <para>En lecture-écriture. Cette propriété définit la couleur de remplissage des points de données négatives comme valeur de couleur RVB, hexadécimal, octal ou numérique spécifique. Au lieu d’utiliser cette propriété, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Word.Series.InvertColorIndex" /> propriété, qui utilise un ensemble de valeurs de type integer à partir de la palette de couleurs actuelle plus simple. Pour cette propriété ait un effet, la <see cref="P:Microsoft.Office.Interop.Word.Series.InvertIfNegative" /> propriété doit également être définie sur <b>true</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>En lecture/écriture Cette propriété définit la couleur de remplissage des points de données négatives en tant que valeur numérique, hexadécimale, octale ou couleur RVB spécifique. Au lieu d’utiliser cette propriété, vous pouvez utiliser <see cref="P:Microsoft.Office.Interop.Word.Series.InvertColorIndex" /> la propriété, qui utilise un jeu simplier de valeurs entières de la palette de couleurs actuelle. Pour que cette propriété ait un effet, la <see cref="P:Microsoft.Office.Interop.Word.Series.InvertIfNegative" /> propriété doit également avoir la valeur <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvertColorIndex">
@@ -1111,12 +1024,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient ou définit la couleur de remplissage des points de données négatifs dans une série.</summary>
+        <summary>Obtient ou définit la couleur de remplissage pour les points de données négatifs dans une série.</summary>
         <value>La couleur de remplissage pour les points de données négatifs dans une série.</value>
-        <remarks>
-          <para>En lecture-écriture. Cette propriété définit la couleur de remplissage des points de données négatives comme une valeur d’index de couleur de la plage comprise entre zéro et 56. Au lieu d’utiliser cette propriété, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Word.Series.InvertColor" /> propriété, qui définit la couleur comme valeur de couleur RVB, hexadécimal, octal ou numérique spécifique.</para>
-          <para />
-        </remarks>
+        <remarks><para>En lecture/écriture Cette propriété définit la couleur de remplissage des points de données négatifs en tant que valeur d’index de couleur dans la plage comprise entre zéro et 56. Au lieu d’utiliser cette propriété, vous pouvez utiliser <see cref="P:Microsoft.Office.Interop.Word.Series.InvertColor" /> la propriété, qui définit la couleur en tant que valeur numérique, hexadécimale, octale ou couleur RVB spécifique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvertIfNegative">
@@ -1145,11 +1056,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur true</b> si Microsoft Word inverse le motif de l'objet lorsqu'il correspond à un nombre négatif. Type de données <b>Boolean</b> en lecture/écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>La valeur true</b> si Microsoft Word inverse le motif de l'objet lorsqu'il correspond à un nombre négatif. <b>Boolean</b> (en lecture/écriture).</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1179,7 +1087,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si la série de graphique spécifiée est éliminée du graphique. En lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en C#) qui détermine si la série de graphiques spécifiée est filtrée à partir du graphique. En lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1207,17 +1115,11 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.LeaderLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.LeaderLines" /> object qui représente les lignes d’étiquettes de la série. En lecture seule.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.LeaderLines" />
-        </value>
-        <remarks>
-          <para>Cette propriété s’applique uniquement aux graphiques en secteurs.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Cet exemple ajoute des étiquettes de données et des lignes d’étiquettes bleues à la série 1 du premier graphique en secteurs du document actif. Cet exemple de code échouent si les lignes d’étiquettes sont visibles. Dans ce cas, vous pouvez faire glisser manuellement une des étiquettes de données loin du graphique pour afficher une ligne d’étiquettes.</para>
-        </example>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.LeaderLines" /> objet qui représente les lignes d’étiquettes de la série. En lecture seule.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.LeaderLines" /></value>
+        <remarks><para>Cette propriété ne s'applique qu'aux graphiques en secteurs.</para>
+          <para> </para></remarks>
+        <example><para>Cet exemple montre comment ajouter des étiquettes de données et des lignes d’étiquettes bleues à la série 1 du premier graphique en secteurs du document actif. Si aucune ligne d'étiquette n'est visible, le code de cet exemple échoue. Si c'est le cas, vous pouvez faire glisser manuellement une des étiquettes de données hors du graphique en secteurs pour faire afficher une ligne d'étiquette.</para></example>
       </Docs>
     </Member>
     <Member MemberName="MarkerBackgroundColor">
@@ -1246,10 +1148,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit la couleur d'arrière-plan de marque comme une valeur RVB ou renvoie la valeur d'index de couleur correspondante. S’applique uniquement aux graphiques en courbes, en nuages de points et en radar. Type de données <b>Integer</b> en lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Définit la couleur d’arrière-plan de la marque sous la forme d’une couleur RVB ou renvoie la valeur de l’index de couleur correspondante. Ne s'applique qu'aux graphiques en courbes, nuages de points ou radar. <b>Entier</b> en lecture/écriture.</summary>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1279,10 +1179,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur d’arrière-plan marqueur sous la forme d’index dans la palette de couleurs actuelle ou en tant qu’une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> constantes : <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> ou <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />. S’applique uniquement aux graphiques en courbes, en nuages de points et en radar. En lecture-écriture.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />
-        </value>
+        <summary>Cette propriété renvoie ou définit la couleur d’arrière-plan de marque sous forme d’index dans la palette de couleurs <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> actuelle ou sous <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> la <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />forme d’une des constantes suivantes: ou. Ne s'applique qu'aux graphiques en courbes, nuages de points ou radar. Lecture/écriture</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1312,10 +1210,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit la couleur de premier plan du marqueur en tant que valeur RVB ou renvoie la valeur d'index de couleur correspondante. S’applique uniquement aux graphiques en courbes, en nuages de points et en radar. Type de données <b>Integer</b> en lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Définit la couleur de premier plan de la marque sous la forme d’une couleur RVB ou renvoie la valeur de l’index de couleur correspondante. Ne s’applique qu’aux graphiques en courbes, en nuages de points et en radar. <b>Entier</b> en lecture/écriture.</summary>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1345,10 +1241,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur de premier plan sous la forme d’index dans la palette de couleurs actuelle ou en tant qu’une des opérations suivantes <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> constantes : <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> ou <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />. S’applique uniquement aux graphiques en courbes, en nuages de points et en radar. Lecture/écriture.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />
-        </value>
+        <summary>Cette propriété renvoie ou définit la couleur de premier plan de marque sous forme d’index dans la palette de couleurs actuelle <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> ou sous la <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> forme <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />d’une des constantes suivantes: ou. Ne s'applique qu'aux graphiques en courbes, nuages de points ou radar. En lecture/écriture</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1378,10 +1272,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la taille des marques de données, en points. Peut être une valeur comprise entre 2 et 72. Type de données <b>Integer</b> en lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit la taille, exprimée en points, de la marque de donnée. Il peut s'agir d'une valeur comprise entre 2 et 72. <b>Entier</b> en lecture/écriture.</summary>
+        <value><b>Entier</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1411,10 +1303,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.XlMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le style de marqueur pour un point ou une série dans un graphique en courbes, à nuages de points ou en radar. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" />
-        </value>
+        <summary>Renvoie ou définit le style de marqueur pour un point ou une série dans un graphique en courbes, à nuages de points ou en radar. En lecture/ <see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" />écriture.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1445,9 +1335,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur de type <b>String</b> qui représente le nom de l’objet.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1475,9 +1363,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie le parent de l'objet spécifié. En lecture seule <b>Object</b>.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1503,13 +1389,9 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Parameters />
       <Docs>
         <summary>Colle une image du Presse-papiers en tant que marqueur sur la série sélectionnée.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
-        <remarks>
-          <para>Cette méthode peut être utilisée dans la colonne, barre, ligne ou en radar, et il définit les <see cref="P:Microsoft.Office.Interop.Word.Series.MarkerStyle" /> propriété <see cref="F:Microsoft.Office.Interop.Word.XlMarkerStyle.xlMarkerStylePicture" />.</para>
-          <para />
-        </remarks>
+        <returns><b>Object</b></returns>
+        <remarks><para>Cette méthode peut être utilisée sur des graphiques en histogrammes, en barres, en courbes ou en radar <see cref="P:Microsoft.Office.Interop.Word.Series.MarkerStyle" /> , et <see cref="F:Microsoft.Office.Interop.Word.XlMarkerStyle.xlMarkerStylePicture" />elle définit la propriété sur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureType">
@@ -1538,10 +1420,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.XlChartPictureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> valeur qui représente les façon dont les images sont affichées sur un graphique à barres ou.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" />
-        </value>
+        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> définit une valeur qui représente le mode d’affichage des images sur une colonne ou un graphique à barres.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1577,10 +1457,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si le <see cref="P:Microsoft.Office.Interop.Word.Series.PictureType" /> propriété est définie sur <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> (si pas, cette propriété est ignorée).</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si <see cref="P:Microsoft.Office.Interop.Word.Series.PictureType" /> la propriété est définie <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> sur (si ce n’est pas le cas, cette propriété est ignorée).</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1610,9 +1488,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si le <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> propriété est définie sur <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> (si pas, cette propriété est ignorée). En lecture/écriture <b>Double</b>.</summary>
-        <value>
-          <see cref="T:System.Double" />.</value>
+        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> la propriété est définie <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> sur (si ce n’est pas le cas, cette propriété est ignorée). <b>Double</b> en lecture/écriture.</summary>
+        <value><see cref="T:System.Double" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1639,12 +1516,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtient une valeur d’index qui est utilisée en interne pour associer série mise en forme des éléments de graphique.</summary>
-        <value>Une valeur d’index qui est utilisée en interne pour associer série mise en forme des éléments de graphique.</value>
-        <remarks>
-          <para>En lecture seule.</para>
-          <para />
-        </remarks>
+        <summary>Obtient une valeur d’index qui est utilisée en interne pour associer la mise en forme de série aux éléments de graphique.</summary>
+        <value>Valeur d’index utilisée en interne pour associer la mise en forme de série aux éléments de graphique.</value>
+        <remarks><para>En lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlotOrder">
@@ -1673,15 +1548,11 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l'ordre de traçage de la série sélectionnée au sein du groupe de graphique. Type de données <b>Integer</b> en lecture/écriture.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>, Vous pouvez définir l’ordre de traçage uniquement dans un groupe de graphiques (vous ne pouvez pas définir l’ordre de traçage du graphique entier si vous avez plusieurs types de graphique). Un groupe de graphiques est une collection de séries avec le même type de graphique.</para>
-          <para>Modification de l’ordre de traçage d’une série entraîne le traçage des autres séries du groupe de graphiques à être ajustées, si nécessaire.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit l'ordre de traçage de la série sélectionnée au sein du groupe de graphique. <b>Entier</b> en lecture/écriture.</summary>
+        <value><b>Entier</b></value>
+        <remarks><para>L'ordre de traçage ne peut être défini qu'au sein d'un groupe de graphiques (vous ne pouvez pas définir l'ordre de traçage pour la totalité du graphique en présence de plusieurs types de graphique). Par groupe de graphiques, il faut entendre un ensemble de séries de données qui possèdent le même type de graphique.</para>
+          <para>Toute modification de l'ordre de traçage d'une série entraîne l'ajustement, le cas échéant, de l'ordre de traçage des autres séries du groupe de graphiques.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Points">
@@ -1708,11 +1579,9 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Docs>
         <param name="Index">Nom ou numéro du point.</param>
         <summary>Renvoie une collection de tous les points de la série.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Word.Points" /> object qui représente tous les points de la série.</returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Points" /> Objet qui représente tous les points de la série.</returns>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Cet exemple montre comment appliquer une étiquette de données au point 1 de la première série du premier graphique du document actif.</para>
-        </example>
+        <example><para>Cet exemple montre comment appliquer une étiquette de données au point 1 de la série 1 du premier graphique du document actif.</para></example>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1737,9 +1606,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Parameters />
       <Docs>
         <summary>Sélectionne l'objet.</summary>
-        <returns>
-          <b>Objet</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1770,9 +1637,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit une valeur de type <b>Boolean</b> qui détermine si l’objet est ombré.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1802,11 +1667,8 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si le lissage des courbes est activé pour les graphiques en courbes ou en nuages de points. Ne s’applique qu’à ces deux types de graphiques. Type de données en lecture-écriture.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Cette propriété a la valeur <b>True</b> si le lissage de courbes est activé pour le graphique en courbes ou en nuages de point. Cette propriété ne s'applique qu'à ces deux types de graphiques. En lecture/écriture</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1834,11 +1696,9 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Docs>
         <param name="Index">To be added.</param>
         <summary>Renvoie une collection de toutes les courbes de tendance de la série.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> object qui représente toutes les courbes de tendance de la série.</returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> Objet qui représente toutes les courbes de la série.</returns>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Cet exemple ajoute une courbe de tendance linéaire à la série 1 du premier graphique du document actif.</para>
-        </example>
+        <example><para>Cet exemple montre comment ajouter une courbe de tendance linéaire à la série 1 du premier graphique du document actif.</para></example>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1867,12 +1727,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>entière</b> qui représente le type de séries.</summary>
-        <value>Cette propriété renvoie <see cref="T:System.Int32" />.</value>
-        <remarks>
-          <para>Le <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> constantes peuvent être utilisées pour cette propriété.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit une valeur de type <b>Integer</b> qui représente le type de série.</summary>
+        <value>Renvoie <see cref="T:System.Int32" />.</value>
+        <remarks><para>Les <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> constantes peuvent être utilisées pour cette propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -1901,14 +1759,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>objet</b> qui représente une collection de toutes les valeurs de la série.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>La valeur de cette propriété peut être l’adresse d’une plage de feuille de calcul du graphique ou un tableau de valeurs de constantes, mais pas une combinaison des deux. Consultez les exemples pour plus d’informations.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>objet</b> qui représente une collection de toutes les valeurs de la série.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>La valeur de cette propriété peut être l'adresse d'une plage de la feuille de calcul du graphique ou un tableau de constantes, mais pas une combinaison des deux. Pour plus d'informations, voir les exemples.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XValues">
@@ -1937,14 +1791,10 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un tableau de valeurs x pour une série de graphique. Le <see cref="P:Microsoft.Office.Interop.Word.Series.XValues" /> propriété peut être définie sur une plage dans une feuille de calcul ou d’un tableau de valeurs, mais elle ne peut pas être une combinaison des deux. <b>Objet</b> en lecture/écriture.</summary>
-        <value>
-          <b>Objet</b>
-        </value>
-        <remarks>
-          <para>Pour les rapports de graphique croisé dynamique, cette propriété est en lecture seule.</para>
-          <para />
-        </remarks>
+        <summary>Cette propriété renvoie ou définit un tableau de valeurs x pour une série de graphique. La <see cref="P:Microsoft.Office.Interop.Word.Series.XValues" /> propriété peut être définie sur une plage dans une feuille de calcul ou sur un tableau de valeurs, mais elle ne peut pas être une combinaison des deux. <b>Objet</b> en lecture/écriture.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Pour les rapports de graphique croisé dynamique, cette propriété est en lecture seule.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

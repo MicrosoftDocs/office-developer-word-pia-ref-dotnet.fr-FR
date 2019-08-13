@@ -1,13 +1,5 @@
 <Type Name="CustomLabel" FullName="Microsoft.Office.Interop.Word.CustomLabel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fc491a73c52a2fd4e6f048a49a9302b5b1ff748f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668955" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CustomLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0f214b3428fec4a541bfb576068a5cc01082ae76" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147262" /></Metadata><TypeSignature Language="C#" Value="public interface CustomLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CustomLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomLabel" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Représente une étiquette de publipostage personnalisée.</summary>
-    <remarks>
-      <para>L’objet <b>CustomLabel</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.CustomLabels" /> collection. La collection <b>CustomLabels</b> contient l’ensemble des étiquettes de publipostage personnalisées répertoriées dans la boîte de dialogue Options pour les étiquettes.</para>
-      <para>Utilisez <b>CustomLabels</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de l’étiquette personnalisée ou le numéro d’index, pour renvoyer un objet <b>CustomLabel</b> .</para>
-      <para>Le numéro d’index représente la position de l’étiquette de publipostage personnalisée dans la collection <b>CustomLabels</b> .</para>
+    <remarks><para>L’objet <b>CustomLabel</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.CustomLabels" /> collection. La collection <b>CustomLabels</b> contient tous les étiquettes de publipostage personnalisées répertoriées dans la boîte de dialogue Options pour les étiquettes.</para>
+      <para>Utilisez <b>CustomLabels</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de l’étiquette personnalisée ou le numéro d’index, pour renvoyer un seul objet <b>CustomLabel</b> .</para>
+      <para>Le numéro d'index représente la position de l'étiquette de publipostage personnalisée dans la collection <b>CustomLabels</b>.</para>
       <para>
-        <b>Remarque</b>: objets <b>CustomLabel</b> sont triés par ordre alphabétique dans la collection <b>CustomLabels</b> et leurs numéros d’index sont réaffectés dynamiquement en tant que le contenu de la modification de la collection. Pour cette raison, il est plus prudent de faire référence à un objet <b>CustomLabel</b> spécifique par nom plutôt que par numéro d’index.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.CustomLabels.Add(System.String,System.Object@)" /> méthode pour créer une étiquette personnalisée.</para>
-      <para />
-    </remarks>
+        <b>Remarque</b>: les objets <b>CustomLabel</b> sont triés par ordre alphabétique dans la collection <b>CustomLabels</b> et leurs numéros d’index sont réattribués dynamiquement au fur et à mesure que le contenu de la collection change. Pour cette raison, il est plus prudent de faire référence à un objet <b>CustomLabel</b> spécifique par nom plutôt que par le numéro d'index.</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CustomLabels.Add(System.String,System.Object@)" /> méthode pour créer une étiquette personnalisée.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,11 +81,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -146,8 +134,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si l'imprimante type pour l'étiquette personnalisée spécifiée est matricielle. <b>False</b> si l'imprimante est jet laser ou d'encre.</summary>
+        <summary><b>True</b> si l'imprimante type pour l'étiquette personnalisée spécifiée est matricielle. <b>False</b> si l'imprimante est jet laser ou d'encre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,7 +165,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la hauteur de l’étiquette de publipostage personnalisée spécifiée, en points.</summary>
+        <summary>Cette propriété renvoie ou définit la hauteur de l’étiquette de publipostage personnalisée spécifiée, exprimée en points.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,10 +198,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la distance horizontale (en points) entre le bord gauche d'une étiquette de publipostage personnalisée et le bord gauche de l'étiquette de publipostage suivante.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si cette propriété est modifiée sur une valeur qui n’est pas valide pour la disposition des étiquettes de publipostage spécifiée, une erreur se produit.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous affectez à cette propriété une valeur qui n'est pas valide pour la mise en page d'étiquettes de publipostage spécifiée, une erreur se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -240,7 +225,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>entier</b> qui représente la position d’un élément dans une collection.</summary>
+        <summary>Renvoie une <b>valeur de type Integer</b> qui représente la position d’un élément dans une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -271,7 +256,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le nom de l'objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit le nom de l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,10 +289,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le nombre d'étiquettes de publipostage personnalisées sur une page.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si cette propriété est modifiée sur une valeur qui n’est pas valide pour la disposition des étiquettes de publipostage spécifiée, une erreur se produit.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous affectez à cette propriété une valeur qui n'est pas valide pour la mise en page d'étiquettes de publipostage spécifiée, une erreur se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberDown">
@@ -338,10 +321,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le nombre d'étiquettes de publipostage personnalisées vers le bas de la longueur d'une page.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si cette propriété est modifiée sur une valeur qui n’est pas valide pour la disposition des étiquettes de publipostage spécifiée, une erreur se produit.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous affectez à cette propriété une valeur qui n'est pas valide pour la mise en page d'étiquettes de publipostage spécifiée, une erreur se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageSize">
@@ -372,10 +353,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la taille de page pour l'étiquette de publipostage personnalisée spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>PageSize</b> peut être une de le <see cref="T:Microsoft.Office.Interop.Word.WdCustomLabelPageSize" /> constantes. Certaines de ces constantes ne soient pas disponibles, en fonction de la prise en charge de langue (anglais (États-Unis), par exemple) que vous avez sélectionnée ou installée.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>pageSize</b> peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdCustomLabelPageSize" /> constantes. Certaines de ces constantes ne seront peut-être pas disponibles, en fonction de la langue sélectionnée ou installée (par exemple, le français).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -434,10 +413,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la largeur de la marge côté (en points) pour l'étiquette de publipostage personnalisée spécifiée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si cette propriété est modifiée sur une valeur qui n’est pas valide pour la disposition des étiquettes de publipostage spécifiée, une erreur se produit.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous affectez à cette propriété une valeur qui n'est pas valide pour la mise en page d'étiquettes de publipostage spécifiée, une erreur se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopMargin">
@@ -494,8 +471,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>La valeur True</b> si les différentes propriétés (par exemple, <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Height" />, <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Width" />, et <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.NumberDown" />) pour le travail de l’étiquette personnalisée spécifiée générer une étiquette de publipostage valide.</summary>
+        <summary><b>True</b> si les différentes propriétés (par exemple <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Height" /> <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Width" />,, et <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.NumberDown" />) pour l’étiquette personnalisée spécifiée fonctionnent ensemble pour produire une étiquette de publipostage valide.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -528,10 +504,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la distance verticale entre le haut d'une étiquette de publipostage et le bord supérieur de l'étiquette de publipostage suivante.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si cette propriété est modifiée sur une valeur qui n’est pas valide pour la disposition des étiquettes de publipostage spécifiée, une erreur se produit.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous affectez à cette propriété une valeur qui n'est pas valide pour la mise en page d'étiquettes de publipostage spécifiée, une erreur se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -560,7 +534,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la largeur de l’objet spécifié, en points.</summary>
+        <summary>Renvoie ou définit la largeur de l’objet spécifié, en points.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="XMLNode" FullName="Microsoft.Office.Interop.Word.XMLNode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a72a2d631a6f2ec507d0a855eff12afd3295dbe8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668063" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9972982e927ab7d392fa88967c808138fa36eb51" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145421" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNode" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Représente un seul élément XML appliqué à un document.</summary>
-    <remarks>
-      <para>Chaque élément XML qui a été appliquée à un document est affiché en tant que nœud dans un contrôle d’arborescence dans le volet Office Structure XML. Chaque nœud de l’arborescence est une instance d’un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objet. La hiérarchie dans l’arborescence indique si un nœud contient des nœuds enfants.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> collection pour renvoyer une personne <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objet. Utiliser le <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> méthode pour vérifier qu’un élément XML est valide en fonction des schémas appliqués et que tous les requis éléments enfants existent et sont dans l’ordre requis. Une fois que vous exécutez le <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> méthode, utilisez la <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> propriété pour vérifier si un élément est valide et utilisez le <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> propriété pour afficher des informations sur ce que l’utilisateur doit faire pour rendre le document conforme aux règles du schéma XML.</para>
-      <para />
-    </remarks>
+    <remarks><para>Chaque élément XML qui a été appliqué au document est affiché sous forme de nœud dans un contrôle d'arborescence dans le volet Office XML Structure. Chaque nœud de l’arborescence est une instance d’un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objet. La hiérarchie dans l'arborescence indique si un nœud contient des nœuds enfants.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> propriété de la <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> collection pour renvoyer un objet <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> individuel. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> méthode pour vérifier qu’un élément XML est valide en fonction des schémas appliqués et que tous les éléments enfants requis existent et sont dans l’ordre requis. Une fois la <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> méthode exécutée, utilisez <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> la propriété pour vérifier si un élément est valide et utilisez la <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> propriété pour afficher des informations sur ce que l’utilisateur doit faire pour que le document soit conforme aux règles de schéma XML.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,12 +75,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> collection qui représente les attributs de l’élément spécifié.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> collection qui représente les attributs de l’élément spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Tous les <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> les objets dans la collection <b>XMLNodes</b> renvoyée à l’aide de la propriété <b>Attributes</b> ont une <see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" /> valeur de la propriété de <b>égale à wdXMLNodeAttribute</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Tous <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> les objets de la collection <b>XMLNodes</b> renvoyés à l’aide de la <see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" /> propriété <b>attributes</b> ont une valeur de propriété <b>égale à wdXMLNodeAttribute</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseName">
@@ -144,7 +132,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> collection qui représente les éléments enfants d’un élément spécifié.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> collection qui représente les éléments enfants d’un élément spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,12 +163,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLChildNodeSuggestions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" /> collection qui représente la liste des éléments autorisés pour le <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objet (qui retourne les éléments enfants d’un élément spécifié).</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" /> collection qui représente la liste des éléments autorisés pour l' <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objet (qui renvoie les éléments enfants d’un élément spécifié).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Chaque <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion" /> objet dans un <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" /> cette collection est un élément dans la liste des éléments XML possibles au bas du volet Office Structure XML autorisés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Chaque <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion" /> objet d’une <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" /> collection est un élément de la liste des éléments XML possibles autorisés en bas du volet Office structure XML.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -233,11 +219,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>. </para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>. </para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -313,12 +297,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object qui représente le premier nœud enfant d’un nœud parent.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Object qui représente le premier nœud enfant d’un nœud parent.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.XMLNode.LastChild" /> propriété pour accéder au dernier nœud enfant. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriété pour accéder au nœud parent dans un diagramme.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.XMLNode.LastChild" /> propriété pour accéder au dernier nœud enfant. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriété pour accéder au nœud parent dans un diagramme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasChildNodes">
@@ -346,10 +328,8 @@
       <Docs>
         <summary>Détermine si l’élément XML spécifié a des éléments enfants.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>la valeur True</b> si l’élément XML spécifié a des éléments enfants et <b>False</b> dans le cas contraire.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si l’élément XML spécifié possède des éléments <b></b> enfants et false dans le cas contraire.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastChild">
@@ -375,12 +355,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object qui représente le dernier nœud enfant d’un nœud parent.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> Object qui représente le dernier nœud enfant d’un nœud parent.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.XMLNode.FirstChild" /> propriété pour accéder au premier nœud enfant dans un diagramme. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriété pour accéder au nœud parent dans un diagramme.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.XMLNode.FirstChild" /> propriété pour accéder au premier nœud enfant dans un diagramme. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriété pour accéder au nœud parent dans un diagramme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Level">
@@ -406,7 +384,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdXMLNodeLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le niveau de l’élément XML spécifié dans la hiérarchie des éléments appliqué à un document.</summary>
+        <summary>Renvoie le niveau de l’élément XML spécifié au sein de la hiérarchie d’éléments appliqués à un document.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -436,10 +414,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> qui indique l'identificateur de ressource uniforme (URI) de l'espace de noms de schéma pour l'objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si vous utilisez des schémas XML pour une utilisation avec Microsoft Word, il est vivement recommandé de spécifier le paramètre <b>targetNamespace</b> dans le schéma.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous créez des schémas XML à utiliser avec Microsoft Word, il est vivement recommandé de spécifier le paramètre <b>targetNamespace</b> dans le schéma.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NextSibling">
@@ -465,12 +441,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> object qui représente l’élément suivant dans le document au même niveau que l’élément spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> Object qui représente l’élément suivant dans le document au même niveau que l’élément spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’élément spécifié est le dernier élément de la <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> collection, cette propriété renvoie la <b>valeur Nothing</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’élément spécifié est le dernier élément de la <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> collection, cette propriété renvoie la <b>valeur Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -496,18 +470,16 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdXMLNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" /> constante représentant le type de nœud.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" /> constante qui représente le type de nœud.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" />Il peut s’agir de l’une des constantes <b>WdXMLNodeType</b> suivantes:</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" />peut être une des constantes <b>wdXMLNodeType</b> suivantes :</para>
-          <para>
-            <b>égale à wdXMLNodeAttribute</b> – indique un nœud d’attribut.</para>
+            <b>égale à wdXMLNodeAttribute</b> : indique un nœud d’attribut.</para>
           <para>
             <b>wdXMLNodeElement</b> – indique un nœud d’élément.</para>
-          <para>A <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objet peut être un élément XML ou un attribut d’un élément. Utilisez la propriété <b>NodeType</b> pour déterminer le type de nœud que vous travaillez afin que vous n’essayez pas d’effectuer des opérations non valides sur le nœud. Par exemple, le <see cref="P:Microsoft.Office.Interop.Word.XMLNode.Attributes" /> propriété s’applique uniquement aux nœuds d’élément, bien qu’il apparaîtra dans la liste des propriétés disponibles pour l’objet <b>XMLNode</b> .</para>
-          <para />
-        </remarks>
+          <para>Un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objet peut être un élément XML ou un attribut d’un élément. Utilisez la propriété <b>NodeType</b> pour déterminer le type de nœud que vous utilisez afin de ne pas effectuer d’opérations non valides sur le nœud. Par exemple, la <see cref="P:Microsoft.Office.Interop.Word.XMLNode.Attributes" /> propriété s’applique uniquement aux nœuds d’élément, bien qu’elle apparaisse dans la liste des propriétés disponibles pour l’objet <b>XmlNode</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NodeValue">
@@ -538,11 +510,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une <b>chaîne</b> qui représente la valeur d’un attribut.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objet peut être un élément XML ou un attribut d’un élément. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" /> propriété pour déterminer le type de nœud sur lequel vous travaillez.</para>
-          <para>Pour les objets <b>XMLNode</b> dont la valeur <b>NodeType</b> égale à <b>wdXMLNodeElement</b>, la propriété <b>NodeValue</b> renvoie la valeur nothing.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objet peut être un élément XML ou un attribut d’un élément. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" /> propriété pour déterminer le type de nœud que vous utilisez.</para>
+          <para>Pour les objets <b>XmlNode</b> dont la valeur <b>NodeType</b> est <b>wdXMLNodeElement</b>, la propriété <b>nodeValue,</b> renvoie la valeur Nothing.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OwnerDocument">
@@ -568,12 +538,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Document" /> object qui représente le document parent de l’élément XML spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Document" /> Object qui représente le document parent de l’élément XML spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>OwnerDocument</b> renvoie les mêmes résultats que la <see cref="P:Microsoft.Office.Interop.Word.XMLNode.Parent" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>OwnerDocument,</b> renvoie les mêmes résultats que la <see cref="P:Microsoft.Office.Interop.Word.XMLNode.Parent" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -627,7 +595,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> object qui représente l’élément parent de l’élément spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> Object qui représente l’élément parent de l’élément spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -660,10 +628,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une <b>chaîne</b> qui représente le texte affiché pour un élément qui ne contient aucun texte.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Texte d’espace réservé est affiché dans Microsoft Word uniquement lorsque l’afficher les balises XML dans la case à cocher de document dans le volet Office Structure XML est désactivée. Les balises XML afficher la case à cocher document correspond à la <see cref="P:Microsoft.Office.Interop.Word.View.ShowXMLMarkup" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le texte de l'espace réservé est affiché dans Microsoft Word uniquement lorsque la case à cocher Afficher les balises XML dans le document du volet Office Structure XML est désactivée. La case à cocher Afficher les balises XML dans le <see cref="P:Microsoft.Office.Interop.Word.View.ShowXMLMarkup" /> document correspond à la propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousSibling">
@@ -689,12 +655,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> object qui représente l’élément précédent dans le document au même niveau que l’élément spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> Object qui représente l’élément précédent dans le document au même niveau que l’élément spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’élément spécifié est le premier élément dans le <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> collection, cette propriété renvoie la <b>valeur Nothing</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’élément spécifié est le premier élément de la <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> collection, cette propriété renvoie la <b>valeur Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -720,12 +684,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document, voir la <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> d’un document, voir la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveChild">
@@ -751,7 +713,7 @@
         <Parameter Name="ChildElement" Type="Microsoft.Office.Interop.Word.XMLNode" />
       </Parameters>
       <Docs>
-        <param name="ChildElement">Requis <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />. Élément enfant à supprimer.</param>
+        <param name="ChildElement">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />. Élément enfant à supprimer.</param>
         <summary>Supprime l’élément enfant spécifié de l’élément spécifié.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -780,17 +742,13 @@
         <Parameter Name="FastSearchSkippingTextNodes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="XPath">
-          <b>String</b>obligatoire. Chaîne XPath valide. Pour plus d'informations sur XPath, consultez la documentation de référence XPath sur le site Web Microsoft Developer Network (MSDN).</param>
-        <param name="PrefixMapping">Facultatif <b>Object</b>. Fournit le préfixe du schéma utilisé pour effectuer la recherche. Utiliser le <paramref name="PrefixMapping" /> paramètre si votre <paramref name="XPath" /> paramètre utilise des noms pour rechercher des éléments.</param>
-        <param name="FastSearchSkippingTextNodes">
-          <b>Boolean</b> facultatif. <b>True</b> ignore tous les nœuds de texte lors de la recherche du nœud spécifié. <b>False</b> inclut des nœuds de texte dans la recherche. Valeur par défaut est <b>False</b>.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> collection qui représente tous les nœuds qui correspondent à une chaîne XPath spécifiée dans l’ordre dans lequel ils apparaissent.</summary>
+        <param name="XPath">Argument de type <b>String</b> obligatoire. Chaîne XPath valide. Pour plus d'informations sur XPath, consultez la documentation de référence XPath sur le site Web Microsoft Developer Network (MSDN).</param>
+        <param name="PrefixMapping"><b>Objet</b>facultatif. Fournit le préfixe du schéma utilisé pour effectuer la recherche. Utilisez le <paramref name="PrefixMapping" /> paramètre si votre <paramref name="XPath" /> paramètre utilise des noms pour rechercher des éléments.</param>
+        <param name="FastSearchSkippingTextNodes">Facultatif <b>Boolean</b>. <b>True</b> ignore tous les nœuds de texte lors de la recherche du nœud spécifié. <b>False</b> inclut des nœuds de texte dans la recherche. Valeur par défaut est <b>False</b>.</param>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> collection qui représente tous les nœuds qui correspondent à une chaîne XPath spécifiée dans l’ordre dans lequel ils apparaissent.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Définition de la <paramref name="FastSearchSkippingTextNodes" /> paramètre sur <b>True</b> diminue la performance parce que Microsoft Word recherche tous les nœuds dans un document le texte contenu dans le nœud.</para>
-          <para />
-        </remarks>
+        <remarks><para>La définition <paramref name="FastSearchSkippingTextNodes" /> du paramètre sur <b>true</b> diminue les performances, car Microsoft Word recherche tous les nœuds d’un document en fonction du texte contenu dans le nœud.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectSingleNode">
@@ -817,17 +775,13 @@
         <Parameter Name="FastSearchSkippingTextNodes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="XPath">
-          <b>String</b>obligatoire. Valide <paramref name="XPath" /> chaîne. Pour plus d’informations sur <paramref name="XPath" />, voir la <paramref name="XPath" /> documentation de référence sur le site Web Microsoft Developer Network (MSDN).</param>
-        <param name="PrefixMapping">Facultatif <b>Object</b>. Fournit le préfixe du schéma utilisé pour effectuer la recherche. Utiliser le <paramref name="PrefixMapping" /> paramètre si votre <paramref name="XPath" /> paramètre utilise des noms pour rechercher des éléments.</param>
-        <param name="FastSearchSkippingTextNodes">
-          <b>Boolean</b> facultatif. <b>True</b> ignore tous les nœuds de texte lors de la recherche du nœud spécifié. <b>False</b> inclut des nœuds de texte dans la recherche. Valeur par défaut est <b>True</b>.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> object qui représente le premier nœud qui correspond à une chaîne XPath spécifiée dans le document spécifié.</summary>
+        <param name="XPath">Argument de type <b>String</b> obligatoire. Chaîne valide <paramref name="XPath" /> . Pour plus d’informations <paramref name="XPath" />sur, reportez-vous à la <paramref name="XPath" /> documentation de référence sur le site Web Microsoft Developer Network (MSDN).</param>
+        <param name="PrefixMapping"><b>Objet</b>facultatif. Fournit le préfixe du schéma utilisé pour effectuer la recherche. Utilisez le <paramref name="PrefixMapping" /> paramètre si votre <paramref name="XPath" /> paramètre utilise des noms pour rechercher des éléments.</param>
+        <param name="FastSearchSkippingTextNodes">Facultatif <b>Boolean</b>. <b>True</b> ignore tous les nœuds de texte lors de la recherche du nœud spécifié. <b>False</b> inclut des nœuds de texte dans la recherche. Valeur par défaut est <b>True</b>.</param>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> Object qui représente le premier nœud qui correspond à une chaîne XPath spécifiée dans le document spécifié.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Définition de la <paramref name="FastSearchSkippingTextNodes" /> paramètre sur <b>False</b> diminue la performance parce que Microsoft Word recherche tous les nœuds dans un document le texte contenu dans le nœud.</para>
-          <para />
-        </remarks>
+        <remarks><para>La définition <paramref name="FastSearchSkippingTextNodes" /> du paramètre <b></b> sur false diminue les performances, car Microsoft Word recherche tous les nœuds d’un document en se basant sur le texte contenu dans le nœud.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetValidationError">
@@ -854,10 +808,9 @@
         <Parameter Name="ClearedAutomatically" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Status">Requis <see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" />. Indique s'il faut définit le texte d'erreur de statut de validation (<b>wdXMLValidationStatusCustom</b>) ou l'effacer (<b>wdXMLValidationStatusOK</b>).</param>
-        <param name="ErrorText">Facultatif <b>Object</b>. Le texte affiché pour l'utilisateur. Laissez vide lorsque le paramètre <b>Status</b> est défini sur <b>wdXMLValidationStatusOK</b>.</param>
-        <param name="ClearedAutomatically">
-          <b>Boolean</b> facultatif. <b>True :</b> efface automatiquement le message d'erreur dès que l'événement de validation suivant se produit sur le nœud spécifié. <b>False</b> nécessite l’exécution de la méthode <b>SetValidationError</b> avec un <paramref name="Status" /> paramètre de <b>wdXMLValidationStatusOK</b> pour effacer le texte d’erreur personnalisé.</param>
+        <param name="Status">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" />. Indique s'il faut définit le texte d'erreur de statut de validation (<b>wdXMLValidationStatusCustom</b>) ou l'effacer (<b>wdXMLValidationStatusOK</b>).</param>
+        <param name="ErrorText"><b>Objet</b>facultatif. Le texte affiché pour l'utilisateur. Laissez vide lorsque le <b></b> paramètre Status est défini sur <b>wdXMLValidationStatusOK</b>.</param>
+        <param name="ClearedAutomatically">Facultatif <b>Boolean</b>. <b>True :</b> efface automatiquement le message d'erreur dès que l'événement de validation suivant se produit sur le nœud spécifié. <b>False</b> nécessite l’exécution de la méthode <paramref name="Status" /> <b>SetValidationError</b> avec un paramètre de <b>wdXMLValidationStatusOK</b> pour effacer le texte d’erreur personnalisé.</param>
         <summary>Modifie le texte d’erreur de validation affiché pour un utilisateur pour un nœud spécifié et oblige Microsoft Word à signaler un nœud comme non valide.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -888,12 +841,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.SmartTag" /> object qui représente la balise active associée à un élément XML.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.SmartTag" /> Object qui représente la balise active associée à un élément XML.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Éléments XML peuvent avoir des actions de balise active sont attribuées via des composants externes qui implémentent l’interface <b>ISmartTag</b> . Pour plus d’informations sur les balises actives et comment créer des modules de reconnaissance et les gestionnaires d’action, consultez le Kit de développement balises actives sur le site Web Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Les éléments XML peuvent avoir des actions de balise active qui leur sont affectées par le biais de composants externes qui implémentent l’interface <b>ISmartTag</b> . Pour plus d’informations sur les balises actives et sur la création de modules de reconnaissance et de gestionnaires d’actions, reportez-vous au kit de développement logiciel de balise active sur le site Web MSDN (Microsoft Developer Network).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -948,12 +899,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Vérifie un élément XML ou l’intégralité du document par rapport au schéma XML ou les schémas attachés.</summary>
-        <remarks>
-          <para>Utilisez la méthode <b>Validate</b> avec la <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> et <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> propriétés pour déterminer si un élément XML est valide par rapport au schéma appliqué et quel texte d’erreur à afficher à l’utilisateur. Utiliser le <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> méthode pour remplacer les violations de schéma avec des erreurs de validation personnalisée.</para>
-          <para>Lorsque vous exécutez la méthode <b>Validate</b> , Microsoft Word renseigne la <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" /> collection avec les nœuds XML contenant des erreurs de validation.</para>
-          <para />
-        </remarks>
+        <summary>Vérifie un élément XML individuel ou le document entier par rapport au ou aux schémas XML attachés.</summary>
+        <remarks><para>Utilisez la <b></b> méthode Validate avec <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> les <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> propriétés et pour déterminer si un élément XML est valide par rapport au schéma appliqué et le texte d’erreur à afficher à l’utilisateur. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> méthode pour remplacer les violations de schéma par des erreurs de validation personnalisées.</para>
+          <para>Lorsque vous exécutez la <b></b> méthode Validate, Microsoft Word remplit la <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" /> collection avec les nœuds XML qui contiennent des erreurs de validation.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidationErrorText">
@@ -982,9 +931,8 @@
         <Parameter Name="Advanced" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Advanced">
-          <b>Boolean</b> facultatif. Indique que le texte d'erreur affiché est la version avancée de la description de l'erreur de validation, qui est issue du composant MSXML 5.0 inclus avec Microsoft Word.</param>
-        <summary>Renvoie une <b>chaîne</b> qui représente la description d’une erreur de validation sur un <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objet.</summary>
+        <param name="Advanced">Facultatif <b>Boolean</b>. Indique que le texte d'erreur affiché est la version avancée de la description de l'erreur de validation, qui est issue du composant MSXML 5.0 inclus avec Microsoft Word.</param>
+        <summary>Renvoie une <b>chaîne</b> qui représente la description d’une erreur de validation sur <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> un objet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1012,18 +960,16 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdXMLValidationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" /> constante représentant si un élément ou attribut est valide par rapport au schéma attaché.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" /> constante qui indique si un élément ou un attribut est valide ou non en fonction du schéma attaché.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <b>WdXMLValidationStatus</b> peut être l’une des constantes suivantes:</para>
           <para>
-            <b>WdXMLValidationStatus</b> peut être une des constantes suivantes :</para>
+            <b>wdXMLValidationStatusCustom</b> Indique que la <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> méthode a été utilisée pour <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> définir la propriété sur une chaîne de texte personnalisé. </para>
           <para>
-            <b>wdXMLValidationStatusCustom</b> indique que le <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> méthode a été utilisée pour définir <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> propriété à une chaîne de texte personnalisé.</para>
-          <para>
-            <b>wdXMLValidationStatusOK</b> indique un élément XML ou l’attribut est valide par rapport au schéma attaché.</para>
-          <para>Alors que ce sont les deux seules constantes nommées la propriété <b>ValidationStatus</b> accepte, il existe de nombreuses autres valeurs non nommées issues du composant MSXML 5.0 inclus dans Microsoft Word. Pour plus d’une liste complète des valeurs possibles et leur signification, reportez-vous à Microsoft Word XML Content Development Kit sur le site Web Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+            <b>wdXMLValidationStatusOK</b> Indique qu’un élément XML ou un attribut est valide par rapport au schéma attaché.</para>
+          <para>Si ces constantes sont les deux seules constantes nommées que la propriété <b>ValidationStatus</b> accepte, il existe plusieurs autres valeurs non nommées issues du composant MSXML 5.0 inclus dans Microsoft Word. Pour obtenir une liste complète des valeurs possibles et de leur signification correspondante, reportez-vous au kit de développement de contenu XML Microsoft Word sur le site Web Microsoft Developer Network (MSDN).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordOpenXML">
@@ -1049,14 +995,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> qui représente le code XML du nœud au format Word Open XML de Microsoft Office. En lecture seule.</summary>
-        <value>
-          <b>Chaîne</b>
-        </value>
-        <remarks>
-          <para>Cette propriété renvoie uniquement les données XML du document nécessaires pour représenter le nœud XML spécifié.</para>
-          <para />
-        </remarks>
+        <summary>Renvoie une <b>valeur de type String</b> qui représente le code XML pour le nœud au format Microsoft Office Word Open XML. En lecture seule.</summary>
+        <value><b>String</b></value>
+        <remarks><para>Cette propriété renvoie uniquement les données XML du document nécessaires pour représenter le nœud XML spécifié.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XML">
@@ -1085,8 +1027,7 @@
         <Parameter Name="DataOnly" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="DataOnly">
-          <b>Boolean</b> facultatif. <b>La valeur True</b> renvoie le texte du XML sans le balisage XML de Word. Le paramètre par défaut est <b>False</b>.</param>
+        <param name="DataOnly">Facultatif <b>Boolean</b>. <b>La valeur True</b> renvoie le texte du XML sans le balisage XML de Word. Le paramètre par défaut est <b>False</b>.</param>
         <summary>Renvoie une <b>chaîne</b> qui représente le texte XML dans l'objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

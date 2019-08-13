@@ -1,13 +1,5 @@
 <Type Name="Dialogs" FullName="Microsoft.Office.Interop.Word.Dialogs">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="986cdcdedcb42ae25c43efeb26136f36953d373a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667919" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dialogs : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3b14c3c5c67dbb8b2adeff5e68cecbefc52929ed" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147066" /></Metadata><TypeSignature Language="C#" Value="public interface Dialogs : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dialogs implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dialogs" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dialogs&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Dialog" /> dans Microsoft Word. Chaque objet <b>Dialog</b> représente une boîte de dialogue Word prédéfinie.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word._Application.Dialogs" /> propriété pour renvoyer la collection <b>Dialogs</b></para>
-      <para>Impossible de créer une nouvelle boîte de dialogue prédéfinie ou ajouter à la collection <b>Dialogs</b> . Utiliser <b>les boîtes de dialogue</b>(<paramref name="index" />), où <paramref name="index" /> est la <see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" /> constante qui identifie la boîte de dialogue, pour renvoyer un seul objet <b>Dialog</b> .</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Dialog" /> objets dans Microsoft Word. Chaque objet <b>Dialog</b> représente une boîte de dialogue Word prédéfinie.</summary>
+    <remarks><para>Utiliser la <see cref="P:Microsoft.Office.Interop.Word._Application.Dialogs" /> propriété pour renvoyer la <b></b> collection Dialogs</para>
+      <para>Vous ne peut pas créer une boîte de dialogue intégrée ou ajouté à la collection <b>Dialogs</b>. Utilisez <b>Dialogs</b>(<paramref name="index" />), où <paramref name="index" /> est la <see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" /> constante qui identifie la boîte de dialogue, pour renvoyer un seul objet <b>Dialog</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,11 +109,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Par exemple, si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Par exemple, si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -184,7 +172,7 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdWordDialog" />
       </Parameters>
       <Docs>
-        <param name="Index">Requis <see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" />. Constante qui spécifie la boîte de dialogue.</param>
+        <param name="Index">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" />. Constante qui spécifie la boîte de dialogue.</param>
         <summary>Renvoie une boîte de dialogue dans Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,13 +1,5 @@
 <Type Name="SmartTagType" FullName="Microsoft.Office.Interop.Word.SmartTagType">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="42dcabef8b7b97589d5327b23896d8ea6d46375a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668335" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="be0009d07ada538632f62700e62de5b182eb910c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143986" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagType" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagType" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Représente un type de balise active.</summary>
-    <remarks>
-      <para>Un type de balise active est un élément unique dans une liste de balises actives. Listes de balises actives peuvent contenir plusieurs types de balise active. Par exemple, la liste d’adresses balise active installée par défaut sur les systèmes anglais contient un type de balise active nom, un type de balise active rue et un type de balise active ville, nom de quelques.</para>
+    <remarks><para>Un type de balise active est un élément unique dans une liste de balises actives. Les listes de balises actives peuvent contenir plusieurs types de balises actives. Par exemple, la liste de balises actives Adresse installée sur les systèmes anglais contient par défaut un type de balise active Nom, Rue et Ville pour n'en citer que quelques-uns.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />, et <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objets liés dans la mesure où chaque élément reconnu par un composant de balise active est un objet <b>SmartTagType</b> . Par exemple, « city » dans le composant de balise active adresse est un objet <b>SmartTagType</b> spécifique. Le type de balise active ville a puis liés objets <b>SmartTagRecognizer</b> (la partie du composant de balise active qui reconnaît les balises actives du type « city » dans les documents) et des objets <b>SmartTagAction</b> (la partie du composant de balise active qui fournit le actions associées au type de balise active spécifique, qui peut inclure la recherche d’une ville reconnue dans Microsoft MapPoint ou MSN). En réalité, le module de reconnaissance est l’étiquetage, le Gestionnaire d’action fournit des fonctionnalités de l’utilisateur final et ce qui relie les deux est le type de balise active lequel ils travaillent.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> méthode pour renvoyer un type de balise active spécifique dans une collection de types de balises actives. Utiliser le <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> propriété pour renvoyer tous les modules de reconnaissance de balise active associées à un type de balise active spécifié et le <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> propriété permet de renvoyer toutes les actions de balise active associées à un type de balise active spécifié.</para>
-      <para />
-    </remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" /><see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />les objets, <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> et sont liés en ce que chaque élément reconnu par un composant de balise active est un objet <b>SmartTagType</b> . Par exemple, l'élément « ville » dans le composant de balise active Adresse est un objet <b>SmartTagType</b> spécifique. Le type de balise active « ville » contient ensuite des objets <b>SmartTagRecognizer</b> associés (la partie du composant de balise active qui reconnaît les balises actives du type « ville » dans les documents) et des objets <b>SmartTagAction</b> (la partie du composant de balise active qui fournit les actions associées au type de balise active spécifique, qui peut inclure la recherche d'une ville reconnue dans Microsoft MapPoint ou MSN). En d’autres termes, le module de reconnaissance effectue l’étiquetage, le gestionnaire d’actions fournit les fonctionnalités de l’utilisateur final et ce qui les lie est le type de balise active sur laquelle ils travaillent.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> méthode pour renvoyer un type de balise active spécifique dans une collection de types de balises actives. Utilisez ensuite la <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> propriété pour renvoyer tous les modules de reconnaissance de balise active associés à un type spécifié de balise <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> active, et utilisez la propriété pour renvoyer toutes les actions de balise active associées à un type spécifié de balise active.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,11 +85,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FriendlyName">
@@ -128,15 +116,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> qui représente un nom convivial pour un type de balise active.</summary>
+        <summary>Renvoie une <b>chaîne</b> qui représente le nom convivial d’un type de balise active.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Actives des noms de types de balise, telle que définie dans le <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> propriété, sont mis en forme en tant que ressource URN (Uniform Names). Le nom convivial supprime l’URN et conserve le nom après le signe dièse (#). Par exemple, le type de balise active Adresse renvoie l’URN suivant pour la <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> propriété.</para>
-          <para>urn : schemas-microsoft-com:office:smarttags #address</para>
-          <para>La propriété <b>FriendlyName</b> supprime tout jusqu’au, y compris le signe dièse (#) et laisse la <b>chaîne</b>suivante :</para>
-          <para>adresse</para>
-          <para />
-        </remarks>
+        <remarks><para>Les noms de types de balises actives, <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> tels que définis dans la propriété, sont mis en forme en tant que urn (Uniform Resource Names). Le nom convivial supprime l’URN et laisse le nom après le signe dièse (#). Par exemple, le type de balise active adresse renvoie l’URN suivant <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> pour la propriété.</para>
+          <para>urn: schemas-microsoft-com: Office: SmartTags # Address</para>
+          <para>La propriété <b>FriendlyName</b> supprime tout, y compris le signe dièse (#), et laisse la <b>chaîne</b>suivante:</para>
+          <para>address</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -227,7 +213,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> collection qui représente la collection d’actions disponibles pour une balise active.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> collection qui représente la collection d’actions disponibles pour une balise active.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,7 +244,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagRecognizers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> collection pour une application.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> collection pour une application.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

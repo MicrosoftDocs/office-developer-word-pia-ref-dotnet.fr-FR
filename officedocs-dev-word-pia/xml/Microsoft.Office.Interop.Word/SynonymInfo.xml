@@ -1,13 +1,5 @@
 <Type Name="SynonymInfo" FullName="Microsoft.Office.Interop.Word.SynonymInfo">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2912f319ea857dd7183dd4989af962bcd735c1a1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668251" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SynonymInfo" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ada3374fbdbeb68d182821597276e5a9f0ea1732" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146065" /></Metadata><TypeSignature Language="C#" Value="public interface SynonymInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SynonymInfo" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SynonymInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface SynonymInfo" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Représente les informations concernant les synonymes, les antonymes ou encore les mots ou expressions apparentés pour la plage spécifiée ou d'une chaîne donnée.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>SynonymInfo</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Range" /> ou <see cref="T:Microsoft.Office.Interop.Word.Application" /> object pour renvoyer un objet <b>SynonymInfo</b> . L’objet <b>SynonymInfo</b> peut être obtenue à partir d’une plage ou à partir de Microsoft Word. Si elle est renvoyé à partir de Word, vous spécifiez la rechercher un mot ou phrase et identificateur de langue de vérification. Si elle est renvoyé à partir d’une plage, Word utilise la plage spécifiée comme la liste de choix.</para>
-      <para>La plupart des propriétés de l’objet <b>SynonymInfo</b> renvoient un <b>objet</b> qui contient un tableau de chaînes. Lorsque vous travaillez avec ces propriétés, vous pouvez affecter le tableau renvoyé à une variable et puis index afin d’afficher les éléments du tableau.</para>
-      <para>Vous pouvez vérifier la valeur de la <see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" /> propriété afin d’éviter des erreurs dans votre code.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilisez la propriété <b>SynonymInfo</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet <see cref="T:Microsoft.Office.Interop.Word.Application" /> ou pour renvoyer un objet <b>SynonymInfo</b> . L’objet <b>SynonymInfo</b> peut être renvoyé à partir d’une plage ou de Microsoft Word. Si elle est renvoyée à partir de Word, vous spécifiez le mot ou l’expression à rechercher et un ID de langue de vérification. Si elle est renvoyée à partir d’une plage, Word utilise la plage spécifiée comme mot à rechercher.</para>
+      <para>La plupart des propriétés de l’objet <b>SynonymInfo</b> renvoient un <b>objet</b> contenant un tableau de chaînes. Lorsque vous travaillez avec ces propriétés, vous pouvez affecter le tableau renvoyé à une variable et indexez ensuite afin d'afficher les éléments du tableau.</para>
+      <para>Vous pouvez vérifier la valeur de la <see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" /> propriété afin d’éviter les erreurs potentielles dans votre code.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AntonymList">
@@ -58,12 +48,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une liste des antonymes correspondant au mot ou une phrase. La liste est renvoyée sous forme de tableau de chaînes.</summary>
+        <summary>Renvoie une liste des antonymes correspondant au mot ou une phrase. La liste renvoyée se présente sous la forme d'un tableau de chaînes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>AntonymList appartient</b> est une propriété de la <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" /> object, qui peut être renvoyé à partir d’une plage ou de l’application. Si cet objet est renvoyé à partir de l’application, vous spécifiez le mot à rechercher et la langue à utiliser. Lorsque l’objet est renvoyé à partir d’une plage, la plage est recherchée à l’aide de la langue de la plage.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>AntonymList,</b> est une propriété de l' <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" /> objet, qui peut être renvoyée à partir d’une plage ou de l’application. Dans le premier cas, vous spécifiez le mot à rechercher ainsi que la langue à utiliser. Dans le second cas, la recherche qui porte sur la plage s'effectue automatiquement dans la langue de la plage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -89,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,11 +107,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Found">
@@ -149,8 +135,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si le dictionnaire des synonymes trouve des synonymes, antonymes, des mots ou des expressions apparentés correspondant mot ou phrase.</summary>
+        <summary><b>True</b> si le dictionnaire des synonymes trouve des synonymes, antonymes, des mots ou des expressions apparentés correspondant mot ou phrase.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,11 +165,9 @@
       <Docs>
         <summary>Renvoie le nombre d'entrées dans la liste des significations trouvées dans le dictionnaire des synonymes pour le mot ou expression. Renvoie la valeur 0 (zéro) si aucune signification n'a été trouvée.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Chaque signification représente une liste unique de synonymes correspondant au mot ou une phrase.</para>
-          <para>Les listes de mots apparentés, d’expressions apparentées et d’antonymes ne sont pas considérées comme des entrées de la liste des significations.</para>
-          <para />
-        </remarks>
+        <remarks><para>Chaque signification représente une liste unique de synonymes correspondant au mot ou à l'expression.</para>
+          <para>Les listes de mots apparentés, d'expressions apparentées et d'antonymes ne sont pas considérées comme des entrées de la liste des significations.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MeaningList">
@@ -210,12 +193,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la liste des significations correspondant au mot ou une phrase. La liste est renvoyée sous forme de tableau de chaînes.</summary>
+        <summary>Renvoie la liste des significations correspondant au mot ou une phrase. La liste renvoyée se présente sous la forme d’un tableau de chaînes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les listes de mots apparentés, d’expressions apparentées et d’antonymes ne sont pas considérées comme des entrées de la liste des significations.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les listes de mots apparentés, d'expressions apparentées et d'antonymes ne sont pas considérées comme des entrées de la liste des significations.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -271,10 +252,8 @@
       <Docs>
         <summary>Renvoie une liste des catégories grammaticales correspondant aux significations trouvées pour le mot ou l'expression recherchés dans le dictionnaire des synonymes. La liste est retournée en tant que tableau d'entiers.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La liste des catégories grammaticales est renvoyée dans un tableau constitué des éléments suivants <see cref="T:Microsoft.Office.Interop.Word.WdPartOfSpeech" /> constantes : <b>wdAdjective</b>, <b>wdAdverb</b>, <b>wdConjunction</b>, <b>wdIdiom</b>, <b>wdInterjection</b>, <b>wdNoun</b>, <b>wdOther</b>, <b>wdPreposition</b>, <b>wdPronoun</b>et <b>wdVerb</b>. Les éléments du tableau sont triées pour correspondre aux éléments renvoyés par la <see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>La liste des parties grammaticales est renvoyée sous la forme d’un tableau constitué <see cref="T:Microsoft.Office.Interop.Word.WdPartOfSpeech" /> des constantes suivantes: <b>wdAdjective</b>, <b>wdAdverb</b>, <b>wdConjunction</b>, <b>wdIdiom</b>, <b>wdInterjection</b>, <b>wdNoun</b>, <b>wdOther</b>, <b>wdPreposition</b>, <b>wdPronoun</b>et <b>wdVerb</b>. Les éléments du tableau sont triés pour correspondre aux éléments renvoyés <see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" /> par la propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelatedExpressionList">
@@ -302,10 +281,8 @@
       <Docs>
         <summary>Renvoie une liste d'expressions apparentées à la phrase ou le mot spécifié. La liste est renvoyée sous forme de tableau de chaînes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>En règle générale, il existe très peu d’expressions apparentées dans le dictionnaire des synonymes.</para>
-          <para />
-        </remarks>
+        <remarks><para>En règle générale, il existe très peu d'expressions apparentées dans le dictionnaire des synonymes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelatedWordList">
@@ -331,7 +308,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une liste de mots apparentés pour la phrase ou le mot spécifié. La liste est renvoyée sous forme de tableau de chaînes.</summary>
+        <summary>Renvoie une liste de mots apparentés pour la phrase ou le mot spécifié. La liste est renvoyée sous la forme d’un tableau contenant des chaînes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -362,8 +339,7 @@
         <Parameter Name="Meaning" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Meaning">
-          <b>Objet</b>obligatoire. La signification comme une chaîne ou un numéro d’index dans le tableau des significations possibles.</param>
+        <param name="Meaning"><b>Objet</b>required. Signification sous forme de chaîne ou de numéro d’index dans le tableau des significations possibles.</param>
         <summary>Renvoie une liste de synonymes pour un sens spécifié d'un mot ou une phrase. La liste est renvoyée sous forme de tableau de chaînes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -392,12 +368,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’ou les mots qui a été recherchée par le dictionnaire des synonymes.</summary>
+        <summary>Renvoie la phrase ou le mot recherché par le dictionnaire des synonymes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le dictionnaire des synonymes recherche parfois une version tronquée de la chaîne ou de la plage utilisée pour renvoyer le <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" /> objet. La propriété <b>Word</b> vous permet de voir la chaîne exacte qui a été utilisée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le dictionnaire des synonymes recherche parfois une version raccourcie de la chaîne ou de la plage utilisée <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" /> pour renvoyer l’objet. La propriété <b>Word</b> vous permet de voir la chaîne exacte qui a été utilisée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

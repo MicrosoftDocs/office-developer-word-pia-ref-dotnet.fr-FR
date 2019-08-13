@@ -1,13 +1,5 @@
 <Type Name="Endnotes" FullName="Microsoft.Office.Interop.Word.Endnotes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="106a420cd9bef3a857395aa622ff27a222b3fb61" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20668935" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Endnotes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a74d0528b197f8c97921c1994c703d6aec5f9941" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146884" /></Metadata><TypeSignature Language="C#" Value="public interface Endnotes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Endnotes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Endnotes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Endnotes&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Une collection de <see cref="T:Microsoft.Office.Interop.Word.Endnote" /> objets qui représente toutes les notes de fin contenues dans une sélection, une plage ou un document.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>notes de fin</b> de la <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> objets pour renvoyer la collection <b>Endnotes</b> .</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> pour ajouter une note de fin à la collection <b>Endnotes</b> .</para>
-      <para>Utiliser <b>notes de fin</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet de la <b>note de fin</b> . Le numéro d’index représente la position de la note de fin dans une sélection, une plage ou un document.</para>
-      <para />
-    </remarks>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Endnote" /> objets qui représente toutes les notes de fin contenues dans une sélection, une plage ou un document.</summary>
+    <remarks><para>Utilisez la propriété <b>Endnotes</b> des objets <see cref="T:Microsoft.Office.Interop.Word.Selection" /> <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> pour renvoyer la collection <b>Endnotes</b> .</para>
+      <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> méthode pour ajouter une note de fin à la collection <b>Endnotes</b> .</para>
+      <para>Utilisez <b>des notes</b>de<paramref name="index" />fin () <paramref name="index" /> , où est le numéro d’index, pour renvoyer un seul objet <b>EndNote</b> . Le numéro d'index représente la position de la note de fin dans une sélection, une plage ou un document.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,15 +52,13 @@
         <Parameter Name="Text" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Objet <b>Range</b> obligatoire. La plage marquée pour la note de fin. Il peut s'agir d'une plage réduite (point d'insertion).</param>
-        <param name="Reference">Facultatif <b>Object</b>. Texte d'une marque de référence personnalisée. Si vous ne spécifiez pas cet argument, Microsoft Word insère une référence numérotée automatiquement.</param>
-        <param name="Text">Facultatif <b>Object</b>. Le texte de la note de fin.</param>
+        <param name="Range">Objet <b>Range</b> obligatoire. Plage marquée pour la note de fin. Il peut s'agir d'une plage réduite (point d'insertion).</param>
+        <param name="Reference"><b>Objet</b>facultatif. Texte d'une marque de référence personnalisée. Si vous ne spécifiez pas cet argument, Microsoft Word insère une référence numérotée automatiquement.</param>
+        <param name="Text"><b>Objet</b>facultatif. Texte de la note de fin.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Endnote" /> objet qui représente une note de fin ajoutée à une plage.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Pour spécifier un symbole pour le <paramref name="Reference" /> argument, utilisez la syntaxe {<paramref name="FontName CharNum" />}. <paramref name="FontName" /> est le nom de la police qui contient le symbole. Noms des polices décoratives s’affichent dans la zone Police de la boîte de dialogue symbole (menu Insertion). <paramref name="CharNum" /> est la somme de 31 et le numéro correspondant à la position du symbole que vous voulez insérer, en partant de gauche à droite dans la table des symboles. Par exemple, pour spécifier le symbole oméga (ω) occupe la position 56 dans la table de symboles de la police Symbol, l’argument serait « {Symbol 87} ».</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour spécifier un symbole pour l' <paramref name="Reference" /> argument, utilisez la syntaxe {<paramref name="FontName CharNum" />}. <paramref name="FontName" />est le nom de la police qui contient le symbole. Le nom des polices décoratives s’affiche dans la zone Police de la boîte de dialogue Caractères spéciaux (menu Insertion). <paramref name="CharNum" />est la somme de 31 et du nombre correspondant à la position du symbole que vous souhaitez insérer, en comptant de gauche à droite dans la table des symboles. Par exemple, pour spécifier un symbole oméga (ω) à la position 56 dans la table des symboles de la police Symbol, l’argument doit être «{Symbol 87}».</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Application" /> object qui représente l’application Microsoft Word.</summary>
+        <summary>Renvoie un <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Application" /> Object qui représente l’application Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,7 +112,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente la continuation de note de bas de page ou de note de fin.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente l’indicateur de continuation de note de bas de page ou de note de fin.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente le séparateur de continuation de note de fin ou de bas de page.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente le séparateur de continuation de note de bas de page ou de note de fin.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,11 +223,9 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
-          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+          <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -300,7 +286,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entier</b> indiquant la position ordinale de l’objet spécifique.</param>
+        <param name="Index"><b>Entier</b> indiquant la position ordinale de l’objet individuel.</param>
         <summary>Renvoie un objet spécifique appartenant à une collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -449,10 +435,8 @@
       <Parameters />
       <Docs>
         <summary>Rétablit l'indicateur de continuation de note de fin par défaut.</summary>
-        <remarks>
-          <para>L’indicateur par défaut est vide, ce qui représente un avis sans texte.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’avis par défaut est vide, ce qui représente une notification sans texte.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetContinuationSeparator">
@@ -477,10 +461,8 @@
       <Parameters />
       <Docs>
         <summary>Rétablit le séparateur de continuation de note de fin par défaut.</summary>
-        <remarks>
-          <para>Le séparateur par défaut est une longue ligne horizontale qui sépare le texte du document à partir de la suite des notes de la page précédente.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le séparateur par défaut est représenté par une longue ligne horizontale qui sépare le texte du document de la suite des notes de la page précédente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetSeparator">
@@ -505,10 +487,8 @@
       <Parameters />
       <Docs>
         <summary>Rétablit le séparateur de note de fin par défaut.</summary>
-        <remarks>
-          <para>Le séparateur par défaut est une ligne horizontale courte qui sépare les notes du texte du document.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le séparateur par défaut est représenté par une ligne horizontale courte qui sépare les notes du texte du document.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Separator">
@@ -534,7 +514,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object qui représente le séparateur de note de fin ou de bas de page.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente le séparateur de note de fin ou de note de bas de page.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -565,7 +545,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit le numéro de la première note.</summary>
+        <summary>Cette propriété renvoie ou définit le numéro de la note de départ.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -592,10 +572,8 @@
       <Parameters />
       <Docs>
         <summary>Convertit toutes les notes de fin d'un document en notes de bas de page et inversement.</summary>
-        <remarks>
-          <para>Pour convertir une plage de notes de fin en notes de fin, utilisez la <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Convert" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour convertir une plage de notes de fin en notes de bas de <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Convert" /> page, utilisez la méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
