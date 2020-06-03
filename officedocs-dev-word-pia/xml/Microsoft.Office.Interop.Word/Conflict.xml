@@ -1,9 +1,10 @@
 <Type Name="Conflict" FullName="Microsoft.Office.Interop.Word.Conflict">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="21e74154c2475877e56ac3b4b4b6917cedd06347" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147206" /></Metadata><TypeSignature Language="C#" Value="public interface Conflict" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8fcb574f4804f8afbf21ecfb81c2808bd2bdf2b0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922324" /></Metadata><TypeSignature Language="C#" Value="public interface Conflict" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflict" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Conflict" />
   <TypeSignature Language="VB.NET" Value="Public Interface Conflict" />
   <TypeSignature Language="C++ CLI" Value="public interface class Conflict" />
+  <TypeSignature Language="F#" Value="type Conflict = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,10 +19,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="bffcf-101">Représente une modification conflictuelle dans un document co-créé.</span><span class="sxs-lookup"><span data-stu-id="bffcf-101">Represents a conflicting edit in a co-authored document.</span></span> <span data-ttu-id="bffcf-102">Le type d’un <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet est spécifié par l' <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> énumération.</span><span class="sxs-lookup"><span data-stu-id="bffcf-102">The type of a <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object is specified by the <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> enumeration.</span></span></summary>
-    <remarks><para><span data-ttu-id="bffcf-103">Normalement, lorsqu’un document prenant en charge la co-création est modifié simultanément, un seul co-auteur peut modifier une plage particulière à un moment donné.</span><span class="sxs-lookup"><span data-stu-id="bffcf-103">Normally, when a document with co-authoring enabled is simultaneously edited, only one co-author can edit a particular range at one time.</span></span> <span data-ttu-id="bffcf-104">Microsoft Word 2010 place automatiquement un verrou sur la plage le moment où le co-auteur commence à modifier les modifications de sorte que les autres co-auteurs ne puissent pas modifier la même plage en même temps.</span><span class="sxs-lookup"><span data-stu-id="bffcf-104">Microsoft Word 2010 automatically places a lock on the range the moment the co-author begins editing so that other co-authors cannot edit the same range at the same time.</span></span></para>
-      <para><span data-ttu-id="bffcf-105">Un conflit peut se produire lorsqu’une plage particulière d’un document avec la co-création activée est simultanément modifiée avant qu’un seul co-auteur n’obtienne un verrou exclusif sur la plage.</span><span class="sxs-lookup"><span data-stu-id="bffcf-105">A conflict can occur when a particular range in a document with co-authoring enabled is simultaneously edited before any single co-author obtains an exclusive lock on the range.</span></span> <span data-ttu-id="bffcf-106">Dans une situation de conflit, il s’affiche pour chaque co-auteur qu’il a un verrou exclusif sur la plage, mais son verrou n’est pas communiqué aux autres co-auteurs.</span><span class="sxs-lookup"><span data-stu-id="bffcf-106">In a conflict situation, it appears to each co-author that they have an exclusive lock on the range, but their lock is not communicated to the other co-authors.</span></span> <span data-ttu-id="bffcf-107">Le co-auteur qui effectue l’enregistrement sur le serveur ne verra pas le conflit, car sa version du document devient la version établie.</span><span class="sxs-lookup"><span data-stu-id="bffcf-107">The co-author that saves to the server first will not see the conflict because their version of the document becomes the established version.</span></span> <span data-ttu-id="bffcf-108">Les co-auteurs qui tentent d’enregistrer après le premier co-auteur ont enregistré un conflit.</span><span class="sxs-lookup"><span data-stu-id="bffcf-108">The co-authors that attempt to save after the first co-author has saved encounter a conflict.</span></span> <span data-ttu-id="bffcf-109">Le conflit se trouve entre les différentes versions de la même plage.</span><span class="sxs-lookup"><span data-stu-id="bffcf-109">The conflict is between the differing versions of the same range.</span></span></para>
-      <para><span data-ttu-id="bffcf-110">Par exemple, si un co-auteur modifie la phrase «The Quick Brown Fox» pour lire «Fast Red Fox», et qu’un autre co-auteur modifie simultanément la phrase pour lire, «The Speedy White Fox» et les deux modifications ont lieu avant que le co-auteur obtienne un verrou exclusif sur le paragraphe, un conflit se produit.</span><span class="sxs-lookup"><span data-stu-id="bffcf-110">For example, if one co-author edits the sentence, "The quick brown fox" to read "The fast red fox", and another co-author simultaneously edits the sentence to read, "The speedy white fox" and both edits occur before either co-author obtains an exclusive lock on the paragraph, a conflict occurs.</span></span> <span data-ttu-id="bffcf-111">Dans ce cas, le «rouge rapide» et le «blanc rapide» ne peuvent pas être rapprochés par Word 2010.</span><span class="sxs-lookup"><span data-stu-id="bffcf-111">In this case, "fast red" and "speedy white" cannot be reconciled by Word 2010.</span></span> <span data-ttu-id="bffcf-112">Le premier co-auteur qui enregistre sa version du document sur le serveur ne rencontre pas de conflit.</span><span class="sxs-lookup"><span data-stu-id="bffcf-112">The first co-author to save their version of the document to the server does not encounter a conflict.</span></span> <span data-ttu-id="bffcf-113">Lorsque le co-auteur suivant essaie d’enregistrer sa version du document sur le serveur, un conflit se produit et le co-auteur doit résoudre le conflit en acceptant ou en rejetant les modifications.</span><span class="sxs-lookup"><span data-stu-id="bffcf-113">When the next co-author attempts to save their version of the document to the server, a conflict occurs and the co-author must choose to resolve the conflict by either accepting or rejecting the changes.</span></span></para>
+    <summary><span data-ttu-id="46806-101">Représente une modification conflictuelle dans un document co-créé.</span><span class="sxs-lookup"><span data-stu-id="46806-101">Represents a conflicting edit in a co-authored document.</span></span> <span data-ttu-id="46806-102">Le type d’un <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet est spécifié par l' <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> énumération.</span><span class="sxs-lookup"><span data-stu-id="46806-102">The type of a <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object is specified by the <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> enumeration.</span></span></summary>
+    <remarks><para><span data-ttu-id="46806-103">Normalement, lorsqu’un document prenant en charge la co-création est modifié simultanément, un seul co-auteur peut modifier une plage particulière à un moment donné.</span><span class="sxs-lookup"><span data-stu-id="46806-103">Normally, when a document with co-authoring enabled is simultaneously edited, only one co-author can edit a particular range at one time.</span></span> <span data-ttu-id="46806-104">Microsoft Word 2010 place automatiquement un verrou sur la plage le moment où le co-auteur commence à modifier les modifications de sorte que les autres co-auteurs ne puissent pas modifier la même plage en même temps.</span><span class="sxs-lookup"><span data-stu-id="46806-104">Microsoft Word 2010 automatically places a lock on the range the moment the co-author begins editing so that other co-authors cannot edit the same range at the same time.</span></span></para>
+      <para><span data-ttu-id="46806-105">Un conflit peut se produire lorsqu’une plage particulière d’un document avec la co-création activée est simultanément modifiée avant qu’un seul co-auteur n’obtienne un verrou exclusif sur la plage.</span><span class="sxs-lookup"><span data-stu-id="46806-105">A conflict can occur when a particular range in a document with co-authoring enabled is simultaneously edited before any single co-author obtains an exclusive lock on the range.</span></span> <span data-ttu-id="46806-106">Dans une situation de conflit, il s’affiche pour chaque co-auteur qu’il a un verrou exclusif sur la plage, mais son verrou n’est pas communiqué aux autres co-auteurs.</span><span class="sxs-lookup"><span data-stu-id="46806-106">In a conflict situation, it appears to each co-author that they have an exclusive lock on the range, but their lock is not communicated to the other co-authors.</span></span> <span data-ttu-id="46806-107">Le co-auteur qui effectue l’enregistrement sur le serveur ne verra pas le conflit, car sa version du document devient la version établie.</span><span class="sxs-lookup"><span data-stu-id="46806-107">The co-author that saves to the server first will not see the conflict because their version of the document becomes the established version.</span></span> <span data-ttu-id="46806-108">Les co-auteurs qui tentent d’enregistrer après le premier co-auteur ont enregistré un conflit.</span><span class="sxs-lookup"><span data-stu-id="46806-108">The co-authors that attempt to save after the first co-author has saved encounter a conflict.</span></span> <span data-ttu-id="46806-109">Le conflit se trouve entre les différentes versions de la même plage.</span><span class="sxs-lookup"><span data-stu-id="46806-109">The conflict is between the differing versions of the same range.</span></span></para>
+      <para><span data-ttu-id="46806-110">Par exemple, si un co-auteur modifie la phrase « The Quick Brown Fox » pour lire « Fast Red Fox » et qu’un autre co-auteur modifie simultanément la phrase pour lire, « The Speedy White Fox » et les deux modifications ont lieu avant que le co-auteur obtienne un verrou exclusif sur le paragraphe, un conflit se produit.</span><span class="sxs-lookup"><span data-stu-id="46806-110">For example, if one co-author edits the sentence, "The quick brown fox" to read "The fast red fox", and another co-author simultaneously edits the sentence to read, "The speedy white fox" and both edits occur before either co-author obtains an exclusive lock on the paragraph, a conflict occurs.</span></span> <span data-ttu-id="46806-111">Dans ce cas, le « rouge rapide » et le « blanc rapide » ne peuvent pas être rapprochés par Word 2010.</span><span class="sxs-lookup"><span data-stu-id="46806-111">In this case, "fast red" and "speedy white" cannot be reconciled by Word 2010.</span></span> <span data-ttu-id="46806-112">Le premier co-auteur qui enregistre sa version du document sur le serveur ne rencontre pas de conflit.</span><span class="sxs-lookup"><span data-stu-id="46806-112">The first co-author to save their version of the document to the server does not encounter a conflict.</span></span> <span data-ttu-id="46806-113">Lorsque le co-auteur suivant essaie d’enregistrer sa version du document sur le serveur, un conflit se produit et le co-auteur doit résoudre le conflit en acceptant ou en rejetant les modifications.</span><span class="sxs-lookup"><span data-stu-id="46806-113">When the next co-author attempts to save their version of the document to the server, a conflict occurs and the co-author must choose to resolve the conflict by either accepting or rejecting the changes.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflict.Accept" />
       <MemberSignature Language="VB.NET" Value="Public Sub Accept ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Accept();" />
+      <MemberSignature Language="F#" Value="abstract member Accept : unit -&gt; unit" Usage="conflict.Accept " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,8 +48,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="bffcf-114">Accepte la modification conflictuelle spécifiée par l’utilisateur, supprime le conflit et fusionne la modification dans la copie serveur du document.</span><span class="sxs-lookup"><span data-stu-id="bffcf-114">Accepts the user specified conflict change, removes the conflict, and merges the change into the server copy of the document.</span></span></summary>
-        <remarks><para><span data-ttu-id="bffcf-115">Cette méthode accepte la version utilisateur d’une modification de conflit et rejette la version serveur de la modification du conflit.</span><span class="sxs-lookup"><span data-stu-id="bffcf-115">This method accepts the user version of a conflict change and rejects the server version of the conflict change.</span></span></para>
+        <summary><span data-ttu-id="46806-114">Accepte la modification conflictuelle spécifiée par l’utilisateur, supprime le conflit et fusionne la modification dans la copie serveur du document.</span><span class="sxs-lookup"><span data-stu-id="46806-114">Accepts the user specified conflict change, removes the conflict, and merges the change into the server copy of the document.</span></span></summary>
+        <remarks><para><span data-ttu-id="46806-115">Cette méthode accepte la version utilisateur d’une modification de conflit et rejette la version serveur de la modification du conflit.</span><span class="sxs-lookup"><span data-stu-id="46806-115">This method accepts the user version of a conflict change and rejects the server version of the conflict change.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Conflict.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -74,9 +77,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bffcf-116">Obtient un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objet qui représente l’application Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="bffcf-116">Gets an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
-        <value><span data-ttu-id="bffcf-117"><see cref="T:Microsoft.Office.Interop.Word.Application" /> Objet qui représente l’application Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="bffcf-117">An <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></value>
-        <remarks><para><span data-ttu-id="bffcf-118">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="bffcf-118">Read-only.</span></span></para>
+        <summary><span data-ttu-id="46806-116">Obtient un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objet qui représente l’application Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="46806-116">Gets an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <value><span data-ttu-id="46806-117"><see cref="T:Microsoft.Office.Interop.Word.Application" />Objet qui représente l’application Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="46806-117">An <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></value>
+        <remarks><para><span data-ttu-id="46806-118">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="46806-118">Read-only.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Conflict.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -103,11 +107,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bffcf-119">Obtient un nombre entier de 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</span><span class="sxs-lookup"><span data-stu-id="bffcf-119">Gets a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
-        <value><span data-ttu-id="bffcf-120">Entier 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</span><span class="sxs-lookup"><span data-stu-id="bffcf-120">A 32-bit integer that indicates the application in which the specified object was created.</span></span></value>
-        <remarks><para><span data-ttu-id="bffcf-121">Type de données <b>long</b>en lecture seule.</span><span class="sxs-lookup"><span data-stu-id="bffcf-121">Read-only <b>long</b>.</span></span> <span data-ttu-id="bffcf-122">Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».</span><span class="sxs-lookup"><span data-stu-id="bffcf-122">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD".</span></span> <span data-ttu-id="bffcf-123">Cette propriété est principalement conçue pour être utilisée sur Apple Macintosh, où chaque application possède un code de créateur à quatre chiffres.</span><span class="sxs-lookup"><span data-stu-id="bffcf-123">This property was primarily designed to be used on the Apple Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="bffcf-124">Par exemple, Word possède le code de créateur MSWD.</span><span class="sxs-lookup"><span data-stu-id="bffcf-124">For example, Word has the creator code MSWD.</span></span></para>
-          <para><span data-ttu-id="bffcf-125">
-            <b>Attention</b>: cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="bffcf-125">
+        <summary><span data-ttu-id="46806-119">Obtient un nombre entier de 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</span><span class="sxs-lookup"><span data-stu-id="46806-119">Gets a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <value><span data-ttu-id="46806-120">Entier 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé.</span><span class="sxs-lookup"><span data-stu-id="46806-120">A 32-bit integer that indicates the application in which the specified object was created.</span></span></value>
+        <remarks><para><span data-ttu-id="46806-121">Type de données <b>long</b>en lecture seule.</span><span class="sxs-lookup"><span data-stu-id="46806-121">Read-only <b>long</b>.</span></span> <span data-ttu-id="46806-122">Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».</span><span class="sxs-lookup"><span data-stu-id="46806-122">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD".</span></span> <span data-ttu-id="46806-123">Cette propriété est principalement conçue pour être utilisée sur Apple Macintosh, où chaque application possède un code de créateur à quatre chiffres.</span><span class="sxs-lookup"><span data-stu-id="46806-123">This property was primarily designed to be used on the Apple Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="46806-124">Par exemple, Word possède le code de créateur MSWD.</span><span class="sxs-lookup"><span data-stu-id="46806-124">For example, Word has the creator code MSWD.</span></span></para>
+          <para><span data-ttu-id="46806-125">
+            <b>Attention</b>: cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="46806-125">
             <b>Caution</b>: This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Conflict.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -135,8 +140,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bffcf-126">Renvoie une valeur qui représente la position d’un élément dans une collection.</span><span class="sxs-lookup"><span data-stu-id="bffcf-126">Returns a value that represents the position of an item in a collection.</span></span></summary>
-        <value><span data-ttu-id="bffcf-127">Renvoie <see cref="T:System.Int32" />.</span><span class="sxs-lookup"><span data-stu-id="bffcf-127">Returns <see cref="T:System.Int32" />.</span></span></value>
+        <summary><span data-ttu-id="46806-126">Renvoie une valeur qui représente la position d’un élément dans une collection.</span><span class="sxs-lookup"><span data-stu-id="46806-126">Returns a value that represents the position of an item in a collection.</span></span></summary>
+        <value><span data-ttu-id="46806-127">Renvoie <see cref="T:System.Int32" /> .</span><span class="sxs-lookup"><span data-stu-id="46806-127">Returns <see cref="T:System.Int32" />.</span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Conflict.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -163,8 +169,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bffcf-128">Obtient un <see cref="T:System.Object" /> objet qui représente l’objet parent de l' <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="bffcf-128">Gets an <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object.</span></span></summary>
-        <value><span data-ttu-id="bffcf-129"><see cref="T:System.Object" /> Qui représente l’objet parent de l’objet spécifié <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> .</span><span class="sxs-lookup"><span data-stu-id="bffcf-129">An <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object.</span></span></value>
+        <summary><span data-ttu-id="46806-128">Obtient un <see cref="T:System.Object" /> objet qui représente l’objet parent de l' <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="46806-128">Gets an <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object.</span></span></summary>
+        <value><span data-ttu-id="46806-129"><see cref="T:System.Object" />Qui représente l’objet parent de l’objet spécifié <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> .</span><span class="sxs-lookup"><span data-stu-id="46806-129">An <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object.</span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Conflict.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -191,9 +198,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bffcf-130">Obtient un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="bffcf-130">Gets a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that is contained in the specified object.</span></span></summary>
-        <value><span data-ttu-id="bffcf-131"><see cref="T:Microsoft.Office.Interop.Word.Range" /> Objet qui représente la partie d’un document contenue dans l’objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="bffcf-131">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that is contained in the specified object.</span></span></value>
-        <remarks><para><span data-ttu-id="bffcf-132">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="bffcf-132">Read-only.</span></span></para>
+        <summary><span data-ttu-id="46806-130">Obtient un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet qui représente la partie d’un document contenue dans l’objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="46806-130">Gets a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that is contained in the specified object.</span></span></summary>
+        <value><span data-ttu-id="46806-131"><see cref="T:Microsoft.Office.Interop.Word.Range" />Objet qui représente la partie d’un document contenue dans l’objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="46806-131">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that is contained in the specified object.</span></span></value>
+        <remarks><para><span data-ttu-id="46806-132">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="46806-132">Read-only.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflict.Reject" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reject ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reject();" />
+      <MemberSignature Language="F#" Value="abstract member Reject : unit -&gt; unit" Usage="conflict.Reject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -218,8 +226,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="bffcf-133">Rejette la modification de l'utilisateur, supprime le conflit et accepte la copie serveur de la modification conflictuelle.</span><span class="sxs-lookup"><span data-stu-id="bffcf-133">Rejects the user change, removes the conflict, and accepts the server copy of the change for the conflict.</span></span></summary>
-        <remarks><para><span data-ttu-id="bffcf-134">Cette méthode rejette la version utilisateur d’un conflit et accepte la version se trouvant actuellement sur le serveur.</span><span class="sxs-lookup"><span data-stu-id="bffcf-134">This method rejects the user version of a conflict and accepts the version that is currently on the server.</span></span></para>
+        <summary><span data-ttu-id="46806-133">Rejette la modification de l'utilisateur, supprime le conflit et accepte la copie serveur de la modification conflictuelle.</span><span class="sxs-lookup"><span data-stu-id="46806-133">Rejects the user change, removes the conflict, and accepts the server copy of the change for the conflict.</span></span></summary>
+        <remarks><para><span data-ttu-id="46806-134">Cette méthode rejette la version utilisateur d’un conflit et accepte la version se trouvant actuellement sur le serveur.</span><span class="sxs-lookup"><span data-stu-id="46806-134">This method rejects the user version of a conflict and accepts the version that is currently on the server.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -229,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdRevisionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRevisionType Type { Microsoft::Office::Interop::Word::WdRevisionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdRevisionType" Usage="Microsoft.Office.Interop.Word.Conflict.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -246,9 +255,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bffcf-135">Obtient le <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> pour l' <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet.</span><span class="sxs-lookup"><span data-stu-id="bffcf-135">Gets the <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> for the <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object.</span></span></summary>
-        <value><span data-ttu-id="bffcf-136"><see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> Pour l' <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet.</span><span class="sxs-lookup"><span data-stu-id="bffcf-136">The <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> for the <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object.</span></span></value>
-        <remarks><para><span data-ttu-id="bffcf-137">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="bffcf-137">Read-only.</span></span></para>
+        <summary><span data-ttu-id="46806-135">Obtient le <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> pour l' <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet.</span><span class="sxs-lookup"><span data-stu-id="46806-135">Gets the <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> for the <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object.</span></span></summary>
+        <value><span data-ttu-id="46806-136"><see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />Pour l' <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objet.</span><span class="sxs-lookup"><span data-stu-id="46806-136">The <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> for the <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> object.</span></span></value>
+        <remarks><para><span data-ttu-id="46806-137">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="46806-137">Read-only.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
