@@ -1,9 +1,10 @@
 <Type Name="FormField" FullName="Microsoft.Office.Interop.Word.FormField">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4de4cb33d6d8353de0dcfc472045a254de650268" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146814" /></Metadata><TypeSignature Language="C#" Value="public interface FormField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="96367197392db59c038ddcb1f20106158759f072" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924158" /></Metadata><TypeSignature Language="C#" Value="public interface FormField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FormField" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormField" />
   <TypeSignature Language="C++ CLI" Value="public interface class FormField" />
+  <TypeSignature Language="F#" Value="type FormField = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,10 +21,10 @@
   <Docs>
     <summary>Représente un seul champ de formulaire.</summary>
     <remarks><para>L’objet <b>FormField</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> collection.</para>
-      <para>Utilisez <b>FormFields</b>(<paramref name="index" />), où <paramref name="index" /> est un nom de signet ou un numéro d’index, pour renvoyer un seul objet <b>FormField</b> .</para>
+      <para>Utilisez <b>FormFields</b>( <paramref name="index" /> ), où <paramref name="index" /> est un nom de signet ou un numéro d’index, pour renvoyer un seul objet <b>FormField</b> .</para>
       <para>Le numéro d'index représente la position du champ de formulaire dans la sélection, la plage ou le document.</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> méthode avec l’objet <b>FormFields</b> pour ajouter un champ de formulaire.</para>
-      <para>Utilisez les <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />propriétés <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />, et <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> avec l’objet <b>FormField</b> pour renvoyer les <see cref="T:Microsoft.Office.Interop.Word.CheckBox" />objets, <see cref="T:Microsoft.Office.Interop.Word.DropDown" />et <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> .</para>
+      <para>Utilisez les <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /> Propriétés, et <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> avec l’objet <b>FormField</b> pour renvoyer les <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> objets, <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> et <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.FormField.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.CalculateOnExit" />
       <MemberSignature Language="VB.NET" Value="Public Property CalculateOnExit As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CalculateOnExit { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CalculateOnExit : bool with get, set" Usage="Microsoft.Office.Interop.Word.FormField.CalculateOnExit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -83,7 +86,7 @@
       <Docs>
         <summary>Détermine si les références au champ de formulaire spécifié sont automatiquement mises à jour à chaque fois que vous quittez le champ.</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les références au champ de formulaire spécifié sont automatiquement mises à jour à chaque sortie <b></b> du champ et false dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les références au champ de formulaire spécifié sont automatiquement mises à jour à chaque sortie du champ et <b>false</b> dans le cas contraire. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
           <para>Un champ REF peut être utilisé pour faire référence au contenu d'un champ de formulaire. Par exemple, {REF Sous Total} fait référence au champ de formulaire marqué par le signet Sous Total.</para>
           <para> </para></remarks>
       </Docs>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckBox As CheckBox" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CheckBox ^ CheckBox { Microsoft::Office::Interop::Word::CheckBox ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CheckBox : Microsoft.Office.Interop.Word.CheckBox" Usage="Microsoft.Office.Interop.Word.FormField.CheckBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -113,7 +117,7 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> objet qui représente un champ de formulaire de case à cocher.</summary>
         <value>To be added.</value>
-        <remarks><para>Si la propriété <b>CheckBox</b> est appliquée à un <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet qui n’est pas un champ de formulaire de case à cocher, la <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Valid" /> propriété n’échoue pas, mais la propriété de l’objet renvoyé prend la <b>valeur false</b>.</para>
+        <remarks><para>Si la propriété <b>CheckBox</b> est appliquée à un <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet qui n’est pas un champ de formulaire de case à cocher, la propriété n’échoue pas, mais la <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Valid" /> propriété de l’objet renvoyé prend la <b>valeur false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FormField.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; unit" Usage="formField.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.FormField.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -167,7 +173,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FormField.Cut" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberSignature Language="F#" Value="abstract member Cut : unit -&gt; unit" Usage="formField.Cut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FormField.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="formField.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.DropDown" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropDown As DropDown" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DropDown ^ DropDown { Microsoft::Office::Interop::Word::DropDown ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DropDown : Microsoft.Office.Interop.Word.DropDown" Usage="Microsoft.Office.Interop.Word.FormField.DropDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -247,7 +256,7 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> objet qui représente un champ de formulaire de liste déroulante.</summary>
         <value>To be added.</value>
-        <remarks><para>Si la propriété <b>DropDown</b> est appliquée à un <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet qui n’est pas un champ de formulaire de type liste déroulante, elle <see cref="P:Microsoft.Office.Interop.Word.DropDown.Valid" /> n’échoue pas, mais la propriété de l’objet renvoyé prend la <b>valeur false</b>.</para>
+        <remarks><para>Si la propriété <b>DropDown</b> est appliquée à un <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet qui n’est pas un champ de formulaire de type liste déroulante, elle n’échoue pas, mais la <see cref="P:Microsoft.Office.Interop.Word.DropDown.Valid" /> propriété de l’objet renvoyé prend la <b>valeur false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -257,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="Microsoft.Office.Interop.Word.FormField.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -290,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.EntryMacro" />
       <MemberSignature Language="VB.NET" Value="Public Property EntryMacro As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntryMacro { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntryMacro : string with get, set" Usage="Microsoft.Office.Interop.Word.FormField.EntryMacro" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -310,7 +321,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un nom de macro d’entrée pour le<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />champ <see cref="T:Microsoft.Office.Interop.Word.DropDown" />de formulaire <see cref="T:Microsoft.Office.Interop.Word.TextInput" />spécifié (, ou).</summary>
+        <summary>Cette propriété renvoie ou définit un nom de macro d’entrée pour le champ de formulaire spécifié ( <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> , <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> ou <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> ).</summary>
         <value>To be added.</value>
         <remarks><para>Cette macro s'exécute au moment où le champ du formulaire est sélectionné.</para>
           <para> </para></remarks>
@@ -322,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.ExitMacro" />
       <MemberSignature Language="VB.NET" Value="Public Property ExitMacro As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExitMacro { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExitMacro : string with get, set" Usage="Microsoft.Office.Interop.Word.FormField.ExitMacro" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -342,7 +354,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un nom de macro de sortie pour le<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />champ <see cref="T:Microsoft.Office.Interop.Word.DropDown" />de formulaire <see cref="T:Microsoft.Office.Interop.Word.TextInput" />spécifié (, ou).</summary>
+        <summary>Cette propriété renvoie ou définit un nom de macro de sortie pour le champ de formulaire spécifié ( <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> , <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> ou <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> ).</summary>
         <value>To be added.</value>
         <remarks><para>La macro de sortie s'exécute quand le champ du formulaire n'est plus sélectionné.</para>
           <para> </para></remarks>
@@ -354,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.HelpText" />
       <MemberSignature Language="VB.NET" Value="Public Property HelpText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HelpText : string with get, set" Usage="Microsoft.Office.Interop.Word.FormField.HelpText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -386,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.FormField.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -417,6 +431,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Next" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Next As FormField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::FormField ^ Next { Microsoft::Office::Interop::Word::FormField ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Next : Microsoft.Office.Interop.Word.FormField" Usage="Microsoft.Office.Interop.Word.FormField.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -445,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.OwnHelp" />
       <MemberSignature Language="VB.NET" Value="Public Property OwnHelp As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OwnHelp { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OwnHelp : bool with get, set" Usage="Microsoft.Office.Interop.Word.FormField.OwnHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -467,7 +483,7 @@
       <Docs>
         <summary>Spécifie la source du texte affiché dans une boîte de message quand un champ de formulaire est activé et que l'utilisateur appuie sur F1.</summary>
         <value>To be added.</value>
-        <remarks><para>Si la <b>valeur est true</b>, le texte <see cref="P:Microsoft.Office.Interop.Word.FormField.HelpText" /> spécifié par la propriété est affiché. Si la valeur est <b>False</b>, le texte de l'insertion automatique spécifiée par la propriété <b>HelpText</b> est affiché.</para>
+        <remarks><para>Si la <b>valeur est true</b>, le texte spécifié par la <see cref="P:Microsoft.Office.Interop.Word.FormField.HelpText" /> propriété est affiché. Si la valeur est <b>False</b>, le texte de l'insertion automatique spécifiée par la propriété <b>HelpText</b> est affiché.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -477,6 +493,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.OwnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property OwnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OwnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OwnStatus : bool with get, set" Usage="Microsoft.Office.Interop.Word.FormField.OwnStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -499,7 +516,7 @@
       <Docs>
         <summary>Spécifie la source du texte affiché dans l'état de la barre lorsqu'un champ de formulaire a le focus.</summary>
         <value>To be added.</value>
-        <remarks><para>Si la propriété renvoie la <b>valeur true</b>, le texte spécifié <see cref="P:Microsoft.Office.Interop.Word.FormField.StatusText" /> par la propriété est affiché et, si la <b>valeur</b>est false, le texte de l’insertion automatique spécifiée par la propriété <b>StatusText</b> est affiché. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
+        <remarks><para>Si la propriété renvoie la <b>valeur true</b>, le texte spécifié par la <see cref="P:Microsoft.Office.Interop.Word.FormField.StatusText" /> propriété est affiché et, si la <b>valeur est false</b>, le texte de l’insertion automatique spécifiée par la propriété <b>StatusText</b> est affiché. Définissez la valeur de la propriété sur <b>true</b> ou <b>false</b> pour activer ou désactiver la fonctionnalité.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -509,6 +526,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.FormField.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -537,6 +555,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Previous" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Previous As FormField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::FormField ^ Previous { Microsoft::Office::Interop::Word::FormField ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : Microsoft.Office.Interop.Word.FormField" Usage="Microsoft.Office.Interop.Word.FormField.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -565,6 +584,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.FormField.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -584,7 +604,7 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> de formes à partir d’une collection de formes, voir la méthode.</para>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> méthode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -594,6 +614,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Result { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : string with get, set" Usage="Microsoft.Office.Interop.Word.FormField.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -616,7 +637,7 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> de formes à partir d’une collection de formes, voir la méthode.</para>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> méthode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -626,6 +647,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FormField.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="formField.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -642,7 +664,7 @@
       <Parameters />
       <Docs>
         <summary>Sélectionne l'objet spécifié.</summary>
-        <remarks><para>Après avoir utilisé cette méthode, utilisez <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propriété pour travailler avec les éléments sélectionnés.</para>
+        <remarks><para>Après avoir utilisé cette méthode, utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriété pour travailler avec les éléments sélectionnés.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -652,6 +674,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.StatusText" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StatusText : string with get, set" Usage="Microsoft.Office.Interop.Word.FormField.StatusText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -684,6 +707,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.TextInput" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextInput As TextInput" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextInput ^ TextInput { Microsoft::Office::Interop::Word::TextInput ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextInput : Microsoft.Office.Interop.Word.TextInput" Usage="Microsoft.Office.Interop.Word.FormField.TextInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -714,6 +738,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Type" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Type As WdFieldType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFieldType default { Microsoft::Office::Interop::Word::WdFieldType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdFieldType" Usage="Microsoft.Office.Interop.Word.FormField.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

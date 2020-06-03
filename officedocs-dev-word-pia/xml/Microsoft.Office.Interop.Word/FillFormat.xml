@@ -1,9 +1,10 @@
 <Type Name="FillFormat" FullName="Microsoft.Office.Interop.Word.FillFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4807b5d76d632efebdfc8390e89b52ff7e61eae6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146870" /></Metadata><TypeSignature Language="C#" Value="public interface FillFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="03dfe370fad574d243804658521716e65c4a4d4f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924234" /></Metadata><TypeSignature Language="C#" Value="public interface FillFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FillFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FillFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface FillFormat" />
   <TypeSignature Language="C++ CLI" Value="public interface class FillFormat" />
+  <TypeSignature Language="F#" Value="type FillFormat = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Représente la mise en forme du remplissage d'une forme. Ce remplissage peut être uni, dégradé, à texture, à motif, à image ou semi-transparent.</summary>
-    <remarks><para>Utilisez la propriété <b>Fill</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Shape" />objet <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />, ou <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> pour renvoyer un objet <b>FillFormat</b> .</para>
+    <remarks><para>Utilisez la propriété <b>Fill</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objet, ou <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> pour renvoyer un objet <b>FillFormat</b> .</para>
       <para>De nombreuses propriétés de l'objet <b>FillFormat</b> sont en lecture seule. Pour définir une de ces propriétés, vous devez appliquer la méthode correspondante.</para>
       <para> </para></remarks>
   </Docs>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.FillFormat.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackColor As ColorFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ColorFormat ^ BackColor { Microsoft::Office::Interop::Word::ColorFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : Microsoft.Office.Interop.Word.ColorFormat" Usage="Microsoft.Office.Interop.Word.FillFormat.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -75,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> définit un objet qui représente la couleur d’arrière-plan pour la ligne à motif ou le remplissage spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit un <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> objet qui représente la couleur d’arrière-plan pour la ligne à motif ou le remplissage spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.Background" />
       <MemberSignature Language="VB.NET" Value="Public Sub Background ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Background();" />
+      <MemberSignature Language="F#" Value="abstract member Background : unit -&gt; unit" Usage="fillFormat.Background " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.FillFormat.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -133,7 +138,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForeColor As ColorFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ColorFormat ^ ForeColor { Microsoft::Office::Interop::Word::ColorFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : Microsoft.Office.Interop.Word.ColorFormat" Usage="Microsoft.Office.Interop.Word.FillFormat.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -161,7 +167,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> définit un objet qui représente la couleur de premier plan pour le remplissage.</summary>
+        <summary>Cette propriété renvoie ou définit un <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> objet qui représente la couleur de premier plan pour le remplissage.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.GradientAngle" />
       <MemberSignature Language="VB.NET" Value="Public Property GradientAngle As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float GradientAngle { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.GradientAngle : single with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.GradientAngle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.GradientColorType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientColorType As MsoGradientColorType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoGradientColorType GradientColorType { Microsoft::Office::Core::MsoGradientColorType get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientColorType : Microsoft.Office.Core.MsoGradientColorType" Usage="Microsoft.Office.Interop.Word.FillFormat.GradientColorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -223,7 +231,7 @@
       <Docs>
         <summary>Renvoie le type de dégradé de couleur du remplissage spécifié.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />méthode <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, ou <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> pour définir le type de dégradé du remplissage.</para>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> méthode, ou <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> pour définir le type de dégradé du remplissage.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.GradientDegree" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientDegree As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float GradientDegree { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientDegree : single" Usage="Microsoft.Office.Interop.Word.FillFormat.GradientDegree" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.GradientStops" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientStops As GradientStops" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::GradientStops ^ GradientStops { Microsoft::Office::Core::GradientStops ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientStops : Microsoft.Office.Core.GradientStops" Usage="Microsoft.Office.Interop.Word.FillFormat.GradientStops" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -281,7 +291,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtient la <see cref="T:Microsoft.Office.Core.GradientStops" /> collection associée au format de remplissage spécifié.</summary>
-        <value><see cref="T:Microsoft.Office.Core.GradientStops" /> Collection associée au format de remplissage spécifié.</value>
+        <value><see cref="T:Microsoft.Office.Core.GradientStops" />Collection associée au format de remplissage spécifié.</value>
         <remarks><para>En lecture/écriture Les dégradés représentent une transition en douceur à partir d'un état de couleur à une autre. Les points de terminaison de ces sections sont appellent des points. Vous pouvez utiliser le <b>lien hypertexte «MS-Help://AstroNS2/Winword. DEV/content/ms-help/HV10343554.htm méthode "GradientStops. Insert</b> pour ajouter des points de dégradés à la collection <b>GradientStops</b> pour l’objet spécifié.</para>
           <para> </para></remarks>
       </Docs>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.GradientStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientStyle As MsoGradientStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoGradientStyle GradientStyle { Microsoft::Office::Core::MsoGradientStyle get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientStyle : Microsoft.Office.Core.MsoGradientStyle" Usage="Microsoft.Office.Interop.Word.FillFormat.GradientStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -311,7 +322,7 @@
       <Docs>
         <summary>Renvoie le style de dégradé du remplissage spécifié.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> méthode <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> ou pour définir le style de dégradé pour le remplissage.</para>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> méthode ou pour définir le style de dégradé pour le remplissage.</para>
           <para>Tentative de retour de cette propriété pour un remplissage qui n'est pas un dégradé génère une erreur. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Type" /> propriété pour déterminer si le remplissage est en dégradé.</para>
           <para> </para></remarks>
       </Docs>
@@ -322,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.GradientVariant" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientVariant As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GradientVariant { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.GradientVariant : int" Usage="Microsoft.Office.Interop.Word.FillFormat.GradientVariant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -342,7 +354,7 @@
         <summary>Renvoie, sous la forme d'un nombre entier de 1 à 4 pour la plupart des dégradés, la variante de dégradé du remplissage spécifié.</summary>
         <value>To be added.</value>
         <remarks><para>Si le style de dégradé correspond à la constante <b>msoGradientFromCenter</b>, cette propriété renvoie la valeur 1 ou 2. Les valeurs de cette propriété correspondent aux variantes de dégradé (numérotées de gauche à droite et de haut en bas) sur l'onglet dégradé de la boîte de dialogue Effets de remplissage.</para>
-          <para>Cette propriété est en lecture seule. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> méthode <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> ou pour définir la variante de dégradé pour le remplissage.</para>
+          <para>Cette propriété est en lecture seule. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> méthode ou pour définir la variante de dégradé pour le remplissage.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -352,6 +364,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OneColorGradient (Style As MsoGradientStyle, Variant As Integer, Degree As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OneColorGradient(Microsoft::Office::Core::MsoGradientStyle Style, int Variant, float Degree);" />
+      <MemberSignature Language="F#" Value="abstract member OneColorGradient : Microsoft.Office.Core.MsoGradientStyle * int * single -&gt; unit" Usage="fillFormat.OneColorGradient (Style, Variant, Degree)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -371,7 +384,7 @@
         <Parameter Name="Degree" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Style">Obligatoire <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />. Le style de dégradé.</param>
+        <param name="Style">Obligatoire <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> . Le style de dégradé.</param>
         <param name="Variant">Argument de type <b>Integer</b> obligatoire. Variante du dégradé. Peut être une valeur comprise entre 1 et 4, correspondant aux quatre variantes affichées sous l'onglet dégradé dans la boîte de dialogue Effets de remplissage. Si <paramref name="Style" /> la valeur est <b>msoGradientFromCenter</b>, cet argument peut avoir la valeur 1 ou 2.</param>
         <param name="Degree">Argument de type <b>Single</b> obligatoire. Degré du dégradé. Sa valeur peut être comprise entre 0 (sombre) et 1 (clair).</param>
         <summary>Définit un gradient monochrome pour le remplissage spécifié.</summary>
@@ -384,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.FillFormat.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -412,6 +426,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pattern As MsoPatternType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoPatternType Pattern { Microsoft::Office::Core::MsoPatternType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pattern : Microsoft.Office.Core.MsoPatternType" Usage="Microsoft.Office.Interop.Word.FillFormat.Pattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -432,7 +447,7 @@
         <summary>Renvoie une valeur qui représente le motif appliqué au remplissage spécifié.</summary>
         <value>To be added.</value>
         <remarks><para>Vous pouvez également utiliser la <see cref="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> méthode pour définir le motif du remplissage.</para>
-          <para>Utilisez les <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> propriétés <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> et pour définir les couleurs utilisées dans le motif.</para>
+          <para>Utilisez les <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> Propriétés et pour définir les couleurs utilisées dans le motif.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -442,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Patterned (Pattern As MsoPatternType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Patterned(Microsoft::Office::Core::MsoPatternType Pattern);" />
+      <MemberSignature Language="F#" Value="abstract member Patterned : Microsoft.Office.Core.MsoPatternType -&gt; unit" Usage="fillFormat.Patterned Pattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -459,9 +475,9 @@
         <Parameter Name="Pattern" Type="Microsoft.Office.Core.MsoPatternType" />
       </Parameters>
       <Docs>
-        <param name="Pattern">Obligatoire <see cref="T:Microsoft.Office.Core.MsoPatternType" />. Motif utilisé pour le remplissage spécifié.</param>
+        <param name="Pattern">Obligatoire <see cref="T:Microsoft.Office.Core.MsoPatternType" /> . Motif utilisé pour le remplissage spécifié.</param>
         <summary>Affecte un motif au remplissage spécifié.</summary>
-        <remarks><para>Utilisez les <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> propriétés <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> et pour définir les couleurs utilisées dans le motif.</para>
+        <remarks><para>Utilisez les <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> Propriétés et pour définir les couleurs utilisées dans le motif.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -471,6 +487,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.PictureEffects" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PictureEffects As PictureEffects" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::PictureEffects ^ PictureEffects { Microsoft::Office::Core::PictureEffects ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PictureEffects : Microsoft.Office.Core.PictureEffects" Usage="Microsoft.Office.Interop.Word.FillFormat.PictureEffects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -489,7 +506,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtient un <see cref="T:Microsoft.Office.Core.PictureEffects" /> objet qui peut être utilisé pour appliquer des effets d’image à la mise en forme de remplissage spécifiée.</summary>
-        <value><see cref="T:Microsoft.Office.Core.PictureEffects" /> Objet qui peut être utilisé pour appliquer des effets d’image à la mise en forme de remplissage spécifiée.</value>
+        <value><see cref="T:Microsoft.Office.Core.PictureEffects" />Objet qui peut être utilisé pour appliquer des effets d’image à la mise en forme de remplissage spécifiée.</value>
         <remarks><para>En lecture seule. Utilisez la <see cref="M:Microsoft.Office.Core.PictureEffects.Insert" /> méthode de l' <see cref="T:Microsoft.Office.Core.PictureEffects" /> objet pour appliquer des effets d’image. <b>Insert</b> utilise une <see cref="T:Microsoft.Office.Core.MsoPictureEffectType" /> constante d’énumération comme argument pour spécifier le type d’effet d’image à appliquer.</para>
           <para> </para></remarks>
       </Docs>
@@ -500,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PresetGradient (Style As MsoGradientStyle, Variant As Integer, PresetGradientType As MsoPresetGradientType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PresetGradient(Microsoft::Office::Core::MsoGradientStyle Style, int Variant, Microsoft::Office::Core::MsoPresetGradientType PresetGradientType);" />
+      <MemberSignature Language="F#" Value="abstract member PresetGradient : Microsoft.Office.Core.MsoGradientStyle * int * Microsoft.Office.Core.MsoPresetGradientType -&gt; unit" Usage="fillFormat.PresetGradient (Style, Variant, PresetGradientType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -519,9 +537,9 @@
         <Parameter Name="PresetGradientType" Type="Microsoft.Office.Core.MsoPresetGradientType" />
       </Parameters>
       <Docs>
-        <param name="Style">Obligatoire <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />. Le style de dégradé.</param>
+        <param name="Style">Obligatoire <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> . Le style de dégradé.</param>
         <param name="Variant">Argument de type <b>Integer</b> obligatoire. Variante du dégradé. Peut être une valeur comprise entre 1 et 4, correspondant aux quatre variantes affichées sous l'onglet dégradé dans la boîte de dialogue Effets de remplissage. Si <paramref name="Style" /> la valeur est <b>msoGradientFromCenter</b>, cet argument peut avoir la valeur 1 ou 2.</param>
-        <param name="PresetGradientType">Obligatoire <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" />. Type du dégradé.</param>
+        <param name="PresetGradientType">Obligatoire <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" /> . Type du dégradé.</param>
         <summary>Affecte un dégradé prédéfini au remplissage spécifié.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -532,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.PresetGradientType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresetGradientType As MsoPresetGradientType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoPresetGradientType PresetGradientType { Microsoft::Office::Core::MsoPresetGradientType get(); };" />
+      <MemberSignature Language="F#" Value="member this.PresetGradientType : Microsoft.Office.Core.MsoPresetGradientType" Usage="Microsoft.Office.Interop.Word.FillFormat.PresetGradientType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -561,6 +580,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.PresetTexture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresetTexture As MsoPresetTexture" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoPresetTexture PresetTexture { Microsoft::Office::Core::MsoPresetTexture get(); };" />
+      <MemberSignature Language="F#" Value="member this.PresetTexture : Microsoft.Office.Core.MsoPresetTexture" Usage="Microsoft.Office.Interop.Word.FillFormat.PresetTexture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -590,6 +610,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PresetTextured (PresetTexture As MsoPresetTexture)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PresetTextured(Microsoft::Office::Core::MsoPresetTexture PresetTexture);" />
+      <MemberSignature Language="F#" Value="abstract member PresetTextured : Microsoft.Office.Core.MsoPresetTexture -&gt; unit" Usage="fillFormat.PresetTextured PresetTexture" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -607,7 +628,7 @@
         <Parameter Name="PresetTexture" Type="Microsoft.Office.Core.MsoPresetTexture" />
       </Parameters>
       <Docs>
-        <param name="PresetTexture">Obligatoire <see cref="T:Microsoft.Office.Core.MsoPresetTexture" />. Texture prédéfinie.</param>
+        <param name="PresetTexture">Obligatoire <see cref="T:Microsoft.Office.Core.MsoPresetTexture" /> . Texture prédéfinie.</param>
         <summary>Affecte une texture prédéfinie au remplissage spécifié.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -618,6 +639,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.RotateWithObject" />
       <MemberSignature Language="VB.NET" Value="Public Property RotateWithObject As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState RotateWithObject { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.RotateWithObject : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.RotateWithObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -640,7 +662,7 @@
       <Docs>
         <summary>Obtient ou définit si le remplissage pivote avec la forme spécifiée.</summary>
         <value>Objet <see cref="T:Microsoft.Office.Core.MsoTriState" />.</value>
-        <remarks><para>En lecture/écriture La valeur renvoyée par cette propriété peut être l’une <see cref="T:Microsoft.Office.Core.MsoTriState" /> des constantes indiquées dans le tableau suivant.</para>
+        <remarks><para>En lecture/écriture La valeur renvoyée par cette propriété peut être l’une des <see cref="T:Microsoft.Office.Core.MsoTriState" /> constantes indiquées dans le tableau suivant.</para>
           <list type="table">
             <item>
               <description>
@@ -665,6 +687,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.Solid" />
       <MemberSignature Language="VB.NET" Value="Public Sub Solid ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Solid();" />
+      <MemberSignature Language="F#" Value="abstract member Solid : unit -&gt; unit" Usage="fillFormat.Solid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -690,6 +713,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureAlignment As MsoTextureAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTextureAlignment TextureAlignment { Microsoft::Office::Core::MsoTextureAlignment get(); void set(Microsoft::Office::Core::MsoTextureAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureAlignment : Microsoft.Office.Core.MsoTextureAlignment with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -712,7 +736,7 @@
       <Docs>
         <summary>Obtient ou définit l’alignement (l’origine de la grille de coordonnées) de la mosaïque de la texture de remplissage.</summary>
         <value>Alignement (l’origine de la grille de coordonnées) de la mosaïque de la texture de remplissage.</value>
-        <remarks><para>En lecture/écriture La valeur renvoyée par cette propriété peut être l’une des <see cref="T:Microsoft.Office.Core.MsoTextureAlignment" /> constantes suivantes:</para>
+        <remarks><para>En lecture/écriture La valeur renvoyée par cette propriété peut être l’une des <see cref="T:Microsoft.Office.Core.MsoTextureAlignment" /> constantes suivantes :</para>
           <list type="bullet">
             <item>
               <para>
@@ -770,6 +794,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureHorizontalScale" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureHorizontalScale As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TextureHorizontalScale { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureHorizontalScale : single with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureHorizontalScale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -802,6 +827,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextureName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TextureName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextureName : string" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -831,6 +857,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureOffsetX" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureOffsetX As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TextureOffsetX { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureOffsetX : single with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureOffsetX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -864,6 +891,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureOffsetY" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureOffsetY As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TextureOffsetY { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureOffsetY : single with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureOffsetY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -897,6 +925,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureTile" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureTile As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState TextureTile { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureTile : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureTile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -919,7 +948,7 @@
       <Docs>
         <summary>Obtient ou définit si la texture de remplissage est en mosaïque ou centrée.</summary>
         <value>Objet <see cref="T:Microsoft.Office.Core.MsoTriState" />.</value>
-        <remarks><para>En lecture/écriture La valeur renvoyée par cette propriété peut être l’une <see cref="T:Microsoft.Office.Core.MsoTriState" /> des constantes décrites dans le tableau suivant.</para>
+        <remarks><para>En lecture/écriture La valeur renvoyée par cette propriété peut être l’une des <see cref="T:Microsoft.Office.Core.MsoTriState" /> constantes décrites dans le tableau suivant.</para>
           <list type="table">
             <item>
               <description>
@@ -944,6 +973,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextureType As MsoTextureType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTextureType TextureType { Microsoft::Office::Core::MsoTextureType get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextureType : Microsoft.Office.Core.MsoTextureType" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -963,7 +993,7 @@
       <Docs>
         <summary>Renvoie le type de texture pour le remplissage spécifié.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />méthode <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" />, ou <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> pour définir le type de texture du remplissage.</para>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" /> méthode, ou <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> pour définir le type de texture du remplissage.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -973,6 +1003,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.TextureVerticalScale" />
       <MemberSignature Language="VB.NET" Value="Public Property TextureVerticalScale As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TextureVerticalScale { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TextureVerticalScale : single with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.TextureVerticalScale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1005,6 +1036,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Transparency" />
       <MemberSignature Language="VB.NET" Value="Public Property Transparency As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Transparency { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Transparency : single with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.Transparency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1027,7 +1059,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le degré de transparence du remplissage spécifié sous la forme d’une valeur comprise entre 0,0 (opaque) et 1,0 (clair).</summary>
         <value>To be added.</value>
-        <remarks><para>La valeur de cette propriété affecte uniquement l’apparence des remplissages et des traits de couleur unie; elle n’a aucun effet sur l’apparence des lignes à motif ou des remplissages avec motif, dégradé, image ou texture.</para>
+        <remarks><para>La valeur de cette propriété affecte uniquement l’apparence des remplissages et des traits de couleur unie ; elle n’a aucun effet sur l’apparence des lignes à motif ou des remplissages avec motif, dégradé, image ou texture.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1037,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TwoColorGradient (Style As MsoGradientStyle, Variant As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TwoColorGradient(Microsoft::Office::Core::MsoGradientStyle Style, int Variant);" />
+      <MemberSignature Language="F#" Value="abstract member TwoColorGradient : Microsoft.Office.Core.MsoGradientStyle * int -&gt; unit" Usage="fillFormat.TwoColorGradient (Style, Variant)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1055,7 +1088,7 @@
         <Parameter Name="Variant" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Style">Obligatoire <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />. Le style de dégradé.</param>
+        <param name="Style">Obligatoire <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> . Le style de dégradé.</param>
         <param name="Variant">Argument de type <b>Integer</b> obligatoire. Variante du dégradé. Peut être une valeur comprise entre 1 et 4, correspondant aux quatre variantes affichées sous l'onglet dégradé dans la boîte de dialogue Effets de remplissage. Si <paramref name="Style" /> la valeur est <b>msoGradientFromCenter</b>, cet argument peut avoir la valeur 1 ou 2.</param>
         <summary>Affecte un dégradé bicolore à un remplissage spécifié.</summary>
         <remarks>To be added.</remarks>
@@ -1067,6 +1100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As MsoFillType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoFillType Type { Microsoft::Office::Core::MsoFillType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Core.MsoFillType" Usage="Microsoft.Office.Interop.Word.FillFormat.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1095,6 +1129,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UserPicture (PictureFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UserPicture(System::String ^ PictureFile);" />
+      <MemberSignature Language="F#" Value="abstract member UserPicture : string -&gt; unit" Usage="fillFormat.UserPicture PictureFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1114,7 +1149,7 @@
       <Docs>
         <param name="PictureFile">Argument de type <b>String</b> obligatoire. Indique le nom du fichier image.</param>
         <summary>Remplit la forme spécifiée avec une seule grande image.</summary>
-        <remarks><para>Si vous souhaitez remplir la forme avec de petites mosaïques d’une image, utilisez <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> la méthode.</para>
+        <remarks><para>Si vous souhaitez remplir la forme avec de petites mosaïques d’une image, utilisez la <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> méthode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1124,6 +1159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UserTextured (TextureFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UserTextured(System::String ^ TextureFile);" />
+      <MemberSignature Language="F#" Value="abstract member UserTextured : string -&gt; unit" Usage="fillFormat.UserTextured TextureFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1153,6 +1189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FillFormat.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Visible { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.FillFormat.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

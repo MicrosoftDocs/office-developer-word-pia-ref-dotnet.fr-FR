@@ -1,9 +1,10 @@
 <Type Name="HeaderFooter" FullName="Microsoft.Office.Interop.Word.HeaderFooter">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a143517844b5f5cef61ab0c3f18904999b976958" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146730" /></Metadata><TypeSignature Language="C#" Value="public interface HeaderFooter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cf317e38d3b61ea6e8f6e3cfad892ab0f6159bd0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924017" /></Metadata><TypeSignature Language="C#" Value="public interface HeaderFooter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HeaderFooter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HeaderFooter" />
   <TypeSignature Language="VB.NET" Value="Public Interface HeaderFooter" />
   <TypeSignature Language="C++ CLI" Value="public interface class HeaderFooter" />
+  <TypeSignature Language="F#" Value="type HeaderFooter = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Représente un en-tête ou un pied de page donné.</summary>
     <remarks><para>L’objet <b>HeaderFooter</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> collection. La collection <b>HeadersFooters</b> réunit l'ensemble des en-têtes et des pieds de page situés dans la section spécifiée du document.</para>
-      <para>Utilisez <b>les en-têtes</b><paramref name="index" />( <b></b>) ou les<paramref name="index" /> <paramref name="index" /> <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> pieds de page (), où est l’une des constantes (<b>dewdheaderfooterevenpages</b>, <b>wdHeaderFooterFirstPage</b>ou <b>dewdheaderfooterprimary</b>), pour renvoyer une seule <b> HeaderFooter</b> , objet.</para>
+      <para>Utilisez <b>les en-têtes</b>( <paramref name="index" /> ) ou les <b>pieds de page</b>( <paramref name="index" /> ), où <paramref name="index" /> est l’une des <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constantes (<b>dewdheaderfooterevenpages</b>, <b>wdHeaderFooterFirstPage</b>ou <b>dewdheaderfooterprimary</b>), pour renvoyer un seul objet <b>HeaderFooter</b> .</para>
       <para>Vous pouvez également renvoyer un seul objet <b>HeaderFooter</b> en utilisant la <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> propriété avec un <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objet.</para>
       <para>
         <b>Remarque</b>: vous ne pouvez pas ajouter d’objets <b>HeaderFooter</b> à la collection <b>HeadersFooters</b> .</para>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeaderFooter.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.HeaderFooter.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeaderFooter.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.HeaderFooter.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -83,7 +86,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeaderFooter.Exists" />
       <MemberSignature Language="VB.NET" Value="Public Property Exists As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Exists { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Exists : bool with get, set" Usage="Microsoft.Office.Interop.Word.HeaderFooter.Exists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -114,9 +118,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si l’objet <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> spécifié existe.</summary>
+        <summary><b>True</b> si l' <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objet spécifié existe.</summary>
         <value>To be added.</value>
-        <remarks><para>Le premier en-tête et pied de page existent dans tous les nouveaux documents par défaut. Cette méthode permet de déterminer s'il existe un en-tête de première page ou page impaire ou le pied de page. Vous pouvez également utiliser la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propriété <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> ou pour renvoyer ou définir le nombre d’en-têtes et de pieds de page dans la section ou le document spécifié.</para>
+        <remarks><para>Le premier en-tête et pied de page existent dans tous les nouveaux documents par défaut. Cette méthode permet de déterminer s'il existe un en-tête de première page ou page impaire ou le pied de page. Vous pouvez également utiliser la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> propriété ou pour renvoyer ou définir le nombre d’en-têtes et de pieds de page dans la section ou le document spécifié.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeaderFooter.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As WdHeaderFooterIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdHeaderFooterIndex Index { Microsoft::Office::Interop::Word::WdHeaderFooterIndex get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : Microsoft.Office.Interop.Word.WdHeaderFooterIndex" Usage="Microsoft.Office.Interop.Word.HeaderFooter.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeaderFooter.IsHeader" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsHeader As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsHeader { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHeader : bool" Usage="Microsoft.Office.Interop.Word.HeaderFooter.IsHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -171,7 +177,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> si l’objet <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> spécifié est un en-tête.</summary>
+        <summary><b>True</b> si l' <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objet spécifié est un en-tête.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" />
       <MemberSignature Language="VB.NET" Value="Public Property LinkToPrevious As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LinkToPrevious { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LinkToPrevious : bool with get, set" Usage="Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeaderFooter.PageNumbers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageNumbers As PageNumbers" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::PageNumbers ^ PageNumbers { Microsoft::Office::Interop::Word::PageNumbers ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PageNumbers : Microsoft.Office.Interop.Word.PageNumbers" Usage="Microsoft.Office.Interop.Word.HeaderFooter.PageNumbers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeaderFooter.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.HeaderFooter.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeaderFooter.Range" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ default { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.HeaderFooter.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -290,7 +300,7 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> de formes à partir d’une collection de formes, voir la méthode.</para>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> méthode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -300,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeaderFooter.Shapes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shapes As Shapes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shapes ^ Shapes { Microsoft::Office::Interop::Word::Shapes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shapes : Microsoft.Office.Interop.Word.Shapes" Usage="Microsoft.Office.Interop.Word.HeaderFooter.Shapes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -319,7 +330,7 @@
       <Docs>
         <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection qui représente tous les <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objets de l’en-tête ou du pied de page spécifié. Cette collection peut contenir des dessins, des formes, des images, des objets OLE, des contrôles ActiveX, des objets texte et des légendes.</summary>
         <value>To be added.</value>
-        <remarks><para>Lorsqu’elle est appliquée <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> à un objet, la propriété <b>Shapes</b> renvoie tous les objets <b>Shape</b> trouvés dans tous les en-têtes et pieds de page du document.</para>
+        <remarks><para>Lorsqu’elle est appliquée à un <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objet, la propriété <b>Shapes</b> renvoie tous les objets <b>Shape</b> trouvés dans tous les en-têtes et pieds de page du document.</para>
           <para> </para></remarks>
       </Docs>
     </Member>

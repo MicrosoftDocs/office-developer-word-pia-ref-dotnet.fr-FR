@@ -1,9 +1,10 @@
 <Type Name="MailMergeField" FullName="Microsoft.Office.Interop.Word.MailMergeField">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="740faaaa800da0c930fd0ad3e0101c4ed0cd4585" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144462" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="43cbc4bef5a18c73bd2f97bb0addc6570aa0ab22" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925211" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeField" />
   <TypeSignature Language="C++ CLI" Value="public interface class MailMergeField" />
+  <TypeSignature Language="F#" Value="type MailMergeField = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,9 +21,9 @@
   <Docs>
     <summary>Représente un champ de fusion et publipostage unique dans un document.</summary>
     <remarks><para>L’objet <b>MailMergeDataField</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> collection. La collection <b>MailMergeDataFields</b> inclut plus du publipostage tous les champs liés dans un document.</para>
-      <para>Utilisez <b></b>Fields<paramref name="index" />(), <paramref name="index" /> où est le numéro d’index, pour renvoyer un seul objet <b>MailMergeField</b> .</para>
+      <para>Utilisez <b>Fields</b>( <paramref name="index" /> ), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>MailMergeField</b> .</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> méthode pour ajouter un champ de fusion à la collection <b>MailMergeFields</b> .</para>
-      <para>La collection <b>MailMergeFields</b> comporte des méthodes supplémentaires, telles <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> que <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />et, pour l’ajout de champs associés à une opération de fusion et publipostage.</para>
+      <para>La collection <b>MailMergeFields</b> comporte des méthodes supplémentaires, telles que <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> et <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> , pour l’ajout de champs associés à une opération de fusion et publipostage.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeField.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.MailMergeField.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeField.Code" />
       <MemberSignature Language="VB.NET" Value="Public Property Code As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Code { Microsoft::Office::Interop::Word::Range ^ get(); void set(Microsoft::Office::Interop::Word::Range ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Code : Microsoft.Office.Interop.Word.Range with get, set" Usage="Microsoft.Office.Interop.Word.MailMergeField.Code" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeField.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; unit" Usage="mailMergeField.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeField.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.MailMergeField.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -136,7 +141,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeField.Cut" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberSignature Language="F#" Value="abstract member Cut : unit -&gt; unit" Usage="mailMergeField.Cut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeField.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="mailMergeField.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -197,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeField.Locked" />
       <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Locked : bool with get, set" Usage="Microsoft.Office.Interop.Word.MailMergeField.Locked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeField.Next" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Next As MailMergeField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::MailMergeField ^ Next { Microsoft::Office::Interop::Word::MailMergeField ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Next : Microsoft.Office.Interop.Word.MailMergeField" Usage="Microsoft.Office.Interop.Word.MailMergeField.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeField.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.MailMergeField.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -284,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeField.Previous" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Previous As MailMergeField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::MailMergeField ^ Previous { Microsoft::Office::Interop::Word::MailMergeField ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : Microsoft.Office.Interop.Word.MailMergeField" Usage="Microsoft.Office.Interop.Word.MailMergeField.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -312,6 +323,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeField.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="mailMergeField.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -328,7 +340,7 @@
       <Parameters />
       <Docs>
         <summary>Sélectionne l'objet spécifié.</summary>
-        <remarks><para>Après avoir utilisé cette méthode, utilisez <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propriété pour travailler avec les éléments sélectionnés.</para>
+        <remarks><para>Après avoir utilisé cette méthode, utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriété pour travailler avec les éléments sélectionnés.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -338,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeField.Type" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Type As WdFieldType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFieldType default { Microsoft::Office::Interop::Word::WdFieldType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdFieldType" Usage="Microsoft.Office.Interop.Word.MailMergeField.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

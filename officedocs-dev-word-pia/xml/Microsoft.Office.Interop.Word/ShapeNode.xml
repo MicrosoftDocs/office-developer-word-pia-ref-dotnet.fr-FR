@@ -1,9 +1,10 @@
 <Type Name="ShapeNode" FullName="Microsoft.Office.Interop.Word.ShapeNode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="86c2673d3a1bd61e13b1505a88e585abcef62547" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147640" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2fb59e84569ac0c9ad06812959d096dc3a78b78f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924409" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNode" />
   <TypeSignature Language="C++ CLI" Value="public interface class ShapeNode" />
+  <TypeSignature Language="F#" Value="type ShapeNode = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Cet objet représente la géométrie et les propriétés de modification de la géométrie des nœuds d’une forme libre définie par l’utilisateur.</summary>
     <remarks><para>Les noeuds comprennent les sommets entre les segments de la forme libre et les points de contrôle des segments courbés. L’objet <b>ShapeNode</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> collection. La collection <b>ShapeNodes</b> contient tous les nœuds d'une forme libre.</para>
-      <para>Utilisez <b></b>Nodes<paramref name="index" />(), <paramref name="index" /> où est le numéro d’index du nœud, pour renvoyer un seul objet <b>ShapeNode</b> .</para>
+      <para>Utilisez <b>Nodes</b>( <paramref name="index" /> ), où <paramref name="index" /> est le numéro d’index du nœud, pour renvoyer un seul objet <b>ShapeNode</b> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNode.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ShapeNode.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNode.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ShapeNode.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -77,7 +80,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNode.EditingType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditingType As MsoEditingType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoEditingType EditingType { Microsoft::Office::Core::MsoEditingType get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditingType : Microsoft.Office.Core.MsoEditingType" Usage="Microsoft.Office.Interop.Word.ShapeNode.EditingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNode.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ShapeNode.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNode.Points" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Points As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Points { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Points : obj" Usage="Microsoft.Office.Interop.Word.ShapeNode.Points" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNode.SegmentType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SegmentType As MsoSegmentType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoSegmentType SegmentType { Microsoft::Office::Core::MsoSegmentType get(); };" />
+      <MemberSignature Language="F#" Value="member this.SegmentType : Microsoft.Office.Core.MsoSegmentType" Usage="Microsoft.Office.Interop.Word.ShapeNode.SegmentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

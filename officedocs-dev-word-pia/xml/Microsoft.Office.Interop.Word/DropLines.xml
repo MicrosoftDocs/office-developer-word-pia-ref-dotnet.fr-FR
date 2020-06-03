@@ -1,9 +1,10 @@
 <Type Name="DropLines" FullName="Microsoft.Office.Interop.Word.DropLines">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fe2c1bf2a7003fed3024219636a9c7c6b5fcdbe4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146912" /></Metadata><TypeSignature Language="C#" Value="public interface DropLines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="179119d274ad3a2cbef9ba43ce81197fff35b0ee" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924304" /></Metadata><TypeSignature Language="C#" Value="public interface DropLines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DropLines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DropLines" />
   <TypeSignature Language="VB.NET" Value="Public Interface DropLines" />
   <TypeSignature Language="C++ CLI" Value="public interface class DropLines" />
+  <TypeSignature Language="F#" Value="type DropLines = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Cet objet représente les lignes de projection d’un groupe de graphiques.</summary>
     <remarks><para>Les lignes de projection relient les points du graphique avec l'axe des X. Seuls les groupes de graphiques en courbes et en aires peuvent utiliser des lignes de projection. Cet objet n'est pas une collection. Il n'existe pas d'objet représentant une seule ligne de projection. Les lignes de projection sont soit activées soit désactivées pour tous les points du groupe de graphiques.</para>
-      <para>Si la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasDropLines" /> propriété a la <b>valeur false</b>, la <see cref="T:Microsoft.Office.Interop.Word.DropLines" /> plupart des propriétés de l’objet sont désactivées.</para>
+      <para>Si la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasDropLines" /> propriété a la <b>valeur false</b>, la plupart des propriétés de l' <see cref="T:Microsoft.Office.Interop.Word.DropLines" /> objet sont désactivées.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropLines.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.DropLines.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -47,7 +49,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropLines.Border" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Border As ChartBorder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartBorder ^ Border { Microsoft::Office::Interop::Word::ChartBorder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Border : Microsoft.Office.Interop.Word.ChartBorder" Usage="Microsoft.Office.Interop.Word.DropLines.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropLines.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.DropLines.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -104,8 +108,8 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
-        <value><b>Entier</b></value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.DropLines.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.DropLines.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DropLines.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="dropLines.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropLines.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.DropLines.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -158,7 +164,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet.
-En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
+En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> .</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -169,6 +175,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropLines.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.DropLines.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -197,6 +204,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropLines.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.DropLines.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -225,6 +233,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DropLines.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="dropLines.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

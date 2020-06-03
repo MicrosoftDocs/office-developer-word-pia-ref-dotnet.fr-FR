@@ -1,9 +1,10 @@
 <Type Name="SeriesLines" FullName="Microsoft.Office.Interop.Word.SeriesLines">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="55cf8420da87920af7d7dc437b2d926031899488" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147654" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesLines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="64564c92bd3bb07f5898bbe27ebac94d1cbf7203" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924437" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesLines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesLines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SeriesLines" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesLines" />
   <TypeSignature Language="C++ CLI" Value="public interface class SeriesLines" />
+  <TypeSignature Language="F#" Value="type SeriesLines = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Représente les lignes de séries dans un groupe de graphiques.</summary>
-    <remarks><para>Les lignes de série connectent les valeurs de données de chaque série.  Seules les barres empilées 2D, les histogrammes empilés 2D, les graphiques en secteurs de secteur ou la barre de secteurs peuvent avoir des lignes de série. Il n'existe pas d'objet représentant une seule ligne de projection. Il n’existe aucun objet qui représente une seule ligne de série; les lignes de série sont soit activées pour tous les points d’un groupe de graphiques, soit désactivées.</para>
+    <remarks><para>Les lignes de série connectent les valeurs de données de chaque série.  Seules les barres empilées 2D, les histogrammes empilés 2D, les graphiques en secteurs de secteur ou la barre de secteurs peuvent avoir des lignes de série. Il n'existe pas d'objet représentant une seule ligne de projection. Il n’existe aucun objet qui représente une seule ligne de série ; les lignes de série sont soit activées pour tous les points d’un groupe de graphiques, soit désactivées.</para>
       <para>Si la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasSeriesLines" /> propriété a la <b>valeur false</b>, la plupart des propriétés de l’objet <b>SeriesLines</b> sont désactivées.</para>
       <para> </para></remarks>
   </Docs>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesLines.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.SeriesLines.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -47,7 +49,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
         <value><b>Application</b> (voir ci-dessus)</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesLines.Border" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Border As ChartBorder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartBorder ^ Border { Microsoft::Office::Interop::Word::ChartBorder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Border : Microsoft.Office.Interop.Word.ChartBorder" Usage="Microsoft.Office.Interop.Word.SeriesLines.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesLines.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SeriesLines.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -104,8 +108,8 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
-        <value><b>Entier</b></value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.SeriesLines.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.SeriesLines.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SeriesLines.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="seriesLines.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesLines.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.SeriesLines.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -160,7 +166,7 @@
       <Docs>
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet.
 
-En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
+En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> .</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,6 +177,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesLines.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.SeriesLines.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -199,6 +206,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SeriesLines.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SeriesLines.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -227,6 +235,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SeriesLines.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="seriesLines.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

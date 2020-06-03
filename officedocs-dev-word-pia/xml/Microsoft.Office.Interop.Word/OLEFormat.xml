@@ -1,9 +1,10 @@
 <Type Name="OLEFormat" FullName="Microsoft.Office.Interop.Word.OLEFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="209f601ba96966afbaf1e2c89c3e30b339f7d58f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144406" /></Metadata><TypeSignature Language="C#" Value="public interface OLEFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bcdda2a9384c1b47b80159134d1ef27ec87d05a8" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925106" /></Metadata><TypeSignature Language="C#" Value="public interface OLEFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OLEFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEFormat" />
   <TypeSignature Language="C++ CLI" Value="public interface class OLEFormat" />
+  <TypeSignature Language="F#" Value="type OLEFormat = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>Représente les caractéristiques OLE (autres que les caractéristiques de liaison) d'un objet OLE, d'un contrôle ActiveX ou d'un champ.</summary>
-    <remarks><para>Utilisez la propriété <b>OLEFormat</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Shape" />objet <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />, ou <see cref="T:Microsoft.Office.Interop.Word.Field" /> pour renvoyer l’objet <b>OLEFormat</b> .</para>
+    <remarks><para>Utilisez la propriété <b>OLEFormat</b> d’un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objet, ou <see cref="T:Microsoft.Office.Interop.Word.Field" /> pour renvoyer l’objet <b>OLEFormat</b> .</para>
       <para>Les différents types de formes, de formes insérées et de champs n'offrent pas tous des fonctionnalités OLE. Utilisez la propriété <b>Type</b> des objets <b>Shape</b> et <b>InlineShape</b> pour déterminer la catégorie à laquelle appartient la forme ou forme insérée spécifiée. La propriété <b>Type</b> d'un objet <b>Field</b> renvoie le type de champ.</para>
-      <para>Vous pouvez utiliser les <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Activate" />méthodes <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Edit" />, <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Open" />, et <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.DoVerb(System.Object@)" /> pour automatiser un objet OLE.</para>
+      <para>Vous pouvez utiliser les <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Activate" /> méthodes,, <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Edit" /> <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Open" /> et <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.DoVerb(System.Object@)" /> pour automatiser un objet OLE.</para>
       <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.Object" /> propriété pour renvoyer un objet qui représente un contrôle ActiveX ou un objet OLE. Avec cet objet, il est possible d'utiliser les propriétés et méthodes de l'application du conteneur ou du contrôle ActiveX.</para>
       <para> </para></remarks>
   </Docs>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OLEFormat.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit" Usage="oLEFormat.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OLEFormat.ActivateAs(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ActivateAs (ClassType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateAs(System::String ^ ClassType);" />
+      <MemberSignature Language="F#" Value="abstract member ActivateAs : string -&gt; unit" Usage="oLEFormat.ActivateAs ClassType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.OLEFormat.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.ClassType" />
       <MemberSignature Language="VB.NET" Value="Public Property ClassType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ClassType : string with get, set" Usage="Microsoft.Office.Interop.Word.OLEFormat.ClassType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConvertTo([in]object&amp; ClassType, [in]object&amp; DisplayAsIcon, [in]object&amp; IconFileName, [in]object&amp; IconIndex, [in]object&amp; IconLabel) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OLEFormat.ConvertTo(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ConvertTo (Optional ByRef ClassType As Object, Optional ByRef DisplayAsIcon As Object, Optional ByRef IconFileName As Object, Optional ByRef IconIndex As Object, Optional ByRef IconLabel As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ConvertTo : obj * obj * obj * obj * obj -&gt; unit" Usage="oLEFormat.ConvertTo (ClassType, DisplayAsIcon, IconFileName, IconIndex, IconLabel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -159,17 +165,17 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DisplayAsIcon" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IconFileName" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IconIndex" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ClassType" Type="System.Object" RefType="ref" />
+        <Parameter Name="DisplayAsIcon" Type="System.Object" RefType="ref" />
+        <Parameter Name="IconFileName" Type="System.Object" RefType="ref" />
+        <Parameter Name="IconIndex" Type="System.Object" RefType="ref" />
+        <Parameter Name="IconLabel" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ClassType"><b>Objet</b>facultatif. Nom de l'application utilisée pour activer l'objet OLE. La liste des applications disponibles s'affiche dans la zone Type d'objet de l'onglet Nouvel objet dans la boîte de dialogue Objet (menu Insertion). Vous pouvez rechercher la <paramref name="ClassType" /> chaîne en insérant un objet en tant que forme insérée, puis en affichant les codes de champ. Le type de classe de l'objet suit le mot « EMBED » ou le mot « LINK ».</param>
         <param name="DisplayAsIcon"><b>Objet</b>facultatif. <b>True</b> pour afficher l'objet OLE en tant qu'icône. La valeur par défaut est <b>False</b>.</param>
         <param name="IconFileName"><b>Objet</b>facultatif. Fichier contenant l'icône à afficher.</param>
-        <param name="IconIndex"><b>Objet</b>facultatif. Numéro d’index de l’icône dans <paramref name="IconFileName" />. L'ordre des icônes défini dans le fichier spécifié correspond à l'ordre d'affichage des icônes dans la boîte de dialogue Changer d'icône (menu Insertion, boîte de dialogue Insérer un objet), quand la case à cocher Afficher sous forme d'icône est activée. La première icône dans le fichier porte le numéro d'index 0 (zéro). Si une icône avec le numéro d’index donné n’existe <paramref name="IconFileName" />pas dans, l’icône avec le numéro d’index 1 (la deuxième icône dans le fichier) est utilisée. La valeur par défaut est 0 (zéro).</param>
+        <param name="IconIndex"><b>Objet</b>facultatif. Numéro d’index de l’icône dans <paramref name="IconFileName" /> . L'ordre des icônes défini dans le fichier spécifié correspond à l'ordre d'affichage des icônes dans la boîte de dialogue Changer d'icône (menu Insertion, boîte de dialogue Insérer un objet), quand la case à cocher Afficher sous forme d'icône est activée. La première icône dans le fichier porte le numéro d'index 0 (zéro). Si une icône avec le numéro d’index donné n’existe pas dans <paramref name="IconFileName" /> , l’icône avec le numéro d’index 1 (la deuxième icône dans le fichier) est utilisée. La valeur par défaut est 0 (zéro).</param>
         <param name="IconLabel"><b>Objet</b>facultatif. Légende à afficher sous l'icône.</param>
         <summary>Convertit l’objet OLE spécifié d’une classe à une autre, ce qui vous permet de modifier l’objet dans une autre application serveur ou de modifier l’affichage de l’objet dans le document.</summary>
         <remarks>To be added.</remarks>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.OLEFormat.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -200,7 +207,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.DisplayAsIcon" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayAsIcon As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayAsIcon { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayAsIcon : bool with get, set" Usage="Microsoft.Office.Interop.Word.OLEFormat.DisplayAsIcon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -241,6 +249,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DoVerb([in]object&amp; VerbIndex) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OLEFormat.DoVerb(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DoVerb (Optional ByRef VerbIndex As Object)" />
+      <MemberSignature Language="F#" Value="abstract member DoVerb : obj -&gt; unit" Usage="oLEFormat.DoVerb VerbIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -255,11 +264,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="VerbIndex" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="VerbIndex" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="VerbIndex"><b>Objet</b>facultatif. Le verbe que l'objet OLE doit exécuter. Si cet argument est omis, le verbe par défaut est envoyé. Si l'objet OLE ne gère pas le verbe demandé, une erreur se produit. Peut être n' <see cref="T:Microsoft.Office.Interop.Word.WdOLEVerb" /> importe quelle constante.</param>
-        <summary>Demande qu’un objet OLE exécute l’un de ses verbes disponibles: les actions qu’un objet OLE effectue pour activer son contenu. Chaque objet OLE prend en charge un ensemble de verbes le concernant.</summary>
+        <param name="VerbIndex"><b>Objet</b>facultatif. Le verbe que l'objet OLE doit exécuter. Si cet argument est omis, le verbe par défaut est envoyé. Si l'objet OLE ne gère pas le verbe demandé, une erreur se produit. Peut être n’importe quelle <see cref="T:Microsoft.Office.Interop.Word.WdOLEVerb" /> constante.</param>
+        <summary>Demande qu’un objet OLE exécute l’un de ses verbes disponibles : les actions qu’un objet OLE effectue pour activer son contenu. Chaque objet OLE prend en charge un ensemble de verbes le concernant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OLEFormat.Edit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Edit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Edit();" />
+      <MemberSignature Language="F#" Value="abstract member Edit : unit -&gt; unit" Usage="oLEFormat.Edit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -294,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.IconIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property IconIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IconIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.IconIndex : int with get, set" Usage="Microsoft.Office.Interop.Word.OLEFormat.IconIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -325,6 +336,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.IconLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property IconLabel As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IconLabel { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IconLabel : string with get, set" Usage="Microsoft.Office.Interop.Word.OLEFormat.IconLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -356,6 +368,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.IconName" />
       <MemberSignature Language="VB.NET" Value="Public Property IconName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IconName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IconName : string with get, set" Usage="Microsoft.Office.Interop.Word.OLEFormat.IconName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -387,6 +400,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.IconPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IconPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IconPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IconPath : string" Usage="Microsoft.Office.Interop.Word.OLEFormat.IconPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -415,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.Label" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Label As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Label : string" Usage="Microsoft.Office.Interop.Word.OLEFormat.Label" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -432,7 +447,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une chaîne qui est utilisée pour identifier la partie du fichier source qui est liée. Par exemple, si le fichier source est un classeur Microsoft Excel, la propriété <b>label</b> peut renvoyer «Classeur1! R3C1: R4C2» si l’objet OLE ne contient que quelques cellules de la feuille de calcul.</summary>
+        <summary>Renvoie une chaîne qui est utilisée pour identifier la partie du fichier source qui est liée. Par exemple, si le fichier source est un classeur Microsoft Excel, la propriété <b>label</b> peut renvoyer «Classeur1 ! R3C1 : R4C2» si l’objet OLE ne contient que quelques cellules de la feuille de calcul.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété ne fonctionne qu'avec les formes, les formes fixes ou les champs définis comme objets OLE liés.</para>
           <para> </para></remarks>
@@ -444,6 +459,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.Object" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Object : obj" Usage="Microsoft.Office.Interop.Word.OLEFormat.Object" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -472,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OLEFormat.Open" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit" Usage="oLEFormat.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -497,6 +514,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.OLEFormat.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -525,6 +543,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.PreserveFormattingOnUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Property PreserveFormattingOnUpdate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveFormattingOnUpdate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PreserveFormattingOnUpdate : bool with get, set" Usage="Microsoft.Office.Interop.Word.OLEFormat.PreserveFormattingOnUpdate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -557,6 +576,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OLEFormat.ProgID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProgID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProgID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProgID : string" Usage="Microsoft.Office.Interop.Word.OLEFormat.ProgID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -576,7 +596,7 @@
       <Docs>
         <summary>Renvoie l’identificateur de programmation (ProgID) de l’objet OLE spécifié.</summary>
         <value>To be added.</value>
-        <remarks><para>Les <b></b> propriétés ProgID <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.ClassType" /> et Properties renvoient, par défaut, la même chaîne. Cependant, vous pouvez modifier la propriété <b>ClassType</b> pour les liaisons DDE.</para>
+        <remarks><para>Les propriétés <b>ProgID</b> et <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.ClassType" /> Properties renvoient, par défaut, la même chaîne. Cependant, vous pouvez modifier la propriété <b>ClassType</b> pour les liaisons DDE.</para>
           <para>
             <b>Sécurité</b>  L’échange dynamique de données (DDE) est une technologie plus ancienne qui n’est pas sécurisée. Dans la mesure du possible, utilisez une alternative plus sécurisée à DDE.</para>
           <para> </para></remarks>

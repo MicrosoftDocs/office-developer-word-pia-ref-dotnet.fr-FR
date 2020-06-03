@@ -1,9 +1,10 @@
 <Type Name="ListEntry" FullName="Microsoft.Office.Interop.Word.ListEntry">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3ce5e066aaa8a27420cee5f4174fb1ab23f7c2c3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146562" /></Metadata><TypeSignature Language="C#" Value="public interface ListEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="03b0ced3f9f2e2c4aa926fc72bdd47b8399ea81c" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924514" /></Metadata><TypeSignature Language="C#" Value="public interface ListEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListEntry" />
   <TypeSignature Language="C++ CLI" Value="public interface class ListEntry" />
+  <TypeSignature Language="F#" Value="type ListEntry = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Représente un élément d’un champ liste déroulante.</summary>
     <remarks><para>L’objet <b>ListEntry</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.ListEntries" /> collection. La collection <b>ListEntries</b> contient l’ensemble des éléments situés dans un champ de formulaire de type liste déroulante.</para>
-      <para>Utilisez <b>ListEntries</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de l’entrée de liste ou le numéro d’index, pour renvoyer un seul objet <b>ListEntry</b> . Le numéro d'index représente la position de l'entrée dans le champ de formulaire de liste déroulante (le premier élément est le numéro d'index 1).</para>
+      <para>Utilisez <b>ListEntries</b>( <paramref name="index" /> ), où <paramref name="index" /> est le nom de l’entrée de liste ou le numéro d’index, pour renvoyer un seul objet <b>ListEntry</b> . Le numéro d'index représente la position de l'entrée dans le champ de formulaire de liste déroulante (le premier élément est le numéro d'index 1).</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListEntries.Add(System.String,System.Object@)" /> méthode pour ajouter un élément à un champ de formulaire de liste déroulante.</para>
       <para> </para></remarks>
   </Docs>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListEntry.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ListEntry.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListEntry.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ListEntry.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,7 +81,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListEntry.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="listEntry.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListEntry.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.ListEntry.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListEntry.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.ListEntry.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListEntry.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ListEntry.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

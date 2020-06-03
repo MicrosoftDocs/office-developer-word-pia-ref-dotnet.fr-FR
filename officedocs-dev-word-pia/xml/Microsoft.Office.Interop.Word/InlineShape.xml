@@ -1,9 +1,10 @@
 <Type Name="InlineShape" FullName="Microsoft.Office.Interop.Word.InlineShape">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9f81e89e789a82e62997f9c7555c77ad9c26269d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146681" /></Metadata><TypeSignature Language="C#" Value="public interface InlineShape" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0249b4203836ce9c4e7cc494ecd93032505d8ca6" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923947" /></Metadata><TypeSignature Language="C#" Value="public interface InlineShape" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InlineShape" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.InlineShape" />
   <TypeSignature Language="VB.NET" Value="Public Interface InlineShape" />
   <TypeSignature Language="C++ CLI" Value="public interface class InlineShape" />
+  <TypeSignature Language="F#" Value="type InlineShape = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,9 +21,9 @@
   <Docs>
     <summary>Représente un objet situé dans la couche de texte d'un document.</summary>
     <remarks><para>Une forme insérée ne peut être qu'une image, un objet OLE ou un contrôle ActiveX. <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />les objets sont traités comme des caractères et, en tant que tels, placés dans une ligne de texte. L' <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection. La <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection contient toutes les formes d’un document, d’une plage ou d’une sélection.</para>
-      <para>Utilisez <b>InlineShapes</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> seul objet. Les formes insérées n'ont pas de nom.</para>
+      <para>Utilisez <b>InlineShapes</b>( <paramref name="index" /> ), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objet. Les formes insérées n'ont pas de nom.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.Shape" />les objets sont ancrés à une plage de texte mais sont flottants et peuvent être placés n’importe où sur la page. Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> méthode et les <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> méthodes pour convertir des formes d’un type à l’autre. Seuls les objets OLE, les images et les contrôles ActiveX peuvent être convertis en formes insérées. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> propriété pour renvoyer le type de forme fixe: image, image liée, objet OLE incorporé, objet OLE lié ou contrôle ActiveX.</para>
+        <see cref="T:Microsoft.Office.Interop.Word.Shape" />les objets sont ancrés à une plage de texte mais sont flottants et peuvent être placés n’importe où sur la page. Vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> méthode et les <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> méthodes pour convertir des formes d’un type à l’autre. Seuls les objets OLE, les images et les contrôles ActiveX peuvent être convertis en formes insérées. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> propriété pour renvoyer le type de forme fixe : image, image liée, objet OLE incorporé, objet OLE lié ou contrôle ActiveX.</para>
       <para>Lorsque vous ouvrez un document créé dans une version antérieure de Microsoft Word, les images sont converties en formes insérées.</para>
       <para> </para></remarks>
   </Docs>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShape.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit" Usage="inlineShape.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.AlternativeText" />
       <MemberSignature Language="VB.NET" Value="Public Property AlternativeText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlternativeText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternativeText : string with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.AlternativeText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.AnchorID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AnchorID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AnchorID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AnchorID : int" Usage="Microsoft.Office.Interop.Word.InlineShape.AnchorID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.InlineShape.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Borders" />
       <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Borders ^ Borders { Microsoft::Office::Interop::Word::Borders ^ get(); void set(Microsoft::Office::Interop::Word::Borders ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Borders : Microsoft.Office.Interop.Word.Borders with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.Borders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Chart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Chart As Chart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Chart ^ Chart { Microsoft::Office::Interop::Word::Chart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Chart : Microsoft.Office.Interop.Word.Chart" Usage="Microsoft.Office.Interop.Word.InlineShape.Chart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToShape () As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ ConvertToShape();" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToShape : unit -&gt; Microsoft.Office.Interop.Word.Shape" Usage="inlineShape.ConvertToShape " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.InlineShape.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -256,7 +265,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -267,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShape.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="inlineShape.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.EditID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EditID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditID : int" Usage="Microsoft.Office.Interop.Word.InlineShape.EditID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -323,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Field" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Field As Field" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Field ^ Field { Microsoft::Office::Interop::Word::Field ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Field : Microsoft.Office.Interop.Word.Field" Usage="Microsoft.Office.Interop.Word.InlineShape.Field" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -352,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Fill" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As FillFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::FillFormat ^ Fill { Microsoft::Office::Interop::Word::FillFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fill : Microsoft.Office.Interop.Word.FillFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.Fill" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -380,6 +393,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Glow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Glow As GlowFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::GlowFormat ^ Glow { Microsoft::Office::Interop::Word::GlowFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Glow : Microsoft.Office.Interop.Word.GlowFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.Glow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -408,6 +422,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.GroupItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupItems As GroupShapes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::GroupShapes ^ GroupItems { Microsoft::Office::Interop::Word::GroupShapes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupItems : Microsoft.Office.Interop.Word.GroupShapes" Usage="Microsoft.Office.Interop.Word.InlineShape.GroupItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -436,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChart As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasChart { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasChart : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.InlineShape.HasChart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -465,6 +481,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.HasSmartArt" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasSmartArt As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasSmartArt { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasSmartArt : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.InlineShape.HasSmartArt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -494,6 +511,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Height { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : single with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -525,6 +543,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.HorizontalLineFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalLineFormat As HorizontalLineFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::HorizontalLineFormat ^ HorizontalLineFormat { Microsoft::Office::Interop::Word::HorizontalLineFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalLineFormat : Microsoft.Office.Interop.Word.HorizontalLineFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.HorizontalLineFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -542,7 +561,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HorizontalLineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" /> objet qui contient la mise en forme des lignes horizontales <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> pour l’objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" /> objet qui contient la mise en forme des lignes horizontales pour l' <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -553,6 +572,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Hyperlink" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hyperlink As Hyperlink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Hyperlink ^ Hyperlink { Microsoft::Office::Interop::Word::Hyperlink ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Hyperlink : Microsoft.Office.Interop.Word.Hyperlink" Usage="Microsoft.Office.Interop.Word.InlineShape.Hyperlink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -582,6 +602,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.IsPictureBullet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPictureBullet As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPictureBullet { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPictureBullet : bool" Usage="Microsoft.Office.Interop.Word.InlineShape.IsPictureBullet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -601,8 +622,8 @@
       <Docs>
         <summary>Détermine si un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objet est une puce image.</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété renvoie la <b>valeur true</b> pour indiquer <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> qu’un objet est une puce image.</para>
-          <para>Bien que les puces images soient considérées comme des formes fixes, <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> la recherche dans la collection d’un document ne renverra pas de puces image.</para>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> pour indiquer qu’un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objet est une puce image.</para>
+          <para>Bien que les puces images soient considérées comme des formes fixes, la recherche dans la collection d’un document <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> ne renverra pas de puces image.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -612,6 +633,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Line" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line As LineFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LineFormat ^ Line { Microsoft::Office::Interop::Word::LineFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Line : Microsoft.Office.Interop.Word.LineFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.Line" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -641,6 +663,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.LinkFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinkFormat As LinkFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LinkFormat ^ LinkFormat { Microsoft::Office::Interop::Word::LinkFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinkFormat : Microsoft.Office.Interop.Word.LinkFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.LinkFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -658,7 +681,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.LinkFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> Object qui représente les options de liaison de l' <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objet spécifié qui est lié à un fichier.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> Object qui représente les options de liaison de l’objet spécifié <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> qui est lié à un fichier.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -669,6 +692,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.LockAspectRatio" />
       <MemberSignature Language="VB.NET" Value="Public Property LockAspectRatio As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState LockAspectRatio { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.LockAspectRatio : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.LockAspectRatio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -693,7 +717,7 @@
         <value>To be added.</value>
         <remarks><para>Cette propriété renvoie la <b>valeur msoTrue</b> si la forme spécifiée conserve ses proportions d’origine lorsque vous la redimensionnez, et <b>msoFalse</b> si vous pouvez modifier la hauteur et la largeur de la forme indépendamment l’une de l’autre lorsque vous la redimensionnez.</para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />Il peut s’agir de l’une des constantes suivantes: </para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />Il peut s’agir de l’une des constantes suivantes : </para>
           <para>
             <b>msoCTrue</b>
           </para>
@@ -718,6 +742,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.OLEFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OLEFormat As OLEFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::OLEFormat ^ OLEFormat { Microsoft::Office::Interop::Word::OLEFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OLEFormat : Microsoft.Office.Interop.Word.OLEFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.OLEFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -735,7 +760,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.OLEFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> Object qui représente les caractéristiques OLE (autres que la liaison) pour l' <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />objet spécifié.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> Object qui représente les caractéristiques OLE (autres que la liaison) pour l’objet spécifié <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -746,6 +771,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.OWSAnchor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OWSAnchor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OWSAnchor { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.OWSAnchor : int" Usage="Microsoft.Office.Interop.Word.InlineShape.OWSAnchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -777,6 +803,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.InlineShape.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -805,6 +832,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.PictureFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property PictureFormat As PictureFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::PictureFormat ^ PictureFormat { Microsoft::Office::Interop::Word::PictureFormat ^ get(); void set(Microsoft::Office::Interop::Word::PictureFormat ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PictureFormat : Microsoft.Office.Interop.Word.PictureFormat with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.PictureFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -836,6 +864,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.InlineShape.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -855,7 +884,7 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> de formes à partir d’une collection de formes, voir la méthode.</para>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> méthode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -865,6 +894,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Reflection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reflection As ReflectionFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ReflectionFormat ^ Reflection { Microsoft::Office::Interop::Word::ReflectionFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reflection : Microsoft.Office.Interop.Word.ReflectionFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.Reflection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -893,6 +923,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShape.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="inlineShape.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -918,6 +949,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.ScaleHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property ScaleHeight As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ScaleHeight { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.ScaleHeight : single with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.ScaleHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -949,6 +981,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.ScaleWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property ScaleWidth As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ScaleWidth { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.ScaleWidth : single with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.ScaleWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -980,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Script" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Script As Script" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::Script ^ Script { Microsoft::Office::Core::Script ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Script : Microsoft.Office.Core.Script" Usage="Microsoft.Office.Interop.Word.InlineShape.Script" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1009,6 +1043,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShape.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="inlineShape.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1025,7 +1060,7 @@
       <Parameters />
       <Docs>
         <summary>Sélectionne l'objet spécifié.</summary>
-        <remarks><para>Après avoir utilisé cette méthode, utilisez <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propriété pour travailler avec les éléments sélectionnés.</para>
+        <remarks><para>Après avoir utilisé cette méthode, utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriété pour travailler avec les éléments sélectionnés.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1035,6 +1070,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Shadow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shadow As ShadowFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ShadowFormat ^ Shadow { Microsoft::Office::Interop::Word::ShadowFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shadow : Microsoft.Office.Interop.Word.ShadowFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.Shadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1063,6 +1099,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.SmartArt" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartArt As SmartArt" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SmartArt ^ SmartArt { Microsoft::Office::Core::SmartArt ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartArt : Microsoft.Office.Core.SmartArt" Usage="Microsoft.Office.Interop.Word.InlineShape.SmartArt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1081,7 +1118,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtient un <see cref="T:Microsoft.Office.Core.SmartArt" /> objet qui fournit un moyen de travailler avec le SmartArt associé à la forme fixe spécifiée.</summary>
-        <value><see cref="T:Microsoft.Office.Core.SmartArt" /> Objet qui fournit un moyen de travailler avec le SmartArt associé à la forme insérée spécifiée.</value>
+        <value><see cref="T:Microsoft.Office.Core.SmartArt" />Objet qui fournit un moyen de travailler avec le SmartArt associé à la forme insérée spécifiée.</value>
         <remarks><para>En lecture seule. Cette propriété fournit un point d’entrée pour interagir avec un graphique SmartArt associé à la forme insérée.</para>
           <para> </para></remarks>
       </Docs>
@@ -1092,6 +1129,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.SoftEdge" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoftEdge As SoftEdgeFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SoftEdgeFormat ^ SoftEdge { Microsoft::Office::Interop::Word::SoftEdgeFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SoftEdge : Microsoft.Office.Interop.Word.SoftEdgeFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.SoftEdge" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1120,6 +1158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.TextEffect" />
       <MemberSignature Language="VB.NET" Value="Public Property TextEffect As TextEffectFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextEffectFormat ^ TextEffect { Microsoft::Office::Interop::Word::TextEffectFormat ^ get(); void set(Microsoft::Office::Interop::Word::TextEffectFormat ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextEffect : Microsoft.Office.Interop.Word.TextEffectFormat with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.TextEffect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1151,6 +1190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1183,6 +1223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdInlineShapeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdInlineShapeType Type { Microsoft::Office::Interop::Word::WdInlineShapeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdInlineShapeType" Usage="Microsoft.Office.Interop.Word.InlineShape.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1246,6 +1287,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

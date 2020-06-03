@@ -1,9 +1,10 @@
 <Type Name="OtherCorrectionsExceptions" FullName="Microsoft.Office.Interop.Word.OtherCorrectionsExceptions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3a62862c3b8b25d2624d2d0c81782eca7df63d3f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144231" /></Metadata><TypeSignature Language="C#" Value="public interface OtherCorrectionsExceptions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="684020d558d3915721d3924499e19960600abbdb" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924794" /></Metadata><TypeSignature Language="C#" Value="public interface OtherCorrectionsExceptions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OtherCorrectionsExceptions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface OtherCorrectionsExceptions&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class OtherCorrectionsExceptions : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type OtherCorrectionsExceptions = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsException" /> objets qui représente la liste des mots que Microsoft Word ne corrige pas automatiquement. Cette liste correspond à la liste des exceptions de correction automatique figurant sous l’onglet autres corrections de la boîte de dialogue exceptions de correction automatique (menu Outils, commande Correction automatique).</summary>
     <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.OtherCorrectionsExceptions" /> propriété pour renvoyer la collection <b>OtherCorrectionsExceptions</b> .</para>
       <para>Si la valeur de la <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.OtherCorrectionsAutoAdd" /> propriété est <b>true</b>, les mots sont automatiquement ajoutés à la liste des exceptions de correction automatique. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Add(System.String)" /> méthode pour ajouter un élément à la collection <b>OtherCorrectionsExceptions</b> .</para>
-      <para>Utilisez <b>OtherCorrectionsExceptions</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index, pour renvoyer un seul objet <b>OtherCorrectionsException</b> .</para>
+      <para>Utilisez <b>OtherCorrectionsExceptions</b>( <paramref name="index" /> ), où <paramref name="index" /> est le nom ou le numéro d’index, pour renvoyer un seul objet <b>OtherCorrectionsException</b> .</para>
       <para>Le numéro d'index représente la position de l'exception de correction automatique dans la collection <b>OtherCorrectionsExceptions</b>.</para>
       <para> </para></remarks>
   </Docs>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String) As OtherCorrectionsException" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::OtherCorrectionsException ^ Add(System::String ^ Name);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; Microsoft.Office.Interop.Word.OtherCorrectionsException" Usage="otherCorrectionsExceptions.Add Name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,7 +56,7 @@
       </Parameters>
       <Docs>
         <param name="Name">Argument de type <b>String</b> obligatoire. Mot que Microsoft Word doit ignorer.</param>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsException" />objet qui représente une nouvelle exception ajoutée à la liste des exceptions de correction automatique.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsException" /> objet qui représente une nouvelle exception ajoutée à la liste des exceptions de correction automatique.</summary>
         <returns>To be added.</returns>
         <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.OtherCorrectionsAutoAdd" /> propriété a la <b>valeur true</b>, les mots sont automatiquement ajoutés à la liste des autres exceptions de correction.</para>
           <para> </para></remarks>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +146,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="otherCorrectionsExceptions.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As OtherCorrectionsException" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::OtherCorrectionsException ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::OtherCorrectionsException ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.OtherCorrectionsException" Usage="Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,7 +208,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.OtherCorrectionsException</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

@@ -1,9 +1,10 @@
 <Type Name="OMaths" FullName="Microsoft.Office.Interop.Word.OMaths">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e14145376576379dc979fb6bbad86cad132778d8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144224" /></Metadata><TypeSignature Language="C#" Value="public interface OMaths : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4fbb3bfd3e4616947ef19491e1eddb86228cc560" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924738" /></Metadata><TypeSignature Language="C#" Value="public interface OMaths : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMaths implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMaths" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMaths&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class OMaths : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type OMaths = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,7 +24,7 @@
   </Attributes>
   <Docs>
     <summary>Collection d'équations. Utilisez l' <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> objet pour accéder aux membres individuels de la collection.</summary>
-    <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.OMaths.Add(Microsoft.Office.Interop.Word.Range)" />méthode pour créer une équation et l’ajouter à un document, une sélection ou une plage.  L’exemple suivant crée une équation et utilise la <see cref="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" /> méthode de la <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> collection pour convertir l’équation au format professionnel.</para>
+    <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.OMaths.Add(Microsoft.Office.Interop.Word.Range)" /> méthode pour créer une équation et l’ajouter à un document, une sélection ou une plage.  L’exemple suivant crée une équation et utilise la <see cref="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" /> méthode de la <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> collection pour convertir l’équation au format professionnel.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,7 +32,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range Add (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Range Add([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OMaths.Add(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range) As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Range ^ Add(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.Range" Usage="oMaths.Add Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -62,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMaths.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.OMaths.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -90,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub BuildUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BuildUp();" />
+      <MemberSignature Language="F#" Value="abstract member BuildUp : unit -&gt; unit" Usage="oMaths.BuildUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -106,7 +111,7 @@
       <Parameters />
       <Docs>
         <summary>Convertit toutes les équations de la collection au format professionnel.</summary>
-        <remarks><para>Pour modifier les équations au format linéaire, utilisez <see cref="M:Microsoft.Office.Interop.Word.OMaths.Linearize" /> la méthode.</para>
+        <remarks><para>Pour modifier les équations au format linéaire, utilisez la <see cref="M:Microsoft.Office.Interop.Word.OMaths.Linearize" /> méthode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -116,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMaths.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.OMaths.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -134,7 +140,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le nombre d’éléments dans la <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> collection. <b>Entier</b> en lecture seule.</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMaths.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.OMaths.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -162,10 +169,10 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle le complément a été créé. <b>Entier</b> en lecture seule.</summary>
-        <value><b>Entier</b></value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.OMaths.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.OMaths.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para>
-            <b>Remarque</b>: cette valeur peut également être représentée par la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
+            <b>Remarque</b>: cette valeur peut également être représentée par la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -175,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OMaths.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="oMaths.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -207,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMaths.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As OMath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::OMath ^ default[int] { Microsoft::Office::Interop::Word::OMath ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.OMath" Usage="Microsoft.Office.Interop.Word.OMaths.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OMaths.Linearize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Linearize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Linearize();" />
+      <MemberSignature Language="F#" Value="abstract member Linearize : unit -&gt; unit" Usage="oMaths.Linearize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -256,7 +266,7 @@
       <Docs>
         <summary>Convertit toutes les équations de la collection au format linéaire.
 .</summary>
-        <remarks><para>Pour modifier les équations au format professionnel, utilisez <see cref="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" /> la méthode.</para>
+        <remarks><para>Pour modifier les équations au format professionnel, utilisez la <see cref="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" /> méthode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -266,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMaths.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.OMaths.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -283,7 +294,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>Object</b> qui représente l’objet parent de l’objet <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> spécifié.</summary>
+        <summary>Renvoie un <b>Object</b> qui représente l’objet parent de l' <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

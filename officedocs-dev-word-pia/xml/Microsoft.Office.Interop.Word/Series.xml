@@ -1,9 +1,10 @@
 <Type Name="Series" FullName="Microsoft.Office.Interop.Word.Series">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="51719d6ceae8ae2f5e9f4ced767d517decf12984" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147668" /></Metadata><TypeSignature Language="C#" Value="public interface Series" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b22b06637aa5c2d28839ec6c270b89c0c094437e" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924451" /></Metadata><TypeSignature Language="C#" Value="public interface Series" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Series" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Series" />
   <TypeSignature Language="VB.NET" Value="Public Interface Series" />
   <TypeSignature Language="C++ CLI" Value="public interface class Series" />
+  <TypeSignature Language="F#" Value="type Series = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.Series.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,7 +48,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
         <value><b>Application</b> (voir ci-dessus)</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Series.ApplyCustomType(Microsoft.Office.Core.XlChartType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyCustomType (ChartType As XlChartType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyCustomType(Microsoft::Office::Core::XlChartType ChartType);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyCustomType : Microsoft.Office.Core.XlChartType -&gt; unit" Usage="series.ApplyCustomType ChartType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -77,7 +80,7 @@
         <Parameter Name="ChartType" Type="Microsoft.Office.Core.XlChartType" />
       </Parameters>
       <Docs>
-        <param name="ChartType">Obligatoire <see cref="T:Microsoft.Office.Core.XlChartType" />. Type de graphique standard.</param>
+        <param name="ChartType">Obligatoire <see cref="T:Microsoft.Office.Core.XlChartType" /> . Type de graphique standard.</param>
         <summary>Applique un type de graphique standard ou personnalisé à une série.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,6 +90,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ApplyDataLabels([in]valuetype Microsoft.Office.Interop.Word.XlDataLabelsType Type, [in]object LegendKey, [in]object AutoText, [in]object HasLeaderLines, [in]object ShowSeriesName, [in]object ShowCategoryName, [in]object ShowValue, [in]object ShowPercentage, [in]object ShowBubbleSize, [in]object Separator) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Series.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyDataLabels (Optional Type As XlDataLabelsType = Microsoft.Office.Interop.Word.XlDataLabelsType.xlDataLabelsShowValue, Optional LegendKey As Object, Optional AutoText As Object, Optional HasLeaderLines As Object, Optional ShowSeriesName As Object, Optional ShowCategoryName As Object, Optional ShowValue As Object, Optional ShowPercentage As Object, Optional ShowBubbleSize As Object, Optional Separator As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ApplyDataLabels : Microsoft.Office.Interop.Word.XlDataLabelsType * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; obj" Usage="series.ApplyDataLabels (Type, LegendKey, AutoText, HasLeaderLines, ShowSeriesName, ShowCategoryName, ShowValue, ShowPercentage, ShowBubbleSize, Separator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -116,7 +120,7 @@
         <param name="Type">Type d'étiquette de données à appliquer.</param>
         <param name="LegendKey"><b>True</b> pour afficher le symbole de légende à côté du point. La valeur par défaut est <b>False</b>.</param>
         <param name="AutoText"><b>True</b> si l'objet génère automatiquement un texte approprié d'après le contenu.</param>
-        <param name="HasLeaderLines">Pour les <see cref="T:Microsoft.Office.Interop.Word.Chart" /> objets <see cref="T:Microsoft.Office.Interop.Word.Series" /> et, <b>true</b> si la série possède des lignes d’étiquettes.</param>
+        <param name="HasLeaderLines">Pour les <see cref="T:Microsoft.Office.Interop.Word.Chart" /> <see cref="T:Microsoft.Office.Interop.Word.Series" /> objets et, <b>true</b> si la série possède des lignes d’étiquettes.</param>
         <param name="ShowSeriesName">Transmettez une valeur booléenne pour activer ou désactiver le nom de série pour l'étiquette de données.</param>
         <param name="ShowCategoryName">Transmettez une valeur booléenne pour activer ou désactiver le nom de catégorie pour l'étiquette de données.</param>
         <param name="ShowValue">Transmettez une valeur booléenne pour activer ou désactiver la valeur pour l'étiquette de données.</param>
@@ -124,9 +128,9 @@
         <param name="ShowBubbleSize">Transmettez une valeur booléenne pour activer ou désactiver la taille des bulles pour l'étiquette de données.</param>
         <param name="Separator">Séparateur pour l'étiquette de données.</param>
         <summary>Cette méthode applique des étiquettes de données à une série.</summary>
-        <returns>Renvoie <see cref="T:System.Object" />.</returns>
+        <returns>Renvoie <see cref="T:System.Object" /> .</returns>
         <remarks><para>
-            <paramref name="Type" />Il peut s’agir de <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> l’une des constantes.</para>
+            <paramref name="Type" />Il peut s’agir de l’une des <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> constantes.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.ApplyPictToEnd" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyPictToEnd As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyPictToEnd { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyPictToEnd : bool with get, set" Usage="Microsoft.Office.Interop.Word.Series.ApplyPictToEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.ApplyPictToFront" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyPictToFront As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyPictToFront { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyPictToFront : bool with get, set" Usage="Microsoft.Office.Interop.Word.Series.ApplyPictToFront" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.ApplyPictToSides" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyPictToSides As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyPictToSides { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyPictToSides : bool with get, set" Usage="Microsoft.Office.Interop.Word.Series.ApplyPictToSides" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.AxisGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property AxisGroup As XlAxisGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlAxisGroup AxisGroup { Microsoft::Office::Interop::Word::XlAxisGroup get(); void set(Microsoft::Office::Interop::Word::XlAxisGroup value); };" />
+      <MemberSignature Language="F#" Value="member this.AxisGroup : Microsoft.Office.Interop.Word.XlAxisGroup with get, set" Usage="Microsoft.Office.Interop.Word.Series.AxisGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -260,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.BarShape" />
       <MemberSignature Language="VB.NET" Value="Public Property BarShape As XlBarShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlBarShape BarShape { Microsoft::Office::Interop::Word::XlBarShape get(); void set(Microsoft::Office::Interop::Word::XlBarShape value); };" />
+      <MemberSignature Language="F#" Value="member this.BarShape : Microsoft.Office.Interop.Word.XlBarShape with get, set" Usage="Microsoft.Office.Interop.Word.Series.BarShape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -280,7 +289,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlBarShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit la forme utilisée pour une série unique dans un histogramme ou un graphique à barres 3D. En lecture/ <see cref="T:Microsoft.Office.Interop.Word.XlBarShape" />écriture.</summary>
+        <summary>Renvoie ou définit la forme utilisée pour une série unique dans un histogramme ou un graphique à barres 3D. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Word.XlBarShape" /> .</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlBarShape" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -291,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Border" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Border As ChartBorder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartBorder ^ Border { Microsoft::Office::Interop::Word::ChartBorder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Border : Microsoft.Office.Interop.Word.ChartBorder" Usage="Microsoft.Office.Interop.Word.Series.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -319,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.BubbleSizes" />
       <MemberSignature Language="VB.NET" Value="Public Property BubbleSizes As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BubbleSizes { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BubbleSizes : obj with get, set" Usage="Microsoft.Office.Interop.Word.Series.BubbleSizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -351,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.ChartType" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartType As XlChartType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::XlChartType ChartType { Microsoft::Office::Core::XlChartType get(); void set(Microsoft::Office::Core::XlChartType value); };" />
+      <MemberSignature Language="F#" Value="member this.ChartType : Microsoft.Office.Core.XlChartType with get, set" Usage="Microsoft.Office.Interop.Word.Series.ChartType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -371,7 +383,7 @@
         <ReturnType>Microsoft.Office.Core.XlChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le type de graphique. En lecture/ <see cref="T:Microsoft.Office.Core.XlChartType" />écriture.</summary>
+        <summary>Renvoie ou définit le type de graphique. En lecture/écriture <see cref="T:Microsoft.Office.Core.XlChartType" /> .</summary>
         <value><see cref="T:Microsoft.Office.Core.XlChartType" /></value>
         <remarks><para>Certains types de graphique ne sont pas disponibles pour les rapports de graphique croisé dynamique.</para>
           <para> </para></remarks>
@@ -383,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Series.ClearFormats" />
       <MemberSignature Language="VB.NET" Value="Public Function ClearFormats () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ClearFormats();" />
+      <MemberSignature Language="F#" Value="abstract member ClearFormats : unit -&gt; obj" Usage="series.ClearFormats " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -409,6 +422,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Series.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; obj" Usage="series.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -435,6 +449,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Series.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -453,8 +468,8 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
-        <value><b>Entier</b></value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.Series.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.Series.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -463,6 +478,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object DataLabels([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Series.DataLabels(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function DataLabels (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member DataLabels : obj -&gt; obj" Usage="series.DataLabels Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -481,8 +497,8 @@
       </Parameters>
       <Docs>
         <param name="Index">Numéro de l'étiquette de données.</param>
-        <summary>Renvoie un objet qui représente soit une seule étiquette de données ( <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> un objet), soit une collection de toutes les étiquettes de données de la <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> série (collection).</summary>
-        <returns><b>Objet</b> qui représente soit une seule étiquette de données (un <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objet), soit une collection de toutes les étiquettes de données de la série <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> (collection).</returns>
+        <summary>Renvoie un objet qui représente soit une seule étiquette de données (un <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objet), soit une collection de toutes les étiquettes de données de la série ( <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> collection).</summary>
+        <returns><b>Objet</b> qui représente soit une seule étiquette de données (un <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objet), soit une collection de toutes les étiquettes de données de la série ( <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> collection).</returns>
         <remarks><para>Si l'option Afficher la valeur de la série est activée pour les étiquettes de données, la collection renvoyée pourra contenir jusqu'à une étiquette pour chaque point. Les étiquettes de données peuvent être activées ou désactivées pour des points individuels dans la série.</para>
           <para>Si la série est dans un graphique en aires et que l'option Afficher l'étiquette est activée pour les étiquettes de données, la collection renvoyée contient seulement l'étiquette de la série en aires.</para>
           <para> </para></remarks>
@@ -494,6 +510,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Series.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="series.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -519,6 +536,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ErrorBar([in]valuetype Microsoft.Office.Interop.Word.XlErrorBarDirection Direction, [in]valuetype Microsoft.Office.Interop.Word.XlErrorBarInclude Include, [in]valuetype Microsoft.Office.Interop.Word.XlErrorBarType Type, [in]object Amount, [in]object MinusValues) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Series.ErrorBar(Microsoft.Office.Interop.Word.XlErrorBarDirection,Microsoft.Office.Interop.Word.XlErrorBarInclude,Microsoft.Office.Interop.Word.XlErrorBarType,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ErrorBar (Direction As XlErrorBarDirection, Include As XlErrorBarInclude, Type As XlErrorBarType, Optional Amount As Object, Optional MinusValues As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ErrorBar : Microsoft.Office.Interop.Word.XlErrorBarDirection * Microsoft.Office.Interop.Word.XlErrorBarInclude * Microsoft.Office.Interop.Word.XlErrorBarType * obj * obj -&gt; obj" Usage="series.ErrorBar (Direction, Include, Type, Amount, MinusValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -543,8 +561,8 @@
         <param name="Direction">Direction de la barre d'erreur.</param>
         <param name="Include">Parties de la barre d'erreur à inclure.</param>
         <param name="Type">Type de barre d'erreur.</param>
-        <param name="Amount">La marge d'erreur. Utilisé uniquement pour le montant d’erreur positif <paramref name="Type" /> lorsque <see cref="F:Microsoft.Office.Interop.Word.XlErrorBarType.xlErrorBarTypeCustom" />est.</param>
-        <param name="MinusValues">Montant de l’erreur négative <paramref name="Type" /> lorsque <see cref="F:Microsoft.Office.Interop.Word.XlErrorBarType.xlErrorBarTypeCustom" />est.</param>
+        <param name="Amount">La marge d'erreur. Utilisé uniquement pour le montant d’erreur positif lorsque <paramref name="Type" /> est <see cref="F:Microsoft.Office.Interop.Word.XlErrorBarType.xlErrorBarTypeCustom" /> .</param>
+        <param name="MinusValues">Montant de l’erreur négative lorsque <paramref name="Type" /> est <see cref="F:Microsoft.Office.Interop.Word.XlErrorBarType.xlErrorBarTypeCustom" /> .</param>
         <summary>Applique des barres d'erreur à la série. <b>Objet</b>.</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
@@ -556,6 +574,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.ErrorBars" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorBars As ErrorBars" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ErrorBars ^ ErrorBars { Microsoft::Office::Interop::Word::ErrorBars ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorBars : Microsoft.Office.Interop.Word.ErrorBars" Usage="Microsoft.Office.Interop.Word.Series.ErrorBars" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -584,6 +603,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Explosion" />
       <MemberSignature Language="VB.NET" Value="Public Property Explosion As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Explosion { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Explosion : int with get, set" Usage="Microsoft.Office.Interop.Word.Series.Explosion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -605,7 +625,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit la valeur d’explosion pour une coupe de graphique en secteurs ou de graphique en anneaux. Renvoie 0 (zéro) s’il n’y a aucune explosion (la pointe de la coupe est dans le centre du graphique). <b>Entier</b> en lecture/écriture.</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -615,6 +635,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Fill" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As ChartFillFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFillFormat ^ Fill { Microsoft::Office::Interop::Word::ChartFillFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fill : Microsoft.Office.Interop.Word.ChartFillFormat" Usage="Microsoft.Office.Interop.Word.Series.Fill" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -646,6 +667,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.Series.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -665,7 +687,7 @@
       <Docs>
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet.
 
-En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
+En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> .</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -676,6 +698,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Formula" />
       <MemberSignature Language="VB.NET" Value="Public Property Formula As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Formula : string with get, set" Usage="Microsoft.Office.Interop.Word.Series.Formula" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -710,6 +733,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.FormulaLocal" />
       <MemberSignature Language="VB.NET" Value="Public Property FormulaLocal As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormulaLocal { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FormulaLocal : string with get, set" Usage="Microsoft.Office.Interop.Word.Series.FormulaLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -745,6 +769,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.FormulaR1C1" />
       <MemberSignature Language="VB.NET" Value="Public Property FormulaR1C1 As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormulaR1C1 { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FormulaR1C1 : string with get, set" Usage="Microsoft.Office.Interop.Word.Series.FormulaR1C1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -780,6 +805,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.FormulaR1C1Local" />
       <MemberSignature Language="VB.NET" Value="Public Property FormulaR1C1Local As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormulaR1C1Local { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FormulaR1C1Local : string with get, set" Usage="Microsoft.Office.Interop.Word.Series.FormulaR1C1Local" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -815,6 +841,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Has3DEffect" />
       <MemberSignature Language="VB.NET" Value="Public Property Has3DEffect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Has3DEffect { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Has3DEffect : bool with get, set" Usage="Microsoft.Office.Interop.Word.Series.Has3DEffect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -847,6 +874,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.HasDataLabels" />
       <MemberSignature Language="VB.NET" Value="Public Property HasDataLabels As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDataLabels { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasDataLabels : bool with get, set" Usage="Microsoft.Office.Interop.Word.Series.HasDataLabels" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -878,6 +906,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.HasErrorBars" />
       <MemberSignature Language="VB.NET" Value="Public Property HasErrorBars As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasErrorBars { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasErrorBars : bool with get, set" Usage="Microsoft.Office.Interop.Word.Series.HasErrorBars" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -909,6 +938,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.HasLeaderLines" />
       <MemberSignature Language="VB.NET" Value="Public Property HasLeaderLines As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLeaderLines { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasLeaderLines : bool with get, set" Usage="Microsoft.Office.Interop.Word.Series.HasLeaderLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -941,6 +971,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Interior" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Interior As Interior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Interior ^ Interior { Microsoft::Office::Interop::Word::Interior ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Interior : Microsoft.Office.Interop.Word.Interior" Usage="Microsoft.Office.Interop.Word.Series.Interior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -972,6 +1003,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.InvertColor" />
       <MemberSignature Language="VB.NET" Value="Public Property InvertColor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InvertColor { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.InvertColor : int with get, set" Usage="Microsoft.Office.Interop.Word.Series.InvertColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -994,7 +1026,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Docs>
         <summary>Obtient ou définit la couleur de remplissage pour les points de données négatifs dans une série.</summary>
         <value>La couleur de remplissage pour les points de données négatifs dans une série.</value>
-        <remarks><para>En lecture/écriture Cette propriété définit la couleur de remplissage des points de données négatives en tant que valeur numérique, hexadécimale, octale ou couleur RVB spécifique. Au lieu d’utiliser cette propriété, vous pouvez utiliser <see cref="P:Microsoft.Office.Interop.Word.Series.InvertColorIndex" /> la propriété, qui utilise un jeu simplier de valeurs entières de la palette de couleurs actuelle. Pour que cette propriété ait un effet, la <see cref="P:Microsoft.Office.Interop.Word.Series.InvertIfNegative" /> propriété doit également avoir la valeur <b>true</b>.</para>
+        <remarks><para>En lecture/écriture Cette propriété définit la couleur de remplissage des points de données négatives en tant que valeur numérique, hexadécimale, octale ou couleur RVB spécifique. Au lieu d’utiliser cette propriété, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Word.Series.InvertColorIndex" /> propriété, qui utilise un jeu simplier de valeurs entières de la palette de couleurs actuelle. Pour que cette propriété ait un effet, la <see cref="P:Microsoft.Office.Interop.Word.Series.InvertIfNegative" /> propriété doit également avoir la valeur <b>true</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1004,6 +1036,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.InvertColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property InvertColorIndex As XlColorIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlColorIndex InvertColorIndex { Microsoft::Office::Interop::Word::XlColorIndex get(); void set(Microsoft::Office::Interop::Word::XlColorIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.InvertColorIndex : Microsoft.Office.Interop.Word.XlColorIndex with get, set" Usage="Microsoft.Office.Interop.Word.Series.InvertColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1026,7 +1059,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Docs>
         <summary>Obtient ou définit la couleur de remplissage pour les points de données négatifs dans une série.</summary>
         <value>La couleur de remplissage pour les points de données négatifs dans une série.</value>
-        <remarks><para>En lecture/écriture Cette propriété définit la couleur de remplissage des points de données négatifs en tant que valeur d’index de couleur dans la plage comprise entre zéro et 56. Au lieu d’utiliser cette propriété, vous pouvez utiliser <see cref="P:Microsoft.Office.Interop.Word.Series.InvertColor" /> la propriété, qui définit la couleur en tant que valeur numérique, hexadécimale, octale ou couleur RVB spécifique.</para>
+        <remarks><para>En lecture/écriture Cette propriété définit la couleur de remplissage des points de données négatifs en tant que valeur d’index de couleur dans la plage comprise entre zéro et 56. Au lieu d’utiliser cette propriété, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Word.Series.InvertColor" /> propriété, qui définit la couleur en tant que valeur numérique, hexadécimale, octale ou couleur RVB spécifique.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1036,6 +1069,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.InvertIfNegative" />
       <MemberSignature Language="VB.NET" Value="Public Property InvertIfNegative As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InvertIfNegative { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.InvertIfNegative : bool with get, set" Usage="Microsoft.Office.Interop.Word.Series.InvertIfNegative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1067,6 +1101,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.IsFiltered" />
       <MemberSignature Language="VB.NET" Value="Public Property IsFiltered As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFiltered { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsFiltered : bool with get, set" Usage="Microsoft.Office.Interop.Word.Series.IsFiltered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1098,6 +1133,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.LeaderLines" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LeaderLines As LeaderLines" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LeaderLines ^ LeaderLines { Microsoft::Office::Interop::Word::LeaderLines ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LeaderLines : Microsoft.Office.Interop.Word.LeaderLines" Usage="Microsoft.Office.Interop.Word.Series.LeaderLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1128,6 +1164,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.MarkerBackgroundColor" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerBackgroundColor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarkerBackgroundColor { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerBackgroundColor : int with get, set" Usage="Microsoft.Office.Interop.Word.Series.MarkerBackgroundColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1149,7 +1186,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Définit la couleur d’arrière-plan de la marque sous la forme d’une couleur RVB ou renvoie la valeur de l’index de couleur correspondante. Ne s'applique qu'aux graphiques en courbes, nuages de points ou radar. <b>Entier</b> en lecture/écriture.</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1159,6 +1196,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.MarkerBackgroundColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerBackgroundColorIndex As XlColorIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlColorIndex MarkerBackgroundColorIndex { Microsoft::Office::Interop::Word::XlColorIndex get(); void set(Microsoft::Office::Interop::Word::XlColorIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerBackgroundColorIndex : Microsoft.Office.Interop.Word.XlColorIndex with get, set" Usage="Microsoft.Office.Interop.Word.Series.MarkerBackgroundColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1179,7 +1217,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur d’arrière-plan de marque sous forme d’index dans la palette de couleurs <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> actuelle ou sous <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> la <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />forme d’une des constantes suivantes: ou. Ne s'applique qu'aux graphiques en courbes, nuages de points ou radar. Lecture/écriture</summary>
+        <summary>Cette propriété renvoie ou définit la couleur d’arrière-plan de marque sous forme d’index dans la palette de couleurs actuelle ou sous la forme d’une des <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> constantes suivantes : <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> ou <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" /> . Ne s'applique qu'aux graphiques en courbes, nuages de points ou radar. Lecture/écriture</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1190,6 +1228,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.MarkerForegroundColor" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerForegroundColor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarkerForegroundColor { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerForegroundColor : int with get, set" Usage="Microsoft.Office.Interop.Word.Series.MarkerForegroundColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1211,7 +1250,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Définit la couleur de premier plan de la marque sous la forme d’une couleur RVB ou renvoie la valeur de l’index de couleur correspondante. Ne s’applique qu’aux graphiques en courbes, en nuages de points et en radar. <b>Entier</b> en lecture/écriture.</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1221,6 +1260,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.MarkerForegroundColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerForegroundColorIndex As XlColorIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlColorIndex MarkerForegroundColorIndex { Microsoft::Office::Interop::Word::XlColorIndex get(); void set(Microsoft::Office::Interop::Word::XlColorIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerForegroundColorIndex : Microsoft.Office.Interop.Word.XlColorIndex with get, set" Usage="Microsoft.Office.Interop.Word.Series.MarkerForegroundColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1241,7 +1281,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la couleur de premier plan de marque sous forme d’index dans la palette de couleurs actuelle <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> ou sous la <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> forme <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />d’une des constantes suivantes: ou. Ne s'applique qu'aux graphiques en courbes, nuages de points ou radar. En lecture/écriture</summary>
+        <summary>Cette propriété renvoie ou définit la couleur de premier plan de marque sous forme d’index dans la palette de couleurs actuelle ou sous la forme d’une des <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> constantes suivantes : <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> ou <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" /> . Ne s'applique qu'aux graphiques en courbes, nuages de points ou radar. En lecture/écriture</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1252,6 +1292,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.MarkerSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarkerSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerSize : int with get, set" Usage="Microsoft.Office.Interop.Word.Series.MarkerSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1273,7 +1314,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit la taille, exprimée en points, de la marque de donnée. Il peut s'agir d'une valeur comprise entre 2 et 72. <b>Entier</b> en lecture/écriture.</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1283,6 +1324,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.MarkerStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerStyle As XlMarkerStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlMarkerStyle MarkerStyle { Microsoft::Office::Interop::Word::XlMarkerStyle get(); void set(Microsoft::Office::Interop::Word::XlMarkerStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerStyle : Microsoft.Office.Interop.Word.XlMarkerStyle with get, set" Usage="Microsoft.Office.Interop.Word.Series.MarkerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1303,7 +1345,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.XlMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit le style de marqueur pour un point ou une série dans un graphique en courbes, à nuages de points ou en radar. En lecture/ <see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" />écriture.</summary>
+        <summary>Renvoie ou définit le style de marqueur pour un point ou une série dans un graphique en courbes, à nuages de points ou en radar. En lecture/écriture <see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" /> .</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1314,6 +1356,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.Series.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1345,6 +1388,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Series.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1373,6 +1417,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Series.Paste" />
       <MemberSignature Language="VB.NET" Value="Public Function Paste () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Paste();" />
+      <MemberSignature Language="F#" Value="abstract member Paste : unit -&gt; obj" Usage="series.Paste " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1390,7 +1435,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Docs>
         <summary>Colle une image du Presse-papiers en tant que marqueur sur la série sélectionnée.</summary>
         <returns><b>Object</b></returns>
-        <remarks><para>Cette méthode peut être utilisée sur des graphiques en histogrammes, en barres, en courbes ou en radar <see cref="P:Microsoft.Office.Interop.Word.Series.MarkerStyle" /> , et <see cref="F:Microsoft.Office.Interop.Word.XlMarkerStyle.xlMarkerStylePicture" />elle définit la propriété sur.</para>
+        <remarks><para>Cette méthode peut être utilisée sur des graphiques en histogrammes, en barres, en courbes ou en radar, et elle définit la <see cref="P:Microsoft.Office.Interop.Word.Series.MarkerStyle" /> propriété sur <see cref="F:Microsoft.Office.Interop.Word.XlMarkerStyle.xlMarkerStylePicture" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1400,6 +1445,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.PictureType" />
       <MemberSignature Language="VB.NET" Value="Public Property PictureType As XlChartPictureType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlChartPictureType PictureType { Microsoft::Office::Interop::Word::XlChartPictureType get(); void set(Microsoft::Office::Interop::Word::XlChartPictureType value); };" />
+      <MemberSignature Language="F#" Value="member this.PictureType : Microsoft.Office.Interop.Word.XlChartPictureType with get, set" Usage="Microsoft.Office.Interop.Word.Series.PictureType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1420,7 +1466,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>Microsoft.Office.Interop.Word.XlChartPictureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> définit une valeur qui représente le mode d’affichage des images sur une colonne ou un graphique à barres.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> valeur qui représente le mode d’affichage des images sur une colonne ou un graphique à barres.</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1431,6 +1477,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.PictureUnit" />
       <MemberSignature Language="VB.NET" Value="Public Property PictureUnit As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PictureUnit { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.PictureUnit : double with get, set" Usage="Microsoft.Office.Interop.Word.Series.PictureUnit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1457,7 +1504,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si <see cref="P:Microsoft.Office.Interop.Word.Series.PictureType" /> la propriété est définie <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> sur (si ce n’est pas le cas, cette propriété est ignorée).</summary>
+        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si la <see cref="P:Microsoft.Office.Interop.Word.Series.PictureType" /> propriété est définie sur <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> (si ce n’est pas le cas, cette propriété est ignorée).</summary>
         <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1468,6 +1515,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.PictureUnit2" />
       <MemberSignature Language="VB.NET" Value="Public Property PictureUnit2 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PictureUnit2 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.PictureUnit2 : double with get, set" Usage="Microsoft.Office.Interop.Word.Series.PictureUnit2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1488,7 +1536,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> la propriété est définie <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> sur (si ce n’est pas le cas, cette propriété est ignorée). <b>Double</b> en lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit l’unité de chaque image du graphique si la <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> propriété est définie sur <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> (si ce n’est pas le cas, cette propriété est ignorée). <b>Double</b> en lecture/écriture.</summary>
         <value><see cref="T:System.Double" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1499,6 +1547,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.PlotColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlotColorIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PlotColorIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlotColorIndex : int" Usage="Microsoft.Office.Interop.Word.Series.PlotColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1528,6 +1577,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.PlotOrder" />
       <MemberSignature Language="VB.NET" Value="Public Property PlotOrder As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PlotOrder { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PlotOrder : int with get, set" Usage="Microsoft.Office.Interop.Word.Series.PlotOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1549,7 +1599,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit l'ordre de traçage de la série sélectionnée au sein du groupe de graphique. <b>Entier</b> en lecture/écriture.</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks><para>L'ordre de traçage ne peut être défini qu'au sein d'un groupe de graphiques (vous ne pouvez pas définir l'ordre de traçage pour la totalité du graphique en présence de plusieurs types de graphique). Par groupe de graphiques, il faut entendre un ensemble de séries de données qui possèdent le même type de graphique.</para>
           <para>Toute modification de l'ordre de traçage d'une série entraîne l'ajustement, le cas échéant, de l'ordre de traçage des autres séries du groupe de graphiques.</para>
           <para> </para></remarks>
@@ -1560,6 +1610,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Points([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Series.Points(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Points (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Points : obj -&gt; obj" Usage="series.Points Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1579,7 +1630,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Docs>
         <param name="Index">Nom ou numéro du point.</param>
         <summary>Renvoie une collection de tous les points de la série.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Word.Points" /> Objet qui représente tous les points de la série.</returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Points" />Objet qui représente tous les points de la série.</returns>
         <remarks>To be added.</remarks>
         <example><para>Cet exemple montre comment appliquer une étiquette de données au point 1 de la série 1 du premier graphique du document actif.</para></example>
       </Docs>
@@ -1590,6 +1641,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Series.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="series.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1616,6 +1668,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Shadow" />
       <MemberSignature Language="VB.NET" Value="Public Property Shadow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Shadow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Shadow : bool with get, set" Usage="Microsoft.Office.Interop.Word.Series.Shadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1647,6 +1700,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Smooth" />
       <MemberSignature Language="VB.NET" Value="Public Property Smooth As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Smooth { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Smooth : bool with get, set" Usage="Microsoft.Office.Interop.Word.Series.Smooth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1677,6 +1731,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Trendlines([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Series.Trendlines(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Trendlines (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Trendlines : obj -&gt; obj" Usage="series.Trendlines Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1696,7 +1751,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <Docs>
         <param name="Index">To be added.</param>
         <summary>Renvoie une collection de toutes les courbes de tendance de la série.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> Objet qui représente toutes les courbes de la série.</returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Trendlines" />Objet qui représente toutes les courbes de la série.</returns>
         <remarks>To be added.</remarks>
         <example><para>Cet exemple montre comment ajouter une courbe de tendance linéaire à la série 1 du premier graphique du document actif.</para></example>
       </Docs>
@@ -1707,6 +1762,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : int with get, set" Usage="Microsoft.Office.Interop.Word.Series.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1728,7 +1784,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur de type <b>Integer</b> qui représente le type de série.</summary>
-        <value>Renvoie <see cref="T:System.Int32" />.</value>
+        <value>Renvoie <see cref="T:System.Int32" /> .</value>
         <remarks><para>Les <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> constantes peuvent être utilisées pour cette propriété.</para>
           <para> </para></remarks>
       </Docs>
@@ -1739,6 +1795,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.Values" />
       <MemberSignature Language="VB.NET" Value="Public Property Values As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Values { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Values : obj with get, set" Usage="Microsoft.Office.Interop.Word.Series.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1771,6 +1828,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Series.XValues" />
       <MemberSignature Language="VB.NET" Value="Public Property XValues As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ XValues { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XValues : obj with get, set" Usage="Microsoft.Office.Interop.Word.Series.XValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
