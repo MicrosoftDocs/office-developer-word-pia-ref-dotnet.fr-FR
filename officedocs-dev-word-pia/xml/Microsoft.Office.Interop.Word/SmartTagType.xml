@@ -1,9 +1,10 @@
 <Type Name="SmartTagType" FullName="Microsoft.Office.Interop.Word.SmartTagType">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="be0009d07ada538632f62700e62de5b182eb910c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143986" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4dda4b414bab01205c0c91563416a35026dc2a2f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926296" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagType" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagType" />
   <TypeSignature Language="C++ CLI" Value="public interface class SmartTagType" />
+  <TypeSignature Language="F#" Value="type SmartTagType = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,8 +22,8 @@
     <summary>Représente un type de balise active.</summary>
     <remarks><para>Un type de balise active est un élément unique dans une liste de balises actives. Les listes de balises actives peuvent contenir plusieurs types de balises actives. Par exemple, la liste de balises actives Adresse installée sur les systèmes anglais contient par défaut un type de balise active Nom, Rue et Ville pour n'en citer que quelques-uns.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" /><see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />les objets, <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> et sont liés en ce que chaque élément reconnu par un composant de balise active est un objet <b>SmartTagType</b> . Par exemple, l'élément « ville » dans le composant de balise active Adresse est un objet <b>SmartTagType</b> spécifique. Le type de balise active « ville » contient ensuite des objets <b>SmartTagRecognizer</b> associés (la partie du composant de balise active qui reconnaît les balises actives du type « ville » dans les documents) et des objets <b>SmartTagAction</b> (la partie du composant de balise active qui fournit les actions associées au type de balise active spécifique, qui peut inclure la recherche d'une ville reconnue dans Microsoft MapPoint ou MSN). En d’autres termes, le module de reconnaissance effectue l’étiquetage, le gestionnaire d’actions fournit les fonctionnalités de l’utilisateur final et ce qui les lie est le type de balise active sur laquelle ils travaillent.</para>
-      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> méthode pour renvoyer un type de balise active spécifique dans une collection de types de balises actives. Utilisez ensuite la <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> propriété pour renvoyer tous les modules de reconnaissance de balise active associés à un type spécifié de balise <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> active, et utilisez la propriété pour renvoyer toutes les actions de balise active associées à un type spécifié de balise active.</para>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />les <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" /> objets, et <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> sont liés en ce que chaque élément reconnu par un composant de balise active est un objet <b>SmartTagType</b> . Par exemple, l'élément « ville » dans le composant de balise active Adresse est un objet <b>SmartTagType</b> spécifique. Le type de balise active « ville » contient ensuite des objets <b>SmartTagRecognizer</b> associés (la partie du composant de balise active qui reconnaît les balises actives du type « ville » dans les documents) et des objets <b>SmartTagAction</b> (la partie du composant de balise active qui fournit les actions associées au type de balise active spécifique, qui peut inclure la recherche d'une ville reconnue dans Microsoft MapPoint ou MSN). En d’autres termes, le module de reconnaissance effectue l’étiquetage, le gestionnaire d’actions fournit les fonctionnalités de l’utilisateur final et ce qui les lie est le type de balise active sur laquelle ils travaillent.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> méthode pour renvoyer un type de balise active spécifique dans une collection de types de balises actives. Utilisez ensuite la <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> propriété pour renvoyer tous les modules de reconnaissance de balise active associés à un type spécifié de balise active, et utilisez la <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> propriété pour renvoyer toutes les actions de balise active associées à un type spécifié de balise active.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.SmartTagType.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SmartTagType.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,7 +88,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.FriendlyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FriendlyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FriendlyName : string" Usage="Microsoft.Office.Interop.Word.SmartTagType.FriendlyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -118,9 +122,9 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> qui représente le nom convivial d’un type de balise active.</summary>
         <value>To be added.</value>
-        <remarks><para>Les noms de types de balises actives, <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> tels que définis dans la propriété, sont mis en forme en tant que urn (Uniform Resource Names). Le nom convivial supprime l’URN et laisse le nom après le signe dièse (#). Par exemple, le type de balise active adresse renvoie l’URN suivant <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> pour la propriété.</para>
-          <para>urn: schemas-microsoft-com: Office: SmartTags # Address</para>
-          <para>La propriété <b>FriendlyName</b> supprime tout, y compris le signe dièse (#), et laisse la <b>chaîne</b>suivante:</para>
+        <remarks><para>Les noms de types de balises actives, tels que définis dans la <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> propriété, sont mis en forme en tant que urn (Uniform Resource Names). Le nom convivial supprime l’URN et laisse le nom après le signe dièse (#). Par exemple, le type de balise active adresse renvoie l’URN suivant pour la <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> propriété.</para>
+          <para>urn : schemas-microsoft-com : Office : SmartTags # Address</para>
+          <para>La propriété <b>FriendlyName</b> supprime tout, y compris le signe dièse (#), et laisse la <b>chaîne</b>suivante :</para>
           <para>address</para>
           <para> </para></remarks>
       </Docs>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.SmartTagType.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SmartTagType.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTagActions As SmartTagActions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTagActions ^ SmartTagActions { Microsoft::Office::Interop::Word::SmartTagActions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTagActions : Microsoft.Office.Interop.Word.SmartTagActions" Usage="Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTagRecognizers As SmartTagRecognizers" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTagRecognizers ^ SmartTagRecognizers { Microsoft::Office::Interop::Word::SmartTagRecognizers ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTagRecognizers : Microsoft.Office.Interop.Word.SmartTagRecognizers" Usage="Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

@@ -1,9 +1,10 @@
 <Type Name="StoryRanges" FullName="Microsoft.Office.Interop.Word.StoryRanges">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b1737872c1ea38c8e74f55ed04f58b48e1c4b7f2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143958" /></Metadata><TypeSignature Language="C#" Value="public interface StoryRanges : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6db42e747b454b3237aadc8d732f01f522b6b98f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926240" /></Metadata><TypeSignature Language="C#" Value="public interface StoryRanges : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StoryRanges implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.StoryRanges" />
   <TypeSignature Language="VB.NET" Value="Public Interface StoryRanges&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class StoryRanges : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type StoryRanges = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Range" /> objets qui représentent les articles d’un document.</summary>
     <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.StoryRanges" /> propriété pour renvoyer la collection <b>StoryRanges</b> .</para>
       <para>La méthode <b>Add</b> n’est pas disponible pour la collection <b>StoryRanges</b> . Le nombre d'articles de la collection <b>StoryRanges</b> est fini.</para>
-      <para>Utilisez <b>StoryRanges</b>(<paramref name="index" />), où <paramref name="index" /> est une <see cref="T:Microsoft.Office.Interop.Word.WdStoryType" /> constante, pour renvoyer un article donné sous la forme d’un objet <b>Range</b> .</para>
+      <para>Utilisez <b>StoryRanges</b>( <paramref name="index" /> ), où <paramref name="index" /> est une <see cref="T:Microsoft.Office.Interop.Word.WdStoryType" /> constante, pour renvoyer un article donné sous la forme d’un objet <b>Range</b> .</para>
       <para>Si vous tentez de renvoyer un article qui n’est pas disponible dans le document spécifié, une erreur se produit.</para>
       <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Range.NextStoryRange" /> propriété pour parcourir tous les articles d’un document.</para>
       <para> </para></remarks>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StoryRanges.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.StoryRanges.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StoryRanges.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.StoryRanges.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StoryRanges.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.StoryRanges.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -112,7 +116,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.StoryRanges.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="storyRanges.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StoryRanges.Item(Microsoft.Office.Interop.Word.WdStoryType)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As WdStoryType) As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ default[Microsoft::Office::Interop::Word::WdStoryType] { Microsoft::Office::Interop::Word::Range ^ get(Microsoft::Office::Interop::Word::WdStoryType Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Microsoft.Office.Interop.Word.WdStoryType) : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.StoryRanges.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -175,8 +181,8 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdStoryType" />
       </Parameters>
       <Docs>
-        <param name="Index">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdStoryType" />. Désigne le type de l'article spécifié. Il peut s’agir de l’une des constantes <b>WdStoryType</b> suivantes. <b>wdCommentsStory</b> <b>wdEndnotesStory</b> <b>wdEvenPagesFooterStory</b> <b>wdEvenPagesHeaderStory</b> <b>wdFirstPageFooterStory</b> <b>wdFirstPageHeaderStory</b> <b>wdFootnotesStory</b> <b>wdMainTextStory</b> <b>wdPrimaryFooterStory fait</b> <b>wdPrimaryHeaderStory</b> <b>wdTextFrameStory</b></param>
-        <summary>Renvoie un article donné d’une plage ou d’une sélection <see cref="T:Microsoft.Office.Interop.Word.Range" /> en tant qu’objet.</summary>
+        <param name="Index">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdStoryType" /> . Désigne le type de l'article spécifié. Il peut s’agir de l’une des constantes <b>WdStoryType</b> suivantes. <b>wdCommentsStory</b><b>wdEndnotesStory</b><b>wdEvenPagesFooterStory</b><b>wdEvenPagesHeaderStory</b><b>wdFirstPageFooterStory</b><b>wdFirstPageHeaderStory</b><b>wdFootnotesStory</b><b>wdMainTextStory</b><b>wdPrimaryFooterStory fait</b><b>wdPrimaryHeaderStory</b><b>wdTextFrameStory</b></param>
+        <summary>Renvoie un article donné d’une plage ou d’une sélection en tant qu' <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StoryRanges.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.StoryRanges.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

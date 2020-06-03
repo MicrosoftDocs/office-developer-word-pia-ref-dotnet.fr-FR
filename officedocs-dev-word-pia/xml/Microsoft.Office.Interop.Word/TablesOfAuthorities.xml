@@ -1,9 +1,10 @@
 <Type Name="TablesOfAuthorities" FullName="Microsoft.Office.Interop.Word.TablesOfAuthorities">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fef3d3e5c7ec2a8397d6977b226d1f8051218c96" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143930" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="819a44742988789bbd4e56c1ab57ef8a5e6c1bf5" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926114" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfAuthorities implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" />
   <TypeSignature Language="VB.NET" Value="Public Interface TablesOfAuthorities&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class TablesOfAuthorities : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type TablesOfAuthorities = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> objets (champs TOA) qui représente les tables de références dans un document.</summary>
     <remarks><para>Utilisez la <see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" /> propriété pour renvoyer la collection <b>TablesOfAuthorities</b> .</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour ajouter une table de références à un document. Une table de références est construite à partir des champs TA (entrée de Table de références) dans un document.</para>
-      <para>Utilisez <b>TablesOfAuthorities</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>TableOfAuthorities</b> . Le numéro d'index représente la position de la table de références dans le document.</para>
+      <para>Utilisez <b>TablesOfAuthorities</b>( <paramref name="index" /> ), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>TableOfAuthorities</b> . Le numéro d'index représente la position de la table de références dans le document.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TableOfAuthorities Add (Microsoft.Office.Interop.Word.Range Range, ref object Category, ref object Bookmark, ref object Passim, ref object KeepEntryFormatting, ref object Separator, ref object IncludeSequenceName, ref object EntrySeparator, ref object PageRangeSeparator, ref object IncludeCategoryHeader, ref object PageNumberSeparator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.TableOfAuthorities Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Category, [in]object&amp; Bookmark, [in]object&amp; Passim, [in]object&amp; KeepEntryFormatting, [in]object&amp; Separator, [in]object&amp; IncludeSequenceName, [in]object&amp; EntrySeparator, [in]object&amp; PageRangeSeparator, [in]object&amp; IncludeCategoryHeader, [in]object&amp; PageNumberSeparator) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range, Optional ByRef Category As Object, Optional ByRef Bookmark As Object, Optional ByRef Passim As Object, Optional ByRef KeepEntryFormatting As Object, Optional ByRef Separator As Object, Optional ByRef IncludeSequenceName As Object, Optional ByRef EntrySeparator As Object, Optional ByRef PageRangeSeparator As Object, Optional ByRef IncludeCategoryHeader As Object, Optional ByRef PageNumberSeparator As Object) As TableOfAuthorities" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.TableOfAuthorities" Usage="tablesOfAuthorities.Add (Range, Category, Bookmark, Passim, KeepEntryFormatting, Separator, IncludeSequenceName, EntrySeparator, PageRangeSeparator, IncludeCategoryHeader, PageNumberSeparator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,28 +51,28 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Bookmark" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Passim" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="KeepEntryFormatting" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Separator" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IncludeSequenceName" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="EntrySeparator" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PageRangeSeparator" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IncludeCategoryHeader" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PageNumberSeparator" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Category" Type="System.Object" RefType="ref" />
+        <Parameter Name="Bookmark" Type="System.Object" RefType="ref" />
+        <Parameter Name="Passim" Type="System.Object" RefType="ref" />
+        <Parameter Name="KeepEntryFormatting" Type="System.Object" RefType="ref" />
+        <Parameter Name="Separator" Type="System.Object" RefType="ref" />
+        <Parameter Name="IncludeSequenceName" Type="System.Object" RefType="ref" />
+        <Parameter Name="EntrySeparator" Type="System.Object" RefType="ref" />
+        <Parameter Name="PageRangeSeparator" Type="System.Object" RefType="ref" />
+        <Parameter Name="IncludeCategoryHeader" Type="System.Object" RefType="ref" />
+        <Parameter Name="PageNumberSeparator" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Plage où vous souhaitez faire figurer la table de références. La table de références remplace la plage si la plage n’est pas réduite.</param>
+        <param name="Range">Objet required <see cref="T:Microsoft.Office.Interop.Word.Range" /> . Plage où vous souhaitez faire figurer la table de références. La table de références remplace la plage si la plage n’est pas réduite.</param>
         <param name="Category"><b>Objet</b>facultatif. Catégorie d'entrées que vous souhaitez inclure dans la table de références. Correspond au commutateur \c pour un champ TOA. Les valeurs comprises entre 0 (zéro) et 16 correspondent aux éléments répertoriés dans la zone Catégorie sous l'onglet Table des références de la boîte de dialogue Tables et index (menu Insertion, commande Référence). La valeur par défaut est 1.</param>
         <param name="Bookmark"><b>Objet</b>facultatif. Nom de chaîne du signet à partir duquel regrouper les entrées d'une table de références. Si <paramref name="Bookmark" /> est spécifié, les entrées sont collectées uniquement à partir de la partie du document marquée par le signet. Correspond au commutateur \b pour un champ TOA.</param>
-        <param name="Passim"><b>Objet</b>facultatif. <b>True</b> pour remplacer au moins cinq références de pages pour la même autorité par Passim dans la table de références. Correspond au commutateur \p pour un champ de Table de références (champ TOA). Si vous ne spécifiez pas cet <paramref name="Passim" /> argument, la <b>valeur</b>par défaut est false.</param>
-        <param name="KeepEntryFormatting"><b>Objet</b>facultatif. <b>True</b> pour appliquer la mise en forme à partir de la table de références aux entrées dans la table de références. Correspond au commutateur \f pour un champ de Table de références (champ TOA). Si vous ne spécifiez pas cet <paramref name="KeepEntryFormatting" /> argument, la valeur par défaut est <b>true</b>.</param>
+        <param name="Passim"><b>Objet</b>facultatif. <b>True</b> pour remplacer au moins cinq références de pages pour la même autorité par Passim dans la table de références. Correspond au commutateur \p pour un champ de Table de références (champ TOA). Si vous ne spécifiez pas cet argument, la <paramref name="Passim" /> valeur par défaut est <b>false</b>.</param>
+        <param name="KeepEntryFormatting"><b>Objet</b>facultatif. <b>True</b> pour appliquer la mise en forme à partir de la table de références aux entrées dans la table de références. Correspond au commutateur \f pour un champ de Table de références (champ TOA). Si vous ne spécifiez pas cet argument, la <paramref name="KeepEntryFormatting" /> valeur par défaut est <b>true</b>.</param>
         <param name="Separator"><b>Objet</b>facultatif. Caractères (cinq au maximum) entre chaque numéro de séquence et son numéro de page dans la table de références. Correspond au commutateur \d pour un champ TOA. Si vous ne spécifiez pas cet argument, le séparateur par défaut est un tiret (-).</param>
         <param name="IncludeSequenceName"><b>Objet</b>facultatif. Chaîne définissant l'identificateur de champ SEQ (Sequence) pour la table de références. Correspond au commutateur \s pour un champ TOA (champ de table de références).</param>
         <param name="EntrySeparator"><b>Objet</b>facultatif. Caractères (cinq au maximum) entre chaque entrée et son numéro de page dans la table de références. Correspond au commutateur \e pour un champ TOA. Si vous ne spécifiez pas cet argument, aucun séparateur n'est utilisé.</param>
         <param name="PageRangeSeparator"><b>Objet</b>facultatif. Caractères (cinq au maximum) séparant les numéros de la page de début et de la page de fin dans chaque étendue de pages de la table de références. Correspond au commutateur \g pour un champ de table de références (champ TOA). Si vous ne spécifiez pas cet argument, le caractère utilisé est un tiret demi-cadratin.</param>
-        <param name="IncludeCategoryHeader"><b>Objet</b>facultatif. <b>True</b> pour que le nom de catégorie pour chaque groupe d'entrées s'affichent dans la table de références (par exemple, affaires). Correspond au commutateur \h pour un champ de Table de références (champ TOA). Si vous ne spécifiez pas cet <paramref name="IncludeCategoryHeader" /> argument, la valeur par défaut est <b>true</b>.</param>
+        <param name="IncludeCategoryHeader"><b>Objet</b>facultatif. <b>True</b> pour que le nom de catégorie pour chaque groupe d'entrées s'affichent dans la table de références (par exemple, affaires). Correspond au commutateur \h pour un champ de Table de références (champ TOA). Si vous ne spécifiez pas cet argument, la <paramref name="IncludeCategoryHeader" /> valeur par défaut est <b>true</b>.</param>
         <param name="PageNumberSeparator"><b>Objet</b>facultatif. Caractères (cinq au maximum) séparant les différents numéros de page au sein des références de page de la table de références. Correspond au commutateur \l pour un champ de table de références (champ TOA). Si vous ne spécifiez pas cet argument, la valeur par défaut est une virgule et un espace.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> objet qui représente une table de références ajoutée à un document.</summary>
         <returns>To be added.</returns>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfAuthorities.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TablesOfAuthorities.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -111,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfAuthorities.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.TablesOfAuthorities.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfAuthorities.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TablesOfAuthorities.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -158,7 +164,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfAuthorities.Format" />
       <MemberSignature Language="VB.NET" Value="Public Property Format As WdToaFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdToaFormat Format { Microsoft::Office::Interop::Word::WdToaFormat get(); void set(Microsoft::Office::Interop::Word::WdToaFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.WdToaFormat with get, set" Usage="Microsoft.Office.Interop.Word.TablesOfAuthorities.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -192,7 +199,7 @@
         <summary>Renvoie ou définit la mise en forme des tables de références du document spécifié.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdToaFormat" />Il peut s’agir de l’une des constantes <b>WdToaFormat</b> suivantes:</para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdToaFormat" />Il peut s’agir de l’une des constantes <b>WdToaFormat</b> suivantes :</para>
           <para>
             <b>wdTOAClassic</b>
           </para>
@@ -217,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="tablesOfAuthorities.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfAuthorities.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As TableOfAuthorities" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TableOfAuthorities ^ default[int] { Microsoft::Office::Interop::Word::TableOfAuthorities ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.TableOfAuthorities" Usage="Microsoft.Office.Interop.Word.TablesOfAuthorities.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -280,6 +289,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MarkAllCitations([in]string ShortCitation, [in]object&amp; LongCitation, [in]object&amp; LongCitationAutoText, [in]object&amp; Category) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkAllCitations(System.String,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MarkAllCitations (ShortCitation As String, Optional ByRef LongCitation As Object, Optional ByRef LongCitationAutoText As Object, Optional ByRef Category As Object)" />
+      <MemberSignature Language="F#" Value="abstract member MarkAllCitations : string * obj * obj * obj -&gt; unit" Usage="tablesOfAuthorities.MarkAllCitations (ShortCitation, LongCitation, LongCitationAutoText, Category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -295,16 +305,16 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ShortCitation" Type="System.String" />
-        <Parameter Name="LongCitation" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="LongCitationAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LongCitation" Type="System.Object" RefType="ref" />
+        <Parameter Name="LongCitationAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="Category" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ShortCitation">Argument de type <b>String</b> obligatoire. Citation courte pour l'entrée telle qu'elle apparaîtra dans la boîte de dialogue Citation (menu Insertion, commande Tables et index).</param>
         <param name="LongCitation"><b>Objet</b>facultatif. Citation longue pour l'entrée telle qu'elle apparaîtra dans la table de références.</param>
         <param name="LongCitationAutoText"><b>Objet</b>facultatif. Nom de l'insertion automatique qui contient le texte de la citation longue tel qu'il apparaîtra dans la table de références.</param>
         <param name="Category"><b>Objet</b>facultatif. Nombre de catégories à associer avec l'entrée : 1 correspond à la première catégorie de la zone Category dans la boîte de dialogue Citation, 2 correspond à la deuxième catégorie, et ainsi de suite.</param>
-        <summary>Insère un champ TA (entrée de table de références) après toutes les occurrences <paramref name="ShortCitation" /> du texte.</summary>
+        <summary>Insère un champ TA (entrée de table de références) après toutes les occurrences du <paramref name="ShortCitation" /> texte.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,6 +322,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Field MarkCitation (Microsoft.Office.Interop.Word.Range Range, string ShortCitation, ref object LongCitation, ref object LongCitationAutoText, ref object Category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Field MarkCitation([in]class Microsoft.Office.Interop.Word.Range Range, [in]string ShortCitation, [in]object&amp; LongCitation, [in]object&amp; LongCitationAutoText, [in]object&amp; Category) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MarkCitation (Range As Range, ShortCitation As String, Optional ByRef LongCitation As Object, Optional ByRef LongCitationAutoText As Object, Optional ByRef Category As Object) As Field" />
+      <MemberSignature Language="F#" Value="abstract member MarkCitation : Microsoft.Office.Interop.Word.Range * string * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.Field" Usage="tablesOfAuthorities.MarkCitation (Range, ShortCitation, LongCitation, LongCitationAutoText, Category)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -328,17 +340,17 @@
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="ShortCitation" Type="System.String" />
-        <Parameter Name="LongCitation" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="LongCitationAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LongCitation" Type="System.Object" RefType="ref" />
+        <Parameter Name="LongCitationAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="Category" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Emplacement de l'entrée de la table de références. Le champ TA est inséré après <paramref name="Range" />.</param>
+        <param name="Range">Objet required <see cref="T:Microsoft.Office.Interop.Word.Range" /> . Emplacement de l'entrée de la table de références. Le champ TA est inséré après <paramref name="Range" /> .</param>
         <param name="ShortCitation">Argument de type <b>String</b> obligatoire. Citation courte pour l'entrée telle qu'elle apparaîtra dans la boîte de dialogue Citation (menu Insertion, commande Tables et index).</param>
         <param name="LongCitation"><b>Objet</b>facultatif. Citation longue pour l'entrée telle qu'elle apparaîtra dans la table de références.</param>
         <param name="LongCitationAutoText"><b>Objet</b>facultatif. Nom de l'insertion automatique qui contient le texte d'une citation longue tel qu'il apparaîtra dans la table de références.</param>
         <param name="Category"><b>Objet</b>facultatif. Nombre de catégories à associer avec l'entrée : 1 correspond à la première catégorie de la zone Category dans la boîte de dialogue Citation, 2 correspond à la deuxième catégorie, et ainsi de suite.</param>
-        <summary>Insère un champ TA (entrée de table de références) et renvoie le champ sous la <see cref="T:Microsoft.Office.Interop.Word.Field" /> forme d’un objet.</summary>
+        <summary>Insère un champ TA (entrée de table de références) et renvoie le champ sous la forme d’un <see cref="T:Microsoft.Office.Interop.Word.Field" /> objet.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -349,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.NextCitation(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NextCitation (ShortCitation As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NextCitation(System::String ^ ShortCitation);" />
+      <MemberSignature Language="F#" Value="abstract member NextCitation : string -&gt; unit" Usage="tablesOfAuthorities.NextCitation ShortCitation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -377,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfAuthorities.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TablesOfAuthorities.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

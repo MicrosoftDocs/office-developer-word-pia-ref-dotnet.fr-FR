@@ -1,9 +1,10 @@
 <Type Name="Templates" FullName="Microsoft.Office.Interop.Word.Templates">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ca599c52638f5408c860ce6ae6c04bd7ff85d141" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143846" /></Metadata><TypeSignature Language="C#" Value="public interface Templates : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="781be37ff03b1b55bf6af6b324dceb111c4dad01" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926051" /></Metadata><TypeSignature Language="C#" Value="public interface Templates : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Templates implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Templates" />
   <TypeSignature Language="VB.NET" Value="Public Interface Templates&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Templates : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Templates = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -24,23 +25,23 @@
   <Docs>
     <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Template" /> objets qui représentent tous les modèles actuellement disponibles.</summary>
     <remarks><para>Cette collection comprend des modèles ouverts, des modèles attachés à des documents ouverts et des modèles globaux chargés dans la boîte de dialogue modèles et compléments (menu Outils).</para>
-      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.Templates" /> propriété pour renvoyer la <b></b> collection Templates.</para>
+      <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.Templates" /> propriété pour renvoyer la collection <b>Templates</b> .</para>
       <para>La méthode <b>Add</b> n'est pas disponible pour la collection <b>Templates</b>. Au lieu de cela, vous pouvez ajouter un modèle à la collection <b>Templates</b> en effectuant l'une des opérations suivantes :</para>
       <list type="bullet">
         <item>
-          <para>Utilisation de <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> la méthode avec <see cref="T:Microsoft.Office.Interop.Word.Documents" /> la collection pour ouvrir un document basé sur un modèle ou un modèle.</para>
+          <para>Utilisation de la <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode avec la <see cref="T:Microsoft.Office.Interop.Word.Documents" /> collection pour ouvrir un document basé sur un modèle ou un modèle.</para>
         </item>
         <item>
-          <para>Utilisation de <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> la méthode avec la collection <b>documents</b> pour ouvrir un nouveau document basé sur un modèle.</para>
+          <para>Utilisation de la <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode avec la collection <b>documents</b> pour ouvrir un nouveau document basé sur un modèle.</para>
         </item>
         <item>
-          <para>Utilisation de <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> la méthode avec <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> la collection pour charger un modèle global.</para>
+          <para>Utilisation de la <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> méthode avec la <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection pour charger un modèle global.</para>
         </item>
         <item>
-          <para>Utilisation de <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> la propriété avec l’objet <b>document</b> pour attacher un modèle à un document.</para>
+          <para>Utilisation de la <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> propriété avec l’objet <b>document</b> pour attacher un modèle à un document.</para>
         </item>
       </list>
-      <para>Utiliser <b></b>des modèles<paramref name="index" />(), <paramref name="index" /> où est le nom du modèle ou le numéro d’index, pour renvoyer un seul objet de <b>modèle</b> , le numéro d’index représente la position du modèle dans la collection de <b>modèles</b> .</para>
+      <para>Utiliser des <b>modèles</b>( <paramref name="index" /> ), où <paramref name="index" /> est le nom du modèle ou le numéro d’index, pour renvoyer un seul objet de <b>modèle</b> , le numéro d’index représente la position du modèle dans la collection de <b>modèles</b> .</para>
       <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> propriété pour renvoyer un objet template qui fait référence au modèle normal. Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> propriété pour renvoyer le modèle attaché au document spécifié.</para>
       <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> propriété pour déterminer l’emplacement des modèles d’utilisateur ou de groupe de travail (autrement dit, le dossier dans lequel vous souhaitez stocker ces modèles).</para>
       <para> </para></remarks>
@@ -52,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Templates.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Templates.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Templates.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Templates.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Templates.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Templates.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -127,7 +131,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -138,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Templates.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="templates.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -170,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Templates.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Template" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Template ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Template ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Template" Usage="Microsoft.Office.Interop.Word.Templates.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -187,7 +193,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Template</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index"><b>Objet</b> indiquant la position ordinale ou une chaîne représentant le nom de l’objet individuel.</param>
@@ -202,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Templates.LoadBuildingBlocks" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadBuildingBlocks ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadBuildingBlocks();" />
+      <MemberSignature Language="F#" Value="abstract member LoadBuildingBlocks : unit -&gt; unit" Usage="templates.LoadBuildingBlocks " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Templates.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Templates.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

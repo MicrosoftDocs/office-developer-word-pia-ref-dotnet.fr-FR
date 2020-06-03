@@ -1,9 +1,10 @@
 <Type Name="Tables" FullName="Microsoft.Office.Interop.Word.Tables">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="73c9bbc17f2a0e8f243a1e02441a94bc43b4d4be" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146029" /></Metadata><TypeSignature Language="C#" Value="public interface Tables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cf747b008936335cca1a69e30071bdeedc84d85b" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926121" /></Metadata><TypeSignature Language="C#" Value="public interface Tables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Tables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Tables" />
   <TypeSignature Language="VB.NET" Value="Public Interface Tables&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Tables : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Tables = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,11 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collection d’objets <see cref="T:Microsoft.Office.Interop.Word.Table" /> qui représentent les tableaux d’une sélection, d’une plage ou d’un document.</summary>
+    <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Table" /> objets qui représentent les tableaux d’une sélection, d’une plage ou d’un document.</summary>
     <remarks><para>Utilisez la propriété <b>Tables</b> pour renvoyer la collection <b>Tables</b>.</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Tables.Add(Microsoft.Office.Interop.Word.Range,System.Int32,System.Int32,System.Object@,System.Object@)" /> méthode pour ajouter un tableau au niveau de la plage spécifiée.</para>
-      <para>Utilisez <b>tables</b>(<paramref name="index" />), où index est le <paramref name="index" /> numéro, pour renvoyer un seul objet <b>table</b> . Ce numéro représente la position du tableau dans la sélection, la plage ou le document.</para>
-      <para>La <see cref="P:Microsoft.Office.Interop.Word.Tables.Count" /> propriété de cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments d’autres articles, utilisez la collection <see cref="T:Microsoft.Office.Interop.Word.Range" /> avec l’objet.</para>
+      <para>Utilisez <b>tables</b>( <paramref name="index" /> ), où index est le <paramref name="index" /> numéro, pour renvoyer un seul objet <b>table</b> . Ce numéro représente la position du tableau dans la sélection, la plage ou le document.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Tables.Count" /> propriété de cette collection dans un document renvoie le nombre d’éléments dans l’article principal uniquement. Pour compter les éléments d’autres articles, utilisez la collection avec l' <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Table Add (Microsoft.Office.Interop.Word.Range Range, int NumRows, int NumColumns, ref object DefaultTableBehavior, ref object AutoFitBehavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Table Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]int32 NumRows, [in]int32 NumColumns, [in]object&amp; DefaultTableBehavior, [in]object&amp; AutoFitBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Tables.Add(Microsoft.Office.Interop.Word.Range,System.Int32,System.Int32,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range, NumRows As Integer, NumColumns As Integer, Optional ByRef DefaultTableBehavior As Object, Optional ByRef AutoFitBehavior As Object) As Table" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range * int * int * obj * obj -&gt; Microsoft.Office.Interop.Word.Table" Usage="tables.Add (Range, NumRows, NumColumns, DefaultTableBehavior, AutoFitBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,15 +54,15 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="NumRows" Type="System.Int32" />
         <Parameter Name="NumColumns" Type="System.Int32" />
-        <Parameter Name="DefaultTableBehavior" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AutoFitBehavior" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultTableBehavior" Type="System.Object" RefType="ref" />
+        <Parameter Name="AutoFitBehavior" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required. Plage dans laquelle vous souhaitez faire figurer le tableau. Si la plage n'est pas réduite, le tableau la remplace.</param>
+        <param name="Range">Objet required <see cref="T:Microsoft.Office.Interop.Word.Range" /> . Plage dans laquelle vous souhaitez faire figurer le tableau. Si la plage n'est pas réduite, le tableau la remplace.</param>
         <param name="NumRows">Argument de type <b>Integer</b> obligatoire. Nombre de lignes que vous souhaitez inclure dans le tableau.</param>
         <param name="NumColumns">Argument de type <b>Integer</b> obligatoire. Nombre de colonnes que vous souhaitez inclure dans le tableau.</param>
-        <param name="DefaultTableBehavior"><b>Objet</b>facultatif. Définit une valeur qui spécifie si Word redimensionne automatiquement les cellules des tableaux en fonction du contenu des cellules (ajustement automatique). Il peut s’agir de l’une des constantes suivantes: <b>wdWord8TableBehavior</b> (AutoFit Disabled) ou <b>wdWord9TableBehavior</b> (ajustement automatique activé). La constante par défaut est <b>wdWord8TableBehavior</b>.</param>
-        <param name="AutoFitBehavior"><b>Objet</b>facultatif. Définit les règles d’ajustement automatique pour la taille des tableaux par Microsoft Word. Il peut s’agir de l' <see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" /> une des constantes suivantes: <b>wdAutoFitContent</b>, <b>wdAutoFitFixed</b>ou <b>wdAutoFitWindow</b>. Si <paramref name="DefaultTableBehavior" /> est défini sur <b>wdWord8TableBehavior</b>, cet argument est ignoré.</param>
+        <param name="DefaultTableBehavior"><b>Objet</b>facultatif. Définit une valeur qui spécifie si Word redimensionne automatiquement les cellules des tableaux en fonction du contenu des cellules (ajustement automatique). Il peut s’agir de l’une des constantes suivantes : <b>wdWord8TableBehavior</b> (AutoFit Disabled) ou <b>wdWord9TableBehavior</b> (ajustement automatique activé). La constante par défaut est <b>wdWord8TableBehavior</b>.</param>
+        <param name="AutoFitBehavior"><b>Objet</b>facultatif. Définit les règles d’ajustement automatique pour la taille des tableaux par Microsoft Word. Il peut s’agir de l’une des <see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" /> constantes suivantes : <b>wdAutoFitContent</b>, <b>wdAutoFitFixed</b>ou <b>wdAutoFitWindow</b>. Si <paramref name="DefaultTableBehavior" /> est défini sur <b>wdWord8TableBehavior</b>, cet argument est ignoré.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Table" /> Object qui représente un nouveau tableau vide ajouté à un document.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -69,7 +72,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Table AddOld (Microsoft.Office.Interop.Word.Range Range, int NumRows, int NumColumns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Table AddOld([in]class Microsoft.Office.Interop.Word.Range Range, [in]int32 NumRows, [in]int32 NumColumns) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Tables.AddOld(Microsoft.Office.Interop.Word.Range,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOld (Range As Range, NumRows As Integer, NumColumns As Integer) As Table" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Table ^ AddOld(Microsoft::Office::Interop::Word::Range ^ Range, int NumRows, int NumColumns);" />
+      <MemberSignature Language="F#" Value="abstract member AddOld : Microsoft.Office.Interop.Word.Range * int * int -&gt; Microsoft.Office.Interop.Word.Table" Usage="tables.AddOld (Range, NumRows, NumColumns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Tables.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Tables.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -134,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Tables.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Tables.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -162,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Tables.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Tables.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -181,7 +189,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -192,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Tables.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="tables.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -224,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Tables.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Table" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Table ^ default[int] { Microsoft::Office::Interop::Word::Table ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Table" Usage="Microsoft.Office.Interop.Word.Tables.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -256,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Tables.NestingLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NestingLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NestingLevel { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NestingLevel : int" Usage="Microsoft.Office.Interop.Word.Tables.NestingLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -285,6 +296,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Tables.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Tables.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

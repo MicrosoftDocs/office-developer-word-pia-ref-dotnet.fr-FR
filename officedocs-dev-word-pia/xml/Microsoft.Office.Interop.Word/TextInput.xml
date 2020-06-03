@@ -1,9 +1,10 @@
 <Type Name="TextInput" FullName="Microsoft.Office.Interop.Word.TextInput">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="25278b86c7e130fb95e96e6347a7d97c8e594d89" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143804" /></Metadata><TypeSignature Language="C#" Value="public interface TextInput" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fee44b2836129ac024463eb219b8a82b2e0c3c2b" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926016" /></Metadata><TypeSignature Language="C#" Value="public interface TextInput" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextInput" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextInput" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextInput" />
   <TypeSignature Language="C++ CLI" Value="public interface class TextInput" />
+  <TypeSignature Language="F#" Value="type TextInput = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>Représente un champ de formulaire donné de type texte.</summary>
-    <remarks><para>Utilisez <b>FormFields</b>(<paramref name="index" />), où <paramref name="index" /> est le nom du signet associé au champ de formulaire texte ou le numéro d’index, pour renvoyer <see cref="T:Microsoft.Office.Interop.Word.FormField" /> un objet. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> propriété avec l’objet <b>FormField</b> pour renvoyer un objet <b>TextInput</b> .</para>
-      <para>Le numéro d’index représente la position du champ de formulaire dans <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> la collection.</para>
+    <remarks><para>Utilisez <b>FormFields</b>( <paramref name="index" /> ), où <paramref name="index" /> est le nom du signet associé au champ de formulaire texte ou le numéro d’index, pour renvoyer un <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> propriété avec l’objet <b>FormField</b> pour renvoyer un objet <b>TextInput</b> .</para>
+      <para>Le numéro d’index représente la position du champ de formulaire dans la <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> collection.</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> méthode avec l’objet <b>FormFields</b> pour ajouter un champ de formulaire de texte.</para>
       <para> </para></remarks>
   </Docs>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TextInput.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextInput.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit" Usage="textInput.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TextInput.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -103,7 +107,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Default" />
       <MemberSignature Language="VB.NET" Value="Public Property Default As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Default : string with get, set" Usage="Microsoft.Office.Interop.Word.TextInput.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EditType([in]valuetype Microsoft.Office.Interop.Word.WdTextFormFieldType Type, [in]object&amp; Default, [in]object&amp; Format, [in]object&amp; Enabled) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextInput.EditType(Microsoft.Office.Interop.Word.WdTextFormFieldType,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EditType (Type As WdTextFormFieldType, Optional ByRef Default As Object, Optional ByRef Format As Object, Optional ByRef Enabled As Object)" />
+      <MemberSignature Language="F#" Value="abstract member EditType : Microsoft.Office.Interop.Word.WdTextFormFieldType * obj * obj * obj -&gt; unit" Usage="textInput.EditType (Type, Default, Format, Enabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -159,12 +165,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.WdTextFormFieldType" />
-        <Parameter Name="Default" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Enabled" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Default" Type="System.Object" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object" RefType="ref" />
+        <Parameter Name="Enabled" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />. Type de zone de texte. <b>WdTextFormFieldType</b> peut être l’une de ces constantes suivantes: <b>wdCalculationText </b> <b>wdCurrentDateText </b> <b>wdCurrentTimeText </b> <b>wdDateText </b> <b>wdNumberText </b> <b>wdRegularText</b></param>
+        <param name="Type">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" /> . Type de zone de texte. <b>WdTextFormFieldType</b> peut être l’une de ces constantes suivantes : <b>wdCalculationText </b> <b>wdCurrentDateText </b> <b>wdCurrentTimeText </b> <b>wdDateText </b> <b>wdNumberText </b> <b>wdRegularText</b></param>
         <param name="Default"><b>Objet</b>facultatif. Texte par défaut qui s'affiche dans la zone de texte.</param>
         <param name="Format"><b>Objet</b>facultatif. Chaîne de mise en forme utilisée pour la mise en forme du texte, du numéro ou de la date (par exemple, « 0,00 », « 1re lettre des mots en majuscule » ou « M/j/aa »). Pour des exemples supplémentaires de mise en forme, consultez la liste des formats pour le type de champ de formulaire de type texte spécifié dans la boîte de dialogue Options de champ: texte.</param>
         <param name="Enabled"><b>Objet</b>facultatif. <b>True</b> : pour activer la saisie de texte dans le champ de formulaire.</param>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Format { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : string" Usage="Microsoft.Office.Interop.Word.TextInput.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TextInput.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdTextFormFieldType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTextFormFieldType Type { Microsoft::Office::Interop::Word::WdTextFormFieldType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdTextFormFieldType" Usage="Microsoft.Office.Interop.Word.TextInput.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -282,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Valid" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Valid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Valid : bool" Usage="Microsoft.Office.Interop.Word.TextInput.Valid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -301,7 +311,7 @@
       <Docs>
         <summary><b>True</b> si l'objet de champ de formulaire spécifié est un champ de formulaire de case à cocher valide.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet pour déterminer le type de champ de formulaire (<b>wdFieldFormCheckBox</b>, <b>wdFieldFormDropDown</b>ou <b>wdFieldFormTextInput</b>) avant d’appliquer <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> la propriété. Cette précaution permet de s’assurer que le type de l’objet <b>FormField</b> est attendu.</para>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet pour déterminer le type de champ de formulaire (<b>wdFieldFormCheckBox</b>, <b>wdFieldFormDropDown</b>ou <b>wdFieldFormTextInput</b>) avant d’appliquer la <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> propriété. Cette précaution permet de s’assurer que le type de l’objet <b>FormField</b> est attendu.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -311,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="Microsoft.Office.Interop.Word.TextInput.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
