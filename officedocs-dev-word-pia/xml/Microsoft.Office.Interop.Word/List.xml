@@ -1,9 +1,10 @@
 <Type Name="List" FullName="Microsoft.Office.Interop.Word.List">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ef2af10f7fd664cca9ca3f39aea6cd66c9851d3a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147899" /></Metadata><TypeSignature Language="C#" Value="public interface List" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6082fc6429315024310244ff429fb70e8f66a012" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924402" /></Metadata><TypeSignature Language="C#" Value="public interface List" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract List" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.List" />
   <TypeSignature Language="VB.NET" Value="Public Interface List" />
   <TypeSignature Language="C++ CLI" Value="public interface class List" />
+  <TypeSignature Language="F#" Value="type List = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,16 +19,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="16094-101">Représente un format de liste donné qui a été appliqué aux paragraphes spécifiés dans un document.</span><span class="sxs-lookup"><span data-stu-id="16094-101">Represents a single list format that's been applied to specified paragraphs in a document.</span></span></summary>
-    <remarks><para><span data-ttu-id="16094-102">L' <see cref="T:Microsoft.Office.Interop.Word.List" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection.</span><span class="sxs-lookup"><span data-stu-id="16094-102">The <see cref="T:Microsoft.Office.Interop.Word.List" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection.</span></span></para>
-      <para><span data-ttu-id="16094-103">Utilisez <b></b>lists<paramref name="index" />(), <paramref name="index" /> où est le numéro d’index, pour renvoyer <see cref="T:Microsoft.Office.Interop.Word.List" /> un seul objet.</span><span class="sxs-lookup"><span data-stu-id="16094-103">Use <b>Lists</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span></para>
-      <para><span data-ttu-id="16094-104">Pour renvoyer tous les paragraphes dotés d’une mise en forme de <see cref="P:Microsoft.Office.Interop.Word.List.ListParagraphs" /> liste, utilisez la propriété.</span><span class="sxs-lookup"><span data-stu-id="16094-104">To return all the paragraphs that have list formatting, use the <see cref="P:Microsoft.Office.Interop.Word.List.ListParagraphs" /> property.</span></span> <span data-ttu-id="16094-105">Pour renvoyer les éléments sous forme de plage, <see cref="P:Microsoft.Office.Interop.Word.List.Range" /> utilisez la propriété.</span><span class="sxs-lookup"><span data-stu-id="16094-105">To return them as a range, use the <see cref="P:Microsoft.Office.Interop.Word.List.Range" /> property.</span></span></para>
-      <para><span data-ttu-id="16094-106">Pour appliquer un format de liste différent à une liste existante, utilisez <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> la méthode avec <see cref="T:Microsoft.Office.Interop.Word.List" /> l’objet.</span><span class="sxs-lookup"><span data-stu-id="16094-106">To apply a different list format to an existing list, use the <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span> <span data-ttu-id="16094-107">Pour ajouter une nouvelle liste à un document, utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> méthode avec l' <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objet d’une plage spécifiée.</span><span class="sxs-lookup"><span data-stu-id="16094-107">To add a new list to a document, use the <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object for a specified range.</span></span></para>
-      <para><span data-ttu-id="16094-108">Utilisez la <see cref="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" /> méthode pour déterminer si vous pouvez continuer la mise en forme de liste à partir d’une liste précédemment appliquée au document.</span><span class="sxs-lookup"><span data-stu-id="16094-108">Use the <see cref="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" /> method to determine whether you can continue the list formatting from a list that was previously applied to the document.</span></span></para>
-      <para><span data-ttu-id="16094-109">Utilisez la <see cref="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" /> méthode pour renvoyer le nombre d’éléments dans une liste numérotée ou à puces, y compris les champs LISTNUM.</span><span class="sxs-lookup"><span data-stu-id="16094-109">Use the <see cref="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" /> method to return the number of items in a numbered or bulleted list, including LISTNUM fields.</span></span></para>
-      <para><span data-ttu-id="16094-110">Pour déterminer si une liste contient plusieurs modèles de liste, utilisez la <see cref="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" /> propriété.</span><span class="sxs-lookup"><span data-stu-id="16094-110">To determine whether a list contains more than one list template, use the <see cref="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" /> property.</span></span></para>
-      <para><span data-ttu-id="16094-111">Vous pouvez manipuler les objets <see cref="T:Microsoft.Office.Interop.Word.List" /> individuels dans un document, mais pour un contrôle plus précis, vous devez utiliser <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> l’objet.</span><span class="sxs-lookup"><span data-stu-id="16094-111">You can manipulate the individual <see cref="T:Microsoft.Office.Interop.Word.List" /> objects within a document, but for more precise control you should work with the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object.</span></span></para>
-      <para><span data-ttu-id="16094-112">Les listes à puces d’image ne sont pas <see cref="T:Microsoft.Office.Interop.Word.Lists" /> incluses dans la collection et ne peuvent pas <see cref="T:Microsoft.Office.Interop.Word.List" /> être manipulées à l’aide de l’objet.</span><span class="sxs-lookup"><span data-stu-id="16094-112">Picture-bulleted lists are not included in the <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection and cannot be manipulated using the <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span></para>
+    <summary><span data-ttu-id="5ed79-101">Représente un format de liste donné qui a été appliqué aux paragraphes spécifiés dans un document.</span><span class="sxs-lookup"><span data-stu-id="5ed79-101">Represents a single list format that's been applied to specified paragraphs in a document.</span></span></summary>
+    <remarks><para><span data-ttu-id="5ed79-102">L' <see cref="T:Microsoft.Office.Interop.Word.List" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection.</span><span class="sxs-lookup"><span data-stu-id="5ed79-102">The <see cref="T:Microsoft.Office.Interop.Word.List" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection.</span></span></para>
+      <para><span data-ttu-id="5ed79-103">Utilisez <b>Lists</b>( <paramref name="index" /> ), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.List" /> objet.</span><span class="sxs-lookup"><span data-stu-id="5ed79-103">Use <b>Lists</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span></para>
+      <para><span data-ttu-id="5ed79-104">Pour renvoyer tous les paragraphes dotés d’une mise en forme de liste, utilisez la <see cref="P:Microsoft.Office.Interop.Word.List.ListParagraphs" /> propriété.</span><span class="sxs-lookup"><span data-stu-id="5ed79-104">To return all the paragraphs that have list formatting, use the <see cref="P:Microsoft.Office.Interop.Word.List.ListParagraphs" /> property.</span></span> <span data-ttu-id="5ed79-105">Pour renvoyer les éléments sous forme de plage, utilisez la <see cref="P:Microsoft.Office.Interop.Word.List.Range" /> propriété.</span><span class="sxs-lookup"><span data-stu-id="5ed79-105">To return them as a range, use the <see cref="P:Microsoft.Office.Interop.Word.List.Range" /> property.</span></span></para>
+      <para><span data-ttu-id="5ed79-106">Pour appliquer un format de liste différent à une liste existante, utilisez la <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> méthode avec l' <see cref="T:Microsoft.Office.Interop.Word.List" /> objet.</span><span class="sxs-lookup"><span data-stu-id="5ed79-106">To apply a different list format to an existing list, use the <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span> <span data-ttu-id="5ed79-107">Pour ajouter une nouvelle liste à un document, utilisez la <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> méthode avec l' <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objet d’une plage spécifiée.</span><span class="sxs-lookup"><span data-stu-id="5ed79-107">To add a new list to a document, use the <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object for a specified range.</span></span></para>
+      <para><span data-ttu-id="5ed79-108">Utilisez la <see cref="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" /> méthode pour déterminer si vous pouvez continuer la mise en forme de liste à partir d’une liste précédemment appliquée au document.</span><span class="sxs-lookup"><span data-stu-id="5ed79-108">Use the <see cref="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" /> method to determine whether you can continue the list formatting from a list that was previously applied to the document.</span></span></para>
+      <para><span data-ttu-id="5ed79-109">Utilisez la <see cref="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" /> méthode pour renvoyer le nombre d’éléments dans une liste numérotée ou à puces, y compris les champs LISTNUM.</span><span class="sxs-lookup"><span data-stu-id="5ed79-109">Use the <see cref="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" /> method to return the number of items in a numbered or bulleted list, including LISTNUM fields.</span></span></para>
+      <para><span data-ttu-id="5ed79-110">Pour déterminer si une liste contient plusieurs modèles de liste, utilisez la <see cref="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" /> propriété.</span><span class="sxs-lookup"><span data-stu-id="5ed79-110">To determine whether a list contains more than one list template, use the <see cref="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" /> property.</span></span></para>
+      <para><span data-ttu-id="5ed79-111">Vous pouvez manipuler les <see cref="T:Microsoft.Office.Interop.Word.List" /> objets individuels dans un document, mais pour un contrôle plus précis, vous devez utiliser l' <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objet.</span><span class="sxs-lookup"><span data-stu-id="5ed79-111">You can manipulate the individual <see cref="T:Microsoft.Office.Interop.Word.List" /> objects within a document, but for more precise control you should work with the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object.</span></span></para>
+      <para><span data-ttu-id="5ed79-112">Les listes à puces d’image ne sont pas incluses dans la <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection et ne peuvent pas être manipulées à l’aide de l' <see cref="T:Microsoft.Office.Interop.Word.List" /> objet.</span><span class="sxs-lookup"><span data-stu-id="5ed79-112">Picture-bulleted lists are not included in the <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection and cannot be manipulated using the <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.List.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,7 +56,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="16094-113">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="16094-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="5ed79-113">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Application" /> Object qui représente l’application Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="5ed79-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,8 @@
       <MemberSignature Language="C#" Value="public void ApplyListTemplate (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ContinuePreviousList, ref object DefaultListBehavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyListTemplate([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ContinuePreviousList, [in]object&amp; DefaultListBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyListTemplate (ListTemplate As ListTemplate, Optional ByRef ContinuePreviousList As Object, Optional ByRef DefaultListBehavior As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyListTemplate : Microsoft.Office.Interop.Word.ListTemplate * obj * obj -&gt; unit" Usage="list.ApplyListTemplate (ListTemplate, ContinuePreviousList, DefaultListBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,14 +82,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ContinuePreviousList" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ContinuePreviousList" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultListBehavior" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate"><span data-ttu-id="16094-114">Objet <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> required.</span><span class="sxs-lookup"><span data-stu-id="16094-114">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="16094-115">Modèle de liste à appliquer.</span><span class="sxs-lookup"><span data-stu-id="16094-115">The list template to be applied.</span></span></param>
-        <param name="ContinuePreviousList"><span data-ttu-id="16094-116"><b>Objet</b>facultatif.</span><span class="sxs-lookup"><span data-stu-id="16094-116">Optional <b>Object</b>.</span></span> <span data-ttu-id="16094-117"><b>True</b> pour poursuivre la numérotation à partir de la liste précédente ; <b>False</b> pour commencer une nouvelle liste.</span><span class="sxs-lookup"><span data-stu-id="16094-117"><b>True</b> to continue the numbering from the previous list; <b>False</b> to start a new list.</span></span></param>
-        <param name="DefaultListBehavior"><span data-ttu-id="16094-118"><b>Objet</b>facultatif.</span><span class="sxs-lookup"><span data-stu-id="16094-118">Optional <b>Object</b>.</span></span> <span data-ttu-id="16094-119">Définit une valeur qui indique si Microsoft Word utilise un nouveau format Web pour un meilleur affichage de liste.</span><span class="sxs-lookup"><span data-stu-id="16094-119">Sets a value that specifies whether Microsoft Word uses new Web-oriented formatting for better list display.</span></span> <span data-ttu-id="16094-120">Peut être l'une des constantes suivantes : <b>wdWord8ListBehavior</b> (utilisez la mise en forme compatible avec Microsoft Word 97) ou <b>wdWord9ListBehavior</b> (utilisation orientée Web la mise en forme).</span><span class="sxs-lookup"><span data-stu-id="16094-120">Can be either of the following constants: <b>wdWord8ListBehavior</b> (use formatting compatible with Microsoft Word 97) or <b>wdWord9ListBehavior</b> (use Web-oriented formatting).</span></span> <span data-ttu-id="16094-121">Pour des raisons de compatibilité, la constante par défaut est <b>wdWord8ListBehavior</b> mais pour les nouvelles procédures, que vous devez utiliser <b>wdWord9ListBehavior</b> pour tirer parti des orientée Web mise en forme améliorée par rapport à la mise en retrait et multiniveau répertorie.</span><span class="sxs-lookup"><span data-stu-id="16094-121">For compatibility reasons, the default constant is <b>wdWord8ListBehavior</b>, but in new procedures you should use <b>wdWord9ListBehavior</b> to take advantage of improved Web-oriented formatting with respect to indenting and multilevel lists.</span></span></param>
-        <summary><span data-ttu-id="16094-122">Applique un ensemble de caractéristiques de mise en forme de liste à la liste spécifiée.</span><span class="sxs-lookup"><span data-stu-id="16094-122">Applies a set of list-formatting characteristics to the specified list.</span></span></summary>
+        <param name="ListTemplate"><span data-ttu-id="5ed79-114">Objet required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> .</span><span class="sxs-lookup"><span data-stu-id="5ed79-114">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="5ed79-115">Modèle de liste à appliquer.</span><span class="sxs-lookup"><span data-stu-id="5ed79-115">The list template to be applied.</span></span></param>
+        <param name="ContinuePreviousList"><span data-ttu-id="5ed79-116"><b>Objet</b>facultatif.</span><span class="sxs-lookup"><span data-stu-id="5ed79-116">Optional <b>Object</b>.</span></span> <span data-ttu-id="5ed79-117"><b>True</b> pour poursuivre la numérotation à partir de la liste précédente ; <b>False</b> pour commencer une nouvelle liste.</span><span class="sxs-lookup"><span data-stu-id="5ed79-117"><b>True</b> to continue the numbering from the previous list; <b>False</b> to start a new list.</span></span></param>
+        <param name="DefaultListBehavior"><span data-ttu-id="5ed79-118"><b>Objet</b>facultatif.</span><span class="sxs-lookup"><span data-stu-id="5ed79-118">Optional <b>Object</b>.</span></span> <span data-ttu-id="5ed79-119">Définit une valeur qui indique si Microsoft Word utilise un nouveau format Web pour un meilleur affichage de liste.</span><span class="sxs-lookup"><span data-stu-id="5ed79-119">Sets a value that specifies whether Microsoft Word uses new Web-oriented formatting for better list display.</span></span> <span data-ttu-id="5ed79-120">Peut être l'une des constantes suivantes : <b>wdWord8ListBehavior</b> (utilisez la mise en forme compatible avec Microsoft Word 97) ou <b>wdWord9ListBehavior</b> (utilisation orientée Web la mise en forme).</span><span class="sxs-lookup"><span data-stu-id="5ed79-120">Can be either of the following constants: <b>wdWord8ListBehavior</b> (use formatting compatible with Microsoft Word 97) or <b>wdWord9ListBehavior</b> (use Web-oriented formatting).</span></span> <span data-ttu-id="5ed79-121">Pour des raisons de compatibilité, la constante par défaut est <b>wdWord8ListBehavior</b> mais pour les nouvelles procédures, que vous devez utiliser <b>wdWord9ListBehavior</b> pour tirer parti des orientée Web mise en forme améliorée par rapport à la mise en retrait et multiniveau répertorie.</span><span class="sxs-lookup"><span data-stu-id="5ed79-121">For compatibility reasons, the default constant is <b>wdWord8ListBehavior</b>, but in new procedures you should use <b>wdWord9ListBehavior</b> to take advantage of improved Web-oriented formatting with respect to indenting and multilevel lists.</span></span></param>
+        <summary><span data-ttu-id="5ed79-122">Applique un ensemble de caractéristiques de mise en forme de liste à la liste spécifiée.</span><span class="sxs-lookup"><span data-stu-id="5ed79-122">Applies a set of list-formatting characteristics to the specified list.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,6 +97,8 @@
       <MemberSignature Language="C#" Value="public void ApplyListTemplateOld (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ContinuePreviousList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyListTemplateOld([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ContinuePreviousList) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.ApplyListTemplateOld(Microsoft.Office.Interop.Word.ListTemplate,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyListTemplateOld (ListTemplate As ListTemplate, Optional ByRef ContinuePreviousList As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyListTemplateOld : Microsoft.Office.Interop.Word.ListTemplate * obj -&gt; unit" Usage="list.ApplyListTemplateOld (ListTemplate, ContinuePreviousList)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -111,12 +117,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ContinuePreviousList" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ContinuePreviousList" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ListTemplate">To be added.</param>
         <param name="ContinuePreviousList">To be added.</param>
-        <summary><span data-ttu-id="16094-123">Réservé à une utilisation interne.</span><span class="sxs-lookup"><span data-stu-id="16094-123">Reserved for internal use.</span></span></summary>
+        <summary><span data-ttu-id="5ed79-123">Réservé à une utilisation interne.</span><span class="sxs-lookup"><span data-stu-id="5ed79-123">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,6 +130,8 @@
       <MemberSignature Language="C#" Value="public void ApplyListTemplateWithLevel (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ContinuePreviousList, ref object DefaultListBehavior, ref object ApplyLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyListTemplateWithLevel([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ContinuePreviousList, [in]object&amp; DefaultListBehavior, [in]object&amp; ApplyLevel) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.ApplyListTemplateWithLevel(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyListTemplateWithLevel (ListTemplate As ListTemplate, Optional ByRef ContinuePreviousList As Object, Optional ByRef DefaultListBehavior As Object, Optional ByRef ApplyLevel As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyListTemplateWithLevel : Microsoft.Office.Interop.Word.ListTemplate * obj * obj * obj -&gt; unit" Usage="list.ApplyListTemplateWithLevel (ListTemplate, ContinuePreviousList, DefaultListBehavior, ApplyLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,16 +147,16 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ContinuePreviousList" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ApplyLevel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ContinuePreviousList" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultListBehavior" Type="System.Object" RefType="ref" />
+        <Parameter Name="ApplyLevel" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate"><span data-ttu-id="16094-124">Modèle de liste à appliquer.</span><span class="sxs-lookup"><span data-stu-id="16094-124">The list template to be applied.</span></span></param>
-        <param name="ContinuePreviousList"><span data-ttu-id="16094-125"><b>True</b> pour poursuivre la numérotation à partir de la liste précédente ; <b>False</b> pour commencer une nouvelle liste.</span><span class="sxs-lookup"><span data-stu-id="16094-125"><b>True</b> to continue the numbering from the previous list; <b>False</b> to start a new list.</span></span></param>
-        <param name="DefaultListBehavior"><span data-ttu-id="16094-126">Définit une valeur qui indique si Microsoft Word utilise un nouveau format Web pour un meilleur affichage de liste.</span><span class="sxs-lookup"><span data-stu-id="16094-126">Sets a value that specifies whether Microsoft Word uses new Web-oriented formatting for better list display.</span></span> <span data-ttu-id="16094-127">Peut être l’une des valeurs <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> suivantes: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (utilisez la mise en forme compatible avec Microsoft Word 97 <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> ) ou (utilisez la mise en forme orientée Web).</span><span class="sxs-lookup"><span data-stu-id="16094-127">Can be either of the following <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> values: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (use formatting compatible with Microsoft Word 97) or <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (use Web-oriented formatting).</span></span> <span data-ttu-id="16094-128">Pour des raisons de compatibilité, la constante <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />par défaut est, mais dans les nouvelles <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> procédures, vous devez utiliser pour tirer parti de la mise en forme orientée Web améliorée par rapport à la mise en retrait et aux listes à plusieurs niveaux.</span><span class="sxs-lookup"><span data-stu-id="16094-128">For compatibility reasons, the default constant is <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />, but in new procedures you should use <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> to take advantage of improved Web-oriented formatting with respect to indenting and multilevel lists.</span></span></param>
-        <param name="ApplyLevel"><span data-ttu-id="16094-129">Niveau auquel le modèle de liste doit être appliqué.</span><span class="sxs-lookup"><span data-stu-id="16094-129">The level to which the list template is to be applied.</span></span></param>
-        <summary><span data-ttu-id="16094-130">Applique un ensemble de caractéristiques de mise en forme de liste, éventuellement pour un niveau spécifié.</span><span class="sxs-lookup"><span data-stu-id="16094-130">Applies a set of list-formatting characteristics, optionally for a specified level.</span></span></summary>
+        <param name="ListTemplate"><span data-ttu-id="5ed79-124">Modèle de liste à appliquer.</span><span class="sxs-lookup"><span data-stu-id="5ed79-124">The list template to be applied.</span></span></param>
+        <param name="ContinuePreviousList"><span data-ttu-id="5ed79-125"><b>True</b> pour poursuivre la numérotation à partir de la liste précédente ; <b>False</b> pour commencer une nouvelle liste.</span><span class="sxs-lookup"><span data-stu-id="5ed79-125"><b>True</b> to continue the numbering from the previous list; <b>False</b> to start a new list.</span></span></param>
+        <param name="DefaultListBehavior"><span data-ttu-id="5ed79-126">Définit une valeur qui indique si Microsoft Word utilise un nouveau format Web pour un meilleur affichage de liste.</span><span class="sxs-lookup"><span data-stu-id="5ed79-126">Sets a value that specifies whether Microsoft Word uses new Web-oriented formatting for better list display.</span></span> <span data-ttu-id="5ed79-127">Peut être l’une des <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> valeurs suivantes : <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (utilisez la mise en forme compatible avec Microsoft Word 97) ou <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (utilisez la mise en forme orientée Web).</span><span class="sxs-lookup"><span data-stu-id="5ed79-127">Can be either of the following <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> values: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (use formatting compatible with Microsoft Word 97) or <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (use Web-oriented formatting).</span></span> <span data-ttu-id="5ed79-128">Pour des raisons de compatibilité, la constante par défaut est <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> , mais dans les nouvelles procédures, vous devez utiliser <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> pour tirer parti de la mise en forme orientée Web améliorée par rapport à la mise en retrait et aux listes à plusieurs niveaux.</span><span class="sxs-lookup"><span data-stu-id="5ed79-128">For compatibility reasons, the default constant is <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />, but in new procedures you should use <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> to take advantage of improved Web-oriented formatting with respect to indenting and multilevel lists.</span></span></param>
+        <param name="ApplyLevel"><span data-ttu-id="5ed79-129">Niveau auquel le modèle de liste doit être appliqué.</span><span class="sxs-lookup"><span data-stu-id="5ed79-129">The level to which the list template is to be applied.</span></span></param>
+        <summary><span data-ttu-id="5ed79-130">Applique un ensemble de caractéristiques de mise en forme de liste, éventuellement pour un niveau spécifié.</span><span class="sxs-lookup"><span data-stu-id="5ed79-130">Applies a set of list-formatting characteristics, optionally for a specified level.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +164,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdContinue CanContinuePreviousList (Microsoft.Office.Interop.Word.ListTemplate ListTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Interop.Word.WdContinue CanContinuePreviousList([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanContinuePreviousList (ListTemplate As ListTemplate) As WdContinue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::WdContinue CanContinuePreviousList(Microsoft::Office::Interop::Word::ListTemplate ^ ListTemplate);" />
+      <MemberSignature Language="F#" Value="abstract member CanContinuePreviousList : Microsoft.Office.Interop.Word.ListTemplate -&gt; Microsoft.Office.Interop.Word.WdContinue" Usage="list.CanContinuePreviousList ListTemplate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -174,10 +184,10 @@
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate"><span data-ttu-id="16094-131">Objet <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> required.</span><span class="sxs-lookup"><span data-stu-id="16094-131">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="16094-132">Modèle de liste appliqué aux paragraphes précédents du document.</span><span class="sxs-lookup"><span data-stu-id="16094-132">A list template that's been applied to previous paragraphs in the document.</span></span></param>
-        <summary><span data-ttu-id="16094-133">Renvoie une <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> constante (<b>wdContinueDisabled</b>, <b>wdResetList</b>ou <b>wdContinueList</b>) qui indique si la mise en forme de la liste précédente peut être poursuivie ou non.</span><span class="sxs-lookup"><span data-stu-id="16094-133">Returns a <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> constant (<b>wdContinueDisabled</b>, <b>wdResetList</b>, or <b>wdContinueList</b>) that indicates whether the formatting from the previous list can be continued.</span></span></summary>
+        <param name="ListTemplate"><span data-ttu-id="5ed79-131">Objet required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> .</span><span class="sxs-lookup"><span data-stu-id="5ed79-131">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="5ed79-132">Modèle de liste appliqué aux paragraphes précédents du document.</span><span class="sxs-lookup"><span data-stu-id="5ed79-132">A list template that's been applied to previous paragraphs in the document.</span></span></param>
+        <summary><span data-ttu-id="5ed79-133">Renvoie une <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> constante (<b>wdContinueDisabled</b>, <b>wdResetList</b>ou <b>wdContinueList</b>) qui indique si la mise en forme de la liste précédente peut être poursuivie ou non.</span><span class="sxs-lookup"><span data-stu-id="5ed79-133">Returns a <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> constant (<b>wdContinueDisabled</b>, <b>wdResetList</b>, or <b>wdContinueList</b>) that indicates whether the formatting from the previous list can be continued.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="16094-134">Cette méthode renvoie l'état des options Continuer la liste précédente et recommencer la numérotation dans la boîte de dialogue Puces et numéros pour un format de liste spécifié.</span><span class="sxs-lookup"><span data-stu-id="16094-134">This method returns the state of the Continue previous list and Restart numbering options in the Bullets and Numbering dialog box for a specified list format.</span></span> <span data-ttu-id="16094-135">Pour modifier les paramètres de ces options, définissez l' <paramref name="ContinuePreviousList" /> argument de la <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> méthode.</span><span class="sxs-lookup"><span data-stu-id="16094-135">To change the settings of these options, set the <paramref name="ContinuePreviousList" /> argument of the <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> method.</span></span></para>
+        <remarks><para><span data-ttu-id="5ed79-134">Cette méthode renvoie l'état des options Continuer la liste précédente et recommencer la numérotation dans la boîte de dialogue Puces et numéros pour un format de liste spécifié.</span><span class="sxs-lookup"><span data-stu-id="5ed79-134">This method returns the state of the Continue previous list and Restart numbering options in the Bullets and Numbering dialog box for a specified list format.</span></span> <span data-ttu-id="5ed79-135">Pour modifier les paramètres de ces options, définissez l' <paramref name="ContinuePreviousList" /> argument de la <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> méthode.</span><span class="sxs-lookup"><span data-stu-id="5ed79-135">To change the settings of these options, set the <paramref name="ContinuePreviousList" /> argument of the <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -186,6 +196,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConvertNumbersToText([in]object&amp; NumberType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.ConvertNumbersToText(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ConvertNumbersToText (Optional ByRef NumberType As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ConvertNumbersToText : obj -&gt; unit" Usage="list.ConvertNumbersToText NumberType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -200,14 +211,14 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumberType" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType"><span data-ttu-id="16094-136"><b>Objet</b>facultatif.</span><span class="sxs-lookup"><span data-stu-id="16094-136">Optional <b>Object</b>.</span></span> <span data-ttu-id="16094-137">Type de numéro à convertir.</span><span class="sxs-lookup"><span data-stu-id="16094-137">The type of number to be converted.</span></span> <span data-ttu-id="16094-138">Peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constantes.</span><span class="sxs-lookup"><span data-stu-id="16094-138">Can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constants.</span></span></param>
-        <summary><span data-ttu-id="16094-139">Modifie les numéros de liste et les champs LISTNUM de la liste spécifiée en texte.</span><span class="sxs-lookup"><span data-stu-id="16094-139">Changes the list numbers and LISTNUM fields in the specified list to text.</span></span></summary>
-        <remarks><para><span data-ttu-id="16094-140">Il existe deux types de numéros: les numéros prédéfinis (<b>wdNumberParagraph</b>), que vous pouvez ajouter aux paragraphes en sélectionnant un modèle dans la boîte de dialogue Puces et numéros; et les champs LISTNUM (<b>wdNumberListNum</b>), qui vous permettent d’ajouter plusieurs numéros par paragraphe.</span><span class="sxs-lookup"><span data-stu-id="16094-140">There are two types of numbers: preset numbers (<b>wdNumberParagraph</b>), which you can add to paragraphs by selecting a template in the Bullets and Numbering dialog box; and LISTNUM fields (<b>wdNumberListNum</b>), which allow you to add more than one number per paragraph.</span></span></para>
-          <para><span data-ttu-id="16094-141">La méthode <b>ConvertNumbersToText,</b> est utile si vous souhaitez utiliser un document dans une autre application et que cette application ne reconnaît pas la mise en forme de liste ou les champs LISTNUM.</span><span class="sxs-lookup"><span data-stu-id="16094-141">The <b>ConvertNumbersToText</b> method is useful if you want to work with a document in another application and that application doesn't recognize list formatting or LISTNUM fields.</span></span></para>
-          <para><span data-ttu-id="16094-142">Une fois que vous avez converti les numéros de liste en texte, vous ne pouvez plus les manipuler dans une liste.</span><span class="sxs-lookup"><span data-stu-id="16094-142">After you've converted list numbers to text, you can no longer manipulate them in a list.</span></span></para>
+        <param name="NumberType"><span data-ttu-id="5ed79-136"><b>Objet</b>facultatif.</span><span class="sxs-lookup"><span data-stu-id="5ed79-136">Optional <b>Object</b>.</span></span> <span data-ttu-id="5ed79-137">Type de numéro à convertir.</span><span class="sxs-lookup"><span data-stu-id="5ed79-137">The type of number to be converted.</span></span> <span data-ttu-id="5ed79-138">Peut être une des <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constantes.</span><span class="sxs-lookup"><span data-stu-id="5ed79-138">Can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constants.</span></span></param>
+        <summary><span data-ttu-id="5ed79-139">Modifie les numéros de liste et les champs LISTNUM de la liste spécifiée en texte.</span><span class="sxs-lookup"><span data-stu-id="5ed79-139">Changes the list numbers and LISTNUM fields in the specified list to text.</span></span></summary>
+        <remarks><para><span data-ttu-id="5ed79-140">Il existe deux types de numéros : les numéros prédéfinis (<b>wdNumberParagraph</b>), que vous pouvez ajouter aux paragraphes en sélectionnant un modèle dans la boîte de dialogue Puces et numéros ; et les champs LISTNUM (<b>wdNumberListNum</b>), qui vous permettent d’ajouter plusieurs numéros par paragraphe.</span><span class="sxs-lookup"><span data-stu-id="5ed79-140">There are two types of numbers: preset numbers (<b>wdNumberParagraph</b>), which you can add to paragraphs by selecting a template in the Bullets and Numbering dialog box; and LISTNUM fields (<b>wdNumberListNum</b>), which allow you to add more than one number per paragraph.</span></span></para>
+          <para><span data-ttu-id="5ed79-141">La méthode <b>ConvertNumbersToText,</b> est utile si vous souhaitez utiliser un document dans une autre application et que cette application ne reconnaît pas la mise en forme de liste ou les champs LISTNUM.</span><span class="sxs-lookup"><span data-stu-id="5ed79-141">The <b>ConvertNumbersToText</b> method is useful if you want to work with a document in another application and that application doesn't recognize list formatting or LISTNUM fields.</span></span></para>
+          <para><span data-ttu-id="5ed79-142">Une fois que vous avez converti les numéros de liste en texte, vous ne pouvez plus les manipuler dans une liste.</span><span class="sxs-lookup"><span data-stu-id="5ed79-142">After you've converted list numbers to text, you can no longer manipulate them in a list.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -216,6 +227,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CountNumberedItems([in]object&amp; NumberType, [in]object&amp; Level) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function CountNumberedItems (Optional ByRef NumberType As Object, Optional ByRef Level As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CountNumberedItems : obj * obj -&gt; int" Usage="list.CountNumberedItems (NumberType, Level)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -230,16 +242,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumberType" Type="System.Object" RefType="ref" />
+        <Parameter Name="Level" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType"><span data-ttu-id="16094-143"><b>Objet</b>facultatif.</span><span class="sxs-lookup"><span data-stu-id="16094-143">Optional <b>Object</b>.</span></span> <span data-ttu-id="16094-144">Type de nombres à compter.</span><span class="sxs-lookup"><span data-stu-id="16094-144">The type of numbers to be counted.</span></span> <span data-ttu-id="16094-145">Il peut s’agir de l' <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> une des constantes suivantes: <b>wdNumberParagraph</b>, <b>wdNumberListNum</b>ou <b>wdNumberAllNumbers</b>.</span><span class="sxs-lookup"><span data-stu-id="16094-145">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constants: <b>wdNumberParagraph</b>, <b>wdNumberListNum</b>, or <b>wdNumberAllNumbers</b>.</span></span> <span data-ttu-id="16094-146">La valeur par défaut est <b>wdNumberAllNumbers</b>.</span><span class="sxs-lookup"><span data-stu-id="16094-146">The default value is <b>wdNumberAllNumbers</b>.</span></span></param>
-        <param name="Level"><span data-ttu-id="16094-147"><b>Objet</b>facultatif.</span><span class="sxs-lookup"><span data-stu-id="16094-147">Optional <b>Object</b>.</span></span> <span data-ttu-id="16094-148">Numéro qui correspond au niveau de numérotation à compter.</span><span class="sxs-lookup"><span data-stu-id="16094-148">A number that corresponds to the numbering level you want to count.</span></span> <span data-ttu-id="16094-149">Si vous ne spécifiez pas cet argument, tous les niveaux sont comptés.</span><span class="sxs-lookup"><span data-stu-id="16094-149">If this argument is omitted, all levels are counted.</span></span></param>
-        <summary><span data-ttu-id="16094-150">Renvoie le nombre d’éléments à puces ou numérotés et de champs LISTNUM dans la liste spécifiée.</span><span class="sxs-lookup"><span data-stu-id="16094-150">Returns the number of bulleted or numbered items and LISTNUM fields in the specified list.</span></span></summary>
+        <param name="NumberType"><span data-ttu-id="5ed79-143"><b>Objet</b>facultatif.</span><span class="sxs-lookup"><span data-stu-id="5ed79-143">Optional <b>Object</b>.</span></span> <span data-ttu-id="5ed79-144">Type de nombres à compter.</span><span class="sxs-lookup"><span data-stu-id="5ed79-144">The type of numbers to be counted.</span></span> <span data-ttu-id="5ed79-145">Il peut s’agir de l’une des <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constantes suivantes : <b>wdNumberParagraph</b>, <b>wdNumberListNum</b>ou <b>wdNumberAllNumbers</b>.</span><span class="sxs-lookup"><span data-stu-id="5ed79-145">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constants: <b>wdNumberParagraph</b>, <b>wdNumberListNum</b>, or <b>wdNumberAllNumbers</b>.</span></span> <span data-ttu-id="5ed79-146">La valeur par défaut est <b>wdNumberAllNumbers</b>.</span><span class="sxs-lookup"><span data-stu-id="5ed79-146">The default value is <b>wdNumberAllNumbers</b>.</span></span></param>
+        <param name="Level"><span data-ttu-id="5ed79-147"><b>Objet</b>facultatif.</span><span class="sxs-lookup"><span data-stu-id="5ed79-147">Optional <b>Object</b>.</span></span> <span data-ttu-id="5ed79-148">Numéro qui correspond au niveau de numérotation à compter.</span><span class="sxs-lookup"><span data-stu-id="5ed79-148">A number that corresponds to the numbering level you want to count.</span></span> <span data-ttu-id="5ed79-149">Si vous ne spécifiez pas cet argument, tous les niveaux sont comptés.</span><span class="sxs-lookup"><span data-stu-id="5ed79-149">If this argument is omitted, all levels are counted.</span></span></param>
+        <summary><span data-ttu-id="5ed79-150">Renvoie le nombre d’éléments à puces ou numérotés et de champs LISTNUM dans la liste spécifiée.</span><span class="sxs-lookup"><span data-stu-id="5ed79-150">Returns the number of bulleted or numbered items and LISTNUM fields in the specified list.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="16094-151">Les éléments à puces sont comptabilisés lorsque <b>wdNumberParagraph</b> ou <b>wdNumberAllNumbers</b> (valeur par défaut) <paramref name="NumberType" />est spécifié pour.</span><span class="sxs-lookup"><span data-stu-id="16094-151">Bulleted items are counted when either <b>wdNumberParagraph</b> or <b>wdNumberAllNumbers</b> (the default) is specified for <paramref name="NumberType" />.</span></span></para>
-          <para><span data-ttu-id="16094-152">Il existe deux types de numéros: les numéros prédéfinis (<b>wdNumberParagraph</b>), que vous pouvez ajouter aux paragraphes en sélectionnant un modèle dans la boîte de dialogue Puces et numéros; et les champs LISTNUM (<b>wdNumberListNum</b>), qui vous permettent d’ajouter plusieurs numéros par paragraphe.</span><span class="sxs-lookup"><span data-stu-id="16094-152">There are two types of numbers: preset numbers (<b>wdNumberParagraph</b>), which you can add to paragraphs by selecting a template in the Bullets and Numbering dialog box; and LISTNUM fields (<b>wdNumberListNum</b>), which allow you to add more than one number per paragraph.</span></span></para>
+        <remarks><para><span data-ttu-id="5ed79-151">Les éléments à puces sont comptabilisés lorsque <b>wdNumberParagraph</b> ou <b>wdNumberAllNumbers</b> (valeur par défaut) est spécifié pour <paramref name="NumberType" /> .</span><span class="sxs-lookup"><span data-stu-id="5ed79-151">Bulleted items are counted when either <b>wdNumberParagraph</b> or <b>wdNumberAllNumbers</b> (the default) is specified for <paramref name="NumberType" />.</span></span></para>
+          <para><span data-ttu-id="5ed79-152">Il existe deux types de numéros : les numéros prédéfinis (<b>wdNumberParagraph</b>), que vous pouvez ajouter aux paragraphes en sélectionnant un modèle dans la boîte de dialogue Puces et numéros ; et les champs LISTNUM (<b>wdNumberListNum</b>), qui vous permettent d’ajouter plusieurs numéros par paragraphe.</span><span class="sxs-lookup"><span data-stu-id="5ed79-152">There are two types of numbers: preset numbers (<b>wdNumberParagraph</b>), which you can add to paragraphs by selecting a template in the Bullets and Numbering dialog box; and LISTNUM fields (<b>wdNumberListNum</b>), which allow you to add more than one number per paragraph.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -249,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.List.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -266,10 +279,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="16094-153">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span><span class="sxs-lookup"><span data-stu-id="16094-153">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="5ed79-153">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span><span class="sxs-lookup"><span data-stu-id="5ed79-153">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="16094-154">Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».</span><span class="sxs-lookup"><span data-stu-id="16094-154">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="16094-155">[!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="16094-155">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="16094-156">La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères.</span><span class="sxs-lookup"><span data-stu-id="16094-156">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="16094-157">Par exemple, Microsoft Word possède le code de créateur MSWD.</span><span class="sxs-lookup"><span data-stu-id="16094-157">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="16094-158">Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</span><span class="sxs-lookup"><span data-stu-id="16094-158">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="5ed79-154">Si l’objet a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».</span><span class="sxs-lookup"><span data-stu-id="5ed79-154">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="5ed79-155">[!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="5ed79-155">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="5ed79-156">La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères.</span><span class="sxs-lookup"><span data-stu-id="5ed79-156">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="5ed79-157">Par exemple, Microsoft Word possède le code de créateur MSWD.</span><span class="sxs-lookup"><span data-stu-id="5ed79-157">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="5ed79-158">Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</span><span class="sxs-lookup"><span data-stu-id="5ed79-158">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -279,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.ListParagraphs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListParagraphs As ListParagraphs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListParagraphs ^ ListParagraphs { Microsoft::Office::Interop::Word::ListParagraphs ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListParagraphs : Microsoft.Office.Interop.Word.ListParagraphs" Usage="Microsoft.Office.Interop.Word.List.ListParagraphs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -296,7 +310,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListParagraphs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="16094-159">Renvoie une <see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" /> collection qui représente tous les paragraphes numérotés de la liste.</span><span class="sxs-lookup"><span data-stu-id="16094-159">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" /> collection that represents all the numbered paragraphs in the list.</span></span></summary>
+        <summary><span data-ttu-id="5ed79-159">Renvoie une <see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" /> collection qui représente tous les paragraphes numérotés de la liste.</span><span class="sxs-lookup"><span data-stu-id="5ed79-159">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" /> collection that represents all the numbered paragraphs in the list.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.List.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -324,7 +339,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="16094-160">Cette propriété renvoie un objet qui représente l'objet parent de l'objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="16094-160">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="5ed79-160">Cette propriété renvoie un objet qui représente l'objet parent de l'objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="5ed79-160">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -335,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.List.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -352,9 +368,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="16094-161">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="16094-161">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that's contained in the specified object.</span></span></summary>
+        <summary><span data-ttu-id="5ed79-161">Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="5ed79-161">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that's contained in the specified object.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="16094-162">Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> de formes à partir d’une collection de formes, voir la méthode.</span><span class="sxs-lookup"><span data-stu-id="16094-162">For information about returning a range from a document or returning a shape range from a collection of shapes, see the <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> method.</span></span></para>
+        <remarks><para><span data-ttu-id="5ed79-162">Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> méthode.</span><span class="sxs-lookup"><span data-stu-id="5ed79-162">For information about returning a range from a document or returning a shape range from a collection of shapes, see the <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -363,6 +379,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveNumbers([in]object&amp; NumberType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.RemoveNumbers(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveNumbers (Optional ByRef NumberType As Object)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveNumbers : obj -&gt; unit" Usage="list.RemoveNumbers NumberType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -377,12 +394,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumberType" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType"><span data-ttu-id="16094-163">Facultatif <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />.</span><span class="sxs-lookup"><span data-stu-id="16094-163">Optional <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />.</span></span> <span data-ttu-id="16094-164">Type de numéro à supprimer.</span><span class="sxs-lookup"><span data-stu-id="16094-164">The type of number to be removed.</span></span></param>
-        <summary><span data-ttu-id="16094-165">Supprime des numéros ou des puces de la liste spécifiée.</span><span class="sxs-lookup"><span data-stu-id="16094-165">Removes numbers or bullets from the specified list.</span></span></summary>
-        <remarks><para><span data-ttu-id="16094-166">Lorsque cette méthode est appliquée à un <see cref="T:Microsoft.Office.Interop.Word.List" /> objet, elle supprime uniquement les numéros des paragraphes de la liste spécifiée, en ignorant les numéros entrelacés provenant d’autres listes.</span><span class="sxs-lookup"><span data-stu-id="16094-166">When this method is applied to a <see cref="T:Microsoft.Office.Interop.Word.List" /> object, it removes numbers only from paragraphs in the specified list, skipping over any interleaved numbers from other lists.</span></span> <span data-ttu-id="16094-167">Si cette méthode est appliquée à l' <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objet pour une plage de texte, tous les numéros de toutes les listes de la plage sont supprimés.</span><span class="sxs-lookup"><span data-stu-id="16094-167">If this method is applied to the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object for a range of text, all numbers from all lists in the range are removed.</span></span></para>
+        <param name="NumberType"><span data-ttu-id="5ed79-163">Facultatif <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> .</span><span class="sxs-lookup"><span data-stu-id="5ed79-163">Optional <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />.</span></span> <span data-ttu-id="5ed79-164">Type de numéro à supprimer.</span><span class="sxs-lookup"><span data-stu-id="5ed79-164">The type of number to be removed.</span></span></param>
+        <summary><span data-ttu-id="5ed79-165">Supprime des numéros ou des puces de la liste spécifiée.</span><span class="sxs-lookup"><span data-stu-id="5ed79-165">Removes numbers or bullets from the specified list.</span></span></summary>
+        <remarks><para><span data-ttu-id="5ed79-166">Lorsque cette méthode est appliquée à un <see cref="T:Microsoft.Office.Interop.Word.List" /> objet, elle supprime uniquement les numéros des paragraphes de la liste spécifiée, en ignorant les numéros entrelacés provenant d’autres listes.</span><span class="sxs-lookup"><span data-stu-id="5ed79-166">When this method is applied to a <see cref="T:Microsoft.Office.Interop.Word.List" /> object, it removes numbers only from paragraphs in the specified list, skipping over any interleaved numbers from other lists.</span></span> <span data-ttu-id="5ed79-167">Si cette méthode est appliquée à l' <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objet pour une plage de texte, tous les numéros de toutes les listes de la plage sont supprimés.</span><span class="sxs-lookup"><span data-stu-id="5ed79-167">If this method is applied to the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object for a range of text, all numbers from all lists in the range are removed.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -392,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SingleListTemplate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SingleListTemplate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SingleListTemplate : bool" Usage="Microsoft.Office.Interop.Word.List.SingleListTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -409,7 +427,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="16094-168"><b>True</b> si l’objet de liste entier utilise le même modèle de liste.</span><span class="sxs-lookup"><span data-stu-id="16094-168"><b>True</b> if the entire list object uses the same list template.</span></span></summary>
+        <summary><span data-ttu-id="5ed79-168"><b>True</b> si l’objet de liste entier utilise le même modèle de liste.</span><span class="sxs-lookup"><span data-stu-id="5ed79-168"><b>True</b> if the entire list object uses the same list template.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -420,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.StyleName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StyleName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StyleName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StyleName : string" Usage="Microsoft.Office.Interop.Word.List.StyleName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -437,7 +456,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="16094-169">Renvoie le nom du style appliqué à l'insertion automatique spécifiée.</span><span class="sxs-lookup"><span data-stu-id="16094-169">Returns the name of the style applied to the specified AutoText entry.</span></span></summary>
+        <summary><span data-ttu-id="5ed79-169">Renvoie le nom du style appliqué à l'insertion automatique spécifiée.</span><span class="sxs-lookup"><span data-stu-id="5ed79-169">Returns the name of the style applied to the specified AutoText entry.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
