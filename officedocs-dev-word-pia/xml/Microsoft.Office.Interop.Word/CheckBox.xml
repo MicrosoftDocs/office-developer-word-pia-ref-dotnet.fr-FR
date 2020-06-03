@@ -1,9 +1,10 @@
 <Type Name="CheckBox" FullName="Microsoft.Office.Interop.Word.CheckBox">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="44f3ebc6503c36473eb317875150d1134c7933aa" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147178" /></Metadata><TypeSignature Language="C#" Value="public interface CheckBox" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8f7d4493e051b3287f20b84ce8d90b71332e8ecf" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922548" /></Metadata><TypeSignature Language="C#" Value="public interface CheckBox" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CheckBox" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CheckBox" />
   <TypeSignature Language="VB.NET" Value="Public Interface CheckBox" />
   <TypeSignature Language="C++ CLI" Value="public interface class CheckBox" />
+  <TypeSignature Language="F#" Value="type CheckBox = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>Représente un champ de formulaire de case à cocher unique.</summary>
-    <remarks><para>Utilisez <b>FormFields</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index ou le nom de signet associé à la case à cocher <see cref="T:Microsoft.Office.Interop.Word.FormField" /> , pour renvoyer un seul objet. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> propriété avec l’objet <b>FormField</b> pour renvoyer un objet <b>CheckBox</b> .</para>
-      <para>Le numéro d’index représente la position du champ de formulaire dans <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> la collection.</para>
+    <remarks><para>Utilisez <b>FormFields</b>( <paramref name="index" /> ), où <paramref name="index" /> est le numéro d’index ou le nom de signet associé à la case à cocher, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet. Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> propriété avec l’objet <b>FormField</b> pour renvoyer un objet <b>CheckBox</b> .</para>
+      <para>Le numéro d’index représente la position du champ de formulaire dans la <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> collection.</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> méthode avec l’objet <b>FormFields </b>pour ajouter un champ case à cocher.</para>
       <para> </para></remarks>
   </Docs>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.CheckBox.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoSize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="Microsoft.Office.Interop.Word.CheckBox.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -79,7 +82,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> dimensionne la case à cocher ou du cadre de texte en fonction de la taille de police du texte environnant. <b>False</b> dimensionne la case à cocher ou le cadre <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Size" /> de texte en fonction de la propriété.</summary>
+        <summary><b>True</b> dimensionne la case à cocher ou du cadre de texte en fonction de la taille de police du texte environnant. <b>False</b> dimensionne la case à cocher ou le cadre de texte en fonction de la <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Size" /> propriété.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.CheckBox.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -109,7 +113,7 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Default" />
       <MemberSignature Language="VB.NET" Value="Public Property Default As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Default { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Default : bool with get, set" Usage="Microsoft.Office.Interop.Word.CheckBox.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.CheckBox.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Size { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : single with get, set" Usage="Microsoft.Office.Interop.Word.CheckBox.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Valid" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Valid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Valid : bool" Usage="Microsoft.Office.Interop.Word.CheckBox.Valid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -229,7 +237,7 @@
       <Docs>
         <summary>Renvoie une valeur qui indique si l’objet de champ de formulaire spécifié est un champ de formulaire de case à cocher valide.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet pour déterminer le type de champ de formulaire<see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormCheckBox" />( <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormDropDown" />,, <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormTextInput" />ou) avant d' <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> appliquer la propriété. Cette précaution permet de s’assurer que le type de l’objet <b>FormField </b>est attendu.</para>
+        <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objet pour déterminer le type de champ de formulaire ( <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormCheckBox" /> , <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormDropDown" /> , ou <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormTextInput" /> ) avant d’appliquer la <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> propriété. Cette précaution permet de s’assurer que le type de l’objet <b>FormField </b>est attendu.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CheckBox.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool with get, set" Usage="Microsoft.Office.Interop.Word.CheckBox.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

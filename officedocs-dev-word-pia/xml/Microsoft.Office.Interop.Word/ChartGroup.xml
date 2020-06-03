@@ -1,9 +1,10 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Word.ChartGroup">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c46b7a3f6b3884f675aec38fe394cce284c200df" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142270" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4750528762dab40f54eb2a1c6aba96c540133f63" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922450" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroup" />
   <TypeSignature Language="C++ CLI" Value="public interface class ChartGroup" />
+  <TypeSignature Language="F#" Value="type ChartGroup = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>Représente une ou plusieurs séries tracées dans un graphique avec le même format.</summary>
-    <remarks><para>Un graphique contient un ou plusieurs groupes de graphiques, chaque groupe de graphique contient un <see cref="T:Microsoft.Office.Interop.Word.Series" /> ou plusieurs objets et chaque série contient un ou <see cref="T:Microsoft.Office.Interop.Word.Points" /> plusieurs objets. Par exemple, un seul graphique peut contenir un groupe courbes, contenant toutes les séries tracées avec le format de graphique en courbes et un groupe de graphique à barres, contenant toutes les séries tracées avec le format de graphique en barres. L’objet <b>ChartGroup</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> collection.</para>
-      <para>Utilisez <b>ChartGroups</b>(<paramref name="Index" />), où <paramref name="index" /> est le numéro d’index du groupe de graphiques, pour renvoyer un seul objet <b>ChartGroup</b> .</para>
+    <remarks><para>Un graphique contient un ou plusieurs groupes de graphiques, chaque groupe de graphique contient un ou plusieurs <see cref="T:Microsoft.Office.Interop.Word.Series" /> objets et chaque série contient un ou plusieurs <see cref="T:Microsoft.Office.Interop.Word.Points" /> objets. Par exemple, un seul graphique peut contenir un groupe courbes, contenant toutes les séries tracées avec le format de graphique en courbes et un groupe de graphique à barres, contenant toutes les séries tracées avec le format de graphique en barres. L’objet <b>ChartGroup</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> collection.</para>
+      <para>Utilisez <b>ChartGroups</b>( <paramref name="Index" /> ), où <paramref name="index" /> est le numéro d’index du groupe de graphiques, pour renvoyer un seul objet <b>ChartGroup</b> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.ChartGroup.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -47,7 +49,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.AxisGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property AxisGroup As XlAxisGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlAxisGroup AxisGroup { Microsoft::Office::Interop::Word::XlAxisGroup get(); void set(Microsoft::Office::Interop::Word::XlAxisGroup value); };" />
+      <MemberSignature Language="F#" Value="member this.AxisGroup : Microsoft.Office.Interop.Word.XlAxisGroup with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.AxisGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.BubbleScale" />
       <MemberSignature Language="VB.NET" Value="Public Property BubbleScale As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BubbleScale { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.BubbleScale : int with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.BubbleScale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -110,7 +114,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit le facteur d’échelle des bulles dans le groupe graphique spécifié.  En lecture/écriture</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks><para>Cette propriété peut être définie sur une valeur entière comprise entre 0 (zéro) et 300, correspondant à un pourcentage de la taille par défaut. </para>
           <para> </para></remarks>
       </Docs>
@@ -120,6 +124,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CategoryCollection([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ChartGroup.CategoryCollection(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CategoryCollection (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member CategoryCollection : obj -&gt; obj" Usage="chartGroup.CategoryCollection Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ChartGroup.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,8 +176,8 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un <b>nombre entier</b> de 32 bits qui indique l’application dans laquelle l’objet spécifié a été créé. En lecture seule.</summary>
-        <value><b>Entier</b></value>
-        <remarks><para>Si l’objet a été créé dans Microsoft Word, <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.Creator" /> la propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Si l’objet a été créé dans Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.Creator" /> propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.DoughnutHoleSize" />
       <MemberSignature Language="VB.NET" Value="Public Property DoughnutHoleSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DoughnutHoleSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DoughnutHoleSize : int with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.DoughnutHoleSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -202,7 +209,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit la taille du trou d'un groupe de graphiques en anneau. La taille du trou est exprimée sous la forme d'un pourcentage de la taille du graphique, compris entre 10 et 90 %. En lecture/écriture</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.DownBars" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DownBars As DownBars" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DownBars ^ DownBars { Microsoft::Office::Interop::Word::DownBars ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DownBars : Microsoft.Office.Interop.Word.DownBars" Usage="Microsoft.Office.Interop.Word.ChartGroup.DownBars" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.DropLines" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropLines As DropLines" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DropLines ^ DropLines { Microsoft::Office::Interop::Word::DropLines ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DropLines : Microsoft.Office.Interop.Word.DropLines" Usage="Microsoft.Office.Interop.Word.ChartGroup.DropLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -268,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.FirstSliceAngle" />
       <MemberSignature Language="VB.NET" Value="Public Property FirstSliceAngle As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FirstSliceAngle { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.FirstSliceAngle : int with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.FirstSliceAngle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -289,7 +299,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit l’angle de la première coupe graphique en secteurs ou graphique en anneaux, en degrés (dans le sens des aiguilles d’une montre, vertical). S’applique uniquement aux graphiques en secteurs, graphiques en secteurs 3D et graphiques en anneaux. En lecture/écriture</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks><para>Peut être une valeur comprise entre 0 et 360.</para>
           <para> </para></remarks>
       </Docs>
@@ -299,6 +309,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object FullCategoryCollection([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ChartGroup.FullCategoryCollection(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function FullCategoryCollection (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member FullCategoryCollection : obj -&gt; obj" Usage="chartGroup.FullCategoryCollection Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -331,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.GapWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property GapWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GapWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.GapWidth : int with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.GapWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -352,7 +364,7 @@
       </ReturnValue>
       <Docs>
         <summary>Pour les graphiques en barres et en histogrammes, renvoie ou définit la distance séparant les barres ou les colonnes sous forme d’un pourcentage de la largeur des barres ou des colonnes. La valeur de cette propriété doit être comprise entre 0 et 500 %. En lecture/écriture</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks><para>La valeur de cette propriété doit être comprise entre 0 et 500 %.</para>
           <para> </para></remarks>
       </Docs>
@@ -363,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.Has3DShading" />
       <MemberSignature Language="VB.NET" Value="Public Property Has3DShading As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Has3DShading { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Has3DShading : bool with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.Has3DShading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -386,7 +399,7 @@
         <summary>Cette propriété renvoie ou définit la valeur qui détermine si un groupe de graphiques possède un ombrage tridimensionnel. En lecture/écriture</summary>
         <value>Valeur <b>booléenne</b> définie sur <b>true</b> si le groupe de graphiques possède un ombrage tridimensionnel, <b>false</b>dans le cas contraire.</value>
         <remarks><para>
-            <b>Remarque</b>: le fait de définir <b>Has3DShading</b> = <b>false</b> a pour effet de définir la matière du graphique sur «Flat» ou de supprimer l’effet, tandis que la définition de la <b>Has3DShading</b> = <b>true</b> définit le contenu du graphique sur la valeur par défaut.</para>
+            <b>Remarque</b>: le fait de définir <b>Has3DShading</b>  =  <b>false</b> a pour effet de définir la matière du graphique sur « Flat » ou de supprimer l’effet, tandis que la définition de la <b>Has3DShading</b>  =  <b>true</b> définit le contenu du graphique sur la valeur par défaut.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -396,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.HasDropLines" />
       <MemberSignature Language="VB.NET" Value="Public Property HasDropLines As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDropLines { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasDropLines : bool with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.HasDropLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -417,7 +431,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit la valeur indiquant si le graphique comporte des lignes de projection. Cette propriété ne s'applique qu'à ces deux types de graphiques. En lecture/écriture</summary>
-        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si le graphique en courbes ou en aires contient des lignes de projection; sinon <b></b> , false</value>
+        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si le graphique en courbes ou en aires contient des lignes de projection ; Sinon, <b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -427,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.HasHiLoLines" />
       <MemberSignature Language="VB.NET" Value="Public Property HasHiLoLines As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasHiLoLines { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasHiLoLines : bool with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.HasHiLoLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -448,7 +463,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit la valeur indiquant si le graphique possède des lignes haut/bas. Ne s’applique qu’aux graphiques en courbes. En lecture/écriture</summary>
-        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si le graphique en courbes possède des lignes haut/bas; sinon <b></b> , false</value>
+        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si le graphique en courbes possède des lignes haut/bas ; Sinon, <b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -458,6 +473,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.HasRadarAxisLabels" />
       <MemberSignature Language="VB.NET" Value="Public Property HasRadarAxisLabels As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasRadarAxisLabels { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasRadarAxisLabels : bool with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.HasRadarAxisLabels" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -479,7 +495,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit la valeur indiquant si un graphique en radar possède des étiquettes d’axe. Elle ne s'applique qu'à ce type de graphiques. En lecture/écriture</summary>
-        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si un graphique en radar possède des étiquettes d’axe; sinon <b></b> , false</value>
+        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si un graphique en radar possède des étiquettes d’axe ; Sinon, <b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -489,6 +505,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.HasSeriesLines" />
       <MemberSignature Language="VB.NET" Value="Public Property HasSeriesLines As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasSeriesLines { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasSeriesLines : bool with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.HasSeriesLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -510,7 +527,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit la valeur indiquant si un graphique en histogrammes empilés ou un graphique à barres possède des lignes de série ou si un graphique en secteurs de secteur ou en barres de secteur contient des lignes de connecteur entre les deux sections. Cette propriété ne s'applique qu'aux histogrammes empilés 2D, en barres 2D, en secteurs de secteur ou en barres de secteur. En lecture/écriture</summary>
-        <value>Valeur <b>booléenne</b> définie sur les valeurs indiquées dans le tableau ci-dessous en fonction des conditions indiquées. DescriptionReturn graphique à secteurs de secteur ou barre de graphique à secteurs contenant des connecteurs entre les deux sections. <b>True</b> Histogramme empilé ou histogramme dont les lignes de série ont la<b>valeur</b>false<b></b> dans le cas contraire</value>
+        <value>Valeur <b>booléenne</b> définie sur les valeurs indiquées dans le tableau ci-dessous en fonction des conditions indiquées. DescriptionReturn graphique à secteurs de secteur ou barre de graphique à secteurs contenant des connecteurs entre les deux sections. <b>True</b> Histogramme empilé ou histogramme dont les lignes de série ont la<b>valeur</b><b>false</b> dans le cas contraire</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,6 +537,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" />
       <MemberSignature Language="VB.NET" Value="Public Property HasUpDownBars As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasUpDownBars { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasUpDownBars : bool with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -541,7 +559,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit la valeur indiquant si un graphique dispose de barres haut et bas. Ne s’applique qu’aux graphiques en courbes. En lecture/écriture</summary>
-        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si le graphique en courbes possède des barres haut et bas; sinon <b></b>, false.</value>
+        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si le graphique en courbes possède des barres haut et bas ; Sinon, <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -551,6 +569,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.HiLoLines" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HiLoLines As HiLoLines" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::HiLoLines ^ HiLoLines { Microsoft::Office::Interop::Word::HiLoLines ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HiLoLines : Microsoft.Office.Interop.Word.HiLoLines" Usage="Microsoft.Office.Interop.Word.ChartGroup.HiLoLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -579,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.ChartGroup.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -597,7 +617,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie le numéro d'index de l'objet dans la collection des objets similaires.</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -607,6 +627,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.Overlap" />
       <MemberSignature Language="VB.NET" Value="Public Property Overlap As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Overlap { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Overlap : int with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.Overlap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -628,7 +649,7 @@
       </ReturnValue>
       <Docs>
         <summary>Spécifie la position des barres et des histogrammes. Il peut s’agir d’une valeur comprise entre – 100 et 100. Ne s’applique qu’aux graphiques en barres 2D et aux graphiques en histogrammes 2D. En lecture/écriture</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks><para>Si cette propriété a la valeur – 100, les barres sont positionnées de sorte qu’il y ait une largeur de barre entre elles. Si la valeur de superposition est égale à 0 (zéro), cet espace inter-barres est inexistant (chaque barre commence immédiatement après la précédente). Si la valeur de superposition est égale à 100, les barres sont positionnées l'une sur l'autre.</para>
           <para> </para></remarks>
       </Docs>
@@ -639,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ChartGroup.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -667,6 +689,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.RadarAxisLabels" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RadarAxisLabels As TickLabels" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TickLabels ^ RadarAxisLabels { Microsoft::Office::Interop::Word::TickLabels ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RadarAxisLabels : Microsoft.Office.Interop.Word.TickLabels" Usage="Microsoft.Office.Interop.Word.ChartGroup.RadarAxisLabels" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -695,6 +718,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.SecondPlotSize" />
       <MemberSignature Language="VB.NET" Value="Public Property SecondPlotSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SecondPlotSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SecondPlotSize : int with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.SecondPlotSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -716,7 +740,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie ou définit la taille de la section secondaire d’un secteur de graphique en secteurs ou d’une barre de graphique en secteurs, sous forme de pourcentage de la taille du graphique principal. En lecture/écriture</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks><para>Peut être une valeur comprise entre 5 et 200.</para>
           <para> </para></remarks>
       </Docs>
@@ -726,6 +750,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SeriesCollection([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ChartGroup.SeriesCollection(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function SeriesCollection (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member SeriesCollection : obj -&gt; obj" Usage="chartGroup.SeriesCollection Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -755,6 +780,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.SeriesLines" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SeriesLines As SeriesLines" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SeriesLines ^ SeriesLines { Microsoft::Office::Interop::Word::SeriesLines ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SeriesLines : Microsoft.Office.Interop.Word.SeriesLines" Usage="Microsoft.Office.Interop.Word.ChartGroup.SeriesLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -783,6 +809,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.ShowNegativeBubbles" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowNegativeBubbles As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowNegativeBubbles { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowNegativeBubbles : bool with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.ShowNegativeBubbles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -814,6 +841,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.SizeRepresents" />
       <MemberSignature Language="VB.NET" Value="Public Property SizeRepresents As XlSizeRepresents" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlSizeRepresents SizeRepresents { Microsoft::Office::Interop::Word::XlSizeRepresents get(); void set(Microsoft::Office::Interop::Word::XlSizeRepresents value); };" />
+      <MemberSignature Language="F#" Value="member this.SizeRepresents : Microsoft.Office.Interop.Word.XlSizeRepresents with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.SizeRepresents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -835,7 +863,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit ce que la taille des bulles représente sur un graphique en bulles. En lecture/écriture</summary>
-        <value>Peut être l’une des constantes suivantes <see cref="T:Microsoft.Office.Interop.Word.XlSizeRepresents" /> : <b>xlSizeIsArea</b> ou <b>xlSizeIsWidth</b></value>
+        <value>Peut être l’une des <see cref="T:Microsoft.Office.Interop.Word.XlSizeRepresents" /> constantes suivantes : <b>XlSizeIsArea</b> ou <b>xlSizeIsWidth</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -845,6 +873,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.SplitType" />
       <MemberSignature Language="VB.NET" Value="Public Property SplitType As XlChartSplitType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlChartSplitType SplitType { Microsoft::Office::Interop::Word::XlChartSplitType get(); void set(Microsoft::Office::Interop::Word::XlChartSplitType value); };" />
+      <MemberSignature Language="F#" Value="member this.SplitType : Microsoft.Office.Interop.Word.XlChartSplitType with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.SplitType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -876,6 +905,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.SplitValue" />
       <MemberSignature Language="VB.NET" Value="Public Property SplitValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SplitValue { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SplitValue : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.SplitValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -907,6 +937,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.SubType" />
       <MemberSignature Language="VB.NET" Value="Public Property SubType As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SubType { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SubType : int with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.SubType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -934,7 +965,7 @@
       </ReturnValue>
       <Docs>
         <summary>Réservé à une utilisation interne.</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -944,6 +975,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : int with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -981,6 +1013,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.UpBars" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpBars As UpBars" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::UpBars ^ UpBars { Microsoft::Office::Interop::Word::UpBars ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UpBars : Microsoft.Office.Interop.Word.UpBars" Usage="Microsoft.Office.Interop.Word.ChartGroup.UpBars" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1009,6 +1042,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartGroup.VaryByCategories" />
       <MemberSignature Language="VB.NET" Value="Public Property VaryByCategories As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool VaryByCategories { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.VaryByCategories : bool with get, set" Usage="Microsoft.Office.Interop.Word.ChartGroup.VaryByCategories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1030,7 +1064,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie ou définit la valeur indiquant si Microsoft Word affecte une couleur ou un motif différent à chaque marqueur de données. Le graphique ne doit contenir qu’une seule série. En lecture/écriture</summary>
-        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si Microsoft Word affecte une couleur ou un motif différent à chaque marqueur de données; sinon <b></b> , false</value>
+        <value>Valeur de <b>type Boolean</b> définie sur <b>true</b> si Microsoft Word affecte une couleur ou un motif différent à chaque marqueur de données ; Sinon, <b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

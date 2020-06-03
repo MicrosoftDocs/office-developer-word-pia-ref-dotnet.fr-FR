@@ -1,9 +1,10 @@
 <Type Name="ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d540bdcf50e7d23cbce5ad054d121597300aa736" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144735" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow PvWindow, int CloseReason, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="21e11dba1abb728300b03dea1e20bc08c5f4590d" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922925" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow PvWindow, int CloseReason, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler(PvWindow As ProtectedViewWindow, CloseReason As Integer, ByRef Cancel As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow ^ PvWindow, int CloseReason, [Runtime::InteropServices::Out] bool % Cancel);" />
+  <TypeSignature Language="F#" Value="type ApplicationEvents4_ProtectedViewWindowBeforeCloseEventHandler = delegate of ProtectedViewWindow * int * bool -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
   <Parameters>
     <Parameter Name="PvWindow" Type="Microsoft.Office.Interop.Word.ProtectedViewWindow" />
     <Parameter Name="CloseReason" Type="System.Int32" />
-    <Parameter Name="Cancel" Type="System.Boolean&amp;" RefType="out" />
+    <Parameter Name="Cancel" Type="System.Boolean" RefType="out" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>
@@ -30,7 +31,7 @@
   <Docs>
     <param name="PvWindow">Fenêtre en mode protégé qui est fermée.</param>
     <param name="CloseReason">Constante de l' <see cref="T:Microsoft.Office.Interop.Word.WdProtectedViewCloseReason" /> énumération qui spécifie la raison pour laquelle la fenêtre en mode protégé est fermée.</param>
-    <param name="Cancel"><b>false</b> lorsque l’événement se produit. Si la procédure événementielle affecte la <b>valeur true</b>à cet argument, la fenêtre ne se ferme pas lorsque la procédure est terminée. Remarquest l’événement <b>ProtectedViewWindowsBeforeClose</b> est appelé dans le <see cref="M:Microsoft.Office.Interop.Word.ProtectedViewWindow.Edit(System.Object@,System.Object@,System.Object@)" /> cadre de la <paramref name="Cancel" /> méthode, la valeur <b>true</b> ne produit aucune action.</param>
+    <param name="Cancel"><b>false</b> lorsque l’événement se produit. Si la procédure événementielle affecte la <b>valeur true</b>à cet argument, la fenêtre ne se ferme pas lorsque la procédure est terminée. Remarquest l’événement <b>ProtectedViewWindowsBeforeClose</b> est appelé dans le cadre de la <see cref="M:Microsoft.Office.Interop.Word.ProtectedViewWindow.Edit(System.Object@,System.Object@,System.Object@)" /> méthode, la valeur <paramref name="Cancel" /> <b>true</b> ne produit aucune action.</param>
     <summary>Type <b>délégué</b> utilisé pour ajouter un gestionnaire d’événements pour l' <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.ProtectedViewWindowBeforeClose" /> événement. L’événement <b>ProtectedViewWindowBeforeClose</b> se produit immédiatement avant la fermeture d’une fenêtre en mode protégé ou d’un document dans une fenêtre en mode protégé.</summary>
     <remarks>To be added.</remarks>
   </Docs>

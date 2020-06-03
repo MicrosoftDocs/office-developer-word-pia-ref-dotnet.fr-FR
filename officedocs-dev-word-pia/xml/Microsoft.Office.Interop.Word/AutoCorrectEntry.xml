@@ -1,9 +1,10 @@
 <Type Name="AutoCorrectEntry" FullName="Microsoft.Office.Interop.Word.AutoCorrectEntry">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0a3a172351b8c23700ecf22b9e70fafa5b84be51" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146247" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrectEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d5a2c2d9edde49d600abb1f2e3c4718cce6c4dc3" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922771" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrectEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrectEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrectEntry" />
   <TypeSignature Language="C++ CLI" Value="public interface class AutoCorrectEntry" />
+  <TypeSignature Language="F#" Value="type AutoCorrectEntry = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Représente une seule entrée de correction automatique.</summary>
     <remarks><para>L’objet <b>AutoCorrectEntry</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" /> collection. La collection <b>AutoCorrectEntries</b> contient les entrées dans la boîte de dialogue Correction automatique (menu Outils).</para>
-      <para>Utilisez <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" />(<paramref name="index" />), où <paramref name="index" /> est le nom de la correction automatique ou le numéro d’index, pour renvoyer un seul objet <b>AutoCorrectEntry</b> . Vous devez respecter exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché sous remplacer dans la boîte de dialogue Correction automatique.</para>
+      <para>Utilisez <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" /> ( <paramref name="index" /> ), où <paramref name="index" /> est le nom de la correction automatique ou le numéro d’index, pour renvoyer un seul objet <b>AutoCorrectEntry</b> . Vous devez respecter exactement l’orthographe (mais pas nécessairement la casse) du nom, tel qu’il est affiché sous remplacer dans la boîte de dialogue Correction automatique.</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntry.Apply(Microsoft.Office.Interop.Word.Range)" /> méthode pour insérer une entrée de correction automatique à la plage spécifiée.</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" /> pour ajouter une correction automatique à la liste des entrées disponibles.</para>
       <para> </para></remarks>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -58,7 +60,9 @@
       <MemberSignature Language="C#" Value="public void Apply (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Apply([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.AutoCorrectEntry.Apply(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Apply (Range As Range)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Apply(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member Apply : Microsoft.Office.Interop.Word.Range -&gt; unit" Usage="autoCorrectEntry.Apply Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -76,7 +80,7 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> required.</param>
+        <param name="Range">Objet required <see cref="T:Microsoft.Office.Interop.Word.Range" /> .</param>
         <summary>Remplace une plage par la valeur de la correction automatique spécifiée.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -106,7 +111,7 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.AutoCorrectEntry.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="autoCorrectEntry.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -142,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -229,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.RichText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RichText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RichText { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RichText : bool" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.RichText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -257,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

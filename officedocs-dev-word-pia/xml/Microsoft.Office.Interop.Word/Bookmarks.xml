@@ -1,9 +1,10 @@
 <Type Name="Bookmarks" FullName="Microsoft.Office.Interop.Word.Bookmarks">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="164f4a022f0e0f2ed1514f8a343f3dcbfd3f7cef" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146331" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmarks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="abf5376fd0348801365b52480b65a716a9fa8e11" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922715" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmarks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bookmarks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bookmarks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bookmarks&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Bookmarks : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Bookmarks = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,11 +24,11 @@
   </Attributes>
   <Docs>
     <summary>Collection d' <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objets qui représentent les signets contenus dans la sélection, la plage ou le document spécifié.</summary>
-    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.Bookmarks" /> propriété pour renvoyer la <b></b> collection Bookmarks.</para>
+    <remarks><para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.Bookmarks" /> propriété pour renvoyer la collection <b>Bookmarks</b> .</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> méthode pour définir un signet pour une plage dans un document.</para>
-      <para>Utilisez <b></b>les signets<paramref name="index" />(), <paramref name="index" /> où est le nom du signet ou le numéro d’index, pour renvoyer un seul objet <b>Bookmark</b> . You must exactly match the spelling (but not necessarily the capitalization) of the bookmark name.</para>
-      <para>Le numéro d’index représente la position du signet dans l' <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objet <see cref="T:Microsoft.Office.Interop.Word.Range" /> ou. Pour l' <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet, le numéro d’index représente la position du signet dans la liste alphabétique de signets de la boîte de dialogue signets (cliquez sur nom pour trier la liste des signets par ordre alphabétique). </para>
-      <para>La <see cref="P:Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" /> propriété affecte le nombre d’éléments dans la <b></b> collection Bookmarks. Si  <b>ShowHidden</b> a la valeur <b>True</b>, les signets masqués sont inclus dans la collection  <b>Bookmarks</b>.</para>
+      <para>Utilisez les <b>signets</b>( <paramref name="index" /> ), où <paramref name="index" /> est le nom du signet ou le numéro d’index, pour renvoyer un seul objet <b>Bookmark</b> . You must exactly match the spelling (but not necessarily the capitalization) of the bookmark name.</para>
+      <para>Le numéro d’index représente la position du signet dans l' <see cref="T:Microsoft.Office.Interop.Word.Selection" /> <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet ou. Pour l' <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet, le numéro d’index représente la position du signet dans la liste alphabétique de signets de la boîte de dialogue signets (cliquez sur nom pour trier la liste des signets par ordre alphabétique). </para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" /> propriété affecte le nombre d’éléments dans la collection <b>Bookmarks</b> . Si  <b>ShowHidden</b> a la valeur <b>True</b>, les signets masqués sont inclus dans la collection  <b>Bookmarks</b>.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Bookmark Add([in]string Name, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String, Optional ByRef Range As Object) As Bookmark" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; Microsoft.Office.Interop.Word.Bookmark" Usage="bookmarks.Add (Name, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,13 +53,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Name" Type="System.String" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Name">Nom du signet. Il ne doit comporter qu'un seul mot.</param>
         <param name="Range">Plage de texte incluse dans le signet. Il est possible d'insérer un signet dans une plage réduite (le point d'insertion).</param>
         <summary>Ajoute un signet à une plage.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> Objet qui représente le signet ajouté à la plage.</returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Bookmark" />Objet qui représente le signet ajouté à la plage.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Bookmarks.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Bookmarks.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Bookmarks.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -142,7 +147,7 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.DefaultSorting" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultSorting As WdBookmarkSortBy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdBookmarkSortBy DefaultSorting { Microsoft::Office::Interop::Word::WdBookmarkSortBy get(); void set(Microsoft::Office::Interop::Word::WdBookmarkSortBy value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSorting : Microsoft.Office.Interop.Word.WdBookmarkSortBy with get, set" Usage="Microsoft.Office.Interop.Word.Bookmarks.DefaultSorting" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -175,7 +181,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit l'option de tri pour les noms de signets affichés dans la boîte de dialogue signet (menuInsertion ).</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété n’a aucune incidence sur l’ordre des objets <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> Bookmark dans la collection.</para>
+        <remarks><para>Cette propriété n’a aucune incidence sur l’ordre des objets Bookmark dans la <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> collection.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Exists (Name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Exists(System::String ^ Name);" />
+      <MemberSignature Language="F#" Value="abstract member Exists : string -&gt; bool" Usage="bookmarks.Exists Name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Bookmarks.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="bookmarks.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -246,6 +254,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Bookmark" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Bookmark ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Bookmark ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Bookmark" Usage="Microsoft.Office.Interop.Word.Bookmarks.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -263,7 +272,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Bookmark</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">Nom de l’objet individuel à renvoyer.</param>
@@ -278,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Bookmarks.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -306,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowHidden As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowHidden { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowHidden : bool with get, set" Usage="Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -326,7 +337,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur qui indique si les signets masqués <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> sont inclus dans la collection.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur qui indique si les signets masqués sont inclus dans la <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> collection.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété contrôle également si les signets masqués sont répertoriés dans la boîte de dialogue signet (menu Insertion).</para>
           <para>Signets masqués sont insérés automatiquement lorsque des renvois sont insérés dans le document.</para>

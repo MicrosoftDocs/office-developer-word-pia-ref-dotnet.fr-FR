@@ -1,9 +1,10 @@
 <Type Name="Column" FullName="Microsoft.Office.Interop.Word.Column">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e45caf40bd3b70419995c7ac70846ec49a9f5e99" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146163" /></Metadata><TypeSignature Language="C#" Value="public interface Column" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1c3db0a713ea706bd6021b19638c9528ed3d0192" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922359" /></Metadata><TypeSignature Language="C#" Value="public interface Column" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Column" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Column" />
   <TypeSignature Language="VB.NET" Value="Public Interface Column" />
   <TypeSignature Language="C++ CLI" Value="public interface class Column" />
+  <TypeSignature Language="F#" Value="type Column = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Représente une colonne de table unique. L’objet <b>Column</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Word.Columns" /> collection.</summary>
     <remarks><para>La collection <b>Columns</b> comprend toutes les colonnes dans un tableau, la sélection ou la plage.</para>
-      <para>Utilisez <b></b>Columns<paramref name="index" />(), <paramref name="index" /> où est le numéro d’index, pour renvoyer un seul objet <b>Column</b> . Le numéro d'index représente la position de la colonne dans la collection <b>Columns</b> (en partant de la gauche).</para>
+      <para>Utilisez <b>Columns</b>( <paramref name="index" /> ), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Column</b> . Le numéro d'index représente la position de la colonne dans la collection <b>Columns</b> (en partant de la gauche).</para>
       <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Cell.Column" /> propriété avec un <see cref="T:Microsoft.Office.Interop.Word.Cell" /> objet pour renvoyer un objet <b>Column</b> .</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> méthode pour ajouter une colonne à un tableau. </para>
       <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" /> propriété avec un <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objet pour renvoyer le numéro de la colonne actuelle.</para>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Column.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Column.AutoFit" />
       <MemberSignature Language="VB.NET" Value="Public Sub AutoFit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutoFit();" />
+      <MemberSignature Language="F#" Value="abstract member AutoFit : unit -&gt; unit" Usage="column.AutoFit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.Borders" />
       <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Borders ^ Borders { Microsoft::Office::Interop::Word::Borders ^ get(); void set(Microsoft::Office::Interop::Word::Borders ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Borders : Microsoft.Office.Interop.Word.Borders with get, set" Usage="Microsoft.Office.Interop.Word.Column.Borders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -107,7 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou <see cref="T:Microsoft.Office.Interop.Word.Borders" /> définit une collection qui représente toutes les bordures de l’objet spécifié.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection qui représente toutes les bordures de l’objet spécifié.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.Cells" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cells As Cells" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Cells ^ Cells { Microsoft::Office::Interop::Word::Cells ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cells : Microsoft.Office.Interop.Word.Cells" Usage="Microsoft.Office.Interop.Word.Column.Cells" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Column.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,7 +171,7 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Column.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="column.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Column.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -229,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.IsFirst" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFirst As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFirst { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFirst : bool" Usage="Microsoft.Office.Interop.Word.Column.IsFirst" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -257,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.IsLast" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLast As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLast { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLast : bool" Usage="Microsoft.Office.Interop.Word.Column.IsLast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -285,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.NestingLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NestingLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NestingLevel { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NestingLevel : int" Usage="Microsoft.Office.Interop.Word.Column.NestingLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -314,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.Next" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Next As Column" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Column ^ Next { Microsoft::Office::Interop::Word::Column ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Next : Microsoft.Office.Interop.Word.Column" Usage="Microsoft.Office.Interop.Word.Column.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -342,6 +354,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Column.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -370,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.PreferredWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property PreferredWidth As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float PreferredWidth { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.PreferredWidth : single with get, set" Usage="Microsoft.Office.Interop.Word.Column.PreferredWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -401,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.PreferredWidthType" />
       <MemberSignature Language="VB.NET" Value="Public Property PreferredWidthType As WdPreferredWidthType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPreferredWidthType PreferredWidthType { Microsoft::Office::Interop::Word::WdPreferredWidthType get(); void set(Microsoft::Office::Interop::Word::WdPreferredWidthType value); };" />
+      <MemberSignature Language="F#" Value="member this.PreferredWidthType : Microsoft.Office.Interop.Word.WdPreferredWidthType with get, set" Usage="Microsoft.Office.Interop.Word.Column.PreferredWidthType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -432,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.Previous" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Previous As Column" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Column ^ Previous { Microsoft::Office::Interop::Word::Column ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : Microsoft.Office.Interop.Word.Column" Usage="Microsoft.Office.Interop.Word.Column.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -460,6 +476,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Column.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="column.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -485,6 +502,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Column.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetWidth (ColumnWidth As Single, RulerStyle As WdRulerStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetWidth(float ColumnWidth, Microsoft::Office::Interop::Word::WdRulerStyle RulerStyle);" />
+      <MemberSignature Language="F#" Value="abstract member SetWidth : single * Microsoft.Office.Interop.Word.WdRulerStyle -&gt; unit" Usage="column.SetWidth (ColumnWidth, RulerStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -506,7 +524,7 @@
         <param name="ColumnWidth">Largeur de la colonne spécifiée, en points.</param>
         <param name="RulerStyle">Valeur qui détermine la façon dont Microsoft Word ajuste la largeur des cellules.</param>
         <summary>Définit la largeur d'une colonne d'un tableau.</summary>
-        <remarks><para>Le <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> comportement s’applique aux tableaux alignés à gauche. Le comportement de <b>WdRulerStyle</b> pour les tableaux alignés à droite et centrés peut être inattendu; dans ce cas, la <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> méthode doit être utilisée avec précaution.</para>
+        <remarks><para>Le <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> comportement s’applique aux tableaux alignés à gauche. Le comportement de <b>WdRulerStyle</b> pour les tableaux alignés à droite et centrés peut être inattendu ; dans ce cas, la <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> méthode doit être utilisée avec précaution.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -516,6 +534,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.Shading" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shading As Shading" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shading ^ Shading { Microsoft::Office::Interop::Word::Shading ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shading : Microsoft.Office.Interop.Word.Shading" Usage="Microsoft.Office.Interop.Word.Column.Shading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -543,6 +562,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Sort([in]object&amp; ExcludeHeader, [in]object&amp; SortFieldType, [in]object&amp; SortOrder, [in]object&amp; CaseSensitive, [in]object&amp; BidiSort, [in]object&amp; IgnoreThe, [in]object&amp; IgnoreKashida, [in]object&amp; IgnoreDiacritics, [in]object&amp; IgnoreHe, [in]object&amp; LanguageID) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Column.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sort (Optional ByRef ExcludeHeader As Object, Optional ByRef SortFieldType As Object, Optional ByRef SortOrder As Object, Optional ByRef CaseSensitive As Object, Optional ByRef BidiSort As Object, Optional ByRef IgnoreThe As Object, Optional ByRef IgnoreKashida As Object, Optional ByRef IgnoreDiacritics As Object, Optional ByRef IgnoreHe As Object, Optional ByRef LanguageID As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Sort : obj * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; unit" Usage="column.Sort (ExcludeHeader, SortFieldType, SortOrder, CaseSensitive, BidiSort, IgnoreThe, IgnoreKashida, IgnoreDiacritics, IgnoreHe, LanguageID)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -557,30 +577,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ExcludeHeader" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SortFieldType" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SortOrder" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="CaseSensitive" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="BidiSort" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IgnoreThe" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IgnoreKashida" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IgnoreDiacritics" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IgnoreHe" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="LanguageID" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ExcludeHeader" Type="System.Object" RefType="ref" />
+        <Parameter Name="SortFieldType" Type="System.Object" RefType="ref" />
+        <Parameter Name="SortOrder" Type="System.Object" RefType="ref" />
+        <Parameter Name="CaseSensitive" Type="System.Object" RefType="ref" />
+        <Parameter Name="BidiSort" Type="System.Object" RefType="ref" />
+        <Parameter Name="IgnoreThe" Type="System.Object" RefType="ref" />
+        <Parameter Name="IgnoreKashida" Type="System.Object" RefType="ref" />
+        <Parameter Name="IgnoreDiacritics" Type="System.Object" RefType="ref" />
+        <Parameter Name="IgnoreHe" Type="System.Object" RefType="ref" />
+        <Parameter Name="LanguageID" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ExcludeHeader">Valeur qui indique s’il faut exclure la première ligne ou en-tête de paragraphe de l’opération de tri. La valeur par défaut est <b>False</b>.</param>
-        <param name="SortFieldType">Type de tri appliqué à la colonne. Il peut s’agir de <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" /> l’une des constantes.</param>
-        <param name="SortOrder">Ordre de tri à utiliser pour la colonne. Il peut s' <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" /> agir d’une des constantes.</param>
+        <param name="SortFieldType">Type de tri appliqué à la colonne. Il peut s’agir de l’une des <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" /> constantes.</param>
+        <param name="SortOrder">Ordre de tri à utiliser pour la colonne. Il peut s’agir d’une des <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" /> constantes.</param>
         <param name="CaseSensitive">Valeur qui indique s’il faut effectuer un tri avec respect de la casse. La valeur par défaut est <b>False</b>.</param>
         <param name="BidiSort">Valeur qui indique s’il faut effectuer un tri en fonction des règles de langue de droite à gauche. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
         <param name="IgnoreThe">Valeur qui indique s’il faut ignorer le caractère arabe Alef Lam lors du tri de texte de la langue de droite à gauche. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
         <param name="IgnoreKashida">Valeur qui indique s’il faut ignorer le signe kachidé lors du tri de texte de langue de droite à gauche. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
         <param name="IgnoreDiacritics">Valeur qui indique s’il faut ignorer les caractères de contrôle bidirectionnels lors du tri de texte de langue de droite à gauche. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
         <param name="IgnoreHe">Valeur qui indique s’il faut ignorer le caractère hébreu HE lors du tri de texte de la langue de droite à gauche. Il se peut que cet argument ne soit pas disponible, selon la prise en charge de langue (anglais (États-Unis) par exemple) que vous avez sélectionnée ou installée.</param>
-        <param name="LanguageID">Spécifie la langue de tri. Il peut s’agir de <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> l’une des constantes.</param>
+        <param name="LanguageID">Spécifie la langue de tri. Il peut s’agir de l’une des <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</param>
         <summary>Trie le contenu de la colonne de tableau spécifiée.</summary>
-        <remarks><para>Si vous souhaitez trier des paragraphes dans une cellule de tableau, incluez uniquement les paragraphes et non la marque de fin de cellule; Si vous incluez la marque de fin de cellule dans une sélection ou une plage, puis que vous essayez de trier les paragraphes, Microsoft Word affiche un message indiquant qu’il n’a trouvé aucun enregistrement valide à trier.</para>
+        <remarks><para>Si vous souhaitez trier des paragraphes dans une cellule de tableau, incluez uniquement les paragraphes et non la marque de fin de cellule ; Si vous incluez la marque de fin de cellule dans une sélection ou une plage, puis que vous essayez de trier les paragraphes, Microsoft Word affiche un message indiquant qu’il n’a trouvé aucun enregistrement valide à trier.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -589,6 +609,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SortOld([in]object&amp; ExcludeHeader, [in]object&amp; SortFieldType, [in]object&amp; SortOrder, [in]object&amp; CaseSensitive, [in]object&amp; LanguageID) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Column.SortOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SortOld (Optional ByRef ExcludeHeader As Object, Optional ByRef SortFieldType As Object, Optional ByRef SortOrder As Object, Optional ByRef CaseSensitive As Object, Optional ByRef LanguageID As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SortOld : obj * obj * obj * obj * obj -&gt; unit" Usage="column.SortOld (ExcludeHeader, SortFieldType, SortOrder, CaseSensitive, LanguageID)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -606,11 +627,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ExcludeHeader" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SortFieldType" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SortOrder" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="CaseSensitive" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="LanguageID" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ExcludeHeader" Type="System.Object" RefType="ref" />
+        <Parameter Name="SortFieldType" Type="System.Object" RefType="ref" />
+        <Parameter Name="SortOrder" Type="System.Object" RefType="ref" />
+        <Parameter Name="CaseSensitive" Type="System.Object" RefType="ref" />
+        <Parameter Name="LanguageID" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ExcludeHeader">To be added.</param>
@@ -628,6 +649,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Column.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="Microsoft.Office.Interop.Word.Column.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

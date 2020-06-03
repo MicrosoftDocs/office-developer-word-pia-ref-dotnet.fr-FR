@@ -1,9 +1,10 @@
 <Type Name="ContentControlListEntries" FullName="Microsoft.Office.Interop.Word.ContentControlListEntries">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2a65daa51ebf37c0bb3b93d5a9f9094e1b8a6931" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147283" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControlListEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="80199e98cb445946aac46466d92663f143a80fca" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922303" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControlListEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControlListEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControlListEntries&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ContentControlListEntries : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ContentControlListEntries = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>La <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> collection contient <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> des objets qui représentent les éléments d’un contrôle de contenu de liste déroulante ou de zone de liste déroulante.</summary>
+    <summary>La <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> collection contient des <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objets qui représentent les éléments d’un contrôle de contenu de liste déroulante ou de zone de liste déroulante.</summary>
     <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> méthode pour ajouter un élément à une liste déroulante ou une zone de liste déroulante. </para>
       <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" /> méthode ou la <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> propriété d’un <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objet pour accéder à un élément de liste individuel au sein d’une collection. </para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Clear" /> méthode pour supprimer tous les éléments d’une liste déroulante ou d’une zone de liste déroulante. L’exemple suivant montre comment effacer tous les éléments du premier contrôle de contenu dans le document actif.</para>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ContentControlListEntry Add([in]string Text, [in]string Value, [in]int32 Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Text As String, Optional Value As String = &quot;&quot;, Optional Index As Integer = 0) As ContentControlListEntry" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string * int -&gt; Microsoft.Office.Interop.Word.ContentControlListEntry" Usage="contentControlListEntries.Add (Text, Value, Index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,9 +56,9 @@
       </Parameters>
       <Docs>
         <param name="Text">Spécifie le texte affiché pour l'élément de liste. Correspond à la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> propriété d’un <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objet.</param>
-        <param name="Value">Spécifie la valeur de l'élément de liste.  Correspond à la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> propriété d’un <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objet. Si cet argument est omis <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> , la propriété est égale <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> à la propriété.</param>
+        <param name="Value">Spécifie la valeur de l'élément de liste.  Correspond à la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> propriété d’un <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objet. Si cet argument est omis, la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> propriété est égale à la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> propriété.</param>
         <param name="Index">Spécifie la position ordinale du nouvel élément dans la liste. Si un élément existe à la position spécifiée, l'élément existant est déplacé vers le bas de la liste. En cas d'omission, le nouvel élément est ajouté à la fin de la liste.</param>
-        <summary>Ajoute un nouvel élément de liste à un contrôle de contenu de liste déroulante ou de zone <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> de liste déroulante et renvoie un objet.</summary>
+        <summary>Ajoute un nouvel élément de liste à un contrôle de contenu de liste déroulante ou de zone de liste déroulante et renvoie un <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objet.</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /></returns>
         <remarks><para>Les noms complets des entrées de liste doivent être uniques.  La tentative d'ajout d'un élément de liste qui existe déjà génère une erreur d'exécution.</para>
           <para> </para></remarks>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ContentControlListEntries.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit" Usage="contentControlListEntries.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.ContentControlListEntries.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,7 +144,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie le nombre d’éléments dans la <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> collection. En lecture seule.</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ContentControlListEntries.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -167,10 +173,10 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle le complément a été créé. En lecture seule.</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks><para>Si l'objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para>
-            <b>Remarque</b>: cette valeur peut également être représentée par la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
+            <b>Remarque</b>: cette valeur peut également être représentée par la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntries.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="contentControlListEntries.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As ContentControlListEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ContentControlListEntry ^ default[int] { Microsoft::Office::Interop::Word::ContentControlListEntry ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.ContentControlListEntry" Usage="Microsoft.Office.Interop.Word.ContentControlListEntries.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ContentControlListEntries.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -261,7 +270,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie l’objet parent de <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> l’objet spécifié.</summary>
+        <summary>Cette propriété renvoie l’objet parent de l' <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> objet spécifié.</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>

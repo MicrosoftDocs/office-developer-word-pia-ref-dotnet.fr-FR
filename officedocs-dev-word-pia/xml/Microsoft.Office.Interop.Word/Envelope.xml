@@ -1,9 +1,10 @@
 <Type Name="Envelope" FullName="Microsoft.Office.Interop.Word.Envelope">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="89ac2d7a1c070cd36ff26903605322635835af3c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146877" /></Metadata><TypeSignature Language="C#" Value="public interface Envelope" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7684b6f40a52b89214e488e599f914d1fd567712" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43921995" /></Metadata><TypeSignature Language="C#" Value="public interface Envelope" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Envelope" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Envelope" />
   <TypeSignature Language="VB.NET" Value="Public Interface Envelope" />
   <TypeSignature Language="C++ CLI" Value="public interface class Envelope" />
+  <TypeSignature Language="F#" Value="type Envelope = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>Représente une enveloppe.</summary>
-    <remarks><para>Il n’existe pas de collection d’enveloppes; chaque <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet ne contient qu’un seul objet <b>Envelope</b> .</para>
+    <remarks><para>Il n’existe pas de collection d’enveloppes ; chaque <see cref="T:Microsoft.Office.Interop.Word.Document" /> objet ne contient qu’un seul objet <b>Envelope</b> .</para>
       <para>Utilisez la <see cref="P:Microsoft.Office.Interop.Word._Document.Envelope" /> propriété pour renvoyer l’objet <b>Envelope</b> .</para>
-      <para>L'objet <b>Envelope</b> est disponible, qu'une enveloppe ait été ajoutée au document spécifié. Toutefois, une erreur se produit si vous utilisez la propriété <b>Envelope</b> . <b>UpdateDocument</b> , méthode ou l’une des propriétés suivantes lorsqu’une enveloppe n’a pas été ajoutée au <see cref="P:Microsoft.Office.Interop.Word.Envelope.Address" />document <see cref="P:Microsoft.Office.Interop.Word.Envelope.AddressFromLeft" />: <see cref="P:Microsoft.Office.Interop.Word.Envelope.AddressFromTop" />, <see cref="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" />, <see cref="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddress" />, <see cref="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromLeft" />,, <see cref="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromTop" />et.</para>
+      <para>L'objet <b>Envelope</b> est disponible, qu'une enveloppe ait été ajoutée au document spécifié. Toutefois, une erreur se produit si vous utilisez la propriété <b>Envelope</b> . <b>UpdateDocument</b> , méthode ou l’une des propriétés suivantes lorsqu’une enveloppe n’a pas été ajoutée au document : <see cref="P:Microsoft.Office.Interop.Word.Envelope.Address" /> , <see cref="P:Microsoft.Office.Interop.Word.Envelope.AddressFromLeft" /> ,, <see cref="P:Microsoft.Office.Interop.Word.Envelope.AddressFromTop" /> <see cref="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" /> , <see cref="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddress" /> , <see cref="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromLeft" /> et <see cref="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromTop" /> .</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Envelope.Insert(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour ajouter une enveloppe dans le document spécifié. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Envelope.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> méthode pour définir les propriétés d’une enveloppe et l’imprimer sans l’ajouter au document.</para>
       <para> </para></remarks>
   </Docs>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Address" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Address { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Address : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Envelope.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l’adresse du destinataire de l' <see cref="T:Microsoft.Office.Interop.Word.Range" /> enveloppe sous la forme d’un objet.</summary>
+        <summary>Renvoie l’adresse du destinataire de l’enveloppe sous la forme d’un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet.</summary>
         <value>To be added.</value>
         <remarks><para>Une erreur se produit si vous utilisez cette propriété alors qu’aucune enveloppe n’a été ajoutée au document spécifié.</para>
           <para> </para></remarks>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.AddressFromLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property AddressFromLeft As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float AddressFromLeft { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.AddressFromLeft : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.AddressFromLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.AddressFromTop" />
       <MemberSignature Language="VB.NET" Value="Public Property AddressFromTop As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float AddressFromTop { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.AddressFromTop : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.AddressFromTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.AddressStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddressStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Style ^ AddressStyle { Microsoft::Office::Interop::Word::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddressStyle : Microsoft.Office.Interop.Word.Style" Usage="Microsoft.Office.Interop.Word.Envelope.AddressStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Envelope.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Envelope.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,7 +208,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultFaceUp" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultFaceUp As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultFaceUp { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultFaceUp : bool with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.DefaultFaceUp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -234,7 +242,7 @@
       <Docs>
         <summary>Détermine si les enveloppes sont insérées face vers le haut par défaut.</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les enveloppes sont insérées face vers <b></b> le haut par défaut et false dans le cas contraire.</para>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si les enveloppes sont insérées face vers le haut par défaut et <b>false</b> dans le cas contraire.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultHeight As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DefaultHeight { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultHeight : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.DefaultHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -266,7 +275,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit la hauteur d'enveloppe par défaut, exprimée en points.</summary>
         <value>To be added.</value>
-        <remarks><para>Si vous définissez la propriété <b>DefaultHeight</b> ou <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultWidth" /> la propriété, la taille de l’enveloppe est automatiquement remplacée par une taille personnalisée dans la boîte de dialogue Options d’enveloppe (menu Outils). Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultSize" /> propriété pour définir la taille par défaut sur une taille prédéfinie.</para>
+        <remarks><para>Si vous définissez la propriété <b>DefaultHeight</b> ou la <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultWidth" /> propriété, la taille de l’enveloppe est automatiquement remplacée par une taille personnalisée dans la boîte de dialogue Options d’enveloppe (menu Outils). Utilisez la <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultSize" /> propriété pour définir la taille par défaut sur une taille prédéfinie.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -276,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultOmitReturnAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultOmitReturnAddress As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultOmitReturnAddress { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultOmitReturnAddress : bool with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.DefaultOmitReturnAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -308,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultOrientation" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultOrientation As WdEnvelopeOrientation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdEnvelopeOrientation DefaultOrientation { Microsoft::Office::Interop::Word::WdEnvelopeOrientation get(); void set(Microsoft::Office::Interop::Word::WdEnvelopeOrientation value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultOrientation : Microsoft.Office.Interop.Word.WdEnvelopeOrientation with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.DefaultOrientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -339,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintBarCode" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultPrintBarCode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultPrintBarCode { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultPrintBarCode : bool with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.DefaultPrintBarCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -367,8 +379,8 @@
       <Docs>
         <summary>Détermine si un code-barres POSTNET est ajouté aux enveloppes ou aux étiquettes de publipostage par défaut.</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si un code-barres POSTNET est ajouté aux enveloppes ou aux étiquettes de <b></b> publipostage par défaut, et false dans le cas contraire.</para>
-          <para>Pour le courrier américain uniquement. Pour les enveloppes, cette propriété doit avoir la valeur <b>true</b> avant <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" /> la définition de la propriété.</para>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si un code-barres POSTNET est ajouté aux enveloppes ou aux étiquettes de publipostage par défaut, et <b>false</b> dans le cas contraire.</para>
+          <para>Pour le courrier américain uniquement. Pour les enveloppes, cette propriété doit avoir la valeur <b>true</b> avant la définition de la <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" /> propriété.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -378,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultPrintFIMA As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultPrintFIMA { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultPrintFIMA : bool with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -411,6 +424,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Default Public Property DefaultSize As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : string with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.DefaultSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -433,7 +447,7 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit le format d'enveloppe par défaut.</summary>
         <value>To be added.</value>
-        <remarks><para>La chaîne renvoyée correspond à la partie droite de la chaîne qui apparaît dans la zone taille de l’enveloppe de la boîte de dialogue Options d’enveloppe. Si vous définissez la <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultHeight" /> propriété ou <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultWidth" /> , la taille de l’enveloppe est automatiquement remplacée par une taille personnalisée dans la boîte de dialogue Options d’enveloppe (menu Outils) et cette propriété renvoie «taille personnalisée».</para>
+        <remarks><para>La chaîne renvoyée correspond à la partie droite de la chaîne qui apparaît dans la zone taille de l’enveloppe de la boîte de dialogue Options d’enveloppe. Si vous définissez la <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultHeight" /> propriété ou <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultWidth" /> , la taille de l’enveloppe est automatiquement remplacée par une taille personnalisée dans la boîte de dialogue Options d’enveloppe (menu Outils) et cette propriété renvoie « taille personnalisée ».</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -443,6 +457,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultWidth As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DefaultWidth { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultWidth : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.DefaultWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -475,6 +490,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" />
       <MemberSignature Language="VB.NET" Value="Public Property FeedSource As WdPaperTray" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPaperTray FeedSource { Microsoft::Office::Interop::Word::WdPaperTray get(); void set(Microsoft::Office::Interop::Word::WdPaperTray value); };" />
+      <MemberSignature Language="F#" Value="member this.FeedSource : Microsoft.Office.Interop.Word.WdPaperTray with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.FeedSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -506,6 +522,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert([in]object&amp; ExtractAddress, [in]object&amp; Address, [in]object&amp; AutoText, [in]object&amp; OmitReturnAddress, [in]object&amp; ReturnAddress, [in]object&amp; ReturnAutoText, [in]object&amp; PrintBarCode, [in]object&amp; PrintFIMA, [in]object&amp; Size, [in]object&amp; Height, [in]object&amp; Width, [in]object&amp; FeedSource, [in]object&amp; AddressFromLeft, [in]object&amp; AddressFromTop, [in]object&amp; ReturnAddressFromLeft, [in]object&amp; ReturnAddressFromTop, [in]object&amp; DefaultFaceUp, [in]object&amp; DefaultOrientation, [in]object&amp; PrintEPostage, [in]object&amp; Vertical, [in]object&amp; RecipientNamefromLeft, [in]object&amp; RecipientNamefromTop, [in]object&amp; RecipientPostalfromLeft, [in]object&amp; RecipientPostalfromTop, [in]object&amp; SenderNamefromLeft, [in]object&amp; SenderNamefromTop, [in]object&amp; SenderPostalfromLeft, [in]object&amp; SenderPostalfromTop) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.Insert(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (Optional ByRef ExtractAddress As Object, Optional ByRef Address As Object, Optional ByRef AutoText As Object, Optional ByRef OmitReturnAddress As Object, Optional ByRef ReturnAddress As Object, Optional ByRef ReturnAutoText As Object, Optional ByRef PrintBarCode As Object, Optional ByRef PrintFIMA As Object, Optional ByRef Size As Object, Optional ByRef Height As Object, Optional ByRef Width As Object, Optional ByRef FeedSource As Object, Optional ByRef AddressFromLeft As Object, Optional ByRef AddressFromTop As Object, Optional ByRef ReturnAddressFromLeft As Object, Optional ByRef ReturnAddressFromTop As Object, Optional ByRef DefaultFaceUp As Object, Optional ByRef DefaultOrientation As Object, Optional ByRef PrintEPostage As Object, Optional ByRef Vertical As Object, Optional ByRef RecipientNamefromLeft As Object, Optional ByRef RecipientNamefromTop As Object, Optional ByRef RecipientPostalfromLeft As Object, Optional ByRef RecipientPostalfromTop As Object, Optional ByRef SenderNamefromLeft As Object, Optional ByRef SenderNamefromTop As Object, Optional ByRef SenderPostalfromLeft As Object, Optional ByRef SenderPostalfromTop As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Insert : obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; unit" Usage="envelope.Insert (ExtractAddress, Address, AutoText, OmitReturnAddress, ReturnAddress, ReturnAutoText, PrintBarCode, PrintFIMA, Size, Height, Width, FeedSource, AddressFromLeft, AddressFromTop, ReturnAddressFromLeft, ReturnAddressFromTop, DefaultFaceUp, DefaultOrientation, PrintEPostage, Vertical, RecipientNamefromLeft, RecipientNamefromTop, RecipientPostalfromLeft, RecipientPostalfromTop, SenderNamefromLeft, SenderNamefromTop, SenderPostalfromLeft, SenderPostalfromTop)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -520,54 +537,54 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ExtractAddress" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Address" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="OmitReturnAddress" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAddress" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PrintBarCode" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PrintFIMA" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Size" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="FeedSource" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AddressFromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AddressFromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAddressFromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAddressFromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultFaceUp" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultOrientation" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PrintEPostage" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Vertical" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="RecipientNamefromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="RecipientNamefromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="RecipientPostalfromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="RecipientPostalfromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SenderNamefromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SenderNamefromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SenderPostalfromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SenderPostalfromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ExtractAddress" Type="System.Object" RefType="ref" />
+        <Parameter Name="Address" Type="System.Object" RefType="ref" />
+        <Parameter Name="AutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="OmitReturnAddress" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAddress" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="PrintBarCode" Type="System.Object" RefType="ref" />
+        <Parameter Name="PrintFIMA" Type="System.Object" RefType="ref" />
+        <Parameter Name="Size" Type="System.Object" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object" RefType="ref" />
+        <Parameter Name="FeedSource" Type="System.Object" RefType="ref" />
+        <Parameter Name="AddressFromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="AddressFromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAddressFromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAddressFromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultFaceUp" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultOrientation" Type="System.Object" RefType="ref" />
+        <Parameter Name="PrintEPostage" Type="System.Object" RefType="ref" />
+        <Parameter Name="Vertical" Type="System.Object" RefType="ref" />
+        <Parameter Name="RecipientNamefromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="RecipientNamefromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="RecipientPostalfromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="RecipientPostalfromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="SenderNamefromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="SenderNamefromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="SenderPostalfromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="SenderPostalfromTop" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ExtractAddress"><b>Objet</b>facultatif. <b>True</b> pour utiliser le texte marqué par le signet EnvelopeAddress (signet défini par l'utilisateur) comme adresse du destinataire.</param>
-        <param name="Address"><b>Objet</b>facultatif. Valeur de type String qui spécifie l’adresse du destinataire <paramref name="ExtractAddress" /> (ignoré si a la <b>valeur true</b>).</param>
-        <param name="AutoText"><b>Objet</b>facultatif. Chaîne spécifiant l'insertion automatique à utiliser comme adresse. S’il est <paramref name="Address" /> spécifié, est ignoré.</param>
+        <param name="Address"><b>Objet</b>facultatif. Valeur de type String qui spécifie l’adresse du destinataire (ignoré si <paramref name="ExtractAddress" /> a la <b>valeur true</b>).</param>
+        <param name="AutoText"><b>Objet</b>facultatif. Chaîne spécifiant l'insertion automatique à utiliser comme adresse. S' <paramref name="Address" /> il est spécifié, est ignoré.</param>
         <param name="OmitReturnAddress"><b>Objet</b>facultatif. <b>True</b> pour ignorer l'adresse de retour.</param>
         <param name="ReturnAddress"><b>Objet</b>facultatif. Chaîne spécifiant l'adresse de l'expéditeur.</param>
-        <param name="ReturnAutoText"><b>Objet</b>facultatif. Chaîne spécifiant l'insertion automatique à utiliser comme adresse de l'expéditeur. S’il est <paramref name="ReturnAddress" /> spécifié, est ignoré.</param>
+        <param name="ReturnAutoText"><b>Objet</b>facultatif. Chaîne spécifiant l'insertion automatique à utiliser comme adresse de l'expéditeur. S' <paramref name="ReturnAddress" /> il est spécifié, est ignoré.</param>
         <param name="PrintBarCode"><b>Objet</b>facultatif. <b>True</b> pour ajouter un code-barres POSTNET. Pour le courrier américain uniquement.</param>
         <param name="PrintFIMA"><b>Objet</b>facultatif. <b>True</b> pour ajouter un code FIM-a (FACING Identification Mark) à utiliser dans le pré-tri du courrier de réponse de courtoisie. Pour le courrier américain uniquement.</param>
         <param name="Size"><b>Objet</b>facultatif. Chaîne spécifiant la taille de l'enveloppe. Cette chaîne doit correspondre à l'un des formats affichés dans la zone Taille de l'enveloppe de la boîte de dialogue Options d'enveloppe (par exemple, « Taille 10 » ou « C4 »).</param>
-        <param name="Height"><b>Objet</b>facultatif. Hauteur de l’enveloppe, exprimée en points, lorsque l' <paramref name="Size" /> argument est défini sur «Custom Size» (taille personnalisée).</param>
-        <param name="Width"><b>Objet</b>facultatif. Largeur de l’enveloppe, exprimée en points, lorsque l' <paramref name="Size" /> argument est défini sur «Custom Size» (taille personnalisée).</param>
-        <param name="FeedSource"><b>Objet</b>facultatif. <b>True:</b> pour utiliser <see cref="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" /> la propriété de <see cref="T:Microsoft.Office.Interop.Word.Envelope" /> l’objet afin de spécifier le bac d’alimentation papier à utiliser lors de l’impression de l’enveloppe.</param>
+        <param name="Height"><b>Objet</b>facultatif. Hauteur de l’enveloppe, exprimée en points, lorsque l' <paramref name="Size" /> argument est défini sur « Custom Size » (taille personnalisée).</param>
+        <param name="Width"><b>Objet</b>facultatif. Largeur de l’enveloppe, exprimée en points, lorsque l' <paramref name="Size" /> argument est défini sur « Custom Size » (taille personnalisée).</param>
+        <param name="FeedSource"><b>Objet</b>facultatif. <b>True :</b> pour utiliser la <see cref="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Word.Envelope" /> objet afin de spécifier le bac d’alimentation papier à utiliser lors de l’impression de l’enveloppe.</param>
         <param name="AddressFromLeft"><b>Objet</b>facultatif. Distance, exprimée en points, entre le bord gauche de l'enveloppe et l'adresse du destinataire.</param>
         <param name="AddressFromTop"><b>Objet</b>facultatif. Distance, exprimée en points, entre le bord supérieur de l'enveloppe et l'adresse du destinataire.</param>
         <param name="ReturnAddressFromLeft"><b>Objet</b>facultatif. Distance, exprimée en points, entre le bord gauche de l'enveloppe et l'adresse de l'expéditeur.</param>
         <param name="ReturnAddressFromTop"><b>Objet</b>facultatif. Distance, exprimée en points, entre le bord supérieur de l'enveloppe et l'adresse de l'expéditeur.</param>
         <param name="DefaultFaceUp"><b>Objet</b>facultatif. <b>True</b> pour imprimer l'enveloppe face vers le haut ; <b>False</b> pour l'imprimer face vers le bas.</param>
-        <param name="DefaultOrientation"><b>Objet</b>facultatif. L'orientation de l'enveloppe. Peut être n' <see cref="T:Microsoft.Office.Interop.Word.WdEnvelopeOrientation" /> importe quelle constante.</param>
+        <param name="DefaultOrientation"><b>Objet</b>facultatif. L'orientation de l'enveloppe. Peut être n’importe quelle <see cref="T:Microsoft.Office.Interop.Word.WdEnvelopeOrientation" /> constante.</param>
         <param name="PrintEPostage"><b>Objet</b>facultatif. <b>True</b> pour insérer l'affranchissement à partir d'un fournisseur d'affranchissement sur Internet.</param>
         <param name="Vertical"><b>Objet</b>facultatif. <b>True</b> pour imprimer du texte vertical sur l'enveloppe. Utilisé pour les enveloppes asiatiques. Valeur par défaut est <b>False</b>.</param>
         <param name="RecipientNamefromLeft"><b>Objet</b>facultatif. Position, exprimée en points, du nom du destinataire à partir du bord gauche de l'enveloppe. Utilisé pour les enveloppes asiatiques.</param>
@@ -587,6 +604,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert2000([in]object&amp; ExtractAddress, [in]object&amp; Address, [in]object&amp; AutoText, [in]object&amp; OmitReturnAddress, [in]object&amp; ReturnAddress, [in]object&amp; ReturnAutoText, [in]object&amp; PrintBarCode, [in]object&amp; PrintFIMA, [in]object&amp; Size, [in]object&amp; Height, [in]object&amp; Width, [in]object&amp; FeedSource, [in]object&amp; AddressFromLeft, [in]object&amp; AddressFromTop, [in]object&amp; ReturnAddressFromLeft, [in]object&amp; ReturnAddressFromTop, [in]object&amp; DefaultFaceUp, [in]object&amp; DefaultOrientation) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.Insert2000(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert2000 (Optional ByRef ExtractAddress As Object, Optional ByRef Address As Object, Optional ByRef AutoText As Object, Optional ByRef OmitReturnAddress As Object, Optional ByRef ReturnAddress As Object, Optional ByRef ReturnAutoText As Object, Optional ByRef PrintBarCode As Object, Optional ByRef PrintFIMA As Object, Optional ByRef Size As Object, Optional ByRef Height As Object, Optional ByRef Width As Object, Optional ByRef FeedSource As Object, Optional ByRef AddressFromLeft As Object, Optional ByRef AddressFromTop As Object, Optional ByRef ReturnAddressFromLeft As Object, Optional ByRef ReturnAddressFromTop As Object, Optional ByRef DefaultFaceUp As Object, Optional ByRef DefaultOrientation As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Insert2000 : obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; unit" Usage="envelope.Insert2000 (ExtractAddress, Address, AutoText, OmitReturnAddress, ReturnAddress, ReturnAutoText, PrintBarCode, PrintFIMA, Size, Height, Width, FeedSource, AddressFromLeft, AddressFromTop, ReturnAddressFromLeft, ReturnAddressFromTop, DefaultFaceUp, DefaultOrientation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -604,24 +622,24 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ExtractAddress" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Address" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="OmitReturnAddress" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAddress" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PrintBarCode" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PrintFIMA" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Size" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="FeedSource" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AddressFromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AddressFromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAddressFromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAddressFromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultFaceUp" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultOrientation" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ExtractAddress" Type="System.Object" RefType="ref" />
+        <Parameter Name="Address" Type="System.Object" RefType="ref" />
+        <Parameter Name="AutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="OmitReturnAddress" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAddress" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="PrintBarCode" Type="System.Object" RefType="ref" />
+        <Parameter Name="PrintFIMA" Type="System.Object" RefType="ref" />
+        <Parameter Name="Size" Type="System.Object" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object" RefType="ref" />
+        <Parameter Name="FeedSource" Type="System.Object" RefType="ref" />
+        <Parameter Name="AddressFromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="AddressFromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAddressFromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAddressFromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultFaceUp" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultOrientation" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ExtractAddress">To be added.</param>
@@ -652,6 +670,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.Options" />
       <MemberSignature Language="VB.NET" Value="Public Sub Options ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Options();" />
+      <MemberSignature Language="F#" Value="abstract member Options : unit -&gt; unit" Usage="envelope.Options " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -678,6 +697,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Envelope.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -705,6 +725,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrintOut([in]object&amp; ExtractAddress, [in]object&amp; Address, [in]object&amp; AutoText, [in]object&amp; OmitReturnAddress, [in]object&amp; ReturnAddress, [in]object&amp; ReturnAutoText, [in]object&amp; PrintBarCode, [in]object&amp; PrintFIMA, [in]object&amp; Size, [in]object&amp; Height, [in]object&amp; Width, [in]object&amp; FeedSource, [in]object&amp; AddressFromLeft, [in]object&amp; AddressFromTop, [in]object&amp; ReturnAddressFromLeft, [in]object&amp; ReturnAddressFromTop, [in]object&amp; DefaultFaceUp, [in]object&amp; DefaultOrientation, [in]object&amp; PrintEPostage, [in]object&amp; Vertical, [in]object&amp; RecipientNamefromLeft, [in]object&amp; RecipientNamefromTop, [in]object&amp; RecipientPostalfromLeft, [in]object&amp; RecipientPostalfromTop, [in]object&amp; SenderNamefromLeft, [in]object&amp; SenderNamefromTop, [in]object&amp; SenderPostalfromLeft, [in]object&amp; SenderPostalfromTop) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PrintOut (Optional ByRef ExtractAddress As Object, Optional ByRef Address As Object, Optional ByRef AutoText As Object, Optional ByRef OmitReturnAddress As Object, Optional ByRef ReturnAddress As Object, Optional ByRef ReturnAutoText As Object, Optional ByRef PrintBarCode As Object, Optional ByRef PrintFIMA As Object, Optional ByRef Size As Object, Optional ByRef Height As Object, Optional ByRef Width As Object, Optional ByRef FeedSource As Object, Optional ByRef AddressFromLeft As Object, Optional ByRef AddressFromTop As Object, Optional ByRef ReturnAddressFromLeft As Object, Optional ByRef ReturnAddressFromTop As Object, Optional ByRef DefaultFaceUp As Object, Optional ByRef DefaultOrientation As Object, Optional ByRef PrintEPostage As Object, Optional ByRef Vertical As Object, Optional ByRef RecipientNamefromLeft As Object, Optional ByRef RecipientNamefromTop As Object, Optional ByRef RecipientPostalfromLeft As Object, Optional ByRef RecipientPostalfromTop As Object, Optional ByRef SenderNamefromLeft As Object, Optional ByRef SenderNamefromTop As Object, Optional ByRef SenderPostalfromLeft As Object, Optional ByRef SenderPostalfromTop As Object)" />
+      <MemberSignature Language="F#" Value="abstract member PrintOut : obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; unit" Usage="envelope.PrintOut (ExtractAddress, Address, AutoText, OmitReturnAddress, ReturnAddress, ReturnAutoText, PrintBarCode, PrintFIMA, Size, Height, Width, FeedSource, AddressFromLeft, AddressFromTop, ReturnAddressFromLeft, ReturnAddressFromTop, DefaultFaceUp, DefaultOrientation, PrintEPostage, Vertical, RecipientNamefromLeft, RecipientNamefromTop, RecipientPostalfromLeft, RecipientPostalfromTop, SenderNamefromLeft, SenderNamefromTop, SenderPostalfromLeft, SenderPostalfromTop)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -719,38 +740,38 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ExtractAddress" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Address" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="OmitReturnAddress" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAddress" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PrintBarCode" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PrintFIMA" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Size" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="FeedSource" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AddressFromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AddressFromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAddressFromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAddressFromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultFaceUp" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultOrientation" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PrintEPostage" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Vertical" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="RecipientNamefromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="RecipientNamefromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="RecipientPostalfromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="RecipientPostalfromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SenderNamefromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SenderNamefromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SenderPostalfromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SenderPostalfromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ExtractAddress" Type="System.Object" RefType="ref" />
+        <Parameter Name="Address" Type="System.Object" RefType="ref" />
+        <Parameter Name="AutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="OmitReturnAddress" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAddress" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="PrintBarCode" Type="System.Object" RefType="ref" />
+        <Parameter Name="PrintFIMA" Type="System.Object" RefType="ref" />
+        <Parameter Name="Size" Type="System.Object" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object" RefType="ref" />
+        <Parameter Name="FeedSource" Type="System.Object" RefType="ref" />
+        <Parameter Name="AddressFromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="AddressFromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAddressFromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAddressFromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultFaceUp" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultOrientation" Type="System.Object" RefType="ref" />
+        <Parameter Name="PrintEPostage" Type="System.Object" RefType="ref" />
+        <Parameter Name="Vertical" Type="System.Object" RefType="ref" />
+        <Parameter Name="RecipientNamefromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="RecipientNamefromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="RecipientPostalfromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="RecipientPostalfromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="SenderNamefromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="SenderNamefromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="SenderPostalfromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="SenderPostalfromTop" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ExtractAddress"><b>Objet</b>facultatif. <b>True</b> pour utiliser le texte marqué par le signet « AdrDestEnveloppe » (signet défini par l'utilisateur) comme adresse du destinataire.</param>
-        <param name="Address"><b>Objet</b>facultatif. Valeur de type String qui spécifie l’adresse du destinataire <paramref name="ExtractAddress" /> (ignoré si a la <b>valeur true</b>).</param>
+        <param name="Address"><b>Objet</b>facultatif. Valeur de type String qui spécifie l’adresse du destinataire (ignoré si <paramref name="ExtractAddress" /> a la <b>valeur true</b>).</param>
         <param name="AutoText"><b>Objet</b>facultatif. Représente le nom de l'insertion automatique comprenant l'adresse d'un destinataire.</param>
         <param name="OmitReturnAddress"><b>Objet</b>facultatif. <b>True</b> pour ignorer l'adresse de retour.</param>
         <param name="ReturnAddress"><b>Objet</b>facultatif. Chaîne spécifiant l'adresse de l'expéditeur.</param>
@@ -758,15 +779,15 @@
         <param name="PrintBarCode"><b>Objet</b>facultatif. <b>True</b> pour ajouter un code-barres POSTNET. Pour le courrier américain uniquement.</param>
         <param name="PrintFIMA"><b>Objet</b>facultatif. <b>True</b> pour ajouter un Facing Identification Mark (FIM-A) à utiliser dans le pré-tri du courrier de réponse de courtoisie. Pour le courrier américain uniquement.</param>
         <param name="Size"><b>Objet</b>facultatif. Chaîne spécifiant la taille de l'enveloppe. Cette chaîne doit correspondre à l'une des tailles répertoriées dans la partie gauche de la zone Taille de l'enveloppe située dans la boîte de dialogue Options pour les enveloppes (« Taille 10 », par exemple).</param>
-        <param name="Height"><b>Objet</b>facultatif. Hauteur de l’enveloppe lorsque l' <paramref name="Size" /> argument est défini sur «Taille personnalisée».</param>
-        <param name="Width"><b>Objet</b>facultatif. Largeur de l’enveloppe, exprimée en points, lorsque l' <paramref name="Size" /> argument est défini sur «Taille personnalisée».</param>
-        <param name="FeedSource"><b>Objet</b>facultatif. <b>True:</b> pour utiliser <see cref="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" /> la propriété de <see cref="T:Microsoft.Office.Interop.Word.Envelope" /> l’objet afin de spécifier le bac d’alimentation papier à utiliser lors de l’impression de l’enveloppe.</param>
+        <param name="Height"><b>Objet</b>facultatif. Hauteur de l’enveloppe lorsque l' <paramref name="Size" /> argument est défini sur « Taille personnalisée ».</param>
+        <param name="Width"><b>Objet</b>facultatif. Largeur de l’enveloppe, exprimée en points, lorsque l' <paramref name="Size" /> argument est défini sur « Taille personnalisée ».</param>
+        <param name="FeedSource"><b>Objet</b>facultatif. <b>True :</b> pour utiliser la <see cref="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" /> propriété de l' <see cref="T:Microsoft.Office.Interop.Word.Envelope" /> objet afin de spécifier le bac d’alimentation papier à utiliser lors de l’impression de l’enveloppe.</param>
         <param name="AddressFromLeft"><b>Objet</b>facultatif. Distance (en points) entre le bord gauche de l'enveloppe et l'adresse du destinataire.</param>
         <param name="AddressFromTop"><b>Objet</b>facultatif. Distance (en points) entre le bord supérieur de l'enveloppe et l'adresse du destinataire.</param>
         <param name="ReturnAddressFromLeft"><b>Objet</b>facultatif. Distance (en points) entre le bord gauche de l'enveloppe et l'adresse de l'expéditeur.</param>
         <param name="ReturnAddressFromTop"><b>Objet</b>facultatif. Distance (en points) entre le bord supérieur de l'enveloppe et l'adresse de l'expéditeur.</param>
         <param name="DefaultFaceUp"><b>Objet</b>facultatif. <b>True</b> pour imprimer l'enveloppe face vers le haut ; <b>False</b> pour l'imprimer face vers le bas.</param>
-        <param name="DefaultOrientation"><b>Objet</b>facultatif. L'orientation de l'enveloppe. Peut être n' <see cref="T:Microsoft.Office.Interop.Word.WdEnvelopeOrientation" /> importe quelle constante.</param>
+        <param name="DefaultOrientation"><b>Objet</b>facultatif. L'orientation de l'enveloppe. Peut être n’importe quelle <see cref="T:Microsoft.Office.Interop.Word.WdEnvelopeOrientation" /> constante.</param>
         <param name="PrintEPostage"><b>Objet</b>facultatif. <b>True</b> pour imprimer un affranchissement provenant d'un fournisseur d'affranchissement électronique sur Internet.</param>
         <param name="Vertical"><b>Objet</b>facultatif. <b>True</b>: pour imprimer verticalement le texte de l'enveloppe. Utilisé pour les enveloppes des langues asiatiques.</param>
         <param name="RecipientNamefromLeft"><b>Objet</b>facultatif. Position (exprimée en points) du nom du destinataire à partir du bord gauche de l'enveloppe. S'utilise avec les enveloppes en langue asiatique.</param>
@@ -786,6 +807,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrintOut2000([in]object&amp; ExtractAddress, [in]object&amp; Address, [in]object&amp; AutoText, [in]object&amp; OmitReturnAddress, [in]object&amp; ReturnAddress, [in]object&amp; ReturnAutoText, [in]object&amp; PrintBarCode, [in]object&amp; PrintFIMA, [in]object&amp; Size, [in]object&amp; Height, [in]object&amp; Width, [in]object&amp; FeedSource, [in]object&amp; AddressFromLeft, [in]object&amp; AddressFromTop, [in]object&amp; ReturnAddressFromLeft, [in]object&amp; ReturnAddressFromTop, [in]object&amp; DefaultFaceUp, [in]object&amp; DefaultOrientation) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.PrintOut2000(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PrintOut2000 (Optional ByRef ExtractAddress As Object, Optional ByRef Address As Object, Optional ByRef AutoText As Object, Optional ByRef OmitReturnAddress As Object, Optional ByRef ReturnAddress As Object, Optional ByRef ReturnAutoText As Object, Optional ByRef PrintBarCode As Object, Optional ByRef PrintFIMA As Object, Optional ByRef Size As Object, Optional ByRef Height As Object, Optional ByRef Width As Object, Optional ByRef FeedSource As Object, Optional ByRef AddressFromLeft As Object, Optional ByRef AddressFromTop As Object, Optional ByRef ReturnAddressFromLeft As Object, Optional ByRef ReturnAddressFromTop As Object, Optional ByRef DefaultFaceUp As Object, Optional ByRef DefaultOrientation As Object)" />
+      <MemberSignature Language="F#" Value="abstract member PrintOut2000 : obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; unit" Usage="envelope.PrintOut2000 (ExtractAddress, Address, AutoText, OmitReturnAddress, ReturnAddress, ReturnAutoText, PrintBarCode, PrintFIMA, Size, Height, Width, FeedSource, AddressFromLeft, AddressFromTop, ReturnAddressFromLeft, ReturnAddressFromTop, DefaultFaceUp, DefaultOrientation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -803,24 +825,24 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ExtractAddress" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Address" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="OmitReturnAddress" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAddress" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PrintBarCode" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PrintFIMA" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Size" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="FeedSource" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AddressFromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AddressFromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAddressFromLeft" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReturnAddressFromTop" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultFaceUp" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultOrientation" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ExtractAddress" Type="System.Object" RefType="ref" />
+        <Parameter Name="Address" Type="System.Object" RefType="ref" />
+        <Parameter Name="AutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="OmitReturnAddress" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAddress" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="PrintBarCode" Type="System.Object" RefType="ref" />
+        <Parameter Name="PrintFIMA" Type="System.Object" RefType="ref" />
+        <Parameter Name="Size" Type="System.Object" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object" RefType="ref" />
+        <Parameter Name="FeedSource" Type="System.Object" RefType="ref" />
+        <Parameter Name="AddressFromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="AddressFromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAddressFromLeft" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReturnAddressFromTop" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultFaceUp" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultOrientation" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ExtractAddress">To be added.</param>
@@ -851,6 +873,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.RecipientNamefromLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property RecipientNamefromLeft As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RecipientNamefromLeft { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.RecipientNamefromLeft : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.RecipientNamefromLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -882,6 +905,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.RecipientNamefromTop" />
       <MemberSignature Language="VB.NET" Value="Public Property RecipientNamefromTop As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RecipientNamefromTop { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.RecipientNamefromTop : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.RecipientNamefromTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -914,6 +938,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.RecipientPostalfromLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property RecipientPostalfromLeft As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RecipientPostalfromLeft { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.RecipientPostalfromLeft : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.RecipientPostalfromLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -946,6 +971,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.RecipientPostalfromTop" />
       <MemberSignature Language="VB.NET" Value="Public Property RecipientPostalfromTop As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RecipientPostalfromTop { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.RecipientPostalfromTop : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.RecipientPostalfromTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -978,6 +1004,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnAddress As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ ReturnAddress { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnAddress : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Envelope.ReturnAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1007,6 +1034,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnAddressFromLeft As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ReturnAddressFromLeft { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnAddressFromLeft : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1039,6 +1067,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromTop" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnAddressFromTop As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ReturnAddressFromTop { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnAddressFromTop : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1071,6 +1100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnAddressStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Style ^ ReturnAddressStyle { Microsoft::Office::Interop::Word::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnAddressStyle : Microsoft.Office.Interop.Word.Style" Usage="Microsoft.Office.Interop.Word.Envelope.ReturnAddressStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1100,6 +1130,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.SenderNamefromLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property SenderNamefromLeft As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SenderNamefromLeft { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.SenderNamefromLeft : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.SenderNamefromLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1132,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.SenderNamefromTop" />
       <MemberSignature Language="VB.NET" Value="Public Property SenderNamefromTop As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SenderNamefromTop { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.SenderNamefromTop : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.SenderNamefromTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1164,6 +1196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.SenderPostalfromLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property SenderPostalfromLeft As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SenderPostalfromLeft { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.SenderPostalfromLeft : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.SenderPostalfromLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1196,6 +1229,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.SenderPostalfromTop" />
       <MemberSignature Language="VB.NET" Value="Public Property SenderPostalfromTop As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SenderPostalfromTop { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.SenderPostalfromTop : single with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.SenderPostalfromTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1228,6 +1262,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.UpdateDocument" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateDocument ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateDocument();" />
+      <MemberSignature Language="F#" Value="abstract member UpdateDocument : unit -&gt; unit" Usage="envelope.UpdateDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1254,6 +1289,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Vertical" />
       <MemberSignature Language="VB.NET" Value="Public Property Vertical As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Vertical { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Vertical : bool with get, set" Usage="Microsoft.Office.Interop.Word.Envelope.Vertical" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1276,7 +1312,7 @@
       <Docs>
         <summary>Verticalement oriente le texte sur les enveloppes asiatiques et les étiquettes de publipostage.</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si le texte sur les enveloppes asiatiques et les étiquettes de publipostage <b></b> est orienté verticalement et false dans le cas contraire.</para>
+        <remarks><para>Cette propriété renvoie la <b>valeur true</b> si le texte sur les enveloppes asiatiques et les étiquettes de publipostage est orienté verticalement et <b>false</b> dans le cas contraire.</para>
           <para>Cette propriété ne fonctionne qu’avec des étiquettes de publipostage ou des enveloppes configurées pour une opération de fusion et publipostage et ne s’applique qu’aux langues asiatiques.</para>
           <para> </para></remarks>
       </Docs>

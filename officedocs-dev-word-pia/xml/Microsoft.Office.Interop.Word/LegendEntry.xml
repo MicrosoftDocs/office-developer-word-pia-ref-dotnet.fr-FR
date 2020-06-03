@@ -1,9 +1,10 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Word.LegendEntry">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="059f71dc3edd40069b1147fe21cabdefa3e8042d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146625" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6f167d0bed7c79ad8313d4cfc13e01297da8efd3" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923884" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LegendEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntry" />
   <TypeSignature Language="C++ CLI" Value="public interface class LegendEntry" />
+  <TypeSignature Language="F#" Value="type LegendEntry = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,12 +21,12 @@
   <Docs>
     <summary>Représente une entrée de légende dans une légende de graphique.</summary>
     <remarks><para>L' <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objet est un membre de la <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection. La <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> collection contient tous les <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objets de la légende.</para>
-      <para>Chaque entrée de légende se compose de deux parties : le texte, c'est-à-dire le nom de la série associée à l'entrée de légende, et le marqueur d'entrée qui relie visuellement l'entrée de légende avec la courbe de tendance ou la série associée dans le graphique. Les propriétés de mise en forme du marqueur d’entrée et de la série ou de <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> la courbe de tendance associée sont contenues dans l’objet.</para>
+      <para>Chaque entrée de légende se compose de deux parties : le texte, c'est-à-dire le nom de la série associée à l'entrée de légende, et le marqueur d'entrée qui relie visuellement l'entrée de légende avec la courbe de tendance ou la série associée dans le graphique. Les propriétés de mise en forme du marqueur d’entrée et de la série ou de la courbe de tendance associée sont contenues dans l' <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> objet.</para>
       <para>Impossible de modifier le texte d'une entrée de légende. <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />les objets prennent en charge la mise en forme des polices et peuvent être supprimés. Aucun motif de mise en forme n'est prise en charge pour les entrées de légende. La position et la taille des entrées sont fixes.</para>
       <para>Il n'existe aucun moyen direct de renvoyer la série ou la courbe de tendance correspondant à l'entrée de légende.</para>
       <para>Une fois les entrées de légende supprimées, la seule façon de les restaurer est de supprimer et de recréer la légende qui les contenait en définissant la <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> propriété du graphique sur <b>false</b> , puis de nouveau sur <b>true</b>.</para>
       <para> </para></remarks>
-    <example><para>Utilisez <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index de l’entrée de légende, <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> pour renvoyer un seul objet. Vous ne peut pas renvoyer des entrées de légende par un nom.</para>
+    <example><para>Utilisez <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> ( <paramref name="index" /> ), où <paramref name="index" /> est le numéro d’index de l’entrée de légende, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objet. Vous ne peut pas renvoyer des entrées de légende par un nom.</para>
       <para>Le numéro d'index représente la position de l'entrée de légende dans la légende. LegendEntries(1) se trouve en haut de la légende et LegendEntries(LegendEntries.Count) en bas. </para></example>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.LegendEntry.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,7 +54,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie <see cref="T:Microsoft.Office.Interop.Word._Application" /> un objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
+        <summary>Lorsqu’elle est utilisée sans qualificateur d’objet, cette propriété renvoie un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objet qui représente l’application Microsoft Word. Utilisée avec un identificateur d’objet, cette propriété renvoie un objet<b>Application</b> qui représente le créateur de l’objet spécifié (vous pouvez utiliser cette propriété avec un objet OLE Automation pour renvoyer l’application de cet objet). En lecture seule.</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.AutoScaleFont" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScaleFont As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AutoScaleFont { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScaleFont : obj with get, set" Usage="Microsoft.Office.Interop.Word.LegendEntry.AutoScaleFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.LegendEntry.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -118,7 +122,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé. <b>Entier</b> en lecture seule.</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks><para>Si l'objet a été créé dans Microsoft Word, la propriété <b>Creator</b> renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ».  Cette propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur à quatre chiffres. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -129,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.LegendEntry.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="legendEntry.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Font" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As ChartFont" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFont ^ Font { Microsoft::Office::Interop::Word::ChartFont ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Font : Microsoft.Office.Interop.Word.ChartFont" Usage="Microsoft.Office.Interop.Word.LegendEntry.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.LegendEntry.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,7 +208,7 @@
       </ReturnValue>
       <Docs>
         <summary>Renvoie la ligne, le remplissage et l'effet de la mise en forme pour l'objet.
-En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
+En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> .</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,6 +219,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double" Usage="Microsoft.Office.Interop.Word.LegendEntry.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -240,6 +248,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.LegendEntry.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -258,7 +267,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       </ReturnValue>
       <Docs>
         <summary>Cette propriété renvoie le numéro d'index de l'objet dans la collection des objets similaires.</summary>
-        <value><b>Entier</b></value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,6 +277,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Left" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Left : double" Usage="Microsoft.Office.Interop.Word.LegendEntry.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -296,6 +306,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.LegendKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LegendKey As LegendKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LegendKey ^ LegendKey { Microsoft::Office::Interop::Word::LegendKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegendKey : Microsoft.Office.Interop.Word.LegendKey" Usage="Microsoft.Office.Interop.Word.LegendEntry.LegendKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -324,6 +335,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.LegendEntry.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -352,6 +364,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.LegendEntry.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="legendEntry.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -378,6 +391,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Top" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Top : double" Usage="Microsoft.Office.Interop.Word.LegendEntry.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -406,6 +420,7 @@ En lecture seule <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</su
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.LegendEntry.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double" Usage="Microsoft.Office.Interop.Word.LegendEntry.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

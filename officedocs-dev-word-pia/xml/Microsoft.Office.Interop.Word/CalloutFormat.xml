@@ -1,9 +1,10 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Word.CalloutFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3e225a3d98b4c368d5c9c0b464dfefb3fd25e89a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147321" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca057147289138dd738cdaf129377d28b3b0dcd9" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922576" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalloutFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CalloutFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalloutFormat" />
   <TypeSignature Language="C++ CLI" Value="public interface class CalloutFormat" />
+  <TypeSignature Language="F#" Value="type CalloutFormat = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Accent" />
       <MemberSignature Language="VB.NET" Value="Public Property Accent As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Accent { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.Accent : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Accent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Angle" />
       <MemberSignature Language="VB.NET" Value="Public Property Angle As MsoCalloutAngleType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoCalloutAngleType Angle { Microsoft::Office::Core::MsoCalloutAngleType get(); void set(Microsoft::Office::Core::MsoCalloutAngleType value); };" />
+      <MemberSignature Language="F#" Value="member this.Angle : Microsoft.Office.Core.MsoCalloutAngleType with get, set" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Angle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoAttach As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState AutoAttach { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoAttach : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -149,8 +154,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur qui indique si le point de jonction de la ligne de légende avec la zone de texte de la légende change selon que l’origine du trait de légende (l’emplacement vers lequel pointe la légende) est à gauche ou à droite de la zone de texte de la légende.</summary>
         <value>To be added.</value>
-        <remarks><para>Lorsque la valeur de cette propriété est <b>true</b>, la valeur de déroulement (distance verticale entre le bord de la zone de texte de légende et l’emplacement où le trait de légende s’attache) est mesurée à partir du haut de la zone de texte lorsque celle-ci se trouve à droite de l’origine. et il est mesuré à partir du bas de la zone de texte lorsque la zone de texte est située à gauche de l’origine. Lorsque cette propriété a la valeur <b>False</b>, la valeur de projection est toujours mesurée à partir du haut de la zone de texte, sans tenir compte des positions relatives de la zone de texte et de l'origine. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> méthode pour définir la valeur de projection et utilisez la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> propriété pour renvoyer la valeur de déplacement.</para>
-          <para>La définition de cette propriété n’affecte une légende que si elle est explicitement définie sur une valeur de déroulement, autrement dit, <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> si la valeur de la propriété est <b>msoCalloutDropCustom</b>. Par défaut, les légendes se voient explicitement affectées d’une valeur de déroulement au moment de leur création.</para>
+        <remarks><para>Lorsque la valeur de cette propriété est <b>true</b>, la valeur de déroulement (distance verticale entre le bord de la zone de texte de la légende et l’emplacement où le trait de légende est joint) est mesurée à partir du haut de la zone de texte lorsque la zone de texte est à gauche de l’origine. Lorsque cette propriété a la valeur <b>False</b>, la valeur de projection est toujours mesurée à partir du haut de la zone de texte, sans tenir compte des positions relatives de la zone de texte et de l'origine. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> méthode pour définir la valeur de projection et utilisez la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> propriété pour renvoyer la valeur de déplacement.</para>
+          <para>La définition de cette propriété n’affecte une légende que si elle est explicitement définie sur une valeur de déroulement, autrement dit, si la valeur de la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> propriété est <b>msoCalloutDropCustom</b>. Par défaut, les légendes se voient explicitement affectées d’une valeur de déroulement au moment de leur création.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoLength As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState AutoLength { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutoLength : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -179,7 +185,7 @@
       <Docs>
         <summary>Renvoie une valeur qui indique s’il faut définir automatiquement la longueur de la ligne de légende.</summary>
         <value>To be added.</value>
-        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> méthode pour affecter à cette propriété la valeur <b>msoTrue</b>et utilisez <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> la méthode pour affecter à cette propriété la valeur <b>msoFalse</b>.</para>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> méthode pour affecter à cette propriété la valeur <b>msoTrue</b>et utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> méthode pour affecter à cette propriété la valeur <b>msoFalse</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" />
       <MemberSignature Language="VB.NET" Value="Public Sub AutomaticLength ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutomaticLength();" />
+      <MemberSignature Language="F#" Value="abstract member AutomaticLength : unit -&gt; unit" Usage="calloutFormat.AutomaticLength " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -208,8 +215,8 @@
       <Parameters />
       <Docs>
         <summary>Indique le premier segment de la légende (le segment associé à l'emplacement de la légende du texte) à être mis à l'échelle automatiquement lorsque la légende est déplacée.</summary>
-        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> méthode pour spécifier que le premier segment de la ligne de légende conserve la longueur fixe renvoyée <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> par la propriété chaque fois que la légende est déplacée. S’applique uniquement aux légendes dont les lignes sont constituées de plusieurs segments (types <b>msoCalloutThree</b> et <b>msoCalloutFour</b>).</para>
-          <para>L’application de cette méthode <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> affecte la <b>valeur true</b>à la propriété.</para>
+        <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> méthode pour spécifier que le premier segment de la ligne de légende conserve la longueur fixe renvoyée par la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> propriété chaque fois que la légende est déplacée. S’applique uniquement aux légendes dont les lignes sont constituées de plusieurs segments (types <b>msoCalloutThree</b> et <b>msoCalloutFour</b>).</para>
+          <para>L’application de cette méthode affecte la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> <b>valeur true</b>à la propriété.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Border" />
       <MemberSignature Language="VB.NET" Value="Public Property Border As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Border { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.Border : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -269,7 +278,7 @@
       <Docs>
         <summary>Renvoie une valeur qui indique l’application dans laquelle l’objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CustomDrop (Drop As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CustomDrop(float Drop);" />
+      <MemberSignature Language="F#" Value="abstract member CustomDrop : single -&gt; unit" Usage="calloutFormat.CustomDrop Drop" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -299,8 +309,8 @@
       <Docs>
         <param name="Drop">Distance du point de jonction, mesurée en points.</param>
         <summary>Cette méthode détermine la distance verticale (en points) séparant le bord de la zone de texte du point de jonction de la ligne de légende avec cette zone.</summary>
-        <remarks><para>Cette distance est mesurée à partir du haut de la zone de texte <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> , sauf si la propriété est définie sur <b>true</b> et que la zone de texte est située à gauche de l’origine de la ligne de légende (l’emplacement vers lequel pointe la légende), auquel cas la distance de déplacement est mesurée à partir du bas de la zone de texte.</para>
-          <para>Si la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> méthode a été précédemment utilisée pour définir le déplacement de la légende spécifiée, appelez de nouveau la méthode <b>PresetDrop</b> à l’aide de l’argument <b>msoCalloutDropCustom</b> avant d’utiliser la méthode <b>CustomDrop</b> afin que le paramètre de projection personnalisée prenne effet.</para>
+        <remarks><para>Cette distance est mesurée à partir du haut de la zone de texte, sauf si la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> propriété est définie sur <b>true</b> et que la zone de texte est située à gauche de l’origine de la ligne de légende (l’emplacement vers lequel pointe la légende), auquel cas la distance de déplacement est mesurée à partir du bas de la zone de texte.</para>
+          <para>Si la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> méthode a été précédemment utilisée pour définir le déplacement de la légende spécifiée, appelez de nouveau la méthode <b>PresetDrop</b> à l’aide de l’argument <b>msoCalloutDropCustom</b> avant d’utiliser la méthode <b>CustomDrop</b> afin que les paramètres de la projection personnalisée soient pris en compte.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -310,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CustomLength (Length As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CustomLength(float Length);" />
+      <MemberSignature Language="F#" Value="abstract member CustomLength : single -&gt; unit" Usage="calloutFormat.CustomLength Length" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -330,7 +341,7 @@
         <param name="Length">Longueur du premier segment de la ligne de légende, mesuré en points.</param>
         <summary>Cette méthode indique que le premier segment de la ligne de légende (segment attaché à la zone de légende) conserve une longueur fixe en cas de déplacement de la légende.</summary>
         <remarks><para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> méthode pour spécifier que le premier segment de la ligne de légende doit être mis à l’horizontale automatiquement lorsque la légende est déplacée. S’applique uniquement aux légendes dont les lignes sont constituées de plusieurs segments (types <b>msoCalloutThree</b> et <b>msoCalloutFour</b>).</para>
-          <para>L’application de cette méthode <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> affecte à la propriété la valeur <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> false et définit la propriété sur <paramref name="Length" /> la valeur spécifiée pour l’argument. <b></b></para>
+          <para>L’application de cette méthode affecte <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> à la propriété la valeur <b>false</b> et définit la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> propriété sur la valeur spécifiée pour l' <paramref name="Length" /> argument.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -340,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Drop As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Drop { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Drop : single" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Drop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -359,9 +371,9 @@
       <Docs>
         <summary>Cette propriété renvoie la distance verticale (en points) du bord du texte de délimitation de zone vers l’emplacement vers lequel la ligne de légende rejoint la zone de texte pour une légende avec une valeur de déroulement défini explicitement.</summary>
         <value>To be added.</value>
-        <remarks><para>Cette distance est mesurée à partir du haut de la zone de texte <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> , sauf si la propriété est définie sur <b>true</b> et que la zone de texte est située à gauche de l’origine de la ligne de légende (l’emplacement vers lequel pointe la légende), auquel cas la distance de déplacement est mesurée à partir du bas de la zone de texte.</para>
+        <remarks><para>Cette distance est mesurée à partir du haut de la zone de texte, sauf si la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> propriété est définie sur <b>true</b> et que la zone de texte est située à gauche de l’origine de la ligne de légende (l’emplacement vers lequel pointe la légende), auquel cas la distance de déplacement est mesurée à partir du bas de la zone de texte.</para>
           <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> méthode pour définir la valeur de cette propriété.</para>
-          <para>La valeur de cette propriété reflète précisément la position du point d’attache du trait de légende à la zone de texte uniquement si la légende possède une valeur de déroulement explicitement définie, autrement dit, si <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> la valeur de la propriété est <b>msoCalloutDropCustom</b>. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> méthode avec un argument <b>msoCalloutCustomDrop</b> pour définir la propriété <b>DropType</b> sur <b>msoCalloutDropCustom</b>.</para>
+          <para>La valeur de cette propriété reflète précisément la position du point d’attache du trait de légende à la zone de texte uniquement si la légende possède une valeur de déroulement explicitement définie, autrement dit, si la valeur de la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> propriété est <b>msoCalloutDropCustom</b>. Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> méthode avec un argument <b>msoCalloutCustomDrop</b> pour définir la propriété <b>DropType</b> sur <b>msoCalloutDropCustom</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -371,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropType As MsoCalloutDropType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoCalloutDropType DropType { Microsoft::Office::Core::MsoCalloutDropType get(); };" />
+      <MemberSignature Language="F#" Value="member this.DropType : Microsoft.Office.Core.MsoCalloutDropType" Usage="Microsoft.Office.Interop.Word.CalloutFormat.DropType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -390,7 +403,7 @@
       <Docs>
         <summary>Renvoie une valeur qui indique où la ligne de légende rejoint la zone de texte de légende.</summary>
         <value>To be added.</value>
-        <remarks><para>Si le type de projection de la légende est <b>msoCalloutDropCustom</b>, les <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> valeurs <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> des propriétés et et les positions relatives de la zone de texte de la légende et de l’origine de la ligne de légende (emplacement vers lequel la légende pointe) sont utilisées pour déterminer où la légende liaison de ligne à la zone de texte.</para>
+        <remarks><para>Si le type de projection de la légende est <b>msoCalloutDropCustom</b>, les valeurs des <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> Propriétés et et les positions relatives de la zone de texte de la légende et de l’origine de la ligne de légende (emplacement vers lequel la légende pointe) sont utilisées pour déterminer où la ligne de légende rejoint la zone de texte.</para>
           <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> méthode pour définir la valeur de cette propriété.</para>
           <para> </para></remarks>
       </Docs>
@@ -401,6 +414,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Gap" />
       <MemberSignature Language="VB.NET" Value="Public Property Gap As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Gap { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Gap : single with get, set" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Gap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -432,6 +446,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Length { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : single" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -449,7 +464,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Lorsque la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propriété de la légende spécifiée a la valeur <b>false</b>, la propriété <b>Length</b> renvoie la longueur (en points) du premier segment de la ligne de légende (segment attaché à la zone de texte de la légende).</summary>
+        <summary>Lorsque la propriété <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> de la légende spécifiée a la valeur <b>false</b>, la propriété <b>Length</b> renvoie la longueur (en points) du premier segment de la ligne de légende (segment attaché à la zone de texte de la légende).</summary>
         <value>To be added.</value>
         <remarks><para>S’applique uniquement aux légendes dont les lignes sont constituées de plusieurs segments (types <b>msoCalloutThree</b> et <b>msoCalloutFour</b>).</para>
           <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> méthode pour définir la valeur de cette propriété pour l' <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> objet.</para>
@@ -462,6 +477,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -490,6 +506,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PresetDrop (DropType As MsoCalloutDropType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PresetDrop(Microsoft::Office::Core::MsoCalloutDropType DropType);" />
+      <MemberSignature Language="F#" Value="abstract member PresetDrop : Microsoft.Office.Core.MsoCalloutDropType -&gt; unit" Usage="calloutFormat.PresetDrop DropType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -509,7 +526,7 @@
       <Docs>
         <param name="DropType">La position de départ du trait de légende par rapport à la zone de délimitation du texte.</param>
         <summary>Indique si la jonction de la ligne de légende avec la zone de texte de légende s'effectue en haut, en bas, au milieu ou encore à une distance donnée par rapport au sommet ou à la base de la zone de texte.</summary>
-        <remarks><para>Si vous spécifiez <b>msoCalloutDropCustom</b> comme <paramref name="DropType" /> paramètre, les valeurs des propriétés <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> et <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> et les positions relatives de la zone de texte de la légende et de l’origine de la ligne de légende (emplacement vers lequel la légende pointe) sont utilisées pour déterminer emplacement auquel la ligne de légende rejoint la zone de texte.</para>
+        <remarks><para>Si vous spécifiez <b>msoCalloutDropCustom</b> comme <paramref name="DropType" /> paramètre, les valeurs des <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> Propriétés et <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> et les positions relatives de la zone de texte de la légende et de l’origine de la ligne de légende (emplacement vers lequel la légende pointe) sont utilisées pour déterminer où la ligne de légende rejoint la zone de texte.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -519,6 +536,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As MsoCalloutType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoCalloutType Type { Microsoft::Office::Core::MsoCalloutType get(); void set(Microsoft::Office::Core::MsoCalloutType value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Core.MsoCalloutType with get, set" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

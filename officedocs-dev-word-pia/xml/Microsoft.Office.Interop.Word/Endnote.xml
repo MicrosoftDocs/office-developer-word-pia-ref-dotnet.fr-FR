@@ -1,9 +1,10 @@
 <Type Name="Endnote" FullName="Microsoft.Office.Interop.Word.Endnote">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d8ba4783e253885b6587b9117e78512d36648596" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146898" /></Metadata><TypeSignature Language="C#" Value="public interface Endnote" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dab4fa8fe21834bf9cdf71e49fd25dfa5b81e7ad" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922016" /></Metadata><TypeSignature Language="C#" Value="public interface Endnote" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Endnote" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Endnote" />
   <TypeSignature Language="VB.NET" Value="Public Interface Endnote" />
   <TypeSignature Language="C++ CLI" Value="public interface class Endnote" />
+  <TypeSignature Language="F#" Value="type Endnote = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Représente une note de fin.</summary>
     <remarks><para>L’objet <b>EndNote</b> est membre de la <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> collection. La collection <b>Endnotes</b> indique les notes de fin d’une sélection, d’une plage ou d’un document.</para>
-      <para>Utilisez <b>des notes</b>de<paramref name="index" />fin () <paramref name="index" /> , où est le numéro d’index, pour renvoyer un seul objet <b>EndNote</b> . Le numéro d'index représente la position de la note de fin dans la sélection, une plage ou un document.</para>
+      <para>Utilisez des <b>notes de fin</b>( <paramref name="index" /> ), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>EndNote</b> . Le numéro d'index représente la position de la note de fin dans la sélection, une plage ou un document.</para>
       <para>Utilisez la <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> méthode pour ajouter une note de fin à la collection <b>Endnotes</b> .</para>
       <para> </para></remarks>
   </Docs>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnote.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Endnote.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnote.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Endnote.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,7 +81,7 @@
       <Docs>
         <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne «MSWD». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
+        <remarks><para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie le nombre hexadécimal 4D535744, qui représente la chaîne « MSWD ». [!REMARQUE] Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b>.</para>
           <para>La propriété <b>Creator</b> a initialement été conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word possède le code de créateur MSWD. Pour plus d'informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para>
           <para> </para></remarks>
       </Docs>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Endnote.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="endnote.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnote.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Endnote.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnote.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Endnote.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnote.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Endnote.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -189,7 +196,7 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Word.Range" /> Object qui représente la partie d’un document contenue dans l’objet spécifié.</summary>
         <value>To be added.</value>
-        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> de formes à partir d’une collection de formes, voir la méthode.</para>
+        <remarks><para>Pour plus d’informations sur le renvoi d’une plage à partir d’un document ou sur le renvoi d’une plage de formes à partir d’une collection de formes, voir la <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> méthode.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnote.Reference" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reference As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Reference { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reference : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Endnote.Reference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

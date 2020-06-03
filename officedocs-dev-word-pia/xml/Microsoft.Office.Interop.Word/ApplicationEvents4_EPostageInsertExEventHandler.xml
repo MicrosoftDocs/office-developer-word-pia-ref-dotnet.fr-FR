@@ -1,9 +1,10 @@
 <Type Name="ApplicationEvents4_EPostageInsertExEventHandler" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_EPostageInsertExEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="94af4b0a8aa74cc409913103a77c2efdb8781bff" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144824" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_EPostageInsertExEventHandler(Document Doc, int cpDeliveryAddrStart, int cpDeliveryAddrEnd, int cpReturnAddrStart, int cpReturnAddrEnd, int xaWidth, int yaHeight, string bstrPrinterName, string bstrPaperFeed, bool fPrint, out bool fCancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="331d53c164e959ad23e12bf8cc9384160647bf50" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923037" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_EPostageInsertExEventHandler(Document Doc, int cpDeliveryAddrStart, int cpDeliveryAddrEnd, int cpReturnAddrStart, int cpReturnAddrEnd, int xaWidth, int yaHeight, string bstrPrinterName, string bstrPaperFeed, bool fPrint, out bool fCancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationEvents4_EPostageInsertExEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_EPostageInsertExEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ApplicationEvents4_EPostageInsertExEventHandler(Doc As Document, cpDeliveryAddrStart As Integer, cpDeliveryAddrEnd As Integer, cpReturnAddrStart As Integer, cpReturnAddrEnd As Integer, xaWidth As Integer, yaHeight As Integer, bstrPrinterName As String, bstrPaperFeed As String, fPrint As Boolean, ByRef fCancel As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void ApplicationEvents4_EPostageInsertExEventHandler(Document ^ Doc, int cpDeliveryAddrStart, int cpDeliveryAddrEnd, int cpReturnAddrStart, int cpReturnAddrEnd, int xaWidth, int yaHeight, System::String ^ bstrPrinterName, System::String ^ bstrPaperFeed, bool fPrint, [Runtime::InteropServices::Out] bool % fCancel);" />
+  <TypeSignature Language="F#" Value="type ApplicationEvents4_EPostageInsertExEventHandler = delegate of Document * int * int * int * int * int * int * string * string * bool * bool -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -30,15 +31,15 @@
     <Parameter Name="bstrPrinterName" Type="System.String" />
     <Parameter Name="bstrPaperFeed" Type="System.String" />
     <Parameter Name="fPrint" Type="System.Boolean" />
-    <Parameter Name="fCancel" Type="System.Boolean&amp;" RefType="out" />
+    <Parameter Name="fCancel" Type="System.Boolean" RefType="out" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="Doc">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.Document" />. Document auquel l'affranchissement électronique est ajouté.</param>
-    <param name="cpDeliveryAddrStart"><b>Integer</b>. La position de départ de l'adresse du destinataire dans le document. Le positionnement correspond à la valeur de <see cref="P:Microsoft.Office.Interop.Word.Range.Start" /> la propriété d' <see cref="T:Microsoft.Office.Interop.Word.Range" /> un objet.</param>
-    <param name="cpDeliveryAddrEnd"><b>Integer</b>. Fin de l'adresse du destinataire dans le document. Le positionnement correspond à la valeur de <see cref="P:Microsoft.Office.Interop.Word.Range.End" /> la propriété d’un objet <b>Range</b> .</param>
+    <param name="Doc">Obligatoire <see cref="T:Microsoft.Office.Interop.Word.Document" /> . Document auquel l'affranchissement électronique est ajouté.</param>
+    <param name="cpDeliveryAddrStart"><b>Integer</b>. La position de départ de l'adresse du destinataire dans le document. Le positionnement correspond à la valeur de la <see cref="P:Microsoft.Office.Interop.Word.Range.Start" /> propriété d’un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objet.</param>
+    <param name="cpDeliveryAddrEnd"><b>Integer</b>. Fin de l'adresse du destinataire dans le document. Le positionnement correspond à la valeur de la <see cref="P:Microsoft.Office.Interop.Word.Range.End" /> propriété d’un objet <b>Range</b> .</param>
     <param name="cpReturnAddrStart"><b>Integer</b>. La position de départ de l'adresse de l'expéditeur dans le document. Le positionnement correspond à la valeur de la propriété <b>Start</b> d'un objet <b>Range</b>.</param>
     <param name="cpReturnAddrEnd"><b>Integer</b>. Fin de l'adresse de l'expéditeur dans le document. Le positionnement correspond à la valeur de la propriété <b>End</b> d'un objet <b>Range</b>.</param>
     <param name="xaWidth"><b>Integer</b>. Largeur de l'enveloppe en unités de 1/1440 pouce (twip).</param>
@@ -46,7 +47,7 @@
     <param name="bstrPrinterName"><b>String</b>. Nom de l'imprimante spécifié dans l'onglet Options d'impression de la boîte de dialogue Options d'enveloppe.</param>
     <param name="bstrPaperFeed"><b>String</b>. Méthode d'alimentation spécifiée dans l'onglet Options d'impression de la boîte de dialogue Options d'enveloppe.</param>
     <param name="fPrint"><b>Boolean</b>. <b>True</b> si l'utilisateur a choisi d'imprimer l'enveloppe. <b>False</b> si l'utilisateur a spécifié d'insérer l'enveloppe dans le document.</param>
-    <param name="fCancel"><b>Boolean</b>. La <b>valeur true</b> annule l’action spécifiée par l’utilisateur comme <paramref name="fPrint" /> indiqué dans le paramètre.</param>
+    <param name="fCancel"><b>Boolean</b>. La <b>valeur true</b> annule l’action spécifiée par l’utilisateur comme indiqué dans le <paramref name="fPrint" /> paramètre.</param>
     <summary>Type <b>délégué</b> utilisé pour ajouter un gestionnaire d’événements pour l' <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.EPostageInsertEx" /> événement. L’événement <b>epostageinsertex,</b> se produit lorsqu’un utilisateur insère un affranchissement électronique dans un document.</summary>
     <remarks>To be added.</remarks>
   </Docs>
